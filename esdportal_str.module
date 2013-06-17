@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the esdportal_str feature.
+ */
+
+include_once 'esdportal_str.features.inc';
