@@ -234,11 +234,11 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['content'] = '<a href="admin/people/create">+ Create New User</a>';
-  /* Field: User: First Name */
+  /* Field: : field_fname */
   $handler->display->display_options['fields']['field_fname']['id'] = 'field_fname';
   $handler->display->display_options['fields']['field_fname']['table'] = 'field_data_field_fname';
   $handler->display->display_options['fields']['field_fname']['field'] = 'field_fname';
-  /* Field: User: Last Name */
+  /* Field: : field_lname */
   $handler->display->display_options['fields']['field_lname']['id'] = 'field_lname';
   $handler->display->display_options['fields']['field_lname']['table'] = 'field_data_field_lname';
   $handler->display->display_options['fields']['field_lname']['field'] = 'field_lname';
@@ -283,7 +283,7 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: User: First Name (field_fname) */
+  /* Filter criterion: : field_fname (field_fname) */
   $handler->display->display_options['filters']['field_fname_value']['id'] = 'field_fname_value';
   $handler->display->display_options['filters']['field_fname_value']['table'] = 'field_data_field_fname';
   $handler->display->display_options['filters']['field_fname_value']['field'] = 'field_fname_value';
@@ -310,7 +310,7 @@ function esdportal_str_views_default_views() {
     2 => array(),
     3 => array(),
   );
-  /* Filter criterion: User: Last Name (field_lname:format) */
+  /* Filter criterion: : field_lname (field_lname:format) */
   $handler->display->display_options['filters']['field_lname_format']['id'] = 'field_lname_format';
   $handler->display->display_options['filters']['field_lname_format']['table'] = 'field_data_field_lname';
   $handler->display->display_options['filters']['field_lname_format']['field'] = 'field_lname_format';
