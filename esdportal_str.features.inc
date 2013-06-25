@@ -69,6 +69,14 @@ function esdportal_str_image_default_styles() {
  */
 function esdportal_str_node_info() {
   $items = array(
+    '2013_k8_score' => array(
+      'name' => t('2013 K8 score'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'school_profile' => array(
       'name' => t('School Profile'),
       'base' => 'node_content',

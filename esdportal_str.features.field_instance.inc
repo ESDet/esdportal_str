@@ -10,6 +10,262 @@
 function esdportal_str_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-2013_k8_score-body'
+  $field_instances['node-2013_k8_score-body'] = array(
+    'bundle' => '2013_k8_score',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'body',
+    'label' => 'Body',
+    'required' => FALSE,
+    'settings' => array(
+      'display_summary' => TRUE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => -4,
+    ),
+  );
+
+  // Exported field_instance: 'node-2013_k8_score-field_bcode'
+  $field_instances['node-2013_k8_score-field_bcode'] = array(
+    'bundle' => '2013_k8_score',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_bcode',
+    'label' => 'Building code',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => -2,
+    ),
+  );
+
+  // Exported field_instance: 'node-2013_k8_score-field_bname'
+  $field_instances['node-2013_k8_score-field_bname'] = array(
+    'bundle' => '2013_k8_score',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_bname',
+    'label' => 'Building name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -1,
+    ),
+  );
+
+  // Exported field_instance: 'node-2013_k8_score-field_pr1_reading_grade'
+  $field_instances['node-2013_k8_score-field_pr1_reading_grade'] = array(
+    'bundle' => '2013_k8_score',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pr1_reading_grade',
+    'label' => 'pr1_reading_grade',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-2013_k8_score-field_pr1_reading_gradeval'
+  $field_instances['node-2013_k8_score-field_pr1_reading_gradeval'] = array(
+    'bundle' => '2013_k8_score',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pr1_reading_gradeval',
+    'label' => 'pr1_reading_gradeval',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-2013_k8_score-field_pr1_reading_raw'
+  $field_instances['node-2013_k8_score-field_pr1_reading_raw'] = array(
+    'bundle' => '2013_k8_score',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pr1_reading_raw',
+    'label' => 'pr1_reading_raw',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 0,
+    ),
+  );
+
   // Exported field_instance: 'node-school_profile-field_after_school_transportatio'
   $field_instances['node-school_profile-field_after_school_transportatio'] = array(
     'bundle' => 'school_profile',
@@ -87,6 +343,52 @@ function esdportal_str_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_bcode'
+  $field_instances['node-school_profile-field_bcode'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 40,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_bcode',
+    'label' => 'Building code',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 31,
     ),
   );
 
@@ -1161,6 +1463,46 @@ function esdportal_str_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_bcode'
+  $field_instances['taxonomy_term-schools-field_bcode'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 43,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_bcode',
+    'label' => 'Building code',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 33,
     ),
   );
 
@@ -2255,6 +2597,9 @@ function esdportal_str_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('AP Classes');
   t('After School Transportation');
+  t('Body');
+  t('Building code');
+  t('Building name');
   t('Character Development');
   t('College Counseling');
   t('Counselor/Student Ratio');
@@ -2305,6 +2650,9 @@ function esdportal_str_field_default_field_instances() {
   t('What supports are in place for students with special needs?');
   t('What transportation options are available for before and after the regular school day?  How do you determine eligibility?');
   t('Who is responsible for community partnerships and after-school programs at your school?');
+  t('pr1_reading_grade');
+  t('pr1_reading_gradeval');
+  t('pr1_reading_raw');
 
   return $field_instances;
 }
