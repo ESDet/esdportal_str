@@ -1084,7 +1084,6 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
-// begin schools term
   // Exported field_instance: 'taxonomy_term-schools-field_after_school_transportatio'
   $field_instances['taxonomy_term-schools-field_after_school_transportatio'] = array(
     'bundle' => 'schools',
@@ -1959,6 +1958,99 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-schools-field_school_scorecard_status'
+  $field_instances['taxonomy_term-schools-field_school_scorecard_status'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 41,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_school_scorecard_status',
+    'label' => 'School Scorecard status',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 31,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_school_status'
+  $field_instances['taxonomy_term-schools-field_school_status'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 42,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_school_status',
+    'label' => 'School status',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 32,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_school_type'
+  $field_instances['taxonomy_term-schools-field_school_type'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 40,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_school_type',
+    'label' => 'School type',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 30,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-schools-field_special_needs'
   $field_instances['taxonomy_term-schools-field_special_needs'] = array(
     'bundle' => 'schools',
@@ -2159,9 +2251,6 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
-
-// end schools term
-
   // Translatables
   // Included for use with string extractors like potx.
   t('AP Classes');
@@ -2197,6 +2286,9 @@ function esdportal_str_field_default_field_instances() {
   t('Please list the school\'s organized sports offerings.');
   t('School Contact First Name');
   t('School Contact Last Name');
+  t('School Scorecard status');
+  t('School status');
+  t('School type');
   t('Special Needs');
   t('Special Tracks');
   t('Student Development Programs');
