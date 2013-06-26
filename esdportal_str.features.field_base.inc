@@ -815,6 +815,26 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_pr1_reading_credit'
+  $field_bases['field_pr1_reading_credit'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_pr1_reading_credit',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(
+      'decimal_separator' => '.',
+      'precision' => 10,
+      'scale' => 2,
+    ),
+    'translatable' => 0,
+    'type' => 'number_decimal',
+  );
+
   // Exported field_base: 'field_pr1_reading_grade'
   $field_bases['field_pr1_reading_grade'] = array(
     'active' => 1,
@@ -851,26 +871,17 @@ function esdportal_str_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_pr1_reading_gradeval',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
+    'foreign keys' => array(),
+    'indexes' => array(),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'number',
     'settings' => array(
-      'max_length' => 255,
+      'decimal_separator' => '.',
+      'precision' => 10,
+      'scale' => 2,
     ),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'number_decimal',
   );
 
   // Exported field_base: 'field_pr1_reading_raw'
@@ -880,6 +891,44 @@ function esdportal_str_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_pr1_reading_raw',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(
+      'decimal_separator' => '.',
+    ),
+    'translatable' => 0,
+    'type' => 'number_float',
+  );
+
+  // Exported field_base: 'field_pr1_reading_score'
+  $field_bases['field_pr1_reading_score'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_pr1_reading_score',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(
+      'decimal_separator' => '.',
+      'precision' => 10,
+      'scale' => 2,
+    ),
+    'translatable' => 0,
+    'type' => 'number_decimal',
+  );
+
+  // Exported field_base: 'field_pr1_reading_scoremax'
+  $field_bases['field_pr1_reading_scoremax'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_pr1_reading_scoremax',
     'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,

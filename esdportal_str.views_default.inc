@@ -96,7 +96,7 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['nid']['alter']['text'] = 'node/[nid]';
-  /* Field: Broken/missing handler */
+  /* Field: Location: Phone */
   $handler->display->display_options['fields']['phone']['id'] = 'phone';
   $handler->display->display_options['fields']['phone']['table'] = 'location_phone';
   $handler->display->display_options['fields']['phone']['field'] = 'phone';
