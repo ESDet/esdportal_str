@@ -25,6 +25,7 @@ dependencies[] = wysiwyg
 features[ctools][] = data:data_default:1
 features[ctools][] = services:services:3
 features[ctools][] = views:views_default:3.0
+features[data_tables][] = meap_2011
 features[data_tables][] = meap_2012
 features[features_api][] = api:2
 features[field_base][] = body
