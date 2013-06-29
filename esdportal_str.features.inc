@@ -9,6 +9,10 @@
  */
 function esdportal_str_ctools_plugin_api() {
   list($module, $api) = func_get_args();
+  if ($module == "data" && $api == "data_default") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "services" && $api == "services") {
     return array("version" => "3");
   }

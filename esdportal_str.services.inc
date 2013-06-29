@@ -35,13 +35,13 @@ function esdportal_str_default_services_endpoint() {
     ),
   );
   $endpoint->resources = array(
-     'node' => array(
-       'operations' => array(
-         'retrieve' => array(
-           'enabled' => 1,
-         ),
-       ),
-     ),
+    'node' => array(
+      'operations' => array(
+        'retrieve' => array(
+          'enabled' => '1',
+        ),
+      ),
+    ),
     'taxonomy_term' => array(
       'operations' => array(
         'retrieve' => array(
