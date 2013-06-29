@@ -67,8 +67,9 @@ function esdportal_str_data_default() {
         'description' => '',
       ),
       'LOCALE_NAME' => array(
-        'type' => 'int',
+        'type' => 'varchar',
         'size' => 'normal',
+        'length' => '255',
         'not null' => FALSE,
         'description' => '',
       ),
@@ -1242,8 +1243,9 @@ function esdportal_str_data_default() {
         'description' => '',
       ),
       'LOCALE_NAME' => array(
-        'type' => 'int',
+        'type' => 'varchar',
         'size' => 'normal',
+        'length' => '255',
         'not null' => FALSE,
         'description' => '',
       ),
