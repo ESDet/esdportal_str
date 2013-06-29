@@ -39,6 +39,22 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
+  // Exported field_base: 'field_address'
+  $field_bases['field_address'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_address',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'addressfield',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'addressfield',
+  );
+
   // Exported field_base: 'field_after_school_transportatio'
   $field_bases['field_after_school_transportatio'] = array(
     'active' => 1,
@@ -627,107 +643,33 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_location'
-  $field_bases['field_location'] = array(
+  // Exported field_base: 'field_loc_email'
+  $field_bases['field_loc_email'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_location',
-    'foreign keys' => array(),
+    'field_name' => 'field_loc_email',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
     'indexes' => array(
-      'lid' => array(
-        0 => 'lid',
+      'format' => array(
+        0 => 'format',
       ),
     ),
     'locked' => 0,
-    'module' => 'location_cck',
+    'module' => 'text',
     'settings' => array(
-      'gmap_macro' => '[gmap ]',
-      'gmap_marker' => 'drupal',
-      'location_settings' => array(
-        'display' => array(
-          'hide' => array(
-            'additional' => 0,
-            'city' => 0,
-            'coords' => 0,
-            'country' => 0,
-            'country_name' => 0,
-            'email' => 0,
-            'fax' => 0,
-            'locpick' => 0,
-            'map_link' => 0,
-            'name' => 0,
-            'phone' => 0,
-            'postal_code' => 0,
-            'province' => 0,
-            'province_name' => 0,
-            'street' => 0,
-          ),
-        ),
-        'form' => array(
-          'fields' => array(
-            'additional' => array(
-              'collect' => 1,
-              'default' => '',
-              'weight' => -98,
-            ),
-            'city' => array(
-              'collect' => 1,
-              'default' => '',
-              'weight' => -97,
-            ),
-            'country' => array(
-              'collect' => 1,
-              'default' => 'us',
-              'weight' => -94,
-            ),
-            'email' => array(
-              'collect' => 0,
-              'default' => '',
-              'weight' => -92,
-            ),
-            'fax' => array(
-              'collect' => 1,
-              'default' => '',
-              'weight' => -90,
-            ),
-            'locpick' => array(
-              'collect' => 0,
-              'weight' => -93,
-            ),
-            'name' => array(
-              'collect' => 1,
-              'default' => '',
-              'weight' => -100,
-            ),
-            'phone' => array(
-              'collect' => 1,
-              'default' => '',
-              'weight' => -91,
-            ),
-            'postal_code' => array(
-              'collect' => 1,
-              'default' => '',
-              'weight' => -95,
-            ),
-            'province' => array(
-              'collect' => 1,
-              'default' => '',
-              'weight' => -96,
-              'widget' => 'autocomplete',
-            ),
-            'street' => array(
-              'collect' => 1,
-              'default' => '',
-              'weight' => -99,
-            ),
-          ),
-        ),
-      ),
+      'max_length' => 255,
     ),
     'translatable' => 0,
-    'type' => 'location',
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_organized_sports'
@@ -940,6 +882,40 @@ function esdportal_str_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'number_decimal',
+  );
+
+  // Exported field_base: 'field_school'
+  $field_bases['field_school'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_school',
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'schools',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_school_contact_first_name'

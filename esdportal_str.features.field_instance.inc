@@ -1093,43 +1093,6 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-school_profile-field_location'
-  $field_instances['node-school_profile-field_location'] = array(
-    'bundle' => 'school_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'location_cck',
-        'settings' => array(),
-        'type' => 'location_default',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_location',
-    'label' => 'Location',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'location_cck',
-      'settings' => array(),
-      'type' => 'location',
-      'weight' => 3,
-    ),
-  );
-
   // Exported field_instance: 'node-school_profile-field_organized_sports'
   $field_instances['node-school_profile-field_organized_sports'] = array(
     'bundle' => 'school_profile',
@@ -1247,6 +1210,43 @@ function esdportal_str_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_school'
+  $field_instances['node-school_profile-field_school'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 41,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_school',
+    'label' => 'School',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 32,
     ),
   );
 
@@ -1530,83 +1530,61 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-schools-field_after_school_transportatio'
-  $field_instances['taxonomy_term-schools-field_after_school_transportatio'] = array(
+  // Exported field_instance: 'taxonomy_term-schools-field_address'
+  $field_instances['taxonomy_term-schools-field_address'] = array(
     'bundle' => 'schools',
     'default_value' => array(
       0 => array(
-        'value' => 0,
+        'element_key' => 'taxonomy_term|schools|field_address|und|0',
+        'thoroughfare' => '',
+        'premise' => '',
+        'locality' => 'Detroit',
+        'administrative_area' => 'MI',
+        'postal_code' => '',
+        'country' => 'US',
       ),
     ),
     'deleted' => 0,
-    'description' => 'Do you offer transportation for after-school programming?',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 20,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => 44,
       ),
     ),
     'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_after_school_transportatio',
-    'label' => 'After School Transportation',
+    'field_name' => 'field_address',
+    'label' => 'Address',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'addressfield',
       'settings' => array(
-        'display_label' => 1,
+        'available_countries' => array(
+          'US' => 'US',
+        ),
+        'format_handlers' => array(
+          'address' => 'address',
+          'phone' => 'phone',
+          'address-hide-country' => 'address-hide-country',
+          'organisation' => 0,
+          'name-full' => 0,
+          'name-oneline' => 0,
+        ),
       ),
-      'type' => 'options_buttons',
-      'weight' => 14,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_ap_classes'
-  $field_instances['taxonomy_term-schools-field_ap_classes'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Please check all AP classes offered (HS only)',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 38,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_ap_classes',
-    'label' => 'AP Classes',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 10,
+      'type' => 'addressfield_standard',
+      'weight' => 34,
     ),
   );
 
@@ -1650,366 +1628,6 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-schools-field_character_development'
-  $field_instances['taxonomy_term-schools-field_character_development'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'What school-wide programs that support character development do you have?',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 18,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_character_development',
-    'label' => 'Character Development',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 11,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_college_counseling'
-  $field_instances['taxonomy_term-schools-field_college_counseling'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Please describe the college counseling offered to students.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 32,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_college_counseling',
-    'label' => 'College Counseling',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 25,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_counselor_student_ratio'
-  $field_instances['taxonomy_term-schools-field_counselor_student_ratio'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'What is your counselor-to-student ratio?',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 31,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_counselor_student_ratio',
-    'label' => 'Counselor/Student Ratio',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 24,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_discipline_programs'
-  $field_instances['taxonomy_term-schools-field_discipline_programs'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'What school-wide discipline programs do you have? Or, how do you handle discipline at your school?',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 17,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_discipline_programs',
-    'label' => 'Discipline Programs',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 12,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_dual_enrollment'
-  $field_instances['taxonomy_term-schools-field_dual_enrollment'] = array(
-    'bundle' => 'schools',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => 'Do you offer dual enrollment?',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 24,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_dual_enrollment',
-    'label' => 'Dual Enrollment',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_buttons',
-      'weight' => 17,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_dual_enrollment_institutio'
-  $field_instances['taxonomy_term-schools-field_dual_enrollment_institutio'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'If your school offers dual enrollment, with which institutions?',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 25,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_dual_enrollment_institutio',
-    'label' => 'Dual Enrollment Institutions',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 18,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_early_child_center_relatio'
-  $field_instances['taxonomy_term-schools-field_early_child_center_relatio'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'If you have relationships with early child centers, please list which ones.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 36,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_early_child_center_relatio',
-    'label' => 'Early Child Center Relationships',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 29,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_early_childhood_programs'
-  $field_instances['taxonomy_term-schools-field_early_childhood_programs'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Do you offer early childhood programs? If so, please select the years covered by your program.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 34,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_early_childhood_programs',
-    'label' => 'Early Childhood Programs',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 27,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_early_childhood_transition'
-  $field_instances['taxonomy_term-schools-field_early_childhood_transition'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'What do you do to transition children from early childhood programs?',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 35,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_early_childhood_transition',
-    'label' => 'Early Childhood Transition',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 28,
-    ),
-  );
-
   // Exported field_instance: 'taxonomy_term-schools-field_email'
   $field_instances['taxonomy_term-schools-field_email'] = array(
     'bundle' => 'schools',
@@ -2050,322 +1668,8 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-schools-field_english_language_learners'
-  $field_instances['taxonomy_term-schools-field_english_language_learners'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'What supports are in place for English Language Learners?',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 21,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_english_language_learners',
-    'label' => 'English Language Learners',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 15,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_family_supports'
-  $field_instances['taxonomy_term-schools-field_family_supports'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'What resources or supports do you offer families?',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 26,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_family_supports',
-    'label' => 'Family Supports',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 19,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_grades_served'
-  $field_instances['taxonomy_term-schools-field_grades_served'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 37,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_grades_served',
-    'label' => 'Grades Served',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_in_school_programs'
-  $field_instances['taxonomy_term-schools-field_in_school_programs'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'What programs are in place (during school hours) to support your regular curriculum? Please add one per text field and use the "add more" button for each new entry.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 16,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_in_school_programs',
-    'label' => 'In-School Programs',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 9,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_location'
-  $field_instances['taxonomy_term-schools-field_location'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'location_cck',
-        'settings' => array(),
-        'type' => 'location_default',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_location',
-    'label' => 'Location',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'location_cck',
-      'settings' => array(),
-      'type' => 'location',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_organized_sports'
-  $field_instances['taxonomy_term-schools-field_organized_sports'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Please list the school\'s organized sports offerings.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 30,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_organized_sports',
-    'label' => 'Organized Sports',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 23,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_parent_supports'
-  $field_instances['taxonomy_term-schools-field_parent_supports'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'What opportunities do you offer for parents to be involved during or after school?  What time are parent meetings?  What decision-making opportunities are there for parents?  Are there classes for parents?',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 27,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_parent_supports',
-    'label' => 'Parent Supports',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 20,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_person_responsible'
-  $field_instances['taxonomy_term-schools-field_person_responsible'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Who is responsible for community partnerships and after-school programs at your school?',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 15,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_person_responsible',
-    'label' => 'Person Responsible',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 8,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_school_contact_first_name'
-  $field_instances['taxonomy_term-schools-field_school_contact_first_name'] = array(
+  // Exported field_instance: 'taxonomy_term-schools-field_loc_email'
+  $field_instances['taxonomy_term-schools-field_loc_email'] = array(
     'bundle' => 'schools',
     'default_value' => NULL,
     'deleted' => 0,
@@ -2376,18 +1680,12 @@ function esdportal_str_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 45,
       ),
     ),
     'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_school_contact_first_name',
-    'label' => 'School Contact First Name',
+    'field_name' => 'field_loc_email',
+    'label' => 'Email from old location field',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -2400,47 +1698,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_school_contact_last_name'
-  $field_instances['taxonomy_term-schools-field_school_contact_last_name'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_school_contact_last_name',
-    'label' => 'School Contact Last Name',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 35,
     ),
   );
 
@@ -2537,209 +1795,10 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-schools-field_special_needs'
-  $field_instances['taxonomy_term-schools-field_special_needs'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'What supports are in place for students with special needs?',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 22,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_special_needs',
-    'label' => 'Special Needs',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 16,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_special_tracks'
-  $field_instances['taxonomy_term-schools-field_special_tracks'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Do you have linked learning or special tracks? If so, please describe.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 33,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_special_tracks',
-    'label' => 'Special Tracks',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 26,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_student_development_progra'
-  $field_instances['taxonomy_term-schools-field_student_development_progra'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Please list student development programs available during school hours.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 29,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_student_development_progra',
-    'label' => 'Student Development Programs',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 22,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_student_leadership_opportu'
-  $field_instances['taxonomy_term-schools-field_student_leadership_opportu'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Please list the leadership opportunities available for students.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 28,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_student_leadership_opportu',
-    'label' => 'Student Leadership Opportunities',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 21,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_transportation'
-  $field_instances['taxonomy_term-schools-field_transportation'] = array(
-    'bundle' => 'schools',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'What transportation options are available for before and after the regular school day?  How do you determine eligibility?',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 19,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_transportation',
-    'label' => 'Transportation',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 13,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('AP Classes');
+  t('Address');
   t('After School Transportation');
   t('Body');
   t('Building code');
@@ -2758,13 +1817,13 @@ function esdportal_str_field_default_field_instances() {
   t('Early Childhood Programs');
   t('Early Childhood Transition');
   t('Email');
+  t('Email from old location field');
   t('English Language Learners');
   t('Family Supports');
   t('Grades Served');
   t('If you have relationships with early child centers, please list which ones.');
   t('If your school offers dual enrollment, with which institutions?');
   t('In-School Programs');
-  t('Location');
   t('Organized Sports');
   t('Parent Supports');
   t('Person Responsible');
@@ -2773,6 +1832,7 @@ function esdportal_str_field_default_field_instances() {
   t('Please list student development programs available during school hours.');
   t('Please list the leadership opportunities available for students.');
   t('Please list the school\'s organized sports offerings.');
+  t('School');
   t('School Contact First Name');
   t('School Contact Last Name');
   t('School Scorecard status');
