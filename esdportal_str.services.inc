@@ -15,7 +15,7 @@ function esdportal_str_default_services_endpoint() {
   $endpoint->api_version = 3;
   $endpoint->name = 'schools';
   $endpoint->server = 'rest_server';
-  $endpoint->path = 'schools';
+  $endpoint->path = 'api/1.0';
   $endpoint->authentication = array();
   $endpoint->server_settings = array(
     'formatters' => array(
@@ -68,6 +68,13 @@ function esdportal_str_default_services_endpoint() {
       ),
       'actions' => array(
         'getTree' => array(
+          'enabled' => '1',
+        ),
+      ),
+    ),
+    'views' => array(
+      'operations' => array(
+        'retrieve' => array(
           'enabled' => '1',
         ),
       ),

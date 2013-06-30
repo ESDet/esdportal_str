@@ -2367,5 +2367,154 @@ function esdportal_str_data_default() {
   );
   $export['meap_2012'] = $data_table;
 
+  $data_table = new stdClass();
+  $data_table->disabled = FALSE;
+  $data_table->api_version = 1;
+  $data_table->title = 'ESD K8 2013 Data';
+  $data_table->name = 'esd_k8_2013';
+  $data_table->table_schema = array(
+    'description' => '',
+    'fields' => array(
+      'buildingcode' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'buildingname' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'isdcode' => array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'isdname' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'districtname' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'districtcode' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      /* begin repeater fields */
+      'XXX_raw' => array( // unsigned float
+        'type' => 'float',
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'XXX_grade' => array( // tiny char
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'XXX_gradeval' => array( // decimal
+        'type' => 'numeric',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'XXX_credit' => array( // decimal
+        'type' => 'numeric',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      'XXX_points' => array( // decimal
+        'type' => 'numeric',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      /* end repeater fields */
+      'total_credit' => array( // decimal
+        'type' => 'numeric',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      'total_credit_fixed' => array( // decimal
+        'type' => 'numeric',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      'total_points' => array( // decimal
+        'type' => 'numeric',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      'total_gpa' => array( // float
+        'type' => 'float',
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'total_gpa_fixed' => array( // float
+        'type' => 'float',
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'cumulative_grade' => array( // a-f
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+
+    ),
+    'name' => 'esd_k8_2013',
+    'primary key' => array(
+      0 => 'buildingcode',
+    ),
+  );
+  $data_table->meta = array(
+    'fields' => array(
+    ),
+  );
+  $export['esd_k8_2013'] = $data_table;
+
   return $export;
 }
