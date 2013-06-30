@@ -1234,7 +1234,8 @@ function esdportal_str_data_default() {
         'type' => 'int',
         'size' => 'medium',
         'unsigned' => TRUE,
-        'not null' => FALSE,
+        'not null' => TRUE,
+        'default' => 0,
         'description' => '',
       ),
       'BuildingName' => array(
@@ -1972,6 +1973,9 @@ function esdportal_str_data_default() {
       ),
     ),
     'name' => 'meap_2012',
+    'primary key' => array(
+      0 => 'BuildingCode',
+    ),
   );
   $data_table->meta = array(
     'fields' => array(
