@@ -2367,6 +2367,10 @@ function esdportal_str_data_default() {
   );
   $export['meap_2012'] = $data_table;
 
+  /**
+   * k8 data
+   */
+
   $data_table = new stdClass();
   $data_table->disabled = FALSE;
   $data_table->api_version = 1;
@@ -2417,47 +2421,7 @@ function esdportal_str_data_default() {
         'not null' => FALSE,
         'description' => '',
       ),
-      /* begin repeater fields */
-      'XXX_raw' => array( // unsigned float
-        'type' => 'float',
-        'size' => 'normal',
-        'unsigned' => TRUE,
-        'not null' => FALSE,
-        'description' => '',
-      ),
-      'XXX_grade' => array( // tiny char
-        'type' => 'varchar',
-        'size' => 'normal',
-        'length' => '255',
-        'not null' => FALSE,
-        'description' => '',
-      ),
-      'XXX_gradeval' => array( // decimal
-        'type' => 'numeric',
-        'precision' => 8,
-        'scale' => 2,
-        'size' => 'normal',
-        'unsigned' => TRUE,
-        'not null' => FALSE,
-        'description' => '',
-      ),
-      'XXX_credit' => array( // decimal
-        'type' => 'numeric',
-        'precision' => 8,
-        'scale' => 2,
-        'size' => 'normal',
-        'unsigned' => TRUE,
-        'not null' => FALSE,
-      ),
-      'XXX_points' => array( // decimal
-        'type' => 'numeric',
-        'precision' => 8,
-        'scale' => 2,
-        'size' => 'normal',
-        'unsigned' => TRUE,
-        'not null' => FALSE,
-      ),
-      /* end repeater fields */
+      // this is where repeater fields go!
       'total_credit' => array( // decimal
         'type' => 'numeric',
         'precision' => 8,
@@ -2510,6 +2474,49 @@ function esdportal_str_data_default() {
       0 => 'buildingcode',
     ),
   );
+  // add repeated fields
+  $repeated_col_basenames = array('pr1_reading', 'pr1_math', 'pr1_other', 'pr3_reading', 'pr3_math', 'pr3_other', 'prog_reading', 'plci_reading', 'nwea1_reading', 'nwea3_reading', 'prog_math', 'plci_math', 'nwea1_math', 'nwea3_math', 'five_e', 'five_e_trend', 'csv_scle', 'csv_hel', 'csv_pcr', 'attend', 'truancy', 'ret_yoy', 'ret_stf', 'focus');
+  foreach ($repeated_col_basenames as $basename) {
+    $data_table->table_schema['fields'][$basename . '_raw'] = array( // unsigned float
+      'type' => 'float',
+      'size' => 'normal',
+      'unsigned' => TRUE,
+      'not null' => FALSE,
+      'description' => '',
+    );
+    $data_table->table_schema['fields'][$basename . '_grade'] = array( // tiny char
+      'type' => 'varchar',
+      'size' => 'normal',
+      'length' => '255',
+      'not null' => FALSE,
+      'description' => '',
+    );
+    $data_table->table_schema['fields'][$basename . '_gradeval'] = array( // decimal
+      'type' => 'numeric',
+      'precision' => 8,
+      'scale' => 2,
+      'size' => 'normal',
+      'unsigned' => TRUE,
+      'not null' => FALSE,
+      'description' => '',
+    );
+    $data_table->table_schema['fields'][$basename . '_credit'] = array( // decimal
+      'type' => 'numeric',
+      'precision' => 8,
+      'scale' => 2,
+      'size' => 'normal',
+      'unsigned' => TRUE,
+      'not null' => FALSE,
+    );
+    $data_table->table_schema['fields'][$basename . '_points'] = array( // decimal
+      'type' => 'numeric',
+      'precision' => 8,
+      'scale' => 2,
+      'size' => 'normal',
+      'unsigned' => TRUE,
+      'not null' => FALSE,
+    );
+  }
   $data_table->meta = array(
     'fields' => array(
     ),
@@ -2518,3 +2525,7 @@ function esdportal_str_data_default() {
 
   return $export;
 }
+
+// testing
+$obj = esdportal_str_data_default();
+print_r( $obj['esd_k8_2013']->table_schema );
