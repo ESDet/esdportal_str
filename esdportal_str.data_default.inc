@@ -2475,7 +2475,7 @@ function esdportal_str_data_default() {
     ),
   );
   // add repeated fields
-  $repeated_col_basenames = array('pr1_reading', 'pr1_math', 'pr1_other', 'pr3_reading', 'pr3_math', 'pr3_other', 'prog_reading', 'plci_reading', 'nwea1_reading', 'nwea3_reading', 'prog_math', 'plci_math', 'nwea1_math', 'nwea3_math', 'five_e', 'five_e_trend', 'csv_scle', 'csv_hel', 'csv_pcr', 'attend', 'truancy', 'ret_yoy', 'ret_stf', 'focus');
+  $repeated_col_basenames = array('pr1_reading', 'pr1_math', 'pr1_other', 'pr3_reading', 'pr3_math', 'pr3_other', 'prog_reading', 'plci_reading', 'nwea1_reading', 'nwea3_reading', 'prog_math', 'plci_math', 'nwea1_math', 'nwea3_math', 'five_e', 'five_e_trend', 'csv_scle', 'csv_hel', 'csv_pcr', 'attend', 'truancy', 'ret_yoy', 'ret_stf', 'focus', 'five_domain');
   foreach ($repeated_col_basenames as $basename) {
     $data_table->table_schema['fields'][$basename . '_raw'] = array( // unsigned float
       'type' => 'float',
@@ -2517,15 +2517,185 @@ function esdportal_str_data_default() {
       'not null' => FALSE,
     );
   }
+  /* do we need this?
   $data_table->meta = array(
     'fields' => array(
     ),
   );
+  */
   $export['esd_k8_2013'] = $data_table;
+
+  /**
+   * h2 data
+   */
+
+  $data_table = new stdClass();
+  $data_table->disabled = FALSE;
+  $data_table->api_version = 1;
+  $data_table->title = 'ESD Highschool 2013 Data';
+  $data_table->name = 'esd_hs_2013';
+  $data_table->table_schema = array(
+    'description' => '',
+    'fields' => array(
+      'buildingcode' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'practicalschoolname' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'technicalschoolname' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'isdcode' => array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'isdname' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'districtcode' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'districtname' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'buildingname' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+
+      // this is where repeater fields go!
+      'total_credit' => array( // decimal
+        'type' => 'numeric',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      'total_credit_fixed' => array( // decimal
+        'type' => 'numeric',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      'total_points' => array( // decimal
+        'type' => 'numeric',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      'total_gpa' => array( // float
+        'type' => 'float',
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'total_gpa_fixed' => array( // float
+        'type' => 'float',
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'cumulative_grade' => array( // a-f
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+
+    ),
+    'name' => 'esd_hs_2013',
+    'primary key' => array(
+      0 => 'buildingcode',
+    ),
+  );
+  // add repeated fields
+  $repeated_col_basenames = array('act1_comp', 'act1_pcr', 'act3_comp', 'act3_pcr', 'gradrate', 'cer_raw', 'prog_comp_raw', 'prog_pcr', 'prog_gradrate', 'prog_cer', 'csv_hel', 'csv_pcr', 'csv_scle', 'five_e', 'attend', 'focus', 'truancy', 'ret_yoy', 'ret_stf', 'fafsa');
+  foreach ($repeated_col_basenames as $basename) {
+    $data_table->table_schema['fields'][$basename . '_raw'] = array( // unsigned float
+      'type' => 'float',
+      'size' => 'normal',
+      'unsigned' => TRUE,
+      'not null' => FALSE,
+      'description' => '',
+    );
+    $data_table->table_schema['fields'][$basename . '_grade'] = array( // tiny char
+      'type' => 'varchar',
+      'size' => 'normal',
+      'length' => '255',
+      'not null' => FALSE,
+      'description' => '',
+    );
+    $data_table->table_schema['fields'][$basename . '_gradeval'] = array( // decimal
+      'type' => 'numeric',
+      'precision' => 8,
+      'scale' => 2,
+      'size' => 'normal',
+      'unsigned' => TRUE,
+      'not null' => FALSE,
+      'description' => '',
+    );
+    $data_table->table_schema['fields'][$basename . '_credit'] = array( // decimal
+      'type' => 'numeric',
+      'precision' => 8,
+      'scale' => 2,
+      'size' => 'normal',
+      'unsigned' => TRUE,
+      'not null' => FALSE,
+    );
+    $data_table->table_schema['fields'][$basename . '_points'] = array( // decimal
+      'type' => 'numeric',
+      'precision' => 8,
+      'scale' => 2,
+      'size' => 'normal',
+      'unsigned' => TRUE,
+      'not null' => FALSE,
+    );
+  }
+  /* do we need this?
+  $data_table->meta = array(
+    'fields' => array(
+    ),
+  );
+  */
+  $export['esd_hs_2013'] = $data_table;
 
   return $export;
 }
 
-// testing
-$obj = esdportal_str_data_default();
-print_r( $obj['esd_k8_2013']->table_schema );
