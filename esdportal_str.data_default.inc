@@ -2517,7 +2517,7 @@ function esdportal_str_data_default() {
       'not null' => FALSE,
     );
   }
-  $data_table->meta = '';
+  $data_table->meta = array('fields' => array());
   $export['esd_k8_2013'] = $data_table;
 
   /**
@@ -2683,7 +2683,7 @@ function esdportal_str_data_default() {
       'not null' => FALSE,
     );
   }
-  $data_table->meta = '';
+  $data_table->meta = array('fields' => array());
   $export['esd_hs_2013'] = $data_table;
 
   return $export;
