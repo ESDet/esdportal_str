@@ -60,6 +60,12 @@ function esdportal_str_context_default_contexts() {
           'region' => 'branding',
           'weight' => '-10',
         ),
+        'views-54e4930dd771c60a38e87c5edbc733bb' => array(
+          'module' => 'views',
+          'delta' => '54e4930dd771c60a38e87c5edbc733bb',
+          'region' => 'branding',
+          'weight' => '-9',
+        ),
       ),
     ),
   );
