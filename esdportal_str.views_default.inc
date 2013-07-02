@@ -1751,6 +1751,19 @@ function esdportal_str_views_default_views() {
       'empty_column' => 0,
     ),
   );
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['label'] = 'schools';
+  $handler->display->display_options['relationships']['term_node_tid']['required'] = TRUE;
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'schools' => 'schools',
+    'school_scorecard_status' => 0,
+    'school_status' => 0,
+    'school_type' => 0,
+    'tags' => 0,
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -1769,6 +1782,22 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['label'] = 'Edit';
+  /* Field: Field: Building code */
+  $handler->display->display_options['fields']['field_bcode']['id'] = 'field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['table'] = 'field_data_field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['field'] = 'field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['fields']['field_bcode']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_bcode']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = 'Scores';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="/admin/content/data/view/esd_hs_2013?bcode=[field_bcode]">ESD HS 2013</a>, <a href="/admin/content/data/view/esd_k8_2013?bcode=[field_bcode]">ESD K8 2013</a>, <a href="/admin/content/data/view/meap_2012?bcode=[field_bcode]">MEAP 2012</a>';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -1782,7 +1811,6 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'php';
   $handler->display->display_options['arguments']['nid']['default_argument_options']['code'] = 'global $user;
 $nids = db_query("SELECT GROUP_CONCAT(CAST(an.nid AS CHAR) SEPARATOR \',\') FROM {acl_user} au INNER JOIN {acl_node} an ON au.acl_id = an.acl_id WHERE an.grant_update = 1 AND au.uid = :uid", array("uid" => $user->uid))->fetchField();
-dsm($nids);
 return $nids;';
   $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
