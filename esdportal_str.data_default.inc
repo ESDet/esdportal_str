@@ -1992,6 +1992,532 @@ function esdportal_str_data_default() {
   $data_table = new stdClass();
   $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
   $data_table->api_version = 1;
+  $data_table->title = 'Five Essentials 2013';
+  $data_table->name = 'fiveessentials_2013';
+  $data_table->table_schema = array(
+    'description' => '',
+    'fields' => array(
+      'BCODE' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'School_Reporting_Slug' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'State_Schl_ID' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'District_Schl_ID' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'School_Level' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'Student_Report' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'Teacher_Report' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'Student_Response_Rate' => array(
+        'type' => 'numeric',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      'Teacher_Response_Rate' => array(
+        'type' => 'numeric',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      'Student_Lazy_Rate' => array(
+        'type' => 'numeric',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      'Teacher_Lazy_Rate' => array(
+        'type' => 'numeric',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      'CONTINUING_4_YEAR' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'Student_N' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'Teacher_N' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'ACNO' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'CLAR' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'COLB' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'COLR' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'DATA' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'ENGG' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'ENGL' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'HUMR' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'INFL' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'INST' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'MATH' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'OUTR' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'PART' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'PEER' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'PERC' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'PGMC' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'PRES' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'PRT2' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'PRTI' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'QPD2' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'REFD' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'SAFE' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'SCMT' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'SDIS' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'SLAP' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'SOCZ' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'STDY' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'TRPA' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'TRPR' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'TRTE' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'TRTS' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'TSAF' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'UEXP' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'Category5E' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'Net5e' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'E_leaders' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'E_teachers' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'E_families' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'E_environment' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'E_instruction' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'School_Name' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+    ),
+    'name' => 'fiveessentials_2013',
+    'primary key' => array(
+      0 => 'BCODE',
+    ),
+  );
+  $data_table->meta = array(
+    'fields' => array(
+      'ACNO' => array(
+        'label' => 'Peer Support for Academic Work (Student)',
+      ),
+      'CLAR' => array(
+        'label' => 'Course Clarity (Student)',
+      ),
+      'COLB' => array(
+        'label' => 'Teacher Collaboration (Teacher)',
+      ),
+      'COLR' => array(
+        'label' => 'Collective Responsibility (Teacher)',
+      ),
+      'DATA' => array(
+        'label' => 'Collective Use of Assessment Data (Teacher)',
+      ),
+      'ENGG' => array(
+        'label' => 'Academic Engagement (Student)',
+      ),
+      'ENGL' => array(
+        'label' => 'English Instruction (Student)',
+      ),
+      'HUMR' => array(
+        'label' => 'Human & Social Resources in the Community (Student)',
+      ),
+      'INFL' => array(
+        'label' => 'Teacher Influence (Teacher)',
+      ),
+      'INST' => array(
+        'label' => 'Principal Instructional Leadership (Teacher)',
+      ),
+      'MATH' => array(
+        'label' => 'Math Instruction (Student)',
+      ),
+      'OUTR' => array(
+        'label' => 'Outreach to Parents (Teacher)',
+      ),
+      'PART' => array(
+        'label' => 'Parent Involvement in School (Teacher)',
+      ),
+      'PEER' => array(
+        'label' => 'Student Classroom Behavior (Student)',
+      ),
+      'PERC' => array(
+        'label' => 'Academic Personalism (Student)',
+      ),
+      'PGMC' => array(
+        'label' => 'Program Coherence (Teacher)',
+      ),
+      'PRES' => array(
+        'label' => 'Academic Press (Student)',
+      ),
+      'PRTI' => array(
+        'label' => 'Student Responsibility (Teacher)',
+      ),
+      'PSAA' => array(
+        'label' => 'Peer Support for Academic Achievement (Student)',
+      ),
+      'QPD2' => array(
+        'label' => 'Quality Professional Development (Teacher)',
+      ),
+      'REFD' => array(
+        'label' => 'Reflective Dialogue (Teacher)',
+      ),
+      'SAFE' => array(
+        'label' => 'Safety (Student)',
+      ),
+      'SCIE' => array(
+        'label' => 'Inquiry-Based Science Instruction (Student)',
+      ),
+      'SCMT' => array(
+        'label' => 'School Commitment (Teacher)',
+      ),
+      'SDIS' => array(
+        'label' => 'Quality of Student Discussion (Teacher)',
+      ),
+      'SLAP' => array(
+        'label' => 'School-Wide Future Orientation (Student)',
+      ),
+      'SOCZ' => array(
+        'label' => 'Socialization of New Teachers (Teacher)',
+      ),
+      'STDY' => array(
+        'label' => 'Rigorous Study Habits (Student)',
+      ),
+      'TRPA' => array(
+        'label' => 'Teacher-Parent Trust (Teacher)',
+      ),
+      'TRPR' => array(
+        'label' => 'Teacher-Principal Trust (Teacher)',
+      ),
+      'TRTE' => array(
+        'label' => 'Teacher-Teacher Trust (Teacher)',
+      ),
+      'TRTS' => array(
+        'label' => 'Student-Teacher Trust (Student)',
+      ),
+      'TSAF' => array(
+        'label' => 'Teacher Safety (Teacher)',
+      ),
+      'TSUP' => array(
+        'label' => 'Teacher Personal Support (Student)',
+      ),
+      'UEXP' => array(
+        'label' => 'Expectations for Postsecondary Education (Student)',
+      ),
+      'School_Reporting_Slug' => array(
+        'label' => '5Essentials Internal School Identifier',
+      ),
+      'State_Schl_ID' => array(
+        'label' => 'School\'s State Identifier',
+      ),
+      'District_School_Id' => array(
+        'label' => 'School ID provided by DPS or charter school network',
+      ),
+      'School_Level' => array(
+        'label' => '1 or 2: 1 if elementary (PK-8) and 2 if high school',
+      ),
+      'Student_Report' => array(
+        'label' => '0 or 1: 1 if eligible for student report',
+      ),
+      'Teacher_Report' => array(
+        'label' => '0 or 1: 1 if eligible for teacher report',
+      ),
+      'Student_Response_Rate' => array(
+        'label' => 'Response rate on teacher survey',
+      ),
+      'Teacher_Response_Rate' => array(
+        'label' => 'Response rate on teacher survey',
+      ),
+      'Student_Lazy_Rate' => array(
+        'label' => 'Percentage of "lazy" respondents for students',
+      ),
+      'Teacher_Lazy_Rate' => array(
+        'label' => 'Percentage of "lazy" respondents for teachers',
+      ),
+      'Student_N' => array(
+        'label' => 'Total number of students listed on roster',
+      ),
+      'Teacher_N' => array(
+        'label' => 'Total number of teachers listed on roster',
+      ),
+      'Net5E' => array(
+        'label' => 'Net 5Essentials Score (# strong - # weak)',
+      ),
+      'Category_5e' => array(
+        'label' => 'Category of Improvement: Not Yet Organized: 1 Partially Organized: 2 Moderately Organized: 3 Organized: 4 Well Organized: 5',
+      ),
+      'E_leaders' => array(
+        'label' => 'Essential: Effective Leaders',
+      ),
+      'E_teachers' => array(
+        'label' => 'Essential: Collaborative Teachers',
+      ),
+      'E_families' => array(
+        'label' => 'Essential: Involved Families',
+      ),
+      'E_environment' => array(
+        'label' => 'Essential: Supportive Environment',
+      ),
+      'E_instruction' => array(
+        'label' => 'Essential: Ambitious Instruction',
+      ),
+      'Location' => array(
+        'label' => 'School Address',
+      ),
+    ),
+  );
+  $export['fiveessentials_2013'] = $data_table;
+
+  $data_table = new stdClass();
+  $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
+  $data_table->api_version = 1;
   $data_table->title = 'MEAP 2011';
   $data_table->name = 'meap_2011';
   $data_table->table_schema = array(
@@ -4345,188 +4871,6 @@ function esdportal_str_data_default() {
     ),
   );
   $export['meap_2012'] = $data_table;
-
-  /**
-   * 5 Essentials 2013
-   */
-  $data_table = new stdClass();
-  $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
-  $data_table->api_version = 1;
-  $data_table->title = 'Five Essentials 2013';
-  $data_table->name = 'fiveessentials_2013';
-  $data_table->table_schema = array(
-    'description' => '',
-    'fields' => array(
-      'BCODE' => array(
-        'type' => 'int',
-        'size' => 'medium',
-        'unsigned' => TRUE,
-        'not null' => TRUE,
-        'default' => 0,
-        'description' => '',
-      ),
-      'School_Reporting_Slug' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'State_Schl_ID' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'District_Schl_ID' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'School_Level' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'Student_Report' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'Teacher_Report' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'Student_Response_Rate' => array(
-        'type' => 'numeric',
-        'precision' => 8,
-        'scale' => 2,
-        'size' => 'normal',
-        'unsigned' => TRUE,
-        'not null' => FALSE,
-      ),
-      'Teacher_Response_Rate' => array(
-        'type' => 'numeric',
-        'precision' => 8,
-        'scale' => 2,
-        'size' => 'normal',
-        'unsigned' => TRUE,
-        'not null' => FALSE,
-      ),
-      'Student_Lazy_Rate' => array(
-        'type' => 'numeric',
-        'precision' => 8,
-        'scale' => 2,
-        'size' => 'normal',
-        'unsigned' => TRUE,
-        'not null' => FALSE,
-      ),
-      'Teacher_Lazy_Rate' => array(
-        'type' => 'numeric',
-        'precision' => 8,
-        'scale' => 2,
-        'size' => 'normal',
-        'unsigned' => TRUE,
-        'not null' => FALSE,
-      ),
-      'CONTINUING_4_YEAR' => array(
-        'type' => 'int',
-        'size' => 'normal',
-        'not null' => FALSE,
-        'description' => '',
-      ),
-      'Student_N' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'Teacher_N' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'ACNO' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'CLAR' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'COLB' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'COLR' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'DATA' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'ENGG' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'ENGL' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'HUMR' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'INFL' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'INST' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'MATH' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'OUTR' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'PART' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'PEER' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'PERC' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'PGMC' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'PRES' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'PRT2' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'PRTI' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'QPD2' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'REFD' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'SAFE' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'SCMT' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'SDIS' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'SLAP' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'SOCZ' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'STDY' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'TRPA' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'TRPR' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'TRTE' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'TRTS' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'TSAF' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'UEXP' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'Category5E' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'Net5e' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'E_leaders' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'E_teachers' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'E_families' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'E_environment' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'E_instruction' => array('type' => 'int', 'size' => 'normal', 'not null' => FALSE, 'description' => ''),
-      'School_Name' => array(
-        'type' => 'varchar',
-        'size' => 'normal',
-        'length' => '255',
-        'not null' => FALSE,
-        'description' => '',
-      ),
-    ),
-    'name' => 'fiveessentials_2013',
-    'primary key' => array(
-      0 => 'BCODE',
-    ),
-  );
-  $data_table->meta = array(
-    'fields' => array(
-      // measures
-      'ACNO' => array('label' => 'Peer Support for Academic Work (Student)'),
-      'CLAR' => array('label' => 'Course Clarity (Student)'),
-      'COLB' => array('label' => 'Teacher Collaboration (Teacher)'),
-      'COLR' => array('label' => 'Collective Responsibility (Teacher)'),
-      'DATA' => array('label' => 'Collective Use of Assessment Data (Teacher)'),
-      'ENGG' => array('label' => 'Academic Engagement (Student)'),
-      'ENGL' => array('label' => 'English Instruction (Student)'),
-      'HUMR' => array('label' => 'Human & Social Resources in the Community (Student)'),
-      'INFL' => array('label' => 'Teacher Influence (Teacher)'),
-      'INST' => array('label' => 'Principal Instructional Leadership (Teacher)'),
-      'MATH' => array('label' => 'Math Instruction (Student)'),
-      'OUTR' => array('label' => 'Outreach to Parents (Teacher)'),
-      'PART' => array('label' => 'Parent Involvement in School (Teacher)'),
-      'PEER' => array('label' => 'Student Classroom Behavior (Student)'),
-      'PERC' => array('label' => 'Academic Personalism (Student)'),
-      'PGMC' => array('label' => 'Program Coherence (Teacher)'),
-      'PRES' => array('label' => 'Academic Press (Student)'),
-      'PRTI' => array('label' => 'Student Responsibility (Teacher)'),
-      'PSAA' => array('label' => 'Peer Support for Academic Achievement (Student)'),
-      'QPD2' => array('label' => 'Quality Professional Development (Teacher)'),
-      'REFD' => array('label' => 'Reflective Dialogue (Teacher)'),
-      'SAFE' => array('label' => 'Safety (Student)'),
-      'SCIE' => array('label' => 'Inquiry-Based Science Instruction (Student)'),
-      'SCMT' => array('label' => 'School Commitment (Teacher)'),
-      'SDIS' => array('label' => 'Quality of Student Discussion (Teacher)'),
-      'SLAP' => array('label' => 'School-Wide Future Orientation (Student)'),
-      'SOCZ' => array('label' => 'Socialization of New Teachers (Teacher)'),
-      'STDY' => array('label' => 'Rigorous Study Habits (Student)'),
-      'TRPA' => array('label' => 'Teacher-Parent Trust (Teacher)'),
-      'TRPR' => array('label' => 'Teacher-Principal Trust (Teacher)'),
-      'TRTE' => array('label' => 'Teacher-Teacher Trust (Teacher)'),
-      'TRTS' => array('label' => 'Student-Teacher Trust (Student)'),
-      'TSAF' => array('label' => 'Teacher Safety (Teacher)'),
-      'TSUP' => array('label' => 'Teacher Personal Support (Student)'),
-      'UEXP' => array('label' => 'Expectations for Postsecondary Education (Student)'),
-      // other variables
-      'School_Reporting_Slug' => array('label' => '5Essentials Internal School Identifier'),
-      'State_Schl_ID' => array('label' => "School's State Identifier"),
-      'District_School_Id' => array('label' => 'School ID provided by DPS or charter school network'),
-      'School_Level' => array('label' => '1 or 2: 1 if elementary (PK-8) and 2 if high school'),
-      'Student_Report' => array('label' => '0 or 1: 1 if eligible for student report'),
-      'Teacher_Report' => array('label' => '0 or 1: 1 if eligible for teacher report'),
-      'Student_Response_Rate' => array('label' => 'Response rate on teacher survey'),
-      'Teacher_Response_Rate' => array('label' => 'Response rate on teacher survey'),
-      'Student_Lazy_Rate' => array('label' => 'Percentage of "lazy" respondents for students'),
-      'Teacher_Lazy_Rate' => array('label' => 'Percentage of "lazy" respondents for teachers'),
-      'Student_N' => array('label' => 'Total number of students listed on roster'),
-      'Teacher_N' => array('label' => 'Total number of teachers listed on roster'),
-      'Net5E' => array('label' => 'Net 5Essentials Score (# strong - # weak)'),
-      'Category_5e' => array('label' => "Category of Improvement: Not Yet Organized: 1 Partially Organized: 2 Moderately Organized: 3 Organized: 4 Well Organized: 5"),
-      'E_leaders' => array('label' => 'Essential: Effective Leaders'),
-      'E_teachers' => array('label' => 'Essential: Collaborative Teachers'),
-      'E_families' => array('label' => 'Essential: Involved Families'),
-      'E_environment' => array('label' => 'Essential: Supportive Environment'),
-      'E_instruction' => array('label' => 'Essential: Ambitious Instruction'),
-      'Location' => array('label' => 'School Address'),
-    ),
-  );
-
-  $export['fiveessentials_2013'] = $data_table;
 
   return $export;
 }

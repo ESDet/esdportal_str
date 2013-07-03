@@ -11,6 +11,585 @@ function esdportal_str_views_default_views() {
   $export = array();
 
   $view = new view();
+  $view->name = 'fiveessentials_2013';
+  $view->description = 'Default view for data table Five Essentials 2013';
+  $view->tag = 'data table';
+  $view->base_table = 'fiveessentials_2013';
+  $view->human_name = '';
+  $view->core = 0;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Default */
+  $handler = $view->new_display('default', 'Default', 'default');
+  $handler->display->display_options['title'] = 'Five Essentials 2013';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['grouping'] = '';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'BCODE' => 'BCODE',
+    'School Reporting Slug' => 'School Reporting Slug',
+    'State_Schl_ID' => 'State_Schl_ID',
+    'District_Schl_ID' => 'District_Schl_ID',
+    'School_Level' => 'School_Level',
+    'Student_Report' => 'Student_Report',
+    'Teacher_Report' => 'Teacher_Report',
+    'Student_Response_Rate' => 'Student_Response_Rate',
+    'Teacher_Response_Rate' => 'Teacher_Response_Rate',
+    'Student_Lazy_Rate' => 'Student_Lazy_Rate',
+    'Teacher_Lazy_Rate' => 'Teacher_Lazy_Rate',
+    'CONTINUING_4_YEAR' => 'CONTINUING_4_YEAR',
+    'Student_N' => 'Student_N',
+    'Teacher_N' => 'Teacher_N',
+    'ACNO' => 'ACNO',
+    'CLAR' => 'CLAR',
+    'COLB' => 'COLB',
+    'COLR' => 'COLR',
+    'DATA' => 'DATA',
+    'ENGG' => 'ENGG',
+    'ENGL' => 'ENGL',
+    'HUMR' => 'HUMR',
+    'INFL' => 'INFL',
+    'INST' => 'INST',
+    'MATH' => 'MATH',
+    'OUTR' => 'OUTR',
+    'PART' => 'PART',
+    'PEER' => 'PEER',
+    'PERC' => 'PERC',
+    'PGMC' => 'PGMC',
+    'PRES' => 'PRES',
+    'PRT2' => 'PRT2',
+    'PRTI' => 'PRTI',
+    'QPD2' => 'QPD2',
+    'REFD' => 'REFD',
+    'SAFE' => 'SAFE',
+    'SCMT' => 'SCMT',
+    'SDIS' => 'SDIS',
+    'SLAP' => 'SLAP',
+    'SOCZ' => 'SOCZ',
+    'STDY' => 'STDY',
+    'TRPA' => 'TRPA',
+    'TRPR' => 'TRPR',
+    'TRTE' => 'TRTE',
+    'TRTS' => 'TRTS',
+    'TSAF' => 'TSAF',
+    'UEXP' => 'UEXP',
+    'Category5E' => 'Category5E',
+    'Net5e' => 'Net5e',
+    'E_leaders' => 'E_leaders',
+    'E_teachers' => 'E_teachers',
+    'E_families' => 'E_families',
+    'E_environment' => 'E_environment',
+    'E_instruction' => 'E_instruction',
+    'School_Name' => 'School_Name',
+  );
+  $handler->display->display_options['style_options']['default'] = -1;
+  $handler->display->display_options['style_options']['info'] = array(
+    'BCODE' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'School Reporting Slug' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'State_Schl_ID' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'District_Schl_ID' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'School_Level' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Student_Report' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Teacher_Report' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Student_Response_Rate' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Teacher_Response_Rate' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Student_Lazy_Rate' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Teacher_Lazy_Rate' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'CONTINUING_4_YEAR' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Student_N' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Teacher_N' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'ACNO' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'CLAR' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'COLB' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'COLR' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'DATA' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'ENGG' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'ENGL' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'HUMR' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'INFL' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'INST' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'MATH' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'OUTR' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'PART' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'PEER' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'PERC' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'PGMC' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'PRES' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'PRT2' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'PRTI' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'QPD2' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'REFD' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'SAFE' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'SCMT' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'SDIS' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'SLAP' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'SOCZ' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'STDY' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'TRPA' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'TRPR' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'TRTE' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'TRTS' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'TSAF' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'UEXP' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Category5E' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Net5e' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'E_leaders' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'E_teachers' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'E_families' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'E_environment' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'E_instruction' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'School_Name' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+  );
+  $handler->display->display_options['style_options']['sticky'] = TRUE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['text']['id'] = 'area';
+  $handler->display->display_options['empty']['text']['table'] = 'views';
+  $handler->display->display_options['empty']['text']['field'] = 'area';
+  $handler->display->display_options['empty']['text']['content'] = 'There is no data in this table.';
+  $handler->display->display_options['empty']['text']['format'] = '1';
+  /* Field: Five Essentials 2013: Bcode */
+  $handler->display->display_options['fields']['BCODE']['id'] = 'BCODE';
+  $handler->display->display_options['fields']['BCODE']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['BCODE']['field'] = 'BCODE';
+  $handler->display->display_options['fields']['BCODE']['label'] = 'BCODE';
+  /* Field: Broken/missing handler */
+  $handler->display->display_options['fields']['School Reporting Slug']['id'] = 'School Reporting Slug';
+  $handler->display->display_options['fields']['School Reporting Slug']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['School Reporting Slug']['field'] = 'School Reporting Slug';
+  $handler->display->display_options['fields']['School Reporting Slug']['label'] = '5Essentials Internal School Identifier';
+  /* Field: Five Essentials 2013: School's State Identifier */
+  $handler->display->display_options['fields']['State_Schl_ID']['id'] = 'State_Schl_ID';
+  $handler->display->display_options['fields']['State_Schl_ID']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['State_Schl_ID']['field'] = 'State_Schl_ID';
+  /* Field: Five Essentials 2013: District schl id */
+  $handler->display->display_options['fields']['District_Schl_ID']['id'] = 'District_Schl_ID';
+  $handler->display->display_options['fields']['District_Schl_ID']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['District_Schl_ID']['field'] = 'District_Schl_ID';
+  $handler->display->display_options['fields']['District_Schl_ID']['label'] = 'District_Schl_ID';
+  /* Field: Five Essentials 2013: 1 or 2: 1 if elementary (PK-8) and 2 if high school */
+  $handler->display->display_options['fields']['School_Level']['id'] = 'School_Level';
+  $handler->display->display_options['fields']['School_Level']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['School_Level']['field'] = 'School_Level';
+  /* Field: Five Essentials 2013: 0 or 1: 1 if eligible for student report */
+  $handler->display->display_options['fields']['Student_Report']['id'] = 'Student_Report';
+  $handler->display->display_options['fields']['Student_Report']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['Student_Report']['field'] = 'Student_Report';
+  /* Field: Five Essentials 2013: 0 or 1: 1 if eligible for teacher report */
+  $handler->display->display_options['fields']['Teacher_Report']['id'] = 'Teacher_Report';
+  $handler->display->display_options['fields']['Teacher_Report']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['Teacher_Report']['field'] = 'Teacher_Report';
+  /* Field: Five Essentials 2013: Response rate on teacher survey */
+  $handler->display->display_options['fields']['Student_Response_Rate']['id'] = 'Student_Response_Rate';
+  $handler->display->display_options['fields']['Student_Response_Rate']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['Student_Response_Rate']['field'] = 'Student_Response_Rate';
+  /* Field: Five Essentials 2013: Response rate on teacher survey */
+  $handler->display->display_options['fields']['Teacher_Response_Rate']['id'] = 'Teacher_Response_Rate';
+  $handler->display->display_options['fields']['Teacher_Response_Rate']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['Teacher_Response_Rate']['field'] = 'Teacher_Response_Rate';
+  /* Field: Five Essentials 2013: Percentage of "lazy" respondents for students */
+  $handler->display->display_options['fields']['Student_Lazy_Rate']['id'] = 'Student_Lazy_Rate';
+  $handler->display->display_options['fields']['Student_Lazy_Rate']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['Student_Lazy_Rate']['field'] = 'Student_Lazy_Rate';
+  /* Field: Five Essentials 2013: Percentage of "lazy" respondents for teachers */
+  $handler->display->display_options['fields']['Teacher_Lazy_Rate']['id'] = 'Teacher_Lazy_Rate';
+  $handler->display->display_options['fields']['Teacher_Lazy_Rate']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['Teacher_Lazy_Rate']['field'] = 'Teacher_Lazy_Rate';
+  /* Field: Five Essentials 2013: Continuing 4 year */
+  $handler->display->display_options['fields']['CONTINUING_4_YEAR']['id'] = 'CONTINUING_4_YEAR';
+  $handler->display->display_options['fields']['CONTINUING_4_YEAR']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['CONTINUING_4_YEAR']['field'] = 'CONTINUING_4_YEAR';
+  $handler->display->display_options['fields']['CONTINUING_4_YEAR']['label'] = 'CONTINUING_4_YEAR';
+  /* Field: Five Essentials 2013: Total number of students listed on roster */
+  $handler->display->display_options['fields']['Student_N']['id'] = 'Student_N';
+  $handler->display->display_options['fields']['Student_N']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['Student_N']['field'] = 'Student_N';
+  /* Field: Five Essentials 2013: Total number of teachers listed on roster */
+  $handler->display->display_options['fields']['Teacher_N']['id'] = 'Teacher_N';
+  $handler->display->display_options['fields']['Teacher_N']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['Teacher_N']['field'] = 'Teacher_N';
+  /* Field: Five Essentials 2013: Peer Support for Academic Work (Student) */
+  $handler->display->display_options['fields']['ACNO']['id'] = 'ACNO';
+  $handler->display->display_options['fields']['ACNO']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['ACNO']['field'] = 'ACNO';
+  /* Field: Five Essentials 2013: Course Clarity (Student) */
+  $handler->display->display_options['fields']['CLAR']['id'] = 'CLAR';
+  $handler->display->display_options['fields']['CLAR']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['CLAR']['field'] = 'CLAR';
+  /* Field: Five Essentials 2013: Teacher Collaboration (Teacher) */
+  $handler->display->display_options['fields']['COLB']['id'] = 'COLB';
+  $handler->display->display_options['fields']['COLB']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['COLB']['field'] = 'COLB';
+  /* Field: Five Essentials 2013: Collective Responsibility (Teacher) */
+  $handler->display->display_options['fields']['COLR']['id'] = 'COLR';
+  $handler->display->display_options['fields']['COLR']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['COLR']['field'] = 'COLR';
+  /* Field: Five Essentials 2013: Collective Use of Assessment Data (Teacher) */
+  $handler->display->display_options['fields']['DATA']['id'] = 'DATA';
+  $handler->display->display_options['fields']['DATA']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['DATA']['field'] = 'DATA';
+  /* Field: Five Essentials 2013: Academic Engagement (Student) */
+  $handler->display->display_options['fields']['ENGG']['id'] = 'ENGG';
+  $handler->display->display_options['fields']['ENGG']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['ENGG']['field'] = 'ENGG';
+  /* Field: Five Essentials 2013: English Instruction (Student) */
+  $handler->display->display_options['fields']['ENGL']['id'] = 'ENGL';
+  $handler->display->display_options['fields']['ENGL']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['ENGL']['field'] = 'ENGL';
+  /* Field: Five Essentials 2013: Human & Social Resources in the Community (Student) */
+  $handler->display->display_options['fields']['HUMR']['id'] = 'HUMR';
+  $handler->display->display_options['fields']['HUMR']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['HUMR']['field'] = 'HUMR';
+  /* Field: Five Essentials 2013: Teacher Influence (Teacher) */
+  $handler->display->display_options['fields']['INFL']['id'] = 'INFL';
+  $handler->display->display_options['fields']['INFL']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['INFL']['field'] = 'INFL';
+  /* Field: Five Essentials 2013: Principal Instructional Leadership (Teacher) */
+  $handler->display->display_options['fields']['INST']['id'] = 'INST';
+  $handler->display->display_options['fields']['INST']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['INST']['field'] = 'INST';
+  /* Field: Five Essentials 2013: Math Instruction (Student) */
+  $handler->display->display_options['fields']['MATH']['id'] = 'MATH';
+  $handler->display->display_options['fields']['MATH']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['MATH']['field'] = 'MATH';
+  /* Field: Five Essentials 2013: Outreach to Parents (Teacher) */
+  $handler->display->display_options['fields']['OUTR']['id'] = 'OUTR';
+  $handler->display->display_options['fields']['OUTR']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['OUTR']['field'] = 'OUTR';
+  /* Field: Five Essentials 2013: Parent Involvement in School (Teacher) */
+  $handler->display->display_options['fields']['PART']['id'] = 'PART';
+  $handler->display->display_options['fields']['PART']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['PART']['field'] = 'PART';
+  /* Field: Five Essentials 2013: Student Classroom Behavior (Student) */
+  $handler->display->display_options['fields']['PEER']['id'] = 'PEER';
+  $handler->display->display_options['fields']['PEER']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['PEER']['field'] = 'PEER';
+  /* Field: Five Essentials 2013: Academic Personalism (Student) */
+  $handler->display->display_options['fields']['PERC']['id'] = 'PERC';
+  $handler->display->display_options['fields']['PERC']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['PERC']['field'] = 'PERC';
+  /* Field: Five Essentials 2013: Program Coherence (Teacher) */
+  $handler->display->display_options['fields']['PGMC']['id'] = 'PGMC';
+  $handler->display->display_options['fields']['PGMC']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['PGMC']['field'] = 'PGMC';
+  /* Field: Five Essentials 2013: Academic Press (Student) */
+  $handler->display->display_options['fields']['PRES']['id'] = 'PRES';
+  $handler->display->display_options['fields']['PRES']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['PRES']['field'] = 'PRES';
+  /* Field: Five Essentials 2013: Prt2 */
+  $handler->display->display_options['fields']['PRT2']['id'] = 'PRT2';
+  $handler->display->display_options['fields']['PRT2']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['PRT2']['field'] = 'PRT2';
+  $handler->display->display_options['fields']['PRT2']['label'] = 'PRT2';
+  /* Field: Five Essentials 2013: Student Responsibility (Teacher) */
+  $handler->display->display_options['fields']['PRTI']['id'] = 'PRTI';
+  $handler->display->display_options['fields']['PRTI']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['PRTI']['field'] = 'PRTI';
+  /* Field: Five Essentials 2013: Quality Professional Development (Teacher) */
+  $handler->display->display_options['fields']['QPD2']['id'] = 'QPD2';
+  $handler->display->display_options['fields']['QPD2']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['QPD2']['field'] = 'QPD2';
+  /* Field: Five Essentials 2013: Reflective Dialogue (Teacher) */
+  $handler->display->display_options['fields']['REFD']['id'] = 'REFD';
+  $handler->display->display_options['fields']['REFD']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['REFD']['field'] = 'REFD';
+  /* Field: Five Essentials 2013: Safety (Student) */
+  $handler->display->display_options['fields']['SAFE']['id'] = 'SAFE';
+  $handler->display->display_options['fields']['SAFE']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['SAFE']['field'] = 'SAFE';
+  /* Field: Five Essentials 2013: School Commitment (Teacher) */
+  $handler->display->display_options['fields']['SCMT']['id'] = 'SCMT';
+  $handler->display->display_options['fields']['SCMT']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['SCMT']['field'] = 'SCMT';
+  /* Field: Five Essentials 2013: Quality of Student Discussion (Teacher) */
+  $handler->display->display_options['fields']['SDIS']['id'] = 'SDIS';
+  $handler->display->display_options['fields']['SDIS']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['SDIS']['field'] = 'SDIS';
+  /* Field: Five Essentials 2013: School-Wide Future Orientation (Student) */
+  $handler->display->display_options['fields']['SLAP']['id'] = 'SLAP';
+  $handler->display->display_options['fields']['SLAP']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['SLAP']['field'] = 'SLAP';
+  /* Field: Five Essentials 2013: Socialization of New Teachers (Teacher) */
+  $handler->display->display_options['fields']['SOCZ']['id'] = 'SOCZ';
+  $handler->display->display_options['fields']['SOCZ']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['SOCZ']['field'] = 'SOCZ';
+  /* Field: Five Essentials 2013: Rigorous Study Habits (Student) */
+  $handler->display->display_options['fields']['STDY']['id'] = 'STDY';
+  $handler->display->display_options['fields']['STDY']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['STDY']['field'] = 'STDY';
+  /* Field: Five Essentials 2013: Teacher-Parent Trust (Teacher) */
+  $handler->display->display_options['fields']['TRPA']['id'] = 'TRPA';
+  $handler->display->display_options['fields']['TRPA']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['TRPA']['field'] = 'TRPA';
+  /* Field: Five Essentials 2013: Teacher-Principal Trust (Teacher) */
+  $handler->display->display_options['fields']['TRPR']['id'] = 'TRPR';
+  $handler->display->display_options['fields']['TRPR']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['TRPR']['field'] = 'TRPR';
+  /* Field: Five Essentials 2013: Teacher-Teacher Trust (Teacher) */
+  $handler->display->display_options['fields']['TRTE']['id'] = 'TRTE';
+  $handler->display->display_options['fields']['TRTE']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['TRTE']['field'] = 'TRTE';
+  /* Field: Five Essentials 2013: Student-Teacher Trust (Student) */
+  $handler->display->display_options['fields']['TRTS']['id'] = 'TRTS';
+  $handler->display->display_options['fields']['TRTS']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['TRTS']['field'] = 'TRTS';
+  /* Field: Five Essentials 2013: Teacher Safety (Teacher) */
+  $handler->display->display_options['fields']['TSAF']['id'] = 'TSAF';
+  $handler->display->display_options['fields']['TSAF']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['TSAF']['field'] = 'TSAF';
+  /* Field: Five Essentials 2013: Expectations for Postsecondary Education (Student) */
+  $handler->display->display_options['fields']['UEXP']['id'] = 'UEXP';
+  $handler->display->display_options['fields']['UEXP']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['UEXP']['field'] = 'UEXP';
+  /* Field: Five Essentials 2013: Category5e */
+  $handler->display->display_options['fields']['Category5E']['id'] = 'Category5E';
+  $handler->display->display_options['fields']['Category5E']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['Category5E']['field'] = 'Category5E';
+  $handler->display->display_options['fields']['Category5E']['label'] = 'Category5E';
+  /* Field: Five Essentials 2013: Net5e */
+  $handler->display->display_options['fields']['Net5e']['id'] = 'Net5e';
+  $handler->display->display_options['fields']['Net5e']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['Net5e']['field'] = 'Net5e';
+  /* Field: Five Essentials 2013: Essential: Effective Leaders */
+  $handler->display->display_options['fields']['E_leaders']['id'] = 'E_leaders';
+  $handler->display->display_options['fields']['E_leaders']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['E_leaders']['field'] = 'E_leaders';
+  /* Field: Five Essentials 2013: Essential: Collaborative Teachers */
+  $handler->display->display_options['fields']['E_teachers']['id'] = 'E_teachers';
+  $handler->display->display_options['fields']['E_teachers']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['E_teachers']['field'] = 'E_teachers';
+  /* Field: Five Essentials 2013: Essential: Involved Families */
+  $handler->display->display_options['fields']['E_families']['id'] = 'E_families';
+  $handler->display->display_options['fields']['E_families']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['E_families']['field'] = 'E_families';
+  /* Field: Five Essentials 2013: Essential: Supportive Environment */
+  $handler->display->display_options['fields']['E_environment']['id'] = 'E_environment';
+  $handler->display->display_options['fields']['E_environment']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['E_environment']['field'] = 'E_environment';
+  /* Field: Five Essentials 2013: Essential: Ambitious Instruction */
+  $handler->display->display_options['fields']['E_instruction']['id'] = 'E_instruction';
+  $handler->display->display_options['fields']['E_instruction']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['E_instruction']['field'] = 'E_instruction';
+  /* Field: Five Essentials 2013: School name */
+  $handler->display->display_options['fields']['School_Name']['id'] = 'School_Name';
+  $handler->display->display_options['fields']['School_Name']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['School_Name']['field'] = 'School_Name';
+  $handler->display->display_options['fields']['School_Name']['label'] = 'School_Name';
+  /* Field: Five Essentials 2013: Edit link */
+  $handler->display->display_options['fields']['edit_link']['id'] = 'edit_link';
+  $handler->display->display_options['fields']['edit_link']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['edit_link']['field'] = 'edit_link';
+  /* Contextual filter: Five Essentials 2013: Bcode */
+  $handler->display->display_options['arguments']['BCODE']['id'] = 'BCODE';
+  $handler->display->display_options['arguments']['BCODE']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['arguments']['BCODE']['field'] = 'BCODE';
+  $handler->display->display_options['arguments']['BCODE']['exception']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['BCODE']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['BCODE']['title'] = 'Five Essentials 2013 %1';
+  $handler->display->display_options['arguments']['BCODE']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['BCODE']['summary']['format'] = 'default_summary';
+  /* Filter criterion: Five Essentials 2013: Bcode */
+  $handler->display->display_options['filters']['BCODE']['id'] = 'BCODE';
+  $handler->display->display_options['filters']['BCODE']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['filters']['BCODE']['field'] = 'BCODE';
+  $handler->display->display_options['filters']['BCODE']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['BCODE']['expose']['operator_id'] = 'BCODE_op';
+  $handler->display->display_options['filters']['BCODE']['expose']['label'] = 'bcode';
+  $handler->display->display_options['filters']['BCODE']['expose']['operator'] = 'BCODE_op';
+  $handler->display->display_options['filters']['BCODE']['expose']['identifier'] = 'bcode';
+  $handler->display->display_options['filters']['BCODE']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    5 => 0,
+    7 => 0,
+    3 => 0,
+    6 => 0,
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['path'] = 'admin/content/data/view/fiveessentials_2013';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Five Essentials 2013';
+  $handler->display->display_options['menu']['weight'] = '0';
+
+  /* Display: Services */
+  $handler = $view->new_display('services', 'Services', 'services_1');
+  $handler->display->display_options['path'] = 'fiveessentials_2013';
+  $export['fiveessentials_2013'] = $view;
+
+  $view = new view();
   $view->name = 'manage_school_profiles';
   $view->description = '';
   $view->tag = 'default';
