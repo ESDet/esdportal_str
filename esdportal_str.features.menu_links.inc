@@ -58,7 +58,7 @@ function esdportal_str_menu_default_menu_links() {
       ),
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
@@ -69,9 +69,12 @@ function esdportal_str_menu_default_menu_links() {
     'menu_name' => 'user-menu',
     'link_path' => 'user',
     'router_path' => 'user',
-    'link_title' => 'User account',
+    'link_title' => 'Edit my account',
     'options' => array(
       'alter' => TRUE,
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'system',
     'hidden' => 0,
@@ -92,15 +95,15 @@ function esdportal_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -47,
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('Edit my account');
   t('Log out');
   t('Manage school profiles');
   t('Manage users');
   t('My school profiles');
-  t('User account');
 
 
   return $menu_links;

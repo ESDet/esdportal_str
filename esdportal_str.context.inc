@@ -54,17 +54,17 @@ function esdportal_str_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'system-user-menu' => array(
-          'module' => 'system',
-          'delta' => 'user-menu',
-          'region' => 'branding',
-          'weight' => '-10',
-        ),
         'views-54e4930dd771c60a38e87c5edbc733bb' => array(
           'module' => 'views',
           'delta' => '54e4930dd771c60a38e87c5edbc733bb',
           'region' => 'branding',
-          'weight' => '-9',
+          'weight' => '-12',
+        ),
+        'system-user-menu' => array(
+          'module' => 'system',
+          'delta' => 'user-menu',
+          'region' => 'branding',
+          'weight' => '-11',
         ),
       ),
     ),
