@@ -6110,9 +6110,8 @@ function esdportal_str_data_default() {
         'description' => '',
       ),
       'BuildingName' => array(
-        'type' => 'varchar',
+        'type' => 'int',
         'size' => 'normal',
-        'length' => '255',
         'not null' => FALSE,
         'description' => '',
       ),
