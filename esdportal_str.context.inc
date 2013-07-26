@@ -14,12 +14,12 @@ function esdportal_str_context_default_contexts() {
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'sitewide_moderator';
-  $context->description = '';
+  $context->description = 'Logistics Coordinator role';
   $context->tag = '';
   $context->conditions = array(
     'user' => array(
       'values' => array(
-        'moderator' => 'moderator',
+        'Logistics Coordinator' => 'Logistics Coordinator',
       ),
     ),
   );
@@ -36,18 +36,22 @@ function esdportal_str_context_default_contexts() {
     ),
   );
   $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Logistics Coordinator role');
   $export['sitewide_moderator'] = $context;
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'sitewide_schoolrep';
-  $context->description = '';
+  $context->description = 'School Leader role';
   $context->tag = '';
   $context->conditions = array(
     'user' => array(
       'values' => array(
-        'School Representative' => 'School Representative',
+        'School Leader' => 'School Leader',
       ),
     ),
   );
@@ -70,6 +74,10 @@ function esdportal_str_context_default_contexts() {
     ),
   );
   $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('School Leader role');
   $export['sitewide_schoolrep'] = $context;
 
   return $export;

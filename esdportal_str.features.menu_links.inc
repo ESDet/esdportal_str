@@ -26,7 +26,7 @@ function esdportal_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -50,
   );
   // Exported menu link: menu-moderator-menu:manage-users
   $menu_links['menu-moderator-menu:manage-users'] = array(
@@ -44,7 +44,7 @@ function esdportal_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -49,
   );
   // Exported menu link: user-menu:my-school-profiles
   $menu_links['user-menu:my-school-profiles'] = array(

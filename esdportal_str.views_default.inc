@@ -667,6 +667,19 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: School Contact First Name */
+  $handler->display->display_options['fields']['field_school_contact_first_name']['id'] = 'field_school_contact_first_name';
+  $handler->display->display_options['fields']['field_school_contact_first_name']['table'] = 'field_data_field_school_contact_first_name';
+  $handler->display->display_options['fields']['field_school_contact_first_name']['field'] = 'field_school_contact_first_name';
+  /* Field: Content: School Contact Last Name */
+  $handler->display->display_options['fields']['field_school_contact_last_name']['id'] = 'field_school_contact_last_name';
+  $handler->display->display_options['fields']['field_school_contact_last_name']['table'] = 'field_data_field_school_contact_last_name';
+  $handler->display->display_options['fields']['field_school_contact_last_name']['field'] = 'field_school_contact_last_name';
+  /* Field: Content: Author uid */
+  $handler->display->display_options['fields']['uid']['id'] = 'uid';
+  $handler->display->display_options['fields']['uid']['table'] = 'node';
+  $handler->display->display_options['fields']['uid']['field'] = 'uid';
+  $handler->display->display_options['fields']['uid']['label'] = 'Author UID';
   /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
@@ -674,23 +687,11 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['nid']['alter']['text'] = 'node/[nid]';
-  /* Field: Location: Phone */
-  $handler->display->display_options['fields']['phone']['id'] = 'phone';
-  $handler->display->display_options['fields']['phone']['table'] = 'location_phone';
-  $handler->display->display_options['fields']['phone']['field'] = 'phone';
-  /* Field: Content revision: Updated date */
-  $handler->display->display_options['fields']['timestamp']['id'] = 'timestamp';
-  $handler->display->display_options['fields']['timestamp']['table'] = 'node_revision';
-  $handler->display->display_options['fields']['timestamp']['field'] = 'timestamp';
-  $handler->display->display_options['fields']['timestamp']['date_format'] = 'medium';
-  /* Field: Content revision: Log message */
-  $handler->display->display_options['fields']['log']['id'] = 'log';
-  $handler->display->display_options['fields']['log']['table'] = 'node_revision';
-  $handler->display->display_options['fields']['log']['field'] = 'log';
-  /* Field: Content: Author uid */
-  $handler->display->display_options['fields']['uid']['id'] = 'uid';
-  $handler->display->display_options['fields']['uid']['table'] = 'node';
-  $handler->display->display_options['fields']['uid']['field'] = 'uid';
+  /* Field: Content: Edit link */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = 'Edit';
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
@@ -716,17 +717,36 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['filters']['title']['operator'] = 'contains';
   $handler->display->display_options['filters']['title']['exposed'] = TRUE;
   $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['label'] = 'Title';
+  $handler->display->display_options['filters']['title']['expose']['label'] = 'Filter by School Name';
   $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
   $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
   $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
-    3 => 0,
     4 => 0,
     5 => 0,
-    6 => 0,
     7 => 0,
+    3 => 0,
+    6 => 0,
+  );
+  /* Filter criterion: Content: School Contact Last Name (field_school_contact_last_name) */
+  $handler->display->display_options['filters']['field_school_contact_last_name_value']['id'] = 'field_school_contact_last_name_value';
+  $handler->display->display_options['filters']['field_school_contact_last_name_value']['table'] = 'field_data_field_school_contact_last_name';
+  $handler->display->display_options['filters']['field_school_contact_last_name_value']['field'] = 'field_school_contact_last_name_value';
+  $handler->display->display_options['filters']['field_school_contact_last_name_value']['operator'] = 'contains';
+  $handler->display->display_options['filters']['field_school_contact_last_name_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_school_contact_last_name_value']['expose']['operator_id'] = 'field_school_contact_last_name_value_op';
+  $handler->display->display_options['filters']['field_school_contact_last_name_value']['expose']['label'] = 'Filter by School Contact Last Name';
+  $handler->display->display_options['filters']['field_school_contact_last_name_value']['expose']['operator'] = 'field_school_contact_last_name_value_op';
+  $handler->display->display_options['filters']['field_school_contact_last_name_value']['expose']['identifier'] = 'field_school_contact_last_name_value';
+  $handler->display->display_options['filters']['field_school_contact_last_name_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    5 => 0,
+    7 => 0,
+    3 => 0,
+    6 => 0,
   );
 
   /* Display: Page */
@@ -812,14 +832,6 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['content'] = '<a href="admin/people/create">+ Create New User</a>';
-  /* Field: : field_fname */
-  $handler->display->display_options['fields']['field_fname']['id'] = 'field_fname';
-  $handler->display->display_options['fields']['field_fname']['table'] = 'field_data_field_fname';
-  $handler->display->display_options['fields']['field_fname']['field'] = 'field_fname';
-  /* Field: : field_lname */
-  $handler->display->display_options['fields']['field_lname']['id'] = 'field_lname';
-  $handler->display->display_options['fields']['field_lname']['table'] = 'field_data_field_lname';
-  $handler->display->display_options['fields']['field_lname']['field'] = 'field_lname';
   /* Field: User: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'users';
@@ -831,10 +843,6 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['mail']['id'] = 'mail';
   $handler->display->display_options['fields']['mail']['table'] = 'users';
   $handler->display->display_options['fields']['mail']['field'] = 'mail';
-  /* Field: User: Last login */
-  $handler->display->display_options['fields']['login']['id'] = 'login';
-  $handler->display->display_options['fields']['login']['table'] = 'users';
-  $handler->display->display_options['fields']['login']['field'] = 'login';
   /* Field: User: Last access */
   $handler->display->display_options['fields']['access']['id'] = 'access';
   $handler->display->display_options['fields']['access']['table'] = 'users';
@@ -861,52 +869,6 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: : field_fname (field_fname) */
-  $handler->display->display_options['filters']['field_fname_value']['id'] = 'field_fname_value';
-  $handler->display->display_options['filters']['field_fname_value']['table'] = 'field_data_field_fname';
-  $handler->display->display_options['filters']['field_fname_value']['field'] = 'field_fname_value';
-  $handler->display->display_options['filters']['field_fname_value']['operator'] = 'contains';
-  $handler->display->display_options['filters']['field_fname_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_fname_value']['expose']['operator_id'] = 'field_fname_value_op';
-  $handler->display->display_options['filters']['field_fname_value']['expose']['label'] = 'First Name';
-  $handler->display->display_options['filters']['field_fname_value']['expose']['operator'] = 'field_fname_value_op';
-  $handler->display->display_options['filters']['field_fname_value']['expose']['identifier'] = 'field_fname_value';
-  $handler->display->display_options['filters']['field_fname_value']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    4 => 0,
-    5 => 0,
-    6 => 0,
-    7 => 0,
-  );
-  $handler->display->display_options['filters']['field_fname_value']['group_info']['label'] = 'First Name (field_fname)';
-  $handler->display->display_options['filters']['field_fname_value']['group_info']['identifier'] = 'field_fname_value';
-  $handler->display->display_options['filters']['field_fname_value']['group_info']['remember'] = FALSE;
-  $handler->display->display_options['filters']['field_fname_value']['group_info']['group_items'] = array(
-    1 => array(),
-    2 => array(),
-    3 => array(),
-  );
-  /* Filter criterion: : field_lname (field_lname:format) */
-  $handler->display->display_options['filters']['field_lname_format']['id'] = 'field_lname_format';
-  $handler->display->display_options['filters']['field_lname_format']['table'] = 'field_data_field_lname';
-  $handler->display->display_options['filters']['field_lname_format']['field'] = 'field_lname_format';
-  $handler->display->display_options['filters']['field_lname_format']['operator'] = 'contains';
-  $handler->display->display_options['filters']['field_lname_format']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_lname_format']['expose']['operator_id'] = 'field_lname_format_op';
-  $handler->display->display_options['filters']['field_lname_format']['expose']['label'] = 'Last Name';
-  $handler->display->display_options['filters']['field_lname_format']['expose']['operator'] = 'field_lname_format_op';
-  $handler->display->display_options['filters']['field_lname_format']['expose']['identifier'] = 'field_lname_format';
-  $handler->display->display_options['filters']['field_lname_format']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    4 => 0,
-    5 => 0,
-    6 => 0,
-    7 => 0,
-  );
   /* Filter criterion: User: E-mail */
   $handler->display->display_options['filters']['mail']['id'] = 'mail';
   $handler->display->display_options['filters']['mail']['table'] = 'users';
@@ -914,17 +876,36 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['filters']['mail']['operator'] = 'contains';
   $handler->display->display_options['filters']['mail']['exposed'] = TRUE;
   $handler->display->display_options['filters']['mail']['expose']['operator_id'] = 'mail_op';
-  $handler->display->display_options['filters']['mail']['expose']['label'] = 'E-mail';
+  $handler->display->display_options['filters']['mail']['expose']['label'] = 'Filter by E-mail';
   $handler->display->display_options['filters']['mail']['expose']['operator'] = 'mail_op';
   $handler->display->display_options['filters']['mail']['expose']['identifier'] = 'mail';
   $handler->display->display_options['filters']['mail']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
-    3 => 0,
     4 => 0,
     5 => 0,
-    6 => 0,
     7 => 0,
+    3 => 0,
+    6 => 0,
+  );
+  /* Filter criterion: User: Last Name (field_lname) */
+  $handler->display->display_options['filters']['field_lname_value']['id'] = 'field_lname_value';
+  $handler->display->display_options['filters']['field_lname_value']['table'] = 'field_data_field_lname';
+  $handler->display->display_options['filters']['field_lname_value']['field'] = 'field_lname_value';
+  $handler->display->display_options['filters']['field_lname_value']['operator'] = 'contains';
+  $handler->display->display_options['filters']['field_lname_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_lname_value']['expose']['operator_id'] = 'field_lname_value_op';
+  $handler->display->display_options['filters']['field_lname_value']['expose']['label'] = 'Filter by Last Name';
+  $handler->display->display_options['filters']['field_lname_value']['expose']['operator'] = 'field_lname_value_op';
+  $handler->display->display_options['filters']['field_lname_value']['expose']['identifier'] = 'field_lname_value';
+  $handler->display->display_options['filters']['field_lname_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    5 => 0,
+    7 => 0,
+    3 => 0,
+    6 => 0,
   );
 
   /* Display: Page */

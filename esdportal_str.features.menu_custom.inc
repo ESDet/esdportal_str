@@ -13,7 +13,7 @@ function esdportal_str_menu_default_menu_custom() {
   // Exported menu: menu-moderator-menu.
   $menus['menu-moderator-menu'] = array(
     'menu_name' => 'menu-moderator-menu',
-    'title' => 'Moderator menu',
+    'title' => 'Logistics Coordinator Menu',
     'description' => '',
   );
   // Exported menu: user-menu.
@@ -24,7 +24,7 @@ function esdportal_str_menu_default_menu_custom() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Moderator menu');
+  t('Logistics Coordinator Menu');
   t('User menu');
 
 
