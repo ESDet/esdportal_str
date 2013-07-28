@@ -1717,6 +1717,90 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-schools-field_files'
+  $field_instances['taxonomy_term-schools-field_files'] = array(
+    'bundle' => 'schools',
+    'deleted' => 0,
+    'description' => 'Provide file resources to display alongside school information.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 47,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_files',
+    'label' => 'Files',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'txt pdf xls odf odt ods doc docx rtf',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'file',
+      'settings' => array(
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_generic',
+      'weight' => 37,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_links'
+  $field_instances['taxonomy_term-schools-field_links'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Provide links to external resources to display alongside school information.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 46,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_links',
+    'label' => 'Links',
+    'required' => 0,
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'configurable_title' => 0,
+        'rel' => 'nofollow',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'rel_remove_internal',
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 36,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-schools-field_loc_email'
   $field_instances['taxonomy_term-schools-field_loc_email'] = array(
     'bundle' => 'schools',
@@ -1937,12 +2021,14 @@ function esdportal_str_field_default_field_instances() {
   t('Email from old location field');
   t('English Language Learners');
   t('Family Supports');
+  t('Files');
   t('First Name');
   t('Grades Served');
   t('If you have relationships with early child centers, please list which ones.');
   t('If your school offers dual enrollment, with which institutions?');
   t('In-School Programs');
   t('Last Name');
+  t('Links');
   t('Organized Sports');
   t('Parent Supports');
   t('Person Responsible');
@@ -1952,6 +2038,8 @@ function esdportal_str_field_default_field_instances() {
   t('Please list student development programs available during school hours.');
   t('Please list the leadership opportunities available for students.');
   t('Please list the school\'s organized sports offerings.');
+  t('Provide file resources to display alongside school information.');
+  t('Provide links to external resources to display alongside school information.');
   t('School');
   t('School Contact First Name');
   t('School Contact Last Name');
