@@ -5,3 +5,27 @@
  */
 
 include_once 'esdportal_str.features.inc';
+
+/**
+ * Implements hook_entity_info_alter().
+ *
+ * Add some view modes
+ */
+function esdportal_str_entity_info_alter(&$entity_info) {
+  $entity_info['taxonomy_term']['view modes']['aside'] = array(
+    'label' => t('Aside'),
+    'custom settings' => FALSE,
+  );
+}
+
+/**
+ * Implements hook_preprocess_taxonomy_term().
+ *
+ * Add template hints for the added view modes
+ */
+function esdportal_str_preprocess_taxonomy_term(&$vars) {
+  if($vars['view_mode'] == 'aside') {
+    $vars['theme_hook_suggestions'][] = 'taxonomy_term__' . $vars['type'] . '__aside';
+  }
+}
+
