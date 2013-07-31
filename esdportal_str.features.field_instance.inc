@@ -1979,6 +1979,49 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-schools-field_superintendents'
+  $field_instances['taxonomy_term-schools-field_superintendents'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter one or many users who should see school profiles (or other data) listed on their dashboard.',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 10,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_superintendents',
+    'label' => 'Superintendents',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete_tags',
+      'weight' => 38,
+    ),
+  );
+
   // Exported field_instance: 'user-user-field_fname'
   $field_instances['user-user-field_fname'] = array(
     'bundle' => 'user',
@@ -2071,6 +2114,7 @@ function esdportal_str_field_default_field_instances() {
   t('Email');
   t('Email from old location field');
   t('English Language Learners');
+  t('Enter one or many users who should see school profiles (or other data) listed on their dashboard.');
   t('Family Supports');
   t('Files');
   t('First Name');
@@ -2101,6 +2145,7 @@ function esdportal_str_field_default_field_instances() {
   t('Special Tracks');
   t('Student Development Programs');
   t('Student Leadership Opportunities');
+  t('Superintendents');
   t('Transportation');
   t('What do you do to transition children from early childhood programs?');
   t('What is your counselor-to-student ratio?');

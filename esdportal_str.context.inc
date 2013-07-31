@@ -46,29 +46,30 @@ function esdportal_str_context_default_contexts() {
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'sitewide_schoolrep';
-  $context->description = 'School Leader role';
+  $context->description = 'School Leader and Superintendent roles';
   $context->tag = '';
   $context->conditions = array(
     'user' => array(
       'values' => array(
         'School Leader' => 'School Leader',
+        'Superintendent' => 'Superintendent',
       ),
     ),
   );
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-54e4930dd771c60a38e87c5edbc733bb' => array(
-          'module' => 'views',
-          'delta' => '54e4930dd771c60a38e87c5edbc733bb',
+        'esdportal_dash-my_schools' => array(
+          'module' => 'esdportal_dash',
+          'delta' => 'my_schools',
           'region' => 'branding',
-          'weight' => '-12',
+          'weight' => '-10',
         ),
         'system-user-menu' => array(
           'module' => 'system',
           'delta' => 'user-menu',
           'region' => 'branding',
-          'weight' => '-11',
+          'weight' => '-9',
         ),
       ),
     ),
@@ -77,7 +78,7 @@ function esdportal_str_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('School Leader role');
+  t('School Leader and Superintendent roles');
   $export['sitewide_schoolrep'] = $context;
 
   return $export;
