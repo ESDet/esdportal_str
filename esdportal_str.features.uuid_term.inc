@@ -13,7 +13,7 @@ function esdportal_str_uuid_features_default_terms() {
   $terms[] = array(
     'revision_id' => 12,
     'log' => NULL,
-    'timestamp' => 1372266719,
+    'timestamp' => 1375114014,
     'uid' => 0,
     'name' => 'Early childhood',
     'description' => '',
@@ -25,7 +25,7 @@ function esdportal_str_uuid_features_default_terms() {
   $terms[] = array(
     'revision_id' => 13,
     'log' => NULL,
-    'timestamp' => 1372266719,
+    'timestamp' => 1375114014,
     'uid' => 0,
     'name' => 'Opening soon',
     'description' => '',
@@ -37,7 +37,7 @@ function esdportal_str_uuid_features_default_terms() {
   $terms[] = array(
     'revision_id' => 14,
     'log' => NULL,
-    'timestamp' => 1372266719,
+    'timestamp' => 1375114014,
     'uid' => 0,
     'name' => 'High school',
     'description' => '',
@@ -49,7 +49,7 @@ function esdportal_str_uuid_features_default_terms() {
   $terms[] = array(
     'revision_id' => 15,
     'log' => NULL,
-    'timestamp' => 1372266719,
+    'timestamp' => 1375114014,
     'uid' => 0,
     'name' => 'Mature',
     'description' => '',
@@ -61,7 +61,7 @@ function esdportal_str_uuid_features_default_terms() {
   $terms[] = array(
     'revision_id' => 16,
     'log' => NULL,
-    'timestamp' => 1372266719,
+    'timestamp' => 1375114014,
     'uid' => 0,
     'name' => 'Open',
     'description' => '',
@@ -73,7 +73,7 @@ function esdportal_str_uuid_features_default_terms() {
   $terms[] = array(
     'revision_id' => 17,
     'log' => NULL,
-    'timestamp' => 1372266719,
+    'timestamp' => 1375114014,
     'uid' => 0,
     'name' => 'Closed',
     'description' => '',
@@ -85,7 +85,7 @@ function esdportal_str_uuid_features_default_terms() {
   $terms[] = array(
     'revision_id' => 18,
     'log' => NULL,
-    'timestamp' => 1372266719,
+    'timestamp' => 1375114014,
     'uid' => 0,
     'name' => 'New',
     'description' => '',
@@ -97,7 +97,7 @@ function esdportal_str_uuid_features_default_terms() {
   $terms[] = array(
     'revision_id' => 19,
     'log' => NULL,
-    'timestamp' => 1372266719,
+    'timestamp' => 1375114014,
     'uid' => 0,
     'name' => 'Suburban',
     'description' => '',
@@ -109,7 +109,7 @@ function esdportal_str_uuid_features_default_terms() {
   $terms[] = array(
     'revision_id' => 20,
     'log' => NULL,
-    'timestamp' => 1372266719,
+    'timestamp' => 1375114014,
     'uid' => 0,
     'name' => 'Turnaround',
     'description' => '',
@@ -121,7 +121,7 @@ function esdportal_str_uuid_features_default_terms() {
   $terms[] = array(
     'revision_id' => 21,
     'log' => NULL,
-    'timestamp' => 1372266719,
+    'timestamp' => 1375114014,
     'uid' => 0,
     'name' => 'K8',
     'description' => '',
@@ -133,7 +133,7 @@ function esdportal_str_uuid_features_default_terms() {
   $terms[] = array(
     'revision_id' => 22,
     'log' => NULL,
-    'timestamp' => 1372266719,
+    'timestamp' => 1375114014,
     'uid' => 0,
     'name' => 'Specialty',
     'description' => '',
