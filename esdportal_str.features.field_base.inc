@@ -821,7 +821,7 @@ function esdportal_str_field_default_field_bases() {
   // Exported field_base: 'field_photos'
   $field_bases['field_photos'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => 10,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_photos',
