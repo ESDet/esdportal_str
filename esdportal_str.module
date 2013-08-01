@@ -68,3 +68,81 @@ function esdportal_str_field_access($op, $field, $entity_type, $entity, $account
   return TRUE;
 }
 
+/**
+ * Feedback form, for use in footer.
+ */
+function esdportal_str_form() {
+  $form['intro'] = array(
+    '#markup' => t('Please provide feedback on this website.'),
+  );
+  $form['comments'] = array(
+    '#type' => 'textarea',
+    '#rows' => 4,
+    '#required' => TRUE,
+  );
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Send'),
+  );
+
+  return $form;
+}
+
+/**
+ * Implements hook_form_submit().
+ */
+function esdportal_str_form_submit($form, &$form_state) {
+  global $user;
+
+  $vals = $form_state['values'];
+
+  $module = 'esdportal_str';
+  $key = 'feedback';
+  $from = variable_get('site_mail', 'eanderson@excellentschoolsdetroit.org');
+
+  $message = drupal_mail($module, $key, $to, language_default(), $vals, $from, FALSE);
+  $message['subject'] = t('Portal feedback from user @username', array('@username' => $user->name));
+  $message['body'] = t('@name wrote:', array('@name' => $user->name)) . "\n\n" . $vals['comments'];
+  $message['body'] .= "\n\n--\n" . t('Submitted by user @user from @url', array('@user' => $user->name, '@url' => $_SERVER['REQUEST_URI']));
+
+  $system = drupal_mail_system($module, $key);
+
+  $message['result'] = $system->mail($message);
+
+
+  if ($message['result'] == TRUE) {
+    drupal_set_message(t('Thank you for providing feedback.'));
+  }
+  else {
+    drupal_set_message(t('There was a problem sending your feedback.'), 'error');
+  }
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function esdportal_str_block_info() {
+  return array(
+    'feedback' => array(
+      'info' => 'Feedback form',
+      'cache' => DRUPAL_CACHE_PER_ROLE,
+    ),
+  );
+}
+
+/**
+ * Implements hook_block_view().
+ *
+ * Feedback form block
+ */
+function esdportal_str_block_view($delta = '') {
+  switch ($delta) {
+    case 'feedback':
+    default:
+      $block['subject'] = t('Feedback');
+      $block['content'] = drupal_get_form('esdportal_str_form');
+    break;
+  }
+  return $block;
+}
+
