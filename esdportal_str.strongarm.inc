@@ -152,9 +152,30 @@ function esdportal_str_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'esdportal_dash_alert';
+  $strongarm->value = 'This page lists your school profiles.';
+  $export['esdportal_dash_alert'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'esdportal_dash_alerttype';
+  $strongarm->value = 'status';
+  $export['esdportal_dash_alerttype'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'esdportal_scoresbybcode_alert';
   $strongarm->value = 'Please review these scores.';
   $export['esdportal_scoresbybcode_alert'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'esdportal_scoresbybcode_alerttype';
+  $strongarm->value = 'instruction';
+  $export['esdportal_scoresbybcode_alerttype'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -392,7 +413,7 @@ function esdportal_str_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_frontpage';
-  $strongarm->value = 'node';
+  $strongarm->value = 'node/855';
   $export['site_frontpage'] = $strongarm;
 
   $strongarm = new stdClass();
