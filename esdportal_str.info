@@ -289,6 +289,7 @@ features[variable][] = user_register
 features[views_view][] = bulk
 features[views_view][] = fiveessentials_2013
 features[views_view][] = manage_school_profiles
+features[views_view][] = manage_schools
 features[views_view][] = manage_users
 features[views_view][] = meap_2009
 features[views_view][] = meap_2010

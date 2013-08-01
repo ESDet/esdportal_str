@@ -925,6 +925,17 @@ function esdportal_str_views_default_views() {
       'empty_column' => 0,
     ),
   );
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'schools' => 'schools',
+    'school_scorecard_status' => 0,
+    'school_status' => 0,
+    'school_type' => 0,
+    'tags' => 0,
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -958,6 +969,16 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['label'] = 'Edit';
+  /* Field: Field: Building code */
+  $handler->display->display_options['fields']['field_bcode']['id'] = 'field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['table'] = 'field_data_field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['field'] = 'field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['fields']['field_bcode']['label'] = 'bcode';
+  $handler->display->display_options['fields']['field_bcode']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 0,
+  );
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
@@ -1019,6 +1040,118 @@ function esdportal_str_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'manage-school-profiles';
   $export['manage_school_profiles'] = $view;
+
+  $view = new view();
+  $view->name = 'manage_schools';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'taxonomy_term_data';
+  $view->human_name = 'manage schools';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Manage schools';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    5 => '5',
+    6 => '6',
+  );
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '100';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'name' => 'name',
+    'view_node' => 'view_node',
+    'nid' => 'nid',
+    'changed' => 'changed',
+  );
+  $handler->display->display_options['style_options']['default'] = 'changed';
+  $handler->display->display_options['style_options']['info'] = array(
+    'name' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'view_node' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'nid' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'changed' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'desc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  /* Relationship: Taxonomy term: Representative node */
+  $handler->display->display_options['relationships']['tid_representative']['id'] = 'tid_representative';
+  $handler->display->display_options['relationships']['tid_representative']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['relationships']['tid_representative']['field'] = 'tid_representative';
+  $handler->display->display_options['relationships']['tid_representative']['subquery_sort'] = 'node.nid';
+  $handler->display->display_options['relationships']['tid_representative']['subquery_view'] = '';
+  $handler->display->display_options['relationships']['tid_representative']['subquery_namespace'] = '';
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['view_node']['label'] = 'Profile';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['nid']['label'] = 'Profile nid';
+  /* Field: Content: Updated date */
+  $handler->display->display_options['fields']['changed']['id'] = 'changed';
+  $handler->display->display_options['fields']['changed']['table'] = 'node';
+  $handler->display->display_options['fields']['changed']['field'] = 'changed';
+  $handler->display->display_options['fields']['changed']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['changed']['label'] = 'Profile last updated';
+  $handler->display->display_options['fields']['changed']['date_format'] = 'time ago';
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
+  $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
+  $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['value'] = array(
+    'schools' => 'schools',
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'manage-schools';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Manage schools';
+  $handler->display->display_options['menu']['weight'] = '3';
+  $handler->display->display_options['menu']['name'] = 'menu-moderator-menu';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
+  $export['manage_schools'] = $view;
 
   $view = new view();
   $view->name = 'manage_users';
