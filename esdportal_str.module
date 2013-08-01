@@ -82,7 +82,7 @@ function esdportal_str_form() {
   );
   $form['submit'] = array(
     '#type' => 'submit',
-    '#value' => t('Send'),
+    '#value' => t('Submit'),
   );
 
   return $form;
