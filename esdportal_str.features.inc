@@ -99,6 +99,14 @@ function esdportal_str_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'page' => array(
+      'name' => t('Page'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'school_profile' => array(
       'name' => t('School Profile'),
       'base' => 'node_content',
