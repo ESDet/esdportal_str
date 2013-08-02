@@ -73,7 +73,7 @@ function esdportal_str_field_access($op, $field, $entity_type, $entity, $account
  */
 function esdportal_str_form() {
   $form['intro'] = array(
-    '#markup' => t('Please provide feedback on this website.'),
+    '#markup' => t('Please provide us with any feedback or ideas you have about this site for us to continue improving it for you.'),
   );
   $form['comments'] = array(
     '#type' => 'textarea',
