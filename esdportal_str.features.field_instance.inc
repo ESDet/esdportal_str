@@ -1267,7 +1267,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'module' => 'image',
         'settings' => array(
-          'image_link' => '',
+          'image_link' => 'file',
           'image_style' => 'medium',
         ),
         'type' => 'image',

@@ -15,7 +15,7 @@ function esdportal_str_menu_default_menu_links() {
     'menu_name' => 'menu-moderator-menu',
     'link_path' => 'manage-school-profiles',
     'router_path' => 'manage-school-profiles',
-    'link_title' => 'Manage school profiles',
+    'link_title' => 'Manage School Profiles',
     'options' => array(
       'attributes' => array(
         'title' => '',
@@ -33,7 +33,7 @@ function esdportal_str_menu_default_menu_links() {
     'menu_name' => 'menu-moderator-menu',
     'link_path' => 'manage-users',
     'router_path' => 'manage-users',
-    'link_title' => 'Manage users',
+    'link_title' => 'Manage Users',
     'options' => array(
       'attributes' => array(
         'title' => '',
@@ -101,8 +101,8 @@ function esdportal_str_menu_default_menu_links() {
   // Included for use with string extractors like potx.
   t('Edit My Account');
   t('Log out');
-  t('Manage school profiles');
-  t('Manage users');
+  t('Manage School Profiles');
+  t('Manage Users');
   t('My school profiles');
 
 

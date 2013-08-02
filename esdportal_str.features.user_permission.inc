@@ -79,6 +79,7 @@ function esdportal_str_user_default_permissions() {
     'name' => 'administer permissions',
     'roles' => array(
       'ESD Administrator' => 'ESD Administrator',
+      'Logistics Coordinator' => 'Logistics Coordinator',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
