@@ -106,6 +106,10 @@ function esdportal_str_strongarm() {
       0 => 'meap_2012',
       1 => 'BuildingCode',
     ),
+    'data_act_2013' => array(
+      0 => 'act_2013',
+      1 => 'BuildingCode',
+    ),
     'data_esd_hs_2013' => array(
       0 => 'esd_hs_2013',
       1 => 'buildingcode',

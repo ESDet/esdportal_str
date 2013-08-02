@@ -389,6 +389,199 @@ function esdportal_str_data_default() {
   $data_table = new stdClass();
   $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
   $data_table->api_version = 1;
+  $data_table->title = 'Act 2013';
+  $data_table->name = 'act_2013';
+  $data_table->table_schema = array(
+    'description' => 'ACT 2013 data',
+    'fields' => array(
+      'SchoolType' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'ISDCode' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'ISDName' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'DistrictCode' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'DistrictName' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'BuildingCode' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'BuildingName' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'NumberTested' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'allsubAverage' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'allsubPercentMeeting' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'readingAverage' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'readingPercentMeeting' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'mathAverage' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'mathPercentMeeting' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'englishAverage' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'englishPercentMeeting' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'scienceAverage' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'sciencePercentMeeting' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'writingAverage' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+    ),
+    'name' => 'act_2013',
+    'primary key' => array(
+      0 => 'BuildingCode',
+    ),
+  );
+  $data_table->meta = array(
+    'fields' => array(
+      'SchoolType' => array(),
+      'ISDCode' => array(),
+      'ISDName' => array(),
+      'DistrictCode' => array(),
+      'DistrictName' => array(),
+      'BuildingCode' => array(),
+      'BuildingName' => array(),
+      'NumberTested' => array(),
+      'allsubAverage' => array(),
+      'allsubPercentMeeting' => array(),
+      'readingAverage' => array(),
+      'readingPercentMeeting' => array(),
+      'mathAverage' => array(),
+      'mathPercentMeeting' => array(),
+      'englishAverage' => array(),
+      'englishPercentMeeting' => array(),
+      'scienceAverage' => array(),
+      'sciencePercentMeeting' => array(),
+      'writingAverage' => array(),
+    ),
+  );
+  $export['act_2013'] = $data_table;
+
+  $data_table = new stdClass();
+  $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
+  $data_table->api_version = 1;
   $data_table->title = 'ESD Highschool 2013 Data';
   $data_table->name = 'esd_hs_2013';
   $data_table->table_schema = array(
