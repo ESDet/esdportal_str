@@ -378,6 +378,7 @@ function esdportal_str_user_default_permissions() {
     'name' => 'edit terms in 4',
     'roles' => array(
       'ESD Administrator' => 'ESD Administrator',
+      'Logistics Coordinator' => 'Logistics Coordinator',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',

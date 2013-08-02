@@ -1268,7 +1268,7 @@ function esdportal_str_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'medium',
         ),
         'type' => 'image',
         'weight' => 27,
@@ -1644,7 +1644,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'default' => array(
         'label' => 'above',
@@ -1695,19 +1695,19 @@ function esdportal_str_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'aside' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 2,
       ),
       'default' => array(
         'label' => 'above',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
+          'prefix_suffix' => 0,
           'scale' => 0,
-          'thousand_separator' => ' ',
+          'thousand_separator' => '',
         ),
         'type' => 'number_integer',
         'weight' => 4,
@@ -1744,7 +1744,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 5,
       ),
       'default' => array(
         'label' => 'above',
@@ -1885,7 +1885,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'default' => array(
         'label' => 'above',
@@ -1924,7 +1924,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 7,
       ),
       'default' => array(
         'label' => 'above',
@@ -1961,7 +1961,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 8,
       ),
       'default' => array(
         'label' => 'above',
@@ -1998,7 +1998,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 6,
       ),
       'default' => array(
         'label' => 'above',
@@ -2035,7 +2035,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 3,
       ),
       'default' => array(
         'label' => 'above',
