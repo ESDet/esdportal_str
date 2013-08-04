@@ -20,6 +20,8 @@ function esdportal_str_context_default_contexts() {
     'path' => array(
       'values' => array(
         '<front>' => '<front>',
+        'user/password' => 'user/password',
+        'user' => 'user',
       ),
     ),
   );
