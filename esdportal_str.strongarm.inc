@@ -102,14 +102,6 @@ function esdportal_str_strongarm() {
       0 => 'act_2012',
       1 => 'BuildingCode',
     ),
-    'data_meap_2012' => array(
-      0 => 'meap_2012',
-      1 => 'BuildingCode',
-    ),
-    'data_act_2013' => array(
-      0 => 'act_2013',
-      1 => 'BuildingCode',
-    ),
     'data_esd_hs_2013' => array(
       0 => 'esd_hs_2013',
       1 => 'buildingcode',
@@ -117,6 +109,14 @@ function esdportal_str_strongarm() {
     'data_esd_k8_2013' => array(
       0 => 'esd_k8_2013',
       1 => 'buildingcode',
+    ),
+    'data_meap_2012' => array(
+      0 => 'meap_2012',
+      1 => 'BuildingCode',
+    ),
+    'data_act_2013' => array(
+      0 => 'act_2013',
+      1 => 'BuildingCode',
     ),
     'data_fiveessentials_2013' => array(
       0 => 'fiveessentials_2013',
@@ -425,7 +425,7 @@ function esdportal_str_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_frontpage';
-  $strongarm->value = 'node/855';
+  $strongarm->value = 'node/1147';
   $export['site_frontpage'] = $strongarm;
 
   $strongarm = new stdClass();

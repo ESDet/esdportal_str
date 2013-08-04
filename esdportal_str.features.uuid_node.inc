@@ -11,7 +11,7 @@ function esdportal_str_uuid_features_default_content() {
   $nodes = array();
 
   $nodes[] = array(
-  'uid' => 1172,
+  'uid' => 1472,
   'title' => 'Welcome',
   'log' => '',
   'status' => 1,
@@ -25,7 +25,7 @@ function esdportal_str_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '04dd5a29-1017-4560-9c6c-806edecf1e95',
-  'revision_uid' => 1172,
+  'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(
