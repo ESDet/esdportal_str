@@ -1623,6 +1623,129 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-schools-field_2011_pct_det_res'
+  $field_instances['taxonomy_term-schools-field_2011_pct_det_res'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 12,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_2011_pct_det_res',
+    'label' => '2011 Percent Detroit resident',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 40,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_2013_site_visit_date'
+  $field_instances['taxonomy_term-schools-field_2013_site_visit_date'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 25,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_2013_site_visit_date',
+    'label' => '2013 site visit date',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 53,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_5e_roster'
+  $field_instances['taxonomy_term-schools-field_5e_roster'] = array(
+    'bundle' => 'schools',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 24,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_5e_roster',
+    'label' => '5E roster',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 52,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-schools-field_address'
   $field_instances['taxonomy_term-schools-field_address'] = array(
     'bundle' => 'schools',
@@ -1687,6 +1810,123 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-schools-field_alternative_school'
+  $field_instances['taxonomy_term-schools-field_alternative_school'] = array(
+    'bundle' => 'schools',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 15,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_alternative_school',
+    'label' => 'Alternative School',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 43,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_authorized_grades'
+  $field_instances['taxonomy_term-schools-field_authorized_grades'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 19,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_authorized_grades',
+    'label' => 'Authorized grades',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 47,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_authorizer'
+  $field_instances['taxonomy_term-schools-field_authorizer'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 22,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_authorizer',
+    'label' => 'Authorizer',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 50,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-schools-field_bcode'
   $field_instances['taxonomy_term-schools-field_bcode'] = array(
     'bundle' => 'schools',
@@ -1730,6 +1970,86 @@ function esdportal_str_field_default_field_instances() {
       'settings' => array(),
       'type' => 'number',
       'weight' => 33,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_career_technical_emphasis'
+  $field_instances['taxonomy_term-schools-field_career_technical_emphasis'] = array(
+    'bundle' => 'schools',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 16,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_career_technical_emphasis',
+    'label' => 'Career Technical Emphasis',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 44,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_district'
+  $field_instances['taxonomy_term-schools-field_district'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 20,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_district',
+    'label' => 'District',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 48,
     ),
   );
 
@@ -1817,6 +2137,125 @@ function esdportal_str_field_default_field_instances() {
       ),
       'type' => 'file_generic',
       'weight' => 37,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_governance'
+  $field_instances['taxonomy_term-schools-field_governance'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 18,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_governance',
+    'label' => 'Governance',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 46,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_grdataletter'
+  $field_instances['taxonomy_term-schools-field_grdataletter'] = array(
+    'bundle' => 'schools',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 26,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_grdataletter',
+    'label' => 'grDataLetter',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 54,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_grdatatype'
+  $field_instances['taxonomy_term-schools-field_grdatatype'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 27,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_grdatatype',
+    'label' => 'grDataType',
+    'required' => FALSE,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 55,
     ),
   );
 
@@ -1910,6 +2349,86 @@ function esdportal_str_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 35,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_operator'
+  $field_instances['taxonomy_term-schools-field_operator'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 21,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_operator',
+    'label' => 'Operator',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 49,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_opted_in'
+  $field_instances['taxonomy_term-schools-field_opted_in'] = array(
+    'bundle' => 'schools',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 23,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_opted_in',
+    'label' => 'Opted in?',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 51,
     ),
   );
 
@@ -2021,6 +2540,215 @@ function esdportal_str_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_select',
       'weight' => 30,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_scorecard_display'
+  $field_instances['taxonomy_term-schools-field_scorecard_display'] = array(
+    'bundle' => 'schools',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 28,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_scorecard_display',
+    'label' => 'Scorecard Display',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 56,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_special_ed_emphasis'
+  $field_instances['taxonomy_term-schools-field_special_ed_emphasis'] = array(
+    'bundle' => 'schools',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 14,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_special_ed_emphasis',
+    'label' => 'Special Ed Emphasis',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 42,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_specialty_school'
+  $field_instances['taxonomy_term-schools-field_specialty_school'] = array(
+    'bundle' => 'schools',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 17,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_specialty_school',
+    'label' => 'Specialty School',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 45,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_state_status'
+  $field_instances['taxonomy_term-schools-field_state_status'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 11,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_state_status',
+    'label' => 'State status',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 39,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_strict_discipline_academy'
+  $field_instances['taxonomy_term-schools-field_strict_discipline_academy'] = array(
+    'bundle' => 'schools',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 13,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_strict_discipline_academy',
+    'label' => 'Strict Discipline Academy',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 41,
     ),
   );
 
@@ -2137,16 +2865,24 @@ function esdportal_str_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('2011 Percent Detroit resident');
+  t('2013 site visit date');
+  t('5E roster');
   t('AP Classes');
   t('Address');
   t('After School Transportation');
+  t('Alternative School');
+  t('Authorized grades');
+  t('Authorizer');
   t('Body');
   t('Building code');
   t('Building name');
+  t('Career Technical Emphasis');
   t('Character Development');
   t('College Counseling');
   t('Counselor/Student Ratio');
   t('Discipline Programs');
+  t('District');
   t('Do you have linked learning or special tracks? If so, please describe.');
   t('Do you offer dual enrollment?');
   t('Do you offer early childhood programs? If so, please select the years covered by your program.');
@@ -2163,12 +2899,15 @@ function esdportal_str_field_default_field_instances() {
   t('Family Supports');
   t('Files');
   t('First Name');
+  t('Governance');
   t('Grades Served');
   t('If you have relationships with early child centers, please list which ones.');
   t('If your school offers dual enrollment, with which institutions?');
   t('In-School Programs');
   t('Last Name');
   t('Links');
+  t('Operator');
+  t('Opted in?');
   t('Organized Sports');
   t('Parent Supports');
   t('Person Responsible');
@@ -2186,8 +2925,13 @@ function esdportal_str_field_default_field_instances() {
   t('School Scorecard status');
   t('School status');
   t('School type');
+  t('Scorecard Display');
+  t('Special Ed Emphasis');
   t('Special Needs');
   t('Special Tracks');
+  t('Specialty School');
+  t('State status');
+  t('Strict Discipline Academy');
   t('Student Development Programs');
   t('Student Leadership Opportunities');
   t('Superintendents');
@@ -2203,6 +2947,8 @@ function esdportal_str_field_default_field_instances() {
   t('What supports are in place for students with special needs?');
   t('What transportation options are available for before and after the regular school day?  How do you determine eligibility?');
   t('Who is responsible for community partnerships and after-school programs at your school?');
+  t('grDataLetter');
+  t('grDataType');
   t('pr1_reading_credit');
   t('pr1_reading_grade');
   t('pr1_reading_gradeval');

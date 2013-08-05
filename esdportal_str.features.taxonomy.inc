@@ -9,6 +9,46 @@
  */
 function esdportal_str_taxonomy_default_vocabularies() {
   return array(
+    'authorizer' => array(
+      'name' => 'Authorizer',
+      'machine_name' => 'authorizer',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
+    'operator' => array(
+      'name' => 'School operator',
+      'machine_name' => 'operator',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
+    'school_district' => array(
+      'name' => 'School district',
+      'machine_name' => 'school_district',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
+    'school_gov' => array(
+      'name' => 'School governance',
+      'machine_name' => 'school_gov',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
+    'school_grades' => array(
+      'name' => 'School grades',
+      'machine_name' => 'school_grades',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'school_scorecard_status' => array(
       'name' => 'School scorecard status',
       'machine_name' => 'school_scorecard_status',
@@ -36,6 +76,14 @@ function esdportal_str_taxonomy_default_vocabularies() {
     'schools' => array(
       'name' => 'Schools',
       'machine_name' => 'schools',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
+    'state_school_status' => array(
+      'name' => 'State school status',
+      'machine_name' => 'state_school_status',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
