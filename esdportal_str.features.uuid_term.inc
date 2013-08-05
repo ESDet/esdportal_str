@@ -35,11 +35,11 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'school_status',
   );
   $terms[] = array(
-    'revision_id' => 638,
-    'log' => NULL,
-    'timestamp' => 1375286715,
-    'uid' => 0,
-    'name' => 'High school',
+    'revision_id' => 974,
+    'log' => '',
+    'timestamp' => 1375716887,
+    'uid' => 1,
+    'name' => 'HS',
     'description' => '',
     'format' => 'full_html',
     'weight' => 0,

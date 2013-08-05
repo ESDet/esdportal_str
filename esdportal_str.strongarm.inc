@@ -102,14 +102,6 @@ function esdportal_str_strongarm() {
       0 => 'act_2012',
       1 => 'BuildingCode',
     ),
-    'data_esd_hs_2013' => array(
-      0 => 'esd_hs_2013',
-      1 => 'buildingcode',
-    ),
-    'data_esd_k8_2013' => array(
-      0 => 'esd_k8_2013',
-      1 => 'buildingcode',
-    ),
     'data_meap_2012' => array(
       0 => 'meap_2012',
       1 => 'BuildingCode',
@@ -117,6 +109,14 @@ function esdportal_str_strongarm() {
     'data_act_2013' => array(
       0 => 'act_2013',
       1 => 'BuildingCode',
+    ),
+    'data_esd_hs_2013' => array(
+      0 => 'esd_hs_2013',
+      1 => 'buildingcode',
+    ),
+    'data_esd_k8_2013' => array(
+      0 => 'esd_k8_2013',
+      1 => 'buildingcode',
     ),
     'data_fiveessentials_2013' => array(
       0 => 'fiveessentials_2013',
