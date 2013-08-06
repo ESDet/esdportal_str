@@ -613,7 +613,7 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['Teacher_Report']['id'] = 'Teacher_Report';
   $handler->display->display_options['fields']['Teacher_Report']['table'] = 'fiveessentials_2013';
   $handler->display->display_options['fields']['Teacher_Report']['field'] = 'Teacher_Report';
-  /* Field: Five Essentials 2013: Response rate on teacher survey */
+  /* Field: Five Essentials 2013: Response rate on student survey */
   $handler->display->display_options['fields']['Student_Response_Rate']['id'] = 'Student_Response_Rate';
   $handler->display->display_options['fields']['Student_Response_Rate']['table'] = 'fiveessentials_2013';
   $handler->display->display_options['fields']['Student_Response_Rate']['field'] = 'Student_Response_Rate';

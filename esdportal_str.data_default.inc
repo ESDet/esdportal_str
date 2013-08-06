@@ -2085,7 +2085,7 @@ function esdportal_str_data_default() {
         'label' => '0 or 1: 1 if eligible for teacher report',
       ),
       'Student_Response_Rate' => array(
-        'label' => 'Response rate on teacher survey',
+        'label' => 'Response rate on student survey',
       ),
       'Teacher_Response_Rate' => array(
         'label' => 'Response rate on teacher survey',
