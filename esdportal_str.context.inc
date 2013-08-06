@@ -220,6 +220,7 @@ function esdportal_str_context_default_contexts() {
     'user' => array(
       'values' => array(
         'School Leader' => 'School Leader',
+        'School Representative' => 'School Representative',
         'Superintendent' => 'Superintendent',
       ),
     ),

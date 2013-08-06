@@ -10,12 +10,6 @@
 function esdportal_str_user_default_roles() {
   $roles = array();
 
-  // Exported role: ESD Administrator.
-  $roles['ESD Administrator'] = array(
-    'name' => 'ESD Administrator',
-    'weight' => 3,
-  );
-
   // Exported role: Logistics Coordinator.
   $roles['Logistics Coordinator'] = array(
     'name' => 'Logistics Coordinator',
