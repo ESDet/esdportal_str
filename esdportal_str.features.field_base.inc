@@ -815,6 +815,22 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_geo'
+  $field_bases['field_geo'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_geo',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'geofield',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'geofield',
+  );
+
   // Exported field_base: 'field_governance'
   $field_bases['field_governance'] = array(
     'active' => 1,

@@ -102,6 +102,10 @@ function esdportal_str_strongarm() {
       0 => 'act_2012',
       1 => 'BuildingCode',
     ),
+    'data_fiveessentials_2013' => array(
+      0 => 'fiveessentials_2013',
+      1 => 'BCODE',
+    ),
     'data_meap_2012' => array(
       0 => 'meap_2012',
       1 => 'BuildingCode',
@@ -117,10 +121,6 @@ function esdportal_str_strongarm() {
     'data_esd_k8_2013' => array(
       0 => 'esd_k8_2013',
       1 => 'buildingcode',
-    ),
-    'data_fiveessentials_2013' => array(
-      0 => 'fiveessentials_2013',
-      1 => 'BCODE',
     ),
     'data_meap_2009' => array(
       0 => 'meap_2009',

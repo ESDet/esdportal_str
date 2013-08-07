@@ -1657,7 +1657,7 @@ function esdportal_str_data_default() {
         'description' => '',
       ),
       'Student_Response_Rate' => array(
-        'type' => 'numeric',
+        'type' => 'float',
         'precision' => 8,
         'scale' => 2,
         'size' => 'normal',
@@ -1665,7 +1665,7 @@ function esdportal_str_data_default() {
         'not null' => FALSE,
       ),
       'Teacher_Response_Rate' => array(
-        'type' => 'numeric',
+        'type' => 'float',
         'precision' => 8,
         'scale' => 2,
         'size' => 'normal',
@@ -1673,7 +1673,7 @@ function esdportal_str_data_default() {
         'not null' => FALSE,
       ),
       'Student_Lazy_Rate' => array(
-        'type' => 'numeric',
+        'type' => 'float',
         'precision' => 8,
         'scale' => 2,
         'size' => 'normal',
@@ -1681,7 +1681,7 @@ function esdportal_str_data_default() {
         'not null' => FALSE,
       ),
       'Teacher_Lazy_Rate' => array(
-        'type' => 'numeric',
+        'type' => 'float',
         'precision' => 8,
         'scale' => 2,
         'size' => 'normal',
@@ -1983,7 +1983,7 @@ function esdportal_str_data_default() {
         'label' => 'English Instruction (Student)',
       ),
       'HUMR' => array(
-        'label' => 'Human & Social Resources in the Community (Student)',
+        'label' => 'Human &amp; Social Resources in the Community (Student)',
       ),
       'INFL' => array(
         'label' => 'Teacher Influence (Teacher)',
@@ -2070,7 +2070,7 @@ function esdportal_str_data_default() {
         'label' => '5Essentials Internal School Identifier',
       ),
       'State_Schl_ID' => array(
-        'label' => 'School\'s State Identifier',
+        'label' => 'School&#039;s State Identifier',
       ),
       'District_School_Id' => array(
         'label' => 'School ID provided by DPS or charter school network',
@@ -2091,10 +2091,10 @@ function esdportal_str_data_default() {
         'label' => 'Response rate on teacher survey',
       ),
       'Student_Lazy_Rate' => array(
-        'label' => 'Percentage of "lazy" respondents for students',
+        'label' => 'Percentage of &quot;lazy&quot; respondents for students',
       ),
       'Teacher_Lazy_Rate' => array(
-        'label' => 'Percentage of "lazy" respondents for teachers',
+        'label' => 'Percentage of &quot;lazy&quot; respondents for teachers',
       ),
       'Student_N' => array(
         'label' => 'Total number of students listed on roster',
@@ -2125,6 +2125,27 @@ function esdportal_str_data_default() {
       ),
       'Location' => array(
         'label' => 'School Address',
+      ),
+      'BCODE' => array(
+        'label' => '',
+      ),
+      'District_Schl_ID' => array(
+        'label' => '',
+      ),
+      'CONTINUING_4_YEAR' => array(
+        'label' => '',
+      ),
+      'PRT2' => array(
+        'label' => '',
+      ),
+      'Category5E' => array(
+        'label' => '',
+      ),
+      'Net5e' => array(
+        'label' => '',
+      ),
+      'School_Name' => array(
+        'label' => '',
       ),
     ),
   );

@@ -29,17 +29,22 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '50';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '200';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'title' => 'title',
     'uid' => 'uid',
     'nid' => 'nid',
+    'field_bcode' => 'field_bcode',
     'created' => 'created',
     'changed' => 'changed',
     'views_bulk_operations' => 'views_bulk_operations',
+    'field_school' => 'field_school',
   );
-  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['default'] = 'changed';
   $handler->display->display_options['style_options']['info'] = array(
     'title' => array(
       'sortable' => 1,
@@ -54,6 +59,13 @@ function esdportal_str_views_default_views() {
       'empty_column' => 0,
     ),
     'nid' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_bcode' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -79,6 +91,13 @@ function esdportal_str_views_default_views() {
       'separator' => '',
       'empty_column' => 0,
     ),
+    'field_school' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -94,6 +113,26 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  /* Field: Field: Building code */
+  $handler->display->display_options['fields']['field_bcode']['id'] = 'field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['table'] = 'field_data_field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['field'] = 'field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['label'] = 'bcode';
+  $handler->display->display_options['fields']['field_bcode']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: School */
+  $handler->display->display_options['fields']['field_school']['id'] = 'field_school';
+  $handler->display->display_options['fields']['field_school']['table'] = 'field_data_field_school';
+  $handler->display->display_options['fields']['field_school']['field'] = 'field_school';
+  $handler->display->display_options['fields']['field_school']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_school']['alter']['text'] = '[field_school-tid]';
+  $handler->display->display_options['fields']['field_school']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_school']['settings'] = array(
+    'skip_safe' => 0,
+    'skip_empty_values' => 0,
+  );
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
@@ -262,6 +301,25 @@ function esdportal_str_views_default_views() {
     5 => 0,
     7 => 0,
     3 => 0,
+    6 => 0,
+  );
+  /* Filter criterion: Content: Title */
+  $handler->display->display_options['filters']['title']['id'] = 'title';
+  $handler->display->display_options['filters']['title']['table'] = 'node';
+  $handler->display->display_options['filters']['title']['field'] = 'title';
+  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['label'] = 'Title';
+  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
+  $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    17 => 0,
+    7 => 0,
+    3 => 0,
+    18 => 0,
     6 => 0,
   );
 
@@ -592,7 +650,7 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['School Reporting Slug']['table'] = 'fiveessentials_2013';
   $handler->display->display_options['fields']['School Reporting Slug']['field'] = 'School Reporting Slug';
   $handler->display->display_options['fields']['School Reporting Slug']['label'] = '5Essentials Internal School Identifier';
-  /* Field: Five Essentials 2013: School's State Identifier */
+  /* Field: Five Essentials 2013: School&#039;s State Identifier */
   $handler->display->display_options['fields']['State_Schl_ID']['id'] = 'State_Schl_ID';
   $handler->display->display_options['fields']['State_Schl_ID']['table'] = 'fiveessentials_2013';
   $handler->display->display_options['fields']['State_Schl_ID']['field'] = 'State_Schl_ID';
@@ -621,11 +679,11 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['Teacher_Response_Rate']['id'] = 'Teacher_Response_Rate';
   $handler->display->display_options['fields']['Teacher_Response_Rate']['table'] = 'fiveessentials_2013';
   $handler->display->display_options['fields']['Teacher_Response_Rate']['field'] = 'Teacher_Response_Rate';
-  /* Field: Five Essentials 2013: Percentage of "lazy" respondents for students */
+  /* Field: Five Essentials 2013: Percentage of &quot;lazy&quot; respondents for students */
   $handler->display->display_options['fields']['Student_Lazy_Rate']['id'] = 'Student_Lazy_Rate';
   $handler->display->display_options['fields']['Student_Lazy_Rate']['table'] = 'fiveessentials_2013';
   $handler->display->display_options['fields']['Student_Lazy_Rate']['field'] = 'Student_Lazy_Rate';
-  /* Field: Five Essentials 2013: Percentage of "lazy" respondents for teachers */
+  /* Field: Five Essentials 2013: Percentage of &quot;lazy&quot; respondents for teachers */
   $handler->display->display_options['fields']['Teacher_Lazy_Rate']['id'] = 'Teacher_Lazy_Rate';
   $handler->display->display_options['fields']['Teacher_Lazy_Rate']['table'] = 'fiveessentials_2013';
   $handler->display->display_options['fields']['Teacher_Lazy_Rate']['field'] = 'Teacher_Lazy_Rate';
@@ -670,7 +728,7 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['ENGL']['id'] = 'ENGL';
   $handler->display->display_options['fields']['ENGL']['table'] = 'fiveessentials_2013';
   $handler->display->display_options['fields']['ENGL']['field'] = 'ENGL';
-  /* Field: Five Essentials 2013: Human & Social Resources in the Community (Student) */
+  /* Field: Five Essentials 2013: Human &amp; Social Resources in the Community (Student) */
   $handler->display->display_options['fields']['HUMR']['id'] = 'HUMR';
   $handler->display->display_options['fields']['HUMR']['table'] = 'fiveessentials_2013';
   $handler->display->display_options['fields']['HUMR']['field'] = 'HUMR';
@@ -887,8 +945,10 @@ function esdportal_str_views_default_views() {
     'uid' => 'uid',
     'nid' => 'nid',
     'edit_node' => 'edit_node',
+    'field_bcode' => 'field_bcode',
+    'changed' => 'changed',
   );
-  $handler->display->display_options['style_options']['default'] = 'title';
+  $handler->display->display_options['style_options']['default'] = 'changed';
   $handler->display->display_options['style_options']['info'] = array(
     'title' => array(
       'sortable' => 1,
@@ -924,6 +984,20 @@ function esdportal_str_views_default_views() {
       'empty_column' => 0,
     ),
     'edit_node' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_bcode' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'changed' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'desc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
@@ -983,6 +1057,12 @@ function esdportal_str_views_default_views() {
     'thousand_separator' => '',
     'prefix_suffix' => 0,
   );
+  /* Field: Content: Updated date */
+  $handler->display->display_options['fields']['changed']['id'] = 'changed';
+  $handler->display->display_options['fields']['changed']['table'] = 'node';
+  $handler->display->display_options['fields']['changed']['field'] = 'changed';
+  $handler->display->display_options['fields']['changed']['label'] = 'Updated';
+  $handler->display->display_options['fields']['changed']['date_format'] = 'time ago';
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
@@ -1179,6 +1259,97 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['menu']['name'] = 'menu-moderator-menu';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
+
+  /* Display: dev info */
+  $handler = $view->new_display('page', 'dev info', 'page_1');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'name' => 'name',
+    'view_node' => 'view_node',
+    'nid' => 'nid',
+    'changed' => 'changed',
+    'field_geo' => 'field_geo',
+  );
+  $handler->display->display_options['style_options']['default'] = 'name';
+  $handler->display->display_options['style_options']['info'] = array(
+    'name' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'view_node' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'nid' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'changed' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'desc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_geo' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['label'] = 'School Name';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['view_node']['label'] = 'Profile';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['nid']['label'] = 'Profile NID';
+  /* Field: Content: Updated date */
+  $handler->display->display_options['fields']['changed']['id'] = 'changed';
+  $handler->display->display_options['fields']['changed']['table'] = 'node';
+  $handler->display->display_options['fields']['changed']['field'] = 'changed';
+  $handler->display->display_options['fields']['changed']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['changed']['label'] = 'Profile last updated';
+  $handler->display->display_options['fields']['changed']['date_format'] = 'time ago';
+  /* Field: Taxonomy term: geo */
+  $handler->display->display_options['fields']['field_geo']['id'] = 'field_geo';
+  $handler->display->display_options['fields']['field_geo']['table'] = 'field_data_field_geo';
+  $handler->display->display_options['fields']['field_geo']['field'] = 'field_geo';
+  $handler->display->display_options['fields']['field_geo']['click_sort_column'] = 'wkt';
+  $handler->display->display_options['fields']['field_geo']['type'] = 'geofield_latlon';
+  $handler->display->display_options['fields']['field_geo']['settings'] = array(
+    'data' => 'full',
+    'format' => 'decimal_degrees',
+    'labels' => 1,
+  );
+  $handler->display->display_options['path'] = 'manage-schools/devel';
   $export['manage_schools'] = $view;
 
   $view = new view();
