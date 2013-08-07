@@ -214,12 +214,11 @@ function esdportal_str_context_default_contexts() {
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'sitewide_schoolrep';
-  $context->description = 'School Leader and Superintendent roles';
+  $context->description = 'School Representative and Superintendent roles';
   $context->tag = '';
   $context->conditions = array(
     'user' => array(
       'values' => array(
-        'School Leader' => 'School Leader',
         'School Representative' => 'School Representative',
         'Superintendent' => 'Superintendent',
       ),
@@ -271,7 +270,7 @@ function esdportal_str_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('School Leader and Superintendent roles');
+  t('School Representative and Superintendent roles');
   $export['sitewide_schoolrep'] = $context;
 
   return $export;

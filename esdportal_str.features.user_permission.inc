@@ -34,7 +34,6 @@ function esdportal_str_user_default_permissions() {
     'name' => 'access school scores',
     'roles' => array(
       'Logistics Coordinator' => 'Logistics Coordinator',
-      'School Leader' => 'School Leader',
       'School Representative' => 'School Representative',
       'Superintendent' => 'Superintendent',
       'administrator' => 'administrator',
@@ -122,7 +121,6 @@ function esdportal_str_user_default_permissions() {
     'name' => 'change own username',
     'roles' => array(
       'Logistics Coordinator' => 'Logistics Coordinator',
-      'School Leader' => 'School Leader',
       'School Representative' => 'School Representative',
       'administrator' => 'administrator',
     ),
@@ -309,7 +307,6 @@ function esdportal_str_user_default_permissions() {
   $permissions['edit own school_profile content'] = array(
     'name' => 'edit own school_profile content',
     'roles' => array(
-      'School Leader' => 'School Leader',
       'School Representative' => 'School Representative',
       'administrator' => 'administrator',
     ),
@@ -415,7 +412,6 @@ function esdportal_str_user_default_permissions() {
     'name' => 'view own unpublished content',
     'roles' => array(
       'Logistics Coordinator' => 'Logistics Coordinator',
-      'School Leader' => 'School Leader',
       'School Representative' => 'School Representative',
       'Superintendent' => 'Superintendent',
       'administrator' => 'administrator',
@@ -428,7 +424,6 @@ function esdportal_str_user_default_permissions() {
     'name' => 'view revisions',
     'roles' => array(
       'Logistics Coordinator' => 'Logistics Coordinator',
-      'School Leader' => 'School Leader',
       'School Representative' => 'School Representative',
       'Superintendent' => 'Superintendent',
       'administrator' => 'administrator',
