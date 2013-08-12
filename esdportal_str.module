@@ -146,3 +146,15 @@ function esdportal_str_block_view($delta = '') {
   return $block;
 }
 
+/**
+ * Implements hook_views_pre_build().
+ *
+ * Alter data_ui views field handlers to output NULLs as empty rather than 0.
+ */
+function esdportal_str_views_pre_build(&$view) {
+  if ($view->export_module = 'data_ui') {
+    foreach ($view->field as $handler) {
+      $handler->options['hide_empty'] = TRUE;
+    }
+  }
+}
