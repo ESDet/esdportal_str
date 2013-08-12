@@ -64,6 +64,7 @@ function esdportal_str_user_default_permissions() {
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
     'roles' => array(
+      'Logistics Coordinator' => 'Logistics Coordinator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -149,6 +150,7 @@ function esdportal_str_user_default_permissions() {
   $permissions['create school_profile content'] = array(
     'name' => 'create school_profile content',
     'roles' => array(
+      'Logistics Coordinator' => 'Logistics Coordinator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -307,6 +309,7 @@ function esdportal_str_user_default_permissions() {
   $permissions['edit own school_profile content'] = array(
     'name' => 'edit own school_profile content',
     'roles' => array(
+      'Logistics Coordinator' => 'Logistics Coordinator',
       'School Representative' => 'School Representative',
       'administrator' => 'administrator',
     ),

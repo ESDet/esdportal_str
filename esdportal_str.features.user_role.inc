@@ -16,7 +16,7 @@ function esdportal_str_user_default_roles() {
     'weight' => 6,
   );
 
-  // Exported role: School Representative
+  // Exported role: School Representative.
   $roles['School Representative'] = array(
     'name' => 'School Representative',
     'weight' => 5,
