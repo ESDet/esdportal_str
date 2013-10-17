@@ -6874,5 +6874,64 @@ function esdportal_str_data_default() {
   );
   $export['meap_2012'] = $data_table;
 
+  $data_table = new stdClass();
+  $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
+  $data_table->api_version = 1;
+  $data_table->title = 'Early Childhood';
+  $data_table->name = 'earlychild';
+  $data_table->table_schema = array(
+    'description' => 'State of Michigan Early Childhood Care Provider data',
+    'fields' => array(
+      'BusinessName' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'LicenseNumber' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'DistrictCode' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'DistrictName' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+    'name' => 'earlychild',
+    'primary key' => array(
+      0 => 'LicenseNumber',
+    ),
+  );
+  $data_table->meta = array(
+    'fields' => array(
+      'BusinessName' => array(
+        'label' => 'Business Name',
+      ),
+      'LicenseNumber' => array(
+        'label' => 'License Number',
+      ),
+      'DistrictCode' => array(
+        'label' => 'District Code',
+      ),
+      'DistrictName' => array(
+        'label' => 'District Name',
+      ),
+    ),
+  );
+  $export['earlychild'] = $data_table;
+
   return $export;
 }
