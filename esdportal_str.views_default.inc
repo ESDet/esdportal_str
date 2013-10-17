@@ -7204,5 +7204,107 @@ return $nids;';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $export['school_profiles'] = $view;
 
+  $view = new view();
+  $view->name = 'earlychild';
+  $view->description = 'Default view for data table earlychild';
+  $view->tag = 'data table';
+  $view->base_table = 'earlychild';
+  $view->human_name = '';
+  $view->core = 0;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Default */
+  $handler = $view->new_display('default', 'Default', 'default');
+  $handler->display->display_options['title'] = 'earlychild';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '100';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['grouping'] = '';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'BusinessName' => 'Business Name',
+    'LicenseNumber' => 'License Number',
+    'DistrictCode' => 'District Code',
+    'DistrictName' => 'District Name',
+  );
+  $handler->display->display_options['style_options']['default'] = -1;
+  $handler->display->display_options['style_options']['info'] = array(
+    'BusinessName' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'LicenseNumber' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'DistrictCode' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'DistrictName' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+  );
+  $handler->display->display_options['style_options']['sticky'] = TRUE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['text']['id'] = 'area';
+  $handler->display->display_options['empty']['text']['table'] = 'views';
+  $handler->display->display_options['empty']['text']['field'] = 'area';
+  $handler->display->display_options['empty']['text']['content'] = 'There is no data in this table.';
+  $handler->display->display_options['empty']['text']['format'] = '1';
+  /* Field: earlychild: BusinessName */
+  $handler->display->display_options['fields']['SchoolYear']['id'] = 'BusinessName';
+  $handler->display->display_options['fields']['SchoolYear']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['SchoolYear']['field'] = 'BusinessName';
+  $handler->display->display_options['fields']['SchoolYear']['label'] = '';
+  /* Field: earlychild: LicenseNumber */
+  $handler->display->display_options['fields']['ISDCode']['id'] = 'LicenseNumber';
+  $handler->display->display_options['fields']['ISDCode']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['ISDCode']['field'] = 'LicenseNumber';
+  $handler->display->display_options['fields']['ISDCode']['label'] = '';
+  /* Field: earlychild: Districtcode */
+  $handler->display->display_options['fields']['DistrictCode']['id'] = 'DistrictCode';
+  $handler->display->display_options['fields']['DistrictCode']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['DistrictCode']['field'] = 'DistrictCode';
+  $handler->display->display_options['fields']['DistrictCode']['label'] = '';
+  /* Field: earlychild: Districtname */
+  $handler->display->display_options['fields']['DistrictName']['id'] = 'DistrictName';
+  $handler->display->display_options['fields']['DistrictName']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['DistrictName']['field'] = 'DistrictName';
+  $handler->display->display_options['fields']['DistrictName']['label'] = '';
+  /* Field: earlychild: Edit link */
+  $handler->display->display_options['fields']['edit_link']['id'] = 'edit_link';
+  $handler->display->display_options['fields']['edit_link']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['edit_link']['field'] = 'edit_link';
+  /* Filter criterion: earlychild: LicenseNumber */
+  $handler->display->display_options['filters']['BuildingCode']['id'] = 'LicenseNumber';
+  $handler->display->display_options['filters']['BuildingCode']['table'] = 'earlychild';
+  $handler->display->display_options['filters']['BuildingCode']['field'] = 'LicenseNumber';
+  $handler->display->display_options['filters']['BuildingCode']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['BuildingCode']['expose']['operator_id'] = 'LicenseNumber_op';
+  $handler->display->display_options['filters']['BuildingCode']['expose']['label'] = 'bcode';
+  $handler->display->display_options['filters']['BuildingCode']['expose']['operator'] = 'LicenseNumber_op';
+  $handler->display->display_options['filters']['BuildingCode']['expose']['identifier'] = 'licensenumber';
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['path'] = 'admin/content/data/view/earlychild';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'earlychild';
+  $handler->display->display_options['menu']['weight'] = '0';
+
+  /* Display: Services */
+  $handler = $view->new_display('services', 'Services', 'services_by_licensenumber');
+  $handler->display->display_options['path'] = 'earlychlidbylicensenumber';
+  $export['earlychild'] = $view;
+
   return $export;
 }
