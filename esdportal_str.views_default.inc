@@ -329,6 +329,521 @@ function esdportal_str_views_default_views() {
   $export['bulk'] = $view;
 
   $view = new view();
+  $view->name = 'earlychild';
+  $view->description = 'Default view for data table Early Childhood Centers';
+  $view->tag = 'data table';
+  $view->base_table = 'earlychild';
+  $view->human_name = '';
+  $view->core = 0;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Default */
+  $handler = $view->new_display('default', 'Default', 'default');
+  $handler->display->display_options['title'] = 'Early Childhood Centers';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = 50;
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['grouping'] = '';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'BusinessName' => 'BusinessName',
+    'LicenseNumber' => 'LicenseNumber',
+    'Address' => 'Address',
+    'City' => 'City',
+    'ZipCode' => 'ZipCode',
+    'LicenseType' => 'LicenseType',
+    'County' => 'County',
+    'SASRating' => 'SASRating',
+    'SASStatus' => 'SASStatus',
+    'PublishedRating' => 'PublishedRating',
+    'Phone' => 'Phone',
+    'Website' => 'Website',
+    'AgeFrom' => 'AgeFrom',
+    'AgeTo' => 'AgeTo',
+    'MonthsOfOperation' => 'MonthsOfOperation',
+    'SundayDayOpen' => 'SundayDayOpen',
+    'SundayDayClose' => 'SundayDayClose',
+    'MondayDayOpen' => 'MondayDayOpen',
+    'MondayDayClose' => 'MondayDayClose',
+    'TuesdayDayOpen' => 'TuesdayDayOpen',
+    'TuesdayDayClose' => 'TuesdayDayClose',
+    'WednesdayDayOpen' => 'WednesdayDayOpen',
+    'WednesdayDayClose' => 'WednesdayDayClose',
+    'ThursdayDayOpen' => 'ThursdayDayOpen',
+    'ThursdayDayClose' => 'ThursdayDayClose',
+    'FridayDayOpen' => 'FridayDayOpen',
+    'FridayDayClose' => 'FridayDayClose',
+    'SaturdayDayOpen' => 'SaturdayDayOpen',
+    'SaturdayDayClose' => 'SaturdayDayClose',
+    'Transportation' => 'Transportation',
+    'Environment' => 'Environment',
+    'Meals' => 'Meals',
+    'Lat' => 'Lat',
+    'Lon' => 'Lon',
+    'GSCProviderID' => 'GSCProviderID',
+    'GSCLicensedDate' => 'GSCLicensedDate',
+    'GSCpts' => 'GSCpts',
+    'GSCptsStaff' => 'GSCptsStaff',
+    'GSCptsFamily' => 'GSCptsFamily',
+    'GSCptsAdmin' => 'GSCptsAdmin',
+    'GSCptsEnv' => 'GSCptsEnv',
+    'GSCptsCurr' => 'GSCptsCurr',
+    'GSCeligibility' => 'GSCeligibility',
+    'GSCspecial' => 'GSCspecial',
+    'GSCsubsidy' => 'GSCsubsidy',
+    'GSCcapacity' => 'GSCcapacity',
+    'GSCcontract' => 'GSCcontract',
+    'GSCfee' => 'GSCfee',
+    'GSCemail' => 'GSCemail',
+    'GSCcontact' => 'GSCcontact',
+    'id' => 'id',
+  );
+  $handler->display->display_options['style_options']['default'] = -1;
+  $handler->display->display_options['style_options']['info'] = array(
+    'BusinessName' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'LicenseNumber' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Address' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'City' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'ZipCode' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'LicenseType' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'County' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'SASRating' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'SASStatus' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'PublishedRating' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Phone' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Website' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'AgeFrom' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'AgeTo' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'MonthsOfOperation' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'SundayDayOpen' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'SundayDayClose' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'MondayDayOpen' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'MondayDayClose' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'TuesdayDayOpen' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'TuesdayDayClose' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'WednesdayDayOpen' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'WednesdayDayClose' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'ThursdayDayOpen' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'ThursdayDayClose' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'FridayDayOpen' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'FridayDayClose' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'SaturdayDayOpen' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'SaturdayDayClose' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Transportation' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Environment' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Meals' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Lat' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Lon' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCProviderID' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCLicensedDate' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCpts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCptsStaff' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCptsFamily' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCptsAdmin' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCptsEnv' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCptsCurr' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCeligibility' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCspecial' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCsubsidy' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCcapacity' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCcontract' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCfee' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCemail' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCcontact' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'id' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+  );
+  $handler->display->display_options['style_options']['sticky'] = TRUE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['text']['id'] = 'area';
+  $handler->display->display_options['empty']['text']['table'] = 'views';
+  $handler->display->display_options['empty']['text']['field'] = 'area';
+  $handler->display->display_options['empty']['text']['content'] = 'There is no data in this table.';
+  $handler->display->display_options['empty']['text']['format'] = '1';
+  /* Field: Early Childhood Centers: BusinessName */
+  $handler->display->display_options['fields']['BusinessName']['id'] = 'BusinessName';
+  $handler->display->display_options['fields']['BusinessName']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['BusinessName']['field'] = 'BusinessName';
+  /* Field: Early Childhood Centers: LicenseNumber */
+  $handler->display->display_options['fields']['LicenseNumber']['id'] = 'LicenseNumber';
+  $handler->display->display_options['fields']['LicenseNumber']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['LicenseNumber']['field'] = 'LicenseNumber';
+  /* Field: Early Childhood Centers: Address */
+  $handler->display->display_options['fields']['Address']['id'] = 'Address';
+  $handler->display->display_options['fields']['Address']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['Address']['field'] = 'Address';
+  /* Field: Early Childhood Centers: City */
+  $handler->display->display_options['fields']['City']['id'] = 'City';
+  $handler->display->display_options['fields']['City']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['City']['field'] = 'City';
+  /* Field: Early Childhood Centers: ZipCode */
+  $handler->display->display_options['fields']['ZipCode']['id'] = 'ZipCode';
+  $handler->display->display_options['fields']['ZipCode']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['ZipCode']['field'] = 'ZipCode';
+  /* Field: Early Childhood Centers: LicenseType */
+  $handler->display->display_options['fields']['LicenseType']['id'] = 'LicenseType';
+  $handler->display->display_options['fields']['LicenseType']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['LicenseType']['field'] = 'LicenseType';
+  /* Field: Early Childhood Centers: County */
+  $handler->display->display_options['fields']['County']['id'] = 'County';
+  $handler->display->display_options['fields']['County']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['County']['field'] = 'County';
+  /* Field: Early Childhood Centers: SASRating */
+  $handler->display->display_options['fields']['SASRating']['id'] = 'SASRating';
+  $handler->display->display_options['fields']['SASRating']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['SASRating']['field'] = 'SASRating';
+  /* Field: Early Childhood Centers: SASStatus */
+  $handler->display->display_options['fields']['SASStatus']['id'] = 'SASStatus';
+  $handler->display->display_options['fields']['SASStatus']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['SASStatus']['field'] = 'SASStatus';
+  /* Field: Early Childhood Centers: PublishedRating */
+  $handler->display->display_options['fields']['PublishedRating']['id'] = 'PublishedRating';
+  $handler->display->display_options['fields']['PublishedRating']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['PublishedRating']['field'] = 'PublishedRating';
+  /* Field: Early Childhood Centers: Phone */
+  $handler->display->display_options['fields']['Phone']['id'] = 'Phone';
+  $handler->display->display_options['fields']['Phone']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['Phone']['field'] = 'Phone';
+  /* Field: Early Childhood Centers: Website */
+  $handler->display->display_options['fields']['Website']['id'] = 'Website';
+  $handler->display->display_options['fields']['Website']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['Website']['field'] = 'Website';
+  /* Field: Early Childhood Centers: AgeFrom */
+  $handler->display->display_options['fields']['AgeFrom']['id'] = 'AgeFrom';
+  $handler->display->display_options['fields']['AgeFrom']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['AgeFrom']['field'] = 'AgeFrom';
+  /* Field: Early Childhood Centers: AgeTo */
+  $handler->display->display_options['fields']['AgeTo']['id'] = 'AgeTo';
+  $handler->display->display_options['fields']['AgeTo']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['AgeTo']['field'] = 'AgeTo';
+  /* Field: Early Childhood Centers: MonthsOfOperation */
+  $handler->display->display_options['fields']['MonthsOfOperation']['id'] = 'MonthsOfOperation';
+  $handler->display->display_options['fields']['MonthsOfOperation']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['MonthsOfOperation']['field'] = 'MonthsOfOperation';
+  /* Field: Early Childhood Centers: SundayDayOpen */
+  $handler->display->display_options['fields']['SundayDayOpen']['id'] = 'SundayDayOpen';
+  $handler->display->display_options['fields']['SundayDayOpen']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['SundayDayOpen']['field'] = 'SundayDayOpen';
+  /* Field: Early Childhood Centers: SundayDayClose */
+  $handler->display->display_options['fields']['SundayDayClose']['id'] = 'SundayDayClose';
+  $handler->display->display_options['fields']['SundayDayClose']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['SundayDayClose']['field'] = 'SundayDayClose';
+  /* Field: Early Childhood Centers: MondayDayOpen */
+  $handler->display->display_options['fields']['MondayDayOpen']['id'] = 'MondayDayOpen';
+  $handler->display->display_options['fields']['MondayDayOpen']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['MondayDayOpen']['field'] = 'MondayDayOpen';
+  /* Field: Early Childhood Centers: MondayDayClose */
+  $handler->display->display_options['fields']['MondayDayClose']['id'] = 'MondayDayClose';
+  $handler->display->display_options['fields']['MondayDayClose']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['MondayDayClose']['field'] = 'MondayDayClose';
+  /* Field: Early Childhood Centers: TuesdayDayOpen */
+  $handler->display->display_options['fields']['TuesdayDayOpen']['id'] = 'TuesdayDayOpen';
+  $handler->display->display_options['fields']['TuesdayDayOpen']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['TuesdayDayOpen']['field'] = 'TuesdayDayOpen';
+  /* Field: Early Childhood Centers: TuesdayDayClose */
+  $handler->display->display_options['fields']['TuesdayDayClose']['id'] = 'TuesdayDayClose';
+  $handler->display->display_options['fields']['TuesdayDayClose']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['TuesdayDayClose']['field'] = 'TuesdayDayClose';
+  /* Field: Early Childhood Centers: WednesdayDayOpen */
+  $handler->display->display_options['fields']['WednesdayDayOpen']['id'] = 'WednesdayDayOpen';
+  $handler->display->display_options['fields']['WednesdayDayOpen']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['WednesdayDayOpen']['field'] = 'WednesdayDayOpen';
+  /* Field: Early Childhood Centers: WednesdayDayClose */
+  $handler->display->display_options['fields']['WednesdayDayClose']['id'] = 'WednesdayDayClose';
+  $handler->display->display_options['fields']['WednesdayDayClose']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['WednesdayDayClose']['field'] = 'WednesdayDayClose';
+  /* Field: Early Childhood Centers: ThursdayDayOpen */
+  $handler->display->display_options['fields']['ThursdayDayOpen']['id'] = 'ThursdayDayOpen';
+  $handler->display->display_options['fields']['ThursdayDayOpen']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['ThursdayDayOpen']['field'] = 'ThursdayDayOpen';
+  /* Field: Early Childhood Centers: ThursdayDayClose */
+  $handler->display->display_options['fields']['ThursdayDayClose']['id'] = 'ThursdayDayClose';
+  $handler->display->display_options['fields']['ThursdayDayClose']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['ThursdayDayClose']['field'] = 'ThursdayDayClose';
+  /* Field: Early Childhood Centers: FridayDayOpen */
+  $handler->display->display_options['fields']['FridayDayOpen']['id'] = 'FridayDayOpen';
+  $handler->display->display_options['fields']['FridayDayOpen']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['FridayDayOpen']['field'] = 'FridayDayOpen';
+  /* Field: Early Childhood Centers: FridayDayClose */
+  $handler->display->display_options['fields']['FridayDayClose']['id'] = 'FridayDayClose';
+  $handler->display->display_options['fields']['FridayDayClose']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['FridayDayClose']['field'] = 'FridayDayClose';
+  /* Field: Early Childhood Centers: SaturdayDayOpen */
+  $handler->display->display_options['fields']['SaturdayDayOpen']['id'] = 'SaturdayDayOpen';
+  $handler->display->display_options['fields']['SaturdayDayOpen']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['SaturdayDayOpen']['field'] = 'SaturdayDayOpen';
+  /* Field: Early Childhood Centers: SaturdayDayClose */
+  $handler->display->display_options['fields']['SaturdayDayClose']['id'] = 'SaturdayDayClose';
+  $handler->display->display_options['fields']['SaturdayDayClose']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['SaturdayDayClose']['field'] = 'SaturdayDayClose';
+  /* Field: Early Childhood Centers: Transportation */
+  $handler->display->display_options['fields']['Transportation']['id'] = 'Transportation';
+  $handler->display->display_options['fields']['Transportation']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['Transportation']['field'] = 'Transportation';
+  /* Field: Early Childhood Centers: Environment */
+  $handler->display->display_options['fields']['Environment']['id'] = 'Environment';
+  $handler->display->display_options['fields']['Environment']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['Environment']['field'] = 'Environment';
+  /* Field: Early Childhood Centers: Meals */
+  $handler->display->display_options['fields']['Meals']['id'] = 'Meals';
+  $handler->display->display_options['fields']['Meals']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['Meals']['field'] = 'Meals';
+  /* Field: Early Childhood Centers: Lat */
+  $handler->display->display_options['fields']['Lat']['id'] = 'Lat';
+  $handler->display->display_options['fields']['Lat']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['Lat']['field'] = 'Lat';
+  /* Field: Early Childhood Centers: Lon */
+  $handler->display->display_options['fields']['Lon']['id'] = 'Lon';
+  $handler->display->display_options['fields']['Lon']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['Lon']['field'] = 'Lon';
+  /* Field: Early Childhood Centers: GSCProviderID */
+  $handler->display->display_options['fields']['GSCProviderID']['id'] = 'GSCProviderID';
+  $handler->display->display_options['fields']['GSCProviderID']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCProviderID']['field'] = 'GSCProviderID';
+  /* Field: Early Childhood Centers: GSCLicensedDate */
+  $handler->display->display_options['fields']['GSCLicensedDate']['id'] = 'GSCLicensedDate';
+  $handler->display->display_options['fields']['GSCLicensedDate']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCLicensedDate']['field'] = 'GSCLicensedDate';
+  /* Field: Early Childhood Centers: GSCpts */
+  $handler->display->display_options['fields']['GSCpts']['id'] = 'GSCpts';
+  $handler->display->display_options['fields']['GSCpts']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCpts']['field'] = 'GSCpts';
+  /* Field: Early Childhood Centers: GSCptsStaff */
+  $handler->display->display_options['fields']['GSCptsStaff']['id'] = 'GSCptsStaff';
+  $handler->display->display_options['fields']['GSCptsStaff']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCptsStaff']['field'] = 'GSCptsStaff';
+  /* Field: Early Childhood Centers: GSCptsFamily */
+  $handler->display->display_options['fields']['GSCptsFamily']['id'] = 'GSCptsFamily';
+  $handler->display->display_options['fields']['GSCptsFamily']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCptsFamily']['field'] = 'GSCptsFamily';
+  /* Field: Early Childhood Centers: GSCptsAdmin */
+  $handler->display->display_options['fields']['GSCptsAdmin']['id'] = 'GSCptsAdmin';
+  $handler->display->display_options['fields']['GSCptsAdmin']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCptsAdmin']['field'] = 'GSCptsAdmin';
+  /* Field: Early Childhood Centers: GSCptsEnv */
+  $handler->display->display_options['fields']['GSCptsEnv']['id'] = 'GSCptsEnv';
+  $handler->display->display_options['fields']['GSCptsEnv']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCptsEnv']['field'] = 'GSCptsEnv';
+  /* Field: Early Childhood Centers: GSCptsCurr */
+  $handler->display->display_options['fields']['GSCptsCurr']['id'] = 'GSCptsCurr';
+  $handler->display->display_options['fields']['GSCptsCurr']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCptsCurr']['field'] = 'GSCptsCurr';
+  /* Field: Early Childhood Centers: GSCeligibility */
+  $handler->display->display_options['fields']['GSCeligibility']['id'] = 'GSCeligibility';
+  $handler->display->display_options['fields']['GSCeligibility']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCeligibility']['field'] = 'GSCeligibility';
+  /* Field: Early Childhood Centers: GSCspecial */
+  $handler->display->display_options['fields']['GSCspecial']['id'] = 'GSCspecial';
+  $handler->display->display_options['fields']['GSCspecial']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCspecial']['field'] = 'GSCspecial';
+  /* Field: Early Childhood Centers: GSCsubsidy */
+  $handler->display->display_options['fields']['GSCsubsidy']['id'] = 'GSCsubsidy';
+  $handler->display->display_options['fields']['GSCsubsidy']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCsubsidy']['field'] = 'GSCsubsidy';
+  /* Field: Early Childhood Centers: GSCcapacity */
+  $handler->display->display_options['fields']['GSCcapacity']['id'] = 'GSCcapacity';
+  $handler->display->display_options['fields']['GSCcapacity']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCcapacity']['field'] = 'GSCcapacity';
+  /* Field: Early Childhood Centers: GSCcontract */
+  $handler->display->display_options['fields']['GSCcontract']['id'] = 'GSCcontract';
+  $handler->display->display_options['fields']['GSCcontract']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCcontract']['field'] = 'GSCcontract';
+  /* Field: Early Childhood Centers: GSCfee */
+  $handler->display->display_options['fields']['GSCfee']['id'] = 'GSCfee';
+  $handler->display->display_options['fields']['GSCfee']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCfee']['field'] = 'GSCfee';
+  /* Field: Early Childhood Centers: GSCemail */
+  $handler->display->display_options['fields']['GSCemail']['id'] = 'GSCemail';
+  $handler->display->display_options['fields']['GSCemail']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCemail']['field'] = 'GSCemail';
+  /* Field: Early Childhood Centers: GSCcontact */
+  $handler->display->display_options['fields']['GSCcontact']['id'] = 'GSCcontact';
+  $handler->display->display_options['fields']['GSCcontact']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCcontact']['field'] = 'GSCcontact';
+  /* Field: Early Childhood Centers: id */
+  $handler->display->display_options['fields']['id']['id'] = 'id';
+  $handler->display->display_options['fields']['id']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['id']['field'] = 'id';
+  /* Field: Early Childhood Centers: Edit link */
+  $handler->display->display_options['fields']['edit_link']['id'] = 'edit_link';
+  $handler->display->display_options['fields']['edit_link']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['edit_link']['field'] = 'edit_link';
+  /* Contextual filter: Early Childhood Centers: BusinessName */
+  $handler->display->display_options['arguments']['BusinessName']['id'] = 'BusinessName';
+  $handler->display->display_options['arguments']['BusinessName']['table'] = 'earlychild';
+  $handler->display->display_options['arguments']['BusinessName']['field'] = 'BusinessName';
+  $handler->display->display_options['arguments']['BusinessName']['exception']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['BusinessName']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['BusinessName']['title'] = 'Early Childhood Centers %1';
+  $handler->display->display_options['arguments']['BusinessName']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['BusinessName']['summary']['format'] = 'default_summary';
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['path'] = 'admin/content/data/view/earlychild';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Early Childhood Centers';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $export['earlychild'] = $view;
+
+  $view = new view();
   $view->name = 'fiveessentials_2013';
   $view->description = 'Default view for data table Five Essentials 2013';
   $view->tag = 'data table';

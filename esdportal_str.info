@@ -338,6 +338,7 @@ features[views_view][] = act_2011
 features[views_view][] = act_2012
 features[views_view][] = act_2013
 features[views_view][] = bulk
+features[views_view][] = earlychild
 features[views_view][] = esd_hs_2013
 features[views_view][] = esd_k8_2013
 features[views_view][] = fiveessentials_2013
