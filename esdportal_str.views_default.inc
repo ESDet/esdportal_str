@@ -355,7 +355,7 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['style_options']['grouping'] = '';
   $handler->display->display_options['style_options']['columns'] = array(
     'BCODE' => 'BCODE',
-    'School Reporting Slug' => 'School Reporting Slug',
+    'School_Reporting_Slug' => 'School_Reporting_Slug',
     'State_Schl_ID' => 'State_Schl_ID',
     'District_Schl_ID' => 'District_Schl_ID',
     'School_Level' => 'School_Level',
@@ -416,7 +416,7 @@ function esdportal_str_views_default_views() {
       'sortable' => 1,
       'separator' => '',
     ),
-    'School Reporting Slug' => array(
+    'School_Reporting_Slug' => array(
       'sortable' => 1,
       'separator' => '',
     ),
@@ -646,10 +646,10 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['BCODE']['field'] = 'BCODE';
   $handler->display->display_options['fields']['BCODE']['label'] = 'BCODE';
   /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['School Reporting Slug']['id'] = 'School Reporting Slug';
-  $handler->display->display_options['fields']['School Reporting Slug']['table'] = 'fiveessentials_2013';
-  $handler->display->display_options['fields']['School Reporting Slug']['field'] = 'School Reporting Slug';
-  $handler->display->display_options['fields']['School Reporting Slug']['label'] = '5Essentials Internal School Identifier';
+  $handler->display->display_options['fields']['School_Reporting_Slug']['id'] = 'School_Reporting_Slug';
+  $handler->display->display_options['fields']['School_Reporting_Slug']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['School_Reporting_Slug']['field'] = 'School_Reporting_Slug';
+  $handler->display->display_options['fields']['School_Reporting_Slug']['label'] = '5Essentials Internal School Identifier';
   /* Field: Five Essentials 2013: School&#039;s State Identifier */
   $handler->display->display_options['fields']['State_Schl_ID']['id'] = 'State_Schl_ID';
   $handler->display->display_options['fields']['State_Schl_ID']['table'] = 'fiveessentials_2013';
@@ -909,6 +909,13 @@ function esdportal_str_views_default_views() {
   /* Display: Services */
   $handler = $view->new_display('services', 'Services', 'services_1');
   $handler->display->display_options['path'] = 'fiveessentials_2013';
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['path'] = 'csv/fiveessentials_2013';
   $export['fiveessentials_2013'] = $view;
 
   $view = new view();
