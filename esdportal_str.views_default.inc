@@ -347,7 +347,10 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = 50;
+  $handler->display->display_options['pager']['options']['items_per_page'] = '100';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['grouping'] = '';
   $handler->display->display_options['style_options']['columns'] = array(
@@ -821,10 +824,6 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['id']['id'] = 'id';
   $handler->display->display_options['fields']['id']['table'] = 'earlychild';
   $handler->display->display_options['fields']['id']['field'] = 'id';
-  /* Field: Early Childhood Centers: Edit link */
-  $handler->display->display_options['fields']['edit_link']['id'] = 'edit_link';
-  $handler->display->display_options['fields']['edit_link']['table'] = 'earlychild';
-  $handler->display->display_options['fields']['edit_link']['field'] = 'edit_link';
   /* Contextual filter: Early Childhood Centers: BusinessName */
   $handler->display->display_options['arguments']['BusinessName']['id'] = 'BusinessName';
   $handler->display->display_options['arguments']['BusinessName']['table'] = 'earlychild';
@@ -841,6 +840,17 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Early Childhood Centers';
   $handler->display->display_options['menu']['weight'] = '0';
+
+  /* Display: Services */
+  $handler = $view->new_display('services', 'Services', 'services_1');
+  $handler->display->display_options['path'] = 'earlychild';
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['path'] = 'csv/earlychild';
   $export['earlychild'] = $view;
 
   $view = new view();
