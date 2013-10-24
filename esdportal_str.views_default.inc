@@ -645,11 +645,10 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['BCODE']['table'] = 'fiveessentials_2013';
   $handler->display->display_options['fields']['BCODE']['field'] = 'BCODE';
   $handler->display->display_options['fields']['BCODE']['label'] = 'BCODE';
-  /* Field: Broken/missing handler */
+  /* Field: Five Essentials 2013: 5Essentials Internal School Identifier */
   $handler->display->display_options['fields']['School_Reporting_Slug']['id'] = 'School_Reporting_Slug';
   $handler->display->display_options['fields']['School_Reporting_Slug']['table'] = 'fiveessentials_2013';
   $handler->display->display_options['fields']['School_Reporting_Slug']['field'] = 'School_Reporting_Slug';
-  $handler->display->display_options['fields']['School_Reporting_Slug']['label'] = '5Essentials Internal School Identifier';
   /* Field: Five Essentials 2013: School&#039;s State Identifier */
   $handler->display->display_options['fields']['State_Schl_ID']['id'] = 'State_Schl_ID';
   $handler->display->display_options['fields']['State_Schl_ID']['table'] = 'fiveessentials_2013';

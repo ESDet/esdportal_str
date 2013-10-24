@@ -102,6 +102,10 @@ function esdportal_str_strongarm() {
       0 => 'act_2012',
       1 => 'BuildingCode',
     ),
+    'data_earlychild' => array(
+      0 => 'earlychild',
+      1 => 'id',
+    ),
     'data_fiveessentials_2013' => array(
       0 => 'fiveessentials_2013',
       1 => 'BCODE',

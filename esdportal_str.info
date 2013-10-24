@@ -57,6 +57,7 @@ features[ctools][] = views:views_default:3.0
 features[data_tables][] = act_2011
 features[data_tables][] = act_2012
 features[data_tables][] = act_2013
+features[data_tables][] = earlychild
 features[data_tables][] = esd_hs_2013
 features[data_tables][] = esd_k8_2013
 features[data_tables][] = fiveessentials_2013
