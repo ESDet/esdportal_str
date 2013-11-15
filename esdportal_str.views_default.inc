@@ -880,6 +880,7 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['style_options']['grouping'] = '';
   $handler->display->display_options['style_options']['columns'] = array(
     'BCODE' => 'BCODE',
+    'School_Name' => 'School_Name',
     'School_Reporting_Slug' => 'School_Reporting_Slug',
     'State_Schl_ID' => 'State_Schl_ID',
     'District_Schl_ID' => 'District_Schl_ID',
@@ -890,7 +891,6 @@ function esdportal_str_views_default_views() {
     'Teacher_Response_Rate' => 'Teacher_Response_Rate',
     'Student_Lazy_Rate' => 'Student_Lazy_Rate',
     'Teacher_Lazy_Rate' => 'Teacher_Lazy_Rate',
-    'CONTINUING_4_YEAR' => 'CONTINUING_4_YEAR',
     'Student_N' => 'Student_N',
     'Teacher_N' => 'Teacher_N',
     'ACNO' => 'ACNO',
@@ -933,11 +933,15 @@ function esdportal_str_views_default_views() {
     'E_families' => 'E_families',
     'E_environment' => 'E_environment',
     'E_instruction' => 'E_instruction',
-    'School_Name' => 'School_Name',
+    'Location' => 'Location',
   );
   $handler->display->display_options['style_options']['default'] = -1;
   $handler->display->display_options['style_options']['info'] = array(
     'BCODE' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'School_Name' => array(
       'sortable' => 1,
       'separator' => '',
     ),
@@ -978,10 +982,6 @@ function esdportal_str_views_default_views() {
       'separator' => '',
     ),
     'Teacher_Lazy_Rate' => array(
-      'sortable' => 1,
-      'separator' => '',
-    ),
-    'CONTINUING_4_YEAR' => array(
       'sortable' => 1,
       'separator' => '',
     ),
@@ -1153,7 +1153,7 @@ function esdportal_str_views_default_views() {
       'sortable' => 1,
       'separator' => '',
     ),
-    'School_Name' => array(
+    'Location' => array(
       'sortable' => 1,
       'separator' => '',
     ),
@@ -1170,6 +1170,11 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['BCODE']['table'] = 'fiveessentials_2013';
   $handler->display->display_options['fields']['BCODE']['field'] = 'BCODE';
   $handler->display->display_options['fields']['BCODE']['label'] = 'BCODE';
+  /* Field: Five Essentials 2013: School name */
+  $handler->display->display_options['fields']['School_Name']['id'] = 'School_Name';
+  $handler->display->display_options['fields']['School_Name']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['School_Name']['field'] = 'School_Name';
+  $handler->display->display_options['fields']['School_Name']['label'] = 'School_Name';
   /* Field: Five Essentials 2013: 5Essentials Internal School Identifier */
   $handler->display->display_options['fields']['School_Reporting_Slug']['id'] = 'School_Reporting_Slug';
   $handler->display->display_options['fields']['School_Reporting_Slug']['table'] = 'fiveessentials_2013';
@@ -1211,11 +1216,6 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['Teacher_Lazy_Rate']['id'] = 'Teacher_Lazy_Rate';
   $handler->display->display_options['fields']['Teacher_Lazy_Rate']['table'] = 'fiveessentials_2013';
   $handler->display->display_options['fields']['Teacher_Lazy_Rate']['field'] = 'Teacher_Lazy_Rate';
-  /* Field: Five Essentials 2013: Continuing 4 year */
-  $handler->display->display_options['fields']['CONTINUING_4_YEAR']['id'] = 'CONTINUING_4_YEAR';
-  $handler->display->display_options['fields']['CONTINUING_4_YEAR']['table'] = 'fiveessentials_2013';
-  $handler->display->display_options['fields']['CONTINUING_4_YEAR']['field'] = 'CONTINUING_4_YEAR';
-  $handler->display->display_options['fields']['CONTINUING_4_YEAR']['label'] = 'CONTINUING_4_YEAR';
   /* Field: Five Essentials 2013: Total number of students listed on roster */
   $handler->display->display_options['fields']['Student_N']['id'] = 'Student_N';
   $handler->display->display_options['fields']['Student_N']['table'] = 'fiveessentials_2013';
@@ -1386,11 +1386,10 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['E_instruction']['id'] = 'E_instruction';
   $handler->display->display_options['fields']['E_instruction']['table'] = 'fiveessentials_2013';
   $handler->display->display_options['fields']['E_instruction']['field'] = 'E_instruction';
-  /* Field: Five Essentials 2013: School name */
-  $handler->display->display_options['fields']['School_Name']['id'] = 'School_Name';
-  $handler->display->display_options['fields']['School_Name']['table'] = 'fiveessentials_2013';
-  $handler->display->display_options['fields']['School_Name']['field'] = 'School_Name';
-  $handler->display->display_options['fields']['School_Name']['label'] = 'School_Name';
+  /* Field: Five Essentials 2013: Essential: Location */
+  $handler->display->display_options['fields']['Location']['id'] = 'Location';
+  $handler->display->display_options['fields']['Location']['table'] = 'fiveessentials_2013';
+  $handler->display->display_options['fields']['Location']['field'] = 'Location';
   /* Field: Five Essentials 2013: Edit link */
   $handler->display->display_options['fields']['edit_link']['id'] = 'edit_link';
   $handler->display->display_options['fields']['edit_link']['table'] = 'fiveessentials_2013';

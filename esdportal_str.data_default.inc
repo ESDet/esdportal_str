@@ -2312,6 +2312,13 @@ function esdportal_str_data_default() {
         'default' => 0,
         'description' => '',
       ),
+      'School_Name' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
       'School_Reporting_Slug' => array(
         'type' => 'int',
         'size' => 'normal',
@@ -2379,12 +2386,6 @@ function esdportal_str_data_default() {
         'size' => 'normal',
         'unsigned' => TRUE,
         'not null' => FALSE,
-      ),
-      'CONTINUING_4_YEAR' => array(
-        'type' => 'int',
-        'size' => 'normal',
-        'not null' => FALSE,
-        'description' => '',
       ),
       'Student_N' => array(
         'type' => 'int',
@@ -2638,7 +2639,7 @@ function esdportal_str_data_default() {
         'not null' => FALSE,
         'description' => '',
       ),
-      'School_Name' => array(
+      'Location' => array(
         'type' => 'varchar',
         'size' => 'normal',
         'length' => '255',
@@ -2815,16 +2816,10 @@ function esdportal_str_data_default() {
       'E_instruction' => array(
         'label' => 'Essential: Ambitious Instruction',
       ),
-      'Location' => array(
-        'label' => 'School Address',
-      ),
       'BCODE' => array(
         'label' => '',
       ),
       'District_Schl_ID' => array(
-        'label' => '',
-      ),
-      'CONTINUING_4_YEAR' => array(
         'label' => '',
       ),
       'PRT2' => array(
@@ -2838,6 +2833,9 @@ function esdportal_str_data_default() {
       ),
       'School_Name' => array(
         'label' => '',
+      ),
+      'Location' => array(
+        'label' => 'School Address',
       ),
     ),
   );
