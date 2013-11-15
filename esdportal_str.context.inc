@@ -28,6 +28,18 @@ function esdportal_str_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'user-login' => array(
+          'module' => 'user',
+          'delta' => 'login',
+          'region' => 'post_content',
+          'weight' => '-10',
+        ),
+        'menu-menu-footer-links' => array(
+          'module' => 'menu',
+          'delta' => 'menu-footer-links',
+          'region' => 'footer_first',
+          'weight' => '-10',
+        ),
         'boxes-social_share' => array(
           'module' => 'boxes',
           'delta' => 'social_share',
@@ -76,6 +88,7 @@ function esdportal_str_context_default_contexts() {
   $context->conditions = array(
     'user' => array(
       'values' => array(
+        'ESD Administrator' => 'ESD Administrator',
         'administrator' => 'administrator',
       ),
     ),
@@ -87,7 +100,25 @@ function esdportal_str_context_default_contexts() {
           'module' => 'menu',
           'delta' => 'menu-moderator-menu',
           'region' => 'branding',
+          'weight' => '-15',
+        ),
+        'system-navigation' => array(
+          'module' => 'system',
+          'delta' => 'navigation',
+          'region' => 'branding',
+          'weight' => '-13',
+        ),
+        'system-user-menu' => array(
+          'module' => 'system',
+          'delta' => 'user-menu',
+          'region' => 'branding',
           'weight' => '-12',
+        ),
+        'menu-menu-footer-links' => array(
+          'module' => 'menu',
+          'delta' => 'menu-footer-links',
+          'region' => 'footer_first',
+          'weight' => '-10',
         ),
         'boxes-social_share' => array(
           'module' => 'boxes',
@@ -139,6 +170,18 @@ function esdportal_str_context_default_contexts() {
           'region' => 'branding',
           'weight' => '-10',
         ),
+        'system-user-menu' => array(
+          'module' => 'system',
+          'delta' => 'user-menu',
+          'region' => 'branding',
+          'weight' => '-9',
+        ),
+        'menu-menu-footer-links' => array(
+          'module' => 'menu',
+          'delta' => 'menu-footer-links',
+          'region' => 'footer_first',
+          'weight' => '-10',
+        ),
         'boxes-social_share' => array(
           'module' => 'boxes',
           'delta' => 'social_share',
@@ -188,6 +231,18 @@ function esdportal_str_context_default_contexts() {
           'module' => 'esdportal_dash',
           'delta' => 'my_schools',
           'region' => 'branding',
+          'weight' => '-10',
+        ),
+        'system-user-menu' => array(
+          'module' => 'system',
+          'delta' => 'user-menu',
+          'region' => 'branding',
+          'weight' => '-9',
+        ),
+        'menu-menu-footer-links' => array(
+          'module' => 'menu',
+          'delta' => 'menu-footer-links',
+          'region' => 'footer_first',
           'weight' => '-10',
         ),
         'boxes-social_share' => array(
