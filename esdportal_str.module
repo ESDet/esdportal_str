@@ -32,7 +32,8 @@ function esdportal_str_preprocess_taxonomy_term(&$vars) {
 /**
  * Implements hook_permission().
  *
- * Define permission to allow editing field_school term ref.
+ * Define permission to allow editing field_school and field_site_visit_status
+ * term ref.
  */
 function esdportal_str_permission() {
   return array(
@@ -40,14 +41,21 @@ function esdportal_str_permission() {
     'edit own field_school' => array('title' => t('Edit own field_school')),
     'view any field_school' => array('title' => t('View any field_school')),
     'edit any field_school' => array('title' => t('Edit any field_school')),
+    'view own field_site_visit_status' => array('title' => t('View own field_site_visit_status')),
+    'edit own field_site_visit_status' => array('title' => t('Edit own field_site_visit_status')),
+    'view any field_site_visit_status' => array('title' => t('View any field_site_visit_status')),
+    'edit any field_site_visit_status' => array('title' => t('Edit any field_site_visit_status')),
   );
 }
 
 /**
  * Implements hook_field_access().
  *
- * Only allow users with administrator or logistics coordinator roles to update
- * field_school taxnonomy reference.
+ * Only allow users with granted permission, or theadministrator or logistics
+ * coordinator roles, to update field_school taxnonomy reference.
+ *
+ * Only allow users with granted permission, or theadministrator or logistics
+ * coordinator roles, to update field_site_visit_status taxnonomy reference.
  *
  * (follows field_permission_example module)
  */
@@ -62,6 +70,19 @@ function esdportal_str_field_access($op, $field, $entity_type, $entity, $account
       $context = 'own';
     }
     $perm = $op . ' ' . $context . ' field_school';
+    $access = user_access($perm, $account);
+    return $access;
+  }
+  if ($field['field_name'] == 'field_site_visit_status') {
+    // allow superusers no matter whoziewhatsit
+    if (user_access('bypass node access') || user_access('administer content types')) {
+      return TRUE;
+    }
+    $context = 'any';
+    if ($entity_type == 'node' && $entity && $entity->uid == $account->uid) {
+      $context = 'own';
+    }
+    $perm = $op . ' ' . $context . ' field_site_visit_status';
     $access = user_access($perm, $account);
     return $access;
   }
