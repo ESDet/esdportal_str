@@ -10,8 +10,6 @@
 function esdportal_str_views_default_views() {
   $export = array();
 
-// act_2011
-
   $view = new view();
   $view->name = 'act_2011';
   $view->description = 'Default view for data table ACT 2011';
@@ -271,10 +269,7 @@ function esdportal_str_views_default_views() {
   /* Display: Services */
   $handler = $view->new_display('services', 'Services', 'services_1');
   $handler->display->display_options['path'] = 'act_2011';
-
   $export['act_2011'] = $view;
-
-// act_2012
 
   $view = new view();
   $view->name = 'act_2012';
@@ -545,11 +540,7 @@ function esdportal_str_views_default_views() {
   /* Display: Services */
   $handler = $view->new_display('services', 'Services', 'services_1');
   $handler->display->display_options['path'] = 'act_2012';
-
   $export['act_2012'] = $view;
-
-
-// act_2013
 
   $view = new view();
   $view->name = 'act_2013';
@@ -778,6 +769,10 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['writingAverage']['table'] = 'act_2013';
   $handler->display->display_options['fields']['writingAverage']['field'] = 'writingAverage';
   $handler->display->display_options['fields']['writingAverage']['label'] = 'writingAverage';
+  /* Field: Act 2013: Edit link */
+  $handler->display->display_options['fields']['edit_link']['id'] = 'edit_link';
+  $handler->display->display_options['fields']['edit_link']['table'] = 'act_2013';
+  $handler->display->display_options['fields']['edit_link']['field'] = 'edit_link';
   /* Contextual filter: Act 2013: Schooltype */
   $handler->display->display_options['arguments']['SchoolType']['id'] = 'SchoolType';
   $handler->display->display_options['arguments']['SchoolType']['table'] = 'act_2013';
@@ -816,13 +811,7 @@ function esdportal_str_views_default_views() {
   /* Display: Services */
   $handler = $view->new_display('services', 'Services', 'services_1');
   $handler->display->display_options['path'] = 'act_2013';
-
   $export['act_2013'] = $view;
-
-////
-//// end new views
-////
-
 
   $view = new view();
   $view->name = 'bulk';
@@ -1638,6 +1627,10 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['id']['id'] = 'id';
   $handler->display->display_options['fields']['id']['table'] = 'earlychild';
   $handler->display->display_options['fields']['id']['field'] = 'id';
+  /* Field: Early Childhood Centers: Edit link */
+  $handler->display->display_options['fields']['edit_link']['id'] = 'edit_link';
+  $handler->display->display_options['fields']['edit_link']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['edit_link']['field'] = 'edit_link';
   /* Contextual filter: Early Childhood Centers: BusinessName */
   $handler->display->display_options['arguments']['BusinessName']['id'] = 'BusinessName';
   $handler->display->display_options['arguments']['BusinessName']['table'] = 'earlychild';
@@ -1667,9 +1660,6 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['path'] = 'csv/earlychild';
   $export['earlychild'] = $view;
 
-// new views start
-
-  //'esd_hs_2013'
   $view = new view();
   $view->name = 'esd_hs_2013';
   $view->description = 'Default view for data table Esd hs 2013';
@@ -2340,7 +2330,6 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['path'] = 'csv/esd_hs_2013';
   $export['esd_hs_2013'] = $view;
 
-  //'esd_k8_2013'
   $view = new view();
   $view->name = 'esd_k8_2013';
   $view->description = 'Default view for data table Esd k8 2013';
@@ -2884,7 +2873,6 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['culture_ltrgrade']['field'] = 'culture_ltrgrade';
   $handler->display->display_options['fields']['culture_ltrgrade']['label'] = 'culture_ltrgrade';
   /* Field: Esd k8 2013: Econdis pct */
-
   $handler->display->display_options['fields']['econdis_pct']['id'] = 'econdis_pct';
   $handler->display->display_options['fields']['econdis_pct']['table'] = 'esd_k8_2013';
   $handler->display->display_options['fields']['econdis_pct']['field'] = 'econdis_pct';
@@ -3547,7 +3535,7 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['E_instruction']['id'] = 'E_instruction';
   $handler->display->display_options['fields']['E_instruction']['table'] = 'fiveessentials_2013';
   $handler->display->display_options['fields']['E_instruction']['field'] = 'E_instruction';
-  /* Field: Five Essentials 2013: Essential: Location */
+  /* Field: Five Essentials 2013: School Address */
   $handler->display->display_options['fields']['Location']['id'] = 'Location';
   $handler->display->display_options['fields']['Location']['table'] = 'fiveessentials_2013';
   $handler->display->display_options['fields']['Location']['field'] = 'Location';

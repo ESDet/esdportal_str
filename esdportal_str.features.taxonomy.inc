@@ -81,6 +81,14 @@ function esdportal_str_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'site_visit_status' => array(
+      'name' => 'Site visit status',
+      'machine_name' => 'site_visit_status',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'state_school_status' => array(
       'name' => 'State school status',
       'machine_name' => 'state_school_status',

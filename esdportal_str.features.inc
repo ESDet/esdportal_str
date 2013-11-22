@@ -63,6 +63,7 @@ function esdportal_str_image_default_styles() {
         'weight' => 0,
       ),
     ),
+    'label' => 'preview',
   );
 
   // Exported image style: video_thumbnail.
@@ -85,6 +86,7 @@ function esdportal_str_image_default_styles() {
         'weight' => 1,
       ),
     ),
+    'label' => 'video_thumbnail',
   );
 
   return $styles;

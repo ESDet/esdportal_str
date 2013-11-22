@@ -1377,6 +1377,43 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-school_profile-field_site_visit_status'
+  $field_instances['node-school_profile-field_site_visit_status'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 29,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_site_visit_status',
+    'label' => 'Site visit status',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 30,
+    ),
+  );
+
   // Exported field_instance: 'node-school_profile-field_special_needs'
   $field_instances['node-school_profile-field_special_needs'] = array(
     'bundle' => 'school_profile',
@@ -2912,6 +2949,7 @@ function esdportal_str_field_default_field_instances() {
   t('School status');
   t('School type');
   t('Scorecard Display');
+  t('Site visit status');
   t('Special Ed Emphasis');
   t('Special Needs');
   t('Special Tracks');

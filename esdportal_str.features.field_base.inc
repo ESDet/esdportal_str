@@ -1598,6 +1598,40 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
+  // Exported field_base: 'field_site_visit_status'
+  $field_bases['field_site_visit_status'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_site_visit_status',
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'site_visit_status',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
   // Exported field_base: 'field_special_ed_emphasis'
   $field_bases['field_special_ed_emphasis'] = array(
     'active' => 1,
@@ -1830,11 +1864,11 @@ function esdportal_str_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_superintendents',
     'foreign keys' => array(
-      'node' => array(
+      'users' => array(
         'columns' => array(
-          'target_id' => 'nid',
+          'target_id' => 'uid',
         ),
-        'table' => 'node',
+        'table' => 'users',
       ),
     ),
     'indexes' => array(
