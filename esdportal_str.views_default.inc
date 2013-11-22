@@ -769,10 +769,6 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['writingAverage']['table'] = 'act_2013';
   $handler->display->display_options['fields']['writingAverage']['field'] = 'writingAverage';
   $handler->display->display_options['fields']['writingAverage']['label'] = 'writingAverage';
-  /* Field: Act 2013: Edit link */
-  $handler->display->display_options['fields']['edit_link']['id'] = 'edit_link';
-  $handler->display->display_options['fields']['edit_link']['table'] = 'act_2013';
-  $handler->display->display_options['fields']['edit_link']['field'] = 'edit_link';
   /* Contextual filter: Act 2013: Schooltype */
   $handler->display->display_options['arguments']['SchoolType']['id'] = 'SchoolType';
   $handler->display->display_options['arguments']['SchoolType']['table'] = 'act_2013';
@@ -1627,10 +1623,6 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['id']['id'] = 'id';
   $handler->display->display_options['fields']['id']['table'] = 'earlychild';
   $handler->display->display_options['fields']['id']['field'] = 'id';
-  /* Field: Early Childhood Centers: Edit link */
-  $handler->display->display_options['fields']['edit_link']['id'] = 'edit_link';
-  $handler->display->display_options['fields']['edit_link']['table'] = 'earlychild';
-  $handler->display->display_options['fields']['edit_link']['field'] = 'edit_link';
   /* Contextual filter: Early Childhood Centers: BusinessName */
   $handler->display->display_options['arguments']['BusinessName']['id'] = 'BusinessName';
   $handler->display->display_options['arguments']['BusinessName']['table'] = 'earlychild';

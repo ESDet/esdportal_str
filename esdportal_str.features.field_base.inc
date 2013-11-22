@@ -123,6 +123,46 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
+  // Exported field_base: 'field_academic_focus'
+  $field_bases['field_academic_focus'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_academic_focus',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'special_education' => 'Special Education',
+        'vocational' => 'Vocational education',
+        'technology' => 'Technology',
+        'all_arts' => 'Arts (all)',
+        'foreign_lang' => 'Foreign languages',
+        'religious' => 'Religious',
+        'business' => 'Business',
+        'visual_arts' => 'Visual arts',
+        'performing_arts' => 'Performing arts',
+        'medical' => 'Medical',
+        'music' => 'Music',
+        'engineering' => 'Engineering',
+        'service_learning' => 'Service learning',
+        'mathematics' => 'Mathematics',
+        'science' => 'Science',
+        'none' => 'None',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_address'
   $field_bases['field_address'] = array(
     'active' => 1,
@@ -137,6 +177,35 @@ function esdportal_str_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'addressfield',
+  );
+
+  // Exported field_base: 'field_admissions_url'
+  $field_bases['field_admissions_url'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_admissions_url',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_after_school_transportatio'
@@ -249,6 +318,223 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'list_text',
   );
 
+  // Exported field_base: 'field_application_fee'
+  $field_bases['field_application_fee'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_application_fee',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'yes' => 'Yes',
+        'no' => 'No',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_application_fee_amount'
+  $field_bases['field_application_fee_amount'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_application_fee_amount',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(
+      'decimal_separator' => '.',
+      'precision' => 10,
+      'scale' => 2,
+    ),
+    'translatable' => 0,
+    'type' => 'number_decimal',
+  );
+
+  // Exported field_base: 'field_application_process'
+  $field_bases['field_application_process'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_application_process',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'no' => 'No',
+        'yes' => 'Yes',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_applications_received'
+  $field_bases['field_applications_received'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_applications_received',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
+  // Exported field_base: 'field_arts_media'
+  $field_bases['field_arts_media'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_arts_media',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'none' => 'None',
+        'animation' => 'Computer animation',
+        'graphics' => 'Graphics',
+        'tech_design' => 'Technical design and production',
+        'video' => 'Video / Film production',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_arts_music'
+  $field_bases['field_arts_music'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_arts_music',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'none' => 'None',
+        'band' => 'Band',
+        'chamber music' => 'Chamber music',
+        'bells' => 'Bell / Handbell choir',
+        'opera' => 'Opera',
+        'rock_band' => 'Rock band',
+        'music_theory' => 'Theory',
+        'jazz_band' => 'Jazz Band',
+        'chorus' => 'Choir / Chorus',
+        'orchestra' => 'Orchestra',
+        'music_lessons' => 'Instrumental music lessons',
+        'voice' => 'Vocal lessons / coaching',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_arts_performing_written'
+  $field_bases['field_arts_performing_written'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_arts_performing_written',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'none' => 'None',
+        'improv' => 'Improv',
+        'poetry' => 'Poetry',
+        'dance' => 'Dance',
+        'drama' => 'Drama',
+        'creative_writing' => 'Creative Writing',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_arts_visual'
+  $field_bases['field_arts_visual'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_arts_visual',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'none' => 'None',
+        'ceramics' => 'Ceramics',
+        'printmaking' => 'Printmaking',
+        'sculpture' => 'Sculptureÿ',
+        'textiles' => 'Textile design',
+        'design' => 'Design',
+        'drawing' => 'Drawing / Sketching',
+        'painting' => 'Painting',
+        'photography' => 'Photography',
+        'architecture' => 'Architecture',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_authorized_grades'
   $field_bases['field_authorized_grades'] = array(
     'active' => 1,
@@ -333,6 +619,32 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'number_integer',
   );
 
+  // Exported field_base: 'field_before_after_care'
+  $field_bases['field_before_after_care'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_before_after_care',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'after' => 'After school care',
+        'before' => 'Before school care',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_bname'
   $field_bases['field_bname'] = array(
     'active' => 1,
@@ -360,6 +672,90 @@ function esdportal_str_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_boys_sports'
+  $field_bases['field_boys_sports'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_boys_sports',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'basketball' => 'Basketball',
+        'soccer' => 'Soccer',
+        'cheerleading' => 'Cheerleading',
+        'gymnastics' => 'Gymnastics',
+        'ice_hockey' => 'Ice Hockey',
+        'lacrosse' => 'Lacrosse',
+        'water_polo' => 'Water Polo',
+        'badminton' => 'Badminton',
+        'crew' => 'Crew / Rowing',
+        'cycling' => 'Cycling',
+        'diving' => 'Diving',
+        'equestrian' => 'Equestrian',
+        'martial_arts' => 'Judo / Other Martial Arts',
+        'kayaking' => 'Kayaking',
+        'kickball' => 'Kickball',
+        'none' => 'None',
+        'weight_lifting' => 'Power lifting / Weight lifting',
+        'rugby' => 'Rugby',
+        'sailing' => 'Sailing',
+        'ski' => 'Skiing',
+        'squash' => 'Squash',
+        'surfing' => 'Surfing',
+        'ultimate' => 'Ultimate Frisbee',
+        'cross_country' => 'Cross Country',
+        'football' => 'Football',
+        'tennis' => 'Tennis',
+        'swimming' => 'Swimming',
+        'wrestling' => 'Wrestling',
+        'track' => 'Track',
+        'baseball' => 'Baseball',
+        'golf' => 'Golf',
+        'fencing' => 'Fencing',
+        'flag_football' => 'Flag Football',
+        'volleyball' => 'Volleyball',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_bullying_policy'
+  $field_bases['field_bullying_policy'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_bullying_policy',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'y' => 'Yes',
+        'n' => 'No',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_career_technical_emphasis'
@@ -442,6 +838,38 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_college_prep'
+  $field_bases['field_college_prep'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_college_prep',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'prep_classes' => 'College prep programs/courses during the year',
+        'info_sessions' => 'College presentations or information sessions',
+        'community_college' => 'Community college courses',
+        'sat_act_prep' => 'SAT/ACT prep classes',
+        'summer_prep' => 'Summer college prep programs',
+        'college_trips' => 'School-sponsored trips to college campuses',
+        'visiting_lecturers' => 'Visiting teachers or lecturers from colleges',
+        'none' => 'None',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_counselor_student_ratio'
   $field_bases['field_counselor_student_ratio'] = array(
     'active' => 1,
@@ -449,6 +877,35 @@ function esdportal_str_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_counselor_student_ratio',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_destination_school'
+  $field_bases['field_destination_school'] = array(
+    'active' => 1,
+    'cardinality' => 3,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_destination_school',
     'foreign keys' => array(
       'format' => array(
         'columns' => array(
@@ -530,6 +987,33 @@ function esdportal_str_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
+  );
+
+  // Exported field_base: 'field_dress_code'
+  $field_bases['field_dress_code'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_dress_code',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'uniform' => 'Uniforms',
+        'dress_code' => 'Dress code',
+        'no_dress_code' => 'Neither',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_dual_enrollment'
@@ -672,6 +1156,74 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_ell_languages'
+  $field_bases['field_ell_languages'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ell_languages',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'arabic' => 'Arabic languages',
+        'amharic' => 'Amharic',
+        'cantonese' => 'Chinese (Cantonese)',
+        'mandarin' => 'Chinese (Mandarin)',
+        'dutch' => 'Dutch',
+        'french' => 'French',
+        'german' => 'German',
+        'hmong' => 'Hmong',
+        'italian' => 'Italian',
+        'japanese' => 'Japanese',
+        'korean' => 'Korean',
+        'russian' => 'Russian',
+        'spanish' => 'Spanish',
+        'tagalog' => 'Tagalog',
+        'urdu' => 'Urdu',
+        'vietnamese' => 'Vietnamese',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_ell_level'
+  $field_bases['field_ell_level'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ell_level',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'none' => 'None - we offer no services',
+        'basic' => 'Basic - we offer or partner to provide services based on the needs of individual students',
+        'moderate' => 'Moderate - we consistently offer a full program for particular ESL/ELL needs',
+        'intensive' => 'Intensive - we offer a full program for many languages and/or we offer at least one very comprehensive program school-wide for at least 25% of our population',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_email'
   $field_bases['field_email'] = array(
     'active' => 1,
@@ -728,6 +1280,116 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_extra_learning_resources'
+  $field_bases['field_extra_learning_resources'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_extra_learning_resources',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'none' => 'None',
+        'remediation' => 'Remediation',
+        'career_counseling' => 'Career/college counseling',
+        'mentoring' => 'Mentoring',
+        'counseling' => 'Counseling',
+        'acceleration' => 'Acceleration',
+        'differentiated' => 'Differentiated learning programs',
+        'other' => 'Other',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_facebook_url'
+  $field_bases['field_facebook_url'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_facebook_url',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_facilities'
+  $field_bases['field_facilities'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_facilities',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'auditorium' => 'Auditorium',
+        'cafeteria' => 'Cafeteria',
+        'gym' => 'Gym',
+        'library' => 'Library',
+        'computer ' => 'Computer lab',
+        'college_center' => 'College/career center',
+        'chapel' => 'Chapel/spiritual reflection center',
+        'garden ' => 'Garden/Greenhouse',
+        'playground' => 'Playground',
+        'sports_fields' => 'Access to sports fields',
+        'none' => 'None listed here',
+        'audiovisual' => 'Audiovisual aids',
+        'internet' => 'Internet access',
+        'art ' => 'Art room',
+        'learning_lab' => 'Learning lab',
+        'multi_purpose' => 'Multi-purpose room ("cafegymatorium")',
+        'music' => 'Music room',
+        'outdoor' => 'Outdoor learning lab',
+        'performance' => 'Performance stage',
+        'science' => 'Science lab',
+        'farm' => 'Access to farm or natural area',
+        'swimming' => 'Swimming pool',
+        'industrial' => 'Industrial shop',
+        'kitchen' => 'Kitchen',
+        'parent' => 'Parent center',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_family_supports'
   $field_bases['field_family_supports'] = array(
     'active' => 1,
@@ -753,6 +1415,35 @@ function esdportal_str_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_feeder_school'
+  $field_bases['field_feeder_school'] = array(
+    'active' => 1,
+    'cardinality' => 3,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_feeder_school',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_files'
@@ -815,6 +1506,48 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_foreign_language'
+  $field_bases['field_foreign_language'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_foreign_language',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'arabic' => 'Arabic languages',
+        'dutch' => 'Dutch',
+        'korean' => 'Korean',
+        'russian' => 'Russian',
+        'tagalog' => 'Tagalog',
+        'none' => 'None',
+        'amharic' => 'Amharic',
+        'urdu' => 'Urdu',
+        'vietnamese' => 'Vietnamese',
+        'cantonese' => 'Chinese (Cantonese)',
+        'mandarin' => 'Chinese (Mandarin)',
+        'french' => 'French',
+        'german' => 'German',
+        'hmong' => 'Hmong',
+        'italian' => 'Italian',
+        'japanese' => 'Japanese',
+        'latin' => 'Latin',
+        'spanish' => 'Spanish',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_geo'
   $field_bases['field_geo'] = array(
     'active' => 1,
@@ -829,6 +1562,64 @@ function esdportal_str_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'geofield',
+  );
+
+  // Exported field_base: 'field_girls_sports'
+  $field_bases['field_girls_sports'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_girls_sports',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'volleyball' => 'Volleyball',
+        'softball' => 'Softball',
+        'cheerleading' => 'Cheerleading',
+        'basketball' => 'Basketball',
+        'cross_country' => 'Cross Country',
+        'soccer' => 'Soccer',
+        'golf' => 'Golf',
+        'swimming' => 'Swimming',
+        'tennis' => 'Tennis',
+        'wrestling' => 'Wrestling',
+        'track' => 'Track',
+        'field_hockey' => 'Field Hockey',
+        'gymnastics' => 'Gymnastics',
+        'ice_hockey' => 'Ice Hockey',
+        'lacrosse' => 'Lacrosse',
+        'water_polo' => 'Water Polo',
+        'none' => 'None',
+        'badminton' => 'Badminton',
+        'crew' => 'Crew / Rowing',
+        'cycling' => 'Cycling',
+        'diving' => 'Diving',
+        'equestrian' => 'Equestrian',
+        'fencing' => 'Fencing',
+        'martial_arts' => 'Judo / Other Martial Arts',
+        'kayaking' => 'Kayaking',
+        'kickball' => 'Kickball',
+        'weight_lifting' => 'Power lifting / Weight lifting',
+        'rugby' => 'Rugby',
+        'sailing' => 'Sailing',
+        'ski' => 'Skiing',
+        'squash' => 'Squash',
+        'surfing' => 'Surfing',
+        'ultimate' => 'Ultimate Frisbee',
+        'flag_football' => 'Flag Football',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_governance'
@@ -959,6 +1750,32 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_immersion'
+  $field_bases['field_immersion'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_immersion',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'yes' => 'Yes',
+        'no' => 'No',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_in_school_programs'
   $field_bases['field_in_school_programs'] = array(
     'active' => 1,
@@ -986,6 +1803,54 @@ function esdportal_str_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_instructional_model'
+  $field_bases['field_instructional_model'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_instructional_model',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'none' => 'None',
+        'montessori' => 'Montessori',
+        'AP_courses' => 'Advanced placement courses',
+        'ib' => 'International Baccalaureate (IB)',
+        'honors' => 'Honors track',
+        'gifted' => 'Gifted/High performing',
+        'continuation' => 'Continuation',
+        'core_knowledge' => 'Core knowledge',
+        'waldorf' => 'Waldorf',
+        'accelerated_credit' => 'Accelerated credit earning',
+        'independent_study' => 'Independent study',
+        'virtual' => 'Virtual school',
+        'adult_ed' => 'Adult education',
+        'classical' => 'Classical',
+        'direct_instruction' => 'Direct instruction',
+        'ged' => 'GED',
+        'individual_instruction' => 'Individually guided instruction',
+        'internships' => 'Internships',
+        'outdoor' => 'Outdoor / Farm-based',
+        'reggio' => 'Reggio Emilia',
+        'therapeutic' => 'Therapeutic',
+        'standards-based' => 'Standards-based',
+        'project_based' => 'Project-based',
+        'other' => 'Other',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_links'
@@ -1163,6 +2028,42 @@ function esdportal_str_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_parent_involvement'
+  $field_bases['field_parent_involvement'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_parent_involvement',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'parent_nights_req' => 'Attend parent nights',
+        'chaperone_req' => 'Chaperone school trips',
+        'coach_req' => 'Coach sports teams or extracurricular activities',
+        'pto_pta_req' => 'Join PTO/PTA',
+        'playground_req' => 'Monitor the playground',
+        'cultural_req' => 'Organize cultural events',
+        'fundraising_req' => 'Organize fundraising events (school auction, bake sales, etc.)',
+        'presentation_req' => 'Present special topics during curricular units',
+        'governance_req' => 'Serve on school improvement team or governance council',
+        'tutor_req' => 'Tutor',
+        'classroom_req' => 'Volunteer in the classroom',
+        'after_school_req' => 'Volunteer time after school',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_parent_supports'
@@ -1378,6 +2279,34 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'number_decimal',
   );
 
+  // Exported field_base: 'field_schedule'
+  $field_bases['field_schedule'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_schedule',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'yearround' => 'Year-round',
+        'parttime' => 'Part-time study',
+        'extended' => 'Extended/longer school day',
+        'block' => 'Block scheduling',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_school'
   $field_bases['field_school'] = array(
     'active' => 1,
@@ -1572,6 +2501,35 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
+  // Exported field_base: 'field_school_url'
+  $field_bases['field_school_url'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_school_url',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_scorecard_display'
   $field_bases['field_scorecard_display'] = array(
     'active' => 1,
@@ -1632,6 +2590,43 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
+  // Exported field_base: 'field_skills_training'
+  $field_bases['field_skills_training'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_skills_training',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'mechanics' => 'Auto mechanics',
+        'management' => 'Business management',
+        'programming' => 'Computer programming',
+        'construction' => 'Construction / building',
+        'culinary' => 'Culinary',
+        'electrical' => 'Electrical',
+        'hvac' => 'HVAC certification',
+        'design' => 'Industrial / graphic design',
+        'it_support' => 'IT support',
+        'plumbing' => 'Plumbing',
+        'prelaw' => 'Pre-law',
+        'welding' => 'Welding certification',
+        'engineering' => 'Engineering',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_special_ed_emphasis'
   $field_bases['field_special_ed_emphasis'] = array(
     'active' => 1,
@@ -1656,6 +2651,69 @@ function esdportal_str_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_boolean',
+  );
+
+  // Exported field_base: 'field_special_ed_level'
+  $field_bases['field_special_ed_level'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_special_ed_level',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'none' => 'None - we offer no services',
+        'basic' => 'Basic - we offer or partner to provide services based on the needs of individual students',
+        'moderate' => 'Moderate - we consistently offer a full program for particular special education needs',
+        'intensive' => 'Intensive - we offer a full program for many needs and/or we offer at least one very comprehensive program for very challenging needs such as autism or complete visual impairment',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_special_ed_programs'
+  $field_bases['field_special_ed_programs'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_special_ed_programs',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'autism' => 'Autism',
+        'blindness' => 'Visual impairments',
+        'deafness' => 'Hearing impairments',
+        'emotional' => 'Emotional behavioral disabilities',
+        'speech' => 'Speech and language impairments',
+        'ld' => 'Specific learning disabilities',
+        'developmental_delay' => 'Significant developmental delay',
+        'orthopedic' => 'Orthopedic impairments',
+        'multiple' => 'Multiple disabilities',
+        'other' => 'Other health impairments',
+        'cognitive' => 'Cognitive disability',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_special_needs'
@@ -1738,6 +2796,57 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
+  // Exported field_base: 'field_staff_resources'
+  $field_bases['field_staff_resources'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_staff_resources',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'none' => 'None listed here',
+        'assistant_principal' => 'Assistant principal',
+        'art_teacher' => 'Art teacher',
+        'nurse' => 'Nurse',
+        'reading_specialist' => 'Reading specialist',
+        'tutor' => 'Tutor',
+        'librarian' => 'Librarian/media specialist',
+        'computer_specialist' => 'Computer specialist',
+        'music_teacher' => 'Music teacher',
+        'poetry_teacher' => 'Poetry/Creative writing teacher',
+        'robotics_teacher' => 'Robotics/Technology specialist',
+        'ell_esl_coord' => 'ELL/ESL Coordinator',
+        'dance_teacher' => 'Dance teacher',
+        'college_counselor' => 'College counselor',
+        'security' => 'Security personnel',
+        'pe_instructor' => 'PE instructor',
+        'teacher_aid' => 'Teacher aid/assistant teacher',
+        'priest' => 'Priest, pastor, or other religious personnel',
+        'instructional_aid' => 'Instructional aide/coach',
+        'math_specialist' => 'Math specialist',
+        'school_psychologist' => 'School psychologist',
+        'school_counslor' => 'School social worker/counselor',
+        'special_ed_coordinator' => 'Special education coordinator',
+        'gifted_specialist' => 'Gifted specialist',
+        'speech_therapist' => 'Speech and language therapist',
+        'garden_teacher' => 'Gardening teacher',
+        'cooking_teacher' => 'Cooking/Nutrition teacher',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_state_status'
   $field_bases['field_state_status'] = array(
     'active' => 1,
@@ -1798,6 +2907,171 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
+  // Exported field_base: 'field_student_clubs'
+  $field_bases['field_student_clubs'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_student_clubs',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'none' => 'None',
+        'drum_line' => 'Drum line',
+        'art_club' => 'Art club',
+        'book_club' => 'Book/reading club',
+        'chess' => 'Chess club',
+        'debate' => 'Debate',
+        'game_club' => 'Game club',
+        'gardening' => 'Gardening',
+        'girl_scouts' => 'Girl Scouts',
+        'dance' => 'Dance club',
+        'math_club' => 'Math club',
+        'mock_trial' => 'Mock trial competition club',
+        'student_newspaper' => 'Student newspaper',
+        'robotics' => 'Robotics club',
+        'science_club' => 'Science club',
+        'yearbook' => 'Yearbook',
+        'drill_team' => 'Drill team',
+        'amnesty_international' => 'Amnesty International',
+        'anime' => 'Anime club',
+        'arts_crafts' => 'Arts and crafts',
+        'homework_help' => 'Homework help/study buddy club',
+        'community_service' => 'Community service',
+        'cooking' => 'Cooking club',
+        'deca' => 'DECA',
+        'boy_scouts' => 'Boy Scouts',
+        'cub_scouts' => 'Cub Scouts',
+        'fca' => 'Fellowship of Christian Athletes (FCA)',
+        'flag_girls' => 'Flag girls',
+        'language_club' => 'Foreign language and culture club',
+        'fbla' => 'Future Business Leaders of America (FBLA)',
+        'girls_on_the_run' => 'Girls on the Run',
+        'sewing_knitting' => 'Sewing/knitting club',
+        'habitat' => 'Habitat for Humanity',
+        'nhs' => 'National Honor Society',
+        'its_academic' => 'It\'s Academic',
+        'jrotc' => 'JROTC',
+        'lesbian_gay_transgender' => 'Lesbian, gay, transgender club',
+        'literary_mag' => 'Literary magazine',
+        'special_olympics' => 'Special Olympics',
+        'mime' => 'Mime club',
+        'martial_arts' => 'Martial arts (judo, tae kwon do, karate, etc.)',
+        'step_team' => 'Step team',
+        'model_congress' => 'Model Congress',
+        'model_oas' => 'Model OAS',
+        'model_un' => 'Model UN',
+        'student_govt' => 'Student council/government',
+        'origami' => 'Origami club',
+        'recycling' => 'Recycling club',
+        'sadd' => 'SADD',
+        'drama_club' => 'Drama club',
+        'yoga' => 'Yoga club',
+        'tech_club' => 'Technology club',
+        'tv_radio_news' => 'Television/Radio News',
+        'woodshop' => 'Woodshop',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_student_clubs_dance'
+  $field_bases['field_student_clubs_dance'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_student_clubs_dance',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_student_clubs_language'
+  $field_bases['field_student_clubs_language'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_student_clubs_language',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_student_clubs_other'
+  $field_bases['field_student_clubs_other'] = array(
+    'active' => 1,
+    'cardinality' => 3,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_student_clubs_other',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_student_development_progra'
   $field_bases['field_student_development_progra'] = array(
     'active' => 1,
@@ -1854,6 +3128,22 @@ function esdportal_str_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_students_accepted'
+  $field_bases['field_students_accepted'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_students_accepted',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
   );
 
   // Exported field_base: 'field_superintendents'
@@ -1922,6 +3212,35 @@ function esdportal_str_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_transportation_options'
+  $field_bases['field_transportation_options'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_transportation_options',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'none' => 'None',
+        'passes' => 'Passes/tokens for public transportation',
+        'busses' => 'Busses/vans for our students only',
+        'shared_bus' => 'School shares bus/van with other schools',
+        'special_ed_only' => 'Transportation provided for special education students only',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
   );
 
   return $field_bases;

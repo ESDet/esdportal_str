@@ -454,6 +454,87 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-school_profile-field_academic_focus'
+  $field_instances['node-school_profile-field_academic_focus'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Please indicate if your school has a special academic theme or area of focus.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 29,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_academic_focus',
+    'label' => 'Academic Focus',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 29,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_admissions_url'
+  $field_instances['node-school_profile-field_admissions_url'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => array(
+      0 => array(
+        'value' => 'http://',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Send parents to your admissions page.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 53,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_admissions_url',
+    'label' => 'Admissions URL',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 57,
+    ),
+  );
+
   // Exported field_instance: 'node-school_profile-field_after_school_transportatio'
   $field_instances['node-school_profile-field_after_school_transportatio'] = array(
     'bundle' => 'school_profile',
@@ -531,6 +612,431 @@ function esdportal_str_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_application_fee'
+  $field_instances['node-school_profile-field_application_fee'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Is there an application fee?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 54,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_application_fee',
+    'label' => 'Application Fee',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 58,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_application_fee_amount'
+  $field_instances['node-school_profile-field_application_fee_amount'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 55,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_application_fee_amount',
+    'label' => 'Application Fee Amount',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '$',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 59,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_application_process'
+  $field_instances['node-school_profile-field_application_process'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Is there an application process for your school?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 52,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_application_process',
+    'label' => 'Application Process',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 56,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_applications_received'
+  $field_instances['node-school_profile-field_applications_received'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'How many applications did you receive this year?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 56,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_applications_received',
+    'label' => 'Applications Received',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 60,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_arts_media'
+  $field_instances['node-school_profile-field_arts_media'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 64,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_arts_media',
+    'label' => 'Arts - Media',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 31,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_arts_music'
+  $field_instances['node-school_profile-field_arts_music'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 65,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_arts_music',
+    'label' => 'Arts - Music',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 32,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_arts_performing_written'
+  $field_instances['node-school_profile-field_arts_performing_written'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 66,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_arts_performing_written',
+    'label' => 'Arts - Performing & Written',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 33,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_arts_visual'
+  $field_instances['node-school_profile-field_arts_visual'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 67,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_arts_visual',
+    'label' => 'Arts - Visual',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 34,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_before_after_care'
+  $field_instances['node-school_profile-field_before_after_care'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Does your school have before or after care on site?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 44,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_before_after_care',
+    'label' => 'Before/After Care',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 48,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_boys_sports'
+  $field_instances['node-school_profile-field_boys_sports'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 35,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_boys_sports',
+    'label' => 'Boys Sports',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 39,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_bullying_policy'
+  $field_instances['node-school_profile-field_bullying_policy'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Does your school have a bullying and/or cyber bulling policy in place?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 45,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_bullying_policy',
+    'label' => 'Bullying Policy',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 49,
     ),
   );
 
@@ -614,6 +1120,43 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-school_profile-field_college_prep'
+  $field_instances['node-school_profile-field_college_prep'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'What college preparation/awareness resources does your school provide to students?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 42,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_college_prep',
+    'label' => 'College Prep',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 46,
+    ),
+  );
+
   // Exported field_instance: 'node-school_profile-field_counselor_student_ratio'
   $field_instances['node-school_profile-field_counselor_student_ratio'] = array(
     'bundle' => 'school_profile',
@@ -654,6 +1197,46 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-school_profile-field_destination_school'
+  $field_instances['node-school_profile-field_destination_school'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'What school(s) do students typically attend after they graduate your school?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 63,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_destination_school',
+    'label' => 'Destination School',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 63,
+    ),
+  );
+
   // Exported field_instance: 'node-school_profile-field_discipline_programs'
   $field_instances['node-school_profile-field_discipline_programs'] = array(
     'bundle' => 'school_profile',
@@ -691,6 +1274,43 @@ function esdportal_str_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_dress_code'
+  $field_instances['node-school_profile-field_dress_code'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Does your school have uniforms or a dress code?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 40,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_dress_code',
+    'label' => 'Dress Code',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 44,
     ),
   );
 
@@ -894,6 +1514,80 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-school_profile-field_ell_languages'
+  $field_instances['node-school_profile-field_ell_languages'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select languages.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 38,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ell_languages',
+    'label' => 'ELL Languages',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 42,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_ell_level'
+  $field_instances['node-school_profile-field_ell_level'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 37,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ell_level',
+    'label' => 'ELL Level',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 41,
+    ),
+  );
+
   // Exported field_instance: 'node-school_profile-field_email'
   $field_instances['node-school_profile-field_email'] = array(
     'bundle' => 'school_profile',
@@ -974,6 +1668,124 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-school_profile-field_extra_learning_resources'
+  $field_instances['node-school_profile-field_extra_learning_resources'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'What extra learning resources are offered for students?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 47,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_extra_learning_resources',
+    'label' => 'Extra Learning Resources',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 51,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_facebook_url'
+  $field_instances['node-school_profile-field_facebook_url'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => array(
+      0 => array(
+        'value' => 'https://',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'School Facebook page',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 49,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_facebook_url',
+    'label' => 'Facebook URL',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 53,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_facilities'
+  $field_instances['node-school_profile-field_facilities'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'What facilities and resources does your school have?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 39,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_facilities',
+    'label' => 'Facilities',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 43,
+    ),
+  );
+
   // Exported field_instance: 'node-school_profile-field_family_supports'
   $field_instances['node-school_profile-field_family_supports'] = array(
     'bundle' => 'school_profile',
@@ -1014,6 +1826,120 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-school_profile-field_feeder_school'
+  $field_instances['node-school_profile-field_feeder_school'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'What school(s) do students typically attend before yours?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 62,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_feeder_school',
+    'label' => 'Feeder School',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 62,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_foreign_language'
+  $field_instances['node-school_profile-field_foreign_language'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'What foreign languages are taught at your school?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 48,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_foreign_language',
+    'label' => 'Foreign Language',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 52,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_girls_sports'
+  $field_instances['node-school_profile-field_girls_sports'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 36,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_girls_sports',
+    'label' => 'Girls Sports',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 40,
+    ),
+  );
+
   // Exported field_instance: 'node-school_profile-field_grades_served'
   $field_instances['node-school_profile-field_grades_served'] = array(
     'bundle' => 'school_profile',
@@ -1048,6 +1974,43 @@ function esdportal_str_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_immersion'
+  $field_instances['node-school_profile-field_immersion'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Does your school offer any bilingual/language immersion programs?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 46,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_immersion',
+    'label' => 'Immersion',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 50,
     ),
   );
 
@@ -1091,6 +2054,43 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-school_profile-field_instructional_model'
+  $field_instances['node-school_profile-field_instructional_model'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'What instructional and/or curriculum modes does your school use, if any?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 30,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_instructional_model',
+    'label' => 'Instructional Model',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 30,
+    ),
+  );
+
   // Exported field_instance: 'node-school_profile-field_organized_sports'
   $field_instances['node-school_profile-field_organized_sports'] = array(
     'bundle' => 'school_profile',
@@ -1128,6 +2128,43 @@ function esdportal_str_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 21,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_parent_involvement'
+  $field_instances['node-school_profile-field_parent_involvement'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'How do parents get involved at your school?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 51,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_parent_involvement',
+    'label' => 'Parent Involvement',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 55,
     ),
   );
 
@@ -1261,6 +2298,43 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-school_profile-field_schedule'
+  $field_instances['node-school_profile-field_schedule'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Is there anything special about your school\'s schedule?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 41,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_schedule',
+    'label' => 'Schedule',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 45,
+    ),
+  );
+
   // Exported field_instance: 'node-school_profile-field_school'
   $field_instances['node-school_profile-field_school'] = array(
     'bundle' => 'school_profile',
@@ -1293,7 +2367,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 29,
+      'weight' => 28,
     ),
   );
 
@@ -1377,19 +2451,23 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-school_profile-field_site_visit_status'
-  $field_instances['node-school_profile-field_site_visit_status'] = array(
+  // Exported field_instance: 'node-school_profile-field_school_url'
+  $field_instances['node-school_profile-field_school_url'] = array(
     'bundle' => 'school_profile',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'http://',
+      ),
+    ),
     'deleted' => 0,
-    'description' => '',
+    'description' => 'School web site',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 29,
+        'type' => 'text_default',
+        'weight' => 50,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1399,8 +2477,48 @@ function esdportal_str_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_site_visit_status',
-    'label' => 'Site visit status',
+    'field_name' => 'field_school_url',
+    'label' => 'School URL',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 54,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_skills_training'
+  $field_instances['node-school_profile-field_skills_training'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'What vocational or skills-based training programs does your school offer students, if any?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 43,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_skills_training',
+    'label' => 'Skills Training',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1409,8 +2527,82 @@ function esdportal_str_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 30,
+      'type' => 'options_buttons',
+      'weight' => 47,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_special_ed_level'
+  $field_instances['node-school_profile-field_special_ed_level'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select one of these options to describe the special education programming at your school.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 33,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_special_ed_level',
+    'label' => 'Special Education Level',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 37,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_special_ed_programs'
+  $field_instances['node-school_profile-field_special_ed_programs'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Does your school have a specialized program for specific types of special education students? If so, please indicate below.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 34,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_special_ed_programs',
+    'label' => 'Special Education Programs',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 38,
     ),
   );
 
@@ -1494,6 +2686,200 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-school_profile-field_staff_resources'
+  $field_instances['node-school_profile-field_staff_resources'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'What staff resources are available to students?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 32,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_staff_resources',
+    'label' => 'Staff Resources',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 36,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_student_clubs'
+  $field_instances['node-school_profile-field_student_clubs'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Student clubs (Note that clubs are distinct from courses)',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 58,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_student_clubs',
+    'label' => 'Student Clubs',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 64,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_student_clubs_dance'
+  $field_instances['node-school_profile-field_student_clubs_dance'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Type of dance club',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 59,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_student_clubs_dance',
+    'label' => 'Student Clubs Dance',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 65,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_student_clubs_language'
+  $field_instances['node-school_profile-field_student_clubs_language'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Type of language club',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 60,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_student_clubs_language',
+    'label' => 'Student Clubs Language',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 66,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_student_clubs_other'
+  $field_instances['node-school_profile-field_student_clubs_other'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Other student clubs not listed above (up to three).',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 61,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_student_clubs_other',
+    'label' => 'Student Clubs Other',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 67,
+    ),
+  );
+
   // Exported field_instance: 'node-school_profile-field_student_development_progra'
   $field_instances['node-school_profile-field_student_development_progra'] = array(
     'bundle' => 'school_profile',
@@ -1574,6 +2960,52 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-school_profile-field_students_accepted'
+  $field_instances['node-school_profile-field_students_accepted'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'How many students did you accept this year?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 57,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_students_accepted',
+    'label' => 'Students Accepted',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 61,
+    ),
+  );
+
   // Exported field_instance: 'node-school_profile-field_transportation'
   $field_instances['node-school_profile-field_transportation'] = array(
     'bundle' => 'school_profile',
@@ -1611,6 +3043,43 @@ function esdportal_str_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_transportation_options'
+  $field_instances['node-school_profile-field_transportation_options'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'What kind of transportation is provided for students by the school/district?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 31,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_transportation_options',
+    'label' => 'Transportation',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 35,
     ),
   );
 
@@ -2892,26 +4361,49 @@ function esdportal_str_field_default_field_instances() {
   t('2013 site visit date');
   t('5E roster');
   t('AP Classes');
+  t('Academic Focus');
   t('Address');
+  t('Admissions URL');
   t('After School Transportation');
   t('Alternative School');
+  t('Application Fee');
+  t('Application Fee Amount');
+  t('Application Process');
+  t('Applications Received');
+  t('Arts - Media');
+  t('Arts - Music');
+  t('Arts - Performing & Written');
+  t('Arts - Visual');
   t('Authorized grades');
   t('Authorizer');
+  t('Before/After Care');
   t('Body');
+  t('Boys Sports');
   t('Building code');
   t('Building name');
+  t('Bullying Policy');
   t('Career Technical Emphasis');
   t('Character Development');
   t('College Counseling');
+  t('College Prep');
   t('Counselor/Student Ratio');
+  t('Destination School');
   t('Discipline Programs');
   t('District');
   t('Do you have linked learning or special tracks? If so, please describe.');
   t('Do you offer dual enrollment?');
   t('Do you offer early childhood programs? If so, please select the years covered by your program.');
   t('Do you offer transportation for after-school programming?');
+  t('Does your school have a bullying and/or cyber bulling policy in place?');
+  t('Does your school have a specialized program for specific types of special education students? If so, please indicate below.');
+  t('Does your school have before or after care on site?');
+  t('Does your school have uniforms or a dress code?');
+  t('Does your school offer any bilingual/language immersion programs?');
+  t('Dress Code');
   t('Dual Enrollment');
   t('Dual Enrollment Institutions');
+  t('ELL Languages');
+  t('ELL Level');
   t('Early Child Center Relationships');
   t('Early Childhood Programs');
   t('Early Childhood Transition');
@@ -2919,57 +4411,102 @@ function esdportal_str_field_default_field_instances() {
   t('Email from old location field');
   t('English Language Learners');
   t('Enter one or many users who should see school profiles (or other data) listed on their dashboard.');
+  t('Extra Learning Resources');
+  t('Facebook URL');
+  t('Facilities');
   t('Family Supports');
+  t('Feeder School');
   t('Files');
   t('First Name');
+  t('Foreign Language');
+  t('Girls Sports');
   t('Governance');
   t('Grades Served');
+  t('How do parents get involved at your school?');
+  t('How many applications did you receive this year?');
+  t('How many students did you accept this year?');
   t('If you have relationships with early child centers, please list which ones.');
   t('If your school offers dual enrollment, with which institutions?');
+  t('Immersion');
   t('In-School Programs');
+  t('Instructional Model');
+  t('Is there an application fee?');
+  t('Is there an application process for your school?');
+  t('Is there anything special about your school\'s schedule?');
   t('Last Name');
   t('Links');
   t('Operator');
   t('Opted in?');
   t('Organized Sports');
+  t('Other student clubs not listed above (up to three).');
+  t('Parent Involvement');
   t('Parent Supports');
   t('Person Responsible');
   t('Photos');
   t('Please check all AP classes offered (HS only)');
   t('Please describe the college counseling offered to students.');
+  t('Please indicate if your school has a special academic theme or area of focus.');
   t('Please list student development programs available during school hours.');
   t('Please list the leadership opportunities available for students.');
   t('Please list the school\'s organized sports offerings.');
   t('Provide file resources to display alongside school information.');
   t('Provide links to external resources to display alongside school information.');
+  t('Schedule');
   t('School');
   t('School Contact First Name');
   t('School Contact Last Name');
+  t('School Facebook page');
   t('School Scorecard status');
+  t('School URL');
   t('School status');
   t('School type');
+  t('School web site');
   t('Scorecard Display');
-  t('Site visit status');
+  t('Select languages.');
+  t('Select one of these options to describe the special education programming at your school.');
+  t('Send parents to your admissions page.');
+  t('Skills Training');
   t('Special Ed Emphasis');
+  t('Special Education Level');
+  t('Special Education Programs');
   t('Special Needs');
   t('Special Tracks');
   t('Specialty School');
+  t('Staff Resources');
   t('State status');
   t('Strict Discipline Academy');
+  t('Student Clubs');
+  t('Student Clubs Dance');
+  t('Student Clubs Language');
+  t('Student Clubs Other');
   t('Student Development Programs');
   t('Student Leadership Opportunities');
+  t('Student clubs (Note that clubs are distinct from courses)');
+  t('Students Accepted');
   t('Superintendents');
   t('Transportation');
+  t('Type of dance club');
+  t('Type of language club');
+  t('What college preparation/awareness resources does your school provide to students?');
   t('What do you do to transition children from early childhood programs?');
+  t('What extra learning resources are offered for students?');
+  t('What facilities and resources does your school have?');
+  t('What foreign languages are taught at your school?');
+  t('What instructional and/or curriculum modes does your school use, if any?');
   t('What is your counselor-to-student ratio?');
+  t('What kind of transportation is provided for students by the school/district?');
   t('What opportunities do you offer for parents to be involved during or after school?  What time are parent meetings?  What decision-making opportunities are there for parents?  Are there classes for parents?');
   t('What programs are in place (during school hours) to support your regular curriculum? Please add one per text field and use the "add more" button for each new entry.');
   t('What resources or supports do you offer families?');
+  t('What school(s) do students typically attend after they graduate your school?');
+  t('What school(s) do students typically attend before yours?');
   t('What school-wide discipline programs do you have? Or, how do you handle discipline at your school?');
   t('What school-wide programs that support character development do you have?');
+  t('What staff resources are available to students?');
   t('What supports are in place for English Language Learners?');
   t('What supports are in place for students with special needs?');
   t('What transportation options are available for before and after the regular school day?  How do you determine eligibility?');
+  t('What vocational or skills-based training programs does your school offer students, if any?');
   t('Who is responsible for community partnerships and after-school programs at your school?');
   t('geo');
   t('grDataLetter');

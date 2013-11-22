@@ -10,60 +10,6 @@
 function esdportal_str_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: menu-moderator-menu:manage-school-profiles
-  $menu_links['menu-moderator-menu:manage-school-profiles'] = array(
-    'menu_name' => 'menu-moderator-menu',
-    'link_path' => 'manage-school-profiles',
-    'router_path' => 'manage-school-profiles',
-    'link_title' => 'Manage School Profiles',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-  );
-  // Exported menu link: menu-moderator-menu:manage-users
-  $menu_links['menu-moderator-menu:manage-users'] = array(
-    'menu_name' => 'menu-moderator-menu',
-    'link_path' => 'manage-users',
-    'router_path' => 'manage-users',
-    'link_title' => 'Manage Users',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-  );
-  // Exported menu link: user-menu:my-school-profiles
-  $menu_links['user-menu:my-school-profiles'] = array(
-    'menu_name' => 'user-menu',
-    'link_path' => 'my-school-profiles',
-    'router_path' => 'my-school-profiles',
-    'link_title' => 'My school profiles',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => 1,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-  );
   // Exported menu link: user-menu:user
   $menu_links['user-menu:user'] = array(
     'menu_name' => 'user-menu',
@@ -101,9 +47,6 @@ function esdportal_str_menu_default_menu_links() {
   // Included for use with string extractors like potx.
   t('Edit My Account');
   t('Log out');
-  t('Manage School Profiles');
-  t('Manage Users');
-  t('My school profiles');
 
 
   return $menu_links;
