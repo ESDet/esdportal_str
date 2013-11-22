@@ -234,6 +234,7 @@ features[field_instance][] = node-school_profile-field_school
 features[field_instance][] = node-school_profile-field_school_contact_first_name
 features[field_instance][] = node-school_profile-field_school_contact_last_name
 features[field_instance][] = node-school_profile-field_school_url
+features[field_instance][] = node-school_profile-field_site_visit_status
 features[field_instance][] = node-school_profile-field_skills_training
 features[field_instance][] = node-school_profile-field_special_ed_level
 features[field_instance][] = node-school_profile-field_special_ed_programs

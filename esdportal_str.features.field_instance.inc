@@ -2495,6 +2495,43 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-school_profile-field_site_visit_status'
+  $field_instances['node-school_profile-field_site_visit_status'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 29,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_site_visit_status',
+    'label' => 'Site visit status',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 30,
+    ),
+  );
+
   // Exported field_instance: 'node-school_profile-field_skills_training'
   $field_instances['node-school_profile-field_skills_training'] = array(
     'bundle' => 'school_profile',
@@ -4465,6 +4502,7 @@ function esdportal_str_field_default_field_instances() {
   t('Select languages.');
   t('Select one of these options to describe the special education programming at your school.');
   t('Send parents to your admissions page.');
+  t('Site visit status');
   t('Skills Training');
   t('Special Ed Emphasis');
   t('Special Education Level');
