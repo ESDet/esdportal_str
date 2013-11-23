@@ -102,17 +102,13 @@ function esdportal_str_strongarm() {
       0 => 'act_2012',
       1 => 'BuildingCode',
     ),
-    'data_earlychild' => array(
-      0 => 'earlychild',
-      1 => 'id',
-    ),
-    'data_meap_2012' => array(
-      0 => 'meap_2012',
-      1 => 'BuildingCode',
-    ),
     'data_act_2013' => array(
       0 => 'act_2013',
       1 => 'BuildingCode',
+    ),
+    'data_earlychild' => array(
+      0 => 'earlychild',
+      1 => 'id',
     ),
     'data_esd_hs_2013' => array(
       0 => 'esd_hs_2013',
@@ -136,6 +132,10 @@ function esdportal_str_strongarm() {
     ),
     'data_meap_2011' => array(
       0 => 'meap_2011',
+      1 => 'BuildingCode',
+    ),
+    'data_meap_2012' => array(
+      0 => 'meap_2012',
       1 => 'BuildingCode',
     ),
     'node' => array(
@@ -216,6 +216,9 @@ function esdportal_str_strongarm() {
         'custom_settings' => FALSE,
       ),
       'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
         'custom_settings' => FALSE,
       ),
     ),
