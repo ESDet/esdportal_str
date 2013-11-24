@@ -221,6 +221,9 @@ function esdportal_str_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'sitevisitask' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
