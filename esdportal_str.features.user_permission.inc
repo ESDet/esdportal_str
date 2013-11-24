@@ -390,6 +390,15 @@ function esdportal_str_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: use editablefields.
+  $permissions['use editablefields'] = array(
+    'name' => 'use editablefields',
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'editablefields',
+  );
+
   // Exported permission: view any field_school.
   $permissions['view any field_school'] = array(
     'name' => 'view any field_school',
