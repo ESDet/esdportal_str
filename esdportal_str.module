@@ -117,6 +117,7 @@ function esdportal_str_field_access($op, $field, $entity_type, $entity, $account
     $access = user_access($perm, $account);
     return $access;
   }
+  // TODO: only show field_site_visit_reuse_reason and field_site_visit_unavailability for specific states
   return TRUE;
 }
 
@@ -231,7 +232,7 @@ function esdportal_str_field_widget_form_alter(&$element, &$form_state, $context
     drupal_add_js(drupal_get_path('module', 'esdportal_str') . '/esdportal_str.sitevisitask.js');
     $element['#title'] = $opts['prompt'];
     $element['#options'] = $opts['options'];
-    if ($opts['disabled'] == true) {
+    if (isset($opts['disabled']) && $opts['disabled'] == true) {
       $element['#disabled'] = true;
     }
   }
