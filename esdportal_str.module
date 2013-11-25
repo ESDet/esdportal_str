@@ -219,12 +219,21 @@ function esdportal_str_views_pre_build(&$view) {
  */
 function esdportal_str_field_widget_form_alter(&$element, &$form_state, $context) {
   $is_sitevisitask = (isset($element['#field_name']) && $element['#field_name'] == 'field_site_visit_status');
+  $is_privileged = user_access('edit any field_site_visit_status');
 
-  if ($is_sitevisitask) {
-    dsm('esdportal_str_field_widget_form_alter');
-    dsm($element);
+  // only show if it's our field and you're not privileged
+  if ($is_sitevisitask && !$is_privileged) {
     // add our special validator to the defaults
     $element['#element_validate'][] = '_esdportal_str_sitevisitask_field_widget_validate';
+    // if not an admin, rewrite available opts
+    $status = _esdportal_str_get_sitevisitstatus($element['#entity']);
+    $opts = _esdportal_str_get_sitevisitstatus_options($status);
+    drupal_add_js(drupal_get_path('module', 'esdportal_str') . '/esdportal_str.sitevisitask.js');
+    $element['#title'] = $opts['prompt'];
+    $element['#options'] = $opts['options'];
+    if ($opts['disabled'] == true) {
+      $element['#disabled'] = true;
+    }
   }
 }
 
@@ -238,14 +247,82 @@ function esdportal_str_field_widget_properties_alter(&$widget, $context) {
  */
 function _esdportal_str_sitevisitask_field_widget_validate($element, &$form_state) {
   // TODO: validate per site visit status state
+}
 
-/* options validator
-  if ($element['#required'] && $element['#value'] == '_none') {
-    form_error($element, t('!name field is required.', array('!name' => $element['#title'])));
+/**
+ * Get site visit status tid of school_profile $node.
+ *
+ * @param object $node
+ *   A school_profile node
+ * @return integer tid
+ *   A site_visit_status term id
+ */
+function _esdportal_str_get_sitevisitstatus($node) {
+  $tid = $node->field_site_visit_status['und'][0]['tid'];
+  return $tid;
+}
+
+/**
+ * Get potential options for a given current site visit status value
+ *
+ * @param integer $tid
+ *   A site_visit_status term id
+ * @return array $options
+ *   An array of potential next-step information
+ */
+function _esdportal_str_get_sitevisitstatus_options($tid) {
+  switch ($tid) {
+    case 1: // Previously visited, pending response
+      $options = array(
+        'prompt' => 'Use 2013 site visit scores for your school?',
+        // Yes, Mature, 9; No, Revisit, 16, show field_site_visit_reuse_reason
+        'options' => array(
+          '_none' => 'Please choose...',
+          9 => 'Yes',
+          16 => 'No',
+        ),
+        'actions' => array(
+          9 => '',
+        ),
+        'showblock' => true,
+      );
+      break;
+    case 5: // Not participating
+      $options = array(
+        'prompt' => 'Does your school want to have a 2014 site visit?',
+        // Yes, New, pending ESD month choice, 2; No, Opt out, 8
+        'options' => array(
+          '_none' => 'Please choose...',
+          2 => 'Yes',
+          8 => 'No',
+        ),
+        'showblock' => true,
+      );
+      break;
+    case 15: // Participating, pending date selection
+      $options = array(
+        'prompt' => 'Please select any days that your school CANNOT have a site visit.',
+        // blank, Participating, pending date selection, 15, show field_site_visit_unavailability
+        'options' => array(
+          15 => 'Please choose dates...',
+          12 => 'Dates chosen!',
+        ),
+        'actions' => null,
+        'disabled' => true,
+        'showblock' => true,
+      );
+      break;
+    default:
+      $options = array(
+        'prompt' => 'Thank you for your response!',
+        'options' => null,
+        'actions' => array(
+
+        ),
+        'showblock' => false,
+      );
+      break;
   }
-  // Transpose selections from field => delta to delta => field, turning
-  // multiple selected options into multiple parent elements.
-  $items = _options_form_to_storage($element);
-  form_set_value($element, $items, $form_state);*/
+  return $options;
 }
 
