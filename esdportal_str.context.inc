@@ -239,10 +239,10 @@ function esdportal_str_context_default_contexts() {
           'region' => 'branding',
           'weight' => '-9',
         ),
-        'menu-menu-footer-links' => array(
-          'module' => 'menu',
-          'delta' => 'menu-footer-links',
-          'region' => 'footer_first',
+        'esdportal_dash-sitevisitask' => array(
+          'module' => 'esdportal_dash',
+          'delta' => 'sitevisitask',
+          'region' => 'pre_content',
           'weight' => '-10',
         ),
         'boxes-social_share' => array(
