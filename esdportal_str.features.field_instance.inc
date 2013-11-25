@@ -2807,6 +2807,89 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-school_profile-field_site_visit_available_dates'
+  $field_instances['node-school_profile-field_site_visit_available_dates'] = array(
+    'bundle' => 'school_profile',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
+        'weight' => 70,
+      ),
+      'sitevisitask' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_site_visit_available_dates',
+    'label' => 'Site visit available dates',
+    'required' => FALSE,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'restrictions' => array(
+        'max' => array(
+          'date' => NULL,
+          'host_entity_date' => array(
+            'end_date' => FALSE,
+            'field' => NULL,
+          ),
+          'host_entity_interval' => NULL,
+          'interval' => NULL,
+          'type' => 'disabled',
+        ),
+        'min' => array(
+          'date' => NULL,
+          'host_entity_date' => array(
+            'end_date' => FALSE,
+            'field' => NULL,
+          ),
+          'host_entity_interval' => NULL,
+          'interval' => NULL,
+          'type' => 'disabled',
+        ),
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'date',
+      'settings' => array(
+        'display_all_day' => 0,
+        'increment' => 15,
+        'input_format' => 'm/d/Y - H:i:s',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'repeat_collapsed' => 0,
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_popup',
+      'weight' => 70,
+    ),
+  );
+
   // Exported field_instance: 'node-school_profile-field_site_visit_reuse_reason'
   $field_instances['node-school_profile-field_site_visit_reuse_reason'] = array(
     'bundle' => 'school_profile',
@@ -2965,6 +3048,32 @@ function esdportal_str_field_default_field_instances() {
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
+      'restrictions' => array(
+        'max' => array(
+          'date' => array(
+            'day' => 25,
+            'month' => 11,
+            'year' => 2013,
+          ),
+          'host_entity_date' => array(
+            'end_date' => 1,
+            'field' => 'node:school_profile:field_site_visit_available_dates',
+          ),
+          'type' => 'host_entity_date',
+        ),
+        'min' => array(
+          'date' => array(
+            'day' => 25,
+            'month' => 11,
+            'year' => 2013,
+          ),
+          'host_entity_date' => array(
+            'end_date' => 0,
+            'field' => 'node:school_profile:field_site_visit_available_dates',
+          ),
+          'type' => 'host_entity_date',
+        ),
+      ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2981,7 +3090,7 @@ function esdportal_str_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 70,
+      'weight' => 71,
     ),
   );
 
@@ -5046,6 +5155,7 @@ function esdportal_str_field_default_field_instances() {
   t('Select languages.');
   t('Select one of these options to describe the special education programming at your school.');
   t('Send parents to your admissions page.');
+  t('Site visit available dates');
   t('Site visit reuse reason');
   t('Site visit status');
   t('Site visit unavailability');

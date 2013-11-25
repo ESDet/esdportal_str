@@ -266,6 +266,26 @@ function esdportal_str_user_default_permissions() {
     'module' => 'esdportal_str',
   );
 
+  // Exported permission: edit any field_site_visit_available_dates.
+  $permissions['edit any field_site_visit_available_dates'] = array(
+    'name' => 'edit any field_site_visit_available_dates',
+    'roles' => array(
+      'Logistics Coordinator' => 'Logistics Coordinator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'esdportal_str',
+  );
+
+  // Exported permission: edit any field_site_visit_status.
+  $permissions['edit any field_site_visit_status'] = array(
+    'name' => 'edit any field_site_visit_status',
+    'roles' => array(
+      'Logistics Coordinator' => 'Logistics Coordinator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'esdportal_str',
+  );
+
   // Exported permission: edit any page content.
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
@@ -291,6 +311,27 @@ function esdportal_str_user_default_permissions() {
     'name' => 'edit own field_school',
     'roles' => array(
       'Logistics Coordinator' => 'Logistics Coordinator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'esdportal_str',
+  );
+
+  // Exported permission: edit own field_site_visit_available_dates.
+  $permissions['edit own field_site_visit_available_dates'] = array(
+    'name' => 'edit own field_site_visit_available_dates',
+    'roles' => array(
+      'Logistics Coordinator' => 'Logistics Coordinator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'esdportal_str',
+  );
+
+  // Exported permission: edit own field_site_visit_status.
+  $permissions['edit own field_site_visit_status'] = array(
+    'name' => 'edit own field_site_visit_status',
+    'roles' => array(
+      'Logistics Coordinator' => 'Logistics Coordinator',
+      'School Representative' => 'School Representative',
       'administrator' => 'administrator',
     ),
     'module' => 'esdportal_str',
@@ -409,11 +450,53 @@ function esdportal_str_user_default_permissions() {
     'module' => 'esdportal_str',
   );
 
+  // Exported permission: view any field_site_visit_available_dates.
+  $permissions['view any field_site_visit_available_dates'] = array(
+    'name' => 'view any field_site_visit_available_dates',
+    'roles' => array(
+      'Logistics Coordinator' => 'Logistics Coordinator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'esdportal_str',
+  );
+
+  // Exported permission: view any field_site_visit_status.
+  $permissions['view any field_site_visit_status'] = array(
+    'name' => 'view any field_site_visit_status',
+    'roles' => array(
+      'Logistics Coordinator' => 'Logistics Coordinator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'esdportal_str',
+  );
+
   // Exported permission: view own field_school.
   $permissions['view own field_school'] = array(
     'name' => 'view own field_school',
     'roles' => array(
       'Logistics Coordinator' => 'Logistics Coordinator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'esdportal_str',
+  );
+
+  // Exported permission: view own field_site_visit_available_dates.
+  $permissions['view own field_site_visit_available_dates'] = array(
+    'name' => 'view own field_site_visit_available_dates',
+    'roles' => array(
+      'Logistics Coordinator' => 'Logistics Coordinator',
+      'School Representative' => 'School Representative',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'esdportal_str',
+  );
+
+  // Exported permission: view own field_site_visit_status.
+  $permissions['view own field_site_visit_status'] = array(
+    'name' => 'view own field_site_visit_status',
+    'roles' => array(
+      'Logistics Coordinator' => 'Logistics Coordinator',
+      'School Representative' => 'School Representative',
       'administrator' => 'administrator',
     ),
     'module' => 'esdportal_str',
