@@ -22,14 +22,14 @@ Drupal.behaviors.sitevisitask_hideExtras = {
         } else if ($(this).parents('article').data('oldval')) {
           tid = $(this).parents('article').data('oldval');
         }
-        if (tid == 16) {
+        if (tid == 2289) {
           $(this).parents('article').find('.field--name-field--site-visit-reuse-reason').show();
         } else {
           $(this).parents('article').find('.field--name-field--site-visit-reuse-reason').hide();
         }
 
         // participating pending date selection
-        if (tid == 15) {
+        if (tid == 2288) {
           $(this).parents('article').find('.field--name-field--site-visit-unavailability').show();
         } else {
           $(this).parents('article').find('.field--name-field--site-visit-unavailability').hide();
