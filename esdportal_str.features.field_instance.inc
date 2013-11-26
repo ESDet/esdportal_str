@@ -3049,6 +3049,9 @@ function esdportal_str_field_default_field_instances() {
       'default_value_code' => '',
       'default_value_code2' => '',
       'restrictions' => array(
+        'allowed_values' => array(
+          'type' => 'disabled',
+        ),
         'max' => array(
           'date' => array(
             'day' => 25,
