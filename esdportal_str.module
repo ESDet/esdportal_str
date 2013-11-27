@@ -292,13 +292,13 @@ function _esdportal_str_get_sitevisitstatus_options($tid) {
       $options = array(
         'prompt' => 'We appreciate your commitment to education.
         <br><br>
-        Important note for charter schools: For the student and teacher surveys, please be sure to submit your rosters before December 4 to UChicago Impact by clicking here (https://uchicagoimpact.org/detroit-5e).
+        Important note for charter schools: For the student and teacher surveys, please be sure to submit your rosters before December 4 to UChicago Impact by <a href="https://uchicagoimpact.org/detroit-5e" target="_blank">clicking here</a>.
         <br><br>
         And please don’t forget to fill out your school profile below. There are more options available this year.
         <br><br>
         Something to look forward to: there will be more details to come regarding the submission of your school’s growth data information.
         <br><br>
-        For further information click here (http://www.excellentschoolsdetroit.org/en/school-review-faq) and feel free to contact Eric Anderson (mailto:eanderson@excellentschoolsdetroit.org) with any technical questions related to the Portal: (313) 638-0084.',
+        For further information <a href="http://www.excellentschoolsdetroit.org/en/school-review-faq" target="_blanK">click here</a> and feel free to contact <a href="mailto:eanderson@excellentschoolsdetroit.org">Eric Anderson</a> with any technical questions related to the Portal: (313) 638-0084.',
         'options' => null,
         'actions' => null,
         'showblock' => false,
@@ -308,7 +308,7 @@ function _esdportal_str_get_sitevisitstatus_options($tid) {
       $options = array(
         'prompt' => 'Please note that we have limited spots for site visits this year and cannot guarantee that we will provide a new visit. We will, however, review your request (submitted below) and be in touch with you soon.
         <br><br>
-        Important note for charter schools: Please be sure to partcipate in the student and teacher surveys and submit your rosters before December 4 to UChicago Impact by clicking here (https://uchicagoimpact.org/detroit-5e).
+        Important note for charter schools: Please be sure to partcipate in the student and teacher surveys and submit your rosters before December 4 to UChicago Impact by <a href="https://uchicagoimpact.org/detroit-5e" target="_blank">clicking here</a>.
         <br><br>
         And please don’t forget to fill out your school profile below. There are more options available this year.',
         'options' => null,
@@ -336,11 +336,11 @@ function _esdportal_str_get_sitevisitstatus_options($tid) {
         <br><br>
         We have been notified that you are interested and will be in touch with you very soon with further details and scheduling options.
         <br><br>
-        In the meantime, please be sure to submit your rosters to the 5Essentials team to take advantage of the student and teacher survey at no cost to you by clicking here (https://uchicagoimpact.org/detroit-5e).
+        In the meantime, please be sure to submit your rosters to the 5Essentials team to take advantage of the student and teacher survey at no cost to you by <a target="_blank" href="https://uchicagoimpact.org/detroit-5e">clicking here</a>.
         <br><br>
-        And please don’t forget to fill out your school profile below with information that is displayed on our online School Scorecard (http://scorecard.excellentschoolsdetroit.org).
+        And please don’t forget to fill out your school profile below with information that is displayed on <a href="http://scorecard.excellentschoolsdetroit.org" target="_blank">our online School Scorecard</a>.
         <br><br>
-        For further information click here (http://www.excellentschoolsdetroit.org/en/school-review-faq) and feel free to contact Eric Anderson (mailto:eanderson@excellentschoolsdetroit.org) with any technical questions related to the Portal: (313) 638-0084.',
+        For further information <a href="http://www.excellentschoolsdetroit.org/en/school-review-faq" target="_blank">click here</a> and feel free to contact <a href="mailto:eanderson@excellentschoolsdetroit.org">Eric Anderson</a> with any technical questions related to the Portal: (313) 638-0084.',
         'options' => null,
         'actions' => null,
         'showblock' => false,
@@ -350,7 +350,7 @@ function _esdportal_str_get_sitevisitstatus_options($tid) {
       $options = array(
         'prompt' => 'We are sorry to hear that you are not interested in participating.
         <br><br>
-        If you would still like to provide parents with more information about your school on our online School Scorecard (http://scorecard.excellentschoolsdetroit.org), please feel free to edit your school profile below.',
+        If you would still like to provide parents with more information about your school on <a href="http://scorecard.excellentschoolsdetroit.org" target="_blank">our online School Scorecard</a>, please feel free to edit your school profile below.',
         'options' => null,
         'actions' => null,
         'showblock' => false,
@@ -377,13 +377,13 @@ function _esdportal_str_get_sitevisitstatus_options($tid) {
         <br><br>
         If you have any questions about the entirety of the process, you can find more information here (link pending) or contact Ashley Johnson at ajohnson@excellentschoolsdetroit.org.
         <br><br>
-        Important note for charter schools: For the student and teacher surveys, please be sure to submit your rosters before December 4 to UChicago Impact by clicking here (https://uchicagoimpact.org/detroit-5e).
+        Important note for charter schools: For the student and teacher surveys, please be sure to submit your rosters before December 4 to UChicago Impact by <a href="https://uchicagoimpact.org/detroit-5e)" target="_blank">clicking here</a>.
         <br><br>
         And please don’t forget to fill out your school profile below. There are more options available this year.
         <br><br>
         Something to look forward to: there will be more details to come regarding the submission of your school’s growth data information.
         <br><br>
-        For further information click here (http://www.excellentschoolsdetroit.org/en/school-review-faq) and feel free to contact Eric Anderson (mailto:eanderson@excellentschoolsdetroit.org) with any technical questions related to the Portal: (313) 638-0084.',
+        For further information <a href="http://www.excellentschoolsdetroit.org/en/school-review-faq" target="_blank">click here</a> and feel free to contact <a href="mailto:eanderson@excellentschoolsdetroit.org" target="_blank">Eric Anderson</a> with any technical questions related to the Portal: (313) 638-0084.',
         'options' => null,
         'actions' => null,
         'showblock' => false,
