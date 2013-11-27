@@ -275,22 +275,52 @@ function _esdportal_str_get_sitevisitstatus_options($tid) {
   switch ($tid) {
     case 2281: // Previously visited, pending response
       $options = array(
-        'prompt' => 'Use 2013 site visit scores for your school?',
+        'prompt' => 'We are grateful for your continued participation in the School Review process. To make sure we get the best information from all schools, we are focusing on providing site reviews for schools that have not yet participated or New and Fresh Start schools.
+        <br><br>
+        For this reason, we will continue to use your site visit scores from last year for this year’s School Review with your permission.',
         // Yes, Mature, 9; No, Revisit, 16, show field_site_visit_reuse_reason
         'options' => array(
           '_none' => 'Please choose...',
-          2285 => 'Yes',
-          2289 => 'No',
+          2285 => 'Reuse 2013 site visit scores',
+          2289 => 'Apply for revisit',
         ),
-        'actions' => array(
-          2285 => '',
-        ),
+        'actions' => null,
         'showblock' => true,
+      );
+      break;
+    case 2285:
+      $options = array(
+        'prompt' => 'We appreciate your commitment to education.
+        <br><br>
+        Important note for charter schools: For the student and teacher surveys, please be sure to submit your rosters before December 4 to UChicago Impact by clicking here (https://uchicagoimpact.org/detroit-5e).
+        <br><br>
+        And please don’t forget to fill out your school profile below. There are more options available this year.
+        <br><br>
+        Something to look forward to: there will be more details to come regarding the submission of your school’s growth data information.
+        <br><br>
+        For further information click here (http://www.excellentschoolsdetroit.org/en/school-review-faq) and feel free to contact Eric Anderson (mailto:eanderson@excellentschoolsdetroit.org) with any technical questions related to the Portal: (313) 638-0084.',
+        'options' => null,
+        'actions' => null,
+        'showblock' => false,
+      );
+      break;
+    case 2289:
+      $options = array(
+        'prompt' => 'Please note that we have limited spots for site visits this year and cannot guarantee that we will provide a new visit. We will, however, review your request (submitted below) and be in touch with you soon.
+        <br><br>
+        Important note for charter schools: Please be sure to partcipate in the student and teacher surveys and submit your rosters before December 4 to UChicago Impact by clicking here (https://uchicagoimpact.org/detroit-5e).
+        <br><br>
+        And please don’t forget to fill out your school profile below. There are more options available this year.',
+        'options' => null,
+        'actions' => null,
+        'showblock' => false,
       );
       break;
     case 2283: // Not participating
       $options = array(
-        'prompt' => 'Does your school want to have a 2014 site visit?',
+        'prompt' => 'We sincerely hope you join us for this year’s School Review process. Your participation ensures that we can provide families with the best information about your school and gives you access to full reports from the 5Essentials student and teacher survey and community site visit.
+        <br><br>
+        To get started, please let us know you are interested below.',
         // Yes, New, pending ESD month choice, 2; No, Opt out, 8
         'options' => array(
           '_none' => 'Please choose...',
@@ -300,9 +330,37 @@ function _esdportal_str_get_sitevisitstatus_options($tid) {
         'showblock' => true,
       );
       break;
+    case 2282:
+      $options = array(
+        'prompt' => 'Thank you!
+        <br><br>
+        We have been notified that you are interested and will be in touch with you very soon with further details and scheduling options.
+        <br><br>
+        In the meantime, please be sure to submit your rosters to the 5Essentials team to take advantage of the student and teacher survey at no cost to you by clicking here (https://uchicagoimpact.org/detroit-5e).
+        <br><br>
+        And please don’t forget to fill out your school profile below with information that is displayed on our online School Scorecard (http://scorecard.excellentschoolsdetroit.org).
+        <br><br>
+        For further information click here (http://www.excellentschoolsdetroit.org/en/school-review-faq) and feel free to contact Eric Anderson (mailto:eanderson@excellentschoolsdetroit.org) with any technical questions related to the Portal: (313) 638-0084.',
+        'options' => null,
+        'actions' => null,
+        'showblock' => false,
+      );
+      break;
+    case 2284:
+      $options = array(
+        'prompt' => 'We are sorry to hear that you are not interested in participating.
+        <br><br>
+        If you would still like to provide parents with more information about your school on our online School Scorecard (http://scorecard.excellentschoolsdetroit.org), please feel free to edit your school profile below.',
+        'options' => null,
+        'actions' => null,
+        'showblock' => false,
+      );
+      break;
     case 2288: // Participating, pending date selection
       $options = array(
-        'prompt' => 'Please select any days that your school CANNOT have a site visit.',
+        'prompt' => 'Thank you for joining us in the 2014 School Review process.
+        <br><br>
+        Community site reviewers have been assigned to visit your school in the month of [month_field_value]. To complete the steps to receive a site visit, please let us know below all dates that your school is unavailable to receive a visit.',
         // blank, Participating, pending date selection, 15, show field_site_visit_unavailability
         'options' => array(
           2288 => 'Please choose dates...',
@@ -313,13 +371,29 @@ function _esdportal_str_get_sitevisitstatus_options($tid) {
         'showblock' => true,
       );
       break;
+    case 2286:
+      $options = array(
+        'prompt' => 'You are all set to receive a site visit!
+        <br><br>
+        If you have any questions about the entirety of the process, you can find more information here (link pending) or contact Ashley Johnson at ajohnson@excellentschoolsdetroit.org.
+        <br><br>
+        Important note for charter schools: For the student and teacher surveys, please be sure to submit your rosters before December 4 to UChicago Impact by clicking here (https://uchicagoimpact.org/detroit-5e).
+        <br><br>
+        And please don’t forget to fill out your school profile below. There are more options available this year.
+        <br><br>
+        Something to look forward to: there will be more details to come regarding the submission of your school’s growth data information.
+        <br><br>
+        For further information click here (http://www.excellentschoolsdetroit.org/en/school-review-faq) and feel free to contact Eric Anderson (mailto:eanderson@excellentschoolsdetroit.org) with any technical questions related to the Portal: (313) 638-0084.',
+        'options' => null,
+        'actions' => null,
+        'showblock' => false,
+      );
+      break;
     default:
       $options = array(
         'prompt' => 'Thank you for your response!',
         'options' => null,
-        'actions' => array(
-
-        ),
+        'actions' => null,
         'showblock' => false,
       );
       break;
