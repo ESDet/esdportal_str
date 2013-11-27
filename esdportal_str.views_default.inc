@@ -769,6 +769,10 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['writingAverage']['table'] = 'act_2013';
   $handler->display->display_options['fields']['writingAverage']['field'] = 'writingAverage';
   $handler->display->display_options['fields']['writingAverage']['label'] = 'writingAverage';
+  /* Field: Act 2013: Edit link */
+  $handler->display->display_options['fields']['edit_link']['id'] = 'edit_link';
+  $handler->display->display_options['fields']['edit_link']['table'] = 'act_2013';
+  $handler->display->display_options['fields']['edit_link']['field'] = 'edit_link';
   /* Contextual filter: Act 2013: Schooltype */
   $handler->display->display_options['arguments']['SchoolType']['id'] = 'SchoolType';
   $handler->display->display_options['arguments']['SchoolType']['table'] = 'act_2013';
@@ -1623,6 +1627,10 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['id']['id'] = 'id';
   $handler->display->display_options['fields']['id']['table'] = 'earlychild';
   $handler->display->display_options['fields']['id']['field'] = 'id';
+  /* Field: Early Childhood Centers: Edit link */
+  $handler->display->display_options['fields']['edit_link']['id'] = 'edit_link';
+  $handler->display->display_options['fields']['edit_link']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['edit_link']['field'] = 'edit_link';
   /* Contextual filter: Early Childhood Centers: BusinessName */
   $handler->display->display_options['arguments']['BusinessName']['id'] = 'BusinessName';
   $handler->display->display_options['arguments']['BusinessName']['table'] = 'earlychild';
@@ -3611,6 +3619,7 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
+    'views_bulk_operations' => 'views_bulk_operations',
     'title' => 'title',
     'field_school_contact_first_name' => 'field_school_contact_first_name',
     'field_school_contact_last_name' => 'field_school_contact_last_name',
@@ -3619,9 +3628,15 @@ function esdportal_str_views_default_views() {
     'edit_node' => 'edit_node',
     'field_bcode' => 'field_bcode',
     'changed' => 'changed',
+    'field_site_visit_status' => 'field_site_visit_status',
   );
   $handler->display->display_options['style_options']['default'] = 'changed';
   $handler->display->display_options['style_options']['info'] = array(
+    'views_bulk_operations' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
     'title' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
@@ -3670,6 +3685,13 @@ function esdportal_str_views_default_views() {
     'changed' => array(
       'sortable' => 1,
       'default_sort_order' => 'desc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_site_visit_status' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
@@ -3965,6 +3987,11 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['changed']['field'] = 'changed';
   $handler->display->display_options['fields']['changed']['label'] = 'Updated';
   $handler->display->display_options['fields']['changed']['date_format'] = 'time ago';
+  /* Field: Content: Site visit status */
+  $handler->display->display_options['fields']['field_site_visit_status']['id'] = 'field_site_visit_status';
+  $handler->display->display_options['fields']['field_site_visit_status']['table'] = 'field_data_field_site_visit_status';
+  $handler->display->display_options['fields']['field_site_visit_status']['field'] = 'field_site_visit_status';
+  $handler->display->display_options['fields']['field_site_visit_status']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['path'] = 'manage-school-profiles';
 
   /* Display: Data export */
@@ -4462,6 +4489,13 @@ function esdportal_str_views_default_views() {
       ),
     ),
     'action::system_send_email_action' => array(
+      'selected' => 1,
+      'postpone_processing' => 0,
+      'skip_confirmation' => 0,
+      'override_label' => 0,
+      'label' => '',
+    ),
+    'action::esdportal_str_send_unsafe_email_action' => array(
       'selected' => 1,
       'postpone_processing' => 0,
       'skip_confirmation' => 0,

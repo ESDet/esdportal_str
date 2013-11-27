@@ -88,7 +88,6 @@ function esdportal_str_context_default_contexts() {
   $context->conditions = array(
     'user' => array(
       'values' => array(
-        'ESD Administrator' => 'ESD Administrator',
         'administrator' => 'administrator',
       ),
     ),
@@ -131,6 +130,12 @@ function esdportal_str_context_default_contexts() {
           'delta' => 'feedback',
           'region' => 'footer_second',
           'weight' => '-10',
+        ),
+        'devel-switch_user' => array(
+          'module' => 'devel',
+          'delta' => 'switch_user',
+          'region' => 'footer_second',
+          'weight' => '-9',
         ),
         'boxes-contact_info' => array(
           'module' => 'boxes',
@@ -242,7 +247,7 @@ function esdportal_str_context_default_contexts() {
         'esdportal_dash-sitevisitask' => array(
           'module' => 'esdportal_dash',
           'delta' => 'sitevisitask',
-          'region' => 'pre_content',
+          'region' => 'content',
           'weight' => '-10',
         ),
         'boxes-social_share' => array(
