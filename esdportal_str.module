@@ -360,7 +360,7 @@ function _esdportal_str_get_sitevisitstatus_options($tid) {
       $options = array(
         'prompt' => 'Thank you for joining us in the 2014 School Review process.
         <br><br>
-        Community site reviewers have been assigned to visit your school in the month of [month_field_value]. To complete the steps to receive a site visit, please let us know below all dates that your school is unavailable to receive a visit.',
+        Community site reviewers have been assigned to visit your school during the dates specified in the first date field below. To complete the steps to receive a site visit, please let us know below all dates that your school is unavailable to receive a visit.',
         // blank, Participating, pending date selection, 15, show field_site_visit_unavailability
         'options' => array(
           2288 => 'Please choose dates...',
@@ -529,7 +529,7 @@ function esdportal_str_send_unsafe_email_action($entity, $context) {
   $params = array('context' => $context);
 
   if (drupal_mail('esdportal_str', 'action_send_unsafe_email', $recipient, $language, $params)) {
-    watchdog('action', 'Sent email to %recipient', array('%recipient' => $recipient));
+    watchdog('action', 'Sent unsafe email to %recipient', array('%recipient' => $recipient));
   }
   else {
     watchdog('error', 'Unable to send unsafe email to %recipient', array('%recipient' => $recipient));
