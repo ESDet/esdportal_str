@@ -232,9 +232,11 @@ function esdportal_str_field_widget_form_alter(&$element, &$form_state, $context
     drupal_add_js(drupal_get_path('module', 'esdportal_str') . '/esdportal_str.sitevisitask.js');
     $element['#title'] = $opts['prompt'];
     $element['#options'] = $opts['options'];
+    /* need to do this via js for now
     if (isset($opts['disabled']) && $opts['disabled'] == true) {
       $element['#disabled'] = true;
     }
+    */
   }
 }
 
@@ -360,14 +362,13 @@ function _esdportal_str_get_sitevisitstatus_options($tid) {
       $options = array(
         'prompt' => 'Thank you for joining us in the 2014 School Review process.
         <br><br>
-        Community site reviewers have been assigned to visit your school during the dates specified in the first date field below. To complete the steps to receive a site visit, please let us know below all dates that your school is unavailable to receive a visit.',
+        Community site reviewers have been assigned to visit your school during the dates specified below. To complete the steps to receive a site visit, please let us know below all dates during that month that your school is unavailable to receive a visit.',
         // blank, Participating, pending date selection, 15, show field_site_visit_unavailability
         'options' => array(
           2288 => 'Please choose dates...',
           2286 => 'Dates chosen!',
         ),
         'actions' => null,
-        'disabled' => true,
         'showblock' => true,
       );
       break;

@@ -38,7 +38,15 @@ Drupal.behaviors.sitevisitask_hideExtras = {
       $(this).trigger('change');
     });
 
-    // TODO: set site visit status to Participating after dates are saved
+    $('.field--name-field--site-visit-unavailability', context).each(function() {
+      parents('article').find('.form-select').hide()
+      var $thisField = $(this);
+      var thisSubmitId = $(this).find('input:submit').attr('id');
+      Drupal.ajax[thisSubmitId].options.success = function (response, status) {
+        $thisField.parents('article').find('#edit-field-site-visit-status-und').val('2286');
+        $thisField.parents('article').find('#edit-field-site-visit-status-und').trigger('change');
+      }
+    });
   }
 };
 
