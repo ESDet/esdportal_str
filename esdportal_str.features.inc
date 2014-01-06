@@ -21,6 +21,10 @@ function esdportal_str_ctools_plugin_api() {
     return array("version" => "1");
   }
   list($module, $api) = func_get_args();
+  if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "services" && $api == "services") {
     return array("version" => "3");
   }

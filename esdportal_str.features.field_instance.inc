@@ -472,7 +472,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 30,
+        'weight' => 31,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -493,7 +493,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 4,
+      'weight' => 20,
     ),
   );
 
@@ -519,7 +519,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 54,
+        'weight' => 55,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -543,7 +543,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 32,
+      'weight' => 56,
     ),
   );
 
@@ -569,7 +569,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -592,7 +592,7 @@ function esdportal_str_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_buttons',
-      'weight' => 13,
+      'weight' => 16,
     ),
   );
 
@@ -614,7 +614,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 28,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -635,7 +635,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 9,
+      'weight' => 15,
     ),
   );
 
@@ -657,7 +657,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 55,
+        'weight' => 56,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -678,7 +678,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 33,
+      'weight' => 57,
     ),
   );
 
@@ -705,7 +705,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 56,
+        'weight' => 57,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -730,7 +730,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 34,
+      'weight' => 58,
     ),
   );
 
@@ -752,7 +752,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 53,
+        'weight' => 54,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -773,7 +773,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 31,
+      'weight' => 55,
     ),
   );
 
@@ -800,7 +800,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 57,
+        'weight' => 58,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -825,7 +825,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 35,
+      'weight' => 59,
     ),
   );
 
@@ -847,7 +847,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 65,
+        'weight' => 66,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -868,7 +868,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 6,
+      'weight' => 24,
     ),
   );
 
@@ -890,7 +890,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 66,
+        'weight' => 67,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -911,7 +911,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 7,
+      'weight' => 25,
     ),
   );
 
@@ -933,7 +933,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 67,
+        'weight' => 68,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -954,7 +954,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 8,
+      'weight' => 26,
     ),
   );
 
@@ -976,7 +976,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 68,
+        'weight' => 69,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -997,7 +997,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 9,
+      'weight' => 23,
     ),
   );
 
@@ -1019,7 +1019,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 45,
+        'weight' => 46,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1040,7 +1040,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 23,
+      'weight' => 45,
     ),
   );
 
@@ -1062,7 +1062,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 36,
+        'weight' => 37,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1083,7 +1083,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 14,
+      'weight' => 30,
     ),
   );
 
@@ -1105,7 +1105,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 46,
+        'weight' => 47,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1126,7 +1126,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 24,
+      'weight' => 46,
     ),
   );
 
@@ -1148,7 +1148,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1172,7 +1172,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 10,
+      'weight' => 9,
     ),
   );
 
@@ -1194,7 +1194,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1218,7 +1218,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 24,
+      'weight' => 13,
     ),
   );
 
@@ -1240,7 +1240,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 43,
+        'weight' => 44,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1261,7 +1261,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 21,
+      'weight' => 43,
     ),
   );
 
@@ -1283,7 +1283,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1307,7 +1307,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 23,
+      'weight' => 18,
     ),
   );
 
@@ -1329,7 +1329,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 64,
+        'weight' => 65,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1353,7 +1353,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 38,
+      'weight' => 62,
     ),
   );
 
@@ -1375,7 +1375,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1399,7 +1399,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 11,
+      'weight' => 10,
     ),
   );
 
@@ -1421,7 +1421,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 41,
+        'weight' => 42,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1442,7 +1442,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 19,
+      'weight' => 39,
     ),
   );
 
@@ -1468,7 +1468,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1491,7 +1491,7 @@ function esdportal_str_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_buttons',
-      'weight' => 16,
+      'weight' => 32,
     ),
   );
 
@@ -1513,7 +1513,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1537,7 +1537,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 17,
+      'weight' => 35,
     ),
   );
 
@@ -1559,7 +1559,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1583,7 +1583,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 28,
+      'weight' => 20,
     ),
   );
 
@@ -1605,7 +1605,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1626,7 +1626,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 26,
+      'weight' => 49,
     ),
   );
 
@@ -1648,7 +1648,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1672,7 +1672,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 27,
+      'weight' => 19,
     ),
   );
 
@@ -1694,7 +1694,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 39,
+        'weight' => 40,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1715,7 +1715,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 17,
+      'weight' => 34,
     ),
   );
 
@@ -1737,7 +1737,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 38,
+        'weight' => 39,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1758,7 +1758,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 16,
+      'weight' => 33,
     ),
   );
 
@@ -1767,7 +1767,7 @@ function esdportal_str_field_default_field_instances() {
     'bundle' => 'school_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'The email address where parents can contact your school for more information.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1780,7 +1780,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 29,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1791,7 +1791,7 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_email',
-    'label' => 'Email',
+    'label' => 'General Information Email',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -1826,7 +1826,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1850,7 +1850,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 14,
+      'weight' => 11,
     ),
   );
 
@@ -1872,7 +1872,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 48,
+        'weight' => 49,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1893,7 +1893,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 26,
+      'weight' => 50,
     ),
   );
 
@@ -1919,7 +1919,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 50,
+        'weight' => 51,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1943,7 +1943,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 28,
+      'weight' => 52,
     ),
   );
 
@@ -1965,7 +1965,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 40,
+        'weight' => 41,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1986,7 +1986,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 18,
+      'weight' => 37,
     ),
   );
 
@@ -2008,7 +2008,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2032,7 +2032,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 18,
+      'weight' => 36,
     ),
   );
 
@@ -2054,7 +2054,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 63,
+        'weight' => 64,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2078,7 +2078,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 37,
+      'weight' => 61,
     ),
   );
 
@@ -2100,7 +2100,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 49,
+        'weight' => 50,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2121,7 +2121,53 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 27,
+      'weight' => 51,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_general_contact_phone'
+  $field_instances['node-school_profile-field_general_contact_phone'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'A phone number where parents can contact the school for information.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 71,
+      ),
+      'sitevisitask' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_general_contact_phone',
+    'label' => 'General Contact Phone',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 4,
     ),
   );
 
@@ -2143,7 +2189,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 37,
+        'weight' => 38,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2164,7 +2210,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 15,
+      'weight' => 31,
     ),
   );
 
@@ -2186,7 +2232,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2207,7 +2253,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -2229,7 +2275,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 47,
+        'weight' => 48,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2250,7 +2296,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 25,
+      'weight' => 47,
     ),
   );
 
@@ -2272,7 +2318,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2318,7 +2364,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 31,
+        'weight' => 32,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2339,7 +2385,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 5,
+      'weight' => 21,
     ),
   );
 
@@ -2361,7 +2407,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 20,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2385,7 +2431,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 22,
+      'weight' => 14,
     ),
   );
 
@@ -2407,7 +2453,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 52,
+        'weight' => 53,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2428,7 +2474,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 30,
+      'weight' => 54,
     ),
   );
 
@@ -2450,7 +2496,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2474,7 +2520,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 19,
+      'weight' => 38,
     ),
   );
 
@@ -2496,7 +2542,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2520,7 +2566,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 5,
     ),
   );
 
@@ -2544,7 +2590,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 30,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2576,7 +2622,7 @@ function esdportal_str_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 2,
+      'weight' => 6,
     ),
   );
 
@@ -2598,7 +2644,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 42,
+        'weight' => 43,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2619,7 +2665,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 20,
+      'weight' => 40,
     ),
   );
 
@@ -2640,7 +2686,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 69,
+        'weight' => 70,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2661,7 +2707,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 3,
+      'weight' => 9,
     ),
   );
 
@@ -2683,7 +2729,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2694,7 +2740,7 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_school_contact_first_name',
-    'label' => 'School Contact First Name',
+    'label' => 'Principal First Name',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -2707,7 +2753,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 1,
     ),
   );
 
@@ -2729,7 +2775,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2740,7 +2786,7 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_school_contact_last_name',
-    'label' => 'School Contact Last Name',
+    'label' => 'Principal Last Name',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -2753,7 +2799,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 2,
     ),
   );
 
@@ -2779,7 +2825,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 51,
+        'weight' => 52,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2803,7 +2849,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 29,
+      'weight' => 53,
     ),
   );
 
@@ -2829,9 +2875,17 @@ function esdportal_str_field_default_field_instances() {
       ),
       'sitevisitask' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'human_date',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2842,41 +2896,48 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_site_visit_available_dates',
-    'label' => 'Site visit available dates',
-    'required' => FALSE,
+    'label' => 'Time of your site visit',
+    'required' => 0,
     'settings' => array(
       'default_value' => 'now',
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
       'restrictions' => array(
+        'allowed_values' => array(
+          'type' => 'disabled',
+        ),
         'max' => array(
-          'date' => NULL,
-          'host_entity_date' => array(
-            'end_date' => FALSE,
-            'field' => NULL,
+          'date' => array(
+            'day' => 2,
+            'month' => 12,
+            'year' => 2013,
           ),
-          'host_entity_interval' => NULL,
-          'interval' => NULL,
+          'host_entity_date' => array(
+            'end_date' => 0,
+            'field' => 'node:school_profile:field_site_visit_unavailability',
+          ),
           'type' => 'disabled',
         ),
         'min' => array(
-          'date' => NULL,
-          'host_entity_date' => array(
-            'end_date' => FALSE,
-            'field' => NULL,
+          'date' => array(
+            'day' => 2,
+            'month' => 12,
+            'year' => 2013,
           ),
-          'host_entity_interval' => NULL,
-          'interval' => NULL,
+          'host_entity_date' => array(
+            'end_date' => 0,
+            'field' => 'node:school_profile:field_site_visit_unavailability',
+          ),
           'type' => 'disabled',
         ),
       ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'date',
       'settings' => array(
-        'display_all_day' => 0,
         'increment' => 15,
         'input_format' => 'm/d/Y - H:i:s',
         'input_format_custom' => '',
@@ -2886,7 +2947,7 @@ function esdportal_str_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 6,
+      'weight' => 13,
     ),
   );
 
@@ -2939,7 +3000,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 12,
     ),
   );
 
@@ -2995,7 +3056,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 10,
     ),
   );
 
@@ -3030,7 +3091,7 @@ function esdportal_str_field_default_field_instances() {
           'fallback_settings' => array(),
         ),
         'type' => 'editable',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3083,7 +3144,6 @@ function esdportal_str_field_default_field_instances() {
       'active' => 1,
       'module' => 'date',
       'settings' => array(
-        'display_all_day' => 0,
         'increment' => 15,
         'input_format' => 'm/d/Y - H:i:s',
         'input_format_custom' => '',
@@ -3093,7 +3153,7 @@ function esdportal_str_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 7,
+      'weight' => 11,
     ),
   );
 
@@ -3115,7 +3175,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 44,
+        'weight' => 45,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3136,7 +3196,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 22,
+      'weight' => 44,
     ),
   );
 
@@ -3158,7 +3218,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 34,
+        'weight' => 35,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3179,7 +3239,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 12,
+      'weight' => 28,
     ),
   );
 
@@ -3201,7 +3261,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 35,
+        'weight' => 36,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3222,7 +3282,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 13,
+      'weight' => 29,
     ),
   );
 
@@ -3244,7 +3304,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3268,7 +3328,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 15,
+      'weight' => 12,
     ),
   );
 
@@ -3290,7 +3350,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 23,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3314,7 +3374,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 25,
+      'weight' => 48,
     ),
   );
 
@@ -3336,7 +3396,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 33,
+        'weight' => 34,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3357,7 +3417,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 11,
+      'weight' => 22,
     ),
   );
 
@@ -3379,7 +3439,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 59,
+        'weight' => 60,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3400,7 +3460,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 39,
+      'weight' => 63,
     ),
   );
 
@@ -3422,7 +3482,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 60,
+        'weight' => 61,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3446,7 +3506,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 40,
+      'weight' => 64,
     ),
   );
 
@@ -3468,7 +3528,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 61,
+        'weight' => 62,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3492,7 +3552,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 41,
+      'weight' => 65,
     ),
   );
 
@@ -3514,7 +3574,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 62,
+        'weight' => 63,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3538,7 +3598,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 42,
+      'weight' => 66,
     ),
   );
 
@@ -3560,7 +3620,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3584,7 +3644,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 21,
+      'weight' => 42,
     ),
   );
 
@@ -3606,7 +3666,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3630,7 +3690,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 20,
+      'weight' => 41,
     ),
   );
 
@@ -3657,7 +3717,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 58,
+        'weight' => 59,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3682,7 +3742,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 36,
+      'weight' => 60,
     ),
   );
 
@@ -3704,7 +3764,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3728,7 +3788,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 12,
+      'weight' => 17,
     ),
   );
 
@@ -3750,7 +3810,7 @@ function esdportal_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 32,
+        'weight' => 33,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3771,7 +3831,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 10,
+      'weight' => 27,
     ),
   );
 
@@ -5052,6 +5112,7 @@ function esdportal_str_field_default_field_instances() {
   t('2011 Percent Detroit resident');
   t('2013 site visit date');
   t('5E roster');
+  t('A phone number where parents can contact the school for information.');
   t('AP Classes');
   t('Academic Focus');
   t('Address');
@@ -5111,6 +5172,8 @@ function esdportal_str_field_default_field_instances() {
   t('Files');
   t('First Name');
   t('Foreign Language');
+  t('General Contact Phone');
+  t('General Information Email');
   t('Girls Sports');
   t('Governance');
   t('Grades Served');
@@ -5142,12 +5205,12 @@ function esdportal_str_field_default_field_instances() {
   t('Please list the leadership opportunities available for students.');
   t('Please list the school\'s organized sports offerings.');
   t('Please select any dates when you can\'t have a site visit.');
+  t('Principal First Name');
+  t('Principal Last Name');
   t('Provide file resources to display alongside school information.');
   t('Provide links to external resources to display alongside school information.');
   t('Schedule');
   t('School');
-  t('School Contact First Name');
-  t('School Contact Last Name');
   t('School Facebook page');
   t('School Scorecard status');
   t('School URL');
@@ -5158,7 +5221,6 @@ function esdportal_str_field_default_field_instances() {
   t('Select languages.');
   t('Select one of these options to describe the special education programming at your school.');
   t('Send parents to your admissions page.');
-  t('Site visit available dates');
   t('Site visit reuse reason');
   t('Site visit status');
   t('Site visit unavailability');
@@ -5181,6 +5243,8 @@ function esdportal_str_field_default_field_instances() {
   t('Student clubs (Note that clubs are distinct from courses)');
   t('Students Accepted');
   t('Superintendents');
+  t('The email address where parents can contact your school for more information.');
+  t('Time of your site visit');
   t('Transportation');
   t('Type of dance club');
   t('Type of language club');

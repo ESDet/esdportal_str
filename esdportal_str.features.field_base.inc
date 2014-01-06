@@ -841,7 +841,7 @@ function esdportal_str_field_default_field_bases() {
   // Exported field_base: 'field_college_prep'
   $field_bases['field_college_prep'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_college_prep',
@@ -1546,6 +1546,35 @@ function esdportal_str_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_general_contact_phone'
+  $field_bases['field_general_contact_phone'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_general_contact_phone',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_geo'
@@ -2653,7 +2682,7 @@ function esdportal_str_field_default_field_bases() {
   // Exported field_base: 'field_site_visit_unavailability'
   $field_bases['field_site_visit_unavailability'] = array(
     'active' => 1,
-    'cardinality' => -1,
+    'cardinality' => 10,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_site_visit_unavailability',
@@ -3001,7 +3030,7 @@ function esdportal_str_field_default_field_bases() {
   // Exported field_base: 'field_student_clubs'
   $field_bases['field_student_clubs'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_student_clubs',
