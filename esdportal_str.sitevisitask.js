@@ -39,7 +39,7 @@ Drupal.behaviors.sitevisitask_hideExtras = {
     });
 
     $('.field--name-field--site-visit-unavailability', context).each(function() {
-      parents('article').find('.form-select').hide()
+      $(this).parents('article').find('.form-select').hide();
       var $thisField = $(this);
       var thisSubmitId = $(this).find('input:submit').attr('id');
       Drupal.ajax[thisSubmitId].options.success = function (response, status) {
