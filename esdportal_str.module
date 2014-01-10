@@ -20,6 +20,10 @@ function esdportal_str_entity_info_alter(&$entity_info) {
     'label' => t('Site visit ask'),
     'custom settings' => FALSE,
   );
+  $entity_info['node']['view modes']['growthdataask'] = array(
+    'label' => t('Growth data ask'),
+    'custom settings' => FALSE,
+  );
 }
 
 /**
@@ -41,6 +45,9 @@ function esdportal_str_preprocess_taxonomy_term(&$vars) {
 function esdportal_str_preprocess_node(&$vars) {
   if($vars['view_mode'] == 'sitevisitask') {
     $vars['theme_hook_suggestions'][] = 'node__' . $vars['type'] . '__sitevisitask';
+  }
+  if($vars['view_mode'] == 'growthdataask') {
+    $vars['theme_hook_suggestions'][] = 'node__' . $vars['type'] . '__growthdataask';
   }
 }
 
@@ -64,6 +71,10 @@ function esdportal_str_permission() {
     'edit own field_site_visit_available_dates' => array('title' => t('Edit own field_site_visit_available_dates')),
     'view any field_site_visit_available_dates' => array('title' => t('View any field_site_visit_available_dates')),
     'edit any field_site_visit_available_dates' => array('title' => t('Edit any field_site_visit_available_dates')),
+    'view own field_growth_data_doc' => array('title' => t('View own field_growth_data_doc')),
+    'edit own field_growth_data_doc' => array('title' => t('Edit own field_growth_data_doc')),
+    'view any field_growth_data_doc' => array('title' => t('View any field_growth_data_doc')),
+    'edit any field_growth_data_doc' => array('title' => t('Edit any field_growth_data_doc')),
   );
 }
 
@@ -114,6 +125,19 @@ function esdportal_str_field_access($op, $field, $entity_type, $entity, $account
       $context = 'own';
     }
     $perm = $op . ' ' . $context . ' field_site_visit_available_dates';
+    $access = user_access($perm, $account);
+    return $access;
+  }
+  if ($field['field_name'] == 'field_growth_data_doc') {
+    // allow superusers no matter whoziewhatsit
+    if (user_access('bypass node access') || user_access('administer content types')) {
+      return TRUE;
+    }
+    $context = 'any';
+    if ($entity_type == 'node' && $entity && $entity->uid == $account->uid) {
+      $context = 'own';
+    }
+    $perm = $op . ' ' . $context . ' field_growth_data_doc';
     $access = user_access($perm, $account);
     return $access;
   }
@@ -220,10 +244,13 @@ function esdportal_str_views_pre_build(&$view) {
  */
 function esdportal_str_field_widget_form_alter(&$element, &$form_state, $context) {
   $is_sitevisitask = (isset($element['#field_name']) && $element['#field_name'] == 'field_site_visit_status');
-  $is_privileged = user_access('edit any field_site_visit_status');
+  $edit_any_sitevisitask = user_access('edit any field_site_visit_status');
+
+  $is_growthdatadoc = (isset($element[0]) && isset($element[0]['#field_name']) && $element[0]['#field_name'] == 'field_growth_data_doc');
+  $edit_any_growthdatadoc = user_access('edit any field_growth_data_doc');
 
   // only show if it's our field and you're not privileged
-  if ($is_sitevisitask && !$is_privileged) {
+  if ($is_sitevisitask && !$edit_any_sitevisitask) {
     // add our special validator to the defaults
     $element['#element_validate'][] = '_esdportal_str_sitevisitask_field_widget_validate';
     // if not an admin, rewrite available opts
@@ -237,6 +264,12 @@ function esdportal_str_field_widget_form_alter(&$element, &$form_state, $context
       $element['#disabled'] = true;
     }
     */
+  }
+
+  // growth data doc: same game
+  if ($is_growthdatadoc && !$edit_any_growthdatadoc) {
+    // we can do fancy things here
+    $element[0]['#title'] = 'Please upload a growth data document<br>Download templates here (list file links).';
   }
 }
 
@@ -402,6 +435,20 @@ function _esdportal_str_get_sitevisitstatus_options($tid) {
   return $options;
 }
 
+/**
+ * Get growth data upload status of school_profile $node.
+ *
+ * @param object $node
+ *   A school_profile node
+ * @return bool
+ */
+function _esdportal_str_is_growthdata_uploaded($node) {
+  $is_uploaded = false;
+  if (count($node->field_growth_data_doc) > 0) {
+    $is_uploaded = true;
+  }
+  return $is_uploaded;
+}
 /**
  * Implements hook_action_info().
  */
