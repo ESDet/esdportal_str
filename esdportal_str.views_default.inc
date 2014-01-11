@@ -1207,6 +1207,11 @@ function esdportal_str_views_default_views() {
     'GSCfee' => 'GSCfee',
     'GSCemail' => 'GSCemail',
     'GSCcontact' => 'GSCcontact',
+    'GSCmessage' => 'GSCmessage',
+    'GSCspecialty' => 'GSCspecialty',
+    'GSCschedule' => 'GSCschedule',
+    'GSCsetting' => 'GSCsetting',
+    'GSCpaySchedule' => 'GSCpaySchedule',
     'id' => 'id',
   );
   $handler->display->display_options['style_options']['default'] = -1;
@@ -1408,6 +1413,26 @@ function esdportal_str_views_default_views() {
       'separator' => '',
     ),
     'GSCcontact' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCmessage' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCspecialty' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCschedule' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCsetting' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'GSCpaySchedule' => array(
       'sortable' => 1,
       'separator' => '',
     ),
@@ -1623,6 +1648,26 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['GSCcontact']['id'] = 'GSCcontact';
   $handler->display->display_options['fields']['GSCcontact']['table'] = 'earlychild';
   $handler->display->display_options['fields']['GSCcontact']['field'] = 'GSCcontact';
+  /* Field: Early Childhood Centers: GSCmessage */
+  $handler->display->display_options['fields']['GSCmessage']['id'] = 'GSCmessage';
+  $handler->display->display_options['fields']['GSCmessage']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCmessage']['field'] = 'GSCmessage';
+  /* Field: Early Childhood Centers: GSCspecialty */
+  $handler->display->display_options['fields']['GSCspecialty']['id'] = 'GSCspecialty';
+  $handler->display->display_options['fields']['GSCspecialty']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCspecialty']['field'] = 'GSCspecialty';
+  /* Field: Early Childhood Centers: GSCschedule */
+  $handler->display->display_options['fields']['GSCschedule']['id'] = 'GSCschedule';
+  $handler->display->display_options['fields']['GSCschedule']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCschedule']['field'] = 'GSCschedule';
+  /* Field: Early Childhood Centers: GSCsetting */
+  $handler->display->display_options['fields']['GSCsetting']['id'] = 'GSCsetting';
+  $handler->display->display_options['fields']['GSCsetting']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCsetting']['field'] = 'GSCsetting';
+  /* Field: Early Childhood Centers: GSCpaySchedule */
+  $handler->display->display_options['fields']['GSCpaySchedule']['id'] = 'GSCpaySchedule';
+  $handler->display->display_options['fields']['GSCpaySchedule']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['GSCpaySchedule']['field'] = 'GSCpaySchedule';
   /* Field: Early Childhood Centers: id */
   $handler->display->display_options['fields']['id']['id'] = 'id';
   $handler->display->display_options['fields']['id']['table'] = 'earlychild';
