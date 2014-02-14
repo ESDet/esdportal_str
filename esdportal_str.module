@@ -477,6 +477,9 @@ function esdportal_str_action_info() {
  */
 function esdportal_str_send_unsafe_email_action_form($context) {
   // Set default values for form.
+  if (!isset($context['from'])) {
+    $context['from'] = '';
+  }
   if (!isset($context['recipient'])) {
     $context['recipient'] = '';
   }
@@ -490,6 +493,13 @@ function esdportal_str_send_unsafe_email_action_form($context) {
     $context['message'] = '';
   }
 
+  $form['from'] = array(
+    '#type' => 'textfield',
+    '#title' => t('From'),
+    '#default_value' => $context['from'],
+    '#maxlength' => '254',
+    '#description' => t('Optionally provide a From address for the email. If not set, will be default defined in esdportal_str.module. Not token_replaced.'),
+  );
   $form['recipient'] = array(
     '#type' => 'textfield',
     '#title' => t('Recipient'),
@@ -528,6 +538,9 @@ function esdportal_str_send_unsafe_email_action_form($context) {
 function esdportal_str_send_unsafe_email_action_validate($form, $form_state) {
   $form_values = $form_state['values'];
   // Validate the configuration form.
+  if (strlen($form_values['from']) > 0 && !valid_email_address($form_values['from'])) {
+    form_set_error('from', t('Provide a valid from email address. No tokens for this one.'));
+  }
   if (!valid_email_address($form_values['recipient']) && strpos($form_values['recipient'], ':mail') === FALSE) {
     // We want the literal %author placeholder to be emphasized in the error message.
     form_set_error('recipient', t('Enter a valid email address or use a token e-mail address such as %author.', array('%author' => '[node:author:mail]')));
@@ -545,6 +558,7 @@ function esdportal_str_send_unsafe_email_action_submit($form, $form_state) {
   // Process the HTML form to store configuration. The keyed array that
   // we return will be serialized to the database.
   $params = array(
+    'from'      => $form_values['from'],
     'recipient' => $form_values['recipient'],
     'bcc'       => $form_values['bcc'],
     'subject'   => $form_values['subject'],
@@ -561,6 +575,7 @@ function esdportal_str_send_unsafe_email_action_submit($form, $form_state) {
  *   provided.
  * @param array $context
  *   Array with the following elements:
+ *   - 'from': From: address. Not token_replace()d.
  *   - 'recipient': E-mail message recipient. This will be passed through
  *     token_replace().
  *   - 'bcc': blind carbon copy recipient. Not token_replace()d.
@@ -605,8 +620,14 @@ function esdportal_str_send_unsafe_email_action($entity, $context) {
 function esdportal_str_mail($key, &$message, $params) {
   $context = $params['context'];
 
+  // set from
+  if (isset($context['from']) && strlen($context['from']) > 0) {
+    $message['from'] = $context['from'];
+    $message['custom_from'] = TRUE;
+  }
+
   // set bcc
-  if (isset($context['bcc'])) {
+  if (isset($context['bcc']) && strlen($context['from']) > 0) {
     $message['headers']['Bcc'] = $context['bcc'];
   }
 
@@ -620,6 +641,8 @@ function esdportal_str_mail($key, &$message, $params) {
 }
 
 function esdportal_str_mail_alter(&$message) {
-  $message['from'] = '"Excellent Schools Detroit Logistics" <qedgar@excellentschoolsdetroit.org>';
+  if (!$message['custom_from']) {
+    $message['from'] = '"Excellent Schools Detroit Logistics" <qedgar@excellentschoolsdetroit.org>';
+  }
   $message['headers']['From'] = $message['headers']['Sender'] = $message['headers']['Return-Path'] = $message['from'];
 }
