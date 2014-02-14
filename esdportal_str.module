@@ -620,5 +620,6 @@ function esdportal_str_mail($key, &$message, $params) {
 }
 
 function esdportal_str_mail_alter(&$message) {
-  $message['from'] = $message['headers']['From'] = '"Excellent Schools Detroit Logistics" <quan@excellentschoolsdetroit.org>';
+  $message['from'] = '"Excellent Schools Detroit Logistics" <qedgar@excellentschoolsdetroit.org>';
+  $message['headers']['From'] = $message['headers']['Sender'] = $message['headers']['Return-Path'] = $message['from'];
 }
