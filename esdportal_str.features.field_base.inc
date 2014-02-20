@@ -2741,6 +2741,40 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'datetime',
   );
 
+  // Exported field_base: 'field_skillman_good_neighborhood'
+  $field_bases['field_skillman_good_neighborhood'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_skillman_good_neighborhood',
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'skillman_good_neighborhood',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
   // Exported field_base: 'field_skills_training'
   $field_bases['field_skills_training'] = array(
     'active' => 1,

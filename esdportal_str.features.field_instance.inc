@@ -5330,6 +5330,43 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-schools-field_skillman_good_neighborhood'
+  $field_instances['taxonomy_term-schools-field_skillman_good_neighborhood'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 30,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_skillman_good_neighborhood',
+    'label' => 'Skillman Good Neighborhood',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 58,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-schools-field_special_ed_emphasis'
   $field_instances['taxonomy_term-schools-field_special_ed_emphasis'] = array(
     'bundle' => 'schools',
@@ -5718,6 +5755,7 @@ function esdportal_str_field_default_field_instances() {
   t('Site visit reuse reason');
   t('Site visit status');
   t('Site visit unavailability');
+  t('Skillman Good Neighborhood');
   t('Skills Training');
   t('Special Ed Emphasis');
   t('Special Education Level');

@@ -175,11 +175,17 @@ function esdportal_str_context_default_contexts() {
           'region' => 'branding',
           'weight' => '-10',
         ),
+        'menu-menu-downloads' => array(
+          'module' => 'menu',
+          'delta' => 'menu-downloads',
+          'region' => 'branding',
+          'weight' => '-9',
+        ),
         'system-user-menu' => array(
           'module' => 'system',
           'delta' => 'user-menu',
           'region' => 'branding',
-          'weight' => '-9',
+          'weight' => '-8',
         ),
         'menu-menu-footer-links' => array(
           'module' => 'menu',
