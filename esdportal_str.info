@@ -10,7 +10,6 @@ dependencies[] = context
 dependencies[] = ctools
 dependencies[] = data
 dependencies[] = date
-dependencies[] = devel
 dependencies[] = editablefields
 dependencies[] = entityreference
 dependencies[] = esdportal_dash
