@@ -175,6 +175,15 @@ function esdportal_str_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'entity_translation_entity_types';
+  $strongarm->value = array(
+    'node' => 'node',
+  );
+  $export['entity_translation_entity_types'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'esdportal_dash_alert';
   $strongarm->value = 'This page lists your school profiles.';
   $export['esdportal_dash_alert'] = $strongarm;
@@ -460,6 +469,13 @@ function esdportal_str_strongarm() {
   $strongarm->name = 'theme_default';
   $strongarm->value = 'esd';
   $export['theme_default'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'translation_language_type';
+  $strongarm->value = 'language_content';
+  $export['translation_language_type'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

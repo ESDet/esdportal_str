@@ -40,6 +40,7 @@ function esdportal_str_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -85,6 +86,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Building code',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -126,6 +128,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Building name',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -171,6 +174,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'pr1_reading_credit',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -212,6 +216,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'pr1_reading_grade',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -257,6 +262,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'pr1_reading_gradeval',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -303,6 +309,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'pr1_reading_raw',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -349,6 +356,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'pr1_reading_score',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -395,6 +403,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'pr1_reading_scoremax',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -440,6 +449,7 @@ function esdportal_str_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -492,6 +502,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Academic Focus',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -545,6 +556,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Admissions URL',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -601,6 +613,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'After School Transportation',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -652,6 +665,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'AP Classes',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -701,6 +715,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Application Fee',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -755,6 +770,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Application Fee Amount',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '$',
@@ -808,6 +824,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Application Process',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -862,6 +879,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Applications Received',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -915,6 +933,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Arts - Media',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -964,6 +983,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Arts - Music',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1013,6 +1033,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Arts - Performing & Written',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1062,6 +1083,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Arts - Visual',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1111,6 +1133,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Before/After Care',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1160,6 +1183,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Boys Sports',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1209,6 +1233,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Bullying Policy',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1258,6 +1283,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Character Development',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1310,6 +1336,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'College Counseling',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1362,6 +1389,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'College Prep',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1411,6 +1439,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Counselor/Student Ratio',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1463,6 +1492,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Destination School',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1515,6 +1545,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Discipline Programs',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1567,6 +1598,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Dress Code',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1620,6 +1652,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Dual Enrollment',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1671,6 +1704,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Dual Enrollment Institutions',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1723,6 +1757,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Early Child Center Relationships',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1775,6 +1810,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Early Childhood Programs',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1824,6 +1860,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Early Childhood Transition',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1876,6 +1913,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'ELL Languages',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1925,6 +1963,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'ELL Level',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1974,6 +2013,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'General Information Email',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2026,6 +2066,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'English Language Learners',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2078,6 +2119,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Extra Learning Resources',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2131,6 +2173,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Facebook URL',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2183,6 +2226,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Facilities',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2232,6 +2276,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Family Supports',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2284,6 +2329,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Feeder School',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2336,6 +2382,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Foreign Language',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2385,6 +2432,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'General Contact Phone',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2437,6 +2485,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Girls Sports',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2486,6 +2535,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Grades Served',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2542,6 +2592,7 @@ function esdportal_str_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => 'growth_data_doc',
       'file_extensions' => 'doc docx odt pdf',
       'max_filesize' => '',
@@ -2596,6 +2647,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Immersion',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2645,6 +2697,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'In-School Programs',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2697,6 +2750,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Instructional Model',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2746,6 +2800,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Organized Sports',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2798,6 +2853,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Parent Involvement',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2847,6 +2903,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Parent Supports',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2899,6 +2956,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Person Responsible',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2955,6 +3013,7 @@ function esdportal_str_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -3013,6 +3072,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Schedule',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3061,6 +3121,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'School',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3110,6 +3171,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Principal First Name',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3162,6 +3224,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Principal Last Name',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3218,6 +3281,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'School URL',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3288,6 +3352,7 @@ function esdportal_str_field_default_field_instances() {
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
+      'entity_translation_sync' => FALSE,
       'restrictions' => array(
         'allowed_values' => array(
           'type' => 'disabled',
@@ -3381,6 +3446,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Site visit reuse reason',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3446,6 +3512,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Site visit status',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3512,6 +3579,7 @@ function esdportal_str_field_default_field_instances() {
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
+      'entity_translation_sync' => FALSE,
       'restrictions' => array(
         'allowed_values' => array(
           'type' => 'disabled',
@@ -3598,6 +3666,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Skills Training',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3647,6 +3716,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Special Education Level',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3696,6 +3766,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Special Education Programs',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3745,6 +3816,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Special Needs',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3797,6 +3869,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Special Tracks',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3849,6 +3922,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Staff Resources',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3898,6 +3972,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Student Clubs',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3947,6 +4022,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Student Clubs Dance',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3999,6 +4075,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Student Clubs Language',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -4051,6 +4128,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Student Clubs Other',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -4103,6 +4181,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Student Development Programs',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -4155,6 +4234,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Student Leadership Opportunities',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -4212,6 +4292,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Students Accepted',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -4265,6 +4346,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Transportation',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -4317,6 +4399,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Transportation',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -4353,6 +4436,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => '2011 Percent Detroit resident',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -4392,6 +4476,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => '2013 site visit date',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -4435,6 +4520,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => '5E roster',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -4489,6 +4575,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Address',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -4541,6 +4628,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Alternative School',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -4579,6 +4667,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Authorized grades',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -4615,6 +4704,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Authorizer',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -4657,6 +4747,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Building code',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -4701,6 +4792,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Career Technical Emphasis',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -4739,6 +4831,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'District',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -4781,6 +4874,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Email',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -4821,6 +4915,7 @@ function esdportal_str_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'description_field' => 1,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'txt pdf xls odf odt ods doc docx rtf',
       'max_filesize' => '',
@@ -4861,6 +4956,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'geo',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'local_solr' => array(
         'enabled' => FALSE,
         'lat_field' => 'lat',
@@ -4918,6 +5014,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Governance',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -4958,6 +5055,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'grDataLetter',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -4996,6 +5094,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'grDataType',
     'required' => FALSE,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -5046,6 +5145,7 @@ function esdportal_str_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'rel_remove_internal',
       'title' => 'optional',
       'title_maxlength' => 128,
@@ -5088,6 +5188,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Email from old location field',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -5127,6 +5228,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Operator',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -5167,6 +5269,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Opted in?',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -5205,6 +5308,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'School Scorecard status',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -5241,6 +5345,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'School status',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -5277,6 +5382,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'School type',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -5317,6 +5423,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Scorecard Display',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -5356,6 +5463,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Skillman Good Neighborhood',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -5396,6 +5504,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Special Ed Emphasis',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -5438,6 +5547,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Specialty School',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -5476,6 +5586,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'State status',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -5516,6 +5627,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Strict Discipline Academy',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -5554,6 +5666,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Superintendents',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -5589,6 +5702,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'First Name',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => 1,
     ),
@@ -5623,6 +5737,7 @@ function esdportal_str_field_default_field_instances() {
     'label' => 'Last Name',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => 1,
     ),
