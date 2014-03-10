@@ -926,6 +926,13 @@ function esdportal_str_data_default() {
         'not null' => FALSE,
         'description' => '',
       ),
+      'InSiteVisitZone' => array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
       'id' => array(
         'type' => 'int',
         'size' => 'normal',
