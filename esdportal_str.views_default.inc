@@ -1253,7 +1253,6 @@ function esdportal_str_views_default_views() {
     t('Post date'),
     t('Updated date'),
     t('Content'),
-    t('- Choose an operation -'),
     t('Published'),
     t('Type'),
     t('Page'),
@@ -1341,6 +1340,7 @@ function esdportal_str_views_default_views() {
     'GSCschedule' => 'GSCschedule',
     'GSCsetting' => 'GSCsetting',
     'GSCpaySchedule' => 'GSCpaySchedule',
+    'InSiteVisitZone' => 'InSiteVisitZone',
     'id' => 'id',
   );
   $handler->display->display_options['style_options']['default'] = -1;
@@ -1562,6 +1562,10 @@ function esdportal_str_views_default_views() {
       'separator' => '',
     ),
     'GSCpaySchedule' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'InSiteVisitZone' => array(
       'sortable' => 1,
       'separator' => '',
     ),
@@ -1797,6 +1801,10 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['GSCpaySchedule']['id'] = 'GSCpaySchedule';
   $handler->display->display_options['fields']['GSCpaySchedule']['table'] = 'earlychild';
   $handler->display->display_options['fields']['GSCpaySchedule']['field'] = 'GSCpaySchedule';
+  /* Field: Early Childhood Centers: InSiteVisitZone */
+  $handler->display->display_options['fields']['InSiteVisitZone']['id'] = 'InSiteVisitZone';
+  $handler->display->display_options['fields']['InSiteVisitZone']['table'] = 'earlychild';
+  $handler->display->display_options['fields']['InSiteVisitZone']['field'] = 'InSiteVisitZone';
   /* Field: Early Childhood Centers: id */
   $handler->display->display_options['fields']['id']['id'] = 'id';
   $handler->display->display_options['fields']['id']['table'] = 'earlychild';
@@ -1906,6 +1914,7 @@ function esdportal_str_views_default_views() {
     t('GSCschedule'),
     t('GSCsetting'),
     t('GSCpaySchedule'),
+    t('InSiteVisitZone'),
     t('id'),
     t('Edit link'),
     t('All'),
@@ -4998,7 +5007,6 @@ function esdportal_str_views_default_views() {
     t('bcode'),
     t('Updated'),
     t('Content'),
-    t('- Choose an operation -'),
     t('Filter by School Name'),
     t('Page'),
     t('VBO'),
@@ -5380,7 +5388,6 @@ function esdportal_str_views_default_views() {
     t('Profile NID'),
     t('Profile last updated'),
     t('Taxonomy term'),
-    t('- Choose an operation -'),
     t('Taxonomy vocabulary'),
     t('Machine name'),
     t('Filter by School Name'),
@@ -5755,7 +5762,6 @@ function esdportal_str_views_default_views() {
     t('Last access'),
     t('Edit link'),
     t('VBO'),
-    t('- Choose an operation -'),
     t('Active'),
     t('Filter by E-mail'),
     t('Filter by Last Name'),
