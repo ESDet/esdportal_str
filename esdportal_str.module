@@ -538,15 +538,17 @@ function esdportal_str_send_unsafe_email_action_form($context) {
 function esdportal_str_send_unsafe_email_action_validate($form, $form_state) {
   $form_values = $form_state['values'];
   // Validate the configuration form.
-  if (strlen($form_values['from']) > 0 && !valid_email_address($form_values['from'])) {
+  // todo: validate both email-only and email+nickname format
+  // possibly with mailparse_rfc822_parse_addresses() (requires pecl lib though)
+  /*if (strlen($form_values['from']) > 0 && !valid_email_address($form_values['from'])) {
     form_set_error('from', t('Provide a valid from email address. No tokens for this one.'));
-  }
+  }*/
   if (!valid_email_address($form_values['recipient']) && strpos($form_values['recipient'], ':mail') === FALSE) {
     // We want the literal %author placeholder to be emphasized in the error message.
     form_set_error('recipient', t('Enter a valid email address or use a token e-mail address such as %author.', array('%author' => '[node:author:mail]')));
   }
   if (strlen($form_values['bcc']) > 0 && !valid_email_address($form_values['bcc'])) {
-    form_set_error('bcc', t('Provide a valid bcc email address. No tokens for this one.'));
+    form_set_error('bcc', t('Provide a valid bcc email address. No tokens or nicknames.'));
   }
 }
 
@@ -627,7 +629,7 @@ function esdportal_str_mail($key, &$message, $params) {
   }
 
   // set bcc
-  if (isset($context['bcc']) && strlen($context['from']) > 0) {
+  if (isset($context['bcc']) && strlen($context['bcc']) > 0) {
     $message['headers']['Bcc'] = $context['bcc'];
   }
 
@@ -641,8 +643,16 @@ function esdportal_str_mail($key, &$message, $params) {
 }
 
 function esdportal_str_mail_alter(&$message) {
+  $return_path_matches = array();
+  $return_path = '';
+
   if (!$message['custom_from']) {
     $message['from'] = '"Excellent Schools Detroit Logistics" <qedgar@excellentschoolsdetroit.org>';
   }
-  $message['headers']['From'] = $message['headers']['Sender'] = $message['headers']['Return-Path'] = $message['from'];
+  $message['headers']['From'] = $message['headers']['Sender'] = $message['from'];
+
+  preg_match('/<(.*)>/', $message['headers']['From'], $return_path_matches);
+  $return_path = $return_path_matches[1];
+  // todo: catch error here
+  $message['headers']['Return-Path'] = $return_path;
 }

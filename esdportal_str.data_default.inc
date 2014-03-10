@@ -171,25 +171,82 @@ function esdportal_str_data_default() {
   );
   $data_table->meta = array(
     'fields' => array(
-      'SchoolType' => array(),
-      'ISDCode' => array(),
-      'ISDName' => array(),
-      'DistrictCode' => array(),
-      'DistrictName' => array(),
-      'BuildingCode' => array(),
-      'BuildingName' => array(),
-      'NumberTested' => array(),
-      'allsubAverage' => array(),
-      'allsubPercentMeeting' => array(),
-      'readingAverage' => array(),
-      'readingPercentMeeting' => array(),
-      'mathAverage' => array(),
-      'mathPercentMeeting' => array(),
-      'englishAverage' => array(),
-      'englishPercentMeeting' => array(),
-      'scienceAverage' => array(),
-      'sciencePercentMeeting' => array(),
+      'SchoolType' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'ISDCode' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'ISDName' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'DistrictCode' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'DistrictName' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'BuildingCode' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'BuildingName' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'NumberTested' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'allsubAverage' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'allsubPercentMeeting' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'readingAverage' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'readingPercentMeeting' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'mathAverage' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'mathPercentMeeting' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'englishAverage' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'englishPercentMeeting' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'scienceAverage' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'sciencePercentMeeting' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
     ),
+    'label_field' => '',
+    'is_entity_type' => TRUE,
+    'entity_id' => 'BuildingCode',
   );
   $export['act_2011'] = $data_table;
 
@@ -363,26 +420,86 @@ function esdportal_str_data_default() {
   );
   $data_table->meta = array(
     'fields' => array(
-      'SchoolType' => array(),
-      'ISDCode' => array(),
-      'ISDName' => array(),
-      'DistrictCode' => array(),
-      'DistrictName' => array(),
-      'BuildingCode' => array(),
-      'BuildingName' => array(),
-      'NumberTested' => array(),
-      'allsubAverage' => array(),
-      'allsubPercentMeeting' => array(),
-      'readingAverage' => array(),
-      'readingPercentMeeting' => array(),
-      'mathAverage' => array(),
-      'mathPercentMeeting' => array(),
-      'englishAverage' => array(),
-      'englishPercentMeeting' => array(),
-      'scienceAverage' => array(),
-      'sciencePercentMeeting' => array(),
-      'writingAverage' => array(),
+      'SchoolType' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'ISDCode' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'ISDName' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'DistrictCode' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'DistrictName' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'BuildingCode' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'BuildingName' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'NumberTested' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'allsubAverage' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'allsubPercentMeeting' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'readingAverage' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'readingPercentMeeting' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'mathAverage' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'mathPercentMeeting' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'englishAverage' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'englishPercentMeeting' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'scienceAverage' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'sciencePercentMeeting' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'writingAverage' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
     ),
+    'label_field' => '',
+    'is_entity_type' => TRUE,
+    'entity_id' => 'BuildingCode',
   );
   $export['act_2012'] = $data_table;
 
@@ -556,26 +673,86 @@ function esdportal_str_data_default() {
   );
   $data_table->meta = array(
     'fields' => array(
-      'SchoolType' => array(),
-      'ISDCode' => array(),
-      'ISDName' => array(),
-      'DistrictCode' => array(),
-      'DistrictName' => array(),
-      'BuildingCode' => array(),
-      'BuildingName' => array(),
-      'NumberTested' => array(),
-      'allsubAverage' => array(),
-      'allsubPercentMeeting' => array(),
-      'readingAverage' => array(),
-      'readingPercentMeeting' => array(),
-      'mathAverage' => array(),
-      'mathPercentMeeting' => array(),
-      'englishAverage' => array(),
-      'englishPercentMeeting' => array(),
-      'scienceAverage' => array(),
-      'sciencePercentMeeting' => array(),
-      'writingAverage' => array(),
+      'SchoolType' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'ISDCode' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'ISDName' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'DistrictCode' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'DistrictName' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'BuildingCode' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'BuildingName' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'NumberTested' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'allsubAverage' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'allsubPercentMeeting' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'readingAverage' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'readingPercentMeeting' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'mathAverage' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'mathPercentMeeting' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'englishAverage' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'englishPercentMeeting' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'scienceAverage' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'sciencePercentMeeting' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'writingAverage' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
     ),
+    'label_field' => '',
+    'is_entity_type' => TRUE,
+    'entity_id' => 'BuildingCode',
   );
   $export['act_2013'] = $data_table;
 
@@ -926,6 +1103,13 @@ function esdportal_str_data_default() {
         'not null' => FALSE,
         'description' => '',
       ),
+      'InSiteVisitZone' => array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
       'id' => array(
         'type' => 'int',
         'size' => 'normal',
@@ -945,6 +1129,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument_string',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'LicenseNumber' => array(
         'label' => 'LicenseNumber',
@@ -952,6 +1138,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Address' => array(
         'label' => 'Address',
@@ -959,6 +1147,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument_string',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'City' => array(
         'label' => 'City',
@@ -966,6 +1156,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ZipCode' => array(
         'label' => 'ZipCode',
@@ -973,6 +1165,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'LicenseType' => array(
         'label' => 'LicenseType',
@@ -980,6 +1174,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument_string',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'County' => array(
         'label' => 'County',
@@ -987,6 +1183,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SASRating' => array(
         'label' => 'SASRating',
@@ -994,6 +1192,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_numeric',
         'views_argument_handler' => 'views_handler_argument_numeric',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SASStatus' => array(
         'label' => 'SASStatus',
@@ -1001,6 +1201,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'PublishedRating' => array(
         'label' => 'PublishedRating',
@@ -1008,6 +1210,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_numeric',
         'views_argument_handler' => 'views_handler_argument_numeric',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Phone' => array(
         'label' => 'Phone',
@@ -1015,6 +1219,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Website' => array(
         'label' => 'Website',
@@ -1022,6 +1228,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AgeFrom' => array(
         'label' => 'AgeFrom',
@@ -1029,6 +1237,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_numeric',
         'views_argument_handler' => 'views_handler_argument_numeric',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AgeTo' => array(
         'label' => 'AgeTo',
@@ -1036,6 +1246,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_numeric',
         'views_argument_handler' => 'views_handler_argument_numeric',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'MonthsOfOperation' => array(
         'label' => 'MonthsOfOperation',
@@ -1043,6 +1255,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SundayDayOpen' => array(
         'label' => 'SundayDayOpen',
@@ -1050,6 +1264,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SundayDayClose' => array(
         'label' => 'SundayDayClose',
@@ -1057,6 +1273,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'MondayDayOpen' => array(
         'label' => 'MondayDayOpen',
@@ -1064,6 +1282,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'MondayDayClose' => array(
         'label' => 'MondayDayClose',
@@ -1071,6 +1291,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'TuesdayDayOpen' => array(
         'label' => 'TuesdayDayOpen',
@@ -1078,6 +1300,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'TuesdayDayClose' => array(
         'label' => 'TuesdayDayClose',
@@ -1085,6 +1309,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'WednesdayDayOpen' => array(
         'label' => 'WednesdayDayOpen',
@@ -1092,6 +1318,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'WednesdayDayClose' => array(
         'label' => 'WednesdayDayClose',
@@ -1099,6 +1327,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ThursdayDayOpen' => array(
         'label' => 'ThursdayDayOpen',
@@ -1106,6 +1336,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ThursdayDayClose' => array(
         'label' => 'ThursdayDayClose',
@@ -1113,6 +1345,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'FridayDayOpen' => array(
         'label' => 'FridayDayOpen',
@@ -1120,6 +1354,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'FridayDayClose' => array(
         'label' => 'FridayDayClose',
@@ -1127,6 +1363,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SaturdayDayOpen' => array(
         'label' => 'SaturdayDayOpen',
@@ -1134,6 +1372,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SaturdayDayClose' => array(
         'label' => 'SaturdayDayClose',
@@ -1141,6 +1381,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Transportation' => array(
         'label' => 'Transportation',
@@ -1148,6 +1390,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Environment' => array(
         'label' => 'Environment',
@@ -1155,6 +1399,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Meals' => array(
         'label' => 'Meals',
@@ -1162,6 +1408,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Lat' => array(
         'label' => 'Lat',
@@ -1169,6 +1417,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_numeric',
         'views_argument_handler' => 'views_handler_argument_numeric',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Lon' => array(
         'label' => 'Lon',
@@ -1176,6 +1426,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_numeric',
         'views_argument_handler' => 'views_handler_argument_numeric',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCProviderID' => array(
         'label' => 'GSCProviderID',
@@ -1183,6 +1435,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCLicensedDate' => array(
         'label' => 'GSCLicensedDate',
@@ -1190,6 +1444,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCpts' => array(
         'label' => 'GSCpts',
@@ -1197,6 +1453,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCptsStaff' => array(
         'label' => 'GSCptsStaff',
@@ -1204,6 +1462,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCptsFamily' => array(
         'label' => 'GSCptsFamily',
@@ -1211,6 +1471,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCptsAdmin' => array(
         'label' => 'GSCptsAdmin',
@@ -1218,6 +1480,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCptsEnv' => array(
         'label' => 'GSCptsEnv',
@@ -1225,6 +1489,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCptsCurr' => array(
         'label' => 'GSCptsCurr',
@@ -1232,6 +1498,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCeligibility' => array(
         'label' => 'GSCeligibility',
@@ -1239,6 +1507,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCspecial' => array(
         'label' => 'GSCspecial',
@@ -1246,6 +1516,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument_string',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCsubsidy' => array(
         'label' => 'GSCsubsidy',
@@ -1253,6 +1525,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCcapacity' => array(
         'label' => 'GSCcapacity',
@@ -1260,6 +1534,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCcontract' => array(
         'label' => 'GSCcontract',
@@ -1267,6 +1543,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCfee' => array(
         'label' => 'GSCfee',
@@ -1274,6 +1552,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCemail' => array(
         'label' => 'GSCemail',
@@ -1281,6 +1561,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCcontact' => array(
         'label' => 'GSCcontact',
@@ -1288,6 +1570,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCmessage' => array(
         'label' => 'GSCmessage',
@@ -1295,6 +1579,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCspecialty' => array(
         'label' => 'GSCspecialty',
@@ -1302,6 +1588,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCschedule' => array(
         'label' => 'GSCschedule',
@@ -1309,6 +1597,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCsetting' => array(
         'label' => 'GSCsetting',
@@ -1316,6 +1606,8 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GSCpaySchedule' => array(
         'label' => 'GSCpaySchedule',
@@ -1323,9 +1615,13 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_string',
         'views_argument_handler' => 'views_handler_argument',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'dummy' => array(
         'label' => 'dummy',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'id' => array(
         'label' => 'id',
@@ -1333,8 +1629,13 @@ function esdportal_str_data_default() {
         'views_filter_handler' => 'views_handler_filter_numeric',
         'views_argument_handler' => 'views_handler_argument_numeric',
         'views_sort_handler' => 'views_handler_sort',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
     ),
+    'label_field' => '',
+    'is_entity_type' => TRUE,
+    'entity_id' => 'id',
   );
   $export['earlychild'] = $data_table;
 
@@ -1785,64 +2086,238 @@ function esdportal_str_data_default() {
   );
   $data_table->meta = array(
     'fields' => array(
-      'buildingcode' => array(),
-      'buildingname' => array(),
-      'SchoolCategory' => array(),
-      'entitytypename' => array(),
-      'entitycharteringagencyname' => array(),
-      'entityactualgrades' => array(),
-      'total_enrollment' => array(),
-      'act2_comp' => array(),
-      'act2_comp_pts' => array(),
-      'act2_comp_psspts' => array(),
-      'act2_pcr' => array(),
-      'act2_pcr_pts' => array(),
-      'act2_pcr_psspts' => array(),
-      'gradrate' => array(),
-      'gradrate_pts' => array(),
-      'gradrate_psspts' => array(),
-      'status_pts' => array(),
-      'status_psspts' => array(),
-      'status_pct' => array(),
-      'status_ltrgrade' => array(),
-      'act_grwth' => array(),
-      'act_grwth_pts' => array(),
-      'act_grwth_psspts' => array(),
-      'progress_pts' => array(),
-      'progress_psspts' => array(),
-      'progress_pct' => array(),
-      'progress_ltrgrade' => array(),
-      'site_s' => array(),
-      'site_s_pts' => array(),
-      'site_s_psspts' => array(),
-      'net5e_1213' => array(),
-      'net5e_1213_pts' => array(),
-      'net5e_1213_psspts' => array(),
-      'five_e_grwth' => array(),
-      'five_e_grwth_pts' => array(),
-      'five_e_grwth_psspts' => array(),
-      'culture_pts' => array(),
-      'culture_psspts' => array(),
-      'culture_pct' => array(),
-      'culture_ltrgrade' => array(),
-      'econdis_pct' => array(),
-      'sped_pct' => array(),
-      'ell_pct' => array(),
-      'studchrs' => array(),
-      'studchrs_pts' => array(),
-      'fafsa_rate' => array(),
-      'fafsa_rate_pts' => array(),
-      'total_pts' => array(),
-      'turnaround_pts' => array(),
-      'total_psspts' => array(),
-      'turnaround_psspts' => array(),
-      'mature_pct' => array(),
-      'turnaround_pct' => array(),
-      'newschool_pct' => array(),
-      'mature_ltrgrade' => array(),
-      'turnaround_designation' => array(),
-      'newschool_designation' => array(),
+      'buildingcode' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'buildingname' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'SchoolCategory' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'entitytypename' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'entitycharteringagencyname' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'entityactualgrades' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'total_enrollment' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'act2_comp' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'act2_comp_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'act2_comp_psspts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'act2_pcr' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'act2_pcr_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'act2_pcr_psspts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'gradrate' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'gradrate_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'gradrate_psspts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'status_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'status_psspts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'status_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'status_ltrgrade' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'act_grwth' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'act_grwth_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'act_grwth_psspts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'progress_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'progress_psspts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'progress_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'progress_ltrgrade' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'site_s' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'site_s_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'site_s_psspts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'net5e_1213' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'net5e_1213_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'net5e_1213_psspts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'five_e_grwth' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'five_e_grwth_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'five_e_grwth_psspts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'culture_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'culture_psspts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'culture_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'culture_ltrgrade' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'econdis_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'sped_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'ell_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'studchrs' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'studchrs_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'fafsa_rate' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'fafsa_rate_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'total_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'turnaround_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'total_psspts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'turnaround_psspts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'mature_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'turnaround_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'newschool_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'mature_ltrgrade' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'turnaround_designation' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'newschool_designation' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
     ),
+    'label_field' => '',
+    'is_entity_type' => TRUE,
+    'entity_id' => 'buildingcode',
   );
   $export['esd_hs_2013'] = $data_table;
 
@@ -2301,65 +2776,242 @@ function esdportal_str_data_default() {
   );
   $data_table->meta = array(
     'fields' => array(
-      'buildingcode' => array(),
-      'buildingname' => array(),
-      'SchoolCategory' => array(),
-      'entitytypename' => array(),
-      'entitycharteringagencyname' => array(),
-      'entityactualgrades' => array(),
-      'total_enrollment' => array(),
-      'pr2_math' => array(),
-      'pr2_math_pts' => array(),
-      'pr2_math_ptsps' => array(),
-      'pr2_ela' => array(),
-      'pr2_ela_pts' => array(),
-      'pr2_ela_ptsps' => array(),
-      'pr2_other' => array(),
-      'pr2_other_pts' => array(),
-      'pr2_other_ptsps' => array(),
-      'pts_status' => array(),
-      'ptspos_status' => array(),
-      'status_pct' => array(),
-      'status_ltrgrade' => array(),
-      'plc_comp' => array(),
-      'plc_comp_pts' => array(),
-      'plc_comp_ptsps' => array(),
-      'bench_comp' => array(),
-      'bench_comp_pts' => array(),
-      'bench_comp_ptsps' => array(),
-      'pts_progress' => array(),
-      'ptspos_progress' => array(),
-      'progress_pct' => array(),
-      'progress_ltrgrade' => array(),
-      'site_s' => array(),
-      'site_s_pts' => array(),
-      'site_s_ptsps' => array(),
-      'net5e_1213' => array(),
-      'net5e_1213_pts' => array(),
-      'net5e_1213_ptsps' => array(),
-      'five_e_grwth' => array(),
-      'five_e_grwth_pts' => array(),
-      'five_e_grwth_ptsps' => array(),
-      'pts_culture' => array(),
-      'ptspos_culture' => array(),
-      'culture_pct' => array(),
-      'culture_ltrgrade' => array(),
-      'econdis_pct' => array(),
-      'sped_pct' => array(),
-      'ell_pct' => array(),
-      'studchrs' => array(),
-      'studchrs_pts' => array(),
-      'pts_earned' => array(),
-      'pts_possible' => array(),
-      'turnaround_pts_earned' => array(),
-      'turnaround_pts_possible' => array(),
-      'mature_pct' => array(),
-      'turnaround_pct' => array(),
-      'newschool_pct' => array(),
-      'mature_ltrgrade' => array(),
-      'turnaround_designation' => array(),
-      'newschool_designation' => array(),
+      'buildingcode' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'buildingname' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'SchoolCategory' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'entitytypename' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'entitycharteringagencyname' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'entityactualgrades' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'total_enrollment' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pr2_math' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pr2_math_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pr2_math_ptsps' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pr2_ela' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pr2_ela_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pr2_ela_ptsps' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pr2_other' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pr2_other_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pr2_other_ptsps' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pts_status' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'ptspos_status' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'status_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'status_ltrgrade' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'plc_comp' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'plc_comp_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'plc_comp_ptsps' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'bench_comp' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'bench_comp_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'bench_comp_ptsps' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pts_progress' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'ptspos_progress' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'progress_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'progress_ltrgrade' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'site_s' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'site_s_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'site_s_ptsps' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'net5e_1213' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'net5e_1213_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'net5e_1213_ptsps' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'five_e_grwth' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'five_e_grwth_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'five_e_grwth_ptsps' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pts_culture' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'ptspos_culture' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'culture_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'culture_ltrgrade' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'econdis_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'sped_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'ell_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'studchrs' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'studchrs_pts' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pts_earned' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pts_possible' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'turnaround_pts_earned' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'turnaround_pts_possible' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'mature_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'turnaround_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'newschool_pct' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'mature_ltrgrade' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'turnaround_designation' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'newschool_designation' => array(
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
     ),
+    'label_field' => '',
+    'is_entity_type' => TRUE,
+    'entity_id' => 'buildingcode',
   );
   $export['esd_k8_2013'] = $data_table;
 
@@ -2723,188 +3375,313 @@ function esdportal_str_data_default() {
     'fields' => array(
       'ACNO' => array(
         'label' => 'Peer Support for Academic Work (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'CLAR' => array(
         'label' => 'Course Clarity (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'COLB' => array(
         'label' => 'Teacher Collaboration (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'COLR' => array(
         'label' => 'Collective Responsibility (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DATA' => array(
         'label' => 'Collective Use of Assessment Data (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ENGG' => array(
         'label' => 'Academic Engagement (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ENGL' => array(
         'label' => 'English Instruction (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'HUMR' => array(
         'label' => 'Human &amp; Social Resources in the Community (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'INFL' => array(
         'label' => 'Teacher Influence (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'INST' => array(
         'label' => 'Principal Instructional Leadership (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'MATH' => array(
         'label' => 'Math Instruction (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'OUTR' => array(
         'label' => 'Outreach to Parents (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'PART' => array(
         'label' => 'Parent Involvement in School (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'PEER' => array(
         'label' => 'Student Classroom Behavior (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'PERC' => array(
         'label' => 'Academic Personalism (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'PGMC' => array(
         'label' => 'Program Coherence (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'PRES' => array(
         'label' => 'Academic Press (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'PRTI' => array(
         'label' => 'Student Responsibility (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'PSAA' => array(
         'label' => 'Peer Support for Academic Achievement (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'QPD2' => array(
         'label' => 'Quality Professional Development (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'REFD' => array(
         'label' => 'Reflective Dialogue (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SAFE' => array(
         'label' => 'Safety (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SCIE' => array(
         'label' => 'Inquiry-Based Science Instruction (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SCMT' => array(
         'label' => 'School Commitment (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SDIS' => array(
         'label' => 'Quality of Student Discussion (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SLAP' => array(
         'label' => 'School-Wide Future Orientation (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SOCZ' => array(
         'label' => 'Socialization of New Teachers (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'STDY' => array(
         'label' => 'Rigorous Study Habits (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'TRPA' => array(
         'label' => 'Teacher-Parent Trust (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'TRPR' => array(
         'label' => 'Teacher-Principal Trust (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'TRTE' => array(
         'label' => 'Teacher-Teacher Trust (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'TRTS' => array(
         'label' => 'Student-Teacher Trust (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'TSAF' => array(
         'label' => 'Teacher Safety (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'TSUP' => array(
         'label' => 'Teacher Personal Support (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'UEXP' => array(
         'label' => 'Expectations for Postsecondary Education (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'School_Reporting_Slug' => array(
         'label' => '5Essentials Internal School Identifier',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'State_Schl_ID' => array(
         'label' => 'School&#039;s State Identifier',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'District_School_Id' => array(
         'label' => 'School ID provided by DPS or charter school network',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'School_Level' => array(
         'label' => '1 or 2: 1 if elementary (PK-8) and 2 if high school',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Student_Report' => array(
         'label' => '0 or 1: 1 if eligible for student report',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Teacher_Report' => array(
         'label' => '0 or 1: 1 if eligible for teacher report',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Student_Response_Rate' => array(
         'label' => 'Response rate on student survey',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Teacher_Response_Rate' => array(
         'label' => 'Response rate on teacher survey',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Student_Lazy_Rate' => array(
         'label' => 'Percentage of &quot;lazy&quot; respondents for students',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Teacher_Lazy_Rate' => array(
         'label' => 'Percentage of &quot;lazy&quot; respondents for teachers',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Student_N' => array(
         'label' => 'Total number of students listed on roster',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Teacher_N' => array(
         'label' => 'Total number of teachers listed on roster',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Net5E' => array(
         'label' => 'Net 5Essentials Score (# strong - # weak)',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Category_5e' => array(
         'label' => 'Category of Improvement: Not Yet Organized: 1 Partially Organized: 2 Moderately Organized: 3 Organized: 4 Well Organized: 5',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'E_leaders' => array(
         'label' => 'Essential: Effective Leaders',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'E_teachers' => array(
         'label' => 'Essential: Collaborative Teachers',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'E_families' => array(
         'label' => 'Essential: Involved Families',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'E_environment' => array(
         'label' => 'Essential: Supportive Environment',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'E_instruction' => array(
         'label' => 'Essential: Ambitious Instruction',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'BCODE' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'District_Schl_ID' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'PRT2' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Category5E' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Net5e' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'School_Name' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'Location' => array(
         'label' => 'School Address',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
     ),
+    'label_field' => '',
+    'is_entity_type' => TRUE,
+    'entity_id' => 'BCODE',
   );
   $export['fiveessentials_2013'] = $data_table;
 
@@ -3703,389 +4480,648 @@ function esdportal_str_data_default() {
     'fields' => array(
       'SchoolYear' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ISDCode' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ISDName' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DistrictCode' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DistrictName' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'BuildingCode' => array(
         'label' => 'bcode',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'BuildingName' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'LOCALE_NAME' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'TOTAL_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'MALE_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'FEMALE_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AMERICAN_INDIAN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ASIAN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AFRICAN_AMERICAN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'HISPANIC_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'HAWAIIAN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'WHITE_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'TWO_OR_MORE_RACES_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'KINDERGARTEN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_1_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_2_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_9_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_10_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_12_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ECONOMIC_DISADVANTAGED_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SPECIAL_EDUCATION_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ENGLISH_LANGUAGE_LEARNERS_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'HOMELESS_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'MIGRANT_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AYP_STATUS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AYP_PHASE' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_SCIENCE_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_SCIENCE_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_SCIENCE_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_SCIENCE_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_SCIENCE_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_SCIENCE_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_SOCIAL_STUDIES_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_SOCIAL_STUDIES_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_SOCIAL_STUDIES_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_9_SOCIAL_STUDIES_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_9_SOCIAL_STUDIES_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_9_SOCIAL_STUDIES_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_WRITING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_WRITING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_WRITING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SCIENCE_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SCIENCE_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SCIENCE_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SOCIAL_STUDIES_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SOCIAL_STUDIES_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SOCIAL_STUDIES_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_MATH_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_READING_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SCIENCE_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_ENGLISH_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_ALL_SUBJECT_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'COHORT_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATION_RATE_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUT_RATE_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATES_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUTS_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'CONTINUING_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'OTHER_COMPLETER_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'COHORT_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATION_RATE_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUT_RATE_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATES_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUTS_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'CONTINUING_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'OTHER_COMPLETER_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'COHORT_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATION_RATE_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUT_RATE_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATES_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUTS_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'CONTINUING_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'OTHER_COMPLETER_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SORT_ORDER' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
     ),
+    'label_field' => '',
+    'is_entity_type' => TRUE,
+    'entity_id' => 'BuildingCode',
   );
   $export['meap_2009'] = $data_table;
 
@@ -4884,389 +5920,648 @@ function esdportal_str_data_default() {
     'fields' => array(
       'SchoolYear' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ISDCode' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ISDName' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DistrictCode' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DistrictName' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'BuildingCode' => array(
         'label' => 'bcode',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'BuildingName' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'LOCALE_NAME' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'TOTAL_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'MALE_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'FEMALE_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AMERICAN_INDIAN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ASIAN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AFRICAN_AMERICAN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'HISPANIC_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'HAWAIIAN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'WHITE_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'TWO_OR_MORE_RACES_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'KINDERGARTEN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_1_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_2_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_9_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_10_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_12_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ECONOMIC_DISADVANTAGED_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SPECIAL_EDUCATION_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ENGLISH_LANGUAGE_LEARNERS_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'HOMELESS_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'MIGRANT_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AYP_STATUS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AYP_PHASE' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_SCIENCE_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_SCIENCE_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_SCIENCE_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_SCIENCE_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_SCIENCE_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_SCIENCE_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_SOCIAL_STUDIES_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_SOCIAL_STUDIES_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_SOCIAL_STUDIES_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_9_SOCIAL_STUDIES_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_9_SOCIAL_STUDIES_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_9_SOCIAL_STUDIES_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_WRITING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_WRITING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_WRITING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SCIENCE_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SCIENCE_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SCIENCE_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SOCIAL_STUDIES_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SOCIAL_STUDIES_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SOCIAL_STUDIES_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_MATH_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_READING_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SCIENCE_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_ENGLISH_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_ALL_SUBJECT_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'COHORT_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATION_RATE_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUT_RATE_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATES_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUTS_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'CONTINUING_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'OTHER_COMPLETER_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'COHORT_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATION_RATE_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUT_RATE_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATES_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUTS_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'CONTINUING_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'OTHER_COMPLETER_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'COHORT_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATION_RATE_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUT_RATE_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATES_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUTS_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'CONTINUING_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'OTHER_COMPLETER_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SORT_ORDER' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
     ),
+    'label_field' => '',
+    'is_entity_type' => TRUE,
+    'entity_id' => 'BuildingCode',
   );
   $export['meap_2010'] = $data_table;
 
@@ -6065,389 +7360,648 @@ function esdportal_str_data_default() {
     'fields' => array(
       'SchoolYear' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ISDCode' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ISDName' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DistrictCode' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DistrictName' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'BuildingCode' => array(
         'label' => 'bcode',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'BuildingName' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'LOCALE_NAME' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'TOTAL_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'MALE_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'FEMALE_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AMERICAN_INDIAN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ASIAN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AFRICAN_AMERICAN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'HISPANIC_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'HAWAIIAN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'WHITE_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'TWO_OR_MORE_RACES_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'KINDERGARTEN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_1_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_2_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_9_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_10_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_12_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ECONOMIC_DISADVANTAGED_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SPECIAL_EDUCATION_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ENGLISH_LANGUAGE_LEARNERS_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'HOMELESS_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'MIGRANT_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AYP_STATUS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AYP_PHASE' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_SCIENCE_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_SCIENCE_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_SCIENCE_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_SCIENCE_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_SCIENCE_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_SCIENCE_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_SOCIAL_STUDIES_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_SOCIAL_STUDIES_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_SOCIAL_STUDIES_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_9_SOCIAL_STUDIES_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_9_SOCIAL_STUDIES_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_9_SOCIAL_STUDIES_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_WRITING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_WRITING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_WRITING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SCIENCE_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SCIENCE_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SCIENCE_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SOCIAL_STUDIES_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SOCIAL_STUDIES_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SOCIAL_STUDIES_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_MATH_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_READING_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SCIENCE_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_ENGLISH_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_ALL_SUBJECT_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'COHORT_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATION_RATE_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUT_RATE_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATES_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUTS_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'CONTINUING_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'OTHER_COMPLETER_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'COHORT_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATION_RATE_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUT_RATE_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATES_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUTS_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'CONTINUING_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'OTHER_COMPLETER_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'COHORT_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATION_RATE_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUT_RATE_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATES_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUTS_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'CONTINUING_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'OTHER_COMPLETER_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SORT_ORDER' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
     ),
+    'label_field' => '',
+    'is_entity_type' => TRUE,
+    'entity_id' => 'BuildingCode',
   );
   $export['meap_2011'] = $data_table;
 
@@ -7245,389 +8799,648 @@ function esdportal_str_data_default() {
     'fields' => array(
       'SchoolYear' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ISDCode' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ISDName' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DistrictCode' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DistrictName' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'BuildingCode' => array(
         'label' => 'bcode',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'BuildingName' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'LOCALE_NAME' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'TOTAL_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'MALE_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'FEMALE_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AMERICAN_INDIAN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ASIAN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AFRICAN_AMERICAN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'HISPANIC_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'HAWAIIAN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'WHITE_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'TWO_OR_MORE_RACES_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'KINDERGARTEN_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_1_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_2_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_9_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_10_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_12_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ECONOMIC_DISADVANTAGED_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SPECIAL_EDUCATION_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'ENGLISH_LANGUAGE_LEARNERS_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'HOMELESS_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'MIGRANT_ENROLLMENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AYP_STATUS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'AYP_PHASE' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_3_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_4_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_7_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_SCIENCE_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_SCIENCE_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_5_SCIENCE_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_SCIENCE_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_SCIENCE_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_8_SCIENCE_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_SOCIAL_STUDIES_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_SOCIAL_STUDIES_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_6_SOCIAL_STUDIES_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_9_SOCIAL_STUDIES_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_9_SOCIAL_STUDIES_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_9_SOCIAL_STUDIES_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_MATH_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_MATH_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_MATH_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_READING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_READING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_READING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_WRITING_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_WRITING_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_WRITING_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SCIENCE_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SCIENCE_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SCIENCE_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SOCIAL_STUDIES_TESTED' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SOCIAL_STUDIES_PROFICIENT' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SOCIAL_STUDIES_AVG_SS' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_MATH_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_READING_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_SCIENCE_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_ENGLISH_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADE_11_ALL_SUBJECT_PERCENT_READY' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'COHORT_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATION_RATE_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUT_RATE_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATES_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUTS_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'CONTINUING_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'OTHER_COMPLETER_4_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'COHORT_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATION_RATE_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUT_RATE_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATES_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUTS_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'CONTINUING_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'OTHER_COMPLETER_5_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'COHORT_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATION_RATE_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUT_RATE_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'GRADUATES_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'DROPOUTS_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'CONTINUING_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'OTHER_COMPLETER_6_YEAR' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
       'SORT_ORDER' => array(
         'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
       ),
     ),
+    'label_field' => '',
+    'is_entity_type' => TRUE,
+    'entity_id' => 'BuildingCode',
   );
   $export['meap_2012'] = $data_table;
 
