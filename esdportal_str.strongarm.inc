@@ -713,5 +713,12 @@ batch';
   $strongarm->value = '0';
   $export['user_register'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'webform_localization_using_uuid';
+  $strongarm->value = TRUE;
+  $export['webform_localization_using_uuid'] = $strongarm;
+
   return $export;
 }

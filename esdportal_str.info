@@ -476,6 +476,7 @@ features[variable][] = user_cancel_method
 features[variable][] = user_default_timezone
 features[variable][] = user_email_verification
 features[variable][] = user_register
+features[variable][] = webform_localization_using_uuid
 features[views_view][] = act_2011
 features[views_view][] = act_2012
 features[views_view][] = act_2013
