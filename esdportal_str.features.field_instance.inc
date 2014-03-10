@@ -3382,6 +3382,31 @@ function esdportal_str_field_default_field_instances() {
           'type' => 'disabled',
         ),
       ),
+      'restrictions2' => array(
+        'allowed_values' => array(
+          'type' => 'disabled',
+        ),
+        'max' => array(
+          'date' => NULL,
+          'host_entity_date' => array(
+            'end_date' => FALSE,
+            'field' => NULL,
+          ),
+          'host_entity_interval' => NULL,
+          'interval' => NULL,
+          'type' => 'disabled',
+        ),
+        'min' => array(
+          'date' => NULL,
+          'host_entity_date' => array(
+            'end_date' => FALSE,
+            'field' => NULL,
+          ),
+          'host_entity_interval' => NULL,
+          'interval' => NULL,
+          'type' => 'disabled',
+        ),
+      ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3607,6 +3632,31 @@ function esdportal_str_field_default_field_instances() {
             'field' => 'node:school_profile:field_site_visit_available_dates',
           ),
           'type' => 'host_entity_date',
+        ),
+      ),
+      'restrictions2' => array(
+        'allowed_values' => array(
+          'type' => 'disabled',
+        ),
+        'max' => array(
+          'date' => NULL,
+          'host_entity_date' => array(
+            'end_date' => FALSE,
+            'field' => NULL,
+          ),
+          'host_entity_interval' => NULL,
+          'interval' => NULL,
+          'type' => 'disabled',
+        ),
+        'min' => array(
+          'date' => NULL,
+          'host_entity_date' => array(
+            'end_date' => FALSE,
+            'field' => NULL,
+          ),
+          'host_entity_interval' => NULL,
+          'interval' => NULL,
+          'type' => 'disabled',
         ),
       ),
       'user_register_form' => FALSE,
