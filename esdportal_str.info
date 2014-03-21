@@ -29,6 +29,7 @@ dependencies[] = menu
 dependencies[] = node
 dependencies[] = number
 dependencies[] = options
+dependencies[] = path
 dependencies[] = php
 dependencies[] = services
 dependencies[] = services_views

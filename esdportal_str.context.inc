@@ -131,12 +131,6 @@ function esdportal_str_context_default_contexts() {
           'region' => 'footer_second',
           'weight' => '-10',
         ),
-        'devel-switch_user' => array(
-          'module' => 'devel',
-          'delta' => 'switch_user',
-          'region' => 'footer_second',
-          'weight' => '-9',
-        ),
         'boxes-contact_info' => array(
           'module' => 'boxes',
           'delta' => 'contact_info',
