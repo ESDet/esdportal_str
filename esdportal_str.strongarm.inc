@@ -510,9 +510,9 @@ batch';
   $strongarm->api_version = 1;
   $strongarm->name = 'googleanalytics_trackmessages';
   $strongarm->value = array(
-    'status' => 0,
-    'warning' => 0,
-    'error' => 0,
+    'status' => 'status',
+    'warning' => 'warning',
+    'error' => 'error',
   );
   $export['googleanalytics_trackmessages'] = $strongarm;
 
