@@ -1801,7 +1801,7 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['GSCpaySchedule']['id'] = 'GSCpaySchedule';
   $handler->display->display_options['fields']['GSCpaySchedule']['table'] = 'earlychild';
   $handler->display->display_options['fields']['GSCpaySchedule']['field'] = 'GSCpaySchedule';
-  /* Field: Early Childhood Centers: InSiteVisitZone */
+  /* Field: Early Childhood Centers: Insitevisitzone */
   $handler->display->display_options['fields']['InSiteVisitZone']['id'] = 'InSiteVisitZone';
   $handler->display->display_options['fields']['InSiteVisitZone']['table'] = 'earlychild';
   $handler->display->display_options['fields']['InSiteVisitZone']['field'] = 'InSiteVisitZone';
@@ -1914,7 +1914,7 @@ function esdportal_str_views_default_views() {
     t('GSCschedule'),
     t('GSCsetting'),
     t('GSCpaySchedule'),
-    t('InSiteVisitZone'),
+    t('Insitevisitzone'),
     t('id'),
     t('Edit link'),
     t('All'),
