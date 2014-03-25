@@ -65,6 +65,7 @@ features[data_tables][] = act_2013
 features[data_tables][] = earlychild
 features[data_tables][] = esd_hs_2013
 features[data_tables][] = esd_k8_2013
+features[data_tables][] = esd_k8_2013_r1
 features[data_tables][] = fiveessentials_2013
 features[data_tables][] = meap_2009
 features[data_tables][] = meap_2010

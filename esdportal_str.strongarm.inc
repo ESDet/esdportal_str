@@ -125,6 +125,10 @@ function esdportal_str_strongarm() {
       0 => 'esd_k8_2013',
       1 => 'buildingcode',
     ),
+    'data_esd_k8_2013_r1' => array(
+      0 => 'esd_k8_2013_r1',
+      1 => 'buildingcode',
+    ),
     'data_fiveessentials_2013' => array(
       0 => 'fiveessentials_2013',
       1 => 'BCODE',
