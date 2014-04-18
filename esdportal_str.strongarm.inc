@@ -203,7 +203,7 @@ function esdportal_str_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'esdportal_scoresbybcode_alert';
-  $strongarm->value = 'Please review these scores. NOTE: This information is embargoed for public release until 12:01 am 8/07/13.';
+  $strongarm->value = 'Please review the scores below. For any concern, please use the feedback form below.';
   $export['esdportal_scoresbybcode_alert'] = $strongarm;
 
   $strongarm = new stdClass();

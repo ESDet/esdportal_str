@@ -3445,7 +3445,7 @@ function esdportal_str_views_default_views() {
   $view->core = 0;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
-  
+
   /* Display: Default */
   $handler = $view->new_display('default', 'Default', 'default');
   $handler->display->display_options['title'] = 'Esd k8 2013 r1';
@@ -4080,7 +4080,7 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['filters']['buildingcode']['expose']['operator_id'] = 'buildingcode_op';
   $handler->display->display_options['filters']['buildingcode']['expose']['label'] = 'bcode';
   $handler->display->display_options['filters']['buildingcode']['expose']['operator'] = 'buildingcode_op';
-  $handler->display->display_options['filters']['buildingcode']['expose']['identifier'] = 'buildingcode';
+  $handler->display->display_options['filters']['buildingcode']['expose']['identifier'] = 'bcode';
   $handler->display->display_options['filters']['buildingcode']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
@@ -4188,7 +4188,6 @@ function esdportal_str_views_default_views() {
     t('Data export'),
   );
   $export['esd_k8_2013_r1'] = $view;
-
 
   $view = new view();
   $view->name = 'fiveessentials_2013';
@@ -7884,6 +7883,8 @@ function esdportal_str_views_default_views() {
 
   /* Display: Services */
   $handler = $view->new_display('services', 'Services', 'services_by_bcode');
+  $handler->display->display_options['defaults']['cache'] = FALSE;
+  $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['path'] = 'meapbybcode';
   $translatables['meap_2009'] = array(
     t('Default'),

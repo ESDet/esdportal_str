@@ -19,9 +19,8 @@ function esdportal_str_default_box() {
   $box->description = 'Contact Info footer block';
   $box->options = array(
     'body' => array(
-      'value' => '1938 Franklin Street, Suite 111
-Detroit, MI 48207
-(313) 285-9156',
+      'value' => '<p>2111 Woodward Ave, Suite 506 Detroit, MI 48201 (313) 285-9156</p>
+',
       'format' => 'full_html',
     ),
     'additional_classes' => '',
