@@ -10,6 +10,17 @@
 function esdportal_str_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: access all webform results.
+  $permissions['access all webform results'] = array(
+    'name' => 'access all webform results',
+    'roles' => array(
+      'Logistics Coordinator' => 'Logistics Coordinator',
+      'administrator' => 'administrator',
+      'results viewer' => 'results viewer',
+    ),
+    'module' => 'webform',
+  );
+
   // Exported permission: access content.
   $permissions['access content'] = array(
     'name' => 'access content',
@@ -27,6 +38,30 @@ function esdportal_str_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: access own webform results.
+  $permissions['access own webform results'] = array(
+    'name' => 'access own webform results',
+    'roles' => array(
+      'Logistics Coordinator' => 'Logistics Coordinator',
+      'School Representative' => 'School Representative',
+      'administrator' => 'administrator',
+      'results viewer' => 'results viewer',
+    ),
+    'module' => 'webform',
+  );
+
+  // Exported permission: access own webform submissions.
+  $permissions['access own webform submissions'] = array(
+    'name' => 'access own webform submissions',
+    'roles' => array(
+      'Logistics Coordinator' => 'Logistics Coordinator',
+      'School Representative' => 'School Representative',
+      'administrator' => 'administrator',
+      'results viewer' => 'results viewer',
+    ),
+    'module' => 'webform',
   );
 
   // Exported permission: access school scores.
@@ -156,6 +191,15 @@ function esdportal_str_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: delete all webform submissions.
+  $permissions['delete all webform submissions'] = array(
+    'name' => 'delete all webform submissions',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'webform',
+  );
+
   // Exported permission: delete any page content.
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
@@ -192,6 +236,17 @@ function esdportal_str_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: delete own webform submissions.
+  $permissions['delete own webform submissions'] = array(
+    'name' => 'delete own webform submissions',
+    'roles' => array(
+      'Logistics Coordinator' => 'Logistics Coordinator',
+      'administrator' => 'administrator',
+      'results viewer' => 'results viewer',
+    ),
+    'module' => 'webform',
+  );
+
   // Exported permission: delete revisions.
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
@@ -214,6 +269,42 @@ function esdportal_str_user_default_permissions() {
   // Exported permission: delete terms in 1.
   $permissions['delete terms in 1'] = array(
     'name' => 'delete terms in 1',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: delete terms in 10.
+  $permissions['delete terms in 10'] = array(
+    'name' => 'delete terms in 10',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: delete terms in 11.
+  $permissions['delete terms in 11'] = array(
+    'name' => 'delete terms in 11',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: delete terms in 12.
+  $permissions['delete terms in 12'] = array(
+    'name' => 'delete terms in 12',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: delete terms in 13.
+  $permissions['delete terms in 13'] = array(
+    'name' => 'delete terms in 13',
     'roles' => array(
       'administrator' => 'administrator',
     ),
@@ -254,6 +345,60 @@ function esdportal_str_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
+  );
+
+  // Exported permission: delete terms in 6.
+  $permissions['delete terms in 6'] = array(
+    'name' => 'delete terms in 6',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: delete terms in 7.
+  $permissions['delete terms in 7'] = array(
+    'name' => 'delete terms in 7',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: delete terms in 8.
+  $permissions['delete terms in 8'] = array(
+    'name' => 'delete terms in 8',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: delete terms in 9.
+  $permissions['delete terms in 9'] = array(
+    'name' => 'delete terms in 9',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: edit all webform submissions.
+  $permissions['edit all webform submissions'] = array(
+    'name' => 'edit all webform submissions',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'webform',
+  );
+
+  // Exported permission: edit any field_growth_data_doc.
+  $permissions['edit any field_growth_data_doc'] = array(
+    'name' => 'edit any field_growth_data_doc',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'esdportal_str',
   );
 
   // Exported permission: edit any field_school.
@@ -304,6 +449,15 @@ function esdportal_str_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: edit own field_growth_data_doc.
+  $permissions['edit own field_growth_data_doc'] = array(
+    'name' => 'edit own field_growth_data_doc',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'esdportal_str',
   );
 
   // Exported permission: edit own field_school.
@@ -357,9 +511,57 @@ function esdportal_str_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: edit own webform submissions.
+  $permissions['edit own webform submissions'] = array(
+    'name' => 'edit own webform submissions',
+    'roles' => array(
+      'Logistics Coordinator' => 'Logistics Coordinator',
+      'School Representative' => 'School Representative',
+      'administrator' => 'administrator',
+      'results viewer' => 'results viewer',
+    ),
+    'module' => 'webform',
+  );
+
   // Exported permission: edit terms in 1.
   $permissions['edit terms in 1'] = array(
     'name' => 'edit terms in 1',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: edit terms in 10.
+  $permissions['edit terms in 10'] = array(
+    'name' => 'edit terms in 10',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: edit terms in 11.
+  $permissions['edit terms in 11'] = array(
+    'name' => 'edit terms in 11',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: edit terms in 12.
+  $permissions['edit terms in 12'] = array(
+    'name' => 'edit terms in 12',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: edit terms in 13.
+  $permissions['edit terms in 13'] = array(
+    'name' => 'edit terms in 13',
     'roles' => array(
       'administrator' => 'administrator',
     ),
@@ -403,6 +605,42 @@ function esdportal_str_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
+  // Exported permission: edit terms in 6.
+  $permissions['edit terms in 6'] = array(
+    'name' => 'edit terms in 6',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: edit terms in 7.
+  $permissions['edit terms in 7'] = array(
+    'name' => 'edit terms in 7',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: edit terms in 8.
+  $permissions['edit terms in 8'] = array(
+    'name' => 'edit terms in 8',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: edit terms in 9.
+  $permissions['edit terms in 9'] = array(
+    'name' => 'edit terms in 9',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: revert revisions.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
@@ -440,6 +678,15 @@ function esdportal_str_user_default_permissions() {
     'module' => 'editablefields',
   );
 
+  // Exported permission: view any field_growth_data_doc.
+  $permissions['view any field_growth_data_doc'] = array(
+    'name' => 'view any field_growth_data_doc',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'esdportal_str',
+  );
+
   // Exported permission: view any field_school.
   $permissions['view any field_school'] = array(
     'name' => 'view any field_school',
@@ -465,6 +712,15 @@ function esdportal_str_user_default_permissions() {
     'name' => 'view any field_site_visit_status',
     'roles' => array(
       'Logistics Coordinator' => 'Logistics Coordinator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'esdportal_str',
+  );
+
+  // Exported permission: view own field_growth_data_doc.
+  $permissions['view own field_growth_data_doc'] = array(
+    'name' => 'view own field_growth_data_doc',
+    'roles' => array(
       'administrator' => 'administrator',
     ),
     'module' => 'esdportal_str',

@@ -43,6 +43,34 @@ function esdportal_str_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'results_viewer_context';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'user' => array(
+      'values' => array(
+        'results viewer' => 'results viewer',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'menu-menu-webform-results' => array(
+          'module' => 'menu',
+          'delta' => 'menu-webform-results',
+          'region' => 'branding',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
+  $export['results_viewer_context'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'scoresbycode';
   $context->description = 'schoolscores/[bcode] pages';
   $context->tag = '';
@@ -60,6 +88,52 @@ function esdportal_str_context_default_contexts() {
   // Included for use with string extractors like potx.
   t('schoolscores/[bcode] pages');
   $export['scoresbycode'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'sitewide';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'sitewide' => array(
+      'values' => array(
+        1 => 1,
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'menu-menu-footer-links' => array(
+          'module' => 'menu',
+          'delta' => 'menu-footer-links',
+          'region' => 'footer_first',
+          'weight' => '-10',
+        ),
+        'boxes-social_share' => array(
+          'module' => 'boxes',
+          'delta' => 'social_share',
+          'region' => 'footer_first',
+          'weight' => '-9',
+        ),
+        'esdportal_str-feedback' => array(
+          'module' => 'esdportal_str',
+          'delta' => 'feedback',
+          'region' => 'footer_second',
+          'weight' => '-10',
+        ),
+        'boxes-contact_info' => array(
+          'module' => 'boxes',
+          'delta' => 'contact_info',
+          'region' => 'footer_third',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+  $export['sitewide'] = $context;
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */

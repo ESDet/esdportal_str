@@ -28,6 +28,12 @@ function esdportal_str_menu_default_menu_custom() {
     'title' => 'Logistics Coordinator Menu',
     'description' => 'This menu is enabled for users with the Logistics Coordinator role.',
   );
+  // Exported menu: menu-webform-results.
+  $menus['menu-webform-results'] = array(
+    'menu_name' => 'menu-webform-results',
+    'title' => 'Webform Results',
+    'description' => '',
+  );
   // Exported menu: navigation.
   $menus['navigation'] = array(
     'menu_name' => 'navigation',
@@ -51,6 +57,7 @@ function esdportal_str_menu_default_menu_custom() {
   t('This menu is enabled for users with the Logistics Coordinator role.');
   t('This menu is enabled in the footer for all users.');
   t('User menu');
+  t('Webform Results');
 
 
   return $menus;

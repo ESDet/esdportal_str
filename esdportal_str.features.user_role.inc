@@ -34,5 +34,11 @@ function esdportal_str_user_default_roles() {
     'weight' => 2,
   );
 
+  // Exported role: results viewer.
+  $roles['results viewer'] = array(
+    'name' => 'results viewer',
+    'weight' => 4,
+  );
+
   return $roles;
 }
