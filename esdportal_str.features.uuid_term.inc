@@ -11,9 +11,9 @@ function esdportal_str_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
-    'revision_id' => 3686,
+    'revision_id' => 3823,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'Previously visited, pending response',
     'description' => '<br>
@@ -24,9 +24,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'site_visit_status',
   );
   $terms[] = array(
-    'revision_id' => 3687,
+    'revision_id' => 3824,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'New, pending ESD month choice',
     'description' => '',
@@ -36,9 +36,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'site_visit_status',
   );
   $terms[] = array(
-    'revision_id' => 3688,
+    'revision_id' => 3825,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'Early childhood',
     'description' => '',
@@ -48,9 +48,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'school_type',
   );
   $terms[] = array(
-    'revision_id' => 3689,
+    'revision_id' => 3826,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'Opening soon',
     'description' => '',
@@ -60,9 +60,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'school_status',
   );
   $terms[] = array(
-    'revision_id' => 3690,
+    'revision_id' => 3827,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'Not participating',
     'description' => '',
@@ -72,9 +72,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'site_visit_status',
   );
   $terms[] = array(
-    'revision_id' => 3691,
+    'revision_id' => 3828,
     'log' => '',
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'HS',
     'description' => '',
@@ -84,9 +84,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'school_type',
   );
   $terms[] = array(
-    'revision_id' => 3692,
+    'revision_id' => 3829,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'Mature',
     'description' => '',
@@ -96,9 +96,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'school_scorecard_status',
   );
   $terms[] = array(
-    'revision_id' => 3693,
+    'revision_id' => 3830,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'Opt out',
     'description' => '',
@@ -108,9 +108,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'site_visit_status',
   );
   $terms[] = array(
-    'revision_id' => 3694,
+    'revision_id' => 3831,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'Mature',
     'description' => '',
@@ -120,9 +120,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'site_visit_status',
   );
   $terms[] = array(
-    'revision_id' => 3695,
+    'revision_id' => 3832,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'Open',
     'description' => '',
@@ -132,9 +132,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'school_status',
   );
   $terms[] = array(
-    'revision_id' => 3696,
+    'revision_id' => 3833,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'Closed',
     'description' => '',
@@ -144,9 +144,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'school_status',
   );
   $terms[] = array(
-    'revision_id' => 3697,
+    'revision_id' => 3834,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'Participating',
     'description' => '',
@@ -156,9 +156,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'site_visit_status',
   );
   $terms[] = array(
-    'revision_id' => 3698,
+    'revision_id' => 3835,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'N/A',
     'description' => '',
@@ -168,9 +168,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'site_visit_status',
   );
   $terms[] = array(
-    'revision_id' => 3699,
+    'revision_id' => 3836,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'New',
     'description' => '',
@@ -180,9 +180,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'school_scorecard_status',
   );
   $terms[] = array(
-    'revision_id' => 3700,
+    'revision_id' => 3837,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'Participating, pending date selection',
     'description' => '',
@@ -192,9 +192,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'site_visit_status',
   );
   $terms[] = array(
-    'revision_id' => 3701,
+    'revision_id' => 3838,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'Revisit',
     'description' => '',
@@ -204,9 +204,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'site_visit_status',
   );
   $terms[] = array(
-    'revision_id' => 3702,
+    'revision_id' => 3839,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'Suburban',
     'description' => '',
@@ -216,9 +216,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'school_scorecard_status',
   );
   $terms[] = array(
-    'revision_id' => 3703,
+    'revision_id' => 3840,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'Turnaround',
     'description' => '',
@@ -228,9 +228,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'school_scorecard_status',
   );
   $terms[] = array(
-    'revision_id' => 3704,
+    'revision_id' => 3841,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'K8',
     'description' => '',
@@ -240,9 +240,9 @@ function esdportal_str_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'school_type',
   );
   $terms[] = array(
-    'revision_id' => 3705,
+    'revision_id' => 3842,
     'log' => NULL,
-    'timestamp' => 1385140786,
+    'timestamp' => 1394300232,
     'uid' => 0,
     'name' => 'Specialty',
     'description' => '',
