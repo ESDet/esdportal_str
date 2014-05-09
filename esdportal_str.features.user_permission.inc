@@ -14,6 +14,7 @@ function esdportal_str_user_default_permissions() {
   $permissions['access all webform results'] = array(
     'name' => 'access all webform results',
     'roles' => array(
+      'Data Entry' => 'Data Entry',
       'Logistics Coordinator' => 'Logistics Coordinator',
       'administrator' => 'administrator',
       'results viewer' => 'results viewer',
@@ -44,6 +45,7 @@ function esdportal_str_user_default_permissions() {
   $permissions['access own webform results'] = array(
     'name' => 'access own webform results',
     'roles' => array(
+      'Data Entry' => 'Data Entry',
       'Logistics Coordinator' => 'Logistics Coordinator',
       'School Representative' => 'School Representative',
       'administrator' => 'administrator',
@@ -56,6 +58,7 @@ function esdportal_str_user_default_permissions() {
   $permissions['access own webform submissions'] = array(
     'name' => 'access own webform submissions',
     'roles' => array(
+      'Data Entry' => 'Data Entry',
       'Logistics Coordinator' => 'Logistics Coordinator',
       'School Representative' => 'School Representative',
       'administrator' => 'administrator',
@@ -242,7 +245,6 @@ function esdportal_str_user_default_permissions() {
     'roles' => array(
       'Logistics Coordinator' => 'Logistics Coordinator',
       'administrator' => 'administrator',
-      'results viewer' => 'results viewer',
     ),
     'module' => 'webform',
   );
@@ -387,6 +389,7 @@ function esdportal_str_user_default_permissions() {
   $permissions['edit all webform submissions'] = array(
     'name' => 'edit all webform submissions',
     'roles' => array(
+      'Data Entry' => 'Data Entry',
       'administrator' => 'administrator',
     ),
     'module' => 'webform',
@@ -515,6 +518,7 @@ function esdportal_str_user_default_permissions() {
   $permissions['edit own webform submissions'] = array(
     'name' => 'edit own webform submissions',
     'roles' => array(
+      'Data Entry' => 'Data Entry',
       'Logistics Coordinator' => 'Logistics Coordinator',
       'School Representative' => 'School Representative',
       'administrator' => 'administrator',
