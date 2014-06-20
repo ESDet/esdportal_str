@@ -17,6 +17,14 @@ function esdportal_str_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'esd_exclusive_typology' => array(
+      'name' => 'ESD Exclusive Typology',
+      'machine_name' => 'esd_exclusive_typology',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'operator' => array(
       'name' => 'School operator',
       'machine_name' => 'operator',
