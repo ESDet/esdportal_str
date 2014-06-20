@@ -5822,7 +5822,7 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
-    5 => '5',
+    4 => '4',
     6 => '6',
   );
   $handler->display->display_options['cache']['type'] = 'none';
@@ -6833,9 +6833,47 @@ function esdportal_str_views_default_views() {
     'page_5' => 0,
   );
   $handler->display->display_options['sitename_title'] = 0;
+
+  /* Display: Edit typology */
+  $handler = $view->new_display('page', 'Edit typology', 'edit_typology');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Edit typology';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['label'] = 'School Name';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['view_node']['label'] = 'Profile';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['nid']['label'] = 'Profile NID';
+  /* Field: Taxonomy term: ESD Exclusive Typology */
+  $handler->display->display_options['fields']['field_esd_exclusive_typology']['id'] = 'field_esd_exclusive_typology';
+  $handler->display->display_options['fields']['field_esd_exclusive_typology']['table'] = 'field_data_field_esd_exclusive_typology';
+  $handler->display->display_options['fields']['field_esd_exclusive_typology']['field'] = 'field_esd_exclusive_typology';
+  $handler->display->display_options['fields']['field_esd_exclusive_typology']['type'] = 'editable';
+  $handler->display->display_options['fields']['field_esd_exclusive_typology']['settings'] = array(
+    'click_to_edit' => 0,
+    'click_to_edit_style' => 'button',
+    'empty_text' => '',
+    'fallback_format' => 'taxonomy_term_reference_plain',
+  );
+  $handler->display->display_options['path'] = 'manage-schools/typology';
   $translatables['manage_schools'] = array(
     t('Master'),
-    t('K-8'),
+    t('Manage School Taxonomy'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -6869,6 +6907,7 @@ function esdportal_str_views_default_views() {
     t('Status'),
     t('Progress'),
     t('Climate'),
+    t('K-8'),
     t('School Profile Check'),
     t('School Profiles'),
     t('Academic Focus'),
@@ -6940,6 +6979,8 @@ function esdportal_str_views_default_views() {
     t('Special Tracks'),
     t('Student Development Programs'),
     t('Student Leadership Opportunities'),
+    t('Edit typology'),
+    t('ESD Exclusive Typology'),
   );
   $export['manage_schools'] = $view;
 
