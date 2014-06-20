@@ -5818,7 +5818,7 @@ function esdportal_str_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'K-8';
+  $handler->display->display_options['title'] = 'Manage School Taxonomy';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
@@ -6236,6 +6236,8 @@ function esdportal_str_views_default_views() {
 
   /* Display: K-8 */
   $handler = $view->new_display('page', 'K-8', 'page_3');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'K-8';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Taxonomy term: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
