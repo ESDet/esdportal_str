@@ -5818,7 +5818,7 @@ function esdportal_str_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Manage School Taxonomy';
+  $handler->display->display_options['title'] = 'K-8';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
@@ -5834,7 +5834,12 @@ function esdportal_str_views_default_views() {
     'name' => 'name',
     'view_node' => 'view_node',
     'nid' => 'nid',
-    'changed' => 'changed',
+    'mature_ltrgrade' => 'mature_ltrgrade',
+    'gradrate' => 'gradrate',
+    'status_ltrgrade' => 'status_ltrgrade',
+    'progress_ltrgrade' => 'progress_ltrgrade',
+    'culture_ltrgrade' => 'culture_ltrgrade',
+    'field_ap_classes' => 'field_ap_classes',
   );
   $handler->display->display_options['style_options']['default'] = 'name';
   $handler->display->display_options['style_options']['info'] = array(
@@ -5857,9 +5862,42 @@ function esdportal_str_views_default_views() {
       'separator' => '',
       'empty_column' => 0,
     ),
-    'changed' => array(
+    'mature_ltrgrade' => array(
       'sortable' => 1,
-      'default_sort_order' => 'desc',
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'gradrate' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'status_ltrgrade' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'progress_ltrgrade' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'culture_ltrgrade' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_ap_classes' => array(
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
@@ -5892,21 +5930,40 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
   $handler->display->display_options['fields']['nid']['relationship'] = 'tid_representative';
   $handler->display->display_options['fields']['nid']['label'] = 'Profile NID';
-  /* Field: Content: Updated date */
-  $handler->display->display_options['fields']['changed']['id'] = 'changed';
-  $handler->display->display_options['fields']['changed']['table'] = 'node';
-  $handler->display->display_options['fields']['changed']['field'] = 'changed';
-  $handler->display->display_options['fields']['changed']['relationship'] = 'tid_representative';
-  $handler->display->display_options['fields']['changed']['label'] = 'Profile last updated';
-  $handler->display->display_options['fields']['changed']['date_format'] = 'time ago';
-  /* Field: Bulk operations: Taxonomy term */
-  $handler->display->display_options['fields']['views_bulk_operations']['id'] = 'views_bulk_operations';
-  $handler->display->display_options['fields']['views_bulk_operations']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['views_bulk_operations']['field'] = 'views_bulk_operations';
-  /* Field: Bulk operations: Taxonomy vocabulary */
-  $handler->display->display_options['fields']['views_bulk_operations_1']['id'] = 'views_bulk_operations_1';
-  $handler->display->display_options['fields']['views_bulk_operations_1']['table'] = 'taxonomy_vocabulary';
-  $handler->display->display_options['fields']['views_bulk_operations_1']['field'] = 'views_bulk_operations';
+  /* Field: Content: AP Classes */
+  $handler->display->display_options['fields']['field_ap_classes']['id'] = 'field_ap_classes';
+  $handler->display->display_options['fields']['field_ap_classes']['table'] = 'field_data_field_ap_classes';
+  $handler->display->display_options['fields']['field_ap_classes']['field'] = 'field_ap_classes';
+  $handler->display->display_options['fields']['field_ap_classes']['relationship'] = 'tid_representative';
+  /* Field: Content: College Counseling */
+  $handler->display->display_options['fields']['field_college_counseling']['id'] = 'field_college_counseling';
+  $handler->display->display_options['fields']['field_college_counseling']['table'] = 'field_data_field_college_counseling';
+  $handler->display->display_options['fields']['field_college_counseling']['field'] = 'field_college_counseling';
+  $handler->display->display_options['fields']['field_college_counseling']['relationship'] = 'tid_representative';
+  /* Field: Content: College Prep */
+  $handler->display->display_options['fields']['field_college_prep']['id'] = 'field_college_prep';
+  $handler->display->display_options['fields']['field_college_prep']['table'] = 'field_data_field_college_prep';
+  $handler->display->display_options['fields']['field_college_prep']['field'] = 'field_college_prep';
+  /* Field: Esd hs 2013: Culture ltrgrade */
+  $handler->display->display_options['fields']['culture_ltrgrade']['id'] = 'culture_ltrgrade';
+  $handler->display->display_options['fields']['culture_ltrgrade']['table'] = 'esd_hs_2013';
+  $handler->display->display_options['fields']['culture_ltrgrade']['field'] = 'culture_ltrgrade';
+  /* Field: Esd hs 2013: Gradrate */
+  $handler->display->display_options['fields']['gradrate']['id'] = 'gradrate';
+  $handler->display->display_options['fields']['gradrate']['table'] = 'esd_hs_2013';
+  $handler->display->display_options['fields']['gradrate']['field'] = 'gradrate';
+  /* Field: Esd hs 2013: Mature ltrgrade */
+  $handler->display->display_options['fields']['mature_ltrgrade']['id'] = 'mature_ltrgrade';
+  $handler->display->display_options['fields']['mature_ltrgrade']['table'] = 'esd_hs_2013';
+  $handler->display->display_options['fields']['mature_ltrgrade']['field'] = 'mature_ltrgrade';
+  /* Field: Esd hs 2013: Progress ltrgrade */
+  $handler->display->display_options['fields']['progress_ltrgrade']['id'] = 'progress_ltrgrade';
+  $handler->display->display_options['fields']['progress_ltrgrade']['table'] = 'esd_hs_2013';
+  $handler->display->display_options['fields']['progress_ltrgrade']['field'] = 'progress_ltrgrade';
+  /* Field: Esd hs 2013: Status ltrgrade */
+  $handler->display->display_options['fields']['status_ltrgrade']['id'] = 'status_ltrgrade';
+  $handler->display->display_options['fields']['status_ltrgrade']['table'] = 'esd_hs_2013';
+  $handler->display->display_options['fields']['status_ltrgrade']['field'] = 'status_ltrgrade';
   /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
@@ -5961,73 +6018,6 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
   $handler->display->display_options['fields']['nid']['relationship'] = 'tid_representative';
   $handler->display->display_options['fields']['nid']['label'] = 'Profile NID';
-  /* Field: Content: Updated date */
-  $handler->display->display_options['fields']['changed']['id'] = 'changed';
-  $handler->display->display_options['fields']['changed']['table'] = 'node';
-  $handler->display->display_options['fields']['changed']['field'] = 'changed';
-  $handler->display->display_options['fields']['changed']['relationship'] = 'tid_representative';
-  $handler->display->display_options['fields']['changed']['label'] = 'Profile last updated';
-  $handler->display->display_options['fields']['changed']['date_format'] = 'time ago';
-  /* Field: Bulk operations: Taxonomy term */
-  $handler->display->display_options['fields']['views_bulk_operations']['id'] = 'views_bulk_operations';
-  $handler->display->display_options['fields']['views_bulk_operations']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['views_bulk_operations']['field'] = 'views_bulk_operations';
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['display_type'] = '0';
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['enable_select_all_pages'] = 1;
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['force_single'] = 0;
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['entity_load_capacity'] = '10';
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_operations'] = array(
-    'action::views_bulk_operations_delete_item' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::views_bulk_operations_script_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::views_bulk_operations_modify_action' => array(
-      'selected' => 1,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'settings' => array(
-        'show_all_tokens' => 1,
-        'display_values' => array(
-          '_all_' => '_all_',
-        ),
-      ),
-    ),
-    'action::views_bulk_operations_argument_selector_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'settings' => array(
-        'url' => '',
-      ),
-    ),
-    'action::system_send_email_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::esdportal_str_send_unsafe_email_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-  );
   $handler->display->display_options['path'] = 'manage-schools';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Manage school taxonomy';
@@ -6126,9 +6116,724 @@ function esdportal_str_views_default_views() {
     'labels' => 1,
   );
   $handler->display->display_options['path'] = 'manage-schools/devel';
+
+  /* Display: High Schools */
+  $handler = $view->new_display('page', 'High Schools', 'page_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'High Schools';
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Taxonomy term: Representative node */
+  $handler->display->display_options['relationships']['tid_representative']['id'] = 'tid_representative';
+  $handler->display->display_options['relationships']['tid_representative']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['relationships']['tid_representative']['field'] = 'tid_representative';
+  $handler->display->display_options['relationships']['tid_representative']['subquery_sort'] = 'node.nid';
+  $handler->display->display_options['relationships']['tid_representative']['subquery_view'] = '';
+  $handler->display->display_options['relationships']['tid_representative']['subquery_namespace'] = '';
+  /* Relationship: Esd hs 2013: Buildingcode */
+  $handler->display->display_options['relationships']['buildingcode']['id'] = 'buildingcode';
+  $handler->display->display_options['relationships']['buildingcode']['table'] = 'esd_hs_2013';
+  $handler->display->display_options['relationships']['buildingcode']['field'] = 'buildingcode';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['label'] = 'School Name';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['view_node']['label'] = 'Profile';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['nid']['label'] = 'Profile NID';
+  /* Field: Esd hs 2013: Mature ltrgrade */
+  $handler->display->display_options['fields']['mature_ltrgrade']['id'] = 'mature_ltrgrade';
+  $handler->display->display_options['fields']['mature_ltrgrade']['table'] = 'esd_hs_2013';
+  $handler->display->display_options['fields']['mature_ltrgrade']['field'] = 'mature_ltrgrade';
+  $handler->display->display_options['fields']['mature_ltrgrade']['relationship'] = 'buildingcode';
+  $handler->display->display_options['fields']['mature_ltrgrade']['label'] = 'Overall';
+  /* Field: Esd hs 2013: Gradrate */
+  $handler->display->display_options['fields']['gradrate']['id'] = 'gradrate';
+  $handler->display->display_options['fields']['gradrate']['table'] = 'esd_hs_2013';
+  $handler->display->display_options['fields']['gradrate']['field'] = 'gradrate';
+  $handler->display->display_options['fields']['gradrate']['relationship'] = 'buildingcode';
+  $handler->display->display_options['fields']['gradrate']['label'] = 'Grad Rate';
+  /* Field: Esd hs 2013: Status ltrgrade */
+  $handler->display->display_options['fields']['status_ltrgrade']['id'] = 'status_ltrgrade';
+  $handler->display->display_options['fields']['status_ltrgrade']['table'] = 'esd_hs_2013';
+  $handler->display->display_options['fields']['status_ltrgrade']['field'] = 'status_ltrgrade';
+  $handler->display->display_options['fields']['status_ltrgrade']['relationship'] = 'buildingcode';
+  $handler->display->display_options['fields']['status_ltrgrade']['label'] = 'Status';
+  /* Field: Esd hs 2013: Progress ltrgrade */
+  $handler->display->display_options['fields']['progress_ltrgrade']['id'] = 'progress_ltrgrade';
+  $handler->display->display_options['fields']['progress_ltrgrade']['table'] = 'esd_hs_2013';
+  $handler->display->display_options['fields']['progress_ltrgrade']['field'] = 'progress_ltrgrade';
+  $handler->display->display_options['fields']['progress_ltrgrade']['relationship'] = 'buildingcode';
+  $handler->display->display_options['fields']['progress_ltrgrade']['label'] = 'Progress';
+  /* Field: Esd hs 2013: Culture ltrgrade */
+  $handler->display->display_options['fields']['culture_ltrgrade']['id'] = 'culture_ltrgrade';
+  $handler->display->display_options['fields']['culture_ltrgrade']['table'] = 'esd_hs_2013';
+  $handler->display->display_options['fields']['culture_ltrgrade']['field'] = 'culture_ltrgrade';
+  $handler->display->display_options['fields']['culture_ltrgrade']['relationship'] = 'buildingcode';
+  $handler->display->display_options['fields']['culture_ltrgrade']['label'] = 'Climate';
+  /* Field: Content: AP Classes */
+  $handler->display->display_options['fields']['field_ap_classes']['id'] = 'field_ap_classes';
+  $handler->display->display_options['fields']['field_ap_classes']['table'] = 'field_data_field_ap_classes';
+  $handler->display->display_options['fields']['field_ap_classes']['field'] = 'field_ap_classes';
+  $handler->display->display_options['fields']['field_ap_classes']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_ap_classes']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_ap_classes']['multi_type'] = 'ul';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
+  $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
+  $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['value'] = array(
+    'schools' => 'schools',
+  );
+  $handler->display->display_options['filters']['machine_name']['expose']['operator_id'] = 'machine_name_op';
+  $handler->display->display_options['filters']['machine_name']['expose']['label'] = 'Machine name';
+  $handler->display->display_options['filters']['machine_name']['expose']['operator'] = 'machine_name_op';
+  $handler->display->display_options['filters']['machine_name']['expose']['identifier'] = 'machine_name';
+  /* Filter criterion: Taxonomy term: Name */
+  $handler->display->display_options['filters']['name']['id'] = 'name';
+  $handler->display->display_options['filters']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['name']['field'] = 'name';
+  $handler->display->display_options['filters']['name']['operator'] = 'word';
+  $handler->display->display_options['filters']['name']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['name']['expose']['operator_id'] = 'name_op';
+  $handler->display->display_options['filters']['name']['expose']['label'] = 'Filter by School Name';
+  $handler->display->display_options['filters']['name']['expose']['operator'] = 'name_op';
+  $handler->display->display_options['filters']['name']['expose']['identifier'] = 'name';
+  $handler->display->display_options['filters']['name']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    5 => 0,
+    7 => 0,
+    3 => 0,
+    6 => 0,
+  );
+  /* Filter criterion: Taxonomy term: School type (field_school_type) */
+  $handler->display->display_options['filters']['field_school_type_tid']['id'] = 'field_school_type_tid';
+  $handler->display->display_options['filters']['field_school_type_tid']['table'] = 'field_data_field_school_type';
+  $handler->display->display_options['filters']['field_school_type_tid']['field'] = 'field_school_type_tid';
+  $handler->display->display_options['filters']['field_school_type_tid']['value'] = array(
+    0 => '3',
+    1 => '922',
+  );
+  $handler->display->display_options['filters']['field_school_type_tid']['vocabulary'] = 'school_type';
+  $handler->display->display_options['path'] = 'high-schools';
+
+  /* Display: K-8 */
+  $handler = $view->new_display('page', 'K-8', 'page_3');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['label'] = 'School Name';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['view_node']['label'] = 'Profile';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['nid']['label'] = 'Profile NID';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
+  $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
+  $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['value'] = array(
+    'schools' => 'schools',
+  );
+  $handler->display->display_options['filters']['machine_name']['expose']['operator_id'] = 'machine_name_op';
+  $handler->display->display_options['filters']['machine_name']['expose']['label'] = 'Machine name';
+  $handler->display->display_options['filters']['machine_name']['expose']['operator'] = 'machine_name_op';
+  $handler->display->display_options['filters']['machine_name']['expose']['identifier'] = 'machine_name';
+  /* Filter criterion: Taxonomy term: Name */
+  $handler->display->display_options['filters']['name']['id'] = 'name';
+  $handler->display->display_options['filters']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['name']['field'] = 'name';
+  $handler->display->display_options['filters']['name']['operator'] = 'word';
+  $handler->display->display_options['filters']['name']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['name']['expose']['operator_id'] = 'name_op';
+  $handler->display->display_options['filters']['name']['expose']['label'] = 'Filter by School Name';
+  $handler->display->display_options['filters']['name']['expose']['operator'] = 'name_op';
+  $handler->display->display_options['filters']['name']['expose']['identifier'] = 'name';
+  $handler->display->display_options['filters']['name']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    5 => 0,
+    7 => 0,
+    3 => 0,
+    6 => 0,
+  );
+  /* Filter criterion: Taxonomy term: School type (field_school_type) */
+  $handler->display->display_options['filters']['field_school_type_tid']['id'] = 'field_school_type_tid';
+  $handler->display->display_options['filters']['field_school_type_tid']['table'] = 'field_data_field_school_type';
+  $handler->display->display_options['filters']['field_school_type_tid']['field'] = 'field_school_type_tid';
+  $handler->display->display_options['filters']['field_school_type_tid']['value'] = array(
+    0 => '922',
+    1 => '10',
+  );
+  $handler->display->display_options['filters']['field_school_type_tid']['vocabulary'] = 'school_type';
+  $handler->display->display_options['path'] = 'k-8';
+
+  /* Display: School Profile Check */
+  $handler = $view->new_display('page', 'School Profile Check', 'page_4');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'School Profiles';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['label'] = 'School Name';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['view_node']['label'] = 'Profile';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['nid']['label'] = 'Profile NID';
+  /* Field: Content: Academic Focus */
+  $handler->display->display_options['fields']['field_academic_focus']['id'] = 'field_academic_focus';
+  $handler->display->display_options['fields']['field_academic_focus']['table'] = 'field_data_field_academic_focus';
+  $handler->display->display_options['fields']['field_academic_focus']['field'] = 'field_academic_focus';
+  $handler->display->display_options['fields']['field_academic_focus']['relationship'] = 'tid_representative';
+  /* Field: Content: Facilities */
+  $handler->display->display_options['fields']['field_facilities']['id'] = 'field_facilities';
+  $handler->display->display_options['fields']['field_facilities']['table'] = 'field_data_field_facilities';
+  $handler->display->display_options['fields']['field_facilities']['field'] = 'field_facilities';
+  $handler->display->display_options['fields']['field_facilities']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_facilities']['delta_offset'] = '0';
+  /* Field: Content: Instructional Model */
+  $handler->display->display_options['fields']['field_instructional_model']['id'] = 'field_instructional_model';
+  $handler->display->display_options['fields']['field_instructional_model']['table'] = 'field_data_field_instructional_model';
+  $handler->display->display_options['fields']['field_instructional_model']['field'] = 'field_instructional_model';
+  $handler->display->display_options['fields']['field_instructional_model']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_instructional_model']['delta_offset'] = '0';
+  /* Field: Content: Staff Resources */
+  $handler->display->display_options['fields']['field_staff_resources']['id'] = 'field_staff_resources';
+  $handler->display->display_options['fields']['field_staff_resources']['table'] = 'field_data_field_staff_resources';
+  $handler->display->display_options['fields']['field_staff_resources']['field'] = 'field_staff_resources';
+  $handler->display->display_options['fields']['field_staff_resources']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_staff_resources']['delta_offset'] = '0';
+  /* Field: Content: ELL Level */
+  $handler->display->display_options['fields']['field_ell_level']['id'] = 'field_ell_level';
+  $handler->display->display_options['fields']['field_ell_level']['table'] = 'field_data_field_ell_level';
+  $handler->display->display_options['fields']['field_ell_level']['field'] = 'field_ell_level';
+  $handler->display->display_options['fields']['field_ell_level']['relationship'] = 'tid_representative';
+  /* Field: Content: Special Education Level */
+  $handler->display->display_options['fields']['field_special_ed_level']['id'] = 'field_special_ed_level';
+  $handler->display->display_options['fields']['field_special_ed_level']['table'] = 'field_data_field_special_ed_level';
+  $handler->display->display_options['fields']['field_special_ed_level']['field'] = 'field_special_ed_level';
+  $handler->display->display_options['fields']['field_special_ed_level']['relationship'] = 'tid_representative';
+  /* Field: Content: Arts - Visual */
+  $handler->display->display_options['fields']['field_arts_visual']['id'] = 'field_arts_visual';
+  $handler->display->display_options['fields']['field_arts_visual']['table'] = 'field_data_field_arts_visual';
+  $handler->display->display_options['fields']['field_arts_visual']['field'] = 'field_arts_visual';
+  $handler->display->display_options['fields']['field_arts_visual']['relationship'] = 'tid_representative';
+  /* Field: Content: Boys Sports */
+  $handler->display->display_options['fields']['field_boys_sports']['id'] = 'field_boys_sports';
+  $handler->display->display_options['fields']['field_boys_sports']['table'] = 'field_data_field_boys_sports';
+  $handler->display->display_options['fields']['field_boys_sports']['field'] = 'field_boys_sports';
+  $handler->display->display_options['fields']['field_boys_sports']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_boys_sports']['delta_offset'] = '0';
+  /* Field: Content: Girls Sports */
+  $handler->display->display_options['fields']['field_girls_sports']['id'] = 'field_girls_sports';
+  $handler->display->display_options['fields']['field_girls_sports']['table'] = 'field_data_field_girls_sports';
+  $handler->display->display_options['fields']['field_girls_sports']['field'] = 'field_girls_sports';
+  $handler->display->display_options['fields']['field_girls_sports']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_girls_sports']['delta_offset'] = '0';
+  $handler->display->display_options['path'] = 'school-profile-check';
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Profile Data Export';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['filename'] = '%view_%timestamp-mmm_%timestamp-mmm.xls';
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['label'] = 'School Name';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Content: School */
+  $handler->display->display_options['fields']['field_school']['id'] = 'field_school';
+  $handler->display->display_options['fields']['field_school']['table'] = 'field_data_field_school';
+  $handler->display->display_options['fields']['field_school']['field'] = 'field_school';
+  $handler->display->display_options['fields']['field_school']['relationship'] = 'tid_representative';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['nid']['label'] = 'Profile NID';
+  /* Field: Content: Academic Focus */
+  $handler->display->display_options['fields']['field_academic_focus']['id'] = 'field_academic_focus';
+  $handler->display->display_options['fields']['field_academic_focus']['table'] = 'field_data_field_academic_focus';
+  $handler->display->display_options['fields']['field_academic_focus']['field'] = 'field_academic_focus';
+  $handler->display->display_options['fields']['field_academic_focus']['relationship'] = 'tid_representative';
+  /* Field: Content: Admissions URL */
+  $handler->display->display_options['fields']['field_admissions_url']['id'] = 'field_admissions_url';
+  $handler->display->display_options['fields']['field_admissions_url']['table'] = 'field_data_field_admissions_url';
+  $handler->display->display_options['fields']['field_admissions_url']['field'] = 'field_admissions_url';
+  $handler->display->display_options['fields']['field_admissions_url']['relationship'] = 'tid_representative';
+  /* Field: Content: After School Transportation */
+  $handler->display->display_options['fields']['field_after_school_transportatio']['id'] = 'field_after_school_transportatio';
+  $handler->display->display_options['fields']['field_after_school_transportatio']['table'] = 'field_data_field_after_school_transportatio';
+  $handler->display->display_options['fields']['field_after_school_transportatio']['field'] = 'field_after_school_transportatio';
+  $handler->display->display_options['fields']['field_after_school_transportatio']['relationship'] = 'tid_representative';
+  /* Field: Content: AP Classes */
+  $handler->display->display_options['fields']['field_ap_classes_1']['id'] = 'field_ap_classes_1';
+  $handler->display->display_options['fields']['field_ap_classes_1']['table'] = 'field_data_field_ap_classes';
+  $handler->display->display_options['fields']['field_ap_classes_1']['field'] = 'field_ap_classes';
+  $handler->display->display_options['fields']['field_ap_classes_1']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_ap_classes_1']['delta_offset'] = '0';
+  /* Field: Content: Application Fee */
+  $handler->display->display_options['fields']['field_application_fee']['id'] = 'field_application_fee';
+  $handler->display->display_options['fields']['field_application_fee']['table'] = 'field_data_field_application_fee';
+  $handler->display->display_options['fields']['field_application_fee']['field'] = 'field_application_fee';
+  $handler->display->display_options['fields']['field_application_fee']['relationship'] = 'tid_representative';
+  /* Field: Content: Application Fee Amount */
+  $handler->display->display_options['fields']['field_application_fee_amount']['id'] = 'field_application_fee_amount';
+  $handler->display->display_options['fields']['field_application_fee_amount']['table'] = 'field_data_field_application_fee_amount';
+  $handler->display->display_options['fields']['field_application_fee_amount']['field'] = 'field_application_fee_amount';
+  $handler->display->display_options['fields']['field_application_fee_amount']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_application_fee_amount']['settings'] = array(
+    'thousand_separator' => ' ',
+    'decimal_separator' => '.',
+    'scale' => '2',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: Application Process */
+  $handler->display->display_options['fields']['field_application_process']['id'] = 'field_application_process';
+  $handler->display->display_options['fields']['field_application_process']['table'] = 'field_data_field_application_process';
+  $handler->display->display_options['fields']['field_application_process']['field'] = 'field_application_process';
+  $handler->display->display_options['fields']['field_application_process']['relationship'] = 'tid_representative';
+  /* Field: Content: Applications Received */
+  $handler->display->display_options['fields']['field_applications_received']['id'] = 'field_applications_received';
+  $handler->display->display_options['fields']['field_applications_received']['table'] = 'field_data_field_applications_received';
+  $handler->display->display_options['fields']['field_applications_received']['field'] = 'field_applications_received';
+  $handler->display->display_options['fields']['field_applications_received']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_applications_received']['settings'] = array(
+    'thousand_separator' => ' ',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: Arts - Media */
+  $handler->display->display_options['fields']['field_arts_media']['id'] = 'field_arts_media';
+  $handler->display->display_options['fields']['field_arts_media']['table'] = 'field_data_field_arts_media';
+  $handler->display->display_options['fields']['field_arts_media']['field'] = 'field_arts_media';
+  $handler->display->display_options['fields']['field_arts_media']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_arts_media']['delta_offset'] = '0';
+  /* Field: Content: Arts - Music */
+  $handler->display->display_options['fields']['field_arts_music']['id'] = 'field_arts_music';
+  $handler->display->display_options['fields']['field_arts_music']['table'] = 'field_data_field_arts_music';
+  $handler->display->display_options['fields']['field_arts_music']['field'] = 'field_arts_music';
+  $handler->display->display_options['fields']['field_arts_music']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_arts_music']['delta_offset'] = '0';
+  /* Field: Content: Arts - Performing & Written */
+  $handler->display->display_options['fields']['field_arts_performing_written']['id'] = 'field_arts_performing_written';
+  $handler->display->display_options['fields']['field_arts_performing_written']['table'] = 'field_data_field_arts_performing_written';
+  $handler->display->display_options['fields']['field_arts_performing_written']['field'] = 'field_arts_performing_written';
+  $handler->display->display_options['fields']['field_arts_performing_written']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_arts_performing_written']['delta_offset'] = '0';
+  /* Field: Content: Arts - Visual */
+  $handler->display->display_options['fields']['field_arts_visual']['id'] = 'field_arts_visual';
+  $handler->display->display_options['fields']['field_arts_visual']['table'] = 'field_data_field_arts_visual';
+  $handler->display->display_options['fields']['field_arts_visual']['field'] = 'field_arts_visual';
+  $handler->display->display_options['fields']['field_arts_visual']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_arts_visual']['delta_offset'] = '0';
+  /* Field: Content: Before/After Care */
+  $handler->display->display_options['fields']['field_before_after_care']['id'] = 'field_before_after_care';
+  $handler->display->display_options['fields']['field_before_after_care']['table'] = 'field_data_field_before_after_care';
+  $handler->display->display_options['fields']['field_before_after_care']['field'] = 'field_before_after_care';
+  $handler->display->display_options['fields']['field_before_after_care']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_before_after_care']['delta_offset'] = '0';
+  /* Field: Content: Boys Sports */
+  $handler->display->display_options['fields']['field_boys_sports']['id'] = 'field_boys_sports';
+  $handler->display->display_options['fields']['field_boys_sports']['table'] = 'field_data_field_boys_sports';
+  $handler->display->display_options['fields']['field_boys_sports']['field'] = 'field_boys_sports';
+  $handler->display->display_options['fields']['field_boys_sports']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_boys_sports']['delta_offset'] = '0';
+  /* Field: Content: Bullying Policy */
+  $handler->display->display_options['fields']['field_bullying_policy']['id'] = 'field_bullying_policy';
+  $handler->display->display_options['fields']['field_bullying_policy']['table'] = 'field_data_field_bullying_policy';
+  $handler->display->display_options['fields']['field_bullying_policy']['field'] = 'field_bullying_policy';
+  $handler->display->display_options['fields']['field_bullying_policy']['relationship'] = 'tid_representative';
+  /* Field: Content: College Prep */
+  $handler->display->display_options['fields']['field_college_prep_1']['id'] = 'field_college_prep_1';
+  $handler->display->display_options['fields']['field_college_prep_1']['table'] = 'field_data_field_college_prep';
+  $handler->display->display_options['fields']['field_college_prep_1']['field'] = 'field_college_prep';
+  $handler->display->display_options['fields']['field_college_prep_1']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_college_prep_1']['delta_offset'] = '0';
+  /* Field: Content: ELL Level */
+  $handler->display->display_options['fields']['field_ell_level']['id'] = 'field_ell_level';
+  $handler->display->display_options['fields']['field_ell_level']['table'] = 'field_data_field_ell_level';
+  $handler->display->display_options['fields']['field_ell_level']['field'] = 'field_ell_level';
+  $handler->display->display_options['fields']['field_ell_level']['relationship'] = 'tid_representative';
+  /* Field: Content: ELL Languages */
+  $handler->display->display_options['fields']['field_ell_languages']['id'] = 'field_ell_languages';
+  $handler->display->display_options['fields']['field_ell_languages']['table'] = 'field_data_field_ell_languages';
+  $handler->display->display_options['fields']['field_ell_languages']['field'] = 'field_ell_languages';
+  $handler->display->display_options['fields']['field_ell_languages']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_ell_languages']['delta_offset'] = '0';
+  /* Field: Content: Extra Learning Resources */
+  $handler->display->display_options['fields']['field_extra_learning_resources']['id'] = 'field_extra_learning_resources';
+  $handler->display->display_options['fields']['field_extra_learning_resources']['table'] = 'field_data_field_extra_learning_resources';
+  $handler->display->display_options['fields']['field_extra_learning_resources']['field'] = 'field_extra_learning_resources';
+  $handler->display->display_options['fields']['field_extra_learning_resources']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_extra_learning_resources']['delta_offset'] = '0';
+  /* Field: Content: Facebook URL */
+  $handler->display->display_options['fields']['field_facebook_url']['id'] = 'field_facebook_url';
+  $handler->display->display_options['fields']['field_facebook_url']['table'] = 'field_data_field_facebook_url';
+  $handler->display->display_options['fields']['field_facebook_url']['field'] = 'field_facebook_url';
+  $handler->display->display_options['fields']['field_facebook_url']['relationship'] = 'tid_representative';
+  /* Field: Content: Facilities */
+  $handler->display->display_options['fields']['field_facilities']['id'] = 'field_facilities';
+  $handler->display->display_options['fields']['field_facilities']['table'] = 'field_data_field_facilities';
+  $handler->display->display_options['fields']['field_facilities']['field'] = 'field_facilities';
+  $handler->display->display_options['fields']['field_facilities']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_facilities']['delta_offset'] = '0';
+  /* Field: Content: Feeder School */
+  $handler->display->display_options['fields']['field_feeder_school']['id'] = 'field_feeder_school';
+  $handler->display->display_options['fields']['field_feeder_school']['table'] = 'field_data_field_feeder_school';
+  $handler->display->display_options['fields']['field_feeder_school']['field'] = 'field_feeder_school';
+  $handler->display->display_options['fields']['field_feeder_school']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_feeder_school']['delta_offset'] = '0';
+  /* Field: Content: Foreign Language */
+  $handler->display->display_options['fields']['field_foreign_language']['id'] = 'field_foreign_language';
+  $handler->display->display_options['fields']['field_foreign_language']['table'] = 'field_data_field_foreign_language';
+  $handler->display->display_options['fields']['field_foreign_language']['field'] = 'field_foreign_language';
+  $handler->display->display_options['fields']['field_foreign_language']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_foreign_language']['delta_offset'] = '0';
+  /* Field: Content: General Contact Phone */
+  $handler->display->display_options['fields']['field_general_contact_phone']['id'] = 'field_general_contact_phone';
+  $handler->display->display_options['fields']['field_general_contact_phone']['table'] = 'field_data_field_general_contact_phone';
+  $handler->display->display_options['fields']['field_general_contact_phone']['field'] = 'field_general_contact_phone';
+  $handler->display->display_options['fields']['field_general_contact_phone']['relationship'] = 'tid_representative';
+  /* Field: Content: Girls Sports */
+  $handler->display->display_options['fields']['field_girls_sports']['id'] = 'field_girls_sports';
+  $handler->display->display_options['fields']['field_girls_sports']['table'] = 'field_data_field_girls_sports';
+  $handler->display->display_options['fields']['field_girls_sports']['field'] = 'field_girls_sports';
+  $handler->display->display_options['fields']['field_girls_sports']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_girls_sports']['delta_offset'] = '0';
+  /* Field: Content: Grades Served */
+  $handler->display->display_options['fields']['field_grades_served']['id'] = 'field_grades_served';
+  $handler->display->display_options['fields']['field_grades_served']['table'] = 'field_data_field_grades_served';
+  $handler->display->display_options['fields']['field_grades_served']['field'] = 'field_grades_served';
+  $handler->display->display_options['fields']['field_grades_served']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_grades_served']['delta_offset'] = '0';
+  /* Field: Content: Immersion */
+  $handler->display->display_options['fields']['field_immersion']['id'] = 'field_immersion';
+  $handler->display->display_options['fields']['field_immersion']['table'] = 'field_data_field_immersion';
+  $handler->display->display_options['fields']['field_immersion']['field'] = 'field_immersion';
+  $handler->display->display_options['fields']['field_immersion']['relationship'] = 'tid_representative';
+  /* Field: Content: Instructional Model */
+  $handler->display->display_options['fields']['field_instructional_model']['id'] = 'field_instructional_model';
+  $handler->display->display_options['fields']['field_instructional_model']['table'] = 'field_data_field_instructional_model';
+  $handler->display->display_options['fields']['field_instructional_model']['field'] = 'field_instructional_model';
+  $handler->display->display_options['fields']['field_instructional_model']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_instructional_model']['delta_offset'] = '0';
+  /* Field: Content: Parent Involvement */
+  $handler->display->display_options['fields']['field_parent_involvement']['id'] = 'field_parent_involvement';
+  $handler->display->display_options['fields']['field_parent_involvement']['table'] = 'field_data_field_parent_involvement';
+  $handler->display->display_options['fields']['field_parent_involvement']['field'] = 'field_parent_involvement';
+  $handler->display->display_options['fields']['field_parent_involvement']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_parent_involvement']['delta_offset'] = '0';
+  /* Field: Content: Person Responsible */
+  $handler->display->display_options['fields']['field_person_responsible']['id'] = 'field_person_responsible';
+  $handler->display->display_options['fields']['field_person_responsible']['table'] = 'field_data_field_person_responsible';
+  $handler->display->display_options['fields']['field_person_responsible']['field'] = 'field_person_responsible';
+  $handler->display->display_options['fields']['field_person_responsible']['relationship'] = 'tid_representative';
+  /* Field: Content: Principal First Name */
+  $handler->display->display_options['fields']['field_school_contact_first_name']['id'] = 'field_school_contact_first_name';
+  $handler->display->display_options['fields']['field_school_contact_first_name']['table'] = 'field_data_field_school_contact_first_name';
+  $handler->display->display_options['fields']['field_school_contact_first_name']['field'] = 'field_school_contact_first_name';
+  $handler->display->display_options['fields']['field_school_contact_first_name']['relationship'] = 'tid_representative';
+  /* Field: Content: Principal Last Name */
+  $handler->display->display_options['fields']['field_school_contact_last_name']['id'] = 'field_school_contact_last_name';
+  $handler->display->display_options['fields']['field_school_contact_last_name']['table'] = 'field_data_field_school_contact_last_name';
+  $handler->display->display_options['fields']['field_school_contact_last_name']['field'] = 'field_school_contact_last_name';
+  $handler->display->display_options['fields']['field_school_contact_last_name']['relationship'] = 'tid_representative';
+  /* Field: Content: Schedule */
+  $handler->display->display_options['fields']['field_schedule']['id'] = 'field_schedule';
+  $handler->display->display_options['fields']['field_schedule']['table'] = 'field_data_field_schedule';
+  $handler->display->display_options['fields']['field_schedule']['field'] = 'field_schedule';
+  $handler->display->display_options['fields']['field_schedule']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_schedule']['delta_offset'] = '0';
+  /* Field: Content: School URL */
+  $handler->display->display_options['fields']['field_school_url']['id'] = 'field_school_url';
+  $handler->display->display_options['fields']['field_school_url']['table'] = 'field_data_field_school_url';
+  $handler->display->display_options['fields']['field_school_url']['field'] = 'field_school_url';
+  $handler->display->display_options['fields']['field_school_url']['relationship'] = 'tid_representative';
+  /* Field: Content: Site visit reuse reason */
+  $handler->display->display_options['fields']['field_site_visit_reuse_reason']['id'] = 'field_site_visit_reuse_reason';
+  $handler->display->display_options['fields']['field_site_visit_reuse_reason']['table'] = 'field_data_field_site_visit_reuse_reason';
+  $handler->display->display_options['fields']['field_site_visit_reuse_reason']['field'] = 'field_site_visit_reuse_reason';
+  $handler->display->display_options['fields']['field_site_visit_reuse_reason']['relationship'] = 'tid_representative';
+  /* Field: Content: Site visit status */
+  $handler->display->display_options['fields']['field_site_visit_status']['id'] = 'field_site_visit_status';
+  $handler->display->display_options['fields']['field_site_visit_status']['table'] = 'field_data_field_site_visit_status';
+  $handler->display->display_options['fields']['field_site_visit_status']['field'] = 'field_site_visit_status';
+  $handler->display->display_options['fields']['field_site_visit_status']['relationship'] = 'tid_representative';
+  /* Field: Content: Site visit unavailability */
+  $handler->display->display_options['fields']['field_site_visit_unavailability']['id'] = 'field_site_visit_unavailability';
+  $handler->display->display_options['fields']['field_site_visit_unavailability']['table'] = 'field_data_field_site_visit_unavailability';
+  $handler->display->display_options['fields']['field_site_visit_unavailability']['field'] = 'field_site_visit_unavailability';
+  $handler->display->display_options['fields']['field_site_visit_unavailability']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_site_visit_unavailability']['settings'] = array(
+    'format_type' => 'long',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
+  );
+  $handler->display->display_options['fields']['field_site_visit_unavailability']['delta_offset'] = '0';
+  /* Field: Content: Skills Training */
+  $handler->display->display_options['fields']['field_skills_training']['id'] = 'field_skills_training';
+  $handler->display->display_options['fields']['field_skills_training']['table'] = 'field_data_field_skills_training';
+  $handler->display->display_options['fields']['field_skills_training']['field'] = 'field_skills_training';
+  $handler->display->display_options['fields']['field_skills_training']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_skills_training']['delta_offset'] = '0';
+  /* Field: Content: Special Education Level */
+  $handler->display->display_options['fields']['field_special_ed_level']['id'] = 'field_special_ed_level';
+  $handler->display->display_options['fields']['field_special_ed_level']['table'] = 'field_data_field_special_ed_level';
+  $handler->display->display_options['fields']['field_special_ed_level']['field'] = 'field_special_ed_level';
+  $handler->display->display_options['fields']['field_special_ed_level']['relationship'] = 'tid_representative';
+  /* Field: Content: Special Education Programs */
+  $handler->display->display_options['fields']['field_special_ed_programs']['id'] = 'field_special_ed_programs';
+  $handler->display->display_options['fields']['field_special_ed_programs']['table'] = 'field_data_field_special_ed_programs';
+  $handler->display->display_options['fields']['field_special_ed_programs']['field'] = 'field_special_ed_programs';
+  $handler->display->display_options['fields']['field_special_ed_programs']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_special_ed_programs']['delta_offset'] = '0';
+  /* Field: Content: Staff Resources */
+  $handler->display->display_options['fields']['field_staff_resources']['id'] = 'field_staff_resources';
+  $handler->display->display_options['fields']['field_staff_resources']['table'] = 'field_data_field_staff_resources';
+  $handler->display->display_options['fields']['field_staff_resources']['field'] = 'field_staff_resources';
+  $handler->display->display_options['fields']['field_staff_resources']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_staff_resources']['delta_offset'] = '0';
+  /* Field: Content: Student Clubs */
+  $handler->display->display_options['fields']['field_student_clubs']['id'] = 'field_student_clubs';
+  $handler->display->display_options['fields']['field_student_clubs']['table'] = 'field_data_field_student_clubs';
+  $handler->display->display_options['fields']['field_student_clubs']['field'] = 'field_student_clubs';
+  $handler->display->display_options['fields']['field_student_clubs']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_student_clubs']['delta_offset'] = '0';
+  /* Field: Content: Student Clubs Dance */
+  $handler->display->display_options['fields']['field_student_clubs_dance']['id'] = 'field_student_clubs_dance';
+  $handler->display->display_options['fields']['field_student_clubs_dance']['table'] = 'field_data_field_student_clubs_dance';
+  $handler->display->display_options['fields']['field_student_clubs_dance']['field'] = 'field_student_clubs_dance';
+  $handler->display->display_options['fields']['field_student_clubs_dance']['relationship'] = 'tid_representative';
+  /* Field: Content: Student Clubs Language */
+  $handler->display->display_options['fields']['field_student_clubs_language']['id'] = 'field_student_clubs_language';
+  $handler->display->display_options['fields']['field_student_clubs_language']['table'] = 'field_data_field_student_clubs_language';
+  $handler->display->display_options['fields']['field_student_clubs_language']['field'] = 'field_student_clubs_language';
+  $handler->display->display_options['fields']['field_student_clubs_language']['relationship'] = 'tid_representative';
+  /* Field: Content: Student Clubs Other */
+  $handler->display->display_options['fields']['field_student_clubs_other']['id'] = 'field_student_clubs_other';
+  $handler->display->display_options['fields']['field_student_clubs_other']['table'] = 'field_data_field_student_clubs_other';
+  $handler->display->display_options['fields']['field_student_clubs_other']['field'] = 'field_student_clubs_other';
+  $handler->display->display_options['fields']['field_student_clubs_other']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_student_clubs_other']['delta_offset'] = '0';
+  /* Field: Content: Students Accepted */
+  $handler->display->display_options['fields']['field_students_accepted']['id'] = 'field_students_accepted';
+  $handler->display->display_options['fields']['field_students_accepted']['table'] = 'field_data_field_students_accepted';
+  $handler->display->display_options['fields']['field_students_accepted']['field'] = 'field_students_accepted';
+  $handler->display->display_options['fields']['field_students_accepted']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_students_accepted']['settings'] = array(
+    'thousand_separator' => ' ',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: Time of your site visit */
+  $handler->display->display_options['fields']['field_site_visit_available_dates']['id'] = 'field_site_visit_available_dates';
+  $handler->display->display_options['fields']['field_site_visit_available_dates']['table'] = 'field_data_field_site_visit_available_dates';
+  $handler->display->display_options['fields']['field_site_visit_available_dates']['field'] = 'field_site_visit_available_dates';
+  $handler->display->display_options['fields']['field_site_visit_available_dates']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_site_visit_available_dates']['settings'] = array(
+    'format_type' => 'long',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
+  );
+  /* Field: Content: Transportation */
+  $handler->display->display_options['fields']['field_transportation_options']['id'] = 'field_transportation_options';
+  $handler->display->display_options['fields']['field_transportation_options']['table'] = 'field_data_field_transportation_options';
+  $handler->display->display_options['fields']['field_transportation_options']['field'] = 'field_transportation_options';
+  $handler->display->display_options['fields']['field_transportation_options']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_transportation_options']['delta_offset'] = '0';
+  /* Field: Field: Email */
+  $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
+  $handler->display->display_options['fields']['field_email']['table'] = 'field_data_field_email';
+  $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
+  $handler->display->display_options['fields']['field_email']['relationship'] = 'tid_representative';
+  /* Field: Content: Counselor/Student Ratio */
+  $handler->display->display_options['fields']['field_counselor_student_ratio']['id'] = 'field_counselor_student_ratio';
+  $handler->display->display_options['fields']['field_counselor_student_ratio']['table'] = 'field_data_field_counselor_student_ratio';
+  $handler->display->display_options['fields']['field_counselor_student_ratio']['field'] = 'field_counselor_student_ratio';
+  $handler->display->display_options['fields']['field_counselor_student_ratio']['relationship'] = 'tid_representative';
+  /* Field: Content: Destination School */
+  $handler->display->display_options['fields']['field_destination_school']['id'] = 'field_destination_school';
+  $handler->display->display_options['fields']['field_destination_school']['table'] = 'field_data_field_destination_school';
+  $handler->display->display_options['fields']['field_destination_school']['field'] = 'field_destination_school';
+  $handler->display->display_options['fields']['field_destination_school']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_destination_school']['delta_offset'] = '0';
+  /* Field: Content: Dress Code */
+  $handler->display->display_options['fields']['field_dress_code']['id'] = 'field_dress_code';
+  $handler->display->display_options['fields']['field_dress_code']['table'] = 'field_data_field_dress_code';
+  $handler->display->display_options['fields']['field_dress_code']['field'] = 'field_dress_code';
+  $handler->display->display_options['fields']['field_dress_code']['relationship'] = 'tid_representative';
+  /* Field: Content: Dual Enrollment */
+  $handler->display->display_options['fields']['field_dual_enrollment']['id'] = 'field_dual_enrollment';
+  $handler->display->display_options['fields']['field_dual_enrollment']['table'] = 'field_data_field_dual_enrollment';
+  $handler->display->display_options['fields']['field_dual_enrollment']['field'] = 'field_dual_enrollment';
+  $handler->display->display_options['fields']['field_dual_enrollment']['relationship'] = 'tid_representative';
+  /* Field: Content: Dual Enrollment Institutions */
+  $handler->display->display_options['fields']['field_dual_enrollment_institutio']['id'] = 'field_dual_enrollment_institutio';
+  $handler->display->display_options['fields']['field_dual_enrollment_institutio']['table'] = 'field_data_field_dual_enrollment_institutio';
+  $handler->display->display_options['fields']['field_dual_enrollment_institutio']['field'] = 'field_dual_enrollment_institutio';
+  $handler->display->display_options['fields']['field_dual_enrollment_institutio']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_dual_enrollment_institutio']['delta_offset'] = '0';
+  /* Field: Content: Early Child Center Relationships */
+  $handler->display->display_options['fields']['field_early_child_center_relatio']['id'] = 'field_early_child_center_relatio';
+  $handler->display->display_options['fields']['field_early_child_center_relatio']['table'] = 'field_data_field_early_child_center_relatio';
+  $handler->display->display_options['fields']['field_early_child_center_relatio']['field'] = 'field_early_child_center_relatio';
+  $handler->display->display_options['fields']['field_early_child_center_relatio']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_early_child_center_relatio']['delta_offset'] = '0';
+  /* Field: Content: Early Childhood Programs */
+  $handler->display->display_options['fields']['field_early_childhood_programs']['id'] = 'field_early_childhood_programs';
+  $handler->display->display_options['fields']['field_early_childhood_programs']['table'] = 'field_data_field_early_childhood_programs';
+  $handler->display->display_options['fields']['field_early_childhood_programs']['field'] = 'field_early_childhood_programs';
+  $handler->display->display_options['fields']['field_early_childhood_programs']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_early_childhood_programs']['delta_offset'] = '0';
+  /* Field: Content: Early Childhood Transition */
+  $handler->display->display_options['fields']['field_early_childhood_transition']['id'] = 'field_early_childhood_transition';
+  $handler->display->display_options['fields']['field_early_childhood_transition']['table'] = 'field_data_field_early_childhood_transition';
+  $handler->display->display_options['fields']['field_early_childhood_transition']['field'] = 'field_early_childhood_transition';
+  $handler->display->display_options['fields']['field_early_childhood_transition']['relationship'] = 'tid_representative';
+  /* Field: Content: Character Development */
+  $handler->display->display_options['fields']['field_character_development']['id'] = 'field_character_development';
+  $handler->display->display_options['fields']['field_character_development']['table'] = 'field_data_field_character_development';
+  $handler->display->display_options['fields']['field_character_development']['field'] = 'field_character_development';
+  $handler->display->display_options['fields']['field_character_development']['relationship'] = 'tid_representative';
+  /* Field: Content: College Counseling */
+  $handler->display->display_options['fields']['field_college_counseling_1']['id'] = 'field_college_counseling_1';
+  $handler->display->display_options['fields']['field_college_counseling_1']['table'] = 'field_data_field_college_counseling';
+  $handler->display->display_options['fields']['field_college_counseling_1']['field'] = 'field_college_counseling';
+  $handler->display->display_options['fields']['field_college_counseling_1']['relationship'] = 'tid_representative';
+  /* Field: Content: Discipline Programs */
+  $handler->display->display_options['fields']['field_discipline_programs']['id'] = 'field_discipline_programs';
+  $handler->display->display_options['fields']['field_discipline_programs']['table'] = 'field_data_field_discipline_programs';
+  $handler->display->display_options['fields']['field_discipline_programs']['field'] = 'field_discipline_programs';
+  $handler->display->display_options['fields']['field_discipline_programs']['relationship'] = 'tid_representative';
+  /* Field: Content: English Language Learners */
+  $handler->display->display_options['fields']['field_english_language_learners']['id'] = 'field_english_language_learners';
+  $handler->display->display_options['fields']['field_english_language_learners']['table'] = 'field_data_field_english_language_learners';
+  $handler->display->display_options['fields']['field_english_language_learners']['field'] = 'field_english_language_learners';
+  $handler->display->display_options['fields']['field_english_language_learners']['relationship'] = 'tid_representative';
+  /* Field: Content: Family Supports */
+  $handler->display->display_options['fields']['field_family_supports']['id'] = 'field_family_supports';
+  $handler->display->display_options['fields']['field_family_supports']['table'] = 'field_data_field_family_supports';
+  $handler->display->display_options['fields']['field_family_supports']['field'] = 'field_family_supports';
+  $handler->display->display_options['fields']['field_family_supports']['relationship'] = 'tid_representative';
+  /* Field: Content: In-School Programs */
+  $handler->display->display_options['fields']['field_in_school_programs']['id'] = 'field_in_school_programs';
+  $handler->display->display_options['fields']['field_in_school_programs']['table'] = 'field_data_field_in_school_programs';
+  $handler->display->display_options['fields']['field_in_school_programs']['field'] = 'field_in_school_programs';
+  $handler->display->display_options['fields']['field_in_school_programs']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_in_school_programs']['delta_offset'] = '0';
+  /* Field: Content: Organized Sports */
+  $handler->display->display_options['fields']['field_organized_sports']['id'] = 'field_organized_sports';
+  $handler->display->display_options['fields']['field_organized_sports']['table'] = 'field_data_field_organized_sports';
+  $handler->display->display_options['fields']['field_organized_sports']['field'] = 'field_organized_sports';
+  $handler->display->display_options['fields']['field_organized_sports']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_organized_sports']['delta_offset'] = '0';
+  /* Field: Content: Parent Supports */
+  $handler->display->display_options['fields']['field_parent_supports']['id'] = 'field_parent_supports';
+  $handler->display->display_options['fields']['field_parent_supports']['table'] = 'field_data_field_parent_supports';
+  $handler->display->display_options['fields']['field_parent_supports']['field'] = 'field_parent_supports';
+  $handler->display->display_options['fields']['field_parent_supports']['relationship'] = 'tid_representative';
+  /* Field: Content: Special Needs */
+  $handler->display->display_options['fields']['field_special_needs']['id'] = 'field_special_needs';
+  $handler->display->display_options['fields']['field_special_needs']['table'] = 'field_data_field_special_needs';
+  $handler->display->display_options['fields']['field_special_needs']['field'] = 'field_special_needs';
+  $handler->display->display_options['fields']['field_special_needs']['relationship'] = 'tid_representative';
+  /* Field: Content: Special Tracks */
+  $handler->display->display_options['fields']['field_special_tracks']['id'] = 'field_special_tracks';
+  $handler->display->display_options['fields']['field_special_tracks']['table'] = 'field_data_field_special_tracks';
+  $handler->display->display_options['fields']['field_special_tracks']['field'] = 'field_special_tracks';
+  $handler->display->display_options['fields']['field_special_tracks']['relationship'] = 'tid_representative';
+  /* Field: Content: Student Development Programs */
+  $handler->display->display_options['fields']['field_student_development_progra']['id'] = 'field_student_development_progra';
+  $handler->display->display_options['fields']['field_student_development_progra']['table'] = 'field_data_field_student_development_progra';
+  $handler->display->display_options['fields']['field_student_development_progra']['field'] = 'field_student_development_progra';
+  $handler->display->display_options['fields']['field_student_development_progra']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_student_development_progra']['delta_offset'] = '0';
+  /* Field: Content: Student Leadership Opportunities */
+  $handler->display->display_options['fields']['field_student_leadership_opportu']['id'] = 'field_student_leadership_opportu';
+  $handler->display->display_options['fields']['field_student_leadership_opportu']['table'] = 'field_data_field_student_leadership_opportu';
+  $handler->display->display_options['fields']['field_student_leadership_opportu']['field'] = 'field_student_leadership_opportu';
+  $handler->display->display_options['fields']['field_student_leadership_opportu']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_student_leadership_opportu']['delta_offset'] = '0';
+  /* Field: Content: Transportation */
+  $handler->display->display_options['fields']['field_transportation']['id'] = 'field_transportation';
+  $handler->display->display_options['fields']['field_transportation']['table'] = 'field_data_field_transportation';
+  $handler->display->display_options['fields']['field_transportation']['field'] = 'field_transportation';
+  $handler->display->display_options['fields']['field_transportation']['relationship'] = 'tid_representative';
+  $handler->display->display_options['path'] = 'sp-export';
+  $handler->display->display_options['displays'] = array(
+    'page_4' => 'page_4',
+    'default' => 0,
+    'page' => 0,
+    'page_1' => 0,
+    'page_2' => 0,
+    'page_3' => 0,
+    'page_5' => 0,
+  );
+  $handler->display->display_options['sitename_title'] = 0;
   $translatables['manage_schools'] = array(
     t('Master'),
-    t('Manage School Taxonomy'),
+    t('K-8'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -6139,14 +6844,100 @@ function esdportal_str_views_default_views() {
     t('School Name'),
     t('Profile'),
     t('Profile NID'),
-    t('Profile last updated'),
-    t('Taxonomy term'),
-    t('Taxonomy vocabulary'),
+    t('AP Classes'),
+    t('College Counseling'),
+    t('College Prep'),
+    t('Culture ltrgrade'),
+    t('Gradrate'),
+    t('.'),
+    t(','),
+    t('Mature ltrgrade'),
+    t('Progress ltrgrade'),
+    t('Status ltrgrade'),
     t('Machine name'),
     t('Filter by School Name'),
     t('Page'),
     t('dev info'),
+    t('Profile last updated'),
     t('geo'),
+    t('High Schools'),
+    t('esd_hs_2013.buildingcode -> field_data_field_bcode.field_bcode_value'),
+    t('Overall'),
+    t('Grad Rate'),
+    t('Status'),
+    t('Progress'),
+    t('Climate'),
+    t('School Profile Check'),
+    t('School Profiles'),
+    t('Academic Focus'),
+    t('Facilities'),
+    t('Instructional Model'),
+    t('Staff Resources'),
+    t('ELL Level'),
+    t('Special Education Level'),
+    t('Arts - Visual'),
+    t('Boys Sports'),
+    t('Girls Sports'),
+    t('Data export'),
+    t('Profile Data Export'),
+    t('School'),
+    t('Admissions URL'),
+    t('After School Transportation'),
+    t('Application Fee'),
+    t('Application Fee Amount'),
+    t('Application Process'),
+    t('Applications Received'),
+    t('Arts - Media'),
+    t('Arts - Music'),
+    t('Arts - Performing & Written'),
+    t('Before/After Care'),
+    t('Bullying Policy'),
+    t('ELL Languages'),
+    t('Extra Learning Resources'),
+    t('Facebook URL'),
+    t('Feeder School'),
+    t('Foreign Language'),
+    t('General Contact Phone'),
+    t('Grades Served'),
+    t('Immersion'),
+    t('Parent Involvement'),
+    t('Person Responsible'),
+    t('Principal First Name'),
+    t('Principal Last Name'),
+    t('Schedule'),
+    t('School URL'),
+    t('Site visit reuse reason'),
+    t('Site visit status'),
+    t('Site visit unavailability'),
+    t('Skills Training'),
+    t('Special Education Programs'),
+    t('Student Clubs'),
+    t('Student Clubs Dance'),
+    t('Student Clubs Language'),
+    t('Student Clubs Other'),
+    t('Students Accepted'),
+    t('Time of your site visit'),
+    t('Transportation'),
+    t('Email'),
+    t('Counselor/Student Ratio'),
+    t('Destination School'),
+    t('Dress Code'),
+    t('Dual Enrollment'),
+    t('Dual Enrollment Institutions'),
+    t('Early Child Center Relationships'),
+    t('Early Childhood Programs'),
+    t('Early Childhood Transition'),
+    t('Character Development'),
+    t('Discipline Programs'),
+    t('English Language Learners'),
+    t('Family Supports'),
+    t('In-School Programs'),
+    t('Organized Sports'),
+    t('Parent Supports'),
+    t('Special Needs'),
+    t('Special Tracks'),
+    t('Student Development Programs'),
+    t('Student Leadership Opportunities'),
   );
   $export['manage_schools'] = $view;
 
