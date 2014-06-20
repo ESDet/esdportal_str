@@ -19,8 +19,11 @@ function esdportal_str_default_box() {
   $box->description = 'Contact Info footer block';
   $box->options = array(
     'body' => array(
-      'value' => '<p>2111 Woodward Ave, Suite 506 Detroit, MI 48201 (313) 285-9156</p>
-',
+      'value' => '<p>2111 Woodward Ave, Suite 506</br>
+	Detroit, MI 48201</br>
+	(313) 285-9156</p>
+<p><a href="https://github.com/ESDet/esdportal_str/wiki/Public-datasets#license" target="_blank"><img alt="ODBL v1.0" src="/profiles/esdportal_profile/themes/esd/images/od_80x23_esd-view.png" title="ODBL v1.0"></br>
+	Our school data is freely available under the Open Database License v1.0</a></p>',
       'format' => 'full_html',
     ),
     'additional_classes' => '',
