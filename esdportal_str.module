@@ -621,6 +621,10 @@ function esdportal_str_send_unsafe_email_action($entity, $context) {
  * Implements hook_mail().
  */
 function esdportal_str_mail($key, &$message, $params) {
+  // set context if coming from a weird form like our feedback form
+  if (!isset($params['context'])) {
+    $params['context'] = $params;
+  }
   $context = $params['context'];
 
   // set from
