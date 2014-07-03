@@ -638,20 +638,28 @@ function esdportal_str_mail($key, &$message, $params) {
     $message['headers']['Bcc'] = $context['bcc'];
   }
 
-  $subject = token_replace($context['subject'], $context);
+  if (isset($context['subject'])) {
+    $subject = token_replace($context['subject'], $context);
+  }
   //$body = token_replace($context['message'], $context);
   // this is our one modification:
-  $body = token_replace($context['message'], $context, array('language' => $language, 'callback' => 'user_mail_tokens', 'sanitize' => FALSE, 'clear' => TRUE));
+  if (isset($context['message'])) {
+    $body = token_replace($context['message'], $context, array('callback' => 'user_mail_tokens', 'sanitize' => FALSE, 'clear' => TRUE));
+  }
 
-  $message['subject'] .= str_replace(array("\r", "\n"), '', $subject);
-  $message['body'][] = $body;
+  if (isset($subject)) {
+    $message['subject'] .= str_replace(array("\r", "\n"), '', $subject);
+  }
+  if (isset($body)) {
+    $message['body'][] = $body;
+  }
 }
 
 function esdportal_str_mail_alter(&$message) {
   $return_path_matches = array();
   $return_path = '';
 
-  if (!$message['custom_from']) {
+  if (!isset($message['custom_from'])) {
     $message['from'] = '"Excellent Schools Detroit Logistics" <qedgar@excellentschoolsdetroit.org>';
   }
   $message['headers']['From'] = $message['headers']['Sender'] = $message['from'];
