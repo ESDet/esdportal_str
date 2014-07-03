@@ -177,7 +177,7 @@ function esdportal_str_form_submit($form, &$form_state) {
   $key = 'feedback';
   $from = variable_get('site_mail', 'eanderson@excellentschoolsdetroit.org');
 
-  $message = drupal_mail($module, $key, $to, language_default(), $vals, $from, FALSE);
+  $message = drupal_mail($module, $key, $from, language_default(), $vals, $from, FALSE);
   $message['subject'] = t('Portal feedback from user @username', array('@username' => $user->name));
   $message['body'] = t('@name wrote:', array('@name' => $user->name)) . "\n\n" . $vals['comments'];
   $message['body'] .= "\n\n--\n" . t('Submitted by user @user from @url', array('@user' => $user->name, '@url' => $_SERVER['REQUEST_URI']));
