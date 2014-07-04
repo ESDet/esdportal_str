@@ -113,10 +113,6 @@ function esdportal_str_strongarm() {
       0 => 'act_2013',
       1 => 'BuildingCode',
     ),
-    'data_earlychild' => array(
-      0 => 'earlychild',
-      1 => 'id',
-    ),
     'data_esd_hs_2013' => array(
       0 => 'esd_hs_2013',
       1 => 'buildingcode',
@@ -148,6 +144,10 @@ function esdportal_str_strongarm() {
     'data_meap_2012' => array(
       0 => 'meap_2012',
       1 => 'BuildingCode',
+    ),
+    'data_earlychild' => array(
+      0 => 'earlychild',
+      1 => 'id',
     ),
     'node' => array(
       0 => 'node',
@@ -572,6 +572,16 @@ batch';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'mail_system';
+  $strongarm->value = array(
+    'default-system' => 'MimeMailSystem',
+    'mimemail' => 'MimeMailSystem',
+  );
+  $export['mail_system'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_page';
   $strongarm->value = array();
   $export['menu_options_page'] = $strongarm;
@@ -598,6 +608,83 @@ batch';
   $strongarm->name = 'menu_parent_school_profile';
   $strongarm->value = 'main-menu:0';
   $export['menu_parent_school_profile'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mimemail_alter';
+  $strongarm->value = FALSE;
+  $export['mimemail_alter'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mimemail_engine';
+  $strongarm->value = '';
+  $export['mimemail_engine'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mimemail_format';
+  $strongarm->value = 'full_html';
+  $export['mimemail_format'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mimemail_incoming';
+  $strongarm->value = 0;
+  $export['mimemail_incoming'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mimemail_key';
+  $strongarm->value = 'd21d870c62d261c783ef1e6a5875e4be';
+  $export['mimemail_key'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mimemail_linkonly';
+  $strongarm->value = 0;
+  $export['mimemail_linkonly'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mimemail_mail';
+  $strongarm->value = 'qedgar@excellentschoolsdetroit.org';
+  $export['mimemail_mail'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mimemail_name';
+  $strongarm->value = 'Excellent Schools Detroit Portal poop';
+  $export['mimemail_name'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mimemail_simple_address';
+  $strongarm->value = 0;
+  $export['mimemail_simple_address'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mimemail_sitestyle';
+  $strongarm->value = 0;
+  $export['mimemail_sitestyle'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mimemail_textonly';
+  $strongarm->value = 0;
+  $export['mimemail_textonly'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
