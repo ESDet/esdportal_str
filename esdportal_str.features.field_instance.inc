@@ -4977,6 +4977,47 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-schools-field_esd_schid'
+  $field_instances['taxonomy_term-schools-field_esd_schid'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 32,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_esd_schid',
+    'label' => 'ESD Basis ID',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 30,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 60,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-schools-field_files'
   $field_instances['taxonomy_term-schools-field_files'] = array(
     'bundle' => 'schools',
@@ -5890,6 +5931,7 @@ function esdportal_str_field_default_field_instances() {
   t('Dual Enrollment Institutions');
   t('ELL Languages');
   t('ELL Level');
+  t('ESD Basis ID');
   t('ESD Exclusive Typology');
   t('Early Child Center Relationships');
   t('Early Childhood Programs');
