@@ -9,6 +9,7 @@ dependencies[] = boxes
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = data
+dependencies[] = data_ui
 dependencies[] = date
 dependencies[] = editablefields
 dependencies[] = entityreference

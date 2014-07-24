@@ -105,6 +105,10 @@ function esdportal_str_strongarm() {
       0 => 'meap_2012',
       1 => 'BuildingCode',
     ),
+    'data_meap_2013' => array(
+      0 => 'meap_2013',
+      1 => 'BuildingCode',
+    ),
     'data_act_2011' => array(
       0 => 'act_2011',
       1 => 'BuildingCode',
@@ -155,10 +159,6 @@ function esdportal_str_strongarm() {
     ),
     'data_meap_2011' => array(
       0 => 'meap_2011',
-      1 => 'BuildingCode',
-    ),
-    'data_meap_2013' => array(
-      0 => 'meap_2013',
       1 => 'BuildingCode',
     ),
     'node' => array(
