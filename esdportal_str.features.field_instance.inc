@@ -2134,11 +2134,7 @@ function esdportal_str_field_default_field_instances() {
   // Exported field_instance: 'node-school_profile-field_facebook_url'
   $field_instances['node-school_profile-field_facebook_url'] = array(
     'bundle' => 'school_profile',
-    'default_value' => array(
-      0 => array(
-        'value' => 'https://',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => 'School Facebook page',
     'display' => array(
