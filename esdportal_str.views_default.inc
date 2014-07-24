@@ -13883,11 +13883,6 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['OTHER_COMPLETER_6_YEAR']['table'] = 'meap_2012';
   $handler->display->display_options['fields']['OTHER_COMPLETER_6_YEAR']['field'] = 'OTHER_COMPLETER_6_YEAR';
   $handler->display->display_options['fields']['OTHER_COMPLETER_6_YEAR']['label'] = '';
-  /* Field: MEAP 2012: Sort order */
-  $handler->display->display_options['fields']['SORT_ORDER']['id'] = 'SORT_ORDER';
-  $handler->display->display_options['fields']['SORT_ORDER']['table'] = 'meap_2012';
-  $handler->display->display_options['fields']['SORT_ORDER']['field'] = 'SORT_ORDER';
-  $handler->display->display_options['fields']['SORT_ORDER']['label'] = '';
   /* Field: MEAP 2012: Edit link */
   $handler->display->display_options['fields']['edit_link']['id'] = 'edit_link';
   $handler->display->display_options['fields']['edit_link']['table'] = 'meap_2012';
