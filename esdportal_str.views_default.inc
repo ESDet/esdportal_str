@@ -2189,21 +2189,11 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['Development_rating']['table'] = 'esd_el_2014';
   $handler->display->display_options['fields']['Development_rating']['field'] = 'Development_rating';
   $handler->display->display_options['fields']['Development_rating']['label'] = 'Development_rating';
-  /* Field: Esd el 2014: teacher_score_mean */
-  $handler->display->display_options['fields']['teacher_score_mean']['id'] = 'teacher_score_mean';
-  $handler->display->display_options['fields']['teacher_score_mean']['table'] = 'esd_el_2014';
-  $handler->display->display_options['fields']['teacher_score_mean']['field'] = 'teacher_score_mean';
-  $handler->display->display_options['fields']['teacher_score_mean']['label'] = 'teacher_score_mean';
   /* Field: Esd el 2014: Global_rating */
   $handler->display->display_options['fields']['Global_rating']['id'] = 'Global_rating';
   $handler->display->display_options['fields']['Global_rating']['table'] = 'esd_el_2014';
   $handler->display->display_options['fields']['Global_rating']['field'] = 'Global_rating';
   $handler->display->display_options['fields']['Global_rating']['label'] = 'Global_rating';
-  /* Field: Esd el 2014: site_visit_points */
-  $handler->display->display_options['fields']['site_visit_points']['id'] = 'site_visit_points';
-  $handler->display->display_options['fields']['site_visit_points']['table'] = 'esd_el_2014';
-  $handler->display->display_options['fields']['site_visit_points']['field'] = 'site_visit_points';
-  $handler->display->display_options['fields']['site_visit_points']['label'] = 'site_visit_points';
   /* Field: Esd el 2014: Overall_Site_Visit_Rating */
   $handler->display->display_options['fields']['Overall_Site_Visit_Rating']['id'] = 'Overall_Site_Visit_Rating';
   $handler->display->display_options['fields']['Overall_Site_Visit_Rating']['table'] = 'esd_el_2014';
@@ -2340,13 +2330,6 @@ function esdportal_str_views_default_views() {
   /* Display: Services */
   $handler = $view->new_display('services', 'Services', 'services_1');
   $handler->display->display_options['path'] = 'esd_el_2014';
-
-  /* Display: Data export */
-  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
-  $handler->display->display_options['pager']['type'] = 'none';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
-  $handler->display->display_options['path'] = 'csv/esd_el_2014';
   $export['esd_el_2014'] = $view;
 
   $view = new view();
@@ -5866,6 +5849,931 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
   $handler->display->display_options['path'] = 'csv/esd_k8_2014';
   $export['esd_k8_2014'] = $view;
+
+  $view = new view();
+  $view->name = 'esd_site_visit_2014';
+  $view->description = 'Default view for data table Esd Site Visit 2014';
+  $view->tag = 'data table';
+  $view->base_table = 'esd_site_visit_2014';
+  $view->human_name = '';
+  $view->core = 0;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Default */
+  $handler = $view->new_display('default', 'Default', 'default');
+  $handler->display->display_options['title'] = 'Esd Site Visit 2014';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '100';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['grouping'] = '';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'bcode' => 'bcode',
+    'School' => 'School',
+    'school_slug' => 'school_slug',
+    'level_0' => 'level_0',
+    'index' => 'index',
+    'academic_progress_display_labeled' => 'academic_progress_display_labeled',
+    'academic_progress_display_throughout' => 'academic_progress_display_throughout',
+    'achievement_info_accessible' => 'achievement_info_accessible',
+    'achievement_info_provided' => 'achievement_info_provided',
+    'adults_care_student_well_being' => 'adults_care_student_well_being',
+    'appearance' => 'appearance',
+    'athletic_instruction' => 'athletic_instruction',
+    'auditorium' => 'auditorium',
+    'books_materials_reasonable_condition' => 'books_materials_reasonable_condition',
+    'career_resources_available' => 'career_resources_available',
+    'career_technical_training_info_displayed' => 'career_technical_training_info_displayed',
+    'class_clean' => 'class_clean',
+    'class_clear' => 'class_clear',
+    'class_display_activity' => 'class_display_activity',
+    'class_display_work' => 'class_display_work',
+    'class_teacher_qual' => 'class_teacher_qual',
+    'class_temperature' => 'class_teacher_qual',
+    'college_info_displayed' => 'college_info_displayed',
+    'college_resources_available' => 'college_resources_available',
+    'computers_working_order' => 'computers_working_order',
+    'enrichment_extra_curricular_displayed' => 'enrichment_extra_curricular_displayed',
+    'entrance_clearly_indicated' => 'entrance_clearly_indicated',
+    'entryway_inside_well_maintained' => 'entryway_inside_well_maintained',
+    'entryway_outside_well_maintained' => 'entryway_outside_well_maintained',
+    'entryway_staffed_entry_system' => 'entryway_staffed_entry_system',
+    'family_involvement_display_evidence' => 'family_involvement_display_evidence',
+    'grounds_well_maintained' => 'grounds_well_maintained',
+    'images_role_models_reflective_display' => 'images_role_models_reflective_display',
+    'library_exists' => 'library_exists',
+    'library_periodicals' => 'library_periodicals',
+    'library_periodicals_recent' => 'library_periodicals_recent',
+    'media_lab_laptop_cart' => 'media_lab_laptop_cart',
+    'music_instruction_space' => 'music_instruction_space',
+    'office_clearly_identified' => 'office_clearly_identified',
+    'office_reception_area_orderly' => 'office_reception_area_orderly',
+    'office_signage_immediately_visible' => 'office_signage_immediately_visible',
+    'parent_info_available' => 'parent_info_available',
+    'parent_info_multi_languages' => 'parent_info_multi_languages',
+    'parent_info_recent' => 'parent_info_recent',
+    'parent_resources_reflective_languages' => 'parent_resources_reflective_languages',
+    'parent_support_materials_displayed' => 'parent_support_materials_displayed',
+    'parking_lot_clean' => 'parking_lot_clean',
+    'parking_lot_good_repair' => 'parking_lot_good_repair',
+    'policies_displayed_distributed' => 'policies_displayed_distributed',
+    'positive' => 'positive',
+    'positive_staff_student_interaction' => 'positive_staff_student_interaction',
+    'positive_teacher_student_interaction' => 'positive_teacher_student_interaction',
+    'recent_news_activities_displayed' => 'recent_news_activities_displayed',
+    'safety_procedures' => 'safety_procedures',
+    'school_culture_supporting_community' => 'school_culture_supporting_community',
+    'school_exterior_good_repair' => 'school_exterior_good_repair',
+    'school_promotes_college_culture' => 'school_promotes_college_culture',
+    'science_space' => 'science_space',
+    'signage_visible_good_repair' => 'signage_visible_good_repair',
+    'social_emotional_support_options_display' => 'social_emotional_support_options_display',
+    'staff_welcoming_visitors' => 'staff_welcoming_visitors',
+    'student_work_celebrated' => 'student_work_celebrated',
+    'student_work_display_topic_quality' => 'student_work_display_topic_quality',
+    'students_engaged_on_task' => 'students_engaged_on_task',
+    'surrounding_area_safe_well_maintained' => 'surrounding_area_safe_well_maintained',
+    'surrounding_houses_occupied' => 'surrounding_houses_occupied',
+    'teachers_welcoming_visitors' => 'teachers_welcoming_visitors',
+    'visitors_feel_welcome' => 'visitors_feel_welcome',
+    'visitors_greeted_polite' => 'visitors_greeted_polite',
+    'visual_arts_instruction_space' => 'visual_arts_instruction_space',
+    'welcoming' => 'welcoming',
+    'academic_displays' => 'academic_displays',
+    'caring_environment' => 'caring_environment',
+    'college_promoted' => 'college_promoted',
+    'safe_environment' => 'safe_environment',
+    'visitor_resources' => 'visitor_resources',
+    'welcoming_culture' => 'welcoming_culture',
+    'domain_community' => 'domain_community',
+    'domain_environment' => 'domain_environment',
+    'domain_expectations' => 'domain_expectations',
+    'overall_score' => 'overall_score',
+    'overall_distance' => 'overall_distance',
+    'overall_points10' => 'overall_points10',
+    'n_obs' => 'n_obs',
+  );
+  $handler->display->display_options['style_options']['default'] = -1;
+  $handler->display->display_options['style_options']['info'] = array(
+    'bcode' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'School' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'school_slug' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'level_0' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'index' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'academic_progress_display_labeled' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'academic_progress_display_throughout' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'achievement_info_accessible' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'achievement_info_provided' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'adults_care_student_well_being' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'appearance' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'athletic_instruction' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'auditorium' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'books_materials_reasonable_condition' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'career_resources_available' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'career_technical_training_info_displayed' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'class_clean' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'class_clear' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'class_display_activity' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'class_display_work' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'class_teacher_qual' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'class_temperature' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'college_info_displayed' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'college_resources_available' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'computers_working_order' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'enrichment_extra_curricular_displayed' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'entrance_clearly_indicated' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'entryway_inside_well_maintained' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'entryway_outside_well_maintained' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'entryway_staffed_entry_system' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'family_involvement_display_evidence' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'grounds_well_maintained' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'images_role_models_reflective_display' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'library_exists' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'library_periodicals' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'library_periodicals_recent' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'media_lab_laptop_cart' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'music_instruction_space' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'office_clearly_identified' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'office_reception_area_orderly' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'office_signage_immediately_visible' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'parent_info_available' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'parent_info_multi_languages' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'parent_info_recent' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'parent_resources_reflective_languages' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'parent_support_materials_displayed' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'parking_lot_clean' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'parking_lot_good_repair' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'policies_displayed_distributed' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'positive' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'positive_staff_student_interaction' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'positive_teacher_student_interaction' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'recent_news_activities_displayed' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'safety_procedures' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'school_culture_supporting_community' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'school_exterior_good_repair' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'school_promotes_college_culture' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'science_space' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'signage_visible_good_repair' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'social_emotional_support_options_display' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'staff_welcoming_visitors' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'student_work_celebrated' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'student_work_display_topic_quality' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'students_engaged_on_task' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'surrounding_area_safe_well_maintained' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'surrounding_houses_occupied' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'teachers_welcoming_visitors' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'visitors_feel_welcome' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'visitors_greeted_polite' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'visual_arts_instruction_space' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'welcoming' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'academic_displays' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'caring_environment' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'college_promoted' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'safe_environment' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'visitor_resources' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'welcoming_culture' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'domain_community' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'domain_environment' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'domain_expectations' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'overall_score' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'overall_distance' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'overall_points10' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'n_obs' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+  );
+  $handler->display->display_options['style_options']['sticky'] = TRUE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['text']['id'] = 'area';
+  $handler->display->display_options['empty']['text']['table'] = 'views';
+  $handler->display->display_options['empty']['text']['field'] = 'area';
+  $handler->display->display_options['empty']['text']['content'] = 'There is no data in this table.';
+  $handler->display->display_options['empty']['text']['format'] = '1';
+  /* Field: Esd Site Visit 2014: bcode */
+  $handler->display->display_options['fields']['bcode']['id'] = 'bcode';
+  $handler->display->display_options['fields']['bcode']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['bcode']['field'] = 'bcode';
+  $handler->display->display_options['fields']['bcode']['label'] = 'bcode';
+  /* Field: Esd Site Visit 2014: School */
+  $handler->display->display_options['fields']['School']['id'] = 'School';
+  $handler->display->display_options['fields']['School']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['School']['field'] = 'School';
+  $handler->display->display_options['fields']['School']['label'] = 'School';
+  /* Field: Esd Site Visit 2014: school_slug */
+  $handler->display->display_options['fields']['school_slug']['id'] = 'school_slug';
+  $handler->display->display_options['fields']['school_slug']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['school_slug']['field'] = 'school_slug';
+  $handler->display->display_options['fields']['school_slug']['label'] = 'school_slug';
+  /* Field: Esd Site Visit 2014: level_0 */
+  $handler->display->display_options['fields']['level_0']['id'] = 'level_0';
+  $handler->display->display_options['fields']['level_0']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['level_0']['field'] = 'level_0';
+  $handler->display->display_options['fields']['level_0']['label'] = 'level_0';
+  /* Field: Esd Site Visit 2014: index */
+  $handler->display->display_options['fields']['index']['id'] = 'index';
+  $handler->display->display_options['fields']['index']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['index']['field'] = 'index';
+  $handler->display->display_options['fields']['index']['label'] = 'index';
+  /* Field: Esd Site Visit 2014: academic_progress_display_labeled */
+  $handler->display->display_options['fields']['academic_progress_display_labeled']['id'] = 'academic_progress_display_labeled';
+  $handler->display->display_options['fields']['academic_progress_display_labeled']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['academic_progress_display_labeled']['field'] = 'academic_progress_display_labeled';
+  $handler->display->display_options['fields']['academic_progress_display_labeled']['label'] = 'academic_progress_display_labeled';
+  /* Field: Esd Site Visit 2014: academic_progress_display_throughout */
+  $handler->display->display_options['fields']['academic_progress_display_throughout']['id'] = 'academic_progress_display_throughout';
+  $handler->display->display_options['fields']['academic_progress_display_throughout']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['academic_progress_display_throughout']['field'] = 'academic_progress_display_throughout';
+  $handler->display->display_options['fields']['academic_progress_display_throughout']['label'] = 'academic_progress_display_throughout';
+  /* Field: Esd Site Visit 2014: achievement_info_accessible */
+  $handler->display->display_options['fields']['achievement_info_accessible']['id'] = 'achievement_info_accessible';
+  $handler->display->display_options['fields']['achievement_info_accessible']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['achievement_info_accessible']['field'] = 'achievement_info_accessible';
+  $handler->display->display_options['fields']['achievement_info_accessible']['label'] = 'achievement_info_accessible';
+  /* Field: Esd Site Visit 2014: achievement_info_provided */
+  $handler->display->display_options['fields']['achievement_info_provided']['id'] = 'achievement_info_provided';
+  $handler->display->display_options['fields']['achievement_info_provided']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['achievement_info_provided']['field'] = 'achievement_info_provided';
+  $handler->display->display_options['fields']['achievement_info_provided']['label'] = 'achievement_info_provided';
+  /* Field: Esd Site Visit 2014: adults_care_student_well_being */
+  $handler->display->display_options['fields']['adults_care_student_well_being']['id'] = 'adults_care_student_well_being';
+  $handler->display->display_options['fields']['adults_care_student_well_being']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['adults_care_student_well_being']['field'] = 'adults_care_student_well_being';
+  $handler->display->display_options['fields']['adults_care_student_well_being']['label'] = 'adults_care_student_well_being';
+  /* Field: Esd Site Visit 2014: appearance */
+  $handler->display->display_options['fields']['appearance']['id'] = 'appearance';
+  $handler->display->display_options['fields']['appearance']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['appearance']['field'] = 'appearance';
+  $handler->display->display_options['fields']['appearance']['label'] = 'appearance';
+  /* Field: Esd Site Visit 2014: athletic_instruction */
+  $handler->display->display_options['fields']['athletic_instruction']['id'] = 'athletic_instruction';
+  $handler->display->display_options['fields']['athletic_instruction']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['athletic_instruction']['field'] = 'athletic_instruction';
+  $handler->display->display_options['fields']['athletic_instruction']['label'] = 'athletic_instruction';
+  /* Field: Esd Site Visit 2014: auditorium */
+  $handler->display->display_options['fields']['auditorium']['id'] = 'auditorium';
+  $handler->display->display_options['fields']['auditorium']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['auditorium']['field'] = 'auditorium';
+  $handler->display->display_options['fields']['auditorium']['label'] = 'auditorium';
+  /* Field: Esd Site Visit 2014: books_materials_reasonable_condition */
+  $handler->display->display_options['fields']['books_materials_reasonable_condition']['id'] = 'books_materials_reasonable_condition';
+  $handler->display->display_options['fields']['books_materials_reasonable_condition']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['books_materials_reasonable_condition']['field'] = 'books_materials_reasonable_condition';
+  $handler->display->display_options['fields']['books_materials_reasonable_condition']['label'] = 'books_materials_reasonable_condition';
+  /* Field: Esd Site Visit 2014: career_resources_available */
+  $handler->display->display_options['fields']['career_resources_available']['id'] = 'career_resources_available';
+  $handler->display->display_options['fields']['career_resources_available']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['career_resources_available']['field'] = 'career_resources_available';
+  $handler->display->display_options['fields']['career_resources_available']['label'] = 'career_resources_available';
+  /* Field: Esd Site Visit 2014: career_technical_training_info_displayed */
+  $handler->display->display_options['fields']['career_technical_training_info_displayed']['id'] = 'career_technical_training_info_displayed';
+  $handler->display->display_options['fields']['career_technical_training_info_displayed']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['career_technical_training_info_displayed']['field'] = 'career_technical_training_info_displayed';
+  $handler->display->display_options['fields']['career_technical_training_info_displayed']['label'] = 'career_technical_training_info_displayed';
+  /* Field: Esd Site Visit 2014: class_clean */
+  $handler->display->display_options['fields']['class_clean']['id'] = 'class_clean';
+  $handler->display->display_options['fields']['class_clean']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['class_clean']['field'] = 'class_clean';
+  $handler->display->display_options['fields']['class_clean']['label'] = 'class_clean';
+  /* Field: ESD Site Visit 2014: class_clear */
+  $handler->display->display_options['fields']['class_clear']['id'] = 'class_clear';
+  $handler->display->display_options['fields']['class_clear']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['class_clear']['field'] = 'class_clear';
+  $handler->display->display_options['fields']['class_clear']['label'] = 'class_clear';
+  /* Field: ESD Site Visit 2014: class_display_activity */
+  $handler->display->display_options['fields']['class_display_activity']['id'] = 'class_display_activity';
+  $handler->display->display_options['fields']['class_display_activity']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['class_display_activity']['field'] = 'class_display_activity';
+  $handler->display->display_options['fields']['class_display_activity']['label'] = 'class_display_activity';
+  /* Field: ESD Site Visit 2014: class_display_work */
+  $handler->display->display_options['fields']['class_display_work']['id'] = 'class_display_work';
+  $handler->display->display_options['fields']['class_display_work']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['class_display_work']['field'] = 'class_display_work';
+  $handler->display->display_options['fields']['class_display_work']['label'] = 'class_display_work';
+  /* Field: ESD Site Visit 2014: class_teacher_qual */
+  $handler->display->display_options['fields']['class_teacher_qual']['id'] = 'class_teacher_qual';
+  $handler->display->display_options['fields']['class_teacher_qual']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['class_teacher_qual']['field'] = 'class_teacher_qual';
+  $handler->display->display_options['fields']['class_teacher_qual']['label'] = 'class_teacher_qual';
+  /* Field: ESD Site Visit 2014: class_temperature */
+  $handler->display->display_options['fields']['class_temperature']['id'] = 'class_temperature';
+  $handler->display->display_options['fields']['class_temperature']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['class_temperature']['field'] = 'class_temperature';
+  $handler->display->display_options['fields']['class_temperature']['label'] = 'class_temperature';
+  /* Field: ESD Site Visit 2014: college_info_displayed */
+  $handler->display->display_options['fields']['college_info_displayed']['id'] = 'college_info_displayed';
+  $handler->display->display_options['fields']['college_info_displayed']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['college_info_displayed']['field'] = 'college_info_displayed';
+  $handler->display->display_options['fields']['college_info_displayed']['label'] = 'college_info_displayed';
+  /* Field: ESD Site Visit 2014: college_resources_available */
+  $handler->display->display_options['fields']['college_resources_available']['id'] = 'college_resources_available';
+  $handler->display->display_options['fields']['college_resources_available']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['college_resources_available']['field'] = 'college_resources_available';
+  $handler->display->display_options['fields']['college_resources_available']['label'] = 'college_resources_available';
+  /* Field: ESD Site Visit 2014: computers_working_order */
+  $handler->display->display_options['fields']['computers_working_order']['id'] = 'computers_working_order';
+  $handler->display->display_options['fields']['computers_working_order']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['computers_working_order']['field'] = 'computers_working_order';
+  $handler->display->display_options['fields']['computers_working_order']['label'] = 'computers_working_order';
+  /* Field: ESD Site Visit 2014: enrichment_extra_curricular_displayed */
+  $handler->display->display_options['fields']['enrichment_extra_curricular_displayed']['id'] = 'enrichment_extra_curricular_displayed';
+  $handler->display->display_options['fields']['enrichment_extra_curricular_displayed']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['enrichment_extra_curricular_displayed']['field'] = 'enrichment_extra_curricular_displayed';
+  $handler->display->display_options['fields']['enrichment_extra_curricular_displayed']['label'] = 'enrichment_extra_curricular_displayed';
+  /* Field: ESD Site Visit 2014: entrance_clearly_indicated */
+  $handler->display->display_options['fields']['entrance_clearly_indicated']['id'] = 'entrance_clearly_indicated';
+  $handler->display->display_options['fields']['entrance_clearly_indicated']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['entrance_clearly_indicated']['field'] = 'entrance_clearly_indicated';
+  $handler->display->display_options['fields']['entrance_clearly_indicated']['label'] = 'entrance_clearly_indicated';
+  /* Field: ESD Site Visit 2014: entryway_inside_well_maintained */
+  $handler->display->display_options['fields']['entryway_inside_well_maintained']['id'] = 'entryway_inside_well_maintained';
+  $handler->display->display_options['fields']['entryway_inside_well_maintained']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['entryway_inside_well_maintained']['field'] = 'entryway_inside_well_maintained';
+  $handler->display->display_options['fields']['entryway_inside_well_maintained']['label'] = 'entryway_inside_well_maintained';
+  /* Field: ESD Site Visit 2014: entryway_outside_well_maintained */
+  $handler->display->display_options['fields']['entryway_outside_well_maintained']['id'] = 'entryway_outside_well_maintained';
+  $handler->display->display_options['fields']['entryway_outside_well_maintained']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['entryway_outside_well_maintained']['field'] = 'entryway_outside_well_maintained';
+  $handler->display->display_options['fields']['entryway_outside_well_maintained']['label'] = 'entryway_outside_well_maintained';
+  /* Field: ESD Site Visit 2014: entryway_staffed_entry_system */
+  $handler->display->display_options['fields']['entryway_staffed_entry_system']['id'] = 'entryway_staffed_entry_system';
+  $handler->display->display_options['fields']['entryway_staffed_entry_system']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['entryway_staffed_entry_system']['field'] = 'entryway_staffed_entry_system';
+  $handler->display->display_options['fields']['entryway_staffed_entry_system']['label'] = 'entryway_staffed_entry_system';
+  /* Field: ESD Site Visit 2014: family_involvement_display_evidence */
+  $handler->display->display_options['fields']['family_involvement_display_evidence']['id'] = 'family_involvement_display_evidence';
+  $handler->display->display_options['fields']['family_involvement_display_evidence']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['family_involvement_display_evidence']['field'] = 'family_involvement_display_evidence';
+  $handler->display->display_options['fields']['family_involvement_display_evidence']['label'] = 'family_involvement_display_evidence';
+  /* Field: ESD Site Visit 2014: grounds_well_maintained */
+  $handler->display->display_options['fields']['grounds_well_maintained']['id'] = 'grounds_well_maintained';
+  $handler->display->display_options['fields']['grounds_well_maintained']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['grounds_well_maintained']['field'] = 'grounds_well_maintained';
+  $handler->display->display_options['fields']['grounds_well_maintained']['label'] = 'grounds_well_maintained';
+  /* Field: ESD Site Visit 2014: images_role_models_reflective_display */
+  $handler->display->display_options['fields']['images_role_models_reflective_display']['id'] = 'images_role_models_reflective_display';
+  $handler->display->display_options['fields']['images_role_models_reflective_display']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['images_role_models_reflective_display']['field'] = 'images_role_models_reflective_display';
+  $handler->display->display_options['fields']['images_role_models_reflective_display']['label'] = 'images_role_models_reflective_display';
+  /* Field: ESD Site Visit 2014: library_exists */
+  $handler->display->display_options['fields']['library_exists']['id'] = 'library_exists';
+  $handler->display->display_options['fields']['library_exists']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['library_exists']['field'] = 'library_exists';
+  $handler->display->display_options['fields']['library_exists']['label'] = 'library_exists';
+  /* Field: ESD Site Visit 2014: library_periodicals */
+  $handler->display->display_options['fields']['library_periodicals']['id'] = 'library_periodicals';
+  $handler->display->display_options['fields']['library_periodicals']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['library_periodicals']['field'] = 'library_periodicals';
+  $handler->display->display_options['fields']['library_periodicals']['label'] = 'library_periodicals';
+  /* Field: ESD Site Visit 2014: library_periodicals_recent */
+  $handler->display->display_options['fields']['library_periodicals_recent']['id'] = 'library_periodicals_recent';
+  $handler->display->display_options['fields']['library_periodicals_recent']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['library_periodicals_recent']['field'] = 'library_periodicals_recent';
+  $handler->display->display_options['fields']['library_periodicals_recent']['label'] = 'library_periodicals_recent';
+  /* Field: ESD Site Visit 2014: media_lab_laptop_cart */
+  $handler->display->display_options['fields']['media_lab_laptop_cart']['id'] = 'media_lab_laptop_cart';
+  $handler->display->display_options['fields']['media_lab_laptop_cart']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['media_lab_laptop_cart']['field'] = 'media_lab_laptop_cart';
+  $handler->display->display_options['fields']['media_lab_laptop_cart']['label'] = 'media_lab_laptop_cart';
+  /* Field: ESD Site Visit 2014: music_instruction_space */
+  $handler->display->display_options['fields']['music_instruction_space']['id'] = 'music_instruction_space';
+  $handler->display->display_options['fields']['music_instruction_space']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['music_instruction_space']['field'] = 'music_instruction_space';
+  $handler->display->display_options['fields']['music_instruction_space']['label'] = 'music_instruction_space';
+  /* Field: ESD Site Visit 2014: office_clearly_identified */
+  $handler->display->display_options['fields']['office_clearly_identified']['id'] = 'office_clearly_identified';
+  $handler->display->display_options['fields']['office_clearly_identified']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['office_clearly_identified']['field'] = 'office_clearly_identified';
+  $handler->display->display_options['fields']['office_clearly_identified']['label'] = 'office_clearly_identified';
+  /* Field: ESD Site Visit 2014: office_reception_area_orderly */
+  $handler->display->display_options['fields']['office_reception_area_orderly']['id'] = 'office_reception_area_orderly';
+  $handler->display->display_options['fields']['office_reception_area_orderly']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['office_reception_area_orderly']['field'] = 'office_reception_area_orderly';
+  $handler->display->display_options['fields']['office_reception_area_orderly']['label'] = 'office_reception_area_orderly';
+  /* Field: ESD Site Visit 2014: office_signage_immediately_visible */
+  $handler->display->display_options['fields']['office_signage_immediately_visible']['id'] = 'office_signage_immediately_visible';
+  $handler->display->display_options['fields']['office_signage_immediately_visible']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['office_signage_immediately_visible']['field'] = 'office_signage_immediately_visible';
+  $handler->display->display_options['fields']['office_signage_immediately_visible']['label'] = 'office_signage_immediately_visible';
+  /* Field: ESD Site Visit 2014: parent_info_available */
+  $handler->display->display_options['fields']['parent_info_available']['id'] = 'parent_info_available';
+  $handler->display->display_options['fields']['parent_info_available']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['parent_info_available']['field'] = 'parent_info_available';
+  $handler->display->display_options['fields']['parent_info_available']['label'] = 'parent_info_available';
+  /* Field: ESD Site Visit 2014: parent_info_multi_languages */
+  $handler->display->display_options['fields']['parent_info_multi_languages']['id'] = 'parent_info_multi_languages';
+  $handler->display->display_options['fields']['parent_info_multi_languages']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['parent_info_multi_languages']['field'] = 'parent_info_multi_languages';
+  $handler->display->display_options['fields']['parent_info_multi_languages']['label'] = 'parent_info_multi_languages';
+  /* Field: ESD Site Visit 2014: parent_info_recent */
+  $handler->display->display_options['fields']['parent_info_recent']['id'] = 'parent_info_recent';
+  $handler->display->display_options['fields']['parent_info_recent']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['parent_info_recent']['field'] = 'parent_info_recent';
+  $handler->display->display_options['fields']['parent_info_recent']['label'] = 'parent_info_recent';
+  /* Field: ESD Site Visit 2014: parent_resources_reflective_languages */
+  $handler->display->display_options['fields']['parent_resources_reflective_languages']['id'] = 'parent_resources_reflective_languages';
+  $handler->display->display_options['fields']['parent_resources_reflective_languages']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['parent_resources_reflective_languages']['field'] = 'parent_resources_reflective_languages';
+  $handler->display->display_options['fields']['parent_resources_reflective_languages']['label'] = 'parent_resources_reflective_languages';
+  /* Field: ESD Site Visit 2014: parent_support_materials_displayed */
+  $handler->display->display_options['fields']['parent_support_materials_displayed']['id'] = 'parent_support_materials_displayed';
+  $handler->display->display_options['fields']['parent_support_materials_displayed']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['parent_support_materials_displayed']['field'] = 'parent_support_materials_displayed';
+  $handler->display->display_options['fields']['parent_support_materials_displayed']['label'] = 'parent_support_materials_displayed';
+  /* Field: ESD Site Visit 2014: parking_lot_clean */
+  $handler->display->display_options['fields']['parking_lot_clean']['id'] = 'parking_lot_clean';
+  $handler->display->display_options['fields']['parking_lot_clean']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['parking_lot_clean']['field'] = 'parking_lot_clean';
+  $handler->display->display_options['fields']['parking_lot_clean']['label'] = 'parking_lot_clean';
+  /* Field: ESD Site Visit 2014: parking_lot_good_repair */
+  $handler->display->display_options['fields']['parking_lot_good_repair']['id'] = 'parking_lot_good_repair';
+  $handler->display->display_options['fields']['parking_lot_good_repair']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['parking_lot_good_repair']['field'] = 'parking_lot_good_repair';
+  $handler->display->display_options['fields']['parking_lot_good_repair']['label'] = 'parking_lot_good_repair';
+  /* Field: ESD Site Visit 2014: policies_displayed_distributed */
+  $handler->display->display_options['fields']['policies_displayed_distributed']['id'] = 'policies_displayed_distributed';
+  $handler->display->display_options['fields']['policies_displayed_distributed']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['policies_displayed_distributed']['field'] = 'policies_displayed_distributed';
+  $handler->display->display_options['fields']['policies_displayed_distributed']['label'] = 'policies_displayed_distributed';
+  /* Field: ESD Site Visit 2014: positive */
+  $handler->display->display_options['fields']['positive']['id'] = 'positive';
+  $handler->display->display_options['fields']['positive']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['positive']['field'] = 'positive';
+  $handler->display->display_options['fields']['positive']['label'] = 'positive';
+  /* Field: ESD Site Visit 2014: positive_staff_student_interaction */
+  $handler->display->display_options['fields']['positive_staff_student_interaction']['id'] = 'positive_staff_student_interaction';
+  $handler->display->display_options['fields']['positive_staff_student_interaction']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['positive_staff_student_interaction']['field'] = 'positive_staff_student_interaction';
+  $handler->display->display_options['fields']['positive_staff_student_interaction']['label'] = 'positive_staff_student_interaction';
+  /* Field: ESD Site Visit 2014: positive_teacher_student_interaction */
+  $handler->display->display_options['fields']['positive_teacher_student_interaction']['id'] = 'positive_teacher_student_interaction';
+  $handler->display->display_options['fields']['positive_teacher_student_interaction']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['positive_teacher_student_interaction']['field'] = 'positive_teacher_student_interaction';
+  $handler->display->display_options['fields']['positive_teacher_student_interaction']['label'] = 'positive_teacher_student_interaction';
+  /* Field: ESD Site Visit 2014: recent_news_activities_displayed */
+  $handler->display->display_options['fields']['recent_news_activities_displayed']['id'] = 'recent_news_activities_displayed';
+  $handler->display->display_options['fields']['recent_news_activities_displayed']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['recent_news_activities_displayed']['field'] = 'recent_news_activities_displayed';
+  $handler->display->display_options['fields']['recent_news_activities_displayed']['label'] = 'recent_news_activities_displayed';
+  /* Field: ESD Site Visit 2014: safety_procedures */
+  $handler->display->display_options['fields']['safety_procedures']['id'] = 'safety_procedures';
+  $handler->display->display_options['fields']['safety_procedures']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['safety_procedures']['field'] = 'safety_procedures';
+  $handler->display->display_options['fields']['safety_procedures']['label'] = 'safety_procedures';
+  /* Field: ESD Site Visit 2014: school_culture_supporting_community */
+  $handler->display->display_options['fields']['school_culture_supporting_community']['id'] = 'school_culture_supporting_community';
+  $handler->display->display_options['fields']['school_culture_supporting_community']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['school_culture_supporting_community']['field'] = 'school_culture_supporting_community';
+  $handler->display->display_options['fields']['school_culture_supporting_community']['label'] = 'school_culture_supporting_community';
+  /* Field: ESD Site Visit 2014: school_exterior_good_repair */
+  $handler->display->display_options['fields']['school_exterior_good_repair']['id'] = 'school_exterior_good_repair';
+  $handler->display->display_options['fields']['school_exterior_good_repair']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['school_exterior_good_repair']['field'] = 'school_exterior_good_repair';
+  $handler->display->display_options['fields']['school_exterior_good_repair']['label'] = 'school_exterior_good_repair';
+  /* Field: ESD Site Visit 2014: school_promotes_college_culture */
+  $handler->display->display_options['fields']['school_promotes_college_culture']['id'] = 'school_promotes_college_culture';
+  $handler->display->display_options['fields']['school_promotes_college_culture']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['school_promotes_college_culture']['field'] = 'school_promotes_college_culture';
+  $handler->display->display_options['fields']['school_promotes_college_culture']['label'] = 'school_promotes_college_culture';
+  /* Field: ESD Site Visit 2014: science_space */
+  $handler->display->display_options['fields']['science_space']['id'] = 'science_space';
+  $handler->display->display_options['fields']['science_space']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['science_space']['field'] = 'science_space';
+  $handler->display->display_options['fields']['science_space']['label'] = 'science_space';
+  /* Field: ESD Site Visit 2014: signage_visible_good_repair */
+  $handler->display->display_options['fields']['signage_visible_good_repair']['id'] = 'signage_visible_good_repair';
+  $handler->display->display_options['fields']['signage_visible_good_repair']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['signage_visible_good_repair']['field'] = 'signage_visible_good_repair';
+  $handler->display->display_options['fields']['signage_visible_good_repair']['label'] = 'signage_visible_good_repair';
+  /* Field: ESD Site Visit 2014: social_emotional_support_options_display */
+  $handler->display->display_options['fields']['social_emotional_support_options_display']['id'] = 'social_emotional_support_options_display';
+  $handler->display->display_options['fields']['social_emotional_support_options_display']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['social_emotional_support_options_display']['field'] = 'social_emotional_support_options_display';
+  $handler->display->display_options['fields']['social_emotional_support_options_display']['label'] = 'social_emotional_support_options_display';
+  /* Field: ESD Site Visit 2014: staff_welcoming_visitors */
+  $handler->display->display_options['fields']['staff_welcoming_visitors']['id'] = 'staff_welcoming_visitors';
+  $handler->display->display_options['fields']['staff_welcoming_visitors']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['staff_welcoming_visitors']['field'] = 'staff_welcoming_visitors';
+  $handler->display->display_options['fields']['staff_welcoming_visitors']['label'] = 'staff_welcoming_visitors';
+  /* Field: ESD Site Visit 2014: student_work_celebrated */
+  $handler->display->display_options['fields']['student_work_celebrated']['id'] = 'student_work_celebrated';
+  $handler->display->display_options['fields']['student_work_celebrated']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['student_work_celebrated']['field'] = 'student_work_celebrated';
+  $handler->display->display_options['fields']['student_work_celebrated']['label'] = 'student_work_celebrated';
+  /* Field: ESD Site Visit 2014: student_work_display_topic_quality */
+  $handler->display->display_options['fields']['student_work_display_topic_quality']['id'] = 'student_work_display_topic_quality';
+  $handler->display->display_options['fields']['student_work_display_topic_quality']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['student_work_display_topic_quality']['field'] = 'student_work_display_topic_quality';
+  $handler->display->display_options['fields']['student_work_display_topic_quality']['label'] = 'student_work_display_topic_quality';
+  /* Field: ESD Site Visit 2014: students_engaged_on_task */
+  $handler->display->display_options['fields']['students_engaged_on_task']['id'] = 'students_engaged_on_task';
+  $handler->display->display_options['fields']['students_engaged_on_task']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['students_engaged_on_task']['field'] = 'students_engaged_on_task';
+  $handler->display->display_options['fields']['students_engaged_on_task']['label'] = 'students_engaged_on_task';
+  /* Field: ESD Site Visit 2014: surrounding_area_safe_well_maintained */
+  $handler->display->display_options['fields']['surrounding_area_safe_well_maintained']['id'] = 'surrounding_area_safe_well_maintained';
+  $handler->display->display_options['fields']['surrounding_area_safe_well_maintained']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['surrounding_area_safe_well_maintained']['field'] = 'surrounding_area_safe_well_maintained';
+  $handler->display->display_options['fields']['surrounding_area_safe_well_maintained']['label'] = 'surrounding_area_safe_well_maintained';
+  /* Field: ESD Site Visit 2014: surrounding_houses_occupied */
+  $handler->display->display_options['fields']['surrounding_houses_occupied']['id'] = 'surrounding_houses_occupied';
+  $handler->display->display_options['fields']['surrounding_houses_occupied']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['surrounding_houses_occupied']['field'] = 'surrounding_houses_occupied';
+  $handler->display->display_options['fields']['surrounding_houses_occupied']['label'] = 'surrounding_houses_occupied';
+  /* Field: ESD Site Visit 2014: teachers_welcoming_visitors */
+  $handler->display->display_options['fields']['teachers_welcoming_visitors']['id'] = 'teachers_welcoming_visitors';
+  $handler->display->display_options['fields']['teachers_welcoming_visitors']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['teachers_welcoming_visitors']['field'] = 'teachers_welcoming_visitors';
+  $handler->display->display_options['fields']['teachers_welcoming_visitors']['label'] = 'teachers_welcoming_visitors';
+  /* Field: ESD Site Visit 2014: visitors_feel_welcome */
+  $handler->display->display_options['fields']['visitors_feel_welcome']['id'] = 'visitors_feel_welcome';
+  $handler->display->display_options['fields']['visitors_feel_welcome']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['visitors_feel_welcome']['field'] = 'visitors_feel_welcome';
+  $handler->display->display_options['fields']['visitors_feel_welcome']['label'] = 'visitors_feel_welcome';
+  /* Field: ESD Site Visit 2014: visitors_greeted_polite */
+  $handler->display->display_options['fields']['visitors_greeted_polite']['id'] = 'visitors_greeted_polite';
+  $handler->display->display_options['fields']['visitors_greeted_polite']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['visitors_greeted_polite']['field'] = 'visitors_greeted_polite';
+  $handler->display->display_options['fields']['visitors_greeted_polite']['label'] = 'visitors_greeted_polite';
+  /* Field: ESD Site Visit 2014: visual_arts_instruction_space */
+  $handler->display->display_options['fields']['visual_arts_instruction_space']['id'] = 'visual_arts_instruction_space';
+  $handler->display->display_options['fields']['visual_arts_instruction_space']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['visual_arts_instruction_space']['field'] = 'visual_arts_instruction_space';
+  $handler->display->display_options['fields']['visual_arts_instruction_space']['label'] = 'visual_arts_instruction_space';
+  /* Field: ESD Site Visit 2014: welcoming */
+  $handler->display->display_options['fields']['welcoming']['id'] = 'welcoming';
+  $handler->display->display_options['fields']['welcoming']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['welcoming']['field'] = 'welcoming';
+  $handler->display->display_options['fields']['welcoming']['label'] = 'welcoming';
+  /* Field: ESD Site Visit 2014: academic_displays */
+  $handler->display->display_options['fields']['academic_displays']['id'] = 'academic_displays';
+  $handler->display->display_options['fields']['academic_displays']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['academic_displays']['field'] = 'academic_displays';
+  $handler->display->display_options['fields']['academic_displays']['label'] = 'academic_displays';
+  /* Field: ESD Site Visit 2014: caring_environment */
+  $handler->display->display_options['fields']['caring_environment']['id'] = 'caring_environment';
+  $handler->display->display_options['fields']['caring_environment']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['caring_environment']['field'] = 'caring_environment';
+  $handler->display->display_options['fields']['caring_environment']['label'] = 'caring_environment';
+  /* Field: ESD Site Visit 2014: college_promoted */
+  $handler->display->display_options['fields']['college_promoted']['id'] = 'college_promoted';
+  $handler->display->display_options['fields']['college_promoted']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['college_promoted']['field'] = 'college_promoted';
+  $handler->display->display_options['fields']['college_promoted']['label'] = 'college_promoted';
+  /* Field: ESD Site Visit 2014: safe_environment */
+  $handler->display->display_options['fields']['safe_environment']['id'] = 'safe_environment';
+  $handler->display->display_options['fields']['safe_environment']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['safe_environment']['field'] = 'safe_environment';
+  $handler->display->display_options['fields']['safe_environment']['label'] = 'safe_environment';
+  /* Field: ESD Site Visit 2014: visitor_resources */
+  $handler->display->display_options['fields']['visitor_resources']['id'] = 'visitor_resources';
+  $handler->display->display_options['fields']['visitor_resources']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['visitor_resources']['field'] = 'visitor_resources';
+  $handler->display->display_options['fields']['visitor_resources']['label'] = 'visitor_resources';
+  /* Field: ESD Site Visit 2014: welcoming_culture */
+  $handler->display->display_options['fields']['welcoming_culture']['id'] = 'welcoming_culture';
+  $handler->display->display_options['fields']['welcoming_culture']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['welcoming_culture']['field'] = 'welcoming_culture';
+  $handler->display->display_options['fields']['welcoming_culture']['label'] = 'welcoming_culture';
+  /* Field: ESD Site Visit 2014: domain_community */
+  $handler->display->display_options['fields']['domain_community']['id'] = 'domain_community';
+  $handler->display->display_options['fields']['domain_community']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['domain_community']['field'] = 'domain_community';
+  $handler->display->display_options['fields']['domain_community']['label'] = 'domain_community';
+  /* Field: ESD Site Visit 2014: domain_environment */
+  $handler->display->display_options['fields']['domain_environment']['id'] = 'domain_environment';
+  $handler->display->display_options['fields']['domain_environment']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['domain_environment']['field'] = 'domain_environment';
+  $handler->display->display_options['fields']['domain_environment']['label'] = 'domain_environment';
+  /* Field: ESD Site Visit 2014: domain_expectations */
+  $handler->display->display_options['fields']['domain_expectations']['id'] = 'domain_expectations';
+  $handler->display->display_options['fields']['domain_expectations']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['domain_expectations']['field'] = 'domain_expectations';
+  $handler->display->display_options['fields']['domain_expectations']['label'] = 'domain_expectations';
+  /* Field: ESD Site Visit 2014: overall_score */
+  $handler->display->display_options['fields']['overall_score']['id'] = 'overall_score';
+  $handler->display->display_options['fields']['overall_score']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['overall_score']['field'] = 'overall_score';
+  $handler->display->display_options['fields']['overall_score']['label'] = 'overall_score';
+  /* Field: ESD Site Visit 2014: overall_distance */
+  $handler->display->display_options['fields']['overall_distance']['id'] = 'overall_distance';
+  $handler->display->display_options['fields']['overall_distance']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['overall_distance']['field'] = 'overall_distance';
+  $handler->display->display_options['fields']['overall_distance']['label'] = 'overall_distance';
+  /* Field: ESD Site Visit 2014: overall_points10 */
+  $handler->display->display_options['fields']['overall_points10']['id'] = 'overall_points10';
+  $handler->display->display_options['fields']['overall_points10']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['overall_points10']['field'] = 'overall_points10';
+  $handler->display->display_options['fields']['overall_points10']['label'] = 'overall_points10';
+  /* Field: ESD Site Visit 2014: n_obs */
+  $handler->display->display_options['fields']['n_obs']['id'] = 'n_obs';
+  $handler->display->display_options['fields']['n_obs']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['n_obs']['field'] = 'n_obs';
+  $handler->display->display_options['fields']['n_obs']['label'] = 'n_obs';
+  /* Field: Esd Site Visit 2014: Edit link */
+  $handler->display->display_options['fields']['edit_link']['id'] = 'edit_link';
+  $handler->display->display_options['fields']['edit_link']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['fields']['edit_link']['field'] = 'edit_link';
+  /* Contextual filter: Esd Site Visit 2014: bcode */
+  $handler->display->display_options['arguments']['bcode']['id'] = 'bcode';
+  $handler->display->display_options['arguments']['bcode']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['arguments']['bcode']['field'] = 'bcode';
+  $handler->display->display_options['arguments']['bcode']['exception']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['bcode']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['bcode']['title'] = 'Esd Site Visit 2014 %1';
+  $handler->display->display_options['arguments']['bcode']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['bcode']['summary']['format'] = 'default_summary';
+  /* Filter criterion: Esd Site Visit 2014: bcode */
+  $handler->display->display_options['filters']['bcode']['id'] = 'bcode';
+  $handler->display->display_options['filters']['bcode']['table'] = 'esd_site_visit_2014';
+  $handler->display->display_options['filters']['bcode']['field'] = 'bcode';
+  $handler->display->display_options['filters']['bcode']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['bcode']['expose']['operator_id'] = 'bcode_op';
+  $handler->display->display_options['filters']['bcode']['expose']['label'] = 'bcode';
+  $handler->display->display_options['filters']['bcode']['expose']['operator'] = 'bcode_op';
+  $handler->display->display_options['filters']['bcode']['expose']['identifier'] = 'bcode';
+  $handler->display->display_options['filters']['bcode']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    8 => 0,
+    5 => 0,
+    9 => 0,
+    7 => 0,
+    3 => 0,
+    10 => 0,
+    6 => 0,
+    11 => 0,
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['path'] = 'admin/content/data/view/esd_site_visit_2014';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Esd Site Visit 2014';
+  $handler->display->display_options['menu']['weight'] = '0';
+
+  /* Display: Services */
+  $handler = $view->new_display('services', 'Services', 'services_1');
+  $handler->display->display_options['path'] = 'esd_site_visit_2014';
+  $export['esd_site_visit_2014'] = $view;
 
   $view = new view();
   $view->name = 'fiveessentials_2013';
