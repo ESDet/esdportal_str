@@ -4537,6 +4537,50 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-schools-field_2014_graded'
+  $field_instances['taxonomy_term-schools-field_2014_graded'] = array(
+    'bundle' => 'schools',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 33,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_2014_graded',
+    'label' => '2014_graded',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 61,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-schools-field_5e_roster'
   $field_instances['taxonomy_term-schools-field_5e_roster'] = array(
     'bundle' => 'schools',
@@ -4950,9 +4994,8 @@ function esdportal_str_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 31,
       ),
     ),
@@ -4988,9 +5031,8 @@ function esdportal_str_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 32,
       ),
     ),
@@ -5577,9 +5619,8 @@ function esdportal_str_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 30,
       ),
     ),
@@ -5881,6 +5922,7 @@ function esdportal_str_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('2011 Percent Detroit resident');
   t('2013 site visit date');
+  t('2014_graded');
   t('5E roster');
   t('A phone number where parents can contact the school for information.');
   t('AP Classes');
