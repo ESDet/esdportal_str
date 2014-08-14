@@ -5703,6 +5703,11 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['field_lname']['field'] = 'field_lname';
   $handler->display->display_options['fields']['field_lname']['relationship'] = 'uid';
   $handler->display->display_options['fields']['field_lname']['label'] = 'User Last Name';
+  /* Field: Taxonomy term: Address - Thoroughfare (i.e. Street address) */
+  $handler->display->display_options['fields']['field_address_thoroughfare']['id'] = 'field_address_thoroughfare';
+  $handler->display->display_options['fields']['field_address_thoroughfare']['table'] = 'field_data_field_address';
+  $handler->display->display_options['fields']['field_address_thoroughfare']['field'] = 'field_address_thoroughfare';
+  $handler->display->display_options['fields']['field_address_thoroughfare']['relationship'] = 'term_node_tid';
   /* Field: Taxonomy term: Address - Locality (i.e. City) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
@@ -5713,11 +5718,10 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['field_address_postal_code']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_postal_code']['field'] = 'field_address_postal_code';
   $handler->display->display_options['fields']['field_address_postal_code']['relationship'] = 'term_node_tid';
-  /* Field: Taxonomy term: Address - Thoroughfare (i.e. Street address) */
-  $handler->display->display_options['fields']['field_address_thoroughfare']['id'] = 'field_address_thoroughfare';
-  $handler->display->display_options['fields']['field_address_thoroughfare']['table'] = 'field_data_field_address';
-  $handler->display->display_options['fields']['field_address_thoroughfare']['field'] = 'field_address_thoroughfare';
-  $handler->display->display_options['fields']['field_address_thoroughfare']['relationship'] = 'term_node_tid';
+  /* Field: Content: General Contact Phone */
+  $handler->display->display_options['fields']['field_general_contact_phone']['id'] = 'field_general_contact_phone';
+  $handler->display->display_options['fields']['field_general_contact_phone']['table'] = 'field_data_field_general_contact_phone';
+  $handler->display->display_options['fields']['field_general_contact_phone']['field'] = 'field_general_contact_phone';
   /* Field: Taxonomy term: geo */
   $handler->display->display_options['fields']['field_geo']['id'] = 'field_geo';
   $handler->display->display_options['fields']['field_geo']['table'] = 'field_data_field_geo';
@@ -6050,9 +6054,10 @@ function esdportal_str_views_default_views() {
     t('Scorecard Display'),
     t('School Universe Export'),
     t('Building code'),
+    t('Address - Thoroughfare (i.e. Street address)'),
     t('Address - Locality (i.e. City)'),
     t('Address - Postal code'),
-    t('Address - Thoroughfare (i.e. Street address)'),
+    t('General Contact Phone'),
     t('geo'),
     t('Authorized grades'),
     t('Authorizer'),
