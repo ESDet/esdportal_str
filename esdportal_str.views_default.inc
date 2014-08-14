@@ -598,7 +598,7 @@ function esdportal_str_views_default_views() {
 
   $view = new view();
   $view->name = 'act_2013';
-  $view->description = 'Default view for data table Act 2013';
+  $view->description = 'Default view for data table ACT 2013';
   $view->tag = 'data table';
   $view->base_table = 'act_2013';
   $view->human_name = '';
@@ -608,7 +608,7 @@ function esdportal_str_views_default_views() {
 
   /* Display: Default */
   $handler = $view->new_display('default', 'Default', 'default');
-  $handler->display->display_options['title'] = 'Act 2013';
+  $handler->display->display_options['title'] = 'ACT 2013';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -859,7 +859,7 @@ function esdportal_str_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page_1');
   $handler->display->display_options['path'] = 'admin/content/data/view/act_2013';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Act 2013';
+  $handler->display->display_options['menu']['title'] = 'ACT 2013';
   $handler->display->display_options['menu']['weight'] = '0';
 
   /* Display: Services */
@@ -911,6 +911,277 @@ function esdportal_str_views_default_views() {
     t('Services'),
   );
   $export['act_2013'] = $view;
+
+    $view = new view();
+  $view->name = 'act_2014';
+  $view->description = 'Default view for data table ACT 2014';
+  $view->tag = 'data table';
+  $view->base_table = 'act_2014';
+  $view->human_name = '';
+  $view->core = 0;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Default */
+  $handler = $view->new_display('default', 'Default', 'default');
+  $handler->display->display_options['title'] = 'ACT 2014';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '100';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['grouping'] = '';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'SchoolType' => 'SchoolType',
+    'ISDCode' => 'ISDCode',
+    'ISDName' => 'ISDName',
+    'DistrictCode' => 'DistrictCode',
+    'DistrictName' => 'DistrictName',
+    'BuildingCode' => 'BuildingCode',
+    'BuildingName' => 'BuildingName',
+    'NumberTested' => 'NumberTested',
+    'allsubAverage' => 'allsubAverage',
+    'allsubPercentMeeting' => 'allsubPercentMeeting',
+    'readingAverage' => 'readingAverage',
+    'readingPercentMeeting' => 'readingPercentMeeting',
+    'mathAverage' => 'mathAverage',
+    'mathPercentMeeting' => 'mathPercentMeeting',
+    'englishAverage' => 'englishAverage',
+    'englishPercentMeeting' => 'englishPercentMeeting',
+    'scienceAverage' => 'scienceAverage',
+    'sciencePercentMeeting' => 'sciencePercentMeeting',
+    'writingAverage' => 'writingAverage',
+  );
+  $handler->display->display_options['style_options']['default'] = -1;
+  $handler->display->display_options['style_options']['info'] = array(
+    'SchoolType' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'ISDCode' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'ISDName' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'DistrictCode' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'DistrictName' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'BuildingCode' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'BuildingName' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'NumberTested' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'allsubAverage' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'allsubPercentMeeting' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'readingAverage' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'readingPercentMeeting' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'mathAverage' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'mathPercentMeeting' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'englishAverage' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'englishPercentMeeting' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'scienceAverage' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'sciencePercentMeeting' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'writingAverage' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+  );
+  $handler->display->display_options['style_options']['sticky'] = TRUE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['text']['id'] = 'area';
+  $handler->display->display_options['empty']['text']['table'] = 'views';
+  $handler->display->display_options['empty']['text']['field'] = 'area';
+  $handler->display->display_options['empty']['text']['content'] = 'There is no data in this table.';
+  $handler->display->display_options['empty']['text']['format'] = '1';
+  /* Field: Act 2014: Schooltype */
+  $handler->display->display_options['fields']['SchoolType']['id'] = 'SchoolType';
+  $handler->display->display_options['fields']['SchoolType']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['SchoolType']['field'] = 'SchoolType';
+  $handler->display->display_options['fields']['SchoolType']['label'] = 'SchoolType';
+  /* Field: Act 2014: Isdcode */
+  $handler->display->display_options['fields']['ISDCode']['id'] = 'ISDCode';
+  $handler->display->display_options['fields']['ISDCode']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['ISDCode']['field'] = 'ISDCode';
+  $handler->display->display_options['fields']['ISDCode']['label'] = 'ISDCode';
+  /* Field: Act 2014: Isdname */
+  $handler->display->display_options['fields']['ISDName']['id'] = 'ISDName';
+  $handler->display->display_options['fields']['ISDName']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['ISDName']['field'] = 'ISDName';
+  $handler->display->display_options['fields']['ISDName']['label'] = 'ISDName';
+  /* Field: Act 2014: Districtcode */
+  $handler->display->display_options['fields']['DistrictCode']['id'] = 'DistrictCode';
+  $handler->display->display_options['fields']['DistrictCode']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['DistrictCode']['field'] = 'DistrictCode';
+  $handler->display->display_options['fields']['DistrictCode']['label'] = 'DistrictCode';
+  /* Field: Act 2014: Districtname */
+  $handler->display->display_options['fields']['DistrictName']['id'] = 'DistrictName';
+  $handler->display->display_options['fields']['DistrictName']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['DistrictName']['field'] = 'DistrictName';
+  $handler->display->display_options['fields']['DistrictName']['label'] = 'DistrictName';
+  /* Field: Act 2014: Buildingcode */
+  $handler->display->display_options['fields']['BuildingCode']['id'] = 'BuildingCode';
+  $handler->display->display_options['fields']['BuildingCode']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['BuildingCode']['field'] = 'BuildingCode';
+  $handler->display->display_options['fields']['BuildingCode']['label'] = 'BuildingCode';
+  /* Field: Act 2014: Buildingname */
+  $handler->display->display_options['fields']['BuildingName']['id'] = 'BuildingName';
+  $handler->display->display_options['fields']['BuildingName']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['BuildingName']['field'] = 'BuildingName';
+  $handler->display->display_options['fields']['BuildingName']['label'] = 'BuildingName';
+  /* Field: Act 2014: Numbertested */
+  $handler->display->display_options['fields']['NumberTested']['id'] = 'NumberTested';
+  $handler->display->display_options['fields']['NumberTested']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['NumberTested']['field'] = 'NumberTested';
+  $handler->display->display_options['fields']['NumberTested']['label'] = 'NumberTested';
+  /* Field: Act 2014: Allsubaverage */
+  $handler->display->display_options['fields']['allsubAverage']['id'] = 'allsubAverage';
+  $handler->display->display_options['fields']['allsubAverage']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['allsubAverage']['field'] = 'allsubAverage';
+  $handler->display->display_options['fields']['allsubAverage']['label'] = 'allsubAverage';
+  /* Field: Act 2014: Allsubpercentmeeting */
+  $handler->display->display_options['fields']['allsubPercentMeeting']['id'] = 'allsubPercentMeeting';
+  $handler->display->display_options['fields']['allsubPercentMeeting']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['allsubPercentMeeting']['field'] = 'allsubPercentMeeting';
+  $handler->display->display_options['fields']['allsubPercentMeeting']['label'] = 'allsubPercentMeeting';
+  /* Field: Act 2014: Readingaverage */
+  $handler->display->display_options['fields']['readingAverage']['id'] = 'readingAverage';
+  $handler->display->display_options['fields']['readingAverage']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['readingAverage']['field'] = 'readingAverage';
+  $handler->display->display_options['fields']['readingAverage']['label'] = 'readingAverage';
+  /* Field: Act 2014: Readingpercentmeeting */
+  $handler->display->display_options['fields']['readingPercentMeeting']['id'] = 'readingPercentMeeting';
+  $handler->display->display_options['fields']['readingPercentMeeting']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['readingPercentMeeting']['field'] = 'readingPercentMeeting';
+  $handler->display->display_options['fields']['readingPercentMeeting']['label'] = 'readingPercentMeeting';
+  /* Field: Act 2014: Mathaverage */
+  $handler->display->display_options['fields']['mathAverage']['id'] = 'mathAverage';
+  $handler->display->display_options['fields']['mathAverage']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['mathAverage']['field'] = 'mathAverage';
+  $handler->display->display_options['fields']['mathAverage']['label'] = 'mathAverage';
+  /* Field: Act 2014: Mathpercentmeeting */
+  $handler->display->display_options['fields']['mathPercentMeeting']['id'] = 'mathPercentMeeting';
+  $handler->display->display_options['fields']['mathPercentMeeting']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['mathPercentMeeting']['field'] = 'mathPercentMeeting';
+  $handler->display->display_options['fields']['mathPercentMeeting']['label'] = 'mathPercentMeeting';
+  /* Field: Act 2014: Englishaverage */
+  $handler->display->display_options['fields']['englishAverage']['id'] = 'englishAverage';
+  $handler->display->display_options['fields']['englishAverage']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['englishAverage']['field'] = 'englishAverage';
+  $handler->display->display_options['fields']['englishAverage']['label'] = 'englishAverage';
+  /* Field: Act 2014: Englishpercentmeeting */
+  $handler->display->display_options['fields']['englishPercentMeeting']['id'] = 'englishPercentMeeting';
+  $handler->display->display_options['fields']['englishPercentMeeting']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['englishPercentMeeting']['field'] = 'englishPercentMeeting';
+  $handler->display->display_options['fields']['englishPercentMeeting']['label'] = 'englishPercentMeeting';
+  /* Field: Act 2014: Scienceaverage */
+  $handler->display->display_options['fields']['scienceAverage']['id'] = 'scienceAverage';
+  $handler->display->display_options['fields']['scienceAverage']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['scienceAverage']['field'] = 'scienceAverage';
+  $handler->display->display_options['fields']['scienceAverage']['label'] = 'scienceAverage';
+  /* Field: Act 2014: Sciencepercentmeeting */
+  $handler->display->display_options['fields']['sciencePercentMeeting']['id'] = 'sciencePercentMeeting';
+  $handler->display->display_options['fields']['sciencePercentMeeting']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['sciencePercentMeeting']['field'] = 'sciencePercentMeeting';
+  $handler->display->display_options['fields']['sciencePercentMeeting']['label'] = 'sciencePercentMeeting';
+  /* Field: Act 2014: Writingaverage */
+  $handler->display->display_options['fields']['writingAverage']['id'] = 'writingAverage';
+  $handler->display->display_options['fields']['writingAverage']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['writingAverage']['field'] = 'writingAverage';
+  $handler->display->display_options['fields']['writingAverage']['label'] = 'writingAverage';
+  /* Field: Act 2014: Edit link */
+  $handler->display->display_options['fields']['edit_link']['id'] = 'edit_link';
+  $handler->display->display_options['fields']['edit_link']['table'] = 'act_2014';
+  $handler->display->display_options['fields']['edit_link']['field'] = 'edit_link';
+  /* Contextual filter: Act 2014: Schooltype */
+  $handler->display->display_options['arguments']['SchoolType']['id'] = 'SchoolType';
+  $handler->display->display_options['arguments']['SchoolType']['table'] = 'act_2014';
+  $handler->display->display_options['arguments']['SchoolType']['field'] = 'SchoolType';
+  $handler->display->display_options['arguments']['SchoolType']['exception']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['SchoolType']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['SchoolType']['title'] = 'Act 2014 %1';
+  $handler->display->display_options['arguments']['SchoolType']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['SchoolType']['summary']['format'] = 'default_summary';
+  /* Filter criterion: Act 2014: Buildingcode */
+  $handler->display->display_options['filters']['BuildingCode']['id'] = 'BuildingCode';
+  $handler->display->display_options['filters']['BuildingCode']['table'] = 'act_2014';
+  $handler->display->display_options['filters']['BuildingCode']['field'] = 'BuildingCode';
+  $handler->display->display_options['filters']['BuildingCode']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['BuildingCode']['expose']['operator_id'] = 'BuildingCode_op';
+  $handler->display->display_options['filters']['BuildingCode']['expose']['label'] = 'bcode';
+  $handler->display->display_options['filters']['BuildingCode']['expose']['operator'] = 'BuildingCode_op';
+  $handler->display->display_options['filters']['BuildingCode']['expose']['identifier'] = 'BuildingCode';
+  $handler->display->display_options['filters']['BuildingCode']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    5 => 0,
+    7 => 0,
+    3 => 0,
+    6 => 0,
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['path'] = 'admin/content/data/view/act_2014';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'ACT 2014';
+  $handler->display->display_options['menu']['weight'] = '0';
+
+  /* Display: Services */
+  $handler = $view->new_display('services', 'Services', 'services_1');
+  $handler->display->display_options['path'] = 'act_2014';
+  $export['act_2014'] = $view;
 
   $view = new view();
   $view->name = 'bulk';
@@ -7444,6 +7715,621 @@ function esdportal_str_views_default_views() {
     t('Data export'),
   );
   $export['fiveessentials_2013'] = $view;
+
+    $view = new view();
+  $view->name = 'fiveessentials_2014';
+  $view->description = 'Default view for data table Five Essentials 2014';
+  $view->tag = 'data table';
+  $view->base_table = 'fiveessentials_2014';
+  $view->human_name = '';
+  $view->core = 0;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Default */
+  $handler = $view->new_display('default', 'Default', 'default');
+  $handler->display->display_options['title'] = 'Five Essentials 2014';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '100';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['grouping'] = '';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'BCODE' => 'BCODE',
+    'School_Name' => 'School_Name',
+    'School_Reporting_Slug' => 'School_Reporting_Slug',
+    'State_Schl_ID' => 'State_Schl_ID',
+    'School_Level' => 'School_Level',
+    'Elem_Student_Report' => 'Elem_Student_Report',
+    'High_Student_Report' => 'High_Student_Report',
+    'Elem_Teacher_Report' => 'Elem_Teacher_Report',
+    'High_Teacher_Report' => 'High_Teacher_Report',
+    'Student_Response_Rate' => 'Student_Response_Rate',
+    'Teacher_Response_Rate' => 'Teacher_Response_Rate',
+    'Student_Lazy_Rate' => 'Student_Lazy_Rate',
+    'Teacher_Lazy_Rate' => 'Teacher_Lazy_Rate',
+    'Student_N' => 'Student_N',
+    'Teacher_N' => 'Teacher_N',
+    'ACNO' => 'ACNO',
+    'CLAR' => 'CLAR',
+    'COLB' => 'COLB',
+    'COLR' => 'COLR',
+    'DATA' => 'DATA',
+    'ENGG' => 'ENGG',
+    'ENGL' => 'ENGL',
+    'FUTR' => 'FUTR',
+    'HUMR' => 'HUMR',
+    'INFL' => 'INFL',
+    'INST' => 'INST',
+    'MATH' => 'MATH',
+    'OUTR' => 'OUTR',
+    'PEER' => 'PEER',
+    'PERC' => 'PERC',
+    'PGMC' => 'PGMC',
+    'PRES' => 'PRES',
+    'PRT2' => 'PRT2',
+    'PRTI' => 'PRTI',
+    'QPD2' => 'QPD2',
+    'REFD' => 'REFD',
+    'SAFE' => 'SAFE',
+    'SCMT' => 'SCMT',
+    'SDIS' => 'SDIS',
+    'SLAP' => 'SLAP',
+    'SOCZ' => 'SOCZ',
+    'STDY' => 'STDY',
+    'TRPA' => 'TRPA',
+    'TRPR' => 'TRPR',
+    'TRTE' => 'TRTE',
+    'TRTS' => 'TRTS',
+    'TSAF' => 'TSAF',
+    'UEXP' => 'UEXP',
+    'Category5E' => 'Category5E',
+    'Net5e' => 'Net5e',
+    'E_leaders' => 'E_leaders',
+    'E_teachers' => 'E_teachers',
+    'E_families' => 'E_families',
+    'E_environment' => 'E_environment',
+    'E_instruction' => 'E_instruction',
+    'Location' => 'Location',
+    'DropFlag' => 'DropFlag',
+    'PointsPossible' => 'PointsPossible',
+  );
+  $handler->display->display_options['style_options']['default'] = -1;
+  $handler->display->display_options['style_options']['info'] = array(
+    'BCODE' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'School_Name' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'School_Reporting_Slug' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'State_Schl_ID' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'School_Level' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Elem_Student_Report' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'High_Student_Report' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Elem_Teacher_Report' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'High_Teacher_Report' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Student_Response_Rate' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Teacher_Response_Rate' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Student_Lazy_Rate' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Teacher_Lazy_Rate' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Student_N' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Teacher_N' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'ACNO' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'CLAR' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'COLB' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'COLR' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'DATA' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'ENGG' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'ENGL' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'FUTR' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'HUMR' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'INFL' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'INST' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'MATH' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'OUTR' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'PEER' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'PERC' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'PGMC' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'PRES' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'PRT2' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'PRTI' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'QPD2' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'REFD' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'SAFE' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'SCMT' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'SDIS' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'SLAP' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'SOCZ' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'STDY' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'TRPA' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'TRPR' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'TRTE' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'TRTS' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'TSAF' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'UEXP' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Category5E' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Net5e' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'E_leaders' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'E_teachers' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'E_families' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'E_environment' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'E_instruction' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'Location' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'DropFlag' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'PointsPossible' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+  );
+  $handler->display->display_options['style_options']['sticky'] = TRUE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['text']['id'] = 'area';
+  $handler->display->display_options['empty']['text']['table'] = 'views';
+  $handler->display->display_options['empty']['text']['field'] = 'area';
+  $handler->display->display_options['empty']['text']['content'] = 'There is no data in this table.';
+  $handler->display->display_options['empty']['text']['format'] = '1';
+  /* Field: Five Essentials 2014: Bcode */
+  $handler->display->display_options['fields']['BCODE']['id'] = 'BCODE';
+  $handler->display->display_options['fields']['BCODE']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['BCODE']['field'] = 'BCODE';
+  $handler->display->display_options['fields']['BCODE']['label'] = 'BCODE';
+  /* Field: Five Essentials 2014: School name */
+  $handler->display->display_options['fields']['School_Name']['id'] = 'School_Name';
+  $handler->display->display_options['fields']['School_Name']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['School_Name']['field'] = 'School_Name';
+  $handler->display->display_options['fields']['School_Name']['label'] = 'School_Name';
+  /* Field: Five Essentials 2014: 5Essentials Internal School Identifier */
+  $handler->display->display_options['fields']['School_Reporting_Slug']['id'] = 'School_Reporting_Slug';
+  $handler->display->display_options['fields']['School_Reporting_Slug']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['School_Reporting_Slug']['field'] = 'School_Reporting_Slug';
+  /* Field: Five Essentials 2014: School&#039;s State Identifier */
+  $handler->display->display_options['fields']['State_Schl_ID']['id'] = 'State_Schl_ID';
+  $handler->display->display_options['fields']['State_Schl_ID']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['State_Schl_ID']['field'] = 'State_Schl_ID';
+  /* Field: Five Essentials 2014: 1 or 2: 1 if elementary (PK-8) and 2 if high school */
+  $handler->display->display_options['fields']['School_Level']['id'] = 'School_Level';
+  $handler->display->display_options['fields']['School_Level']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['School_Level']['field'] = 'School_Level';
+  /* Field: Five Essentials 2014: 0 or 1: 1 if eligible for elementary student report */
+  $handler->display->display_options['fields']['Elem_Student_Report']['id'] = 'Elem_Student_Report';
+  $handler->display->display_options['fields']['Elem_Student_Report']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['Elem_Student_Report']['field'] = 'Elem_Student_Report';
+  /* Field: Five Essentials 2014: 0 or 1: 1 if eligible for high school student report */
+  $handler->display->display_options['fields']['High_Student_Report']['id'] = 'High_Student_Report';
+  $handler->display->display_options['fields']['High_Student_Report']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['High_Student_Report']['field'] = 'High_Student_Report';
+  /* Field: Five Essentials 2014: 0 or 1: 1 if eligible for elementary teacher report */
+  $handler->display->display_options['fields']['Elem_Teacher_Report']['id'] = 'Elem_Teacher_Report';
+  $handler->display->display_options['fields']['Elem_Teacher_Report']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['Elem_Teacher_Report']['field'] = 'Elem_Teacher_Report';
+  /* Field: Five Essentials 2014: 0 or 1: 1 if eligible for high school teacher report */
+  $handler->display->display_options['fields']['High_Teacher_Report']['id'] = 'High_Teacher_Report';
+  $handler->display->display_options['fields']['High_Teacher_Report']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['High_Teacher_Report']['field'] = 'High_Teacher_Report';
+  /* Field: Five Essentials 2014: Response rate on student survey */
+  $handler->display->display_options['fields']['Student_Response_Rate']['id'] = 'Student_Response_Rate';
+  $handler->display->display_options['fields']['Student_Response_Rate']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['Student_Response_Rate']['field'] = 'Student_Response_Rate';
+  /* Field: Five Essentials 2014: Response rate on teacher survey */
+  $handler->display->display_options['fields']['Teacher_Response_Rate']['id'] = 'Teacher_Response_Rate';
+  $handler->display->display_options['fields']['Teacher_Response_Rate']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['Teacher_Response_Rate']['field'] = 'Teacher_Response_Rate';
+  /* Field: Five Essentials 2014: Percentage of &quot;lazy&quot; respondents for students */
+  $handler->display->display_options['fields']['Student_Lazy_Rate']['id'] = 'Student_Lazy_Rate';
+  $handler->display->display_options['fields']['Student_Lazy_Rate']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['Student_Lazy_Rate']['field'] = 'Student_Lazy_Rate';
+  /* Field: Five Essentials 2014: Percentage of &quot;lazy&quot; respondents for teachers */
+  $handler->display->display_options['fields']['Teacher_Lazy_Rate']['id'] = 'Teacher_Lazy_Rate';
+  $handler->display->display_options['fields']['Teacher_Lazy_Rate']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['Teacher_Lazy_Rate']['field'] = 'Teacher_Lazy_Rate';
+  /* Field: Five Essentials 2014: Total number of students listed on roster */
+  $handler->display->display_options['fields']['Student_N']['id'] = 'Student_N';
+  $handler->display->display_options['fields']['Student_N']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['Student_N']['field'] = 'Student_N';
+  /* Field: Five Essentials 2014: Total number of teachers listed on roster */
+  $handler->display->display_options['fields']['Teacher_N']['id'] = 'Teacher_N';
+  $handler->display->display_options['fields']['Teacher_N']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['Teacher_N']['field'] = 'Teacher_N';
+  /* Field: Five Essentials 2014: Peer Support for Academic Work (Student) */
+  $handler->display->display_options['fields']['ACNO']['id'] = 'ACNO';
+  $handler->display->display_options['fields']['ACNO']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['ACNO']['field'] = 'ACNO';
+  /* Field: Five Essentials 2014: Course Clarity (Student) */
+  $handler->display->display_options['fields']['CLAR']['id'] = 'CLAR';
+  $handler->display->display_options['fields']['CLAR']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['CLAR']['field'] = 'CLAR';
+  /* Field: Five Essentials 2014: Teacher Collaboration (Teacher) */
+  $handler->display->display_options['fields']['COLB']['id'] = 'COLB';
+  $handler->display->display_options['fields']['COLB']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['COLB']['field'] = 'COLB';
+  /* Field: Five Essentials 2014: Collective Responsibility (Teacher) */
+  $handler->display->display_options['fields']['COLR']['id'] = 'COLR';
+  $handler->display->display_options['fields']['COLR']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['COLR']['field'] = 'COLR';
+  /* Field: Five Essentials 2014: Collective Use of Assessment Data (Teacher) */
+  $handler->display->display_options['fields']['DATA']['id'] = 'DATA';
+  $handler->display->display_options['fields']['DATA']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['DATA']['field'] = 'DATA';
+  /* Field: Five Essentials 2014: Academic Engagement (Student) */
+  $handler->display->display_options['fields']['ENGG']['id'] = 'ENGG';
+  $handler->display->display_options['fields']['ENGG']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['ENGG']['field'] = 'ENGG';
+  /* Field: Five Essentials 2014: English Instruction (Student) */
+  $handler->display->display_options['fields']['ENGL']['id'] = 'ENGL';
+  $handler->display->display_options['fields']['ENGL']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['ENGL']['field'] = 'ENGL';
+  /* Field: Five Essentials 2014: Think about Future Plans (Student) */
+  $handler->display->display_options['fields']['FUTR']['id'] = 'FUTR';
+  $handler->display->display_options['fields']['FUTR']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['FUTR']['field'] = 'FUTR';
+  /* Field: Five Essentials 2014: Human &amp; Social Resources in the Community (Student) */
+  $handler->display->display_options['fields']['HUMR']['id'] = 'HUMR';
+  $handler->display->display_options['fields']['HUMR']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['HUMR']['field'] = 'HUMR';
+  /* Field: Five Essentials 2014: Teacher Influence (Teacher) */
+  $handler->display->display_options['fields']['INFL']['id'] = 'INFL';
+  $handler->display->display_options['fields']['INFL']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['INFL']['field'] = 'INFL';
+  /* Field: Five Essentials 2014: Principal Instructional Leadership (Teacher) */
+  $handler->display->display_options['fields']['INST']['id'] = 'INST';
+  $handler->display->display_options['fields']['INST']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['INST']['field'] = 'INST';
+  /* Field: Five Essentials 2014: Math Instruction (Student) */
+  $handler->display->display_options['fields']['MATH']['id'] = 'MATH';
+  $handler->display->display_options['fields']['MATH']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['MATH']['field'] = 'MATH';
+  /* Field: Five Essentials 2014: Outreach to Parents (Teacher) */
+  $handler->display->display_options['fields']['OUTR']['id'] = 'OUTR';
+  $handler->display->display_options['fields']['OUTR']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['OUTR']['field'] = 'OUTR';
+  /* Field: Five Essentials 2014: Student Classroom Behavior (Student) */
+  $handler->display->display_options['fields']['PEER']['id'] = 'PEER';
+  $handler->display->display_options['fields']['PEER']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['PEER']['field'] = 'PEER';
+  /* Field: Five Essentials 2014: Academic Personalism (Student) */
+  $handler->display->display_options['fields']['PERC']['id'] = 'PERC';
+  $handler->display->display_options['fields']['PERC']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['PERC']['field'] = 'PERC';
+  /* Field: Five Essentials 2014: Program Coherence (Teacher) */
+  $handler->display->display_options['fields']['PGMC']['id'] = 'PGMC';
+  $handler->display->display_options['fields']['PGMC']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['PGMC']['field'] = 'PGMC';
+  /* Field: Five Essentials 2014: Academic Press (Student) */
+  $handler->display->display_options['fields']['PRES']['id'] = 'PRES';
+  $handler->display->display_options['fields']['PRES']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['PRES']['field'] = 'PRES';
+  /* Field: Five Essentials 2014: Prt2 */
+  $handler->display->display_options['fields']['PRT2']['id'] = 'PRT2';
+  $handler->display->display_options['fields']['PRT2']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['PRT2']['field'] = 'PRT2';
+  $handler->display->display_options['fields']['PRT2']['label'] = 'PRT2';
+  /* Field: Five Essentials 2014: Student Responsibility (Teacher) */
+  $handler->display->display_options['fields']['PRTI']['id'] = 'PRTI';
+  $handler->display->display_options['fields']['PRTI']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['PRTI']['field'] = 'PRTI';
+  /* Field: Five Essentials 2014: Quality Professional Development (Teacher) */
+  $handler->display->display_options['fields']['QPD2']['id'] = 'QPD2';
+  $handler->display->display_options['fields']['QPD2']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['QPD2']['field'] = 'QPD2';
+  /* Field: Five Essentials 2014: Reflective Dialogue (Teacher) */
+  $handler->display->display_options['fields']['REFD']['id'] = 'REFD';
+  $handler->display->display_options['fields']['REFD']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['REFD']['field'] = 'REFD';
+  /* Field: Five Essentials 2014: Safety (Student) */
+  $handler->display->display_options['fields']['SAFE']['id'] = 'SAFE';
+  $handler->display->display_options['fields']['SAFE']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['SAFE']['field'] = 'SAFE';
+  /* Field: Five Essentials 2014: School Commitment (Teacher) */
+  $handler->display->display_options['fields']['SCMT']['id'] = 'SCMT';
+  $handler->display->display_options['fields']['SCMT']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['SCMT']['field'] = 'SCMT';
+  /* Field: Five Essentials 2014: Quality of Student Discussion (Teacher) */
+  $handler->display->display_options['fields']['SDIS']['id'] = 'SDIS';
+  $handler->display->display_options['fields']['SDIS']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['SDIS']['field'] = 'SDIS';
+  /* Field: Five Essentials 2014: School-Wide Future Orientation (Student) */
+  $handler->display->display_options['fields']['SLAP']['id'] = 'SLAP';
+  $handler->display->display_options['fields']['SLAP']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['SLAP']['field'] = 'SLAP';
+  /* Field: Five Essentials 2014: Socialization of New Teachers (Teacher) */
+  $handler->display->display_options['fields']['SOCZ']['id'] = 'SOCZ';
+  $handler->display->display_options['fields']['SOCZ']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['SOCZ']['field'] = 'SOCZ';
+  /* Field: Five Essentials 2014: Rigorous Study Habits (Student) */
+  $handler->display->display_options['fields']['STDY']['id'] = 'STDY';
+  $handler->display->display_options['fields']['STDY']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['STDY']['field'] = 'STDY';
+  /* Field: Five Essentials 2014: Teacher-Parent Trust (Teacher) */
+  $handler->display->display_options['fields']['TRPA']['id'] = 'TRPA';
+  $handler->display->display_options['fields']['TRPA']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['TRPA']['field'] = 'TRPA';
+  /* Field: Five Essentials 2014: Teacher-Principal Trust (Teacher) */
+  $handler->display->display_options['fields']['TRPR']['id'] = 'TRPR';
+  $handler->display->display_options['fields']['TRPR']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['TRPR']['field'] = 'TRPR';
+  /* Field: Five Essentials 2014: Teacher-Teacher Trust (Teacher) */
+  $handler->display->display_options['fields']['TRTE']['id'] = 'TRTE';
+  $handler->display->display_options['fields']['TRTE']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['TRTE']['field'] = 'TRTE';
+  /* Field: Five Essentials 2014: Student-Teacher Trust (Student) */
+  $handler->display->display_options['fields']['TRTS']['id'] = 'TRTS';
+  $handler->display->display_options['fields']['TRTS']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['TRTS']['field'] = 'TRTS';
+  /* Field: Five Essentials 2014: Teacher Safety (Teacher) */
+  $handler->display->display_options['fields']['TSAF']['id'] = 'TSAF';
+  $handler->display->display_options['fields']['TSAF']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['TSAF']['field'] = 'TSAF';
+  /* Field: Five Essentials 2014: Expectations for Postsecondary Education (Student) */
+  $handler->display->display_options['fields']['UEXP']['id'] = 'UEXP';
+  $handler->display->display_options['fields']['UEXP']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['UEXP']['field'] = 'UEXP';
+  /* Field: Five Essentials 2014: Category5e */
+  $handler->display->display_options['fields']['Category5E']['id'] = 'Category5E';
+  $handler->display->display_options['fields']['Category5E']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['Category5E']['field'] = 'Category5E';
+  $handler->display->display_options['fields']['Category5E']['label'] = 'Category5E';
+  /* Field: Five Essentials 2014: Net5e */
+  $handler->display->display_options['fields']['Net5e']['id'] = 'Net5e';
+  $handler->display->display_options['fields']['Net5e']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['Net5e']['field'] = 'Net5e';
+  /* Field: Five Essentials 2014: Essential: Effective Leaders */
+  $handler->display->display_options['fields']['E_leaders']['id'] = 'E_leaders';
+  $handler->display->display_options['fields']['E_leaders']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['E_leaders']['field'] = 'E_leaders';
+  /* Field: Five Essentials 2014: Essential: Collaborative Teachers */
+  $handler->display->display_options['fields']['E_teachers']['id'] = 'E_teachers';
+  $handler->display->display_options['fields']['E_teachers']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['E_teachers']['field'] = 'E_teachers';
+  /* Field: Five Essentials 2014: Essential: Involved Families */
+  $handler->display->display_options['fields']['E_families']['id'] = 'E_families';
+  $handler->display->display_options['fields']['E_families']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['E_families']['field'] = 'E_families';
+  /* Field: Five Essentials 2014: Essential: Supportive Environment */
+  $handler->display->display_options['fields']['E_environment']['id'] = 'E_environment';
+  $handler->display->display_options['fields']['E_environment']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['E_environment']['field'] = 'E_environment';
+  /* Field: Five Essentials 2014: Essential: Ambitious Instruction */
+  $handler->display->display_options['fields']['E_instruction']['id'] = 'E_instruction';
+  $handler->display->display_options['fields']['E_instruction']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['E_instruction']['field'] = 'E_instruction';
+  /* Field: Five Essentials 2014: School Address */
+  $handler->display->display_options['fields']['Location']['id'] = 'Location';
+  $handler->display->display_options['fields']['Location']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['Location']['field'] = 'Location';
+  /* Field: Five Essentials 2014: Drop Flag? */
+  $handler->display->display_options['fields']['DropFlag']['id'] = 'DropFlag';
+  $handler->display->display_options['fields']['DropFlag']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['DropFlag']['field'] = 'DropFlag';
+  /* Field: Five Essentials 2014: Points Possible on Scorecard */
+  $handler->display->display_options['fields']['PointsPossible']['id'] = 'PointsPossible';
+  $handler->display->display_options['fields']['PointsPossible']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['PointsPossible']['field'] = 'PointsPossible';
+  /* Field: Five Essentials 2014: Edit link */
+  $handler->display->display_options['fields']['edit_link']['id'] = 'edit_link';
+  $handler->display->display_options['fields']['edit_link']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['edit_link']['field'] = 'edit_link';
+  /* Contextual filter: Five Essentials 2014: Bcode */
+  $handler->display->display_options['arguments']['BCODE']['id'] = 'BCODE';
+  $handler->display->display_options['arguments']['BCODE']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['arguments']['BCODE']['field'] = 'BCODE';
+  $handler->display->display_options['arguments']['BCODE']['exception']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['BCODE']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['BCODE']['title'] = 'Five Essentials 2014 %1';
+  $handler->display->display_options['arguments']['BCODE']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['BCODE']['summary']['format'] = 'default_summary';
+  /* Filter criterion: Five Essentials 2014: Bcode */
+  $handler->display->display_options['filters']['BCODE']['id'] = 'BCODE';
+  $handler->display->display_options['filters']['BCODE']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['filters']['BCODE']['field'] = 'BCODE';
+  $handler->display->display_options['filters']['BCODE']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['BCODE']['expose']['operator_id'] = 'BCODE_op';
+  $handler->display->display_options['filters']['BCODE']['expose']['label'] = 'bcode';
+  $handler->display->display_options['filters']['BCODE']['expose']['operator'] = 'BCODE_op';
+  $handler->display->display_options['filters']['BCODE']['expose']['identifier'] = 'bcode';
+  $handler->display->display_options['filters']['BCODE']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    5 => 0,
+    7 => 0,
+    3 => 0,
+    6 => 0,
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['path'] = 'admin/content/data/view/fiveessentials_2014';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Five Essentials 2014';
+  $handler->display->display_options['menu']['weight'] = '0';
+
+  /* Display: Services */
+  $handler = $view->new_display('services', 'Services', 'services_1');
+  $handler->display->display_options['path'] = 'fiveessentials_2014';
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['path'] = 'csv/fiveessentials_2014';
+
+  $export['fiveessentials_2014'] = $view;
 
   $view = new view();
   $view->name = 'manage_school_profiles';

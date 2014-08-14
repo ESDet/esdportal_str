@@ -13,7 +13,7 @@ function esdportal_str_data_default() {
   $data_table = new stdClass();
   $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
   $data_table->api_version = 1;
-  $data_table->title = 'Act 2011';
+  $data_table->title = 'ACT 2011';
   $data_table->name = 'act_2011';
   $data_table->table_schema = array(
     'description' => 'ACT 2011 data',
@@ -172,74 +172,92 @@ function esdportal_str_data_default() {
   $data_table->meta = array(
     'fields' => array(
       'SchoolType' => array(
+        'label' => 'N Non-Public or P Public',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'ISDCode' => array(
+        'label' => 'Independent School District Code',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'ISDName' => array(
+        'label' => 'Independent School District Name',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'DistrictCode' => array(
+        'label' => 'School District Code',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'DistrictName' => array(
+        'label' => 'School District Name',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'BuildingCode' => array(
+        'label' => 'State assigned Building Code',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'BuildingName' => array(
+        'label' => 'School Name',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'NumberTested' => array(
+        'label' => 'Number of students tested',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'allsubAverage' => array(
+        'label' => 'Average composite score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'allsubPercentMeeting' => array(
+        'label' => 'Percent meeting composite college ready benchmark',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'readingAverage' => array(
+        'label' => 'Average reading score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'readingPercentMeeting' => array(
+        'label' => 'Percent meeting reading college ready benchmark',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'mathAverage' => array(
+        'label' => 'Average math score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'mathPercentMeeting' => array(
+        'label' => 'Percent meeting math college ready benchmark',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'englishAverage' => array(
+        'label' => 'Average english score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'englishPercentMeeting' => array(
+        'label' => 'Percent meeting english college ready benchmark',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'scienceAverage' => array(
+        'label' => 'Average science score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'sciencePercentMeeting' => array(
+        'label' => 'Percent meeting science college ready benchmark',
         'locked' => FALSE,
         'required' => FALSE,
       ),
@@ -260,7 +278,7 @@ function esdportal_str_data_default() {
   $data_table = new stdClass();
   $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
   $data_table->api_version = 1;
-  $data_table->title = 'Act 2012';
+  $data_table->title = 'ACT 2012';
   $data_table->name = 'act_2012';
   $data_table->table_schema = array(
     'description' => 'ACT 2012 data',
@@ -428,78 +446,97 @@ function esdportal_str_data_default() {
   $data_table->meta = array(
     'fields' => array(
       'SchoolType' => array(
+        'label' => 'N Non-Public or P Public',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'ISDCode' => array(
+        'label' => 'Independent School District Code',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'ISDName' => array(
+        'label' => 'Independent School District Name',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'DistrictCode' => array(
+        'label' => 'School District Code',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'DistrictName' => array(
+        'label' => 'School District Name',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'BuildingCode' => array(
+        'label' => 'State assigned Building Code',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'BuildingName' => array(
+        'label' => 'School Name',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'NumberTested' => array(
+        'label' => 'Number of students tested',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'allsubAverage' => array(
+        'label' => 'Average composite score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'allsubPercentMeeting' => array(
+        'label' => 'Percent meeting composite college ready benchmark',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'readingAverage' => array(
+        'label' => 'Average reading score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'readingPercentMeeting' => array(
+        'label' => 'Percent meeting reading college ready benchmark',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'mathAverage' => array(
+        'label' => 'Average math score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'mathPercentMeeting' => array(
+        'label' => 'Percent meeting math college ready benchmark',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'englishAverage' => array(
+        'label' => 'Average english score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'englishPercentMeeting' => array(
+        'label' => 'Percent meeting english college ready benchmark',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'scienceAverage' => array(
+        'label' => 'Average science score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'sciencePercentMeeting' => array(
+        'label' => 'Percent meeting science college ready benchmark',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'writingAverage' => array(
+        'label' => 'Average writing score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
@@ -520,7 +557,7 @@ function esdportal_str_data_default() {
   $data_table = new stdClass();
   $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
   $data_table->api_version = 1;
-  $data_table->title = 'Act 2013';
+  $data_table->title = 'ACT 2013';
   $data_table->name = 'act_2013';
   $data_table->table_schema = array(
     'description' => 'ACT 2013 data',
@@ -688,78 +725,97 @@ function esdportal_str_data_default() {
   $data_table->meta = array(
     'fields' => array(
       'SchoolType' => array(
+        'label' => 'N Non-Public or P Public',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'ISDCode' => array(
+        'label' => 'Independent School District Code',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'ISDName' => array(
+        'label' => 'Independent School District Name',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'DistrictCode' => array(
+        'label' => 'School District Code',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'DistrictName' => array(
+        'label' => 'School District Name',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'BuildingCode' => array(
+        'label' => 'State assigned Building Code',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'BuildingName' => array(
+        'label' => 'School Name',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'NumberTested' => array(
+        'label' => 'Number of students tested',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'allsubAverage' => array(
+        'label' => 'Average composite score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'allsubPercentMeeting' => array(
+        'label' => 'Percent meeting composite college ready benchmark',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'readingAverage' => array(
+        'label' => 'Average reading score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'readingPercentMeeting' => array(
+        'label' => 'Percent meeting reading college ready benchmark',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'mathAverage' => array(
+        'label' => 'Average math score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'mathPercentMeeting' => array(
+        'label' => 'Percent meeting math college ready benchmark',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'englishAverage' => array(
+        'label' => 'Average english score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'englishPercentMeeting' => array(
+        'label' => 'Percent meeting english college ready benchmark',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'scienceAverage' => array(
+        'label' => 'Average science score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'sciencePercentMeeting' => array(
+        'label' => 'Percent meeting science college ready benchmark',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'writingAverage' => array(
+        'label' => 'Average writing score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
@@ -776,6 +832,285 @@ function esdportal_str_data_default() {
     ),
   );
   $export['act_2013'] = $data_table;
+
+  $data_table = new stdClass();
+  $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
+  $data_table->api_version = 1;
+  $data_table->title = 'ACT 2014';
+  $data_table->name = 'act_2014';
+  $data_table->table_schema = array(
+    'description' => 'ACT 2014 data',
+    'fields' => array(
+      'SchoolType' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'ISDCode' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'ISDName' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'DistrictCode' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'DistrictName' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'BuildingCode' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'BuildingName' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'NumberTested' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'allsubAverage' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'allsubPercentMeeting' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'readingAverage' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'readingPercentMeeting' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'mathAverage' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'mathPercentMeeting' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'englishAverage' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'englishPercentMeeting' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'scienceAverage' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'sciencePercentMeeting' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'writingAverage' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '',
+      ),
+    ),
+    'name' => 'act_2014',
+    'primary key' => array(
+      0 => 'BuildingCode',
+    ),
+  );
+  $data_table->meta = array(
+    'fields' => array(
+      'SchoolType' => array(
+        'label' => 'N Non-Public or P Public',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'ISDCode' => array(
+        'label' => 'Independent School District Code',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'ISDName' => array(
+        'label' => 'Independent School District Name',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'DistrictCode' => array(
+        'label' => 'School District Code',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'DistrictName' => array(
+        'label' => 'School District Name',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'BuildingCode' => array(
+        'label' => 'State assigned Building Code',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'BuildingName' => array(
+        'label' => 'School Name',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'NumberTested' => array(
+        'label' => 'Number of students tested',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'allsubAverage' => array(
+        'label' => 'Average composite score',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'allsubPercentMeeting' => array(
+        'label' => 'Percent meeting composite college ready benchmark',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'readingAverage' => array(
+        'label' => 'Average reading score',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'readingPercentMeeting' => array(
+        'label' => 'Percent meeting reading college ready benchmark',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'mathAverage' => array(
+        'label' => 'Average math score',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'mathPercentMeeting' => array(
+        'label' => 'Percent meeting math college ready benchmark',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'englishAverage' => array(
+        'label' => 'Average english score',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'englishPercentMeeting' => array(
+        'label' => 'Percent meeting english college ready benchmark',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'scienceAverage' => array(
+        'label' => 'Average science score',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'sciencePercentMeeting' => array(
+        'label' => 'Percent meeting science college ready benchmark',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'writingAverage' => array(
+        'label' => 'Average writing score',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+    ),
+    'label_field' => '',
+    'is_entity_type' => TRUE,
+    'entity_id' => 'BuildingCode',
+    'join' => array(
+      'field_data_field_bcode' => array(
+        'left_field' => 'field_bcode_value',
+        'field' => 'BuildingCode',
+        'inner_join' => '0',
+      ),
+    ),
+  );
+  $export['act_2014'] = $data_table;
 
   $data_table = new stdClass();
   $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
@@ -5578,10 +5913,10 @@ function esdportal_str_data_default() {
   $data_table = new stdClass();
   $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
   $data_table->api_version = 1;
-  $data_table->title = 'Esd EL 2014';
+  $data_table->title = 'Esd Site Visit 2014';
   $data_table->name = 'esd_site_visit_2014';
   $data_table->table_schema = array(
-    'description' => 'ESD Early Learning Scorecard Data for 2014 Summer Release',
+    'description' => 'ESD Site Visit Scorecard Data from 2013-14 School Year',
     'fields' => array(
       'bcode' => array(
         'type' => 'int',
@@ -6345,334 +6680,417 @@ function esdportal_str_data_default() {
         'required' => FALSE,
       ),
       'School' => array(
+        'label' => 'School Name',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'school_slug' => array(
+        'label' => 'School name with problematic characters replaced by hyphens',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'level_0' => array(
+        'label' => 'Internal number',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'index' => array(
+        'label' => 'Internal Number',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'academic_progress_display_labeled' => array(
+        'label' => 'Average response to item: Displays of academic progress are clearly labeled for parents and visitors to understand.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'academic_progress_display_throughout' => array(
+        'label' => 'Average response to item: The school displays its academic progress throughout the school (e.g., hallways, classrooms, etc.).',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'achievement_info_accessible' => array(
+        'label' => 'Average response to item: Parents can access up-to-date information about student achievement at the school.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'achievement_info_provided' => array(
+        'label' => 'Average response to item: Upon request, visitors are provided information about student achievement.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'adults_care_student_well_being' => array(
+        'label' => 'Average response to item: Adults appear to care deeply about student well-being.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'appearance' => array(
+        'label' => 'Average response to item: It appears that adults (staff, volunteers, etc.) care about the schoolÕs appearance.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'athletic_instruction' => array(
+        'label' => 'Average response to item: The school provides a gym for exercise/athletic instruction.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'auditorium' => array(
+        'label' => 'Average response to item: The school provides an auditorium for drama/theater.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'books_materials_reasonable_condition' => array(
+        'label' => 'Average response to item: Books and materials in the library/media center are in reasonable condition.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'career_resources_available' => array(
+        'label' => 'Average response to item: The library, media center OR classrooms provide age-appropriate career guidance (books, resources, information).',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'career_technical_training_info_displayed' => array(
+        'label' => 'Average response to item: The school clearly displays information about a variety of career paths or technical trainings throughout the school.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'class_clean' => array(
+        'label' => 'Average response to item: Classroom is free of clutter.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'class_clear' => array(
+        'label' => 'Average response to item: Classroom furniture is in good repair.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'class_display_activity' => array(
+        'label' => 'Average response to item: Classroom prominently displays the current dayÕs/periodÕs activities.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'class_display_work' => array(
+        'label' => 'Average response to item: Classroom displays examples of student work.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'class_teacher_qual' => array(
+        'label' => 'Average response to item: The teacherÕs degrees or college information are posted inside or immediately outside the classroom.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'class_temperature' => array(
+        'label' => 'Average response to item: The temperature is within normally accepted ranges.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'college_info_displayed' => array(
+        'label' => 'Average response to item: The school clearly displays information about college throughout the school.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'college_resources_available' => array(
+        'label' => 'Average response to item: The library, media center, OR classrooms provide college-going resources (e.g., lists of colleges, college majors, scholarships, etc.).',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'computers_working_order' => array(
+        'label' => 'Average response to item: Computers appear to be in working order.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'enrichment_extra_curricular_displayed' => array(
+        'label' => 'Average response to item: The school clearly displays a variety of enrichment courses and extra-curricular activities throughout the school.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'entrance_clearly_indicated' => array(
+        'label' => 'Average response to item: The main entrance is clearly indicated.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'entryway_inside_well_maintained' => array(
+        'label' => 'Average response to item: The inside of the main entryway appears well maintained.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'entryway_outside_well_maintained' => array(
+        'label' => 'Average response to item: The outside of the main entryway appears well maintained.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'entryway_staffed_entry_system' => array(
+        'label' => 'Average response to item: The main entryway is staffed or has an electronic entry system.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'family_involvement_display_evidence' => array(
+        'label' => 'Average response to item: The school publicly displays images or evidence of parent and/or family involvement.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'grounds_well_maintained' => array(
+        'label' => 'Average response to item: The school grounds are well maintained.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'images_role_models_reflective_display' => array(
+        'label' => 'Average response to item: The school displays positive images and role models that reasonably reflect the ethnic makeup of the student body.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'library_exists' => array(
+        'label' => 'Average response to item: The school has a library.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'library_periodicals' => array(
+        'label' => 'Average response to item: The library has periodicals (newspapers, magazines, etc.).',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'library_periodicals_recent' => array(
+        'label' => 'Average response to item: Periodicals in the library or media center include issues from within the last 3 months.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'media_lab_laptop_cart' => array(
+        'label' => 'Average response to item: There is a media lab or a laptop cart with at least 20 computers.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'music_instruction_space' => array(
+        'label' => 'Average response to item: The school provides a music/band instruction space.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'office_clearly_identified' => array(
+        'label' => 'Average response to item: The main office is clearly identified.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'office_reception_area_orderly' => array(
+        'label' => 'Average response to item: The school office and reception area are orderly and free of clutter.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'office_signage_immediately_visible' => array(
+        'label' => 'Average response to item: Upon entering, there are immediately visible signs (or a person) that direct visitors toward the office.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'parent_info_available' => array(
+        'label' => 'Average response to item: The main office has copies of the most recent parent newsletter or parent information sheets.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'parent_info_multi_languages' => array(
+        'label' => 'Average response to item: Parent materials are provided in multiple languages.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'parent_info_recent' => array(
+        'label' => 'Average response to item: The most recent parent newsletter/info sheet was published within the last 3 months.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'parent_resources_reflective_languages' => array(
+        'label' => 'Average response to item: Parent resources provided by the school are in languages that match the ethnic makeup of the student body and community.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'parent_support_materials_displayed' => array(
+        'label' => 'Average response to item: The school publicly displays information to support parents on a range of issues related to parenting and their childÕs education.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'parking_lot_clean' => array(
+        'label' => 'Average response to item: The parking lot is free of trash.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'parking_lot_good_repair' => array(
+        'label' => 'Average response to item: The parking lot is in good repair.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'policies_displayed_distributed' => array(
+        'label' => 'Average response to item: The school clearly displays or distributes information for parents and visitors about school policies.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'positive' => array(
+        'label' => 'Average response to item: The schoolÕs interior is positive for students.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'positive_staff_student_interaction' => array(
+        'label' => 'Average response to item: Non-teaching staff has positive interactions with students.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'positive_teacher_student_interaction' => array(
+        'label' => 'Average response to item: Teachers have positive interactions with students in classrooms.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'recent_news_activities_displayed' => array(
+        'label' => 'Average response to item: The school clearly displays or distributes information for parents and visitors about recent news and student activities for parents.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'safety_procedures' => array(
+        'label' => 'Average response to item: There are procedures in place to ensure school safety.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'school_culture_supporting_community' => array(
+        'label' => 'Average response to item: There is a school-wide culture that supports the community.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'school_exterior_good_repair' => array(
+        'label' => 'Average response to item: The school exterior is in good repair.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'school_promotes_college_culture' => array(
+        'label' => 'Average response to item: The school promotes a college-going culture.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'science_space' => array(
+        'label' => 'Average response to item: There is at least one science lab.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'signage_visible_good_repair' => array(
+        'label' => 'Average response to item: The schoolÕs outdoor signs are visible and in good repair.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'social_emotional_support_options_display' => array(
+        'label' => 'Average response to item: Common areas display substantial social/emotional support options for students.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'staff_welcoming_visitors' => array(
+        'label' => 'Average response to item: Non-teaching staff members are warm and welcoming toward visitors.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'student_work_celebrated' => array(
+        'label' => 'Average response to item: The school celebrates individual student work in public displays throughout the school.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'student_work_display_topic_quality' => array(
+        'label' => 'Average response to item: Displays of student work include descriptions of the topic and the quality of work.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'students_engaged_on_task' => array(
+        'label' => 'Average response to item: Students are on-task and appear engaged in all school activities.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'surrounding_area_safe_well_maintained' => array(
+        'label' => 'Average response to item: How much of the area or how many blocks surrounding the school seem safe and well-maintained?',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'surrounding_houses_occupied' => array(
+        'label' => 'Average response to item: How many of the houses surrounding the school appear fully occupied?',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'teachers_welcoming_visitors' => array(
+        'label' => 'Average response to item: Teachers are warm and welcoming toward visitors.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'visitors_feel_welcome' => array(
+        'label' => 'Average response to item: Visitors feel welcome and are not treated like they are a nuisance.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'visitors_greeted_polite' => array(
+        'label' => 'Average response to item: Visitors are greeted and directed in a polite manner upon immediate entry or being Òbuzzed inÓ.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'visual_arts_instruction_space' => array(
+        'label' => 'Average response to item: The school provides a visual-arts instruction space (painting, sculpture, etc.).',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'welcoming' => array(
+        'label' => 'Average response to item: The school grounds are welcoming to students.',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'academic_displays' => array(
+        'label' => 'Academic displays score - domain_expectations',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'caring_environment' => array(
+        'label' => 'Caring environment score - domain_environment',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'college_promoted' => array(
+        'label' => 'College emphasis score - domain_expectations',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'safe_environment' => array(
+        'label' => 'Safe environment score - domain_environment',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'visitor_resources' => array(
+        'label' => 'Visitor resources score - domain_community',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'welcoming_culture' => array(
+        'label' => 'Welcoming culture score 0- domain_community',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'domain_community' => array(
+        'label' => 'Welcoming Community Score - overall_score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'domain_environment' => array(
+        'label' => 'Safe and Caring Environment Score - overall_score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'domain_expectations' => array(
+        'label' => 'High Expectations Score - overall_score',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'overall_score' => array(
+        'label' => 'Average of domain scores',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'overall_distance' => array(
+        'label' => 'Score on a 0-1 normalized scale',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'overall_points10' => array(
+        'label' => 'Points earned, 10 point scale',
         'locked' => FALSE,
         'required' => FALSE,
       ),
       'n_obs' => array(
+        'label' => 'Number of reviewers',
         'locked' => FALSE,
         'required' => FALSE,
       ),
@@ -7359,6 +7777,707 @@ function esdportal_str_data_default() {
     ),
   );
   $export['fiveessentials_2013'] = $data_table;
+
+    $data_table = new stdClass();
+  $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
+  $data_table->api_version = 1;
+  $data_table->title = 'Five Essentials 2014';
+  $data_table->name = 'fiveessentials_2014';
+  $data_table->table_schema = array(
+    'description' => '',
+    'fields' => array(
+      'BCODE' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => '',
+      ),
+      'School_Name' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'School_Reporting_Slug' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'State_Schl_ID' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '5',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'School_Level' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'Elem_Student_Report' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'High_Student_Report' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'Elem_Teacher_Report' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'High_Teacher_Report' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'Student_Response_Rate' => array(
+        'type' => 'float',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      'Teacher_Response_Rate' => array(
+        'type' => 'float',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      'Student_Lazy_Rate' => array(
+        'type' => 'float',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      'Teacher_Lazy_Rate' => array(
+        'type' => 'float',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      'Student_N' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'Teacher_N' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'ACNO' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'CLAR' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'COLB' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'COLR' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'DATA' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'ENGG' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'ENGL' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'FUTR' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'HUMR' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'INFL' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'INST' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'MATH' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'OUTR' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'PEER' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'PERC' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'PGMC' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'PRES' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'PRT2' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'PRTI' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'QPD2' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'REFD' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'SAFE' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'SCMT' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'SDIS' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'SLAP' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'SOCZ' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'STDY' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'TRPA' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'TRPR' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'TRTE' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'TRTS' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'TSAF' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'UEXP' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'Category5E' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'Net5e' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'E_leaders' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'E_teachers' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'E_families' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'E_environment' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'E_instruction' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'Location' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'DropFlag' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'PointsPossible' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+    ),
+    'name' => 'fiveessentials_2014',
+    'primary key' => array(
+      0 => 'BCODE',
+    ),
+  );
+  $data_table->meta = array(
+    'fields' => array(
+      'ACNO' => array(
+        'label' => 'Peer Support for Academic Work (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'CLAR' => array(
+        'label' => 'Course Clarity (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'COLB' => array(
+        'label' => 'Teacher Collaboration (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'COLR' => array(
+        'label' => 'Collective Responsibility (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'DATA' => array(
+        'label' => 'Collective Use of Assessment Data (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'ENGG' => array(
+        'label' => 'Academic Engagement (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'ENGL' => array(
+        'label' => 'English Instruction (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'FUTR' => array(
+        'label' => 'Importance of High School for the Future (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'HUMR' => array(
+        'label' => 'Human &amp; Social Resources in the Community (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'INFL' => array(
+        'label' => 'Teacher Influence (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'INST' => array(
+        'label' => 'Principal Instructional Leadership (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'MATH' => array(
+        'label' => 'Math Instruction (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'OUTR' => array(
+        'label' => 'Outreach to Parents (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'PEER' => array(
+        'label' => 'Student Classroom Behavior (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'PERC' => array(
+        'label' => 'Academic Personalism (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'PGMC' => array(
+        'label' => 'Program Coherence (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'PRES' => array(
+        'label' => 'Academic Press (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'PRTI' => array(
+        'label' => 'Student Responsibility (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'PSAA' => array(
+        'label' => 'Peer Support for Academic Achievement (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'QPD2' => array(
+        'label' => 'Quality Professional Development (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'REFD' => array(
+        'label' => 'Reflective Dialogue (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'SAFE' => array(
+        'label' => 'Safety (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'SCIE' => array(
+        'label' => 'Inquiry-Based Science Instruction (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'SCMT' => array(
+        'label' => 'School Commitment (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'SDIS' => array(
+        'label' => 'Quality of Student Discussion (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'SLAP' => array(
+        'label' => 'School-Wide Future Orientation (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'SOCZ' => array(
+        'label' => 'Socialization of New Teachers (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'STDY' => array(
+        'label' => 'Rigorous Study Habits (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'TRPA' => array(
+        'label' => 'Teacher-Parent Trust (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'TRPR' => array(
+        'label' => 'Teacher-Principal Trust (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'TRTE' => array(
+        'label' => 'Teacher-Teacher Trust (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'TRTS' => array(
+        'label' => 'Student-Teacher Trust (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'TSAF' => array(
+        'label' => 'Teacher Safety (Teacher)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'TSUP' => array(
+        'label' => 'Teacher Personal Support (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'UEXP' => array(
+        'label' => 'Expectations for Postsecondary Education (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'School_Reporting_Slug' => array(
+        'label' => '5Essentials Internal School Identifier',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'State_Schl_ID' => array(
+        'label' => 'School State Identifier with Leading Zeroes',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'School_Level' => array(
+        'label' => '1 or 2: 1 if elementary (PK-8) and 2 if high school',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Student_Report' => array(
+        'label' => '0 or 1: 1 if eligible for student report',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Teacher_Report' => array(
+        'label' => '0 or 1: 1 if eligible for teacher report',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Student_Response_Rate' => array(
+        'label' => 'Response rate on student survey',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Teacher_Response_Rate' => array(
+        'label' => 'Response rate on teacher survey',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Student_Lazy_Rate' => array(
+        'label' => 'Percentage of &quot;lazy&quot; respondents for students',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Teacher_Lazy_Rate' => array(
+        'label' => 'Percentage of &quot;lazy&quot; respondents for teachers',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Student_N' => array(
+        'label' => 'Total number of students listed on roster',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Teacher_N' => array(
+        'label' => 'Total number of teachers listed on roster',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Net5E' => array(
+        'label' => 'Net 5Essentials Score (# strong - # weak)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Category_5e' => array(
+        'label' => 'Category of Improvement: Not Yet Organized: 1 Partially Organized: 2 Moderately Organized: 3 Organized: 4 Well Organized: 5',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'E_leaders' => array(
+        'label' => 'Essential: Effective Leaders',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'E_teachers' => array(
+        'label' => 'Essential: Collaborative Teachers',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'E_families' => array(
+        'label' => 'Essential: Involved Families',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'E_environment' => array(
+        'label' => 'Essential: Supportive Environment',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'E_instruction' => array(
+        'label' => 'Essential: Ambitious Instruction',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'BCODE' => array(
+        'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'District_Schl_ID' => array(
+        'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'PRT2' => array(
+        'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Category5E' => array(
+        'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Net5e' => array(
+        'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'School_Name' => array(
+        'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Location' => array(
+        'label' => 'School Address',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'DropFlag' => array(
+        'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'PointsPossible' => array(
+        'label' => 'Points Possible on Scorecard',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+    ),
+    'label_field' => '',
+    'is_entity_type' => TRUE,
+    'entity_id' => 'BCODE',
+    'join' => array(
+      'field_data_field_bcode' => array(
+        'left_field' => 'field_bcode_value',
+        'field' => 'BCODE',
+        'inner_join' => '0',
+      ),
+    ),
+  );
+  $export['fiveessentials_2014'] = $data_table;
 
   $data_table = new stdClass();
   $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
