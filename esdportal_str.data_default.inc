@@ -2499,6 +2499,13 @@ function esdportal_str_data_default() {
     'label_field' => '',
     'is_entity_type' => TRUE,
     'entity_id' => 'program_id',
+    'join' => array(
+      'earlychild' => array(
+        'left_field' => 'id',
+        'field' => 'program_id',
+        'inner_join' => '0',
+      ),
+    ),
   );
   $export['esd_el_2014'] = $data_table;
 
@@ -7778,7 +7785,7 @@ function esdportal_str_data_default() {
   );
   $export['fiveessentials_2013'] = $data_table;
 
-    $data_table = new stdClass();
+  $data_table = new stdClass();
   $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
   $data_table->api_version = 1;
   $data_table->title = 'Five Essentials 2014';
@@ -12877,9 +12884,8 @@ function esdportal_str_data_default() {
         'description' => '',
       ),
       'BuildingName' => array(
-        'type' => 'varchar',
+        'type' => 'int',
         'size' => 'normal',
-        'length' => '255',
         'not null' => FALSE,
         'description' => '',
       ),
