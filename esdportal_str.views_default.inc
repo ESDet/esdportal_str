@@ -3533,6 +3533,626 @@ function esdportal_str_views_default_views() {
   $export['esd_hs_2013'] = $view;
 
   $view = new view();
+  $view->name = 'esd_hs_2014';
+  $view->description = 'Default view for data table Esd hs 2014';
+  $view->tag = 'data table';
+  $view->base_table = 'esd_hs_2014';
+  $view->human_name = '';
+  $view->core = 0;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Default */
+  $handler = $view->new_display('default', 'Default', 'default');
+  $handler->display->display_options['title'] = 'Esd hs 2014';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '100';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['grouping'] = '';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'buildingcode' => 'buildingcode',
+    'buildingname' => 'buildingname',
+    'SchoolCategory' => 'SchoolCategory',
+    'total_pct' => 'total_pct',
+    'total_ltrgrade' => 'total_ltrgrade',
+    'status_pct' => 'status_pct',
+    'status_ltrgrade' => 'status_ltrgrade',
+    'progress_pct' => 'progress_pct',
+    'progress_ltrgrade' => 'progress_ltrgrade',
+    'culture_pct' => 'culture_pct',
+    'culture_ltrgrade' => 'culture_ltrgrade',
+    'status_partpct' => 'status_partpct',
+    'progress_partpct' => 'progress_partpct',
+    'culture_partpct' => 'culture_partpct',
+    'other_partpct' => 'other_partpct',
+    'esd_schid' => 'esd_schid',
+    'multicampus' => 'multicampus',
+    'act2_comp' => 'act2_comp',
+    'act2_comp_pts' => 'act2_comp_pts',
+    'act2_comp_psspts' => 'act2_comp_psspts',
+    'act2_pcr' => 'act2_pcr',
+    'act2_pcr_pts' => 'act2_pcr_pts',
+    'act2_pcr_psspts' => 'act2_pcr_psspts',
+    'gradrate' => 'gradrate',
+    'gradrate_pts' => 'gradrate_pts',
+    'gradrate_psspts' => 'gradrate_psspts',
+    'status_pts' => 'status_pts',
+    'status_psspts' => 'status_psspts',
+    'act_grwth' => 'act_grwth',
+    'act_grwth_pts' => 'act_grwth_pts',
+    'act_grwth_psspts' => 'act_grwth_psspts',
+    'progress_pts' => 'progress_pts',
+    'progress_psspts' => 'progress_psspts',
+    'site_s' => 'site_s',
+    'site_s_pts' => 'site_s_pts',
+    'site_s_psspts' => 'site_s_psspts',
+    'net5e' => 'net5e',
+    'net5e_pts' => 'net5e_pts',
+    'net5e_psspts' => 'net5e_psspts',
+    'five_e_grwth' => 'five_e_grwth',
+    'five_e_grwth_pts' => 'five_e_grwth_pts',
+    'five_e_grwth_psspts' => 'five_e_grwth_psspts',
+    'culture_pts' => 'culture_pts',
+    'culture_psspts' => 'culture_psspts',
+    'studchrs' => 'studchrs',
+    'studchrs_pts' => 'studchrs_pts',
+    'pts_other' => 'pts_other',
+    'total_psspts' => 'total_psspts',
+    'altother_partpct' => 'altother_partpct',
+    'total_pct_org' => 'total_pct_org',
+    'lowstat_pct' => 'lowstat_pct',
+    'lowstat_ltrgrade' => 'lowstat_ltrgrade',
+  );
+  $handler->display->display_options['style_options']['default'] = -1;
+  $handler->display->display_options['style_options']['info'] = array(
+    'buildingcode' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'buildingname' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'SchoolCategory' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'total_pct' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'total_ltrgrade' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'status_pct' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'status_ltrgrade' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'progress_pct' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'progress_ltrgrade' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'culture_pct' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'culture_ltrgrade' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'status_partpct' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'progress_partpct' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'culture_partpct' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'other_partpct' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'esd_schid' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'multicampus' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'act2_comp' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'act2_comp_pts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'act2_comp_psspts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'act2_pcr' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'act2_pcr_pts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'act2_pcr_psspts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'gradrate' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'gradrate_pts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'gradrate_psspts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'status_pts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'status_psspts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'act_grwth' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'act_grwth_pts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'act_grwth_psspts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'progress_pts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'progress_psspts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'site_s' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'site_s_pts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'site_s_psspts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'net5e' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'net5e_pts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'net5e_psspts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'five_e_grwth' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'five_e_grwth_pts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'five_e_grwth_psspts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'culture_pts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'culture_psspts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'studchrs' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'studchrs_pts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'pts_other' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'total_psspts' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'altother_partpct' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'total_pct_org' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'lowstat_pct' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+    'lowstat_ltrgrade' => array(
+      'sortable' => 1,
+      'separator' => '',
+    ),
+  );
+  $handler->display->display_options['style_options']['sticky'] = TRUE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['text']['id'] = 'area';
+  $handler->display->display_options['empty']['text']['table'] = 'views';
+  $handler->display->display_options['empty']['text']['field'] = 'area';
+  $handler->display->display_options['empty']['text']['content'] = 'There is no data in this table.';
+  $handler->display->display_options['empty']['text']['format'] = '1';
+  /* Field: Esd hs 2014: Buildingcode */
+  $handler->display->display_options['fields']['buildingcode']['id'] = 'buildingcode';
+  $handler->display->display_options['fields']['buildingcode']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['buildingcode']['field'] = 'buildingcode';
+  $handler->display->display_options['fields']['buildingcode']['label'] = 'buildingcode';
+  /* Field: Esd hs 2014: Buildingname */
+  $handler->display->display_options['fields']['buildingname']['id'] = 'buildingname';
+  $handler->display->display_options['fields']['buildingname']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['buildingname']['field'] = 'buildingname';
+  $handler->display->display_options['fields']['buildingname']['label'] = 'buildingname';
+  /* Field: Esd hs 2014: Schoolcategory */
+  $handler->display->display_options['fields']['SchoolCategory']['id'] = 'SchoolCategory';
+  $handler->display->display_options['fields']['SchoolCategory']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['SchoolCategory']['field'] = 'SchoolCategory';
+  $handler->display->display_options['fields']['SchoolCategory']['label'] = 'SchoolCategory';
+  /* Field: Esd hs 2014: Total pct */
+  $handler->display->display_options['fields']['total_pct']['id'] = 'total_pct';
+  $handler->display->display_options['fields']['total_pct']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['total_pct']['field'] = 'total_pct';
+  $handler->display->display_options['fields']['total_pct']['label'] = 'total_pct';
+  /* Field: Esd hs 2014: Total ltrgrade */
+  $handler->display->display_options['fields']['total_ltrgrade']['id'] = 'total_ltrgrade';
+  $handler->display->display_options['fields']['total_ltrgrade']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['total_ltrgrade']['field'] = 'total_ltrgrade';
+  $handler->display->display_options['fields']['total_ltrgrade']['label'] = 'total_ltrgrade';
+  /* Field: Esd hs 2014: Status pct */
+  $handler->display->display_options['fields']['status_pct']['id'] = 'status_pct';
+  $handler->display->display_options['fields']['status_pct']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['status_pct']['field'] = 'status_pct';
+  $handler->display->display_options['fields']['status_pct']['label'] = 'status_pct';
+  /* Field: Esd hs 2014: Status ltrgrade */
+  $handler->display->display_options['fields']['status_ltrgrade']['id'] = 'status_ltrgrade';
+  $handler->display->display_options['fields']['status_ltrgrade']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['status_ltrgrade']['field'] = 'status_ltrgrade';
+  $handler->display->display_options['fields']['status_ltrgrade']['label'] = 'status_ltrgrade';
+  /* Field: Esd hs 2014: Progress pct */
+  $handler->display->display_options['fields']['progress_pct']['id'] = 'progress_pct';
+  $handler->display->display_options['fields']['progress_pct']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['progress_pct']['field'] = 'progress_pct';
+  $handler->display->display_options['fields']['progress_pct']['label'] = 'progress_pct';
+  /* Field: Esd hs 2014: Progress ltrgrade */
+  $handler->display->display_options['fields']['progress_ltrgrade']['id'] = 'progress_ltrgrade';
+  $handler->display->display_options['fields']['progress_ltrgrade']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['progress_ltrgrade']['field'] = 'progress_ltrgrade';
+  $handler->display->display_options['fields']['progress_ltrgrade']['label'] = 'progress_ltrgrade';
+  /* Field: Esd hs 2014: Culture pct */
+  $handler->display->display_options['fields']['culture_pct']['id'] = 'culture_pct';
+  $handler->display->display_options['fields']['culture_pct']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['culture_pct']['field'] = 'culture_pct';
+  $handler->display->display_options['fields']['culture_pct']['label'] = 'culture_pct';
+  /* Field: Esd hs 2014: Culture ltrgrade */
+  $handler->display->display_options['fields']['culture_ltrgrade']['id'] = 'culture_ltrgrade';
+  $handler->display->display_options['fields']['culture_ltrgrade']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['culture_ltrgrade']['field'] = 'culture_ltrgrade';
+  $handler->display->display_options['fields']['culture_ltrgrade']['label'] = 'culture_ltrgrade';
+  /* Field: Esd hs 2014: Status partpct */
+  $handler->display->display_options['fields']['status_partpct']['id'] = 'status_partpct';
+  $handler->display->display_options['fields']['status_partpct']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['status_partpct']['field'] = 'status_partpct';
+  $handler->display->display_options['fields']['status_partpct']['label'] = 'status_partpct';
+  /* Field: Esd hs 2014: Progress partpct */
+  $handler->display->display_options['fields']['progress_partpct']['id'] = 'progress_partpct';
+  $handler->display->display_options['fields']['progress_partpct']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['progress_partpct']['field'] = 'progress_partpct';
+  $handler->display->display_options['fields']['progress_partpct']['label'] = 'progress_partpct';
+  /* Field: Esd hs 2014: Culture partpct */
+  $handler->display->display_options['fields']['culture_partpct']['id'] = 'culture_partpct';
+  $handler->display->display_options['fields']['culture_partpct']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['culture_partpct']['field'] = 'culture_partpct';
+  $handler->display->display_options['fields']['culture_partpct']['label'] = 'culture_partpct';
+  /* Field: Esd hs 2014: Other partpct */
+  $handler->display->display_options['fields']['other_partpct']['id'] = 'other_partpct';
+  $handler->display->display_options['fields']['other_partpct']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['other_partpct']['field'] = 'other_partpct';
+  $handler->display->display_options['fields']['other_partpct']['label'] = 'other_partpct';
+  /* Field: Esd hs 2014: Esd schid */
+  $handler->display->display_options['fields']['esd_schid']['id'] = 'esd_schid';
+  $handler->display->display_options['fields']['esd_schid']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['esd_schid']['field'] = 'esd_schid';
+  $handler->display->display_options['fields']['esd_schid']['label'] = 'esd_schid';
+  /* Field: Esd hs 2014: Multicampus */
+  $handler->display->display_options['fields']['multicampus']['id'] = 'multicampus';
+  $handler->display->display_options['fields']['multicampus']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['multicampus']['field'] = 'multicampus';
+  $handler->display->display_options['fields']['multicampus']['label'] = 'multicampus';
+  /* Field: Esd hs 2014: Act2 comp */
+  $handler->display->display_options['fields']['act2_comp']['id'] = 'act2_comp';
+  $handler->display->display_options['fields']['act2_comp']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['act2_comp']['field'] = 'act2_comp';
+  $handler->display->display_options['fields']['act2_comp']['label'] = 'act2_comp';
+  $handler->display->display_options['fields']['act2_comp']['hide_empty'] = TRUE;
+  /* Field: Esd hs 2014: Act2 comp pts */
+  $handler->display->display_options['fields']['act2_comp_pts']['id'] = 'act2_comp_pts';
+  $handler->display->display_options['fields']['act2_comp_pts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['act2_comp_pts']['field'] = 'act2_comp_pts';
+  $handler->display->display_options['fields']['act2_comp_pts']['label'] = 'act2_comp_pts';
+  $handler->display->display_options['fields']['act2_comp_pts']['hide_alter_empty'] = FALSE;
+  /* Field: Esd hs 2014: Act2 comp psspts */
+  $handler->display->display_options['fields']['act2_comp_psspts']['id'] = 'act2_comp_psspts';
+  $handler->display->display_options['fields']['act2_comp_psspts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['act2_comp_psspts']['field'] = 'act2_comp_psspts';
+  $handler->display->display_options['fields']['act2_comp_psspts']['label'] = 'act2_comp_psspts';
+  /* Field: Esd hs 2014: Act2 pcr */
+  $handler->display->display_options['fields']['act2_pcr']['id'] = 'act2_pcr';
+  $handler->display->display_options['fields']['act2_pcr']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['act2_pcr']['field'] = 'act2_pcr';
+  $handler->display->display_options['fields']['act2_pcr']['label'] = 'act2_pcr';
+  /* Field: Esd hs 2014: Act2 pcr pts */
+  $handler->display->display_options['fields']['act2_pcr_pts']['id'] = 'act2_pcr_pts';
+  $handler->display->display_options['fields']['act2_pcr_pts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['act2_pcr_pts']['field'] = 'act2_pcr_pts';
+  $handler->display->display_options['fields']['act2_pcr_pts']['label'] = 'act2_pcr_pts';
+  /* Field: Esd hs 2014: Act2 pcr psspts */
+  $handler->display->display_options['fields']['act2_pcr_psspts']['id'] = 'act2_pcr_psspts';
+  $handler->display->display_options['fields']['act2_pcr_psspts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['act2_pcr_psspts']['field'] = 'act2_pcr_psspts';
+  $handler->display->display_options['fields']['act2_pcr_psspts']['label'] = 'act2_pcr_psspts';
+  /* Field: Esd hs 2014: Gradrate */
+  $handler->display->display_options['fields']['gradrate']['id'] = 'gradrate';
+  $handler->display->display_options['fields']['gradrate']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['gradrate']['field'] = 'gradrate';
+  $handler->display->display_options['fields']['gradrate']['label'] = 'gradrate';
+  /* Field: Esd hs 2014: Gradrate pts */
+  $handler->display->display_options['fields']['gradrate_pts']['id'] = 'gradrate_pts';
+  $handler->display->display_options['fields']['gradrate_pts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['gradrate_pts']['field'] = 'gradrate_pts';
+  $handler->display->display_options['fields']['gradrate_pts']['label'] = 'gradrate_pts';
+  /* Field: Esd hs 2014: Gradrate psspts */
+  $handler->display->display_options['fields']['gradrate_psspts']['id'] = 'gradrate_psspts';
+  $handler->display->display_options['fields']['gradrate_psspts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['gradrate_psspts']['field'] = 'gradrate_psspts';
+  $handler->display->display_options['fields']['gradrate_psspts']['label'] = 'gradrate_psspts';
+  /* Field: Esd hs 2014: Status pts */
+  $handler->display->display_options['fields']['status_pts']['id'] = 'status_pts';
+  $handler->display->display_options['fields']['status_pts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['status_pts']['field'] = 'status_pts';
+  $handler->display->display_options['fields']['status_pts']['label'] = 'status_pts';
+  /* Field: Esd hs 2014: Status psspts */
+  $handler->display->display_options['fields']['status_psspts']['id'] = 'status_psspts';
+  $handler->display->display_options['fields']['status_psspts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['status_psspts']['field'] = 'status_psspts';
+  $handler->display->display_options['fields']['status_psspts']['label'] = 'status_psspts';
+  /* Field: Esd hs 2014: Act grwth */
+  $handler->display->display_options['fields']['act_grwth']['id'] = 'act_grwth';
+  $handler->display->display_options['fields']['act_grwth']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['act_grwth']['field'] = 'act_grwth';
+  $handler->display->display_options['fields']['act_grwth']['label'] = 'act_grwth';
+  /* Field: Esd hs 2014: Act grwth pts */
+  $handler->display->display_options['fields']['act_grwth_pts']['id'] = 'act_grwth_pts';
+  $handler->display->display_options['fields']['act_grwth_pts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['act_grwth_pts']['field'] = 'act_grwth_pts';
+  $handler->display->display_options['fields']['act_grwth_pts']['label'] = 'act_grwth_pts';
+  /* Field: Esd hs 2014: Act grwth psspts */
+  $handler->display->display_options['fields']['act_grwth_psspts']['id'] = 'act_grwth_psspts';
+  $handler->display->display_options['fields']['act_grwth_psspts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['act_grwth_psspts']['field'] = 'act_grwth_psspts';
+  $handler->display->display_options['fields']['act_grwth_psspts']['label'] = 'act_grwth_psspts';
+  /* Field: Esd hs 2014: Progress pts */
+  $handler->display->display_options['fields']['progress_pts']['id'] = 'progress_pts';
+  $handler->display->display_options['fields']['progress_pts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['progress_pts']['field'] = 'progress_pts';
+  $handler->display->display_options['fields']['progress_pts']['label'] = 'progress_pts';
+  /* Field: Esd hs 2014: Progress psspts */
+  $handler->display->display_options['fields']['progress_psspts']['id'] = 'progress_psspts';
+  $handler->display->display_options['fields']['progress_psspts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['progress_psspts']['field'] = 'progress_psspts';
+  $handler->display->display_options['fields']['progress_psspts']['label'] = 'progress_psspts';
+  /* Field: Esd hs 2014: Site s */
+  $handler->display->display_options['fields']['site_s']['id'] = 'site_s';
+  $handler->display->display_options['fields']['site_s']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['site_s']['field'] = 'site_s';
+  $handler->display->display_options['fields']['site_s']['label'] = 'site_s';
+  /* Field: Esd hs 2014: Site s pts */
+  $handler->display->display_options['fields']['site_s_pts']['id'] = 'site_s_pts';
+  $handler->display->display_options['fields']['site_s_pts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['site_s_pts']['field'] = 'site_s_pts';
+  $handler->display->display_options['fields']['site_s_pts']['label'] = 'site_s_pts';
+  /* Field: Esd hs 2014: Site s psspts */
+  $handler->display->display_options['fields']['site_s_psspts']['id'] = 'site_s_psspts';
+  $handler->display->display_options['fields']['site_s_psspts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['site_s_psspts']['field'] = 'site_s_psspts';
+  $handler->display->display_options['fields']['site_s_psspts']['label'] = 'site_s_psspts';
+  /* Field: Esd hs 2014: Net5e */
+  $handler->display->display_options['fields']['net5e']['id'] = 'net5e';
+  $handler->display->display_options['fields']['net5e']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['net5e']['field'] = 'net5e';
+  $handler->display->display_options['fields']['net5e']['label'] = 'net5e';
+  /* Field: Esd hs 2014: Net5e pts */
+  $handler->display->display_options['fields']['net5e_pts']['id'] = 'net5e_pts';
+  $handler->display->display_options['fields']['net5e_pts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['net5e_pts']['field'] = 'net5e_pts';
+  $handler->display->display_options['fields']['net5e_pts']['label'] = 'net5e_pts';
+  /* Field: Esd hs 2014: Net5e psspts */
+  $handler->display->display_options['fields']['net5e_psspts']['id'] = 'net5e_psspts';
+  $handler->display->display_options['fields']['net5e_psspts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['net5e_psspts']['field'] = 'net5e_psspts';
+  $handler->display->display_options['fields']['net5e_psspts']['label'] = 'net5e_psspts';
+  /* Field: Esd hs 2014: Five e grwth */
+  $handler->display->display_options['fields']['five_e_grwth']['id'] = 'five_e_grwth';
+  $handler->display->display_options['fields']['five_e_grwth']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['five_e_grwth']['field'] = 'five_e_grwth';
+  $handler->display->display_options['fields']['five_e_grwth']['label'] = 'five_e_grwth';
+  /* Field: Esd hs 2014: Five e grwth pts */
+  $handler->display->display_options['fields']['five_e_grwth_pts']['id'] = 'five_e_grwth_pts';
+  $handler->display->display_options['fields']['five_e_grwth_pts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['five_e_grwth_pts']['field'] = 'five_e_grwth_pts';
+  $handler->display->display_options['fields']['five_e_grwth_pts']['label'] = 'five_e_grwth_pts';
+  /* Field: Esd hs 2014: Five e grwth psspts */
+  $handler->display->display_options['fields']['five_e_grwth_psspts']['id'] = 'five_e_grwth_psspts';
+  $handler->display->display_options['fields']['five_e_grwth_psspts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['five_e_grwth_psspts']['field'] = 'five_e_grwth_psspts';
+  $handler->display->display_options['fields']['five_e_grwth_psspts']['label'] = 'five_e_grwth_psspts';
+  /* Field: Esd hs 2014: Culture pts */
+  $handler->display->display_options['fields']['culture_pts']['id'] = 'culture_pts';
+  $handler->display->display_options['fields']['culture_pts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['culture_pts']['field'] = 'culture_pts';
+  $handler->display->display_options['fields']['culture_pts']['label'] = 'culture_pts';
+  /* Field: Esd hs 2014: Culture psspts */
+  $handler->display->display_options['fields']['culture_psspts']['id'] = 'culture_psspts';
+  $handler->display->display_options['fields']['culture_psspts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['culture_psspts']['field'] = 'culture_psspts';
+  $handler->display->display_options['fields']['culture_psspts']['label'] = 'culture_psspts';
+  /* Field: Esd hs 2014: Studchrs */
+  $handler->display->display_options['fields']['studchrs']['id'] = 'studchrs';
+  $handler->display->display_options['fields']['studchrs']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['studchrs']['field'] = 'studchrs';
+  $handler->display->display_options['fields']['studchrs']['label'] = 'studchrs';
+  /* Field: Esd hs 2014: Studchrs pts */
+  $handler->display->display_options['fields']['studchrs_pts']['id'] = 'studchrs_pts';
+  $handler->display->display_options['fields']['studchrs_pts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['studchrs_pts']['field'] = 'studchrs_pts';
+  $handler->display->display_options['fields']['studchrs_pts']['label'] = 'studchrs_pts';
+  /* Field: Esd hs 2014: Pts other */
+  $handler->display->display_options['fields']['pts_other']['id'] = 'pts_other';
+  $handler->display->display_options['fields']['pts_other']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['pts_other']['field'] = 'pts_other';
+  $handler->display->display_options['fields']['pts_other']['label'] = 'pts_other';
+  /* Field: Esd hs 2014: Total psspts */
+  $handler->display->display_options['fields']['total_psspts']['id'] = 'total_psspts';
+  $handler->display->display_options['fields']['total_psspts']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['total_psspts']['field'] = 'total_psspts';
+  $handler->display->display_options['fields']['total_psspts']['label'] = 'total_psspts';
+  /* Field: Esd hs 2014: Altother partpct */
+  $handler->display->display_options['fields']['altother_partpct']['id'] = 'altother_partpct';
+  $handler->display->display_options['fields']['altother_partpct']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['altother_partpct']['field'] = 'altother_partpct';
+  $handler->display->display_options['fields']['altother_partpct']['label'] = 'altother_partpct';
+  /* Field: Esd hs 2014: Total pct org */
+  $handler->display->display_options['fields']['total_pct_org']['id'] = 'total_pct_org';
+  $handler->display->display_options['fields']['total_pct_org']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['total_pct_org']['field'] = 'total_pct_org';
+  $handler->display->display_options['fields']['total_pct_org']['label'] = 'total_pct_org';
+  /* Field: Esd hs 2014: Lowstat pct */
+  $handler->display->display_options['fields']['lowstat_pct']['id'] = 'lowstat_pct';
+  $handler->display->display_options['fields']['lowstat_pct']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['lowstat_pct']['field'] = 'lowstat_pct';
+  $handler->display->display_options['fields']['lowstat_pct']['label'] = 'lowstat_pct';
+  /* Field: Esd hs 2014: Lowstat ltrgrade */
+  $handler->display->display_options['fields']['lowstat_ltrgrade']['id'] = 'lowstat_ltrgrade';
+  $handler->display->display_options['fields']['lowstat_ltrgrade']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['lowstat_ltrgrade']['field'] = 'lowstat_ltrgrade';
+  $handler->display->display_options['fields']['lowstat_ltrgrade']['label'] = 'lowstat_ltrgrade';
+  /* Field: Esd hs 2014: Edit link */
+  $handler->display->display_options['fields']['edit_link']['id'] = 'edit_link';
+  $handler->display->display_options['fields']['edit_link']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['fields']['edit_link']['field'] = 'edit_link';
+  /* Contextual filter: Esd hs 2014: Buildingcode */
+  $handler->display->display_options['arguments']['buildingcode']['id'] = 'buildingcode';
+  $handler->display->display_options['arguments']['buildingcode']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['arguments']['buildingcode']['field'] = 'buildingcode';
+  $handler->display->display_options['arguments']['buildingcode']['exception']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['buildingcode']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['buildingcode']['title'] = 'Esd hs 2014 %1';
+  $handler->display->display_options['arguments']['buildingcode']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['buildingcode']['summary']['format'] = 'default_summary';
+  /* Filter criterion: Esd hs 2014: Buildingcode */
+  $handler->display->display_options['filters']['buildingcode']['id'] = 'buildingcode';
+  $handler->display->display_options['filters']['buildingcode']['table'] = 'esd_hs_2014';
+  $handler->display->display_options['filters']['buildingcode']['field'] = 'buildingcode';
+  $handler->display->display_options['filters']['buildingcode']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['buildingcode']['expose']['operator_id'] = 'buildingcode_op';
+  $handler->display->display_options['filters']['buildingcode']['expose']['label'] = 'bcode';
+  $handler->display->display_options['filters']['buildingcode']['expose']['operator'] = 'buildingcode_op';
+  $handler->display->display_options['filters']['buildingcode']['expose']['identifier'] = 'bcode';
+  $handler->display->display_options['filters']['buildingcode']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    8 => 0,
+    5 => 0,
+    9 => 0,
+    7 => 0,
+    3 => 0,
+    10 => 0,
+    6 => 0,
+    11 => 0,
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['path'] = 'admin/content/data/view/esd_hs_2014';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Esd hs 2014';
+  $handler->display->display_options['menu']['weight'] = '0';
+
+  /* Display: Services */
+  $handler = $view->new_display('services', 'Services', 'services_1');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['path'] = 'esd_hs_2014';
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['path'] = 'csv/esd_hs_2014';
+  $export['esd_hs_2014'] = $view;
+
+  $view = new view();
   $view->name = 'esd_k8_2013';
   $view->description = 'Default view for data table Esd k8 2013';
   $view->tag = 'data table';
