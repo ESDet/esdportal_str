@@ -510,7 +510,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 20,
+      'weight' => 67,
     ),
   );
 
@@ -567,7 +567,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 56,
+      'weight' => 96,
     ),
   );
 
@@ -584,9 +584,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
         'settings' => array(),
-        'type' => 'list_default',
+        'type' => 'hidden',
         'weight' => 7,
       ),
       'growthdataask' => array(
@@ -623,7 +622,7 @@ function esdportal_str_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_buttons',
-      'weight' => 16,
+      'weight' => 13,
     ),
   );
 
@@ -673,7 +672,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 15,
+      'weight' => 107,
     ),
   );
 
@@ -723,7 +722,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 57,
+      'weight' => 97,
     ),
   );
 
@@ -782,7 +781,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 58,
+      'weight' => 98,
     ),
   );
 
@@ -832,7 +831,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 55,
+      'weight' => 95,
     ),
   );
 
@@ -891,7 +890,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 59,
+      'weight' => 99,
     ),
   );
 
@@ -941,7 +940,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 24,
+      'weight' => 71,
     ),
   );
 
@@ -991,7 +990,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 25,
+      'weight' => 72,
     ),
   );
 
@@ -1041,7 +1040,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 26,
+      'weight' => 73,
     ),
   );
 
@@ -1091,7 +1090,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 23,
+      'weight' => 70,
     ),
   );
 
@@ -1141,7 +1140,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 45,
+      'weight' => 88,
     ),
   );
 
@@ -1191,7 +1190,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 30,
+      'weight' => 77,
     ),
   );
 
@@ -1241,7 +1240,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 46,
+      'weight' => 89,
     ),
   );
 
@@ -1254,9 +1253,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 5,
       ),
       'growthdataask' => array(
@@ -1294,7 +1292,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 9,
+      'weight' => 7,
     ),
   );
 
@@ -1307,9 +1305,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 18,
       ),
       'growthdataask' => array(
@@ -1347,7 +1344,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 13,
+      'weight' => 11,
     ),
   );
 
@@ -1397,7 +1394,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 43,
+      'weight' => 81,
     ),
   );
 
@@ -1410,9 +1407,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 17,
       ),
       'growthdataask' => array(
@@ -1450,7 +1446,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 18,
+      'weight' => 15,
     ),
   );
 
@@ -1503,7 +1499,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 62,
+      'weight' => 102,
     ),
   );
 
@@ -1516,9 +1512,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 4,
       ),
       'growthdataask' => array(
@@ -1556,7 +1551,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 10,
+      'weight' => 8,
     ),
   );
 
@@ -1606,7 +1601,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 39,
+      'weight' => 86,
     ),
   );
 
@@ -1662,7 +1657,7 @@ function esdportal_str_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_buttons',
-      'weight' => 32,
+      'weight' => 83,
     ),
   );
 
@@ -1715,7 +1710,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 35,
+      'weight' => 84,
     ),
   );
 
@@ -1728,9 +1723,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 22,
       ),
       'growthdataask' => array(
@@ -1768,7 +1762,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 20,
+      'weight' => 17,
     ),
   );
 
@@ -1781,9 +1775,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
         'settings' => array(),
-        'type' => 'list_default',
+        'type' => 'hidden',
         'weight' => 20,
       ),
       'growthdataask' => array(
@@ -1818,7 +1811,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 49,
+      'weight' => 91,
     ),
   );
 
@@ -1831,9 +1824,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 21,
       ),
       'growthdataask' => array(
@@ -1871,7 +1863,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 19,
+      'weight' => 16,
     ),
   );
 
@@ -1921,7 +1913,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 34,
+      'weight' => 80,
     ),
   );
 
@@ -1971,7 +1963,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 33,
+      'weight' => 79,
     ),
   );
 
@@ -2024,7 +2016,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -2037,9 +2029,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 8,
       ),
       'growthdataask' => array(
@@ -2077,7 +2068,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 11,
+      'weight' => 9,
     ),
   );
 
@@ -2127,7 +2118,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 50,
+      'weight' => 92,
     ),
   );
 
@@ -2180,7 +2171,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 52,
+      'weight' => 7,
     ),
   );
 
@@ -2230,7 +2221,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 37,
+      'weight' => 85,
     ),
   );
 
@@ -2243,9 +2234,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 12,
       ),
       'growthdataask' => array(
@@ -2283,7 +2273,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 36,
+      'weight' => 21,
     ),
   );
 
@@ -2336,7 +2326,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 61,
+      'weight' => 101,
     ),
   );
 
@@ -2386,7 +2376,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 51,
+      'weight' => 93,
     ),
   );
 
@@ -2439,7 +2429,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -2489,7 +2479,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 31,
+      'weight' => 78,
     ),
   );
 
@@ -2539,7 +2529,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 5,
+      'weight' => 1,
     ),
   );
 
@@ -2601,7 +2591,7 @@ function esdportal_str_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 67,
+      'weight' => 15,
     ),
   );
 
@@ -2651,7 +2641,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 47,
+      'weight' => 90,
     ),
   );
 
@@ -2664,9 +2654,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'growthdataask' => array(
@@ -2704,7 +2693,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 6,
     ),
   );
 
@@ -2754,7 +2743,60 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 21,
+      'weight' => 68,
+    ),
+  );
+
+  // Exported field_instance: 'node-school_profile-field_message'
+  $field_instances['node-school_profile-field_message'] = array(
+    'bundle' => 'school_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Please use this to send a personal message to families about your school. A good place to start is to let families know what makes your school different or sets it apart from other schools.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 73,
+      ),
+      'growthdataask' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'sitevisitask' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_message',
+    'label' => 'Message to families',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 66,
     ),
   );
 
@@ -2767,9 +2809,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 16,
       ),
       'growthdataask' => array(
@@ -2807,7 +2848,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 14,
+      'weight' => 12,
     ),
   );
 
@@ -2857,7 +2898,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 54,
+      'weight' => 94,
     ),
   );
 
@@ -2870,9 +2911,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 13,
       ),
       'growthdataask' => array(
@@ -2910,7 +2950,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 38,
+      'weight' => 20,
     ),
   );
 
@@ -2923,9 +2963,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'growthdataask' => array(
@@ -3026,7 +3065,7 @@ function esdportal_str_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 6,
+      'weight' => 8,
     ),
   );
 
@@ -3076,7 +3115,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 40,
+      'weight' => 87,
     ),
   );
 
@@ -3125,7 +3164,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
@@ -3178,7 +3217,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -3231,7 +3270,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -3288,7 +3327,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 53,
+      'weight' => 6,
     ),
   );
 
@@ -3418,7 +3457,7 @@ function esdportal_str_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 
@@ -3478,7 +3517,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -3541,7 +3580,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -3670,7 +3709,7 @@ function esdportal_str_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 11,
+      'weight' => 12,
     ),
   );
 
@@ -3720,7 +3759,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 44,
+      'weight' => 82,
     ),
   );
 
@@ -3770,7 +3809,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 28,
+      'weight' => 75,
     ),
   );
 
@@ -3820,7 +3859,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 29,
+      'weight' => 76,
     ),
   );
 
@@ -3833,9 +3872,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 9,
       ),
       'growthdataask' => array(
@@ -3873,7 +3911,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 12,
+      'weight' => 10,
     ),
   );
 
@@ -3886,9 +3924,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 19,
       ),
       'growthdataask' => array(
@@ -3926,7 +3963,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 48,
+      'weight' => 22,
     ),
   );
 
@@ -3976,7 +4013,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 22,
+      'weight' => 69,
     ),
   );
 
@@ -4026,7 +4063,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 63,
+      'weight' => 103,
     ),
   );
 
@@ -4079,7 +4116,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 64,
+      'weight' => 104,
     ),
   );
 
@@ -4132,7 +4169,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 65,
+      'weight' => 105,
     ),
   );
 
@@ -4185,7 +4222,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 66,
+      'weight' => 106,
     ),
   );
 
@@ -4198,9 +4235,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 15,
       ),
       'growthdataask' => array(
@@ -4238,7 +4274,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 42,
+      'weight' => 18,
     ),
   );
 
@@ -4251,9 +4287,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 14,
       ),
       'growthdataask' => array(
@@ -4291,7 +4326,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 41,
+      'weight' => 19,
     ),
   );
 
@@ -4350,7 +4385,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 60,
+      'weight' => 100,
     ),
   );
 
@@ -4363,9 +4398,8 @@ function esdportal_str_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 6,
       ),
       'growthdataask' => array(
@@ -4403,7 +4437,7 @@ function esdportal_str_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 17,
+      'weight' => 14,
     ),
   );
 
@@ -4453,7 +4487,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 27,
+      'weight' => 74,
     ),
   );
 
@@ -4564,7 +4598,7 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'taxonomy_term',
     'field_name' => 'field_2014_graded',
-    'label' => '2014_graded',
+    'label' => '2014 Graded School',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -4574,10 +4608,54 @@ function esdportal_str_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 61,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_2014_profile'
+  $field_instances['taxonomy_term-schools-field_2014_profile'] = array(
+    'bundle' => 'schools',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 34,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_2014_profile',
+    'label' => '2014 School Profile Complete?',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 62,
     ),
   );
 
@@ -5922,7 +6000,8 @@ function esdportal_str_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('2011 Percent Detroit resident');
   t('2013 site visit date');
-  t('2014_graded');
+  t('2014 Graded School');
+  t('2014 School Profile Complete?');
   t('5E roster');
   t('A phone number where parents can contact the school for information.');
   t('AP Classes');
@@ -6005,6 +6084,7 @@ function esdportal_str_field_default_field_instances() {
   t('Is there anything special about your school\'s schedule?');
   t('Last Name');
   t('Links');
+  t('Message to families');
   t('Operator');
   t('Opted in?');
   t('Organized Sports');
@@ -6020,6 +6100,7 @@ function esdportal_str_field_default_field_instances() {
   t('Please list the leadership opportunities available for students.');
   t('Please list the school\'s organized sports offerings.');
   t('Please select any dates when you can\'t have a site visit.');
+  t('Please use this to send a personal message to families about your school. A good place to start is to let families know what makes your school different or sets it apart from other schools.');
   t('Principal First Name');
   t('Principal Last Name');
   t('Provide file resources to display alongside school information.');

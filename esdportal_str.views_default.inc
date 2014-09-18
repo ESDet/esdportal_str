@@ -7162,7 +7162,7 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['field_skillman_good_neighborhood']['field'] = 'field_skillman_good_neighborhood';
   $handler->display->display_options['fields']['field_skillman_good_neighborhood']['relationship'] = 'term_node_tid';
   $handler->display->display_options['fields']['field_skillman_good_neighborhood']['type'] = 'taxonomy_term_reference_plain';
-  /* Field: Taxonomy term: 2014_graded */
+  /* Field: Taxonomy term: 2014 Graded School */
   $handler->display->display_options['fields']['field_2014_graded']['id'] = 'field_2014_graded';
   $handler->display->display_options['fields']['field_2014_graded']['table'] = 'field_data_field_2014_graded';
   $handler->display->display_options['fields']['field_2014_graded']['field'] = 'field_2014_graded';
@@ -7373,7 +7373,7 @@ function esdportal_str_views_default_views() {
     t('Strict Discipline Academy'),
     t('Superintendents'),
     t('Skillman Good Neighborhood'),
-    t('2014_graded'),
+    t('2014 Graded School'),
     t('ESD Basis ID'),
     t('ESD Exclusive Typology'),
     t('Export Status'),
@@ -8453,6 +8453,7 @@ function esdportal_str_views_default_views() {
           'schools::field_scorecard_display' => 'schools::field_scorecard_display',
           'schools::field_esd_exclusive_typology' => 'schools::field_esd_exclusive_typology',
           'schools::field_2014_graded' => 'schools::field_2014_graded',
+          'schools::field_2014_profile' => 'schools::field_2014_profile',
         ),
       ),
     ),
@@ -8498,7 +8499,7 @@ function esdportal_str_views_default_views() {
     'empty_text' => '',
     'fallback_format' => 'text_default',
   );
-  /* Field: Taxonomy term: 2014_graded */
+  /* Field: Taxonomy term: 2014 Graded School */
   $handler->display->display_options['fields']['field_2014_graded']['id'] = 'field_2014_graded';
   $handler->display->display_options['fields']['field_2014_graded']['table'] = 'field_data_field_2014_graded';
   $handler->display->display_options['fields']['field_2014_graded']['field'] = 'field_2014_graded';
@@ -16441,7 +16442,7 @@ return $nids;';
   );
   $handler->display->display_options['filters']['field_site_visit_status_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_site_visit_status_tid']['vocabulary'] = 'site_visit_status';
-  /* Filter criterion: Taxonomy term: 2014_graded (field_2014_graded) */
+  /* Filter criterion: Taxonomy term: 2014 Graded School (field_2014_graded) */
   $handler->display->display_options['filters']['field_2014_graded_value']['id'] = 'field_2014_graded_value';
   $handler->display->display_options['filters']['field_2014_graded_value']['table'] = 'field_data_field_2014_graded';
   $handler->display->display_options['filters']['field_2014_graded_value']['field'] = 'field_2014_graded_value';
@@ -16484,6 +16485,27 @@ return $nids;';
   );
   $handler->display->display_options['filters']['field_school_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_school_type_tid']['vocabulary'] = 'school_type';
+  /* Filter criterion: Taxonomy term: 2014 School Profile Complete? (field_2014_profile) */
+  $handler->display->display_options['filters']['field_2014_profile_value']['id'] = 'field_2014_profile_value';
+  $handler->display->display_options['filters']['field_2014_profile_value']['table'] = 'field_data_field_2014_profile';
+  $handler->display->display_options['filters']['field_2014_profile_value']['field'] = 'field_2014_profile_value';
+  $handler->display->display_options['filters']['field_2014_profile_value']['relationship'] = 'field_school_tid';
+  $handler->display->display_options['filters']['field_2014_profile_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_2014_profile_value']['expose']['operator_id'] = 'field_2014_profile_value_op';
+  $handler->display->display_options['filters']['field_2014_profile_value']['expose']['label'] = '2014 School Profile Complete? (field_2014_profile)';
+  $handler->display->display_options['filters']['field_2014_profile_value']['expose']['use_operator'] = TRUE;
+  $handler->display->display_options['filters']['field_2014_profile_value']['expose']['operator'] = 'field_2014_profile_value_op';
+  $handler->display->display_options['filters']['field_2014_profile_value']['expose']['identifier'] = 'field_2014_profile_value';
+  $handler->display->display_options['filters']['field_2014_profile_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    17 => 0,
+    7 => 0,
+    18 => 0,
+    6 => 0,
+    19 => 0,
+  );
   $handler->display->display_options['path'] = 'send-user-emails';
 
   /* Display: Data export */
@@ -16564,6 +16586,7 @@ return $nids;';
     t('term from field_school'),
     t('2014_graded (field_2014_graded)'),
     t('School type (field_school_type)'),
+    t('2014 School Profile Complete? (field_2014_profile)'),
     t('Data export'),
     t('Last Name'),
     t('First Name'),
