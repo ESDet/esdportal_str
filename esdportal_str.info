@@ -573,6 +573,7 @@ features[views_view][] = esd_el_2014
 features[views_view][] = esd_hs_2013
 features[views_view][] = esd_k8_2013
 features[views_view][] = esd_k8_2013_r1
+features[views_view][] = esd_k8_2014
 features[views_view][] = fiveessentials_2013
 features[views_view][] = fiveessentials_2014
 features[views_view][] = manage_school_profiles
