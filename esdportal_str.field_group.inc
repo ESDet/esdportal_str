@@ -13,6 +13,113 @@ function esdportal_str_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_2013|taxonomy_term|schools|form';
+  $field_group->group_name = 'group_2013';
+  $field_group->entity_type = 'taxonomy_term';
+  $field_group->bundle = 'schools';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '2013 Fields',
+    'weight' => '18',
+    'children' => array(
+      0 => 'field_loc_email',
+      1 => 'field_2011_pct_det_res',
+      2 => 'field_opted_in',
+      3 => 'field_5e_roster',
+      4 => 'field_2013_site_visit_date',
+      5 => 'field_grdataletter',
+      6 => 'field_grdatatype',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => '2013 Fields',
+      'instance_settings' => array(
+        'required_fields' => 0,
+        'classes' => 'group-2013 field-group-fieldset',
+        'description' => '',
+      ),
+      'formatter' => 'collapsed',
+    ),
+  );
+  $export['group_2013|taxonomy_term|schools|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_2014|taxonomy_term|schools|form';
+  $field_group->group_name = 'group_2014';
+  $field_group->entity_type = 'taxonomy_term';
+  $field_group->bundle = 'schools';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '2014 Fields',
+    'weight' => '19',
+    'children' => array(
+      0 => 'field_2014_graded',
+      1 => 'field_2014_profile',
+      2 => 'field_2014_site_visit',
+      3 => 'field_2014_site_visit_date',
+      4 => 'field_2014_5essentials_roster',
+      5 => 'field_2014_5essentials_teacher',
+      6 => 'field_2014_5essentials_student',
+      7 => 'field_2014_5essentials_parent',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => '2014 Fields',
+      'instance_settings' => array(
+        'required_fields' => 0,
+        'classes' => 'group-2014 field-group-fieldset',
+        'description' => '',
+      ),
+      'formatter' => 'collapsed',
+    ),
+  );
+  $export['group_2014|taxonomy_term|schools|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_2015|taxonomy_term|schools|form';
+  $field_group->group_name = 'group_2015';
+  $field_group->entity_type = 'taxonomy_term';
+  $field_group->bundle = 'schools';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '2015 Fields',
+    'weight' => '20',
+    'children' => array(
+      0 => 'field_2015_universe',
+      1 => 'field_2015_graded',
+      2 => 'field_2015_5essentials_parent',
+      3 => 'field_2015_5essentials_roster',
+      4 => 'field_2015_5essentials_student',
+      5 => 'field_2015_5essentials_teacher',
+      6 => 'field_2015_zone',
+      7 => 'field_2015_sv_scheduled',
+      8 => 'field_2015_site_visit',
+      9 => 'field_2015_sv_eligible',
+      10 => 'field_2015_site_visit_date',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => '2015 Fields',
+      'instance_settings' => array(
+        'required_fields' => 0,
+        'classes' => 'group-2015 field-group-fieldset',
+        'description' => '',
+      ),
+      'formatter' => 'collapsible',
+    ),
+  );
+  $export['group_2015|taxonomy_term|schools|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_current_edit|node|school_profile|form';
   $field_group->group_name = 'group_current_edit';
   $field_group->entity_type = 'node';
@@ -55,6 +162,44 @@ function esdportal_str_field_group_info() {
     ),
   );
   $export['group_current_edit|node|school_profile|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_eem|taxonomy_term|schools|form';
+  $field_group->group_name = 'group_eem';
+  $field_group->entity_type = 'taxonomy_term';
+  $field_group->bundle = 'schools';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'EEM Fields',
+    'weight' => '17',
+    'children' => array(
+      0 => 'field_state_status',
+      1 => 'field_strict_discipline_academy',
+      2 => 'field_special_ed_emphasis',
+      3 => 'field_alternative_school',
+      4 => 'field_career_technical_emphasis',
+      5 => 'field_specialty_school',
+      6 => 'field_governance',
+      7 => 'field_authorized_grades',
+      8 => 'field_district',
+      9 => 'field_operator',
+      10 => 'field_authorizer',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'EEM Fields',
+      'instance_settings' => array(
+        'required_fields' => 0,
+        'classes' => 'group-eem field-group-fieldset',
+        'description' => '',
+      ),
+      'formatter' => 'collapsed',
+    ),
+  );
+  $export['group_eem|taxonomy_term|schools|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
