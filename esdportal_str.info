@@ -585,6 +585,7 @@ features[views_view][] = meap_2009
 features[views_view][] = meap_2010
 features[views_view][] = meap_2011
 features[views_view][] = meap_2012
+features[views_view][] = meap_2013
 features[views_view][] = school_profiles
 features[views_view][] = schools
 features[views_view][] = send_user_emails
