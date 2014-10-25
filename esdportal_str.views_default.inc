@@ -18562,6 +18562,304 @@ function esdportal_str_views_default_views() {
   $export['meap_2013'] = $view;
 
   $view = new view();
+  $view->name = 'school_contacts';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = '2015 School Contacts';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'School Contacts';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_options']['grouping'] = array(
+    0 => array(
+      'field' => 'title',
+      'rendered' => 1,
+      'rendered_strip' => 0,
+    ),
+  );
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'field_address_data' => 'field_address_data',
+    'field_general_contact_phone' => 'field_general_contact_phone',
+  );
+  $handler->display->display_options['row_options']['separator'] = '</br>';
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<a href="/2015/overview" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">Overview</a><a href="/2015/5e" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">5E Tracker</a><a href="/2015/contacts" style="color:white; background:#f05a28; width:50%; display:inline; float:left; padding:10px; border:solid white 2px; font-weight:bold">School Contacts</a><a href="/2015/school-summary" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">School Summary</a>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
+  /* Relationship: ACL node: acl_node.acl_id -> acl.acl_id */
+  $handler->display->display_options['relationships']['acl_id']['id'] = 'acl_id';
+  $handler->display->display_options['relationships']['acl_id']['table'] = 'acl_node';
+  $handler->display->display_options['relationships']['acl_id']['field'] = 'acl_id';
+  /* Relationship: ACL user: acl_user.uid -> users.uid */
+  $handler->display->display_options['relationships']['uid']['id'] = 'uid';
+  $handler->display->display_options['relationships']['uid']['table'] = 'acl_user';
+  $handler->display->display_options['relationships']['uid']['field'] = 'uid';
+  $handler->display->display_options['relationships']['uid']['relationship'] = 'acl_id';
+  /* Relationship: Content: Author */
+  $handler->display->display_options['relationships']['uid_1']['id'] = 'uid_1';
+  $handler->display->display_options['relationships']['uid_1']['table'] = 'node';
+  $handler->display->display_options['relationships']['uid_1']['field'] = 'uid';
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['label'] = 'term (schools)';
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'schools' => 'schools',
+    'authorizer' => 0,
+    'esd_exclusive_typology' => 0,
+    'school_district' => 0,
+    'school_gov' => 0,
+    'school_grades' => 0,
+    'operator' => 0,
+    'school_scorecard_status' => 0,
+    'school_status' => 0,
+    'school_type' => 0,
+    'site_visit_status' => 0,
+    'skillman_good_neighborhood' => 0,
+    'state_school_status' => 0,
+    'tags' => 0,
+  );
+  /* Relationship: Entity Reference: Referencing entity */
+  $handler->display->display_options['relationships']['reverse_field_superintendents_taxonomy_term']['id'] = 'reverse_field_superintendents_taxonomy_term';
+  $handler->display->display_options['relationships']['reverse_field_superintendents_taxonomy_term']['table'] = 'users';
+  $handler->display->display_options['relationships']['reverse_field_superintendents_taxonomy_term']['field'] = 'reverse_field_superintendents_taxonomy_term';
+  $handler->display->display_options['relationships']['reverse_field_superintendents_taxonomy_term']['relationship'] = 'uid_1';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_superintendents_target_id']['id'] = 'field_superintendents_target_id';
+  $handler->display->display_options['relationships']['field_superintendents_target_id']['table'] = 'field_data_field_superintendents';
+  $handler->display->display_options['relationships']['field_superintendents_target_id']['field'] = 'field_superintendents_target_id';
+  $handler->display->display_options['relationships']['field_superintendents_target_id']['relationship'] = 'term_node_tid';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: User: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'users';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['relationship'] = 'uid_1';
+  $handler->display->display_options['fields']['name']['label'] = 'Primary';
+  /* Field: User: E-mail */
+  $handler->display->display_options['fields']['mail']['id'] = 'mail';
+  $handler->display->display_options['fields']['mail']['table'] = 'users';
+  $handler->display->display_options['fields']['mail']['field'] = 'mail';
+  $handler->display->display_options['fields']['mail']['relationship'] = 'uid_1';
+  $handler->display->display_options['fields']['mail']['label'] = 'Primary Email';
+  $handler->display->display_options['fields']['mail']['link_to_user'] = '0';
+  /* Field: User: Name */
+  $handler->display->display_options['fields']['name_1']['id'] = 'name_1';
+  $handler->display->display_options['fields']['name_1']['table'] = 'users';
+  $handler->display->display_options['fields']['name_1']['field'] = 'name';
+  $handler->display->display_options['fields']['name_1']['relationship'] = 'uid';
+  $handler->display->display_options['fields']['name_1']['label'] = 'Secondary';
+  $handler->display->display_options['fields']['name_1']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['name_1']['overwrite_anonymous'] = TRUE;
+  /* Field: User: E-mail */
+  $handler->display->display_options['fields']['mail_1']['id'] = 'mail_1';
+  $handler->display->display_options['fields']['mail_1']['table'] = 'users';
+  $handler->display->display_options['fields']['mail_1']['field'] = 'mail';
+  $handler->display->display_options['fields']['mail_1']['relationship'] = 'uid';
+  $handler->display->display_options['fields']['mail_1']['label'] = 'Secondary E-mail';
+  $handler->display->display_options['fields']['mail_1']['hide_empty'] = TRUE;
+  /* Field: User: Name */
+  $handler->display->display_options['fields']['name_2']['id'] = 'name_2';
+  $handler->display->display_options['fields']['name_2']['table'] = 'users';
+  $handler->display->display_options['fields']['name_2']['field'] = 'name';
+  $handler->display->display_options['fields']['name_2']['relationship'] = 'field_superintendents_target_id';
+  $handler->display->display_options['fields']['name_2']['label'] = 'Superintendent';
+  $handler->display->display_options['fields']['name_2']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['name_2']['overwrite_anonymous'] = TRUE;
+  /* Field: User: E-mail */
+  $handler->display->display_options['fields']['mail_2']['id'] = 'mail_2';
+  $handler->display->display_options['fields']['mail_2']['table'] = 'users';
+  $handler->display->display_options['fields']['mail_2']['field'] = 'mail';
+  $handler->display->display_options['fields']['mail_2']['relationship'] = 'field_superintendents_target_id';
+  $handler->display->display_options['fields']['mail_2']['label'] = 'Superintendent E-mail';
+  $handler->display->display_options['fields']['mail_2']['hide_empty'] = TRUE;
+  /* Field: Taxonomy term: Address (field_address:data) */
+  $handler->display->display_options['fields']['field_address_data']['id'] = 'field_address_data';
+  $handler->display->display_options['fields']['field_address_data']['table'] = 'field_data_field_address';
+  $handler->display->display_options['fields']['field_address_data']['field'] = 'field_address_data';
+  $handler->display->display_options['fields']['field_address_data']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['fields']['field_address_data']['label'] = 'Phone';
+  $handler->display->display_options['fields']['field_address_data']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_address_data']['format'] = 'key';
+  $handler->display->display_options['fields']['field_address_data']['key'] = 'phone_number';
+  /* Field: Content: General Contact Phone */
+  $handler->display->display_options['fields']['field_general_contact_phone']['id'] = 'field_general_contact_phone';
+  $handler->display->display_options['fields']['field_general_contact_phone']['table'] = 'field_data_field_general_contact_phone';
+  $handler->display->display_options['fields']['field_general_contact_phone']['field'] = 'field_general_contact_phone';
+  $handler->display->display_options['fields']['field_general_contact_phone']['label'] = 'School Provided Phone';
+  $handler->display->display_options['fields']['field_general_contact_phone']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_general_contact_phone']['hide_empty'] = TRUE;
+  /* Field: ACL node: Grant delete */
+  $handler->display->display_options['fields']['grant_delete']['id'] = 'grant_delete';
+  $handler->display->display_options['fields']['grant_delete']['table'] = 'acl_node';
+  $handler->display->display_options['fields']['grant_delete']['field'] = 'grant_delete';
+  $handler->display->display_options['fields']['grant_delete']['relationship'] = 'acl_id';
+  $handler->display->display_options['fields']['grant_delete']['label'] = 'Can delete';
+  $handler->display->display_options['fields']['grant_delete']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['grant_delete']['not'] = 0;
+  /* Field: ACL node: Grant update */
+  $handler->display->display_options['fields']['grant_update']['id'] = 'grant_update';
+  $handler->display->display_options['fields']['grant_update']['table'] = 'acl_node';
+  $handler->display->display_options['fields']['grant_update']['field'] = 'grant_update';
+  $handler->display->display_options['fields']['grant_update']['relationship'] = 'acl_id';
+  $handler->display->display_options['fields']['grant_update']['label'] = 'Can update';
+  $handler->display->display_options['fields']['grant_update']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['grant_update']['not'] = 0;
+  /* Field: ACL node: Grant view */
+  $handler->display->display_options['fields']['grant_view']['id'] = 'grant_view';
+  $handler->display->display_options['fields']['grant_view']['table'] = 'acl_node';
+  $handler->display->display_options['fields']['grant_view']['field'] = 'grant_view';
+  $handler->display->display_options['fields']['grant_view']['relationship'] = 'acl_id';
+  $handler->display->display_options['fields']['grant_view']['label'] = 'Can view';
+  $handler->display->display_options['fields']['grant_view']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['grant_view']['not'] = 0;
+  /* Field: User: First Name */
+  $handler->display->display_options['fields']['field_fname']['id'] = 'field_fname';
+  $handler->display->display_options['fields']['field_fname']['table'] = 'field_data_field_fname';
+  $handler->display->display_options['fields']['field_fname']['field'] = 'field_fname';
+  $handler->display->display_options['fields']['field_fname']['relationship'] = 'uid';
+  $handler->display->display_options['fields']['field_fname']['label'] = 'Secondary First Name';
+  $handler->display->display_options['fields']['field_fname']['exclude'] = TRUE;
+  /* Field: User: Last Name */
+  $handler->display->display_options['fields']['field_lname']['id'] = 'field_lname';
+  $handler->display->display_options['fields']['field_lname']['table'] = 'field_data_field_lname';
+  $handler->display->display_options['fields']['field_lname']['field'] = 'field_lname';
+  $handler->display->display_options['fields']['field_lname']['relationship'] = 'uid';
+  $handler->display->display_options['fields']['field_lname']['label'] = 'Secondary Last Name';
+  $handler->display->display_options['fields']['field_lname']['exclude'] = TRUE;
+  /* Field: User: First Name */
+  $handler->display->display_options['fields']['field_fname_1']['id'] = 'field_fname_1';
+  $handler->display->display_options['fields']['field_fname_1']['table'] = 'field_data_field_fname';
+  $handler->display->display_options['fields']['field_fname_1']['field'] = 'field_fname';
+  $handler->display->display_options['fields']['field_fname_1']['relationship'] = 'uid_1';
+  $handler->display->display_options['fields']['field_fname_1']['label'] = 'Owner First Name';
+  $handler->display->display_options['fields']['field_fname_1']['exclude'] = TRUE;
+  /* Field: User: Last Name */
+  $handler->display->display_options['fields']['field_lname_1']['id'] = 'field_lname_1';
+  $handler->display->display_options['fields']['field_lname_1']['table'] = 'field_data_field_lname';
+  $handler->display->display_options['fields']['field_lname_1']['field'] = 'field_lname';
+  $handler->display->display_options['fields']['field_lname_1']['relationship'] = 'uid_1';
+  $handler->display->display_options['fields']['field_lname_1']['label'] = 'Owner Last Name';
+  $handler->display->display_options['fields']['field_lname_1']['exclude'] = TRUE;
+  /* Field: User: First Name */
+  $handler->display->display_options['fields']['field_fname_2']['id'] = 'field_fname_2';
+  $handler->display->display_options['fields']['field_fname_2']['table'] = 'field_data_field_fname';
+  $handler->display->display_options['fields']['field_fname_2']['field'] = 'field_fname';
+  $handler->display->display_options['fields']['field_fname_2']['relationship'] = 'field_superintendents_target_id';
+  $handler->display->display_options['fields']['field_fname_2']['label'] = 'Superintendent First Name';
+  $handler->display->display_options['fields']['field_fname_2']['exclude'] = TRUE;
+  /* Field: User: Last Name */
+  $handler->display->display_options['fields']['field_lname_2']['id'] = 'field_lname_2';
+  $handler->display->display_options['fields']['field_lname_2']['table'] = 'field_data_field_lname';
+  $handler->display->display_options['fields']['field_lname_2']['field'] = 'field_lname';
+  $handler->display->display_options['fields']['field_lname_2']['relationship'] = 'field_superintendents_target_id';
+  $handler->display->display_options['fields']['field_lname_2']['label'] = 'Superintendent Last Name';
+  $handler->display->display_options['fields']['field_lname_2']['exclude'] = TRUE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'school_profile' => 'school_profile',
+  );
+  /* Filter criterion: Content: Title */
+  $handler->display->display_options['filters']['title']['id'] = 'title';
+  $handler->display->display_options['filters']['title']['table'] = 'node';
+  $handler->display->display_options['filters']['title']['field'] = 'title';
+  $handler->display->display_options['filters']['title']['operator'] = 'allwords';
+  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['label'] = 'School Name';
+  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
+  $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    17 => 0,
+    7 => 0,
+    18 => 0,
+    6 => 0,
+    19 => 0,
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = '2015 School Review';
+  $handler->display->display_options['path'] = '2015/contacts';
+  $translatables['school_contacts'] = array(
+    t('Master'),
+    t('School Contacts'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('<a href="/2015/overview" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">Overview</a><a href="/2015/5e" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">5E Tracker</a><a href="/2015/contacts" style="color:white; background:#f05a28; width:50%; display:inline; float:left; padding:10px; border:solid white 2px; font-weight:bold">School Contacts</a><a href="/2015/school-summary" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">School Summary</a>'),
+    t('acl_node.acl_id -> acl.acl_id'),
+    t('acl_user.uid -> users.uid'),
+    t('author'),
+    t('term (schools)'),
+    t('Taxonomy term referencing User from field_superintendents'),
+    t('User entity referenced from field_superintendents'),
+    t('Primary'),
+    t('Primary Email'),
+    t('Secondary'),
+    t('Secondary E-mail'),
+    t('Superintendent'),
+    t('Superintendent E-mail'),
+    t('Phone'),
+    t('School Provided Phone'),
+    t('Can delete'),
+    t('Can update'),
+    t('Can view'),
+    t('Secondary First Name'),
+    t('Secondary Last Name'),
+    t('Owner First Name'),
+    t('Owner Last Name'),
+    t('Superintendent First Name'),
+    t('Superintendent Last Name'),
+    t('School Name'),
+    t('Page'),
+    t('2015 School Review'),
+  );
+  $export['school_contacts'] = $view;
+
+  $view = new view();
   $view->name = 'school_profiles';
   $view->description = '';
   $view->tag = 'default';
