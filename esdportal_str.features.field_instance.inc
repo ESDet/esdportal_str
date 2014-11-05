@@ -4835,7 +4835,7 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'taxonomy_term',
     'field_name' => 'field_2014_site_visit',
-    'label' => '2014 Site Visit Received?',
+    'label' => '2014 Site Visit Complete?',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -5202,7 +5202,44 @@ function esdportal_str_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 41,
+      'weight' => 42,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_2015_site_visit_category'
+  $field_instances['taxonomy_term-schools-field_2015_site_visit_category'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 53,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_2015_site_visit_category',
+    'label' => '2015 Site Visit Category',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 39,
     ),
   );
 
@@ -5304,7 +5341,7 @@ function esdportal_str_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 42,
+      'weight' => 41,
     ),
   );
 
@@ -5335,49 +5372,6 @@ function esdportal_str_field_default_field_instances() {
     'entity_type' => 'taxonomy_term',
     'field_name' => 'field_2015_sv_eligible',
     'label' => '2015 Site Visit Eligible?',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 39,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-schools-field_2015_sv_scheduled'
-  $field_instances['taxonomy_term-schools-field_2015_sv_scheduled'] = array(
-    'bundle' => 'schools',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'aside' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 49,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_2015_sv_scheduled',
-    'label' => '2015 Site Visit Scheduled?',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -6383,6 +6377,43 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-schools-field_outreach_status'
+  $field_instances['taxonomy_term-schools-field_outreach_status'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 55,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_outreach_status',
+    'label' => 'Outreach Status',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 48,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-schools-field_school_scorecard_status'
   $field_instances['taxonomy_term-schools-field_school_scorecard_status'] = array(
     'bundle' => 'schools',
@@ -6534,6 +6565,43 @@ function esdportal_str_field_default_field_instances() {
       ),
       'type' => 'options_onoff',
       'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-schools-field_site_visit_hub'
+  $field_instances['taxonomy_term-schools-field_site_visit_hub'] = array(
+    'bundle' => 'schools',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'aside' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 54,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_site_visit_hub',
+    'label' => 'Site Visit Hub',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 47,
     ),
   );
 
@@ -6861,18 +6929,18 @@ function esdportal_str_field_default_field_instances() {
   t('2014 5Essentials Teacher Component Complete?');
   t('2014 Graded School');
   t('2014 School Profile Complete?');
+  t('2014 Site Visit Complete?');
   t('2014 Site Visit Date');
-  t('2014 Site Visit Received?');
   t('2015 5Essentials Parent Component Complete?');
   t('2015 5Essentials Roster Submitted?');
   t('2015 5Essentials Student Component Complete?');
   t('2015 5Essentials Teacher Component Complete?');
   t('2015 Graded Type');
   t('2015 In Universe');
+  t('2015 Site Visit Category');
   t('2015 Site Visit Complete?');
   t('2015 Site Visit Date');
   t('2015 Site Visit Eligible?');
-  t('2015 Site Visit Scheduled?');
   t('2015 Site Visit Zone');
   t('5E roster');
   t('A phone number where parents can contact the school for information.');
@@ -6962,6 +7030,7 @@ function esdportal_str_field_default_field_instances() {
   t('Opted in?');
   t('Organized Sports');
   t('Other student clubs not listed above (up to three).');
+  t('Outreach Status');
   t('Parent Involvement');
   t('Parent Supports');
   t('Person Responsible');
@@ -6990,6 +7059,7 @@ function esdportal_str_field_default_field_instances() {
   t('Select languages.');
   t('Select one of these options to describe the special education programming at your school.');
   t('Send parents to your admissions page.');
+  t('Site Visit Hub');
   t('Site visit reuse reason');
   t('Site visit status');
   t('Site visit unavailability');

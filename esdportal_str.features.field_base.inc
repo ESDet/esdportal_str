@@ -487,6 +487,50 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
+  // Exported field_base: 'field_2015_site_visit_category'
+  $field_bases['field_2015_site_visit_category'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_2015_site_visit_category',
+    'foreign keys' => array(
+      'taxonomy_term_data' => array(
+        'columns' => array(
+          'target_id' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'site_visit_category' => 'site_visit_category',
+        ),
+      ),
+      'target_type' => 'taxonomy_term',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
   // Exported field_base: 'field_2015_site_visit_date'
   $field_bases['field_2015_site_visit_date'] = array(
     'active' => 1,
@@ -526,33 +570,6 @@ function esdportal_str_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_2015_sv_eligible',
-    'foreign keys' => array(),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => 'No',
-        1 => 'Yes',
-      ),
-      'allowed_values_function' => '',
-      'entity_translation_sync' => FALSE,
-    ),
-    'translatable' => 0,
-    'type' => 'list_boolean',
-  );
-
-  // Exported field_base: 'field_2015_sv_scheduled'
-  $field_bases['field_2015_sv_scheduled'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_2015_sv_scheduled',
     'foreign keys' => array(),
     'indexes' => array(
       'value' => array(
@@ -617,10 +634,9 @@ function esdportal_str_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'NE' => 'Northeast',
-        'NW' => 'Northwest',
-        'SE' => 'Southeast',
-        'SW' => 'Southwest',
+        1 => '1 - January',
+        2 => '2 - February',
+        3 => '3 - March',
       ),
       'allowed_values_function' => '',
       'entity_translation_sync' => FALSE,
@@ -2825,6 +2841,50 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_outreach_status'
+  $field_bases['field_outreach_status'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_outreach_status',
+    'foreign keys' => array(
+      'taxonomy_term_data' => array(
+        'columns' => array(
+          'target_id' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'outreach_status' => 'outreach_status',
+        ),
+      ),
+      'target_type' => 'taxonomy_term',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
   // Exported field_base: 'field_parent_involvement'
   $field_bases['field_parent_involvement'] = array(
     'active' => 1,
@@ -3403,6 +3463,50 @@ function esdportal_str_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'datetime',
+  );
+
+  // Exported field_base: 'field_site_visit_hub'
+  $field_bases['field_site_visit_hub'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_site_visit_hub',
+    'foreign keys' => array(
+      'taxonomy_term_data' => array(
+        'columns' => array(
+          'target_id' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'site_visit_hub' => 'site_visit_hub',
+        ),
+      ),
+      'target_type' => 'taxonomy_term',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_site_visit_reuse_reason'
