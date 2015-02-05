@@ -4,6 +4,7 @@ package = Features
 php = 5.2.4
 version = 7.x-1.2
 project = esdportal_str
+dependencies[] = acl_views
 dependencies[] = addressfield
 dependencies[] = boxes
 dependencies[] = context
