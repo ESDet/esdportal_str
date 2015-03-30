@@ -451,6 +451,7 @@ function esdportal_str_field_default_field_bases() {
         'Yes_New' => 'Yes - New',
         'Yes_Turnaround' => 'Yes - Turnaround',
         'Optional_50_74' => 'Optional - Between 50-75% Detroit Residents',
+        'No_5E_Part' => 'No - Participating in 5E',
         'No' => 'No',
       ),
       'allowed_values_function' => '',

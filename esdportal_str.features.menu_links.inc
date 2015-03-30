@@ -80,7 +80,7 @@ function esdportal_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -49,
   );
   // Exported menu link: menu-moderator-menu:manage-schools
   $menu_links['menu-moderator-menu:manage-schools'] = array(
@@ -94,24 +94,6 @@ function esdportal_str_menu_default_menu_links() {
       ),
     ),
     'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-  );
-  // Exported menu link: menu-moderator-menu:manage-site-visit-status
-  $menu_links['menu-moderator-menu:manage-site-visit-status'] = array(
-    'menu_name' => 'menu-moderator-menu',
-    'link_path' => 'manage-site-visit-status',
-    'router_path' => 'manage-site-visit-status',
-    'link_title' => 'Manage Site Visit Status',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
@@ -166,7 +148,7 @@ function esdportal_str_menu_default_menu_links() {
       ),
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
@@ -332,7 +314,6 @@ function esdportal_str_menu_default_menu_links() {
   t('Log out');
   t('Manage School Profiles');
   t('Manage School Taxonomy');
-  t('Manage Site Visit Status');
   t('Manage Users');
   t('Our Main Website');
   t('Page');

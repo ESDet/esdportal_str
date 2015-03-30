@@ -3326,6 +3326,7 @@ function esdportal_str_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
@@ -3346,6 +3347,7 @@ function esdportal_str_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
@@ -3579,6 +3581,7 @@ function esdportal_str_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
@@ -5514,17 +5517,7 @@ function esdportal_str_field_default_field_instances() {
   // Exported field_instance: 'taxonomy_term-schools-field_address'
   $field_instances['taxonomy_term-schools-field_address'] = array(
     'bundle' => 'schools',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'taxonomy_term|schools|field_address|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => 'Detroit',
-        'administrative_area' => 'MI',
-        'postal_code' => '',
-        'country' => 'US',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -5562,6 +5555,7 @@ function esdportal_str_field_default_field_instances() {
         'available_countries' => array(
           'US' => 'US',
         ),
+        'default_country' => '',
         'format_handlers' => array(
           'address' => 'address',
           'phone' => 'phone',
@@ -5570,6 +5564,7 @@ function esdportal_str_field_default_field_instances() {
           'name-full' => 0,
           'name-oneline' => 0,
         ),
+        'phone_number_fields' => array(),
       ),
       'type' => 'addressfield_standard',
       'weight' => 8,
