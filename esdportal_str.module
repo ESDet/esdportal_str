@@ -687,3 +687,14 @@ function esdportal_str_views_data_alter(&$data) {
     }
   }
 }
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ *
+ * Add our addressfield plugin that enables sub_administrative_area component as county.
+ */
+function esdportal_str_ctools_plugin_directory($module, $plugin) {
+  if ($module === 'addressfield') {
+    return 'plugins/' . $plugin;
+  }
+}
