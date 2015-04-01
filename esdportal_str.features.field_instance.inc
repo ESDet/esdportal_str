@@ -464,6 +464,53 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ec_profile-field_capacity'
+  $field_instances['node-ec_profile-field_capacity'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 13,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_capacity',
+    'label' => 'Capacity',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 25,
+    ),
+  );
+
   // Exported field_instance: 'node-ec_profile-field_ec'
   $field_instances['node-ec_profile-field_ec'] = array(
     'bundle' => 'ec_profile',
@@ -499,6 +546,623 @@ function esdportal_str_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_select',
       'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_contact'
+  $field_instances['node-ec_profile-field_ec_contact'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 17,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_contact',
+    'label' => 'Contact person',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 29,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_contract'
+  $field_instances['node-ec_profile-field_ec_contract'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Has written contract?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 14,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_contract',
+    'label' => 'Written Contract',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 26,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_eligibility'
+  $field_instances['node-ec_profile-field_ec_eligibility'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Program eligibility criteria',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_eligibility',
+    'label' => 'Eligibility',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 22,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_environment'
+  $field_instances['node-ec_profile-field_ec_environment'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Environment',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_environment',
+    'label' => 'Environment',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 19,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_fee'
+  $field_instances['node-ec_profile-field_ec_fee'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Application / registration fee',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 15,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_fee',
+    'label' => 'Fee',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max' => '',
+      'min' => '',
+      'prefix' => '$',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 27,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_meals'
+  $field_instances['node-ec_profile-field_ec_meals'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Meals provided',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_meals',
+    'label' => 'Meals',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 21,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_message'
+  $field_instances['node-ec_profile-field_ec_message'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 18,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_message',
+    'label' => 'Message to families',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 30,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_pay_schedule'
+  $field_instances['node-ec_profile-field_ec_pay_schedule'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 20,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_pay_schedule',
+    'label' => 'Pay schedule',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 34,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_schedule'
+  $field_instances['node-ec_profile-field_ec_schedule'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 21,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_schedule',
+    'label' => 'Schedule type',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 32,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_setting'
+  $field_instances['node-ec_profile-field_ec_setting'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 22,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_setting',
+    'label' => 'Care setting',
+    'required' => FALSE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 33,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_special'
+  $field_instances['node-ec_profile-field_ec_special'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_special',
+    'label' => 'Special needs experience',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 23,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_specialty'
+  $field_instances['node-ec_profile-field_ec_specialty'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Program specialty',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 23,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_specialty',
+    'label' => 'Specialty',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 31,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_subsidy'
+  $field_instances['node-ec_profile-field_ec_subsidy'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_subsidy',
+    'label' => 'Subsidy',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 24,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_transportation'
+  $field_instances['node-ec_profile-field_ec_transportation'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Provides transportation?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_transportation',
+    'label' => 'Transportation',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 20,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_email'
+  $field_instances['node-ec_profile-field_email'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 16,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_email',
+    'label' => 'Email',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 28,
     ),
   );
 
@@ -8149,6 +8813,7 @@ function esdportal_str_field_default_field_instances() {
   t('Age From');
   t('Age To');
   t('Alternative School');
+  t('Application / registration fee');
   t('Application Fee');
   t('Application Fee Amount');
   t('Application Process');
@@ -8166,10 +8831,13 @@ function esdportal_str_field_default_field_instances() {
   t('Building code');
   t('Building name');
   t('Bullying Policy');
+  t('Capacity');
+  t('Care setting');
   t('Career Technical Emphasis');
   t('Character Development');
   t('College Counseling');
   t('College Prep');
+  t('Contact person');
   t('Counselor/Student Ratio');
   t('Destination School');
   t('Discipline Programs');
@@ -8193,14 +8861,17 @@ function esdportal_str_field_default_field_instances() {
   t('Early Child Center Relationships');
   t('Early Childhood Programs');
   t('Early Childhood Transition');
+  t('Eligibility');
   t('Email');
   t('Email from old location field');
   t('English Language Learners');
   t('Enter one or many users who should see school profiles (or other data) listed on their dashboard.');
+  t('Environment');
   t('Extra Learning Resources');
   t('Facebook URL');
   t('Facilities');
   t('Family Supports');
+  t('Fee');
   t('Feeder School');
   t('Files');
   t('First Name');
@@ -8214,6 +8885,7 @@ function esdportal_str_field_default_field_instances() {
   t('Governance');
   t('Grades Served');
   t('Growth Data Doc');
+  t('Has written contract?');
   t('How do parents get involved at your school?');
   t('How many applications did you receive this year?');
   t('How many students did you accept this year?');
@@ -8231,6 +8903,8 @@ function esdportal_str_field_default_field_instances() {
   t('License minus the letters.');
   t('Licensed Date');
   t('Links');
+  t('Meals');
+  t('Meals provided');
   t('Message to families');
   t('Monday Close');
   t('Monday Open');
@@ -8242,6 +8916,7 @@ function esdportal_str_field_default_field_instances() {
   t('Outreach Status');
   t('Parent Involvement');
   t('Parent Supports');
+  t('Pay schedule');
   t('Person Responsible');
   t('Photos');
   t('Please check all AP classes offered (HS only)');
@@ -8254,11 +8929,15 @@ function esdportal_str_field_default_field_instances() {
   t('Please use this to send a personal message to families about your school. A good place to start is to let families know what makes your school different or sets it apart from other schools.');
   t('Principal First Name');
   t('Principal Last Name');
+  t('Program eligibility criteria');
+  t('Program specialty');
   t('Provide file resources to display alongside school information.');
   t('Provide links to external resources to display alongside school information.');
+  t('Provides transportation?');
   t('Saturday Close');
   t('Saturday Open');
   t('Schedule');
+  t('Schedule type');
   t('School');
   t('School Facebook page');
   t('School Scorecard status');
@@ -8281,6 +8960,8 @@ function esdportal_str_field_default_field_instances() {
   t('Special Education Programs');
   t('Special Needs');
   t('Special Tracks');
+  t('Special needs experience');
+  t('Specialty');
   t('Specialty School');
   t('Staff Resources');
   t('State status');
@@ -8293,6 +8974,7 @@ function esdportal_str_field_default_field_instances() {
   t('Student Leadership Opportunities');
   t('Student clubs (Note that clubs are distinct from courses)');
   t('Students Accepted');
+  t('Subsidy');
   t('Sunday Close');
   t('Sunday Open');
   t('Superintendents');
@@ -8329,6 +9011,7 @@ function esdportal_str_field_default_field_instances() {
   t('What transportation options are available for before and after the regular school day?  How do you determine eligibility?');
   t('What vocational or skills-based training programs does your school offer students, if any?');
   t('Who is responsible for community partnerships and after-school programs at your school?');
+  t('Written Contract');
   t('esd_ec_id');
   t('geo');
   t('grDataLetter');

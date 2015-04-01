@@ -17,6 +17,14 @@ function esdportal_str_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'early_childhood_center_subsidy_types' => array(
+      'name' => 'Early Childhood Center subsidy types',
+      'machine_name' => 'early_childhood_center_subsidy_types',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'ec' => array(
       'name' => 'Early Childhood Center',
       'machine_name' => 'ec',
@@ -28,6 +36,22 @@ function esdportal_str_taxonomy_default_vocabularies() {
     'ec_licensetype' => array(
       'name' => 'Early Childhood Center license type',
       'machine_name' => 'ec_licensetype',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
+    'ec_special' => array(
+      'name' => 'Early Childhood special needs experience types',
+      'machine_name' => 'ec_special',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
+    'ec_specialty' => array(
+      'name' => 'Early Childhood Center specialty types',
+      'machine_name' => 'ec_specialty',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
