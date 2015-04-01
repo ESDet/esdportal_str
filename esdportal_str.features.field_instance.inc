@@ -487,8 +487,8 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_ec',
-    'label' => 'ec',
-    'required' => 0,
+    'label' => 'related Early Childchood Center record',
+    'required' => 1,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
@@ -8329,7 +8329,6 @@ function esdportal_str_field_default_field_instances() {
   t('What transportation options are available for before and after the regular school day?  How do you determine eligibility?');
   t('What vocational or skills-based training programs does your school offer students, if any?');
   t('Who is responsible for community partnerships and after-school programs at your school?');
-  t('ec');
   t('esd_ec_id');
   t('geo');
   t('grDataLetter');
@@ -8341,6 +8340,7 @@ function esdportal_str_field_default_field_instances() {
   t('pr1_reading_raw');
   t('pr1_reading_score');
   t('pr1_reading_scoremax');
+  t('related Early Childchood Center record');
   t('state_license_id');
 
   return $field_instances;
