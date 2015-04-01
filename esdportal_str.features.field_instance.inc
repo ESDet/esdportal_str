@@ -525,7 +525,7 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_friday_close',
-    'label' => 'friday Close',
+    'label' => 'Friday Close',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -566,7 +566,7 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_friday_open',
-    'label' => 'friday Open',
+    'label' => 'Friday Open',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -607,7 +607,7 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_monday_close',
-    'label' => 'monday Close',
+    'label' => 'Monday Close',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -648,7 +648,7 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_monday_open',
-    'label' => 'monday Open',
+    'label' => 'Monday Open',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -689,7 +689,7 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_saturday_close',
-    'label' => 'saturday Close',
+    'label' => 'Saturday Close',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -730,7 +730,7 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_saturday_open',
-    'label' => 'saturday Open',
+    'label' => 'Saturday Open',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -853,7 +853,7 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_thursday_close',
-    'label' => 'thursday Close',
+    'label' => 'Thursday Close',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -894,7 +894,7 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_thursday_open',
-    'label' => 'thursday Open',
+    'label' => 'Thursday Open',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -935,7 +935,7 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_tuesday_close',
-    'label' => 'tuesday Close',
+    'label' => 'Tuesday Close',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -976,7 +976,7 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_tuesday_open',
-    'label' => 'tuesday Open',
+    'label' => 'Tuesday Open',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -1072,7 +1072,7 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_wednesday_close',
-    'label' => 'wednesday Close',
+    'label' => 'Wednesday Close',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -1113,7 +1113,7 @@ function esdportal_str_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_wednesday_open',
-    'label' => 'wednesday Open',
+    'label' => 'Wednesday Open',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -8319,29 +8319,29 @@ function esdportal_str_field_default_field_instances() {
   t('Who is responsible for community partnerships and after-school programs at your school?');
   t('ec');
   t('esd_ec_id');
-  t('friday Close');
-  t('friday Open');
+  t('Friday Close');
+  t('Friday Open');
   t('geo');
   t('grDataLetter');
   t('grDataType');
   t('identifier from Great Start Connect database');
-  t('monday Close');
-  t('monday Open');
+  t('Monday Close');
+  t('Monday Open');
   t('pr1_reading_credit');
   t('pr1_reading_grade');
   t('pr1_reading_gradeval');
   t('pr1_reading_raw');
   t('pr1_reading_score');
   t('pr1_reading_scoremax');
-  t('saturday Close');
-  t('saturday Open');
+  t('Saturday Close');
+  t('Saturday Open');
   t('state_license_id');
-  t('thursday Close');
-  t('thursday Open');
-  t('tuesday Close');
-  t('tuesday Open');
-  t('wednesday Close');
-  t('wednesday Open');
+  t('Thursday Close');
+  t('Thursday Open');
+  t('Tuesday Close');
+  t('Tuesday Open');
+  t('Wednesday Close');
+  t('Wednesday Open');
 
   return $field_instances;
 }
