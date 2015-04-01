@@ -109,6 +109,14 @@ function esdportal_str_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'ec_profile' => array(
+      'name' => t('Early Childhood Center Profile'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Business Name'),
+      'help' => '',
+    ),
     'page' => array(
       'name' => t('Page'),
       'base' => 'node_content',
