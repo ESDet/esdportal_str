@@ -17,6 +17,22 @@ function esdportal_str_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'ec' => array(
+      'name' => 'Early Childhood Center',
+      'machine_name' => 'ec',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
+    'ec_licensetype' => array(
+      'name' => 'Early Childhood Center license type',
+      'machine_name' => 'ec_licensetype',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'esd_exclusive_typology' => array(
       'name' => 'ESD Exclusive Typology',
       'machine_name' => 'esd_exclusive_typology',

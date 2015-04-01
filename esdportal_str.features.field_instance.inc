@@ -4474,6 +4474,496 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-ec-field_address'
+  $field_instances['taxonomy_term-ec-field_address'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_address',
+    'label' => 'Address',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'addressfield',
+      'settings' => array(
+        'available_countries' => array(
+          'US' => 'US',
+        ),
+        'default_country' => 'US',
+        'format_handlers' => array(
+          'address' => 'address',
+          'phone' => 'phone',
+          'address-hide-country' => 'address-hide-country',
+          'organisation' => 'organisation',
+          'name-oneline' => 'name-oneline',
+          'address-us-with-county' => 'address-us-with-county',
+          'address-hide-postal-code' => 0,
+          'address-hide-street' => 0,
+          'name-full' => 0,
+          'address-optional' => 0,
+        ),
+        'phone_number_fields' => array(
+          'extension' => 0,
+          'fax' => 0,
+          'mobile' => 0,
+          'phone' => 'phone',
+        ),
+      ),
+      'type' => 'addressfield_standard',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-ec-field_age_from'
+  $field_instances['taxonomy_term-ec-field_age_from'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'In months',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_age_from',
+    'label' => 'Age From',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => 'month|months',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-ec-field_age_to'
+  $field_instances['taxonomy_term-ec-field_age_to'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'In months',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 4,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_age_to',
+    'label' => 'Age To',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => 'month|months',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-ec-field_ec_license_type'
+  $field_instances['taxonomy_term-ec-field_ec_license_type'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_ec_license_type',
+    'label' => 'License Type',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-ec-field_esd_ec_id'
+  $field_instances['taxonomy_term-ec-field_esd_ec_id'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'License minus the letters.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 9,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_esd_ec_id',
+    'label' => 'esd_ec_id',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-ec-field_geo'
+  $field_instances['taxonomy_term-ec-field_geo'] = array(
+    'bundle' => 'ec',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'geofield',
+        'settings' => array(
+          'data' => 'full',
+        ),
+        'type' => 'geofield_wkt',
+        'weight' => 6,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_geo',
+    'label' => 'geo',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'local_solr' => array(
+        'enabled' => FALSE,
+        'lat_field' => 'lat',
+        'lng_field' => 'lng',
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'geocoder',
+      'settings' => array(
+        'delta_handling' => 'default',
+        'geocoder_field' => 'field_address',
+        'geocoder_handler' => 'google',
+        'handler_settings' => array(
+          'google' => array(
+            'all_results' => 0,
+            'geometry_type' => 'point',
+            'reject_results' => array(
+              'APPROXIMATE' => 0,
+              'GEOMETRIC_CENTER' => 0,
+              'RANGE_INTERPOLATED' => 0,
+              'ROOFTOP' => 0,
+            ),
+          ),
+        ),
+      ),
+      'type' => 'geocoder',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-ec-field_gsc_provider_id'
+  $field_instances['taxonomy_term-ec-field_gsc_provider_id'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'identifier from Great Start Connect database',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 7,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_gsc_provider_id',
+    'label' => 'GSC Provider ID',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-ec-field_licensed_date'
+  $field_instances['taxonomy_term-ec-field_licensed_date'] = array(
+    'bundle' => 'ec',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => FALSE,
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
+        'weight' => 8,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_licensed_date',
+    'label' => 'Licensed Date',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'entity_translation_sync' => FALSE,
+      'restrictions' => array(
+        'allowed_values' => array(
+          'type' => 'disabled',
+        ),
+        'max' => array(
+          'date' => array(
+            'day' => 31,
+            'month' => 3,
+            'year' => 2015,
+          ),
+          'host_entity_date' => array(
+            'end_date' => 0,
+            'field' => '',
+          ),
+          'type' => 'disabled',
+        ),
+        'min' => array(
+          'date' => array(
+            'day' => 31,
+            'month' => 3,
+            'year' => 2015,
+          ),
+          'host_entity_date' => array(
+            'end_date' => 0,
+            'field' => '',
+          ),
+          'type' => 'disabled',
+        ),
+      ),
+      'restrictions2' => array(
+        'allowed_values' => array(
+          'type' => 'disabled',
+        ),
+        'max' => array(
+          'date' => NULL,
+          'host_entity_date' => array(
+            'end_date' => FALSE,
+            'field' => NULL,
+          ),
+          'host_entity_interval' => array(
+            'field' => NULL,
+          ),
+          'interval' => NULL,
+          'type' => 'disabled',
+        ),
+        'min' => array(
+          'date' => NULL,
+          'host_entity_date' => array(
+            'end_date' => FALSE,
+            'field' => NULL,
+          ),
+          'host_entity_interval' => array(
+            'field' => NULL,
+          ),
+          'interval' => NULL,
+          'type' => 'disabled',
+        ),
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 15,
+        'input_format' => 'm/d/Y - H:i:s',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'no_fieldset' => 0,
+        'repeat_collapsed' => 0,
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_popup',
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-ec-field_months_of_operation'
+  $field_instances['taxonomy_term-ec-field_months_of_operation'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_months_of_operation',
+    'label' => 'Months of operation',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-ec-field_state_license_id'
+  $field_instances['taxonomy_term-ec-field_state_license_id'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_state_license_id',
+    'label' => 'state_license_id',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-schools-field_2011_pct_det_res'
   $field_instances['taxonomy_term-schools-field_2011_pct_det_res'] = array(
     'bundle' => 'schools',
@@ -6944,6 +7434,8 @@ function esdportal_str_field_default_field_instances() {
   t('Address');
   t('Admissions URL');
   t('After School Transportation');
+  t('Age From');
+  t('Age To');
   t('Alternative School');
   t('Application Fee');
   t('Application Fee Amount');
@@ -7001,6 +7493,7 @@ function esdportal_str_field_default_field_instances() {
   t('Files');
   t('First Name');
   t('Foreign Language');
+  t('GSC Provider ID');
   t('General Contact Phone');
   t('General Information Email');
   t('Girls Sports');
@@ -7013,14 +7506,19 @@ function esdportal_str_field_default_field_instances() {
   t('If you have relationships with early child centers, please list which ones.');
   t('If your school offers dual enrollment, with which institutions?');
   t('Immersion');
+  t('In months');
   t('In-School Programs');
   t('Instructional Model');
   t('Is there an application fee?');
   t('Is there an application process for your school?');
   t('Is there anything special about your school\'s schedule?');
   t('Last Name');
+  t('License Type');
+  t('License minus the letters.');
+  t('Licensed Date');
   t('Links');
   t('Message to families');
+  t('Months of operation');
   t('Operator');
   t('Opted in?');
   t('Organized Sports');
@@ -7104,15 +7602,18 @@ function esdportal_str_field_default_field_instances() {
   t('What transportation options are available for before and after the regular school day?  How do you determine eligibility?');
   t('What vocational or skills-based training programs does your school offer students, if any?');
   t('Who is responsible for community partnerships and after-school programs at your school?');
+  t('esd_ec_id');
   t('geo');
   t('grDataLetter');
   t('grDataType');
+  t('identifier from Great Start Connect database');
   t('pr1_reading_credit');
   t('pr1_reading_grade');
   t('pr1_reading_gradeval');
   t('pr1_reading_raw');
   t('pr1_reading_score');
   t('pr1_reading_scoremax');
+  t('state_license_id');
 
   return $field_instances;
 }
