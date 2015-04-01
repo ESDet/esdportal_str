@@ -257,10 +257,10 @@ function esdportal_str_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'locations' => array(
-          'weight' => '30',
+          'weight' => '2',
         ),
         'title' => array(
-          'weight' => '-5',
+          'weight' => '1',
         ),
       ),
       'display' => array(),

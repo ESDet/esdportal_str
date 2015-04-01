@@ -460,7 +460,7 @@ function esdportal_str_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 3,
     ),
   );
 
@@ -498,7 +498,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 34,
+      'weight' => 0,
     ),
   );
 
@@ -539,7 +539,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 36,
+      'weight' => 16,
     ),
   );
 
@@ -580,7 +580,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 35,
+      'weight' => 15,
     ),
   );
 
@@ -621,7 +621,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 36,
+      'weight' => 8,
     ),
   );
 
@@ -662,7 +662,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 35,
+      'weight' => 7,
     ),
   );
 
@@ -703,7 +703,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 36,
+      'weight' => 18,
     ),
   );
 
@@ -744,7 +744,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 35,
+      'weight' => 17,
     ),
   );
 
@@ -785,7 +785,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 36,
+      'weight' => 6,
     ),
   );
 
@@ -826,7 +826,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 35,
+      'weight' => 5,
     ),
   );
 
@@ -867,7 +867,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 36,
+      'weight' => 14,
     ),
   );
 
@@ -908,7 +908,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 35,
+      'weight' => 13,
     ),
   );
 
@@ -949,7 +949,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 36,
+      'weight' => 10,
     ),
   );
 
@@ -990,7 +990,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 35,
+      'weight' => 9,
     ),
   );
 
@@ -1045,7 +1045,7 @@ function esdportal_str_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 32,
+      'weight' => 4,
     ),
   );
 
@@ -1086,7 +1086,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 36,
+      'weight' => 12,
     ),
   );
 
@@ -1127,7 +1127,7 @@ function esdportal_str_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 35,
+      'weight' => 11,
     ),
   );
 
@@ -8205,6 +8205,8 @@ function esdportal_str_field_default_field_instances() {
   t('Files');
   t('First Name');
   t('Foreign Language');
+  t('Friday Close');
+  t('Friday Open');
   t('GSC Provider ID');
   t('General Contact Phone');
   t('General Information Email');
@@ -8230,6 +8232,8 @@ function esdportal_str_field_default_field_instances() {
   t('Licensed Date');
   t('Links');
   t('Message to families');
+  t('Monday Close');
+  t('Monday Open');
   t('Months of operation');
   t('Operator');
   t('Opted in?');
@@ -8252,6 +8256,8 @@ function esdportal_str_field_default_field_instances() {
   t('Principal Last Name');
   t('Provide file resources to display alongside school information.');
   t('Provide links to external resources to display alongside school information.');
+  t('Saturday Close');
+  t('Saturday Open');
   t('Schedule');
   t('School');
   t('School Facebook page');
@@ -8291,11 +8297,17 @@ function esdportal_str_field_default_field_instances() {
   t('Sunday Open');
   t('Superintendents');
   t('The email address where parents can contact your school for more information.');
+  t('Thursday Close');
+  t('Thursday Open');
   t('Time of your site visit');
   t('Transportation');
+  t('Tuesday Close');
+  t('Tuesday Open');
   t('Type of dance club');
   t('Type of language club');
   t('Website');
+  t('Wednesday Close');
+  t('Wednesday Open');
   t('What college preparation/awareness resources does your school provide to students?');
   t('What do you do to transition children from early childhood programs?');
   t('What extra learning resources are offered for students?');
@@ -8319,29 +8331,17 @@ function esdportal_str_field_default_field_instances() {
   t('Who is responsible for community partnerships and after-school programs at your school?');
   t('ec');
   t('esd_ec_id');
-  t('Friday Close');
-  t('Friday Open');
   t('geo');
   t('grDataLetter');
   t('grDataType');
   t('identifier from Great Start Connect database');
-  t('Monday Close');
-  t('Monday Open');
   t('pr1_reading_credit');
   t('pr1_reading_grade');
   t('pr1_reading_gradeval');
   t('pr1_reading_raw');
   t('pr1_reading_score');
   t('pr1_reading_scoremax');
-  t('Saturday Close');
-  t('Saturday Open');
   t('state_license_id');
-  t('Thursday Close');
-  t('Thursday Open');
-  t('Tuesday Close');
-  t('Tuesday Open');
-  t('Wednesday Close');
-  t('Wednesday Open');
 
   return $field_instances;
 }
