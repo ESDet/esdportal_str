@@ -549,6 +549,85 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ec_profile-field_ec_additional'
+  $field_instances['node-ec_profile-field_ec_additional'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 47,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_additional',
+    'label' => 'Is there anything else you would like to share about your program that we haven\'t already covered in the above questions?',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 59,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_agegroups'
+  $field_instances['node-ec_profile-field_ec_agegroups'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 24,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_agegroups',
+    'label' => 'Age groups',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 35,
+    ),
+  );
+
   // Exported field_instance: 'node-ec_profile-field_ec_contact'
   $field_instances['node-ec_profile-field_ec_contact'] = array(
     'bundle' => 'ec_profile',
@@ -678,6 +757,44 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ec_profile-field_ec_enrichment'
+  $field_instances['node-ec_profile-field_ec_enrichment'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 26,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_enrichment',
+    'label' => 'Enrichment opportunities',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 37,
+    ),
+  );
+
   // Exported field_instance: 'node-ec_profile-field_ec_environment'
   $field_instances['node-ec_profile-field_ec_environment'] = array(
     'bundle' => 'ec_profile',
@@ -716,6 +833,120 @@ function esdportal_str_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 19,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_evaluation'
+  $field_instances['node-ec_profile-field_ec_evaluation'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 25,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_evaluation',
+    'label' => 'Teacher evaluations',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 36,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_extended'
+  $field_instances['node-ec_profile-field_ec_extended'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 28,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_extended',
+    'label' => 'Field trips and other extended programming',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 39,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_facilities'
+  $field_instances['node-ec_profile-field_ec_facilities'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 27,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_facilities',
+    'label' => 'Facilities available',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 38,
     ),
   );
 
@@ -766,6 +997,120 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ec_profile-field_ec_feedbackfreq'
+  $field_instances['node-ec_profile-field_ec_feedbackfreq'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 30,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_feedbackfreq',
+    'label' => 'Frequency of feedback provided to parents on child’s progress',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 41,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_feedbacktype'
+  $field_instances['node-ec_profile-field_ec_feedbacktype'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 29,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_feedbacktype',
+    'label' => 'Type of feedback provided to parents on child\'s progress',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 40,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_language'
+  $field_instances['node-ec_profile-field_ec_language'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 35,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_language',
+    'label' => 'Languages spoken by program staff',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 46,
+    ),
+  );
+
   // Exported field_instance: 'node-ec_profile-field_ec_meals'
   $field_instances['node-ec_profile-field_ec_meals'] = array(
     'bundle' => 'ec_profile',
@@ -804,6 +1149,82 @@ function esdportal_str_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 21,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_medical'
+  $field_instances['node-ec_profile-field_ec_medical'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 32,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_medical',
+    'label' => 'Health/Dental/Vision Care',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 43,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_mental'
+  $field_instances['node-ec_profile-field_ec_mental'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 33,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_mental',
+    'label' => 'Access to mental health services',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 44,
     ),
   );
 
@@ -848,6 +1269,252 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ec_profile-field_ec_partner1'
+  $field_instances['node-ec_profile-field_ec_partner1'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 42,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_partner1',
+    'label' => 'Partner name - 1',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 53,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_partner1_detail'
+  $field_instances['node-ec_profile-field_ec_partner1_detail'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 45,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_partner1_detail',
+    'label' => 'Details of partnership - 1',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 54,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_partner2'
+  $field_instances['node-ec_profile-field_ec_partner2'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 43,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_partner2',
+    'label' => 'Partner name - 2',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 55,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_partner2_detail'
+  $field_instances['node-ec_profile-field_ec_partner2_detail'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 46,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_partner2_detail',
+    'label' => 'Details of partnership - 2',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 56,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_partner3'
+  $field_instances['node-ec_profile-field_ec_partner3'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 44,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_partner3',
+    'label' => 'Partner name - 3',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 57,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_partner3_detail'
+  $field_instances['node-ec_profile-field_ec_partner3_detail'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 41,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_partner3_detail',
+    'label' => 'Details of partnership - 3',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 58,
+    ),
+  );
+
   // Exported field_instance: 'node-ec_profile-field_ec_pay_schedule'
   $field_instances['node-ec_profile-field_ec_pay_schedule'] = array(
     'bundle' => 'ec_profile',
@@ -883,6 +1550,44 @@ function esdportal_str_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_select',
       'weight' => 34,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_physactivity'
+  $field_instances['node-ec_profile-field_ec_physactivity'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 31,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_physactivity',
+    'label' => 'Playground and/or physical activity space on site',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 42,
     ),
   );
 
@@ -1078,6 +1783,44 @@ function esdportal_str_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_select',
       'weight' => 24,
+    ),
+  );
+
+  // Exported field_instance: 'node-ec_profile-field_ec_supports'
+  $field_instances['node-ec_profile-field_ec_supports'] = array(
+    'bundle' => 'ec_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 34,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ec_supports',
+    'label' => 'Family and community supports',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 45,
     ),
   );
 
@@ -5850,6 +6593,47 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-ec-field_actual_enrollment'
+  $field_instances['taxonomy_term-ec-field_actual_enrollment'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 11,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_actual_enrollment',
+    'label' => 'Actual enrollment',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 14,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-ec-field_address'
   $field_instances['taxonomy_term-ec-field_address'] = array(
     'bundle' => 'ec',
@@ -6270,6 +7054,47 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-ec-field_licensed_enrollment'
+  $field_instances['taxonomy_term-ec-field_licensed_enrollment'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 10,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_licensed_enrollment',
+    'label' => 'Licensed enrollment',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 13,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-ec-field_months_of_operation'
   $field_instances['taxonomy_term-ec-field_months_of_operation'] = array(
     'bundle' => 'ec',
@@ -6305,6 +7130,47 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-ec-field_special_enrollment'
+  $field_instances['taxonomy_term-ec-field_special_enrollment'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 13,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_special_enrollment',
+    'label' => 'Number of children with special needs',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 16,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-ec-field_state_license_id'
   $field_instances['taxonomy_term-ec-field_state_license_id'] = array(
     'bundle' => 'ec',
@@ -6337,6 +7203,47 @@ function esdportal_str_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-ec-field_subsidy_enrollment'
+  $field_instances['taxonomy_term-ec-field_subsidy_enrollment'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 12,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_subsidy_enrollment',
+    'label' => 'Number of children receiving subsidy',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 15,
     ),
   );
 
@@ -8807,11 +9714,14 @@ function esdportal_str_field_default_field_instances() {
   t('A phone number where parents can contact the school for information.');
   t('AP Classes');
   t('Academic Focus');
+  t('Access to mental health services');
+  t('Actual enrollment');
   t('Address');
   t('Admissions URL');
   t('After School Transportation');
   t('Age From');
   t('Age To');
+  t('Age groups');
   t('Alternative School');
   t('Application / registration fee');
   t('Application Fee');
@@ -8840,6 +9750,9 @@ function esdportal_str_field_default_field_instances() {
   t('Contact person');
   t('Counselor/Student Ratio');
   t('Destination School');
+  t('Details of partnership - 1');
+  t('Details of partnership - 2');
+  t('Details of partnership - 3');
   t('Discipline Programs');
   t('District');
   t('Do you have linked learning or special tracks? If so, please describe.');
@@ -8865,17 +9778,22 @@ function esdportal_str_field_default_field_instances() {
   t('Email');
   t('Email from old location field');
   t('English Language Learners');
+  t('Enrichment opportunities');
   t('Enter one or many users who should see school profiles (or other data) listed on their dashboard.');
   t('Environment');
   t('Extra Learning Resources');
   t('Facebook URL');
   t('Facilities');
+  t('Facilities available');
   t('Family Supports');
+  t('Family and community supports');
   t('Fee');
   t('Feeder School');
+  t('Field trips and other extended programming');
   t('Files');
   t('First Name');
   t('Foreign Language');
+  t('Frequency of feedback provided to parents on child’s progress');
   t('Friday Close');
   t('Friday Open');
   t('GSC Provider ID');
@@ -8886,6 +9804,7 @@ function esdportal_str_field_default_field_instances() {
   t('Grades Served');
   t('Growth Data Doc');
   t('Has written contract?');
+  t('Health/Dental/Vision Care');
   t('How do parents get involved at your school?');
   t('How many applications did you receive this year?');
   t('How many students did you accept this year?');
@@ -8897,11 +9816,14 @@ function esdportal_str_field_default_field_instances() {
   t('Instructional Model');
   t('Is there an application fee?');
   t('Is there an application process for your school?');
+  t('Is there anything else you would like to share about your program that we haven\'t already covered in the above questions?');
   t('Is there anything special about your school\'s schedule?');
+  t('Languages spoken by program staff');
   t('Last Name');
   t('License Type');
   t('License minus the letters.');
   t('Licensed Date');
+  t('Licensed enrollment');
   t('Links');
   t('Meals');
   t('Meals provided');
@@ -8909,6 +9831,8 @@ function esdportal_str_field_default_field_instances() {
   t('Monday Close');
   t('Monday Open');
   t('Months of operation');
+  t('Number of children receiving subsidy');
+  t('Number of children with special needs');
   t('Operator');
   t('Opted in?');
   t('Organized Sports');
@@ -8916,9 +9840,13 @@ function esdportal_str_field_default_field_instances() {
   t('Outreach Status');
   t('Parent Involvement');
   t('Parent Supports');
+  t('Partner name - 1');
+  t('Partner name - 2');
+  t('Partner name - 3');
   t('Pay schedule');
   t('Person Responsible');
   t('Photos');
+  t('Playground and/or physical activity space on site');
   t('Please check all AP classes offered (HS only)');
   t('Please describe the college counseling offered to students.');
   t('Please indicate if your school has a special academic theme or area of focus.');
@@ -8978,6 +9906,7 @@ function esdportal_str_field_default_field_instances() {
   t('Sunday Close');
   t('Sunday Open');
   t('Superintendents');
+  t('Teacher evaluations');
   t('The email address where parents can contact your school for more information.');
   t('Thursday Close');
   t('Thursday Open');
@@ -8986,6 +9915,7 @@ function esdportal_str_field_default_field_instances() {
   t('Tuesday Close');
   t('Tuesday Open');
   t('Type of dance club');
+  t('Type of feedback provided to parents on child\'s progress');
   t('Type of language club');
   t('Website');
   t('Wednesday Close');

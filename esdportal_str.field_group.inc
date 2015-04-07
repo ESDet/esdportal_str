@@ -297,5 +297,38 @@ function esdportal_str_field_group_info() {
   );
   $export['group_new|node|school_profile|form'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_partnerships|node|ec_profile|form';
+  $field_group->group_name = 'group_partnerships';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'ec_profile';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Partnerships',
+    'weight' => '47',
+    'children' => array(
+      0 => 'field_ec_partner3_detail',
+      1 => 'field_ec_partner1',
+      2 => 'field_ec_partner2',
+      3 => 'field_ec_partner3',
+      4 => 'field_ec_partner1_detail',
+      5 => 'field_ec_partner2_detail',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Partnerships',
+      'instance_settings' => array(
+        'required_fields' => 0,
+        'classes' => 'group-partnerships field-group-fieldset',
+        'description' => '',
+      ),
+      'formatter' => 'collapsible',
+    ),
+  );
+  $export['group_partnerships|node|ec_profile|form'] = $field_group;
+
   return $export;
 }
