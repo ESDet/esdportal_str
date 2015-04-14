@@ -11,6 +11,1068 @@ function esdportal_str_views_default_views() {
   $export = array();
 
   $view = new view();
+  $view->name = '2015_school_review';
+  $view->description = 'Collection of Management and Dashboard pages for the 2015 School Review Outreach';
+  $view->tag = 'default';
+  $view->base_table = 'taxonomy_term_data';
+  $view->human_name = '2015 School Review';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = '2015 School Review';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
+  $handler->display->display_options['style_plugin'] = 'table';
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Filter criterion: Taxonomy term: Name */
+  $handler->display->display_options['filters']['name']['id'] = 'name';
+  $handler->display->display_options['filters']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['name']['field'] = 'name';
+  $handler->display->display_options['filters']['name']['operator'] = 'allwords';
+  $handler->display->display_options['filters']['name']['group'] = 1;
+  $handler->display->display_options['filters']['name']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['name']['expose']['operator_id'] = 'name_op';
+  $handler->display->display_options['filters']['name']['expose']['label'] = 'School Name';
+  $handler->display->display_options['filters']['name']['expose']['operator'] = 'name_op';
+  $handler->display->display_options['filters']['name']['expose']['identifier'] = 'name';
+  $handler->display->display_options['filters']['name']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    17 => 0,
+    7 => 0,
+    18 => 0,
+    6 => 0,
+    19 => 0,
+  );
+  /* Filter criterion: Taxonomy term: Vocabulary */
+  $handler->display->display_options['filters']['vid']['id'] = 'vid';
+  $handler->display->display_options['filters']['vid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['vid']['field'] = 'vid';
+  $handler->display->display_options['filters']['vid']['value'] = array(
+    4 => '4',
+  );
+  $handler->display->display_options['filters']['vid']['group'] = 1;
+  /* Filter criterion: Taxonomy term: 2015 In Universe (field_2015_universe) */
+  $handler->display->display_options['filters']['field_2015_universe_value']['id'] = 'field_2015_universe_value';
+  $handler->display->display_options['filters']['field_2015_universe_value']['table'] = 'field_data_field_2015_universe';
+  $handler->display->display_options['filters']['field_2015_universe_value']['field'] = 'field_2015_universe_value';
+  $handler->display->display_options['filters']['field_2015_universe_value']['value'] = array(
+    1 => '1',
+  );
+  $handler->display->display_options['filters']['field_2015_universe_value']['group'] = 1;
+  /* Filter criterion: Taxonomy term: 2015 Graded Type (field_2015_graded) */
+  $handler->display->display_options['filters']['field_2015_graded_value']['id'] = 'field_2015_graded_value';
+  $handler->display->display_options['filters']['field_2015_graded_value']['table'] = 'field_data_field_2015_graded';
+  $handler->display->display_options['filters']['field_2015_graded_value']['field'] = 'field_2015_graded_value';
+  $handler->display->display_options['filters']['field_2015_graded_value']['value'] = array(
+    'Yes' => 'Yes',
+    'Yes_New' => 'Yes_New',
+    'Yes_Turnaround' => 'Yes_Turnaround',
+    'Optional_50_74' => 'Optional_50_74',
+    'No_5E_Part' => 'No_5E_Part',
+  );
+  $handler->display->display_options['filters']['field_2015_graded_value']['group'] = 1;
+  /* Filter criterion: Taxonomy term: School status (field_school_status) */
+  $handler->display->display_options['filters']['field_school_status_tid']['id'] = 'field_school_status_tid';
+  $handler->display->display_options['filters']['field_school_status_tid']['table'] = 'field_data_field_school_status';
+  $handler->display->display_options['filters']['field_school_status_tid']['field'] = 'field_school_status_tid';
+  $handler->display->display_options['filters']['field_school_status_tid']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_school_status_tid']['value'] = array(
+    0 => '6',
+  );
+  $handler->display->display_options['filters']['field_school_status_tid']['vocabulary'] = 'school_status';
+
+  /* Display: Overview */
+  $handler = $view->new_display('page', 'Overview', 'page');
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<a href="/2015/overview" style="color:white; background:#f05a28; width:50%; display:inline; float:left; padding:10px; border:solid white 2px; font-weight:bold">Overview</a><a href="/2015/5e" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">5E Tracker</a><a href="/2015/contacts" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">School Contacts</a><a href="/2015/school-summary" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">School Summary</a>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
+  $handler->display->display_options['path'] = '2015/overview';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = '2015 School Review';
+  $handler->display->display_options['menu']['name'] = 'menu-moderator-menu';
+
+  /* Display: 5E */
+  $handler = $view->new_display('page', '5E', 'page_1');
+  $handler->display->display_options['display_description'] = 'Dashboard for 5 Essentials team';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'field_bcode' => 'field_bcode',
+    'School_Reporting_Slug' => 'School_Reporting_Slug',
+    'name' => 'name',
+    'field_2015_graded' => 'field_2015_graded',
+    'field_2015_5essentials_roster' => 'field_2015_5essentials_roster',
+    'field_2015_5essentials_student' => 'field_2015_5essentials_student',
+    'field_2015_5essentials_teacher' => 'field_2015_5essentials_teacher',
+    'field_2015_5essentials_parent' => 'field_2015_5essentials_parent',
+  );
+  $handler->display->display_options['style_options']['default'] = 'name';
+  $handler->display->display_options['style_options']['info'] = array(
+    'field_bcode' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'School_Reporting_Slug' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'desc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'name' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_2015_graded' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_2015_5essentials_roster' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_2015_5essentials_student' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_2015_5essentials_teacher' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_2015_5essentials_parent' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<a href="/2015/overview" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">Overview</a><a href="/2015/5e" style="color:white; background:#f05a28; width:50%; display:inline; float:left; padding:10px; border:solid white 2px;  font-weight:bold">5E Tracker</a><a href="/2015/contacts" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">School Contacts</a><a href="/2015/school-summary" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">School Summary</a>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Five Essentials 2014: Bcode */
+  $handler->display->display_options['relationships']['BCODE']['id'] = 'BCODE';
+  $handler->display->display_options['relationships']['BCODE']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['relationships']['BCODE']['field'] = 'BCODE';
+  $handler->display->display_options['relationships']['BCODE']['label'] = '5E BCODE';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Bulk operations: Taxonomy term */
+  $handler->display->display_options['fields']['views_bulk_operations']['id'] = 'views_bulk_operations';
+  $handler->display->display_options['fields']['views_bulk_operations']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['views_bulk_operations']['field'] = 'views_bulk_operations';
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['display_type'] = '0';
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['enable_select_all_pages'] = 1;
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['force_single'] = 0;
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['entity_load_capacity'] = '10';
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_operations'] = array(
+    'action::views_bulk_operations_delete_item' => array(
+      'selected' => 0,
+      'postpone_processing' => 0,
+      'skip_confirmation' => 0,
+      'override_label' => 0,
+      'label' => '',
+    ),
+    'action::views_bulk_operations_script_action' => array(
+      'selected' => 0,
+      'postpone_processing' => 0,
+      'skip_confirmation' => 0,
+      'override_label' => 0,
+      'label' => '',
+    ),
+    'action::views_bulk_operations_modify_action' => array(
+      'selected' => 1,
+      'postpone_processing' => 0,
+      'skip_confirmation' => 0,
+      'override_label' => 0,
+      'label' => '',
+      'settings' => array(
+        'show_all_tokens' => 1,
+        'display_values' => array(
+          'schools::field_2015_5essentials_parent' => 'schools::field_2015_5essentials_parent',
+          'schools::field_2015_5essentials_roster' => 'schools::field_2015_5essentials_roster',
+          'schools::field_2015_5essentials_student' => 'schools::field_2015_5essentials_student',
+          'schools::field_2015_5essentials_teacher' => 'schools::field_2015_5essentials_teacher',
+        ),
+      ),
+    ),
+    'action::views_bulk_operations_argument_selector_action' => array(
+      'selected' => 0,
+      'skip_confirmation' => 0,
+      'override_label' => 0,
+      'label' => '',
+      'settings' => array(
+        'url' => '',
+      ),
+    ),
+    'action::system_send_email_action' => array(
+      'selected' => 0,
+      'postpone_processing' => 0,
+      'skip_confirmation' => 0,
+      'override_label' => 0,
+      'label' => '',
+    ),
+    'action::esdportal_str_send_unsafe_email_action' => array(
+      'selected' => 0,
+      'postpone_processing' => 0,
+      'skip_confirmation' => 0,
+      'override_label' => 0,
+      'label' => '',
+    ),
+  );
+  /* Field: Field: Building code */
+  $handler->display->display_options['fields']['field_bcode']['id'] = 'field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['table'] = 'field_data_field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['field'] = 'field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['label'] = 'Building Code';
+  $handler->display->display_options['fields']['field_bcode']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Five Essentials 2014: 5Essentials Internal School Identifier */
+  $handler->display->display_options['fields']['School_Reporting_Slug']['id'] = 'School_Reporting_Slug';
+  $handler->display->display_options['fields']['School_Reporting_Slug']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['School_Reporting_Slug']['field'] = 'School_Reporting_Slug';
+  $handler->display->display_options['fields']['School_Reporting_Slug']['relationship'] = 'BCODE';
+  $handler->display->display_options['fields']['School_Reporting_Slug']['label'] = '5E Internal ID';
+  $handler->display->display_options['fields']['School_Reporting_Slug']['separator'] = '';
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Taxonomy term: 2015 Graded Type */
+  $handler->display->display_options['fields']['field_2015_graded']['id'] = 'field_2015_graded';
+  $handler->display->display_options['fields']['field_2015_graded']['table'] = 'field_data_field_2015_graded';
+  $handler->display->display_options['fields']['field_2015_graded']['field'] = 'field_2015_graded';
+  $handler->display->display_options['fields']['field_2015_graded']['label'] = 'Graded?';
+  /* Field: Taxonomy term: 2015 5Essentials Roster Submitted? */
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['id'] = 'field_2015_5essentials_roster';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['table'] = 'field_data_field_2015_5essentials_roster';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['field'] = 'field_2015_5essentials_roster';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['label'] = '5E Roster';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['settings'] = array(
+    'click_to_edit' => 0,
+    'click_to_edit_style' => 'button',
+    'empty_text' => '',
+    'fallback_format' => 'list_default',
+  );
+  /* Field: Taxonomy term: 2015 5Essentials Student Component Complete? */
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['id'] = 'field_2015_5essentials_student';
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['table'] = 'field_data_field_2015_5essentials_student';
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['field'] = 'field_2015_5essentials_student';
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['label'] = '5E Student Survey';
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['type'] = 'editable';
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['settings'] = array(
+    'click_to_edit' => 0,
+    'click_to_edit_style' => 'button',
+    'empty_text' => '',
+    'fallback_format' => 'list_default',
+  );
+  /* Field: Taxonomy term: 2015 5Essentials Teacher Component Complete? */
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['id'] = 'field_2015_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['table'] = 'field_data_field_2015_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['field'] = 'field_2015_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['label'] = '5E Teacher Survey';
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['type'] = 'editable';
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['settings'] = array(
+    'click_to_edit' => 0,
+    'click_to_edit_style' => 'button',
+    'empty_text' => '',
+    'fallback_format' => 'list_default',
+  );
+  /* Field: Taxonomy term: 2015 5Essentials Parent Component Complete? */
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['id'] = 'field_2015_5essentials_parent';
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['table'] = 'field_data_field_2015_5essentials_parent';
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['field'] = 'field_2015_5essentials_parent';
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['label'] = '5E Parent Survey';
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['type'] = 'editable';
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['settings'] = array(
+    'click_to_edit' => 0,
+    'click_to_edit_style' => 'button',
+    'empty_text' => '',
+    'fallback_format' => 'list_default',
+  );
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Taxonomy term: Name */
+  $handler->display->display_options['filters']['name']['id'] = 'name';
+  $handler->display->display_options['filters']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['name']['field'] = 'name';
+  $handler->display->display_options['filters']['name']['operator'] = 'allwords';
+  $handler->display->display_options['filters']['name']['group'] = 1;
+  $handler->display->display_options['filters']['name']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['name']['expose']['operator_id'] = 'name_op';
+  $handler->display->display_options['filters']['name']['expose']['label'] = 'School Name';
+  $handler->display->display_options['filters']['name']['expose']['operator'] = 'name_op';
+  $handler->display->display_options['filters']['name']['expose']['identifier'] = 'name';
+  $handler->display->display_options['filters']['name']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    17 => 0,
+    7 => 0,
+    18 => 0,
+    6 => 0,
+    19 => 0,
+  );
+  /* Filter criterion: Taxonomy term: Vocabulary */
+  $handler->display->display_options['filters']['vid']['id'] = 'vid';
+  $handler->display->display_options['filters']['vid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['vid']['field'] = 'vid';
+  $handler->display->display_options['filters']['vid']['value'] = array(
+    4 => '4',
+  );
+  $handler->display->display_options['filters']['vid']['group'] = 1;
+  /* Filter criterion: Taxonomy term: 2015 In Universe (field_2015_universe) */
+  $handler->display->display_options['filters']['field_2015_universe_value']['id'] = 'field_2015_universe_value';
+  $handler->display->display_options['filters']['field_2015_universe_value']['table'] = 'field_data_field_2015_universe';
+  $handler->display->display_options['filters']['field_2015_universe_value']['field'] = 'field_2015_universe_value';
+  $handler->display->display_options['filters']['field_2015_universe_value']['value'] = array(
+    1 => '1',
+  );
+  $handler->display->display_options['filters']['field_2015_universe_value']['group'] = 1;
+  /* Filter criterion: Taxonomy term: 2015 Graded Type (field_2015_graded) */
+  $handler->display->display_options['filters']['field_2015_graded_value']['id'] = 'field_2015_graded_value';
+  $handler->display->display_options['filters']['field_2015_graded_value']['table'] = 'field_data_field_2015_graded';
+  $handler->display->display_options['filters']['field_2015_graded_value']['field'] = 'field_2015_graded_value';
+  $handler->display->display_options['filters']['field_2015_graded_value']['value'] = array(
+    'Yes' => 'Yes',
+    'Yes_New' => 'Yes_New',
+    'Yes_Turnaround' => 'Yes_Turnaround',
+    'Optional_50_74' => 'Optional_50_74',
+    'No_5E_Part' => 'No_5E_Part',
+  );
+  $handler->display->display_options['filters']['field_2015_graded_value']['group'] = 1;
+  /* Filter criterion: Taxonomy term: School status (field_school_status) */
+  $handler->display->display_options['filters']['field_school_status_tid']['id'] = 'field_school_status_tid';
+  $handler->display->display_options['filters']['field_school_status_tid']['table'] = 'field_data_field_school_status';
+  $handler->display->display_options['filters']['field_school_status_tid']['field'] = 'field_school_status_tid';
+  $handler->display->display_options['filters']['field_school_status_tid']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_school_status_tid']['value'] = array(
+    0 => '6',
+  );
+  $handler->display->display_options['filters']['field_school_status_tid']['vocabulary'] = 'school_status';
+  /* Filter criterion: Taxonomy term: ESD Exclusive Typology (field_esd_exclusive_typology) */
+  $handler->display->display_options['filters']['field_esd_exclusive_typology_tid']['id'] = 'field_esd_exclusive_typology_tid';
+  $handler->display->display_options['filters']['field_esd_exclusive_typology_tid']['table'] = 'field_data_field_esd_exclusive_typology';
+  $handler->display->display_options['filters']['field_esd_exclusive_typology_tid']['field'] = 'field_esd_exclusive_typology_tid';
+  $handler->display->display_options['filters']['field_esd_exclusive_typology_tid']['value'] = '';
+  $handler->display->display_options['filters']['field_esd_exclusive_typology_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_esd_exclusive_typology_tid']['expose']['operator_id'] = 'field_esd_exclusive_typology_tid_op';
+  $handler->display->display_options['filters']['field_esd_exclusive_typology_tid']['expose']['label'] = 'ESD Exclusive Typology';
+  $handler->display->display_options['filters']['field_esd_exclusive_typology_tid']['expose']['operator'] = 'field_esd_exclusive_typology_tid_op';
+  $handler->display->display_options['filters']['field_esd_exclusive_typology_tid']['expose']['identifier'] = 'field_esd_exclusive_typology_tid';
+  $handler->display->display_options['filters']['field_esd_exclusive_typology_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    17 => 0,
+    7 => 0,
+    18 => 0,
+    6 => 0,
+    19 => 0,
+  );
+  $handler->display->display_options['filters']['field_esd_exclusive_typology_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_esd_exclusive_typology_tid']['vocabulary'] = 'esd_exclusive_typology';
+  /* Filter criterion: Taxonomy term: 2015 5Essentials Roster Submitted? (field_2015_5essentials_roster) */
+  $handler->display->display_options['filters']['field_2015_5essentials_roster_value']['id'] = 'field_2015_5essentials_roster_value';
+  $handler->display->display_options['filters']['field_2015_5essentials_roster_value']['table'] = 'field_data_field_2015_5essentials_roster';
+  $handler->display->display_options['filters']['field_2015_5essentials_roster_value']['field'] = 'field_2015_5essentials_roster_value';
+  $handler->display->display_options['filters']['field_2015_5essentials_roster_value']['value'] = array(
+    1 => '1',
+  );
+  $handler->display->display_options['path'] = '2015/5e';
+
+  /* Display: Summary */
+  $handler = $view->new_display('page', 'Summary', 'page_2');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'grid';
+  $handler->display->display_options['style_options']['grouping'] = array(
+    0 => array(
+      'field' => 'name',
+      'rendered' => 1,
+      'rendered_strip' => 0,
+    ),
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'name' => 'name',
+    'field_2015_graded' => 'field_2015_graded',
+    'field_2014_profile' => 'field_2014_profile',
+    'field_2015_5essentials_roster' => 'field_2015_5essentials_roster',
+    'field_2015_site_visit_category' => 'field_2015_site_visit_category',
+    'field_2015_zone' => 'field_2015_zone',
+    'field_2015_site_visit' => 'field_2015_site_visit',
+    'field_2015_5essentials_student' => 'field_2015_5essentials_student',
+    'field_2015_5essentials_teacher' => 'field_2015_5essentials_teacher',
+    'field_2015_5essentials_parent' => 'field_2015_5essentials_parent',
+    'field_address_data' => 'field_address_data',
+    'field_lname' => 'field_lname',
+  );
+  $handler->display->display_options['row_options']['separator'] = '<hr />';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<a href="/2015/overview" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">Overview</a><a href="/2015/5e" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">5E Tracker</a><a href="/2015/contacts" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">School Contacts</a><a href="/2015/school-summary" style="color:white; background:#f05a28; width:50%; display:inline; float:left; padding:10px; border:solid white 2px; font-weight:bold">School Summary</a>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Taxonomy term: Content using School */
+  $handler->display->display_options['relationships']['reverse_field_school_node']['id'] = 'reverse_field_school_node';
+  $handler->display->display_options['relationships']['reverse_field_school_node']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['relationships']['reverse_field_school_node']['field'] = 'reverse_field_school_node';
+  /* Relationship: Content: Author */
+  $handler->display->display_options['relationships']['uid']['id'] = 'uid';
+  $handler->display->display_options['relationships']['uid']['table'] = 'node';
+  $handler->display->display_options['relationships']['uid']['field'] = 'uid';
+  $handler->display->display_options['relationships']['uid']['relationship'] = 'reverse_field_school_node';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['label'] = '';
+  $handler->display->display_options['fields']['name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Taxonomy term: 2015 Graded Type */
+  $handler->display->display_options['fields']['field_2015_graded']['id'] = 'field_2015_graded';
+  $handler->display->display_options['fields']['field_2015_graded']['table'] = 'field_data_field_2015_graded';
+  $handler->display->display_options['fields']['field_2015_graded']['field'] = 'field_2015_graded';
+  $handler->display->display_options['fields']['field_2015_graded']['label'] = 'Graded?';
+  $handler->display->display_options['fields']['field_2015_graded']['element_label_type'] = 'strong';
+  /* Field: Taxonomy term: 2014 School Profile Complete? */
+  $handler->display->display_options['fields']['field_2014_profile']['id'] = 'field_2014_profile';
+  $handler->display->display_options['fields']['field_2014_profile']['table'] = 'field_data_field_2014_profile';
+  $handler->display->display_options['fields']['field_2014_profile']['field'] = 'field_2014_profile';
+  $handler->display->display_options['fields']['field_2014_profile']['label'] = 'School Profile Complete?';
+  $handler->display->display_options['fields']['field_2014_profile']['element_label_type'] = 'strong';
+  /* Field: Taxonomy term: 2015 5Essentials Roster Submitted? */
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['id'] = 'field_2015_5essentials_roster';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['table'] = 'field_data_field_2015_5essentials_roster';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['field'] = 'field_2015_5essentials_roster';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['label'] = '5E Roster';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['element_label_type'] = 'strong';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['empty'] = 'Not Submitted';
+  /* Field: Taxonomy term: 2015 Site Visit Category */
+  $handler->display->display_options['fields']['field_2015_site_visit_category']['id'] = 'field_2015_site_visit_category';
+  $handler->display->display_options['fields']['field_2015_site_visit_category']['table'] = 'field_data_field_2015_site_visit_category';
+  $handler->display->display_options['fields']['field_2015_site_visit_category']['field'] = 'field_2015_site_visit_category';
+  $handler->display->display_options['fields']['field_2015_site_visit_category']['label'] = 'Site Visit Category';
+  $handler->display->display_options['fields']['field_2015_site_visit_category']['element_label_type'] = 'strong';
+  $handler->display->display_options['fields']['field_2015_site_visit_category']['settings'] = array(
+    'link' => 0,
+  );
+  /* Field: Taxonomy term: 2015 Site Visit Zone */
+  $handler->display->display_options['fields']['field_2015_zone']['id'] = 'field_2015_zone';
+  $handler->display->display_options['fields']['field_2015_zone']['table'] = 'field_data_field_2015_zone';
+  $handler->display->display_options['fields']['field_2015_zone']['field'] = 'field_2015_zone';
+  $handler->display->display_options['fields']['field_2015_zone']['label'] = 'Site Visit Zone';
+  $handler->display->display_options['fields']['field_2015_zone']['element_label_type'] = 'strong';
+  /* Field: Taxonomy term: 2015 Site Visit Complete? */
+  $handler->display->display_options['fields']['field_2015_site_visit']['id'] = 'field_2015_site_visit';
+  $handler->display->display_options['fields']['field_2015_site_visit']['table'] = 'field_data_field_2015_site_visit';
+  $handler->display->display_options['fields']['field_2015_site_visit']['field'] = 'field_2015_site_visit';
+  $handler->display->display_options['fields']['field_2015_site_visit']['label'] = 'Site Visit Completed';
+  $handler->display->display_options['fields']['field_2015_site_visit']['element_label_type'] = 'strong';
+  /* Field: Taxonomy term: 2015 5Essentials Student Component Complete? */
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['id'] = 'field_2015_5essentials_student';
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['table'] = 'field_data_field_2015_5essentials_student';
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['field'] = 'field_2015_5essentials_student';
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['label'] = '5E Student Survey';
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['element_label_type'] = 'strong';
+  /* Field: Taxonomy term: 2015 5Essentials Teacher Component Complete? */
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['id'] = 'field_2015_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['table'] = 'field_data_field_2015_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['field'] = 'field_2015_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['label'] = '5E Teacher Survey';
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['element_label_type'] = 'strong';
+  /* Field: Taxonomy term: 2015 5Essentials Parent Component Complete? */
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['id'] = 'field_2015_5essentials_parent';
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['table'] = 'field_data_field_2015_5essentials_parent';
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['field'] = 'field_2015_5essentials_parent';
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['label'] = '5E Parent Survey';
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['element_label_type'] = 'strong';
+  /* Field: Taxonomy term: Address with phone number */
+  $handler->display->display_options['fields']['field_address_data']['id'] = 'field_address_data';
+  $handler->display->display_options['fields']['field_address_data']['table'] = 'field_data_field_address';
+  $handler->display->display_options['fields']['field_address_data']['field'] = 'field_address_data';
+  $handler->display->display_options['fields']['field_address_data']['label'] = 'Phone';
+  $handler->display->display_options['fields']['field_address_data']['element_label_type'] = 'strong';
+  $handler->display->display_options['fields']['field_address_data']['selected_phone_type'] = TRUE;
+  /* Field: User: First Name */
+  $handler->display->display_options['fields']['field_fname']['id'] = 'field_fname';
+  $handler->display->display_options['fields']['field_fname']['table'] = 'field_data_field_fname';
+  $handler->display->display_options['fields']['field_fname']['field'] = 'field_fname';
+  $handler->display->display_options['fields']['field_fname']['relationship'] = 'uid';
+  $handler->display->display_options['fields']['field_fname']['label'] = 'Primary User Name';
+  $handler->display->display_options['fields']['field_fname']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_fname']['alter']['text'] = '[field_fname] [field_lname]';
+  $handler->display->display_options['fields']['field_fname']['element_label_type'] = 'strong';
+  /* Field: User: Last Name */
+  $handler->display->display_options['fields']['field_lname']['id'] = 'field_lname';
+  $handler->display->display_options['fields']['field_lname']['table'] = 'field_data_field_lname';
+  $handler->display->display_options['fields']['field_lname']['field'] = 'field_lname';
+  $handler->display->display_options['fields']['field_lname']['relationship'] = 'uid';
+  $handler->display->display_options['fields']['field_lname']['label'] = 'Principal / Primary User';
+  $handler->display->display_options['fields']['field_lname']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_lname']['alter']['text'] = '[field_fname] [field_lname]';
+  $handler->display->display_options['fields']['field_lname']['element_label_type'] = 'strong';
+  /* Field: User: E-mail */
+  $handler->display->display_options['fields']['mail']['id'] = 'mail';
+  $handler->display->display_options['fields']['mail']['table'] = 'users';
+  $handler->display->display_options['fields']['mail']['field'] = 'mail';
+  $handler->display->display_options['fields']['mail']['relationship'] = 'uid';
+  $handler->display->display_options['path'] = '2015/school-summary';
+
+  /* Display: 5E Roster Pie */
+  $handler = $view->new_display('attachment', '5E Roster Pie', 'attachment_1');
+  $handler->display->display_options['defaults']['group_by'] = FALSE;
+  $handler->display->display_options['group_by'] = TRUE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'chart';
+  $handler->display->display_options['style_options']['library'] = '';
+  $handler->display->display_options['style_options']['label_field'] = 'field_2015_5essentials_roster';
+  $handler->display->display_options['style_options']['data_fields'] = array(
+    'name' => 'name',
+    'field_2015_5essentials_roster' => 'field_2015_5essentials_roster',
+  );
+  $handler->display->display_options['style_options']['field_colors'] = array(
+    'name' => '#2f7ed8',
+    'field_2015_5essentials_roster' => '#0d233a',
+  );
+  $handler->display->display_options['style_options']['title'] = '5E Roster Submission';
+  $handler->display->display_options['style_options']['legend_position'] = 'bottom';
+  $handler->display->display_options['style_options']['colors'] = array(
+    0 => '#566778',
+    1 => '#29b573',
+    2 => '#134370',
+    3 => '#ffd400',
+    4 => '#00aff0',
+    5 => '#134370',
+    6 => '#ff00ff',
+    7 => '#f05929',
+    8 => '#c42525',
+    9 => '#a6c96a',
+  );
+  $handler->display->display_options['style_options']['width'] = '';
+  $handler->display->display_options['style_options']['height'] = '';
+  $handler->display->display_options['style_options']['xaxis_labels_rotation'] = '0';
+  $handler->display->display_options['style_options']['yaxis_labels_rotation'] = '0';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['group_type'] = 'count';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  /* Field: Taxonomy term: 2015 5Essentials Roster Submitted? */
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['id'] = 'field_2015_5essentials_roster';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['table'] = 'field_data_field_2015_5essentials_roster';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['field'] = 'field_2015_5essentials_roster';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['label'] = '5E Roster Submitted';
+  $handler->display->display_options['displays'] = array(
+    'page' => 'page',
+    'default' => 0,
+    'page_1' => 0,
+    'page_2' => 0,
+  );
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block_1');
+  $handler->display->display_options['defaults']['group_by'] = FALSE;
+  $handler->display->display_options['group_by'] = TRUE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'chart';
+  $handler->display->display_options['style_options']['type'] = 'bar';
+  $handler->display->display_options['style_options']['library'] = '';
+  $handler->display->display_options['style_options']['label_field'] = 'field_2015_site_visit_category';
+  $handler->display->display_options['style_options']['data_fields'] = array(
+    'name' => 'name',
+    'field_2015_site_visit_category' => 'field_2015_site_visit_category',
+  );
+  $handler->display->display_options['style_options']['field_colors'] = array(
+    'name' => '#2f7ed8',
+    'field_2015_site_visit_category' => '#492970',
+  );
+  $handler->display->display_options['style_options']['colors'] = array(
+    0 => '#566778',
+    1 => '#134370',
+    2 => '#29b573',
+    3 => '#ffd400',
+    4 => '#00aff0',
+    5 => '#f05929',
+    6 => '#ff00ff',
+    7 => '#77a1e5',
+    8 => '#c42525',
+    9 => '#a6c96a',
+  );
+  $handler->display->display_options['style_options']['width'] = '';
+  $handler->display->display_options['style_options']['height'] = '';
+  $handler->display->display_options['style_options']['xaxis_labels_rotation'] = '0';
+  $handler->display->display_options['style_options']['yaxis_labels_rotation'] = '0';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['group_type'] = 'count';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  /* Field: Taxonomy term: 2015 Site Visit Category */
+  $handler->display->display_options['fields']['field_2015_site_visit_category']['id'] = 'field_2015_site_visit_category';
+  $handler->display->display_options['fields']['field_2015_site_visit_category']['table'] = 'field_data_field_2015_site_visit_category';
+  $handler->display->display_options['fields']['field_2015_site_visit_category']['field'] = 'field_2015_site_visit_category';
+  $handler->display->display_options['fields']['field_2015_site_visit_category']['label'] = 'Site Visit Category';
+  $handler->display->display_options['fields']['field_2015_site_visit_category']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_2015_site_visit_category']['group_column'] = 'entity_id';
+  $handler->display->display_options['block_description'] = '5E Roster';
+
+  /* Display: MAPSA 5E Status */
+  $handler = $view->new_display('views_data_export', 'MAPSA 5E Status', 'views_data_export_1');
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['filename'] = 'Charter_5E_Status_%timestamp-mmm_%timestamp-dd.csv';
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['quote'] = 1;
+  $handler->display->display_options['style_options']['trim'] = 0;
+  $handler->display->display_options['style_options']['replace_newlines'] = 0;
+  $handler->display->display_options['style_options']['header'] = 1;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Taxonomy term: Content using School */
+  $handler->display->display_options['relationships']['reverse_field_school_node']['id'] = 'reverse_field_school_node';
+  $handler->display->display_options['relationships']['reverse_field_school_node']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['relationships']['reverse_field_school_node']['field'] = 'reverse_field_school_node';
+  /* Relationship: Content: Author */
+  $handler->display->display_options['relationships']['uid']['id'] = 'uid';
+  $handler->display->display_options['relationships']['uid']['table'] = 'node';
+  $handler->display->display_options['relationships']['uid']['field'] = 'uid';
+  $handler->display->display_options['relationships']['uid']['relationship'] = 'reverse_field_school_node';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Building Code (with zeros) */
+  $handler->display->display_options['fields']['field_bcode_5char']['id'] = 'field_bcode_5char';
+  $handler->display->display_options['fields']['field_bcode_5char']['table'] = 'field_data_field_bcode_5char';
+  $handler->display->display_options['fields']['field_bcode_5char']['field'] = 'field_bcode_5char';
+  $handler->display->display_options['fields']['field_bcode_5char']['label'] = 'Building Code';
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Taxonomy term: 2015 5Essentials Roster Submitted? */
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['id'] = 'field_2015_5essentials_roster';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['table'] = 'field_data_field_2015_5essentials_roster';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['field'] = 'field_2015_5essentials_roster';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['label'] = '5E Roster';
+  /* Field: Taxonomy term: 2015 5Essentials Student Component Complete? */
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['id'] = 'field_2015_5essentials_student';
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['table'] = 'field_data_field_2015_5essentials_student';
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['field'] = 'field_2015_5essentials_student';
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['label'] = '5E Student';
+  /* Field: Taxonomy term: 2015 5Essentials Teacher Component Complete? */
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['id'] = 'field_2015_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['table'] = 'field_data_field_2015_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['field'] = 'field_2015_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['label'] = '5E Teacher';
+  /* Field: Taxonomy term: 2015 5Essentials Parent Component Complete? */
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['id'] = 'field_2015_5essentials_parent';
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['table'] = 'field_data_field_2015_5essentials_parent';
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['field'] = 'field_2015_5essentials_parent';
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['label'] = '5E Parent';
+  /* Field: Taxonomy term: Authorizer */
+  $handler->display->display_options['fields']['field_authorizer']['id'] = 'field_authorizer';
+  $handler->display->display_options['fields']['field_authorizer']['table'] = 'field_data_field_authorizer';
+  $handler->display->display_options['fields']['field_authorizer']['field'] = 'field_authorizer';
+  /* Field: Taxonomy term: Operator */
+  $handler->display->display_options['fields']['field_operator']['id'] = 'field_operator';
+  $handler->display->display_options['fields']['field_operator']['table'] = 'field_data_field_operator';
+  $handler->display->display_options['fields']['field_operator']['field'] = 'field_operator';
+  /* Field: User: First Name */
+  $handler->display->display_options['fields']['field_fname']['id'] = 'field_fname';
+  $handler->display->display_options['fields']['field_fname']['table'] = 'field_data_field_fname';
+  $handler->display->display_options['fields']['field_fname']['field'] = 'field_fname';
+  $handler->display->display_options['fields']['field_fname']['relationship'] = 'uid';
+  $handler->display->display_options['fields']['field_fname']['label'] = 'Principal First Name';
+  /* Field: User: Last Name */
+  $handler->display->display_options['fields']['field_lname']['id'] = 'field_lname';
+  $handler->display->display_options['fields']['field_lname']['table'] = 'field_data_field_lname';
+  $handler->display->display_options['fields']['field_lname']['field'] = 'field_lname';
+  $handler->display->display_options['fields']['field_lname']['relationship'] = 'uid';
+  $handler->display->display_options['fields']['field_lname']['label'] = 'Principal Last Name';
+  /* Field: User: E-mail */
+  $handler->display->display_options['fields']['mail']['id'] = 'mail';
+  $handler->display->display_options['fields']['mail']['table'] = 'users';
+  $handler->display->display_options['fields']['mail']['field'] = 'mail';
+  $handler->display->display_options['fields']['mail']['relationship'] = 'uid';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Taxonomy term: Name */
+  $handler->display->display_options['filters']['name']['id'] = 'name';
+  $handler->display->display_options['filters']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['name']['field'] = 'name';
+  $handler->display->display_options['filters']['name']['operator'] = 'allwords';
+  $handler->display->display_options['filters']['name']['group'] = 1;
+  $handler->display->display_options['filters']['name']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['name']['expose']['operator_id'] = 'name_op';
+  $handler->display->display_options['filters']['name']['expose']['label'] = 'School Name';
+  $handler->display->display_options['filters']['name']['expose']['operator'] = 'name_op';
+  $handler->display->display_options['filters']['name']['expose']['identifier'] = 'name';
+  $handler->display->display_options['filters']['name']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    17 => 0,
+    7 => 0,
+    18 => 0,
+    6 => 0,
+    19 => 0,
+  );
+  /* Filter criterion: Taxonomy term: Vocabulary */
+  $handler->display->display_options['filters']['vid']['id'] = 'vid';
+  $handler->display->display_options['filters']['vid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['vid']['field'] = 'vid';
+  $handler->display->display_options['filters']['vid']['value'] = array(
+    4 => '4',
+  );
+  $handler->display->display_options['filters']['vid']['group'] = 1;
+  /* Filter criterion: Taxonomy term: 2015 In Universe (field_2015_universe) */
+  $handler->display->display_options['filters']['field_2015_universe_value']['id'] = 'field_2015_universe_value';
+  $handler->display->display_options['filters']['field_2015_universe_value']['table'] = 'field_data_field_2015_universe';
+  $handler->display->display_options['filters']['field_2015_universe_value']['field'] = 'field_2015_universe_value';
+  $handler->display->display_options['filters']['field_2015_universe_value']['value'] = array(
+    1 => '1',
+  );
+  $handler->display->display_options['filters']['field_2015_universe_value']['group'] = 1;
+  /* Filter criterion: Taxonomy term: 2015 Graded Type (field_2015_graded) */
+  $handler->display->display_options['filters']['field_2015_graded_value']['id'] = 'field_2015_graded_value';
+  $handler->display->display_options['filters']['field_2015_graded_value']['table'] = 'field_data_field_2015_graded';
+  $handler->display->display_options['filters']['field_2015_graded_value']['field'] = 'field_2015_graded_value';
+  $handler->display->display_options['filters']['field_2015_graded_value']['value'] = array(
+    'Yes' => 'Yes',
+    'Yes_New' => 'Yes_New',
+    'Yes_Turnaround' => 'Yes_Turnaround',
+    'Optional_50_74' => 'Optional_50_74',
+  );
+  $handler->display->display_options['filters']['field_2015_graded_value']['group'] = 1;
+  /* Filter criterion: Taxonomy term: School status (field_school_status) */
+  $handler->display->display_options['filters']['field_school_status_tid']['id'] = 'field_school_status_tid';
+  $handler->display->display_options['filters']['field_school_status_tid']['table'] = 'field_data_field_school_status';
+  $handler->display->display_options['filters']['field_school_status_tid']['field'] = 'field_school_status_tid';
+  $handler->display->display_options['filters']['field_school_status_tid']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_school_status_tid']['value'] = array(
+    0 => '6',
+  );
+  $handler->display->display_options['filters']['field_school_status_tid']['vocabulary'] = 'school_status';
+  /* Filter criterion: Taxonomy term: ESD Exclusive Typology (field_esd_exclusive_typology) */
+  $handler->display->display_options['filters']['field_esd_exclusive_typology_tid']['id'] = 'field_esd_exclusive_typology_tid';
+  $handler->display->display_options['filters']['field_esd_exclusive_typology_tid']['table'] = 'field_data_field_esd_exclusive_typology';
+  $handler->display->display_options['filters']['field_esd_exclusive_typology_tid']['field'] = 'field_esd_exclusive_typology_tid';
+  $handler->display->display_options['filters']['field_esd_exclusive_typology_tid']['value'] = array(
+    0 => '2356',
+    1 => '2325',
+    2 => '2327',
+    3 => '2331',
+    4 => '2335',
+  );
+  $handler->display->display_options['filters']['field_esd_exclusive_typology_tid']['vocabulary'] = 'esd_exclusive_typology';
+  $handler->display->display_options['path'] = '2015/5e/charters';
+
+  /* Display: 5E Survey Chart */
+  $handler = $view->new_display('attachment', '5E Survey Chart', 'attachment_2');
+  $handler->display->display_options['defaults']['group_by'] = FALSE;
+  $handler->display->display_options['group_by'] = TRUE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'chart';
+  $handler->display->display_options['style_options']['type'] = 'bar';
+  $handler->display->display_options['style_options']['library'] = '';
+  $handler->display->display_options['style_options']['label_field'] = '';
+  $handler->display->display_options['style_options']['data_fields'] = array(
+    'field_2015_5essentials_student' => 'field_2015_5essentials_student',
+    'field_2015_5essentials_teacher' => 'field_2015_5essentials_teacher',
+    'field_2015_5essentials_parent' => 'field_2015_5essentials_parent',
+    'name' => 0,
+    'field_2015_5essentials_roster' => 0,
+  );
+  $handler->display->display_options['style_options']['field_colors'] = array(
+    'name' => '#ffffff',
+    'field_2015_5essentials_roster' => '#0d233a',
+    'field_2015_5essentials_student' => '#ffd400',
+    'field_2015_5essentials_teacher' => '#00aff0',
+    'field_2015_5essentials_parent' => '#134370',
+  );
+  $handler->display->display_options['style_options']['title'] = '5E Survey Submission';
+  $handler->display->display_options['style_options']['legend_position'] = 'left';
+  $handler->display->display_options['style_options']['colors'] = array(
+    0 => '#566778',
+    1 => '#29b573',
+    2 => '#134370',
+    3 => '#ffd400',
+    4 => '#00aff0',
+    5 => '#134370',
+    6 => '#ff00ff',
+    7 => '#f05929',
+    8 => '#c42525',
+    9 => '#a6c96a',
+  );
+  $handler->display->display_options['style_options']['width'] = '';
+  $handler->display->display_options['style_options']['height'] = '';
+  $handler->display->display_options['style_options']['xaxis_labels_rotation'] = '0';
+  $handler->display->display_options['style_options']['yaxis_min'] = '0';
+  $handler->display->display_options['style_options']['yaxis_max'] = '185';
+  $handler->display->display_options['style_options']['yaxis_suffix'] = ' (above threshold)';
+  $handler->display->display_options['style_options']['yaxis_labels_rotation'] = '0';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['group_type'] = 'count';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  /* Field: Taxonomy term: 2015 5Essentials Roster Submitted? */
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['id'] = 'field_2015_5essentials_roster';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['table'] = 'field_data_field_2015_5essentials_roster';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['field'] = 'field_2015_5essentials_roster';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['group_type'] = 'sum';
+  $handler->display->display_options['fields']['field_2015_5essentials_roster']['label'] = '5E Roster Submitted';
+  /* Field: Taxonomy term: 2015 5Essentials Student Component Complete? */
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['id'] = 'field_2015_5essentials_student';
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['table'] = 'field_data_field_2015_5essentials_student';
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['field'] = 'field_2015_5essentials_student';
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['group_type'] = 'sum';
+  $handler->display->display_options['fields']['field_2015_5essentials_student']['label'] = 'Student Survey';
+  /* Field: Taxonomy term: 2015 5Essentials Teacher Component Complete? */
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['id'] = 'field_2015_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['table'] = 'field_data_field_2015_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['field'] = 'field_2015_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['group_type'] = 'sum';
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['label'] = 'Teacher Survey';
+  $handler->display->display_options['fields']['field_2015_5essentials_teacher']['group_columns'] = array(
+    'value' => 'value',
+  );
+  /* Field: Taxonomy term: 2015 5Essentials Parent Component Complete? */
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['id'] = 'field_2015_5essentials_parent';
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['table'] = 'field_data_field_2015_5essentials_parent';
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['field'] = 'field_2015_5essentials_parent';
+  $handler->display->display_options['fields']['field_2015_5essentials_parent']['label'] = 'Parent Survey';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Taxonomy term: Name */
+  $handler->display->display_options['filters']['name']['id'] = 'name';
+  $handler->display->display_options['filters']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['name']['field'] = 'name';
+  $handler->display->display_options['filters']['name']['operator'] = 'allwords';
+  $handler->display->display_options['filters']['name']['group'] = 1;
+  $handler->display->display_options['filters']['name']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['name']['expose']['operator_id'] = 'name_op';
+  $handler->display->display_options['filters']['name']['expose']['label'] = 'School Name';
+  $handler->display->display_options['filters']['name']['expose']['operator'] = 'name_op';
+  $handler->display->display_options['filters']['name']['expose']['identifier'] = 'name';
+  $handler->display->display_options['filters']['name']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    17 => 0,
+    7 => 0,
+    18 => 0,
+    6 => 0,
+    19 => 0,
+  );
+  /* Filter criterion: Taxonomy term: Vocabulary */
+  $handler->display->display_options['filters']['vid']['id'] = 'vid';
+  $handler->display->display_options['filters']['vid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['vid']['field'] = 'vid';
+  $handler->display->display_options['filters']['vid']['value'] = array(
+    4 => '4',
+  );
+  $handler->display->display_options['filters']['vid']['group'] = 1;
+  /* Filter criterion: Taxonomy term: 2015 In Universe (field_2015_universe) */
+  $handler->display->display_options['filters']['field_2015_universe_value']['id'] = 'field_2015_universe_value';
+  $handler->display->display_options['filters']['field_2015_universe_value']['table'] = 'field_data_field_2015_universe';
+  $handler->display->display_options['filters']['field_2015_universe_value']['field'] = 'field_2015_universe_value';
+  $handler->display->display_options['filters']['field_2015_universe_value']['value'] = array(
+    1 => '1',
+  );
+  $handler->display->display_options['filters']['field_2015_universe_value']['group'] = 1;
+  /* Filter criterion: Taxonomy term: 2015 Graded Type (field_2015_graded) */
+  $handler->display->display_options['filters']['field_2015_graded_value']['id'] = 'field_2015_graded_value';
+  $handler->display->display_options['filters']['field_2015_graded_value']['table'] = 'field_data_field_2015_graded';
+  $handler->display->display_options['filters']['field_2015_graded_value']['field'] = 'field_2015_graded_value';
+  $handler->display->display_options['filters']['field_2015_graded_value']['value'] = array(
+    'Yes' => 'Yes',
+    'Yes_New' => 'Yes_New',
+    'Yes_Turnaround' => 'Yes_Turnaround',
+    'Optional_50_74' => 'Optional_50_74',
+    'No_5E_Part' => 'No_5E_Part',
+  );
+  $handler->display->display_options['filters']['field_2015_graded_value']['group'] = 1;
+  /* Filter criterion: Taxonomy term: School status (field_school_status) */
+  $handler->display->display_options['filters']['field_school_status_tid']['id'] = 'field_school_status_tid';
+  $handler->display->display_options['filters']['field_school_status_tid']['table'] = 'field_data_field_school_status';
+  $handler->display->display_options['filters']['field_school_status_tid']['field'] = 'field_school_status_tid';
+  $handler->display->display_options['filters']['field_school_status_tid']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_school_status_tid']['value'] = array(
+    0 => '6',
+  );
+  $handler->display->display_options['filters']['field_school_status_tid']['vocabulary'] = 'school_status';
+  /* Filter criterion: Taxonomy term: 2015 5Essentials Roster Submitted? (field_2015_5essentials_roster) */
+  $handler->display->display_options['filters']['field_2015_5essentials_roster_value']['id'] = 'field_2015_5essentials_roster_value';
+  $handler->display->display_options['filters']['field_2015_5essentials_roster_value']['table'] = 'field_data_field_2015_5essentials_roster';
+  $handler->display->display_options['filters']['field_2015_5essentials_roster_value']['field'] = 'field_2015_5essentials_roster_value';
+  $handler->display->display_options['filters']['field_2015_5essentials_roster_value']['value'] = array(
+    1 => '1',
+  );
+  $handler->display->display_options['filters']['field_2015_5essentials_roster_value']['reduce_duplicates'] = TRUE;
+  $handler->display->display_options['displays'] = array(
+    'page' => 'page',
+    'default' => 0,
+    'page_1' => 0,
+    'page_2' => 0,
+  );
+  $translatables['2015_school_review'] = array(
+    t('Master'),
+    t('2015 School Review'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Name'),
+    t('School Name'),
+    t('Overview'),
+    t('<a href="/2015/overview" style="color:white; background:#f05a28; width:50%; display:inline; float:left; padding:10px; border:solid white 2px; font-weight:bold">Overview</a><a href="/2015/5e" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">5E Tracker</a><a href="/2015/contacts" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">School Contacts</a><a href="/2015/school-summary" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">School Summary</a>'),
+    t('5E'),
+    t('Dashboard for 5 Essentials team'),
+    t('<a href="/2015/overview" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">Overview</a><a href="/2015/5e" style="color:white; background:#f05a28; width:50%; display:inline; float:left; padding:10px; border:solid white 2px;  font-weight:bold">5E Tracker</a><a href="/2015/contacts" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">School Contacts</a><a href="/2015/school-summary" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">School Summary</a>'),
+    t('5E BCODE'),
+    t('Taxonomy term'),
+    t('Building Code'),
+    t('5E Internal ID'),
+    t('.'),
+    t('Graded?'),
+    t('5E Roster'),
+    t('5E Student Survey'),
+    t('5E Teacher Survey'),
+    t('5E Parent Survey'),
+    t('ESD Exclusive Typology'),
+    t('Summary'),
+    t('<a href="/2015/overview" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">Overview</a><a href="/2015/5e" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">5E Tracker</a><a href="/2015/contacts" style="color:white; background:#f48b68; width:50%; display:inline; float:left; padding:10px; border:solid white 2px">School Contacts</a><a href="/2015/school-summary" style="color:white; background:#f05a28; width:50%; display:inline; float:left; padding:10px; border:solid white 2px; font-weight:bold">School Summary</a>'),
+    t('field_school'),
+    t('author'),
+    t('School Profile Complete?'),
+    t('Not Submitted'),
+    t('Site Visit Category'),
+    t('Site Visit Zone'),
+    t('Site Visit Completed'),
+    t('Phone'),
+    t('Primary User Name'),
+    t('[field_fname] [field_lname]'),
+    t('Principal / Primary User'),
+    t('E-mail'),
+    t('5E Roster Pie'),
+    t('5E Roster Submitted'),
+    t('Block'),
+    t('MAPSA 5E Status'),
+    t('5E Student'),
+    t('5E Teacher'),
+    t('5E Parent'),
+    t('Authorizer'),
+    t('Operator'),
+    t('Principal First Name'),
+    t('Principal Last Name'),
+    t('5E Survey Chart'),
+    t('Student Survey'),
+    t('Teacher Survey'),
+    t('Parent Survey'),
+  );
+  $export['2015_school_review'] = $view;
+
+  $view = new view();
   $view->name = 'act_2011';
   $view->description = 'Default view for data table ACT 2011';
   $view->tag = 'data table';
@@ -1229,6 +2291,151 @@ function esdportal_str_views_default_views() {
   $export['act_2014'] = $view;
 
   $view = new view();
+  $view->name = 'admin_editsbyuser';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node_revision';
+  $view->human_name = 'admin view: editsbyuser';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'admin view: editsbyuser';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['group_by'] = TRUE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    4 => '4',
+    6 => '6',
+  );
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'timestamp' => 'timestamp',
+    'timestamp_1' => 'timestamp_1',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'timestamp' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'desc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'timestamp_1' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  /* Relationship: Content revision: Content */
+  $handler->display->display_options['relationships']['vid']['id'] = 'vid';
+  $handler->display->display_options['relationships']['vid']['table'] = 'node_revision';
+  $handler->display->display_options['relationships']['vid']['field'] = 'vid';
+  /* Relationship: Content revision: User */
+  $handler->display->display_options['relationships']['uid']['id'] = 'uid';
+  $handler->display->display_options['relationships']['uid']['table'] = 'node_revision';
+  $handler->display->display_options['relationships']['uid']['field'] = 'uid';
+  /* Field: Content revision: Updated date */
+  $handler->display->display_options['fields']['timestamp']['id'] = 'timestamp';
+  $handler->display->display_options['fields']['timestamp']['table'] = 'node_revision';
+  $handler->display->display_options['fields']['timestamp']['field'] = 'timestamp';
+  $handler->display->display_options['fields']['timestamp']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['timestamp']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['timestamp']['date_format'] = 'custom';
+  $handler->display->display_options['fields']['timestamp']['custom_date_format'] = 'Y-m-d';
+  $handler->display->display_options['fields']['timestamp']['format_date_sql'] = 1;
+  /* Field: COUNT(Content revision: Updated date) */
+  $handler->display->display_options['fields']['timestamp_1']['id'] = 'timestamp_1';
+  $handler->display->display_options['fields']['timestamp_1']['table'] = 'node_revision';
+  $handler->display->display_options['fields']['timestamp_1']['field'] = 'timestamp';
+  $handler->display->display_options['fields']['timestamp_1']['group_type'] = 'count';
+  $handler->display->display_options['fields']['timestamp_1']['label'] = 'Number of edits';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['relationship'] = 'vid';
+  $handler->display->display_options['filters']['status']['value'] = '1';
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['relationship'] = 'vid';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'school_profile' => 'school_profile',
+  );
+  /* Filter criterion: User: Roles */
+  $handler->display->display_options['filters']['rid']['id'] = 'rid';
+  $handler->display->display_options['filters']['rid']['table'] = 'users_roles';
+  $handler->display->display_options['filters']['rid']['field'] = 'rid';
+  $handler->display->display_options['filters']['rid']['relationship'] = 'uid';
+  $handler->display->display_options['filters']['rid']['value'] = array(
+    18 => '18',
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'School profile edits per day by school reps';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'chart';
+  $handler->display->display_options['style_options']['type'] = 'line';
+  $handler->display->display_options['style_options']['library'] = '';
+  $handler->display->display_options['style_options']['label_field'] = 'timestamp';
+  $handler->display->display_options['style_options']['data_fields'] = array(
+    'timestamp_1' => 'timestamp_1',
+    'timestamp' => 0,
+  );
+  $handler->display->display_options['style_options']['field_colors'] = array(
+    'timestamp' => '#2f7ed8',
+    'timestamp_1' => '#0d233a',
+  );
+  $handler->display->display_options['style_options']['title'] = 'School profile edits per day';
+  $handler->display->display_options['style_options']['width'] = '';
+  $handler->display->display_options['style_options']['height'] = '';
+  $handler->display->display_options['style_options']['xaxis_labels_rotation'] = '0';
+  $handler->display->display_options['style_options']['yaxis_labels_rotation'] = '0';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['path'] = 'admin/reports/school_profile_edits_per_day_by_school_reps';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Stats: school profile edits per day by school reps';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'menu-moderator-menu';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
+  $translatables['admin_editsbyuser'] = array(
+    t('Master'),
+    t('admin view: editsbyuser'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Get the actual content from a content revision.'),
+    t('revision user'),
+    t('Updated date'),
+    t('Number of edits'),
+    t('Page'),
+    t('School profile edits per day by school reps'),
+  );
+  $export['admin_editsbyuser'] = $view;
+
+  $view = new view();
   $view->name = 'bulk';
   $view->description = '';
   $view->tag = 'default';
@@ -1574,6 +2781,176 @@ function esdportal_str_views_default_views() {
     t('Page'),
   );
   $export['bulk'] = $view;
+
+  $view = new view();
+  $view->name = 'early_learning_programs';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Early Learning Programs';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Early Learning Programs';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '25';
+  $handler->display->display_options['style_plugin'] = 'table';
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'ec' => 'ec',
+    'authorizer' => 0,
+    'ec_agegroups' => 0,
+    'ec_licensetype' => 0,
+    'ec_specialty' => 0,
+    'early_childhood_center_subsidy_types' => 0,
+    'ec_enrichment' => 0,
+    'ec_extended' => 0,
+    'ec_facilities' => 0,
+    'ec_supports' => 0,
+    'ec_language' => 0,
+    'ec_medical' => 0,
+    'ec_mental' => 0,
+    'ec_feedbackfreq' => 0,
+    'ec_feedbacktype' => 0,
+    'ec_physactivity' => 0,
+    'ec_special' => 0,
+    'ec_evaluation' => 0,
+    'esd_exclusive_typology' => 0,
+    'outreach_status' => 0,
+    'school_district' => 0,
+    'school_gov' => 0,
+    'school_grades' => 0,
+    'operator' => 0,
+    'school_scorecard_status' => 0,
+    'school_status' => 0,
+    'school_type' => 0,
+    'schools' => 0,
+    'site_visit_category' => 0,
+    'site_visit_hub' => 0,
+    'site_visit_status' => 0,
+    'skillman_good_neighborhood' => 0,
+    'state_school_status' => 0,
+    'tags' => 0,
+  );
+  /* Field: Taxonomy term: esd_ec_id */
+  $handler->display->display_options['fields']['field_esd_ec_id']['id'] = 'field_esd_ec_id';
+  $handler->display->display_options['fields']['field_esd_ec_id']['table'] = 'field_data_field_esd_ec_id';
+  $handler->display->display_options['fields']['field_esd_ec_id']['field'] = 'field_esd_ec_id';
+  $handler->display->display_options['fields']['field_esd_ec_id']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['fields']['field_esd_ec_id']['label'] = 'ID';
+  $handler->display->display_options['fields']['field_esd_ec_id']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Edit link */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = 'Edit profile';
+  $handler->display->display_options['fields']['edit_node']['text'] = 'Edit this program';
+  /* Field: Taxonomy term: Address with phone number */
+  $handler->display->display_options['fields']['field_address_data']['id'] = 'field_address_data';
+  $handler->display->display_options['fields']['field_address_data']['table'] = 'field_data_field_address';
+  $handler->display->display_options['fields']['field_address_data']['field'] = 'field_address_data';
+  $handler->display->display_options['fields']['field_address_data']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['fields']['field_address_data']['label'] = 'Phone';
+  $handler->display->display_options['fields']['field_address_data']['selected_phone_type'] = TRUE;
+  /* Field: Content: Contact person */
+  $handler->display->display_options['fields']['field_ec_contact_1']['id'] = 'field_ec_contact_1';
+  $handler->display->display_options['fields']['field_ec_contact_1']['table'] = 'field_data_field_ec_contact';
+  $handler->display->display_options['fields']['field_ec_contact_1']['field'] = 'field_ec_contact';
+  /* Field: Field: Email */
+  $handler->display->display_options['fields']['field_email_1']['id'] = 'field_email_1';
+  $handler->display->display_options['fields']['field_email_1']['table'] = 'field_data_field_email';
+  $handler->display->display_options['fields']['field_email_1']['field'] = 'field_email';
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  $handler->display->display_options['sorts']['title']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'ec_profile' => 'ec_profile',
+  );
+  /* Filter criterion: Content: Title */
+  $handler->display->display_options['filters']['title']['id'] = 'title';
+  $handler->display->display_options['filters']['title']['table'] = 'node';
+  $handler->display->display_options['filters']['title']['field'] = 'title';
+  $handler->display->display_options['filters']['title']['operator'] = 'contains';
+  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['label'] = 'Program name';
+  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
+  $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    17 => 0,
+    7 => 0,
+    18 => 0,
+    6 => 0,
+    19 => 0,
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'early-learning-programs';
+  $translatables['early_learning_programs'] = array(
+    t('Master'),
+    t('Early Learning Programs'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('term'),
+    t('ID'),
+    t('Title'),
+    t('Edit profile'),
+    t('Edit this program'),
+    t('Phone'),
+    t('Contact person'),
+    t('Email'),
+    t('Program name'),
+    t('Page'),
+  );
+  $export['early_learning_programs'] = $view;
 
   $view = new view();
   $view->name = 'earlychild';
@@ -19442,6 +20819,847 @@ return $nids;';
     t('school leader block'),
   );
   $export['school_profiles'] = $view;
+
+  $view = new view();
+  $view->name = 'school_review_status';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'taxonomy_term_data';
+  $view->human_name = 'School Review Status';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'School Review Status';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['group_by'] = TRUE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['style_plugin'] = 'chart';
+  $handler->display->display_options['style_options']['library'] = '';
+  $handler->display->display_options['style_options']['label_field'] = '';
+  $handler->display->display_options['style_options']['data_fields'] = array(
+    'name' => 'name',
+    'field_2014_site_visit' => 'field_2014_site_visit',
+  );
+  $handler->display->display_options['style_options']['field_colors'] = array(
+    'name' => '#2f7ed8',
+    'field_2014_site_visit' => '#0d233a',
+  );
+  $handler->display->display_options['style_options']['title'] = 'Site Visit Received';
+  $handler->display->display_options['style_options']['width'] = '';
+  $handler->display->display_options['style_options']['height'] = '';
+  $handler->display->display_options['style_options']['xaxis_labels_rotation'] = '0';
+  $handler->display->display_options['style_options']['yaxis_labels_rotation'] = '0';
+  /* Field: COUNT(Taxonomy term: Name) */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['group_type'] = 'count';
+  $handler->display->display_options['fields']['name']['label'] = '';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  /* Field: Taxonomy term: 2014 Site Visit Complete? */
+  $handler->display->display_options['fields']['field_2014_site_visit']['id'] = 'field_2014_site_visit';
+  $handler->display->display_options['fields']['field_2014_site_visit']['table'] = 'field_data_field_2014_site_visit';
+  $handler->display->display_options['fields']['field_2014_site_visit']['field'] = 'field_2014_site_visit';
+  $handler->display->display_options['fields']['field_2014_site_visit']['label'] = '2014 Site Visit Received?';
+  /* Filter criterion: COUNT(Taxonomy vocabulary: Machine name) */
+  $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
+  $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['group_type'] = 'count';
+  $handler->display->display_options['filters']['machine_name']['operator'] = 'in';
+  /* Filter criterion: COUNT(Taxonomy term: 2014 Graded School (field_2014_graded)) */
+  $handler->display->display_options['filters']['field_2014_graded_value']['id'] = 'field_2014_graded_value';
+  $handler->display->display_options['filters']['field_2014_graded_value']['table'] = 'field_data_field_2014_graded';
+  $handler->display->display_options['filters']['field_2014_graded_value']['field'] = 'field_2014_graded_value';
+  $handler->display->display_options['filters']['field_2014_graded_value']['group_type'] = 'count';
+  $handler->display->display_options['filters']['field_2014_graded_value']['operator'] = 'or';
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'school-review-status';
+  $translatables['school_review_status'] = array(
+    t('Master'),
+    t('School Review Status'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('2014 Site Visit Received?'),
+    t('Page'),
+  );
+  $export['school_review_status'] = $view;
+
+  $view = new view();
+  $view->name = 'school_review_tracker';
+  $view->description = 'Review and manage status of all elements of the school review process';
+  $view->tag = 'default';
+  $view->base_table = 'taxonomy_term_data';
+  $view->human_name = 'School Review Tracker';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'School Review Tracker';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '50';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'name' => 'name',
+    'field_2013_site_visit_date' => 'field_2013_site_visit_date',
+    'field_2014_5essentials_roster' => 'field_2014_5essentials_roster',
+    'field_2014_graded' => 'field_2014_graded',
+    'field_2014_profile' => 'field_2014_profile',
+    'field_2014_site_visit_date' => 'field_2014_site_visit_date',
+    'field_2014_site_visit' => 'field_2014_site_visit',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'name' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_2013_site_visit_date' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_2014_5essentials_roster' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_2014_graded' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_2014_profile' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_2014_site_visit_date' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_2014_site_visit' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  /* Field: Field: Building code */
+  $handler->display->display_options['fields']['field_bcode']['id'] = 'field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['table'] = 'field_data_field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['field'] = 'field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['settings'] = array(
+    'thousand_separator' => ' ',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Taxonomy term: ESD Basis ID */
+  $handler->display->display_options['fields']['field_esd_schid']['id'] = 'field_esd_schid';
+  $handler->display->display_options['fields']['field_esd_schid']['table'] = 'field_data_field_esd_schid';
+  $handler->display->display_options['fields']['field_esd_schid']['field'] = 'field_esd_schid';
+  /* Field: Taxonomy term: Scorecard Display */
+  $handler->display->display_options['fields']['field_scorecard_display']['id'] = 'field_scorecard_display';
+  $handler->display->display_options['fields']['field_scorecard_display']['table'] = 'field_data_field_scorecard_display';
+  $handler->display->display_options['fields']['field_scorecard_display']['field'] = 'field_scorecard_display';
+  /* Field: Taxonomy term: ESD Exclusive Typology */
+  $handler->display->display_options['fields']['field_esd_exclusive_typology']['id'] = 'field_esd_exclusive_typology';
+  $handler->display->display_options['fields']['field_esd_exclusive_typology']['table'] = 'field_data_field_esd_exclusive_typology';
+  $handler->display->display_options['fields']['field_esd_exclusive_typology']['field'] = 'field_esd_exclusive_typology';
+  /* Field: Taxonomy term: School type */
+  $handler->display->display_options['fields']['field_school_type']['id'] = 'field_school_type';
+  $handler->display->display_options['fields']['field_school_type']['table'] = 'field_data_field_school_type';
+  $handler->display->display_options['fields']['field_school_type']['field'] = 'field_school_type';
+  /* Field: Taxonomy term: School Scorecard status */
+  $handler->display->display_options['fields']['field_school_scorecard_status']['id'] = 'field_school_scorecard_status';
+  $handler->display->display_options['fields']['field_school_scorecard_status']['table'] = 'field_data_field_school_scorecard_status';
+  $handler->display->display_options['fields']['field_school_scorecard_status']['field'] = 'field_school_scorecard_status';
+  /* Field: Taxonomy term: School status */
+  $handler->display->display_options['fields']['field_school_status']['id'] = 'field_school_status';
+  $handler->display->display_options['fields']['field_school_status']['table'] = 'field_data_field_school_status';
+  $handler->display->display_options['fields']['field_school_status']['field'] = 'field_school_status';
+  /* Field: Taxonomy term: 2014 Graded School */
+  $handler->display->display_options['fields']['field_2014_graded_1']['id'] = 'field_2014_graded_1';
+  $handler->display->display_options['fields']['field_2014_graded_1']['table'] = 'field_data_field_2014_graded';
+  $handler->display->display_options['fields']['field_2014_graded_1']['field'] = 'field_2014_graded';
+  /* Field: Taxonomy term: 2013 site visit date */
+  $handler->display->display_options['fields']['field_2013_site_visit_date_1']['id'] = 'field_2013_site_visit_date_1';
+  $handler->display->display_options['fields']['field_2013_site_visit_date_1']['table'] = 'field_data_field_2013_site_visit_date';
+  $handler->display->display_options['fields']['field_2013_site_visit_date_1']['field'] = 'field_2013_site_visit_date';
+  /* Field: Taxonomy term: 2014 Site Visit Complete? */
+  $handler->display->display_options['fields']['field_2014_site_visit_1']['id'] = 'field_2014_site_visit_1';
+  $handler->display->display_options['fields']['field_2014_site_visit_1']['table'] = 'field_data_field_2014_site_visit';
+  $handler->display->display_options['fields']['field_2014_site_visit_1']['field'] = 'field_2014_site_visit';
+  $handler->display->display_options['fields']['field_2014_site_visit_1']['label'] = '2014 Site Visit Received?';
+  /* Field: Taxonomy term: 2014 Site Visit Date */
+  $handler->display->display_options['fields']['field_2014_site_visit_date_1']['id'] = 'field_2014_site_visit_date_1';
+  $handler->display->display_options['fields']['field_2014_site_visit_date_1']['table'] = 'field_data_field_2014_site_visit_date';
+  $handler->display->display_options['fields']['field_2014_site_visit_date_1']['field'] = 'field_2014_site_visit_date';
+  $handler->display->display_options['fields']['field_2014_site_visit_date_1']['settings'] = array(
+    'format_type' => 'long',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
+  );
+  $handler->display->display_options['fields']['field_2014_site_visit_date_1']['delta_offset'] = '0';
+  /* Field: Taxonomy term: 2014 5Essentials Roster Submitted? */
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['id'] = 'field_2014_5essentials_roster_1';
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['table'] = 'field_data_field_2014_5essentials_roster';
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['field'] = 'field_2014_5essentials_roster';
+  /* Field: Taxonomy term: 2014 5Essentials Student Component Complete? */
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['id'] = 'field_2014_5essentials_student';
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['table'] = 'field_data_field_2014_5essentials_student';
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['field'] = 'field_2014_5essentials_student';
+  /* Field: Taxonomy term: 2014 5Essentials Teacher Component Complete? */
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['id'] = 'field_2014_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['table'] = 'field_data_field_2014_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['field'] = 'field_2014_5essentials_teacher';
+  /* Field: Taxonomy term: 2014 5Essentials Parent Component Complete? */
+  $handler->display->display_options['fields']['field_2014_5essentials_parent']['id'] = 'field_2014_5essentials_parent';
+  $handler->display->display_options['fields']['field_2014_5essentials_parent']['table'] = 'field_data_field_2014_5essentials_parent';
+  $handler->display->display_options['fields']['field_2014_5essentials_parent']['field'] = 'field_2014_5essentials_parent';
+  /* Field: Taxonomy term: 2014 School Profile Complete? */
+  $handler->display->display_options['fields']['field_2014_profile_1']['id'] = 'field_2014_profile_1';
+  $handler->display->display_options['fields']['field_2014_profile_1']['table'] = 'field_data_field_2014_profile';
+  $handler->display->display_options['fields']['field_2014_profile_1']['field'] = 'field_2014_profile';
+  /* Field: Taxonomy term: 2011 Percent Detroit resident */
+  $handler->display->display_options['fields']['field_2011_pct_det_res']['id'] = 'field_2011_pct_det_res';
+  $handler->display->display_options['fields']['field_2011_pct_det_res']['table'] = 'field_data_field_2011_pct_det_res';
+  $handler->display->display_options['fields']['field_2011_pct_det_res']['field'] = 'field_2011_pct_det_res';
+  /* Field: Taxonomy term: Skillman Good Neighborhood */
+  $handler->display->display_options['fields']['field_skillman_good_neighborhood']['id'] = 'field_skillman_good_neighborhood';
+  $handler->display->display_options['fields']['field_skillman_good_neighborhood']['table'] = 'field_data_field_skillman_good_neighborhood';
+  $handler->display->display_options['fields']['field_skillman_good_neighborhood']['field'] = 'field_skillman_good_neighborhood';
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
+  $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
+  $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['value'] = array(
+    'schools' => 'schools',
+  );
+  $handler->display->display_options['filters']['machine_name']['group'] = 1;
+
+  /* Display: 5E Dashboard */
+  $handler = $view->new_display('page', '5E Dashboard', 'page');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '50';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Five Essentials 2014: Bcode */
+  $handler->display->display_options['relationships']['BCODE']['id'] = 'BCODE';
+  $handler->display->display_options['relationships']['BCODE']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['relationships']['BCODE']['field'] = 'BCODE';
+  $handler->display->display_options['relationships']['BCODE']['label'] = '5E BCODE';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Field: Building code */
+  $handler->display->display_options['fields']['field_bcode']['id'] = 'field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['table'] = 'field_data_field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['field'] = 'field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['settings'] = array(
+    'thousand_separator' => ' ',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Five Essentials 2014: 5Essentials Internal School Identifier */
+  $handler->display->display_options['fields']['School_Reporting_Slug']['id'] = 'School_Reporting_Slug';
+  $handler->display->display_options['fields']['School_Reporting_Slug']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['School_Reporting_Slug']['field'] = 'School_Reporting_Slug';
+  $handler->display->display_options['fields']['School_Reporting_Slug']['relationship'] = 'BCODE';
+  $handler->display->display_options['fields']['School_Reporting_Slug']['label'] = '5E ID';
+  $handler->display->display_options['fields']['School_Reporting_Slug']['separator'] = '';
+  /* Field: Five Essentials 2014: School name */
+  $handler->display->display_options['fields']['School_Name']['id'] = 'School_Name';
+  $handler->display->display_options['fields']['School_Name']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['School_Name']['field'] = 'School_Name';
+  $handler->display->display_options['fields']['School_Name']['relationship'] = 'BCODE';
+  $handler->display->display_options['fields']['School_Name']['label'] = '5E School';
+  /* Field: Taxonomy term: 2014 5Essentials Roster Submitted? */
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['id'] = 'field_2014_5essentials_roster_1';
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['table'] = 'field_data_field_2014_5essentials_roster';
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['field'] = 'field_2014_5essentials_roster';
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['label'] = 'Roster';
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['type'] = 'editable';
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['settings'] = array(
+    'click_to_edit' => 0,
+    'click_to_edit_style' => 'button',
+    'empty_text' => '',
+    'fallback_format' => 'list_default',
+  );
+  /* Field: Taxonomy term: 2014 5Essentials Student Component Complete? */
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['id'] = 'field_2014_5essentials_student';
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['table'] = 'field_data_field_2014_5essentials_student';
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['field'] = 'field_2014_5essentials_student';
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['label'] = 'Student';
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['type'] = 'editable';
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['settings'] = array(
+    'click_to_edit' => 0,
+    'click_to_edit_style' => 'button',
+    'empty_text' => '',
+    'fallback_format' => 'list_default',
+  );
+  /* Field: Five Essentials 2014: Response rate on student survey */
+  $handler->display->display_options['fields']['Student_Response_Rate']['id'] = 'Student_Response_Rate';
+  $handler->display->display_options['fields']['Student_Response_Rate']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['Student_Response_Rate']['field'] = 'Student_Response_Rate';
+  $handler->display->display_options['fields']['Student_Response_Rate']['relationship'] = 'BCODE';
+  $handler->display->display_options['fields']['Student_Response_Rate']['label'] = 'Stu RR';
+  $handler->display->display_options['fields']['Student_Response_Rate']['separator'] = '';
+  /* Field: Five Essentials 2014: Total number of students listed on roster */
+  $handler->display->display_options['fields']['Student_N']['id'] = 'Student_N';
+  $handler->display->display_options['fields']['Student_N']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['Student_N']['field'] = 'Student_N';
+  $handler->display->display_options['fields']['Student_N']['relationship'] = 'BCODE';
+  $handler->display->display_options['fields']['Student_N']['label'] = 'Stu #';
+  $handler->display->display_options['fields']['Student_N']['separator'] = '';
+  /* Field: Taxonomy term: 2014 5Essentials Teacher Component Complete? */
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['id'] = 'field_2014_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['table'] = 'field_data_field_2014_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['field'] = 'field_2014_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['label'] = 'Teacher';
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['type'] = 'editable';
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['settings'] = array(
+    'click_to_edit' => 0,
+    'click_to_edit_style' => 'button',
+    'empty_text' => '',
+    'fallback_format' => 'list_default',
+  );
+  /* Field: Five Essentials 2014: Response rate on teacher survey */
+  $handler->display->display_options['fields']['Teacher_Response_Rate']['id'] = 'Teacher_Response_Rate';
+  $handler->display->display_options['fields']['Teacher_Response_Rate']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['Teacher_Response_Rate']['field'] = 'Teacher_Response_Rate';
+  $handler->display->display_options['fields']['Teacher_Response_Rate']['relationship'] = 'BCODE';
+  $handler->display->display_options['fields']['Teacher_Response_Rate']['label'] = 'Tea RR';
+  $handler->display->display_options['fields']['Teacher_Response_Rate']['separator'] = '';
+  /* Field: Five Essentials 2014: Total number of teachers listed on roster */
+  $handler->display->display_options['fields']['Teacher_N']['id'] = 'Teacher_N';
+  $handler->display->display_options['fields']['Teacher_N']['table'] = 'fiveessentials_2014';
+  $handler->display->display_options['fields']['Teacher_N']['field'] = 'Teacher_N';
+  $handler->display->display_options['fields']['Teacher_N']['relationship'] = 'BCODE';
+  $handler->display->display_options['fields']['Teacher_N']['label'] = 'Tea #';
+  $handler->display->display_options['fields']['Teacher_N']['separator'] = '';
+  /* Field: Taxonomy term: 2014 5Essentials Parent Component Complete? */
+  $handler->display->display_options['fields']['field_2014_5essentials_parent']['id'] = 'field_2014_5essentials_parent';
+  $handler->display->display_options['fields']['field_2014_5essentials_parent']['table'] = 'field_data_field_2014_5essentials_parent';
+  $handler->display->display_options['fields']['field_2014_5essentials_parent']['field'] = 'field_2014_5essentials_parent';
+  $handler->display->display_options['fields']['field_2014_5essentials_parent']['label'] = 'Parent';
+  $handler->display->display_options['fields']['field_2014_5essentials_parent']['type'] = 'editable';
+  $handler->display->display_options['fields']['field_2014_5essentials_parent']['settings'] = array(
+    'click_to_edit' => 0,
+    'click_to_edit_style' => 'button',
+    'empty_text' => '',
+    'fallback_format' => 'list_default',
+  );
+  $handler->display->display_options['path'] = '5e-dashboard';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'School Review Tracker';
+  $handler->display->display_options['menu']['name'] = 'menu-moderator-menu';
+
+  /* Display: Chart Table */
+  $handler = $view->new_display('page', 'Chart Table', 'page_1');
+  $handler->display->display_options['defaults']['group_by'] = FALSE;
+  $handler->display->display_options['group_by'] = TRUE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['group_type'] = 'count';
+  $handler->display->display_options['fields']['name']['label'] = 'Number of Schools';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  /* Field: Taxonomy term: 2014 Site Visit Date */
+  $handler->display->display_options['fields']['field_2014_site_visit_date']['id'] = 'field_2014_site_visit_date';
+  $handler->display->display_options['fields']['field_2014_site_visit_date']['table'] = 'field_data_field_2014_site_visit_date';
+  $handler->display->display_options['fields']['field_2014_site_visit_date']['field'] = 'field_2014_site_visit_date';
+  $handler->display->display_options['fields']['field_2014_site_visit_date']['type'] = 'date_plain';
+  $handler->display->display_options['fields']['field_2014_site_visit_date']['settings'] = array(
+    'format_type' => 'long',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
+  $handler->display->display_options['fields']['field_2014_site_visit_date']['delta_offset'] = '0';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
+  $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
+  $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['value'] = array(
+    'schools' => 'schools',
+  );
+  /* Filter criterion: Taxonomy term: 2014 Graded School (field_2014_graded) */
+  $handler->display->display_options['filters']['field_2014_graded_value']['id'] = 'field_2014_graded_value';
+  $handler->display->display_options['filters']['field_2014_graded_value']['table'] = 'field_data_field_2014_graded';
+  $handler->display->display_options['filters']['field_2014_graded_value']['field'] = 'field_2014_graded_value';
+  $handler->display->display_options['filters']['field_2014_graded_value']['value'] = array(
+    1 => '1',
+  );
+  $handler->display->display_options['path'] = 'school-review-charts';
+
+  /* Display: Attachment */
+  $handler = $view->new_display('attachment', 'Attachment', 'attachment_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'chart';
+  $handler->display->display_options['style_options']['library'] = '';
+  $handler->display->display_options['style_options']['label_field'] = 'field_2013_site_visit_date';
+  $handler->display->display_options['style_options']['data_fields'] = array(
+    'name' => 'name',
+    'field_2013_site_visit_date' => 'field_2013_site_visit_date',
+  );
+  $handler->display->display_options['style_options']['field_colors'] = array(
+    'name' => '#2f7ed8',
+    'field_2013_site_visit_date' => '#0d233a',
+  );
+  $handler->display->display_options['style_options']['width'] = '';
+  $handler->display->display_options['style_options']['height'] = '';
+  $handler->display->display_options['style_options']['xaxis_labels_rotation'] = '0';
+  $handler->display->display_options['style_options']['yaxis_labels_rotation'] = '0';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['group_type'] = 'count';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Taxonomy term: 2013 site visit date */
+  $handler->display->display_options['fields']['field_2013_site_visit_date']['id'] = 'field_2013_site_visit_date';
+  $handler->display->display_options['fields']['field_2013_site_visit_date']['table'] = 'field_data_field_2013_site_visit_date';
+  $handler->display->display_options['fields']['field_2013_site_visit_date']['field'] = 'field_2013_site_visit_date';
+  $handler->display->display_options['fields']['field_2013_site_visit_date']['label'] = '2013 site visit';
+  $handler->display->display_options['displays'] = array(
+    'page_1' => 'page_1',
+    'default' => 0,
+    'page' => 0,
+  );
+
+  /* Display: Attachment 2 */
+  $handler = $view->new_display('attachment', 'Attachment 2', 'attachment_2');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'chart';
+  $handler->display->display_options['style_options']['library'] = '';
+  $handler->display->display_options['style_options']['label_field'] = 'field_2014_site_visit';
+  $handler->display->display_options['style_options']['data_fields'] = array(
+    'name' => 'name',
+    'field_2014_site_visit' => 'field_2014_site_visit',
+  );
+  $handler->display->display_options['style_options']['field_colors'] = array(
+    'name' => '#2f7ed8',
+    'field_2014_site_visit' => '#0d233a',
+  );
+  $handler->display->display_options['style_options']['title'] = 'Schools that received a site visit';
+  $handler->display->display_options['style_options']['colors'] = array(
+    0 => '#ff8080',
+    1 => '#00ff80',
+    2 => '#8bbc21',
+    3 => '#910000',
+    4 => '#1aadce',
+    5 => '#492970',
+    6 => '#f28f43',
+    7 => '#77a1e5',
+    8 => '#c42525',
+    9 => '#a6c96a',
+  );
+  $handler->display->display_options['style_options']['width'] = '';
+  $handler->display->display_options['style_options']['height'] = '';
+  $handler->display->display_options['style_options']['xaxis_labels_rotation'] = '0';
+  $handler->display->display_options['style_options']['yaxis_labels_rotation'] = '0';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['group_type'] = 'count';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Taxonomy term: 2014 Site Visit Complete? */
+  $handler->display->display_options['fields']['field_2014_site_visit']['id'] = 'field_2014_site_visit';
+  $handler->display->display_options['fields']['field_2014_site_visit']['table'] = 'field_data_field_2014_site_visit';
+  $handler->display->display_options['fields']['field_2014_site_visit']['field'] = 'field_2014_site_visit';
+  $handler->display->display_options['fields']['field_2014_site_visit']['label'] = '2014 Site Visit Received?';
+  $handler->display->display_options['fields']['field_2014_site_visit']['settings'] = array(
+    'click_to_edit' => 0,
+    'click_to_edit_style' => 'button',
+    'empty_text' => '',
+    'fallback_format' => 'list_default',
+  );
+  $handler->display->display_options['displays'] = array(
+    'page_1' => 'page_1',
+    'default' => 0,
+    'page' => 0,
+  );
+
+  /* Display: 5E Roster Pie */
+  $handler = $view->new_display('attachment', '5E Roster Pie', 'attachment_3');
+  $handler->display->display_options['defaults']['group_by'] = FALSE;
+  $handler->display->display_options['group_by'] = TRUE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'chart';
+  $handler->display->display_options['style_options']['library'] = '';
+  $handler->display->display_options['style_options']['label_field'] = 'field_2014_5essentials_roster_1';
+  $handler->display->display_options['style_options']['data_fields'] = array(
+    'name' => 'name',
+    'field_2014_5essentials_roster_1' => 'field_2014_5essentials_roster_1',
+  );
+  $handler->display->display_options['style_options']['field_colors'] = array(
+    'name' => '#2f7ed8',
+    'field_2014_5essentials_roster_1' => '#8bbc21',
+  );
+  $handler->display->display_options['style_options']['title'] = 'Submitted Rosters';
+  $handler->display->display_options['style_options']['legend_position'] = '';
+  $handler->display->display_options['style_options']['colors'] = array(
+    0 => '#f05929',
+    1 => '#134370',
+    2 => '#29b573',
+    3 => '#ffd400',
+    4 => '#00aff0',
+    5 => '#566778',
+    6 => '#ff00ff',
+    7 => '#000000',
+    8 => '#000000',
+    9 => '#000000',
+  );
+  $handler->display->display_options['style_options']['width'] = '';
+  $handler->display->display_options['style_options']['height'] = '';
+  $handler->display->display_options['style_options']['xaxis_labels_rotation'] = '0';
+  $handler->display->display_options['style_options']['yaxis_labels_rotation'] = '0';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['group_type'] = 'count';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  /* Field: Taxonomy term: 2014 5Essentials Roster Submitted? */
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['id'] = 'field_2014_5essentials_roster_1';
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['table'] = 'field_data_field_2014_5essentials_roster';
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['field'] = 'field_2014_5essentials_roster';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
+  $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
+  $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['value'] = array(
+    'schools' => 'schools',
+  );
+  $handler->display->display_options['filters']['machine_name']['group'] = 1;
+  /* Filter criterion: Taxonomy term: 2014 Graded School (field_2014_graded) */
+  $handler->display->display_options['filters']['field_2014_graded_value']['id'] = 'field_2014_graded_value';
+  $handler->display->display_options['filters']['field_2014_graded_value']['table'] = 'field_data_field_2014_graded';
+  $handler->display->display_options['filters']['field_2014_graded_value']['field'] = 'field_2014_graded_value';
+  $handler->display->display_options['filters']['field_2014_graded_value']['value'] = array(
+    1 => '1',
+  );
+  $handler->display->display_options['displays'] = array(
+    'page' => 'page',
+    'default' => 0,
+    'page_1' => 0,
+    'page_2' => 0,
+  );
+
+  /* Display: 5E Response Chart */
+  $handler = $view->new_display('attachment', '5E Response Chart', 'attachment_4');
+  $handler->display->display_options['defaults']['group_by'] = FALSE;
+  $handler->display->display_options['group_by'] = TRUE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'chart';
+  $handler->display->display_options['style_options']['type'] = 'bar';
+  $handler->display->display_options['style_options']['library'] = '';
+  $handler->display->display_options['style_options']['label_field'] = '';
+  $handler->display->display_options['style_options']['data_fields'] = array(
+    'field_2014_5essentials_roster_1' => 'field_2014_5essentials_roster_1',
+    'field_2014_5essentials_student' => 'field_2014_5essentials_student',
+    'field_2014_5essentials_teacher' => 'field_2014_5essentials_teacher',
+    'field_2014_5essentials_parent' => 'field_2014_5essentials_parent',
+  );
+  $handler->display->display_options['style_options']['field_colors'] = array(
+    'field_2014_5essentials_roster_1' => '#134370',
+    'field_2014_5essentials_student' => '#29b573',
+    'field_2014_5essentials_teacher' => '#f05929',
+    'field_2014_5essentials_parent' => '#00aff0',
+  );
+  $handler->display->display_options['style_options']['width'] = '';
+  $handler->display->display_options['style_options']['height'] = '';
+  $handler->display->display_options['style_options']['xaxis_labels_rotation'] = '0';
+  $handler->display->display_options['style_options']['yaxis_title'] = 'Completed Schools';
+  $handler->display->display_options['style_options']['yaxis_min'] = '0';
+  $handler->display->display_options['style_options']['yaxis_max'] = '180';
+  $handler->display->display_options['style_options']['yaxis_suffix'] = ' Schools';
+  $handler->display->display_options['style_options']['yaxis_labels_rotation'] = '0';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: 2014 5Essentials Roster Submitted? */
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['id'] = 'field_2014_5essentials_roster_1';
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['table'] = 'field_data_field_2014_5essentials_roster';
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['field'] = 'field_2014_5essentials_roster';
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['group_type'] = 'count';
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['label'] = '2014 Submitted Rosters';
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['separator'] = ', ';
+  /* Field: Taxonomy term: 2014 5Essentials Student Component Complete? */
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['id'] = 'field_2014_5essentials_student';
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['table'] = 'field_data_field_2014_5essentials_student';
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['field'] = 'field_2014_5essentials_student';
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['group_type'] = 'count';
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['label'] = '2014 5Essentials Student Component Complete';
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['separator'] = ', ';
+  /* Field: Taxonomy term: 2014 5Essentials Teacher Component Complete? */
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['id'] = 'field_2014_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['table'] = 'field_data_field_2014_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['field'] = 'field_2014_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['group_type'] = 'count';
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['label'] = '2014 5Essentials Teacher Component Complete';
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['separator'] = ', ';
+  /* Field: Taxonomy term: 2014 5Essentials Parent Component Complete? */
+  $handler->display->display_options['fields']['field_2014_5essentials_parent']['id'] = 'field_2014_5essentials_parent';
+  $handler->display->display_options['fields']['field_2014_5essentials_parent']['table'] = 'field_data_field_2014_5essentials_parent';
+  $handler->display->display_options['fields']['field_2014_5essentials_parent']['field'] = 'field_2014_5essentials_parent';
+  $handler->display->display_options['fields']['field_2014_5essentials_parent']['group_type'] = 'count';
+  $handler->display->display_options['fields']['field_2014_5essentials_parent']['label'] = '2014 5Essentials Parent Component Complete';
+  $handler->display->display_options['fields']['field_2014_5essentials_parent']['separator'] = ', ';
+  $handler->display->display_options['displays'] = array(
+    'page' => 'page',
+    'default' => 0,
+    'page_1' => 0,
+  );
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['quote'] = 1;
+  $handler->display->display_options['style_options']['trim'] = 0;
+  $handler->display->display_options['style_options']['replace_newlines'] = 0;
+  $handler->display->display_options['style_options']['header'] = 1;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Field: Building code */
+  $handler->display->display_options['fields']['field_bcode']['id'] = 'field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['table'] = 'field_data_field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['field'] = 'field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Taxonomy term: ESD Basis ID */
+  $handler->display->display_options['fields']['field_esd_schid']['id'] = 'field_esd_schid';
+  $handler->display->display_options['fields']['field_esd_schid']['table'] = 'field_data_field_esd_schid';
+  $handler->display->display_options['fields']['field_esd_schid']['field'] = 'field_esd_schid';
+  /* Field: Taxonomy term: ESD Exclusive Typology */
+  $handler->display->display_options['fields']['field_esd_exclusive_typology']['id'] = 'field_esd_exclusive_typology';
+  $handler->display->display_options['fields']['field_esd_exclusive_typology']['table'] = 'field_data_field_esd_exclusive_typology';
+  $handler->display->display_options['fields']['field_esd_exclusive_typology']['field'] = 'field_esd_exclusive_typology';
+  /* Field: Taxonomy term: School type */
+  $handler->display->display_options['fields']['field_school_type']['id'] = 'field_school_type';
+  $handler->display->display_options['fields']['field_school_type']['table'] = 'field_data_field_school_type';
+  $handler->display->display_options['fields']['field_school_type']['field'] = 'field_school_type';
+  /* Field: Taxonomy term: School Scorecard status */
+  $handler->display->display_options['fields']['field_school_scorecard_status']['id'] = 'field_school_scorecard_status';
+  $handler->display->display_options['fields']['field_school_scorecard_status']['table'] = 'field_data_field_school_scorecard_status';
+  $handler->display->display_options['fields']['field_school_scorecard_status']['field'] = 'field_school_scorecard_status';
+  /* Field: Taxonomy term: School status */
+  $handler->display->display_options['fields']['field_school_status']['id'] = 'field_school_status';
+  $handler->display->display_options['fields']['field_school_status']['table'] = 'field_data_field_school_status';
+  $handler->display->display_options['fields']['field_school_status']['field'] = 'field_school_status';
+  /* Field: Taxonomy term: 2014 Graded School */
+  $handler->display->display_options['fields']['field_2014_graded_1']['id'] = 'field_2014_graded_1';
+  $handler->display->display_options['fields']['field_2014_graded_1']['table'] = 'field_data_field_2014_graded';
+  $handler->display->display_options['fields']['field_2014_graded_1']['field'] = 'field_2014_graded';
+  /* Field: Taxonomy term: 2013 site visit date */
+  $handler->display->display_options['fields']['field_2013_site_visit_date_1']['id'] = 'field_2013_site_visit_date_1';
+  $handler->display->display_options['fields']['field_2013_site_visit_date_1']['table'] = 'field_data_field_2013_site_visit_date';
+  $handler->display->display_options['fields']['field_2013_site_visit_date_1']['field'] = 'field_2013_site_visit_date';
+  /* Field: Taxonomy term: 2014 Site Visit Complete? */
+  $handler->display->display_options['fields']['field_2014_site_visit_1']['id'] = 'field_2014_site_visit_1';
+  $handler->display->display_options['fields']['field_2014_site_visit_1']['table'] = 'field_data_field_2014_site_visit';
+  $handler->display->display_options['fields']['field_2014_site_visit_1']['field'] = 'field_2014_site_visit';
+  $handler->display->display_options['fields']['field_2014_site_visit_1']['label'] = '2014 Site Visit Received?';
+  /* Field: Taxonomy term: 2014 Site Visit Date */
+  $handler->display->display_options['fields']['field_2014_site_visit_date_1']['id'] = 'field_2014_site_visit_date_1';
+  $handler->display->display_options['fields']['field_2014_site_visit_date_1']['table'] = 'field_data_field_2014_site_visit_date';
+  $handler->display->display_options['fields']['field_2014_site_visit_date_1']['field'] = 'field_2014_site_visit_date';
+  $handler->display->display_options['fields']['field_2014_site_visit_date_1']['settings'] = array(
+    'format_type' => 'short',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
+  );
+  $handler->display->display_options['fields']['field_2014_site_visit_date_1']['delta_offset'] = '0';
+  /* Field: Taxonomy term: 2014 5Essentials Roster Submitted? */
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['id'] = 'field_2014_5essentials_roster_1';
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['table'] = 'field_data_field_2014_5essentials_roster';
+  $handler->display->display_options['fields']['field_2014_5essentials_roster_1']['field'] = 'field_2014_5essentials_roster';
+  /* Field: Taxonomy term: 2014 5Essentials Student Component Complete? */
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['id'] = 'field_2014_5essentials_student';
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['table'] = 'field_data_field_2014_5essentials_student';
+  $handler->display->display_options['fields']['field_2014_5essentials_student']['field'] = 'field_2014_5essentials_student';
+  /* Field: Taxonomy term: 2014 5Essentials Teacher Component Complete? */
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['id'] = 'field_2014_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['table'] = 'field_data_field_2014_5essentials_teacher';
+  $handler->display->display_options['fields']['field_2014_5essentials_teacher']['field'] = 'field_2014_5essentials_teacher';
+  /* Field: Taxonomy term: 2015 Graded Type */
+  $handler->display->display_options['fields']['field_2015_graded']['id'] = 'field_2015_graded';
+  $handler->display->display_options['fields']['field_2015_graded']['table'] = 'field_data_field_2015_graded';
+  $handler->display->display_options['fields']['field_2015_graded']['field'] = 'field_2015_graded';
+  /* Field: Taxonomy term: 2015 In Universe */
+  $handler->display->display_options['fields']['field_2015_universe']['id'] = 'field_2015_universe';
+  $handler->display->display_options['fields']['field_2015_universe']['table'] = 'field_data_field_2015_universe';
+  $handler->display->display_options['fields']['field_2015_universe']['field'] = 'field_2015_universe';
+  /* Field: Taxonomy term: 2015 Site Visit Eligible? */
+  $handler->display->display_options['fields']['field_2015_sv_eligible']['id'] = 'field_2015_sv_eligible';
+  $handler->display->display_options['fields']['field_2015_sv_eligible']['table'] = 'field_data_field_2015_sv_eligible';
+  $handler->display->display_options['fields']['field_2015_sv_eligible']['field'] = 'field_2015_sv_eligible';
+  $handler->display->display_options['path'] = 'school-review-tracker/export';
+  $translatables['school_review_tracker'] = array(
+    t('Master'),
+    t('School Review Tracker'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Building code'),
+    t('Name'),
+    t('ESD Basis ID'),
+    t('Scorecard Display'),
+    t('ESD Exclusive Typology'),
+    t('School type'),
+    t('School Scorecard status'),
+    t('School status'),
+    t('2014 Graded School'),
+    t('2013 site visit date'),
+    t('2014 Site Visit Received?'),
+    t('2014 Site Visit Date'),
+    t('2014 5Essentials Roster Submitted?'),
+    t('2014 5Essentials Student Component Complete?'),
+    t('2014 5Essentials Teacher Component Complete?'),
+    t('2014 5Essentials Parent Component Complete?'),
+    t('2014 School Profile Complete?'),
+    t('2011 Percent Detroit resident'),
+    t('Skillman Good Neighborhood'),
+    t('5E Dashboard'),
+    t('5E BCODE'),
+    t('5E ID'),
+    t('.'),
+    t('5E School'),
+    t('Roster'),
+    t('Student'),
+    t('Stu RR'),
+    t('Stu #'),
+    t('Teacher'),
+    t('Tea RR'),
+    t('Tea #'),
+    t('Parent'),
+    t('Chart Table'),
+    t('Number of Schools'),
+    t('Attachment'),
+    t('2013 site visit'),
+    t('Attachment 2'),
+    t('5E Roster Pie'),
+    t('5E Response Chart'),
+    t('2014 Submitted Rosters'),
+    t('2014 5Essentials Student Component Complete'),
+    t('2014 5Essentials Teacher Component Complete'),
+    t('2014 5Essentials Parent Component Complete'),
+    t('Data export'),
+    t('2015 Graded Type'),
+    t('2015 In Universe'),
+    t('2015 Site Visit Eligible?'),
+  );
+  $export['school_review_tracker'] = $view;
 
   $view = new view();
   $view->name = 'schools';
