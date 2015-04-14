@@ -2071,30 +2071,36 @@ function esdportal_str_field_default_field_bases() {
   // Exported field_base: 'field_ec_environment'
   $field_bases['field_ec_environment'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_ec_environment',
     'foreign keys' => array(
-      'format' => array(
+      'tid' => array(
         'columns' => array(
-          'format' => 'format',
+          'tid' => 'tid',
         ),
-        'table' => 'filter_format',
+        'table' => 'taxonomy_term_data',
       ),
     ),
     'indexes' => array(
-      'format' => array(
-        0 => 'format',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'taxonomy',
     'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'ec_environment',
+          'parent' => 0,
+        ),
+      ),
       'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
-    'type' => 'text_long',
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_ec_evaluation'
@@ -2364,30 +2370,36 @@ function esdportal_str_field_default_field_bases() {
   // Exported field_base: 'field_ec_meals'
   $field_bases['field_ec_meals'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_ec_meals',
     'foreign keys' => array(
-      'format' => array(
+      'tid' => array(
         'columns' => array(
-          'format' => 'format',
+          'tid' => 'tid',
         ),
-        'table' => 'filter_format',
+        'table' => 'taxonomy_term_data',
       ),
     ),
     'indexes' => array(
-      'format' => array(
-        0 => 'format',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'taxonomy',
     'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'ec_meals',
+          'parent' => 0,
+        ),
+      ),
       'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
-    'type' => 'text_long',
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_ec_medical'

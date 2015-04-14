@@ -800,14 +800,14 @@ function esdportal_str_field_default_field_instances() {
     'bundle' => 'ec_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Environment',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 7,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 48,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -822,17 +822,17 @@ function esdportal_str_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
-      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'text',
+      'active' => 0,
+      'module' => 'taxonomy',
       'settings' => array(
-        'rows' => 5,
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
       ),
-      'type' => 'text_textarea',
-      'weight' => 19,
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 60,
     ),
   );
 
@@ -1116,14 +1116,14 @@ function esdportal_str_field_default_field_instances() {
     'bundle' => 'ec_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Meals provided',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 9,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 49,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1138,17 +1138,17 @@ function esdportal_str_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
-      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'text',
+      'active' => 0,
+      'module' => 'taxonomy',
       'settings' => array(
-        'rows' => 5,
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
       ),
-      'type' => 'text_textarea',
-      'weight' => 21,
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 61,
     ),
   );
 
@@ -1697,12 +1697,12 @@ function esdportal_str_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'taxonomy',
+      'module' => 'options',
       'settings' => array(
         'autocomplete_path' => 'taxonomy/autocomplete',
         'size' => 60,
       ),
-      'type' => 'taxonomy_autocomplete',
+      'type' => 'options_buttons',
       'weight' => 23,
     ),
   );
@@ -1738,12 +1738,12 @@ function esdportal_str_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'taxonomy',
+      'module' => 'options',
       'settings' => array(
         'autocomplete_path' => 'taxonomy/autocomplete',
         'size' => 60,
       ),
-      'type' => 'taxonomy_autocomplete',
+      'type' => 'options_buttons',
       'weight' => 31,
     ),
   );
@@ -9826,7 +9826,6 @@ function esdportal_str_field_default_field_instances() {
   t('Licensed enrollment');
   t('Links');
   t('Meals');
-  t('Meals provided');
   t('Message to families');
   t('Monday Close');
   t('Monday Open');

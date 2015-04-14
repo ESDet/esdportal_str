@@ -49,6 +49,14 @@ function esdportal_str_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'ec_environment' => array(
+      'name' => 'Early Childhood Center environment',
+      'machine_name' => 'ec_environment',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'ec_evaluation' => array(
       'name' => 'Early Childhood teacher evaluations',
       'machine_name' => 'ec_evaluation',
@@ -100,6 +108,14 @@ function esdportal_str_taxonomy_default_vocabularies() {
     'ec_licensetype' => array(
       'name' => 'Early Childhood Center license type',
       'machine_name' => 'ec_licensetype',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
+    'ec_meals' => array(
+      'name' => 'Early Childhood Center meals',
+      'machine_name' => 'ec_meals',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
