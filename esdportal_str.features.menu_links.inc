@@ -10,6 +10,42 @@
 function esdportal_str_menu_default_menu_links() {
   $menu_links = array();
 
+  // Exported menu link: menu-data-entry:node/1759
+  $menu_links['menu-data-entry:node/1759'] = array(
+    'menu_name' => 'menu-data-entry',
+    'link_path' => 'node/1759',
+    'router_path' => 'node/%',
+    'link_title' => 'Site Profile',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+  );
+  // Exported menu link: menu-data-entry:node/1760
+  $menu_links['menu-data-entry:node/1760'] = array(
+    'menu_name' => 'menu-data-entry',
+    'link_path' => 'node/1760',
+    'router_path' => 'node/%',
+    'link_title' => 'Family Survey',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 1,
+  );
   // Exported menu link: menu-downloads:export-school-universe
   $menu_links['menu-downloads:export-school-universe'] = array(
     'menu_name' => 'menu-downloads',
@@ -64,6 +100,66 @@ function esdportal_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -49,
   );
+  // Exported menu link: menu-moderator-menu:2015/overview
+  $menu_links['menu-moderator-menu:2015/overview'] = array(
+    'menu_name' => 'menu-moderator-menu',
+    'link_path' => '2015/overview',
+    'router_path' => '2015/overview',
+    'link_title' => '2015 School Review',
+    'options' => array(),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+  );
+  // Exported menu link: menu-moderator-menu:5e-dashboard
+  $menu_links['menu-moderator-menu:5e-dashboard'] = array(
+    'menu_name' => 'menu-moderator-menu',
+    'link_path' => '5e-dashboard',
+    'router_path' => '5e-dashboard',
+    'link_title' => 'School Review Tracker',
+    'options' => array(),
+    'module' => 'system',
+    'hidden' => 1,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -41,
+  );
+  // Exported menu link: menu-moderator-menu:admin/reports/school_profile_edits_per_day_by_school_reps
+  $menu_links['menu-moderator-menu:admin/reports/school_profile_edits_per_day_by_school_reps'] = array(
+    'menu_name' => 'menu-moderator-menu',
+    'link_path' => 'admin/reports/school_profile_edits_per_day_by_school_reps',
+    'router_path' => 'admin/reports/school_profile_edits_per_day_by_school_reps',
+    'link_title' => 'Stats: school profile edits per day by school reps',
+    'options' => array(),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -40,
+  );
+  // Exported menu link: menu-moderator-menu:early-learning-programs
+  $menu_links['menu-moderator-menu:early-learning-programs'] = array(
+    'menu_name' => 'menu-moderator-menu',
+    'link_path' => 'early-learning-programs',
+    'router_path' => 'early-learning-programs',
+    'link_title' => 'Manage Early Learning Programs',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -47,
+  );
   // Exported menu link: menu-moderator-menu:manage-school-profiles
   $menu_links['menu-moderator-menu:manage-school-profiles'] = array(
     'menu_name' => 'menu-moderator-menu',
@@ -116,7 +212,7 @@ function esdportal_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -46,
   );
   // Exported menu link: menu-moderator-menu:send-user-emails
   $menu_links['menu-moderator-menu:send-user-emails'] = array(
@@ -134,7 +230,7 @@ function esdportal_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -45,
   );
   // Exported menu link: menu-moderator-menu:site-visit-status-report
   $menu_links['menu-moderator-menu:site-visit-status-report'] = array(
@@ -152,7 +248,7 @@ function esdportal_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -44,
   );
   // Exported menu link: menu-moderator-menu:user
   $menu_links['menu-moderator-menu:user'] = array(
@@ -170,7 +266,7 @@ function esdportal_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -43,
   );
   // Exported menu link: menu-moderator-menu:user/logout
   $menu_links['menu-moderator-menu:user/logout'] = array(
@@ -188,7 +284,7 @@ function esdportal_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -43,
+    'weight' => -42,
   );
   // Exported menu link: navigation:node/add
   $menu_links['navigation:node/add'] = array(
@@ -308,19 +404,25 @@ function esdportal_str_menu_default_menu_links() {
   // Translatables
   // Included for use with string extractors like potx.
   t('2013 K8 score');
+  t('2015 School Review');
   t('Add content');
   t('Edit My Account');
   t('Edit my account');
+  t('Family Survey');
   t('Log out');
+  t('Manage Early Learning Programs');
   t('Manage School Profiles');
   t('Manage School Taxonomy');
   t('Manage Users');
   t('Our Main Website');
   t('Page');
   t('School Profile');
+  t('School Review Tracker');
   t('School Universe');
   t('Scorecard Website');
   t('Send User Emails');
+  t('Site Profile');
+  t('Stats: school profile edits per day by school reps');
   t('Status Report');
   t('Webform');
 

@@ -10,6 +10,12 @@
 function esdportal_str_menu_default_menu_custom() {
   $menus = array();
 
+  // Exported menu: menu-data-entry.
+  $menus['menu-data-entry'] = array(
+    'menu_name' => 'menu-data-entry',
+    'title' => 'Data Entry',
+    'description' => '',
+  );
   // Exported menu: menu-downloads.
   $menus['menu-downloads'] = array(
     'menu_name' => 'menu-downloads',
@@ -48,6 +54,7 @@ function esdportal_str_menu_default_menu_custom() {
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('Data Entry');
   t('Downloads');
   t('Footer Links');
   t('Logistics Coordinator Menu');
