@@ -125,6 +125,10 @@ function esdportal_str_strongarm() {
       0 => 'esd_el_2014',
       1 => 'program_id',
     ),
+    'data_esd_el_2015' => array(
+      0 => 'esd_el_2015',
+      1 => 'program_id',
+    ),
     'data_esd_hs_2013' => array(
       0 => 'esd_hs_2013',
       1 => 'buildingcode',
