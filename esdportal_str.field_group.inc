@@ -310,12 +310,12 @@ function esdportal_str_field_group_info() {
     'label' => 'Partnerships',
     'weight' => '47',
     'children' => array(
-      0 => 'field_ec_partner3_detail',
-      1 => 'field_ec_partner1',
+      0 => 'field_ec_partner1',
+      1 => 'field_ec_partner1_detail',
       2 => 'field_ec_partner2',
-      3 => 'field_ec_partner3',
-      4 => 'field_ec_partner1_detail',
-      5 => 'field_ec_partner2_detail',
+      3 => 'field_ec_partner2_detail',
+      4 => 'field_ec_partner3',
+      5 => 'field_ec_partner3_detail',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
