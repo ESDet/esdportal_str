@@ -9,14 +9,6 @@
  * Implements hook_schema().
  */
 function esdportal_str_schema() {
-   // this module initially had no custom schemata
-   return $schema;
-}
-
-/**
- * Create ec_ratings table.
- */
-function esdportal_str_update_7101() {
   $schema = array();
 
   $schema['ec_state_ratings'] = array(
@@ -103,6 +95,15 @@ function esdportal_str_update_7101() {
     ),
     'primary key' => array('rating_id'),
   );
+
+  return $schema;
+}
+
+/**
+ * Create ec_ratings table.
+ */
+function esdportal_str_update_7101() {
+  $schema = esdportal_str_schema();
 
   db_create_table('ec_state_ratings', $schema['ec_state_ratings']);
 }
