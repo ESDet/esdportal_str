@@ -782,6 +782,7 @@ features[views_view][] = bulk
 features[views_view][] = early_learning_programs
 features[views_view][] = earlychild
 features[views_view][] = esd_el_2014
+features[views_view][] = esd_el_2015
 features[views_view][] = esd_hs_2013
 features[views_view][] = esd_hs_2014
 features[views_view][] = esd_k8_2013
