@@ -2860,7 +2860,7 @@ function esdportal_str_data_default() {
         'size' => 'normal',
         'precision' => '16',
         'scale' => '8',
-        'unsigned' => TRUE,
+        'unsigned' => FALSE,
         'not null' => FALSE,
         'description' => '',
       ),
