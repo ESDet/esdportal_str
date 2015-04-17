@@ -2778,28 +2778,28 @@ function esdportal_str_data_default() {
         'not null' => FALSE,
         'description' => '',
       ),
-      'PhysicalEnvironment_Rating' => array(
+      'PhysicalEnvironment_Staff_Rating' => array(
         'type' => 'varchar',
         'size' => 'normal',
         'length' => '255',
         'not null' => FALSE,
         'description' => '',
       ),
-      'FamilyCommunity_Rating' => array(
+      'FamilyCommunity_Staff_Rating' => array(
         'type' => 'varchar',
         'size' => 'normal',
         'length' => '255',
         'not null' => FALSE,
         'description' => '',
       ),
-      'CulturalLinguistic_Rating' => array(
+      'CulturalLinguistic_Staff_Rating' => array(
         'type' => 'varchar',
         'size' => 'normal',
         'length' => '255',
         'not null' => FALSE,
         'description' => '',
       ),
-      'CultureClimate_Rating' => array(
+      'CultureClimate_Staff_Rating' => array(
         'type' => 'varchar',
         'size' => 'normal',
         'length' => '255',
