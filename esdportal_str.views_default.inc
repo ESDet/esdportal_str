@@ -4428,6 +4428,7 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['program_id']['table'] = 'esd_el_2015';
   $handler->display->display_options['fields']['program_id']['field'] = 'program_id';
   $handler->display->display_options['fields']['program_id']['label'] = 'program_id';
+  $handler->display->display_options['fields']['program_id']['separator'] = '';
   /* Field: Esd EL 2015: Program name */
   $handler->display->display_options['fields']['program_name']['id'] = 'program_name';
   $handler->display->display_options['fields']['program_name']['table'] = 'esd_el_2015';
@@ -4438,71 +4439,88 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['CLC_RawAverage']['table'] = 'esd_el_2015';
   $handler->display->display_options['fields']['CLC_RawAverage']['field'] = 'CLC_RawAverage';
   $handler->display->display_options['fields']['CLC_RawAverage']['label'] = 'CLC_RawAverage';
+  $handler->display->display_options['fields']['CLC_RawAverage']['precision'] = '0';
+  $handler->display->display_options['fields']['CLC_RawAverage']['separator'] = '';
   /* Field: Esd EL 2015: Clc fairaverage */
   $handler->display->display_options['fields']['CLC_FairAverage']['id'] = 'CLC_FairAverage';
   $handler->display->display_options['fields']['CLC_FairAverage']['table'] = 'esd_el_2015';
   $handler->display->display_options['fields']['CLC_FairAverage']['field'] = 'CLC_FairAverage';
   $handler->display->display_options['fields']['CLC_FairAverage']['label'] = 'CLC_FairAverage';
+  $handler->display->display_options['fields']['CLC_FairAverage']['precision'] = '0';
+  $handler->display->display_options['fields']['CLC_FairAverage']['separator'] = '';
   /* Field: Esd EL 2015: Professionalism rawaverage */
   $handler->display->display_options['fields']['Professionalism_RawAverage']['id'] = 'Professionalism_RawAverage';
   $handler->display->display_options['fields']['Professionalism_RawAverage']['table'] = 'esd_el_2015';
   $handler->display->display_options['fields']['Professionalism_RawAverage']['field'] = 'Professionalism_RawAverage';
   $handler->display->display_options['fields']['Professionalism_RawAverage']['label'] = 'Professionalism_RawAverage';
+  $handler->display->display_options['fields']['Professionalism_RawAverage']['precision'] = '0';
+  $handler->display->display_options['fields']['Professionalism_RawAverage']['separator'] = '';
   /* Field: Esd EL 2015: Professionalism fairaverage */
   $handler->display->display_options['fields']['Professionalism_FairAverage']['id'] = 'Professionalism_FairAverage';
   $handler->display->display_options['fields']['Professionalism_FairAverage']['table'] = 'esd_el_2015';
   $handler->display->display_options['fields']['Professionalism_FairAverage']['field'] = 'Professionalism_FairAverage';
   $handler->display->display_options['fields']['Professionalism_FairAverage']['label'] = 'Professionalism_FairAverage';
+  $handler->display->display_options['fields']['Professionalism_FairAverage']['separator'] = '';
   /* Field: Esd EL 2015: Safety rawaverage */
   $handler->display->display_options['fields']['Safety_RawAverage']['id'] = 'Safety_RawAverage';
   $handler->display->display_options['fields']['Safety_RawAverage']['table'] = 'esd_el_2015';
   $handler->display->display_options['fields']['Safety_RawAverage']['field'] = 'Safety_RawAverage';
   $handler->display->display_options['fields']['Safety_RawAverage']['label'] = 'Safety_RawAverage';
+  $handler->display->display_options['fields']['Safety_RawAverage']['separator'] = '';
   /* Field: Esd EL 2015: Safety fairaverage */
   $handler->display->display_options['fields']['Safety_FairAverage']['id'] = 'Safety_FairAverage';
   $handler->display->display_options['fields']['Safety_FairAverage']['table'] = 'esd_el_2015';
   $handler->display->display_options['fields']['Safety_FairAverage']['field'] = 'Safety_FairAverage';
   $handler->display->display_options['fields']['Safety_FairAverage']['label'] = 'Safety_FairAverage';
+  $handler->display->display_options['fields']['Safety_FairAverage']['separator'] = '';
   /* Field: Esd EL 2015: Interactions rawaverage */
   $handler->display->display_options['fields']['Interactions_RawAverage']['id'] = 'Interactions_RawAverage';
   $handler->display->display_options['fields']['Interactions_RawAverage']['table'] = 'esd_el_2015';
   $handler->display->display_options['fields']['Interactions_RawAverage']['field'] = 'Interactions_RawAverage';
   $handler->display->display_options['fields']['Interactions_RawAverage']['label'] = 'Interactions_RawAverage';
+  $handler->display->display_options['fields']['Interactions_RawAverage']['separator'] = '';
   /* Field: Esd EL 2015: Interactions fairaverage */
   $handler->display->display_options['fields']['Interactions_FairAverage']['id'] = 'Interactions_FairAverage';
   $handler->display->display_options['fields']['Interactions_FairAverage']['table'] = 'esd_el_2015';
   $handler->display->display_options['fields']['Interactions_FairAverage']['field'] = 'Interactions_FairAverage';
   $handler->display->display_options['fields']['Interactions_FairAverage']['label'] = 'Interactions_FairAverage';
+  $handler->display->display_options['fields']['Interactions_FairAverage']['separator'] = '';
   /* Field: Esd EL 2015: Familycommunity rawaverage */
   $handler->display->display_options['fields']['FamilyCommunity_RawAverage']['id'] = 'FamilyCommunity_RawAverage';
   $handler->display->display_options['fields']['FamilyCommunity_RawAverage']['table'] = 'esd_el_2015';
   $handler->display->display_options['fields']['FamilyCommunity_RawAverage']['field'] = 'FamilyCommunity_RawAverage';
   $handler->display->display_options['fields']['FamilyCommunity_RawAverage']['label'] = 'FamilyCommunity_RawAverage';
+  $handler->display->display_options['fields']['FamilyCommunity_RawAverage']['separator'] = '';
   /* Field: Esd EL 2015: Familycommunity fairaverage */
   $handler->display->display_options['fields']['FamilyCommunity_FairAverage']['id'] = 'FamilyCommunity_FairAverage';
   $handler->display->display_options['fields']['FamilyCommunity_FairAverage']['table'] = 'esd_el_2015';
   $handler->display->display_options['fields']['FamilyCommunity_FairAverage']['field'] = 'FamilyCommunity_FairAverage';
   $handler->display->display_options['fields']['FamilyCommunity_FairAverage']['label'] = 'FamilyCommunity_FairAverage';
+  $handler->display->display_options['fields']['FamilyCommunity_FairAverage']['separator'] = '';
   /* Field: Esd EL 2015: Development rawaverage */
   $handler->display->display_options['fields']['Development_RawAverage']['id'] = 'Development_RawAverage';
   $handler->display->display_options['fields']['Development_RawAverage']['table'] = 'esd_el_2015';
   $handler->display->display_options['fields']['Development_RawAverage']['field'] = 'Development_RawAverage';
   $handler->display->display_options['fields']['Development_RawAverage']['label'] = 'Development_RawAverage';
+  $handler->display->display_options['fields']['Development_RawAverage']['separator'] = '';
   /* Field: Esd EL 2015: Development fairaverage */
   $handler->display->display_options['fields']['Development_FairAverage']['id'] = 'Development_FairAverage';
   $handler->display->display_options['fields']['Development_FairAverage']['table'] = 'esd_el_2015';
   $handler->display->display_options['fields']['Development_FairAverage']['field'] = 'Development_FairAverage';
   $handler->display->display_options['fields']['Development_FairAverage']['label'] = 'Development_FairAverage';
+  $handler->display->display_options['fields']['Development_FairAverage']['separator'] = '';
   /* Field: Esd EL 2015: Global rawaverage */
   $handler->display->display_options['fields']['Global_RawAverage']['id'] = 'Global_RawAverage';
   $handler->display->display_options['fields']['Global_RawAverage']['table'] = 'esd_el_2015';
   $handler->display->display_options['fields']['Global_RawAverage']['field'] = 'Global_RawAverage';
   $handler->display->display_options['fields']['Global_RawAverage']['label'] = 'Global_RawAverage';
+  $handler->display->display_options['fields']['Global_RawAverage']['separator'] = '';
   /* Field: Esd EL 2015: Global fair */
   $handler->display->display_options['fields']['Global_Fair']['id'] = 'Global_Fair';
   $handler->display->display_options['fields']['Global_Fair']['table'] = 'esd_el_2015';
   $handler->display->display_options['fields']['Global_Fair']['field'] = 'Global_Fair';
   $handler->display->display_options['fields']['Global_Fair']['label'] = 'Global_Fair';
+  $handler->display->display_options['fields']['Global_Fair']['separator'] = '';
   /* Field: Esd EL 2015: Overall site visit rating */
   $handler->display->display_options['fields']['Overall_Site_Visit_Rating']['id'] = 'Overall_Site_Visit_Rating';
   $handler->display->display_options['fields']['Overall_Site_Visit_Rating']['table'] = 'esd_el_2015';
@@ -4653,11 +4671,13 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['SiteVisitRatingYear']['table'] = 'esd_el_2015';
   $handler->display->display_options['fields']['SiteVisitRatingYear']['field'] = 'SiteVisitRatingYear';
   $handler->display->display_options['fields']['SiteVisitRatingYear']['label'] = 'SiteVisitRatingYear';
+  $handler->display->display_options['fields']['SiteVisitRatingYear']['separator'] = '';
   /* Field: Esd EL 2015: Staffsurveyratingyear */
   $handler->display->display_options['fields']['StaffSurveyRatingYear']['id'] = 'StaffSurveyRatingYear';
   $handler->display->display_options['fields']['StaffSurveyRatingYear']['table'] = 'esd_el_2015';
   $handler->display->display_options['fields']['StaffSurveyRatingYear']['field'] = 'StaffSurveyRatingYear';
   $handler->display->display_options['fields']['StaffSurveyRatingYear']['label'] = 'StaffSurveyRatingYear';
+  $handler->display->display_options['fields']['StaffSurveyRatingYear']['separator'] = '';
   /* Field: Esd EL 2015: Edit link */
   $handler->display->display_options['fields']['edit_link']['id'] = 'edit_link';
   $handler->display->display_options['fields']['edit_link']['table'] = 'esd_el_2015';
@@ -4694,12 +4714,12 @@ function esdportal_str_views_default_views() {
     t('There is no data in this table.'),
     t('program_id'),
     t('.'),
-    t(','),
     t('program_name'),
     t('CLC_RawAverage'),
     t('CLC_FairAverage'),
     t('Professionalism_RawAverage'),
     t('Professionalism_FairAverage'),
+    t(','),
     t('Safety_RawAverage'),
     t('Safety_FairAverage'),
     t('Interactions_RawAverage'),
