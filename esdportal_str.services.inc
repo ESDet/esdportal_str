@@ -35,6 +35,16 @@ function esdportal_str_default_services_endpoint() {
     ),
   );
   $endpoint->resources = array(
+    'ec_state_ratings' => array(
+      'operations' => array(
+        'retrieve' => array(
+          'enabled' => '1',
+        ),
+        'index' => array(
+          'enabled' => '1',
+        ),
+      ),
+    ),
     'node' => array(
       'operations' => array(
         'retrieve' => array(
