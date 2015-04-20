@@ -39,6 +39,7 @@ dependencies[] = options
 dependencies[] = path
 dependencies[] = php
 dependencies[] = services
+dependencies[] = services_documentation
 dependencies[] = services_views
 dependencies[] = strongarm
 dependencies[] = system

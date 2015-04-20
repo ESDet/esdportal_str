@@ -33,6 +33,81 @@ function esdportal_str_default_services_endpoint() {
       'text/xml' => TRUE,
       'application/x-www-form-urlencoded' => FALSE,
     ),
+    'docs' => array(
+      'ec_state_ratings' => array(
+        'operations' => array(
+          'retrieve' => array(
+            'enable' => 1,
+            'description' => '',
+            'request_url' => '',
+            'response' => '{
+    "PublishedRating": "4", 
+    "esd_ec_id": "820021087", 
+    "ptsAdmin": "6", 
+    "ptsCurr": "12", 
+    "ptsEnv": "6", 
+    "ptsFamily": "2", 
+    "ptsStaff": "12", 
+    "ptsTotal": "38", 
+    "rating_id": "4158", 
+    "source": "google sheet", 
+    "timestamp": "1429388310"
+}',
+            'auth' => 0,
+          ),
+          'index' => array(
+            'enable' => 1,
+            'description' => '',
+            'request_url' => '',
+            'response' => '{
+    "ec_state_ratings": [
+        {
+            "PublishedRating": "Empty Star", 
+            "esd_ec_id": "630295306", 
+            "ptsAdmin": null, 
+            "ptsCurr": null, 
+            "ptsEnv": null, 
+            "ptsFamily": null, 
+            "ptsStaff": null, 
+            "ptsTotal": null, 
+            "rating_id": "4096", 
+            "source": "google sheet", 
+            "timestamp": "1429388310"
+        },
+        {
+            "PublishedRating": "4", 
+            "esd_ec_id": "820021087", 
+            "ptsAdmin": "6", 
+            "ptsCurr": "12", 
+            "ptsEnv": "6", 
+            "ptsFamily": "2", 
+            "ptsStaff": "12", 
+            "ptsTotal": "38", 
+            "rating_id": "4158", 
+            "source": "google sheet", 
+            "timestamp": "1429388310"
+        }, 
+        {
+            "PublishedRating": "Empty Star", 
+            "esd_ec_id": "630347309", 
+            "ptsAdmin": null, 
+            "ptsCurr": null, 
+            "ptsEnv": null, 
+            "ptsFamily": null, 
+            "ptsStaff": null, 
+            "ptsTotal": null, 
+            "rating_id": "4097", 
+            "source": "google sheet", 
+            "timestamp": "1429388310"
+        }
+        // etc
+    ]
+}',
+            'auth' => 0,
+          ),
+        ),
+      ),
+    ),
   );
   $endpoint->resources = array(
     'ec_state_ratings' => array(
