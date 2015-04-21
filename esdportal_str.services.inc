@@ -120,6 +120,16 @@ function esdportal_str_default_services_endpoint() {
         ),
       ),
     ),
+    'ecs' => array(
+      'operations' => array(
+        'retrieve' => array(
+          'enabled' => '1',
+        ),
+        'index' => array(
+          'enabled' => '1',
+        ),
+      ),
+    ),
     'node' => array(
       'operations' => array(
         'retrieve' => array(
