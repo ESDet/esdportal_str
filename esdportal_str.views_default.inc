@@ -4769,7 +4769,6 @@ function esdportal_str_views_default_views() {
     t('Development_rating'),
     t('Global_rating'),
     t('Published_Rating'),
-    t(','),
     t('sas_score_rating'),
     t('n_teacher_responses'),
     t('number_teaching_staff'),
@@ -10221,11 +10220,25 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['changed']['field'] = 'changed';
   $handler->display->display_options['fields']['changed']['label'] = 'Updated';
   $handler->display->display_options['fields']['changed']['date_format'] = 'time ago';
-  /* Field: Content: Site visit status */
-  $handler->display->display_options['fields']['field_site_visit_status']['id'] = 'field_site_visit_status';
-  $handler->display->display_options['fields']['field_site_visit_status']['table'] = 'field_data_field_site_visit_status';
-  $handler->display->display_options['fields']['field_site_visit_status']['field'] = 'field_site_visit_status';
-  $handler->display->display_options['fields']['field_site_visit_status']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Taxonomy term: 2014 School Profile Complete? */
+  $handler->display->display_options['fields']['field_2014_profile']['id'] = 'field_2014_profile';
+  $handler->display->display_options['fields']['field_2014_profile']['table'] = 'field_data_field_2014_profile';
+  $handler->display->display_options['fields']['field_2014_profile']['field'] = 'field_2014_profile';
+  $handler->display->display_options['fields']['field_2014_profile']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['fields']['field_2014_profile']['label'] = '2014 Profile';
+  /* Field: Taxonomy term: 2015 School Profile Complete? */
+  $handler->display->display_options['fields']['field_2015_profile']['id'] = 'field_2015_profile';
+  $handler->display->display_options['fields']['field_2015_profile']['table'] = 'field_data_field_2015_profile';
+  $handler->display->display_options['fields']['field_2015_profile']['field'] = 'field_2015_profile';
+  $handler->display->display_options['fields']['field_2015_profile']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['fields']['field_2015_profile']['label'] = '2015 Profile';
+  $handler->display->display_options['fields']['field_2015_profile']['type'] = 'editable';
+  $handler->display->display_options['fields']['field_2015_profile']['settings'] = array(
+    'click_to_edit' => 0,
+    'click_to_edit_style' => 'button',
+    'empty_text' => '',
+    'fallback_format' => 'list_default',
+  );
   $handler->display->display_options['path'] = 'manage-school-profiles';
 
   /* Display: Data export */
@@ -11167,7 +11180,8 @@ function esdportal_str_views_default_views() {
     t('Filter by School Name'),
     t('Page'),
     t('VBO'),
-    t('Site visit status'),
+    t('2014 Profile'),
+    t('2015 Profile'),
     t('Data export'),
     t('author'),
     t('E-mail'),
@@ -11228,6 +11242,7 @@ function esdportal_str_views_default_views() {
     t('2014 5Essentials Roster Submitted?'),
     t('2015 5E Roster'),
     t('Export Status'),
+    t('Site visit status'),
     t('Address'),
     t('All taxonomy terms'),
     t('2011 Percent Detroit resident'),

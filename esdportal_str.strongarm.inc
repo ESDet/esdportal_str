@@ -291,7 +291,7 @@ function esdportal_str_strongarm() {
         'custom_settings' => FALSE,
       ),
       'sitevisitask' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'search_index' => array(
         'custom_settings' => FALSE,
@@ -303,13 +303,16 @@ function esdportal_str_strongarm() {
         'custom_settings' => FALSE,
       ),
       'growthdataask' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
     ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
           'weight' => '0',
+        ),
+        'locations' => array(
+          'weight' => '53',
         ),
       ),
       'display' => array(),

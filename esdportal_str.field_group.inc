@@ -103,6 +103,7 @@ function esdportal_str_field_group_info() {
       8 => 'field_2015_sv_eligible',
       9 => 'field_2015_site_visit_date',
       10 => 'field_2015_site_visit_category',
+      11 => 'field_2015_profile',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -125,10 +126,10 @@ function esdportal_str_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'school_profile';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_new';
+  $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => '2013 Scorecard Fields (being removed)',
-    'weight' => '6',
+    'label' => 'Old Fields (Ignore)',
+    'weight' => '54',
     'children' => array(
       0 => 'field_after_school_transportatio',
       1 => 'field_character_development',
@@ -148,17 +149,21 @@ function esdportal_str_field_group_info() {
       15 => 'field_student_development_progra',
       16 => 'field_student_leadership_opportu',
       17 => 'field_transportation',
+      18 => 'field_site_visit_status',
+      19 => 'field_site_visit_available_dates',
+      20 => 'field_site_visit_reuse_reason',
+      21 => 'field_site_visit_unavailability',
+      22 => 'field_growth_data_doc',
     ),
-    'format_type' => 'htab',
+    'format_type' => 'fieldset',
     'format_settings' => array(
-      'label' => '2013 Scorecard Fields (being removed)',
+      'label' => 'Old Fields (Ignore)',
       'instance_settings' => array(
-        'required_fields' => 0,
-        'id' => '',
+        'required_fields' => 1,
         'classes' => '',
         'description' => '',
       ),
-      'formatter' => 'closed',
+      'formatter' => 'collapsed',
     ),
   );
   $export['group_current_edit|node|school_profile|form'] = $field_group;
@@ -308,7 +313,7 @@ function esdportal_str_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Partnerships',
-    'weight' => '47',
+    'weight' => '49',
     'children' => array(
       0 => 'field_ec_partner1',
       1 => 'field_ec_partner1_detail',
