@@ -116,6 +116,13 @@ function esdportal_str_default_services_endpoint() {
             'response' => '',
             'auth' => 0,
           ),
+          'index' => array(
+            'enable' => 1,
+            'description' => 'List early childhood centers',
+            'request_url' => '',
+            'response' => '',
+            'auth' => 0,
+          ),
         ),
       ),
     ),
