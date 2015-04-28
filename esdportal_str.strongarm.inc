@@ -149,6 +149,10 @@ function esdportal_str_strongarm() {
       0 => 'esd_k8_2014',
       1 => 'buildingcode',
     ),
+    'data_esd_k8_2015' => array(
+      0 => 'esd_k8_2015',
+      1 => 'bcode',
+    ),
     'data_esd_site_visit_2014' => array(
       0 => 'esd_site_visit_2014',
       1 => 'bcode',

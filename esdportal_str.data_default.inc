@@ -6484,6 +6484,218 @@ function esdportal_str_data_default() {
   $data_table = new stdClass();
   $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
   $data_table->api_version = 1;
+  $data_table->title = 'Esd k8 2015';
+  $data_table->name = 'esd_k8_2015';
+  $data_table->table_schema = array(
+    'description' => 'ESD K8 Scorecard Data for 2015 Summer Release',
+    'fields' => array(
+      'bcode' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'Building Code',
+      ),
+      'schoolname' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => 'School Name',
+      ),
+      'total_ltrgrade' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => 'ESD Scorecard Letter Grade',
+      ),
+      'total_pts' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Total Points out of 100',
+      ),
+      'prof_cat_points' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Proficiency Points out of 10 (average of 4 point scales)',
+      ),
+      'growth_cat_points' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Growth Points out of 10 (average of 2 categories)',
+      ),
+      'net5e_cat_pts' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '5E Points out of Ten',
+      ),
+      'pr2_math_pts' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Points out of 10 for Math Proficiency',
+      ),
+      'frac_profmath' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Fraction of Math Exams that are Proficient',
+      ),
+      'pr2_sci_pts' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Points out of 10 for Science Proficiency',
+      ),
+      'frac_profscience' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Fraction of Science Exams that are Proficient',
+      ),
+      'pr2_ss_pts' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Points out of 10 for Social Studies Proficiency',
+      ),
+      'frac_profsocstud' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Fraction of Social Studies Exams that are Proficient',
+      ),
+      'pr2_ela_pts' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Points out of 10 for ELA Proficiency',
+      ),
+      'frac_profela' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Fraction of Writing and Reading Exams that are Proficient',
+      ),
+      'pts_progress_math' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Points out of 10 for Math Growth',
+      ),
+      'mean_pctl_math' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Mean Student Percentile Growth in School for Students at Same Math Baseline MEAP Score',
+      ),
+      'pts_progress_read' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Points out of 10 for Reading Growth',
+      ),
+      'mean_pctl_reading' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Mean Student Percentile Growth in School for Students at Same Reading Baseline MEAP Score',
+      ),
+      'net5e_pts' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Points out of 10 for 5Essentials',
+      ),
+      'net5e' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'precision' => '16',
+        'scale' => '8',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Net 5E Score',
+      ),
+    ),
+    'name' => 'esd_k8_2015',
+    'primary key' => array(
+      0 => 'bcode',
+    ),
+  );
+  $data_table->meta = array(
+    'label_field' => '',
+    'is_entity_type' => TRUE,
+    'entity_id' => 'bcode',
+    'join' => array(
+      'field_data_field_bcode' => array(
+        'left_field' => 'field_bcode_value',
+        'field' => 'bcode',
+        'inner_join' => '0',
+      ),
+    ),
+  );
+  $export['esd_k8_2015'] = $data_table;
+
+  $data_table = new stdClass();
+  $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
+  $data_table->api_version = 1;
   $data_table->title = 'Esd Site Visit 2014';
   $data_table->name = 'esd_site_visit_2014';
   $data_table->table_schema = array(
