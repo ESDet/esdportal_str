@@ -107,6 +107,17 @@ function esdportal_str_default_services_endpoint() {
           ),
         ),
       ),
+      'ecs' => array(
+        'operations' => array(
+          'retrieve' => array(
+            'enable' => 1,
+            'description' => '',
+            'request_url' => '',
+            'response' => '',
+            'auth' => 0,
+          ),
+        ),
+      ),
     ),
   );
   $endpoint->resources = array(
