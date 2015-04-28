@@ -79,6 +79,7 @@ features[data_tables][] = esd_el_2014
 features[data_tables][] = esd_el_2015
 features[data_tables][] = esd_hs_2013
 features[data_tables][] = esd_hs_2014
+features[data_tables][] = esd_hs_2015
 features[data_tables][] = esd_k8_2013
 features[data_tables][] = esd_k8_2013_r1
 features[data_tables][] = esd_k8_2014

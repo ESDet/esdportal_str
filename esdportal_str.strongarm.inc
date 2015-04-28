@@ -137,6 +137,10 @@ function esdportal_str_strongarm() {
       0 => 'esd_hs_2014',
       1 => 'buildingcode',
     ),
+    'data_esd_hs_2015' => array(
+      0 => 'esd_hs_2015',
+      1 => 'bcode',
+    ),
     'data_esd_k8_2013' => array(
       0 => 'esd_k8_2013',
       1 => 'buildingcode',
