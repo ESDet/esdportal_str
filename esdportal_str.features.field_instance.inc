@@ -1875,7 +1875,7 @@ function esdportal_str_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(),
-      'type' => 'options_select',
+      'type' => 'options_buttons',
       'weight' => 24,
     ),
   );
