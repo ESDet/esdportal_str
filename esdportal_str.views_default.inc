@@ -10116,6 +10116,16 @@ function esdportal_str_views_default_views() {
     3 => 0,
     6 => 0,
   );
+  /* Filter criterion: Taxonomy term: School status (field_school_status) */
+  $handler->display->display_options['filters']['field_school_status_tid']['id'] = 'field_school_status_tid';
+  $handler->display->display_options['filters']['field_school_status_tid']['table'] = 'field_data_field_school_status';
+  $handler->display->display_options['filters']['field_school_status_tid']['field'] = 'field_school_status_tid';
+  $handler->display->display_options['filters']['field_school_status_tid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['filters']['field_school_status_tid']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_school_status_tid']['value'] = array(
+    0 => '6',
+  );
+  $handler->display->display_options['filters']['field_school_status_tid']['vocabulary'] = 'school_status';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
