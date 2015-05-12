@@ -2023,8 +2023,8 @@ function esdportal_str_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        0 => '',
-        1 => '',
+        0 => 'No',
+        1 => 'Yes',
       ),
       'allowed_values_function' => '',
       'entity_translation_sync' => FALSE,
@@ -2092,8 +2092,8 @@ function esdportal_str_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        0 => '',
-        1 => '',
+        0 => 'No',
+        1 => 'Yes',
       ),
       'allowed_values_function' => '',
       'entity_translation_sync' => FALSE,
@@ -3028,8 +3028,8 @@ function esdportal_str_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        0 => '',
-        1 => '',
+        0 => 'No',
+        1 => 'Yes',
       ),
       'allowed_values_function' => '',
       'entity_translation_sync' => FALSE,
@@ -3631,7 +3631,9 @@ function esdportal_str_field_default_field_bases() {
     'locked' => 0,
     'module' => 'geofield',
     'settings' => array(
+      'backend' => 'default',
       'entity_translation_sync' => FALSE,
+      'srid' => 4326,
     ),
     'translatable' => 0,
     'type' => 'geofield',
