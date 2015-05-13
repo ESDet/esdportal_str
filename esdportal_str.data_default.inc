@@ -10008,17 +10008,6 @@ function esdportal_str_data_default() {
     ),
   );
   $data_table->meta = array(
-    'fields' => array(
-      /*
-      @todo
-      example:
-      'ACNO' => array(
-        'label' => 'Peer Support for Academic Work (Student)',
-        'locked' => FALSE,
-        'required' => FALSE,
-      ),
-      */
-    ),
     'fields' => [],
     'label_field' => '',
     'is_entity_type' => TRUE,
