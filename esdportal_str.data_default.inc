@@ -9621,6 +9621,420 @@ function esdportal_str_data_default() {
   $data_table = new stdClass();
   $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
   $data_table->api_version = 1;
+  $data_table->title = 'Five Essentials 2015';
+  $data_table->name = 'fiveessentials_2015';
+  $data_table->table_schema = array(
+    'description' => '',
+    'fields' => array(
+      'School_Name' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'Report_School_Id' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'State_Schl_Id' => array(
+        'type' => 'int',
+        'size' => 'medium',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'State School Id for each school',
+      ),
+      'School_Level' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'View_Elem_Student_Reports' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'View_High_Student_Reports' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'View_Elem_Teacher_Reports' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'View_High_Teacher_Reports' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'Student_Response_Rate' => array(
+        'type' => 'float',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Response rate on student survey',
+      ),
+      'Teacher_Response_Rate' => array(
+        'type' => 'float',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Response rate on teacher survey',
+      ),
+      'Parent_Response_Rate' => array(
+        'type' => 'float',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Response rate on parent survey; 20 percent of the total number of students enrolled was required to produce report frequencies',
+      ),
+      'Student_Invalid_Rate' => array(
+        'type' => 'float',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Percentage of invalid student respondents',
+      ),
+      'Teacher_Invalid_Rate' => array(
+        'type' => 'float',
+        'precision' => 8,
+        'scale' => 2,
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Percentage of invalid teacher respondents',
+      ),
+      'Student_N' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Total number of possible respondents',
+      ),
+      'Teacher_N' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Total number of possible respondents',
+      ),
+      'engg' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Academic Engagement',
+      ),
+      'engl' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'English Instruction',
+      ),
+      'grit' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Grit',
+      ),
+      'humr' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Human & Social Resources in the Community',
+      ),
+      'math' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Math Instruction',
+      ),
+      'perc' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Academic Personalism',
+      ),
+      'ENGL' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+      'pres' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Academic Press',
+      ),
+      'pssm' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'School Connectedness',
+      ),
+      'rigr' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Classroom Rigor',
+      ),
+      'safe' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Safety',
+      ),
+      'ssaf' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'School Safety',
+      ),
+      'trts' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Student-Teacher Trust',
+      ),
+      'acno' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Peer Support for Academic Work',
+      ),
+      'cdis' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Classroom Disruptions',
+      ),
+      'colb' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Collaborative Practices',
+      ),
+      'colr' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Collective Responsibility',
+      ),
+      'futr' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Importance of High School for the Future',
+      ),
+      'inf3' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Teacher Influence',
+      ),
+      'innv' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Innovation',
+      ),
+      'ins2' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Instructional Leadership',
+      ),
+      'pgmc' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Program Coherence',
+      ),
+      'pnfl' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Parent Influence on Decision Making in Schools',
+      ),
+      'prt4' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Parent Involvement in School',
+      ),
+      'prti' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Student Responsibility',
+      ),
+      'qpd2' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Quality Professional Development',
+      ),
+      'refd' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Reflective Dialogue',
+      ),
+      'scmt' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'School Commitment',
+      ),
+      'sdis' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Quality of Student Discussion',
+      ),
+      'slap' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'School-Wide Future Orientation',
+      ),
+      'socz' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Socialization of New Teachers',
+      ),
+      'trpa' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Teacher-Parent Trust',
+      ),
+      'trpr' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Teacher-Principal Trust',
+      ),
+      'trte' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Teacher-Teacher Trust',
+      ),
+      'tsaf' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Teacher Safety',
+      ),
+      'uexp' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Expectations for Postsecondary Education',
+      ),
+      'Category5E' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => "Category 5E corresponds to how strong a school is on the Essentials. A school's performance determines how well organized they are for improvement.
+
+1-5: 1 if Not Yet Organized, 2 if Partially Organized, 3 if Moderately Organized, 4 if Organized, 5 if Well-Organized",
+      ),
+      'Net5e' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => "The overall 5Essentials score is a summary indicator that describes a school’s performance on the 5Essentials as a group.  This score is calculated by adding up the school’s performance on each individual Essential. Being light green (strong) or dark green (very strong) on an Essential counts as +1; yellow (neutral) or missing counts as 0; and orange (weak) or dark red (very weak) counts as -1.",
+      ),
+      'E_Ldr' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Essential: Effective Leaders',
+      ),
+      'E_Tch' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Essential: Collaborative Teachers',
+      ),
+      'E_Fam' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Essential: Involved Families',
+      ),
+      'E_Env' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Essential: Supportive Environment',
+      ),
+      'E_Ins' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'description' => 'Essential: Ambitious Instruction',
+      ),
+      'Location' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => '',
+      ),
+    ),
+    'name' => 'fiveessentials_2015',
+    'primary key' => array(
+      0 => 'State_Schl_Id',
+    ),
+  );
+  $data_table->meta = array(
+    'fields' => array(
+      /*
+      @todo
+      example:
+      'ACNO' => array(
+        'label' => 'Peer Support for Academic Work (Student)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      */
+    ),
+    'label_field' => '',
+    'is_entity_type' => TRUE,
+    'entity_id' => 'State_Schl_Id',
+    'join' => array(
+      'field_data_field_bcode' => array(
+        'left_field' => 'field_bcode_value',
+        'field' => 'State_Schl_Id',
+        'inner_join' => '0',
+      ),
+    ),
+  );
+  $export['fiveessentials_2015'] = $data_table;
+
+  $data_table = new stdClass();
+  $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
+  $data_table->api_version = 1;
   $data_table->title = 'MEAP 2009';
   $data_table->name = 'meap_2009';
   $data_table->table_schema = array(
