@@ -10019,6 +10019,7 @@ function esdportal_str_data_default() {
       ),
       */
     ),
+    'fields' => [],
     'label_field' => '',
     'is_entity_type' => TRUE,
     'entity_id' => 'State_Schl_Id',
@@ -10030,6 +10031,15 @@ function esdportal_str_data_default() {
       ),
     ),
   );
+  // programmatically construct field metadata
+  $data_table->meta['fields'] = $data_table->table_schema['fields'];
+  array_walk(function(&$field, $key) {
+    $field = [
+      'label' => $field['description'],
+      'locked' => FALSE,
+      'required' => FALSE,
+    ];
+  }, $data_table->meta['fields']);
   $export['fiveessentials_2015'] = $data_table;
 
   $data_table = new stdClass();
