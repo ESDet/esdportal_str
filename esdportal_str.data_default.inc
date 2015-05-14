@@ -10022,13 +10022,13 @@ function esdportal_str_data_default() {
   );
   // programmatically construct field metadata
   $data_table->meta['fields'] = $data_table->table_schema['fields'];
-  array_walk(function(&$field, $key) {
+  array_walk($data_table->meta['fields'], function(&$field, $key) {
     $field = [
       'label' => $field['description'],
       'locked' => FALSE,
       'required' => FALSE,
     ];
-  }, $data_table->meta['fields']);
+  });
   $export['fiveessentials_2015'] = $data_table;
 
   $data_table = new stdClass();
