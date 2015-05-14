@@ -9770,12 +9770,6 @@ function esdportal_str_data_default() {
         'not null' => FALSE,
         'description' => 'Academic Personalism',
       ),
-      'ENGL' => array(
-        'type' => 'int',
-        'size' => 'normal',
-        'not null' => FALSE,
-        'description' => '',
-      ),
       'pres' => array(
         'type' => 'int',
         'size' => 'normal',
@@ -9954,9 +9948,7 @@ function esdportal_str_data_default() {
         'type' => 'int',
         'size' => 'normal',
         'not null' => FALSE,
-        'description' => "Category 5E corresponds to how strong a school is on the Essentials. A school's performance determines how well organized they are for improvement.
-
-1-5: 1 if Not Yet Organized, 2 if Partially Organized, 3 if Moderately Organized, 4 if Organized, 5 if Well-Organized",
+        'description' => "Category 5E corresponds to how strong a school is on the Essentials. A school's performance determines how well organized they are for improvement. 1-5: 1 if Not Yet Organized, 2 if Partially Organized, 3 if Moderately Organized, 4 if Organized, 5 if Well-Organized",
       ),
       'Net5e' => array(
         'type' => 'int',
@@ -10021,14 +10013,20 @@ function esdportal_str_data_default() {
     ),
   );
   // programmatically construct field metadata
-  $data_table->meta['fields'] = $data_table->table_schema['fields'];
-  array_walk($data_table->meta['fields'], function(&$field, $key) {
+  $metafields = $data_table->table_schema['fields'];
+  array_walk($metafields, function(&$field, $key) {
     $field = [
       'label' => $field['description'],
       'locked' => FALSE,
       'required' => FALSE,
     ];
   });
+  $data_table->meta['fields'] = $metafields;
+  $data_table->meta['fields']['State_Schl_Id'] = [
+    'required' => TRUE,
+    'locked' => TRUE,
+    'label' => 'primary',
+  ];
   $export['fiveessentials_2015'] = $data_table;
 
   $data_table = new stdClass();

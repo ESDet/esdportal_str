@@ -87,6 +87,7 @@ features[data_tables][] = esd_k8_2015
 features[data_tables][] = esd_site_visit_2014
 features[data_tables][] = fiveessentials_2013
 features[data_tables][] = fiveessentials_2014
+features[data_tables][] = fiveessentials_2015
 features[data_tables][] = meap_2009
 features[data_tables][] = meap_2010
 features[data_tables][] = meap_2011
