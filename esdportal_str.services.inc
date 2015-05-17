@@ -136,6 +136,24 @@ function esdportal_str_default_services_endpoint() {
           ),
         ),
       ),
+      'schools' => array(
+        'operations' => array(
+          'retrieve' => array(
+            'enable' => 1,
+            'description' => '',
+            'request_url' => '',
+            'response' => '',
+            'auth' => 0,
+          ),
+          'index' => array(
+            'enable' => 1,
+            'description' => '',
+            'request_url' => '',
+            'response' => '',
+            'auth' => 0,
+          ),
+        ),
+      ),
     ),
   );
   $endpoint->resources = array(
@@ -162,6 +180,16 @@ function esdportal_str_default_services_endpoint() {
     'node' => array(
       'operations' => array(
         'retrieve' => array(
+          'enabled' => '1',
+        ),
+      ),
+    ),
+    'schools' => array(
+      'operations' => array(
+        'retrieve' => array(
+          'enabled' => '1',
+        ),
+        'index' => array(
           'enabled' => '1',
         ),
       ),
