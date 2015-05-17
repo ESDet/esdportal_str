@@ -9948,13 +9948,13 @@ function esdportal_str_data_default() {
         'type' => 'int',
         'size' => 'normal',
         'not null' => FALSE,
-        'description' => "Category 5E corresponds to how strong a school is on the Essentials. A school's performance determines how well organized they are for improvement. 1-5: 1 if Not Yet Organized, 2 if Partially Organized, 3 if Moderately Organized, 4 if Organized, 5 if Well-Organized",
+        'description' => 'Category 5E corresponds to how strong a school is on the Essentials. A school\'s performance determines how well organized they are for improvement. 1-5: 1 if Not Yet Organized, 2 if Partially Organized, 3 if Moderately Organized, 4 if Organized, 5 if Well-Organized',
       ),
       'Net5e' => array(
         'type' => 'int',
         'size' => 'normal',
         'not null' => FALSE,
-        'description' => "The overall 5Essentials score is a summary indicator that describes a school’s performance on the 5Essentials as a group.  This score is calculated by adding up the school’s performance on each individual Essential. Being light green (strong) or dark green (very strong) on an Essential counts as +1; yellow (neutral) or missing counts as 0; and orange (weak) or dark red (very weak) counts as -1.",
+        'description' => 'The overall 5Essentials score is a summary indicator that describes a school’s performance on the 5Essentials as a group.  This score is calculated by adding up the school’s performance on each individual Essential. Being light green (strong) or dark green (very strong) on an Essential counts as +1; yellow (neutral) or missing counts as 0; and orange (weak) or dark red (very weak) counts as -1.',
       ),
       'E_Ldr' => array(
         'type' => 'int',
@@ -10000,7 +10000,298 @@ function esdportal_str_data_default() {
     ),
   );
   $data_table->meta = array(
-    'fields' => [],
+    'fields' => array(
+      'School_Name' => array(
+        'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Report_School_Id' => array(
+        'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'State_Schl_Id' => array(
+        'required' => TRUE,
+        'locked' => TRUE,
+        'label' => 'primary',
+      ),
+      'School_Level' => array(
+        'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'View_Elem_Student_Reports' => array(
+        'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'View_High_Student_Reports' => array(
+        'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'View_Elem_Teacher_Reports' => array(
+        'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'View_High_Teacher_Reports' => array(
+        'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Student_Response_Rate' => array(
+        'label' => 'Response rate on student survey',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Teacher_Response_Rate' => array(
+        'label' => 'Response rate on teacher survey',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Parent_Response_Rate' => array(
+        'label' => 'Response rate on parent survey; 20 percent of the total number of students enrolled was required to produce report frequencies',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Student_Invalid_Rate' => array(
+        'label' => 'Percentage of invalid student respondents',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Teacher_Invalid_Rate' => array(
+        'label' => 'Percentage of invalid teacher respondents',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Student_N' => array(
+        'label' => 'Total number of possible respondents',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Teacher_N' => array(
+        'label' => 'Total number of possible respondents',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'engg' => array(
+        'label' => 'Academic Engagement',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'engl' => array(
+        'label' => 'English Instruction',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'grit' => array(
+        'label' => 'Grit',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'humr' => array(
+        'label' => 'Human & Social Resources in the Community',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'math' => array(
+        'label' => 'Math Instruction',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'perc' => array(
+        'label' => 'Academic Personalism',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pres' => array(
+        'label' => 'Academic Press',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pssm' => array(
+        'label' => 'School Connectedness',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'rigr' => array(
+        'label' => 'Classroom Rigor',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'safe' => array(
+        'label' => 'Safety',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'ssaf' => array(
+        'label' => 'School Safety',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'trts' => array(
+        'label' => 'Student-Teacher Trust',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'acno' => array(
+        'label' => 'Peer Support for Academic Work',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'cdis' => array(
+        'label' => 'Classroom Disruptions',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'colb' => array(
+        'label' => 'Collaborative Practices',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'colr' => array(
+        'label' => 'Collective Responsibility',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'futr' => array(
+        'label' => 'Importance of High School for the Future',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'inf3' => array(
+        'label' => 'Teacher Influence',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'innv' => array(
+        'label' => 'Innovation',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'ins2' => array(
+        'label' => 'Instructional Leadership',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pgmc' => array(
+        'label' => 'Program Coherence',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'pnfl' => array(
+        'label' => 'Parent Influence on Decision Making in Schools',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'prt4' => array(
+        'label' => 'Parent Involvement in School',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'prti' => array(
+        'label' => 'Student Responsibility',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'qpd2' => array(
+        'label' => 'Quality Professional Development',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'refd' => array(
+        'label' => 'Reflective Dialogue',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'scmt' => array(
+        'label' => 'School Commitment',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'sdis' => array(
+        'label' => 'Quality of Student Discussion',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'slap' => array(
+        'label' => 'School-Wide Future Orientation',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'socz' => array(
+        'label' => 'Socialization of New Teachers',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'trpa' => array(
+        'label' => 'Teacher-Parent Trust',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'trpr' => array(
+        'label' => 'Teacher-Principal Trust',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'trte' => array(
+        'label' => 'Teacher-Teacher Trust',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'tsaf' => array(
+        'label' => 'Teacher Safety',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'uexp' => array(
+        'label' => 'Expectations for Postsecondary Education',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Category5E' => array(
+        'label' => 'Category 5E corresponds to how strong a school is on the Essentials. A school\'s performance determines how well organized they are for improvement. 1-5: 1 if Not Yet Organized, 2 if Partially Organized, 3 if Moderately Organized, 4 if Organized, 5 if Well-Organized',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Net5e' => array(
+        'label' => 'The overall 5Essentials score is a summary indicator that describes a school’s performance on the 5Essentials as a group.  This score is calculated by adding up the school’s performance on each individual Essential. Being light green (strong) or dark green (very strong) on an Essential counts as +1; yellow (neutral) or missing counts as 0; and orange (weak) or dark red (very weak) counts as -1.',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'E_Ldr' => array(
+        'label' => 'Essential: Effective Leaders',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'E_Tch' => array(
+        'label' => 'Essential: Collaborative Teachers',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'E_Fam' => array(
+        'label' => 'Essential: Involved Families',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'E_Env' => array(
+        'label' => 'Essential: Supportive Environment',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'E_Ins' => array(
+        'label' => 'Essential: Ambitious Instruction',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'Location' => array(
+        'label' => '',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+    ),
     'label_field' => '',
     'is_entity_type' => TRUE,
     'entity_id' => 'State_Schl_Id',
@@ -10012,21 +10303,6 @@ function esdportal_str_data_default() {
       ),
     ),
   );
-  // programmatically construct field metadata
-  $metafields = $data_table->table_schema['fields'];
-  array_walk($metafields, function(&$field, $key) {
-    $field = [
-      'label' => $field['description'],
-      'locked' => FALSE,
-      'required' => FALSE,
-    ];
-  });
-  $data_table->meta['fields'] = $metafields;
-  $data_table->meta['fields']['State_Schl_Id'] = [
-    'required' => TRUE,
-    'locked' => TRUE,
-    'label' => 'primary',
-  ];
   $export['fiveessentials_2015'] = $data_table;
 
   $data_table = new stdClass();
