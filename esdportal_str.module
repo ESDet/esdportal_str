@@ -75,6 +75,10 @@ function esdportal_str_permission() {
     'edit own field_growth_data_doc' => array('title' => t('Edit own field_growth_data_doc')),
     'view any field_growth_data_doc' => array('title' => t('View any field_growth_data_doc')),
     'edit any field_growth_data_doc' => array('title' => t('Edit any field_growth_data_doc')),
+    'view own field_files' => array('title' => t('View own field_files')),
+    'edit own field_files' => array('title' => t('Edit own field_files')),
+    'view any field_files' => array('title' => t('View any field_files')),
+    'edit any field_files' => array('title' => t('Edit any field_files')),
   );
 }
 
@@ -138,6 +142,19 @@ function esdportal_str_field_access($op, $field, $entity_type, $entity, $account
       $context = 'own';
     }
     $perm = $op . ' ' . $context . ' field_growth_data_doc';
+    $access = user_access($perm, $account);
+    return $access;
+  }
+  if ($field['field_name'] == 'field_files') {
+    // allow superusers no matter whoziewhatsit
+    if (user_access('bypass node access') || user_access('administer content types')) {
+      return TRUE;
+    }
+    $context = 'any';
+    if ($entity_type == 'node' && $entity && $entity->uid == $account->uid) {
+      $context = 'own';
+    }
+    $perm = $op . ' ' . $context . ' field_files';
     $access = user_access($perm, $account);
     return $access;
   }
