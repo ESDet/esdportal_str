@@ -10308,6 +10308,235 @@ function esdportal_str_data_default() {
   $data_table = new stdClass();
   $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
   $data_table->api_version = 1;
+  $data_table->title = 'Supplemental K12 data for 2015';
+  $data_table->name = 'k12_supplemental_2015';
+  $data_table->table_schema = array(
+    'description' => 'K12 Supplemental 2015',
+    'fields' => array(
+      'bcode' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'Building/Entity Code used as unique identifier',
+      ),
+      'school_name' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => 'Name of school (included on all datasets for cross referencing)',
+      ),
+      'gs_id' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'default' => 0,
+        'description' => 'GreatSchools ID',
+      ),
+      'gs_rating' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'default' => 0,
+        'description' => 'GreatSchools Rating',
+      ),
+      'mackinac_rating' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Mackinac Rating',
+      ),
+      'avg_commute' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Average Commute Distance (Fall 2013)',
+      ),
+      'michigan_ttb' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'default' => 0,
+        'description' => '2014 Michigan Top-to-bottom percentile ranking',
+      ),
+      'iep_pct' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => '% with an Individualized Education Plan 2013-14',
+      ),
+      'attendance_all' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Attendance Rate of All Students',
+      ),
+      'chronic_absentee_pct' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Percent of Students Chronically Absent',
+      ),
+      'attendance_ca' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Attendance rate of Chronically Absent Students Only',
+      ),
+      'chronic_absentee_cnt' => array(
+        'type' => 'int',
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'default' => 0,
+        'description' => 'StudentCount_ChronicallyAbsent',
+      ),
+      'full_attendance_eqvl_all' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Full Attendance Equivalent N',
+      ),
+      'full_attendance_eqvl_ca' => array(
+        'type' => 'float',
+        'size' => 'normal',
+        'precision' => '',
+        'scale' => '',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'description' => 'Full Attendance Equivalent of Chronic Abs',
+      ),
+      'name' => 'k12_supplemental_2015',
+      'primary key' => array(
+        0 => 'bcode',
+      ),
+    ),
+  );
+  $data_table->meta = array(
+    'fields' => array(
+      'bcode' => array(
+        'label' => 'Building/Entity Code used as unique identifier',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'school_name' => array(
+        'label' => 'Name of school (included on all datasets for cross referencing)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'gs_id' => array(
+        'label' => 'GreatSchools ID',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'gs_rating' => array(
+        'label' => 'GreatSchools Rating',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'mackinac_rating' => array(
+        'label' => 'Mackinac Rating',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'avg_commute' => array(
+        'label' => 'Average Commute Distance (Fall 2013)',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'michigan_ttb' => array(
+        'label' => '2014 Michigan Top-to-bottom percentile ranking',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'iep_pct' => array(
+        'label' => '% with an Individualized Education Plan 2013-14',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'attendance_all' => array(
+        'label' => 'Attendance Rate of All Students',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'chronic_absentee_pct' => array(
+        'label' => 'Percent of Students Chronically Absent',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'attendance_ca' => array(
+        'label' => 'Attendance rate of Chronically Absent Students Only',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'chronic_absentee_cnt' => array(
+        'label' => 'StudentCount_ChronicallyAbsent',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'full_attendance_eqvl_all' => array(
+        'label' => 'Full Attendance Equivalent N',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'full_attendance_eqvl_ca' => array(
+        'label' => 'Full Attendance Equivalent of Chronic Abs',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'name' => array(
+        'label' => 'k',
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+      'primary key' => array(
+        'label' => NULL,
+        'locked' => FALSE,
+        'required' => FALSE,
+      ),
+    ),
+    'label_field' => '',
+    'is_entity_type' => TRUE,
+    'entity_id' => 'bcode',
+    'join' => array(
+      'field_data_field_bcode' => array(
+        'left_field' => 'field_bcode_value',
+        'field' => 'bcode',
+        'inner_join' => '0',
+      ),
+    ),
+  );
+  $export['k12_supplemental_2015'] = $data_table;
+
+  $data_table = new stdClass();
+  $data_table->disabled = FALSE; /* Edit this to true to make a default data_table disabled initially */
+  $data_table->api_version = 1;
   $data_table->title = 'MEAP 2009';
   $data_table->name = 'meap_2009';
   $data_table->table_schema = array(

@@ -101,6 +101,10 @@ function esdportal_str_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'entityreference:base-tables';
   $strongarm->value = array(
+    'data_k12_supplemental_2015' => array(
+      0 => 'k12_supplemental_2015',
+      1 => 'bcode',
+    ),
     'data_act_2011' => array(
       0 => 'act_2011',
       1 => 'BuildingCode',
