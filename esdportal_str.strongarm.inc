@@ -197,6 +197,10 @@ function esdportal_str_strongarm() {
       0 => 'meap_2013',
       1 => 'BuildingCode',
     ),
+    'data_meap_2014' => array(
+      0 => 'meap_2014',
+      1 => 'BuildingCode',
+    ),
     'node' => array(
       0 => 'node',
       1 => 'nid',

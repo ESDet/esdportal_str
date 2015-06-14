@@ -94,6 +94,7 @@ features[data_tables][] = meap_2010
 features[data_tables][] = meap_2011
 features[data_tables][] = meap_2012
 features[data_tables][] = meap_2013
+features[data_tables][] = meap_2014
 features[features_api][] = api:2
 features[field_base][] = body
 features[field_base][] = field_2011_pct_det_res
