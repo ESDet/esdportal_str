@@ -4669,14 +4669,14 @@ function esdportal_str_data_default() {
         'not null' => FALSE,
         'description' => 'Points out of 10 for College Enrollment',
       ),
-      'cepi_uncond_enroll_5yr_mme' => array(
+      'col_enr_pct' => array(
         'type' => 'numeric',
         'size' => 'normal',
         'precision' => '16',
         'scale' => '8',
         'unsigned' => TRUE,
         'not null' => FALSE,
-        'description' => '5-Year Unconditional College Enrollment Among MME Takers (CEPI-G12 School)',
+        'description' => 'College Enrollment Among MME Takers Conditional on 5-Year Graduates (2013, 2014 2-Year Average)',
       ),
       'col_persist_pts' => array(
         'type' => 'numeric',
@@ -4687,43 +4687,16 @@ function esdportal_str_data_default() {
         'not null' => FALSE,
         'description' => 'Points out of 10 for College Persistence',
       ),
-      'cepi_cond_coll_persist' => array(
+      'col_persist_pct' => array(
         'type' => 'numeric',
         'size' => 'normal',
         'precision' => '16',
         'scale' => '8',
         'unsigned' => TRUE,
         'not null' => FALSE,
-        'description' => 'College Persistence Conditional on College Enrollment (CEPI-G12 School)',
+        'description' => 'College Persistence Conditional on College Enrollment (2012, 2013 2-Year Average)',
       ),
-      'fouryr_col_enr_pts' => array(
-        'type' => 'numeric',
-        'size' => 'normal',
-        'precision' => '16',
-        'scale' => '8',
-        'unsigned' => TRUE,
-        'not null' => FALSE,
-        'description' => 'Points out of 10 for 4-Year College Enrollment',
-      ),
-      'cepi_uncond_enroll_4yr_mme' => array(
-        'type' => 'numeric',
-        'size' => 'normal',
-        'precision' => '16',
-        'scale' => '8',
-        'unsigned' => TRUE,
-        'not null' => FALSE,
-        'description' => '4-Year Unconditional College Enrollment Among MME Takers (CEPI-G12 School)',
-      ),
-      'net5e_pts' => array(
-        'type' => 'numeric',
-        'size' => 'normal',
-        'precision' => '16',
-        'scale' => '8',
-        'unsigned' => FALSE,
-        'not null' => FALSE,
-        'description' => 'Points out of 10 for 5 Essentials',
-      ),
-      'net5e' => array(
+      'cat5e' => array(
         'type' => 'numeric',
         'size' => 'normal',
         'precision' => '16',
@@ -7011,16 +6984,7 @@ function esdportal_str_data_default() {
         'not null' => FALSE,
         'description' => 'Mean Student Percentile Growth in School for Students at Same Reading Baseline MEAP Score',
       ),
-      'net5e_pts' => array(
-        'type' => 'numeric',
-        'size' => 'normal',
-        'precision' => '16',
-        'scale' => '8',
-        'unsigned' => TRUE,
-        'not null' => FALSE,
-        'description' => 'Points out of 10 for 5Essentials',
-      ),
-      'net5e' => array(
+      'cat5e' => array(
         'type' => 'numeric',
         'size' => 'normal',
         'precision' => '16',
