@@ -16877,7 +16877,7 @@ function esdportal_str_data_default() {
       'GRADE_11_READING_AVG_SS' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -16898,7 +16898,7 @@ function esdportal_str_data_default() {
       'GRADE_11_WRITING_AVG_SS' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -16919,7 +16919,7 @@ function esdportal_str_data_default() {
       'GRADE_11_SCIENCE_AVG_SS' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -16940,7 +16940,7 @@ function esdportal_str_data_default() {
       'GRADE_11_SOCIAL_STUDIES_AVG_SS' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -16949,7 +16949,7 @@ function esdportal_str_data_default() {
       'GRADE_11_MATH_PERCENT_READY' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -16958,7 +16958,7 @@ function esdportal_str_data_default() {
       'GRADE_11_READING_PERCENT_READY' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -16967,7 +16967,7 @@ function esdportal_str_data_default() {
       'GRADE_11_SCIENCE_PERCENT_READY' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -16976,7 +16976,7 @@ function esdportal_str_data_default() {
       'GRADE_11_ENGLISH_PERCENT_READY' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -16985,7 +16985,7 @@ function esdportal_str_data_default() {
       'GRADE_11_ALL_SUBJECT_PERCENT_READY' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -17000,7 +17000,7 @@ function esdportal_str_data_default() {
       'GRADUATION_RATE_4_YEAR' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -17009,7 +17009,7 @@ function esdportal_str_data_default() {
       'DROPOUT_RATE_4_YEAR' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -17048,7 +17048,7 @@ function esdportal_str_data_default() {
       'GRADUATION_RATE_5_YEAR' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -17057,7 +17057,7 @@ function esdportal_str_data_default() {
       'DROPOUT_RATE_5_YEAR' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -17096,7 +17096,7 @@ function esdportal_str_data_default() {
       'GRADUATION_RATE_6_YEAR' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -17105,7 +17105,7 @@ function esdportal_str_data_default() {
       'DROPOUT_RATE_6_YEAR' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -18366,7 +18366,7 @@ function esdportal_str_data_default() {
       'GRADE_11_READING_AVG_SS' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -18387,7 +18387,7 @@ function esdportal_str_data_default() {
       'GRADE_11_WRITING_AVG_SS' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -18408,7 +18408,7 @@ function esdportal_str_data_default() {
       'GRADE_11_SCIENCE_AVG_SS' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -18429,7 +18429,7 @@ function esdportal_str_data_default() {
       'GRADE_11_SOCIAL_STUDIES_AVG_SS' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -18438,7 +18438,7 @@ function esdportal_str_data_default() {
       'GRADE_11_MATH_PERCENT_READY' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -18447,7 +18447,7 @@ function esdportal_str_data_default() {
       'GRADE_11_READING_PERCENT_READY' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -18456,7 +18456,7 @@ function esdportal_str_data_default() {
       'GRADE_11_SCIENCE_PERCENT_READY' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -18465,7 +18465,7 @@ function esdportal_str_data_default() {
       'GRADE_11_ENGLISH_PERCENT_READY' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -18474,7 +18474,7 @@ function esdportal_str_data_default() {
       'GRADE_11_ALL_SUBJECT_PERCENT_READY' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -18489,7 +18489,7 @@ function esdportal_str_data_default() {
       'GRADUATION_RATE_4_YEAR' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -18498,7 +18498,7 @@ function esdportal_str_data_default() {
       'DROPOUT_RATE_4_YEAR' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -18537,7 +18537,7 @@ function esdportal_str_data_default() {
       'GRADUATION_RATE_5_YEAR' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -18546,7 +18546,7 @@ function esdportal_str_data_default() {
       'DROPOUT_RATE_5_YEAR' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -18585,7 +18585,7 @@ function esdportal_str_data_default() {
       'GRADUATION_RATE_6_YEAR' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
@@ -18594,7 +18594,7 @@ function esdportal_str_data_default() {
       'DROPOUT_RATE_6_YEAR' => array(
         'type' => 'numeric',
         'size' => 'normal',
-        'precision' => '4',
+        'precision' => '8',
         'scale' => '2',
         'unsigned' => TRUE,
         'not null' => FALSE,
