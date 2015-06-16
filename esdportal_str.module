@@ -694,11 +694,21 @@ function esdportal_str_mail_alter(&$message) {
  */
 function esdportal_str_views_data_alter(&$data) {
   foreach ($data as &$view) {
+    // Join school data tables with building code field.
     if (isset($view['table']['join']['field_data_field_bcode'])) {
       $field = $view['table']['join']['field_data_field_bcode']['field'];
       $view['table']['join']['taxonomy_term_data'] = array(
         'left_table' => 'field_data_field_bcode',
         'left_field' => 'field_bcode_value',
+        'field' => $field,
+      );
+    }
+    // Join school data tables with esd internal school id field.
+    if (isset($view['tables']['join']['field_data_field_esd_schid'])) {
+      $field = $view['table']['join']['field_data_field_bcode']['field'];
+      $view['table']['join']['taxonomy_term_data'] = array(
+        'left_table' => 'field_data_field_esd_schid',
+        'left_field' => 'field_esd_schid_value',
         'field' => $field,
       );
     }

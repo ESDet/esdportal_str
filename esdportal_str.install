@@ -107,3 +107,24 @@ function esdportal_str_update_7101() {
 
   db_create_table('ec_state_ratings', $schema['ec_state_ratings']);
 }
+
+/**
+ * Add esd_schid column to esd_k8_2015 and esd_hs_2015.
+ */
+function esdportal_str_update_7102() {
+  db_add_field('esd_k8_2015', 'esd_schid', [
+    'type' => 'varchar',
+    'size' => 'normal',
+    'length' => '255',
+    'not null' => FALSE,
+    'description' => 'ESD internal school ID',
+  ]);
+
+  db_add_field('esd_hs_2015', 'esd_schid', [
+    'type' => 'varchar',
+    'size' => 'normal',
+    'length' => '255',
+    'not null' => FALSE,
+    'description' => 'ESD internal school ID',
+  ]);
+}

@@ -4705,6 +4705,13 @@ function esdportal_str_data_default() {
         'not null' => FALSE,
         'description' => 'Net 5Essentials Score',
       ),
+      'esd_schid' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => 'ESD internal school ID',
+      ),
     ),
     'name' => 'esd_hs_2015',
     'primary key' => array(
@@ -6992,6 +6999,13 @@ function esdportal_str_data_default() {
         'unsigned' => FALSE,
         'not null' => FALSE,
         'description' => 'Net 5E Score',
+      ),
+      'esd_schid' => array(
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+        'description' => 'ESD internal school ID',
       ),
     ),
     'name' => 'esd_k8_2015',
