@@ -101,8 +101,12 @@ function esdportal_str_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'entityreference:base-tables';
   $strongarm->value = array(
-    'data_k12_supplemental_2015' => array(
-      0 => 'k12_supplemental_2015',
+    'data_esd_hs_2015' => array(
+      0 => 'esd_hs_2015',
+      1 => 'bcode',
+    ),
+    'data_esd_k8_2015' => array(
+      0 => 'esd_k8_2015',
       1 => 'bcode',
     ),
     'data_act_2011' => array(
@@ -141,10 +145,6 @@ function esdportal_str_strongarm() {
       0 => 'esd_hs_2014',
       1 => 'buildingcode',
     ),
-    'data_esd_hs_2015' => array(
-      0 => 'esd_hs_2015',
-      1 => 'bcode',
-    ),
     'data_esd_k8_2013' => array(
       0 => 'esd_k8_2013',
       1 => 'buildingcode',
@@ -156,10 +156,6 @@ function esdportal_str_strongarm() {
     'data_esd_k8_2014' => array(
       0 => 'esd_k8_2014',
       1 => 'buildingcode',
-    ),
-    'data_esd_k8_2015' => array(
-      0 => 'esd_k8_2015',
-      1 => 'bcode',
     ),
     'data_esd_site_visit_2014' => array(
       0 => 'esd_site_visit_2014',
@@ -176,6 +172,10 @@ function esdportal_str_strongarm() {
     'data_fiveessentials_2015' => array(
       0 => 'fiveessentials_2015',
       1 => 'State_Schl_Id',
+    ),
+    'data_k12_supplemental_2015' => array(
+      0 => 'k12_supplemental_2015',
+      1 => 'bcode',
     ),
     'data_meap_2009' => array(
       0 => 'meap_2009',

@@ -4728,6 +4728,11 @@ function esdportal_str_data_default() {
         'field' => 'bcode',
         'inner_join' => '0',
       ),
+      'field_data_field_esd_schid' => array(
+        'left_field' => 'field_esd_schid_value',
+        'field' => 'esd_schid',
+        'inner_join' => '0',
+      ),
     ),
   );
   $export['esd_hs_2015'] = $data_table;
@@ -7021,6 +7026,11 @@ function esdportal_str_data_default() {
       'field_data_field_bcode' => array(
         'left_field' => 'field_bcode_value',
         'field' => 'bcode',
+        'inner_join' => '0',
+      ),
+      'field_data_field_esd_schid' => array(
+        'left_field' => 'field_esd_schid_value',
+        'field' => 'esd_schid',
         'inner_join' => '0',
       ),
     ),
