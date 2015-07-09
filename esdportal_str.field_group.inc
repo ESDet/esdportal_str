@@ -21,7 +21,7 @@ function esdportal_str_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => '2013 Fields',
-    'weight' => '18',
+    'weight' => '19',
     'children' => array(
       0 => 'field_loc_email',
       1 => 'field_2011_pct_det_res',
@@ -55,7 +55,7 @@ function esdportal_str_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => '2014 Fields',
-    'weight' => '19',
+    'weight' => '20',
     'children' => array(
       0 => 'field_2014_graded',
       1 => 'field_2014_profile',
@@ -90,7 +90,7 @@ function esdportal_str_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => '2015 Fields',
-    'weight' => '20',
+    'weight' => '21',
     'children' => array(
       0 => 'field_2015_universe',
       1 => 'field_2015_graded',
@@ -126,7 +126,7 @@ function esdportal_str_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'school_profile';
   $field_group->mode = 'form';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_new';
   $field_group->data = array(
     'label' => 'Old Fields (Ignore)',
     'weight' => '54',
@@ -179,7 +179,7 @@ function esdportal_str_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'EEM Fields',
-    'weight' => '17',
+    'weight' => '18',
     'children' => array(
       0 => 'field_state_status',
       1 => 'field_strict_discipline_academy',
@@ -287,10 +287,10 @@ function esdportal_str_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'School Profiles',
-    'weight' => '9',
+    'weight' => '11',
     'children' => array(
-      0 => 'group_new_edit',
-      1 => 'group_current_edit',
+      0 => 'group_current_edit',
+      1 => 'group_new_edit',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
