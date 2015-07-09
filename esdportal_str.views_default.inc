@@ -2987,6 +2987,50 @@ function esdportal_str_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: esd_ec_id */
+  $handler->display->display_options['fields']['field_esd_ec_id']['id'] = 'field_esd_ec_id';
+  $handler->display->display_options['fields']['field_esd_ec_id']['table'] = 'field_data_field_esd_ec_id';
+  $handler->display->display_options['fields']['field_esd_ec_id']['field'] = 'field_esd_ec_id';
+  $handler->display->display_options['fields']['field_esd_ec_id']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['fields']['field_esd_ec_id']['label'] = 'ID';
+  $handler->display->display_options['fields']['field_esd_ec_id']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Edit link */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = 'Edit profile';
+  $handler->display->display_options['fields']['edit_node']['text'] = 'Edit this program';
+  /* Field: Taxonomy term: Address with phone number */
+  $handler->display->display_options['fields']['field_address_data']['id'] = 'field_address_data';
+  $handler->display->display_options['fields']['field_address_data']['table'] = 'field_data_field_address';
+  $handler->display->display_options['fields']['field_address_data']['field'] = 'field_address_data';
+  $handler->display->display_options['fields']['field_address_data']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['fields']['field_address_data']['label'] = 'Phone';
+  $handler->display->display_options['fields']['field_address_data']['selected_phone_type'] = TRUE;
+  /* Field: Content: Contact person */
+  $handler->display->display_options['fields']['field_ec_contact_1']['id'] = 'field_ec_contact_1';
+  $handler->display->display_options['fields']['field_ec_contact_1']['table'] = 'field_data_field_ec_contact';
+  $handler->display->display_options['fields']['field_ec_contact_1']['field'] = 'field_ec_contact';
+  /* Field: Field: Email */
+  $handler->display->display_options['fields']['field_email_1']['id'] = 'field_email_1';
+  $handler->display->display_options['fields']['field_email_1']['table'] = 'field_data_field_email';
+  $handler->display->display_options['fields']['field_email_1']['field'] = 'field_email';
+  /* Field: Content: Updated date */
+  $handler->display->display_options['fields']['changed']['id'] = 'changed';
+  $handler->display->display_options['fields']['changed']['table'] = 'node';
+  $handler->display->display_options['fields']['changed']['field'] = 'changed';
+  $handler->display->display_options['fields']['changed']['date_format'] = 'time ago';
+  $handler->display->display_options['fields']['changed']['format_date_sql'] = 0;
   $handler->display->display_options['path'] = 'early-learning-programs';
   $translatables['early_learning_programs'] = array(
     t('Master'),
@@ -12753,8 +12797,11 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Edit typology';
   $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '50';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
@@ -12942,42 +12989,46 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['field_2015_graded']['table'] = 'field_data_field_2015_graded';
   $handler->display->display_options['fields']['field_2015_graded']['field'] = 'field_2015_graded';
   $handler->display->display_options['fields']['field_2015_graded']['label'] = '15 Grd?';
-  $handler->display->display_options['fields']['field_2015_graded']['type'] = 'editable';
   $handler->display->display_options['fields']['field_2015_graded']['settings'] = array(
     'click_to_edit' => 0,
     'click_to_edit_style' => 'button',
     'empty_text' => '',
     'fallback_format' => 'list_default',
   );
-  /* Field: Taxonomy term: ESD Exclusive Typology */
-  $handler->display->display_options['fields']['field_esd_exclusive_typology']['id'] = 'field_esd_exclusive_typology';
-  $handler->display->display_options['fields']['field_esd_exclusive_typology']['table'] = 'field_data_field_esd_exclusive_typology';
-  $handler->display->display_options['fields']['field_esd_exclusive_typology']['field'] = 'field_esd_exclusive_typology';
-  $handler->display->display_options['fields']['field_esd_exclusive_typology']['label'] = 'ExTyp';
-  $handler->display->display_options['fields']['field_esd_exclusive_typology']['type'] = 'editable';
-  $handler->display->display_options['fields']['field_esd_exclusive_typology']['settings'] = array(
+  /* Field: Taxonomy term: City Council District */
+  $handler->display->display_options['fields']['field_council_district']['id'] = 'field_council_district';
+  $handler->display->display_options['fields']['field_council_district']['table'] = 'field_data_field_council_district';
+  $handler->display->display_options['fields']['field_council_district']['field'] = 'field_council_district';
+  $handler->display->display_options['fields']['field_council_district']['type'] = 'editable';
+  $handler->display->display_options['fields']['field_council_district']['settings'] = array(
     'click_to_edit' => 0,
     'click_to_edit_style' => 'button',
     'empty_text' => '',
-    'fallback_format' => 'taxonomy_term_reference_link',
+    'fallback_format' => 'list_default',
   );
-  /* Field: Taxonomy term: 2015 Site Visit Category */
-  $handler->display->display_options['fields']['field_2015_site_visit_category']['id'] = 'field_2015_site_visit_category';
-  $handler->display->display_options['fields']['field_2015_site_visit_category']['table'] = 'field_data_field_2015_site_visit_category';
-  $handler->display->display_options['fields']['field_2015_site_visit_category']['field'] = 'field_2015_site_visit_category';
-  $handler->display->display_options['fields']['field_2015_site_visit_category']['settings'] = array(
-    'link' => 0,
+  /* Field: Content: Closing time */
+  $handler->display->display_options['fields']['field_time_closed_1']['id'] = 'field_time_closed_1';
+  $handler->display->display_options['fields']['field_time_closed_1']['table'] = 'field_data_field_time_closed';
+  $handler->display->display_options['fields']['field_time_closed_1']['field'] = 'field_time_closed';
+  $handler->display->display_options['fields']['field_time_closed_1']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_time_closed_1']['type'] = 'editable';
+  $handler->display->display_options['fields']['field_time_closed_1']['settings'] = array(
+    'click_to_edit' => 0,
+    'click_to_edit_style' => 'button',
+    'empty_text' => '',
+    'fallback_format' => 'text_default',
   );
-  /* Field: Taxonomy term: 2015 Site Visit Zone */
-  $handler->display->display_options['fields']['field_2015_zone']['id'] = 'field_2015_zone';
-  $handler->display->display_options['fields']['field_2015_zone']['table'] = 'field_data_field_2015_zone';
-  $handler->display->display_options['fields']['field_2015_zone']['field'] = 'field_2015_zone';
-  /* Field: Taxonomy term: Site Visit Hub */
-  $handler->display->display_options['fields']['field_site_visit_hub']['id'] = 'field_site_visit_hub';
-  $handler->display->display_options['fields']['field_site_visit_hub']['table'] = 'field_data_field_site_visit_hub';
-  $handler->display->display_options['fields']['field_site_visit_hub']['field'] = 'field_site_visit_hub';
-  $handler->display->display_options['fields']['field_site_visit_hub']['settings'] = array(
-    'link' => 0,
+  /* Field: Content: Opening time */
+  $handler->display->display_options['fields']['field_time_open_1']['id'] = 'field_time_open_1';
+  $handler->display->display_options['fields']['field_time_open_1']['table'] = 'field_data_field_time_open';
+  $handler->display->display_options['fields']['field_time_open_1']['field'] = 'field_time_open';
+  $handler->display->display_options['fields']['field_time_open_1']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['field_time_open_1']['type'] = 'editable';
+  $handler->display->display_options['fields']['field_time_open_1']['settings'] = array(
+    'click_to_edit' => 0,
+    'click_to_edit_style' => 'button',
+    'empty_text' => '',
+    'fallback_format' => 'text_default',
   );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -13177,14 +13228,20 @@ function esdportal_str_views_default_views() {
     t('Student Leadership Opportunities'),
     t('Phone'),
     t('Edit typology'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
     t('Taxonomy term'),
     t('bcde'),
     t('Typ'),
     t('15 Grd?'),
-    t('ExTyp'),
-    t('2015 Site Visit Category'),
-    t('2015 Site Visit Zone'),
-    t('Site Visit Hub'),
+    t('City Council District'),
+    t('Closing time'),
+    t('Opening time'),
     t('ESD Exclusive Typology'),
     t('2015 Graded Type (field_2015_graded)'),
   );
