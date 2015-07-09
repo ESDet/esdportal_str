@@ -332,7 +332,7 @@ function esdportal_str_strongarm() {
           'weight' => '0',
         ),
         'locations' => array(
-          'weight' => '53',
+          'weight' => '14',
         ),
       ),
       'display' => array(),
