@@ -170,6 +170,7 @@ function esdportal_str_user_default_permissions() {
   $permissions['choose taxonomy term revisions'] = array(
     'name' => 'choose taxonomy term revisions',
     'roles' => array(
+      'Logistics Coordinator' => 'Logistics Coordinator',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy_revision',
