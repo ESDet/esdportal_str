@@ -78,6 +78,27 @@ function esdportal_str_schema() {
         'unsigned' => TRUE,
         'not null' => FALSE,
       ),
+      'state_points' => array(
+        'description' => 'based on PublishedRating or most recent score if "In Progress"',
+        'type' => 'int',
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      'total_points' => array(
+        'description' => 'site_visit_points + staff_points + state_points',
+        'type' => 'int',
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+      ),
+      'overall_rating' => array(
+        'description' => 'Human-readable rating, based on total_points',
+        'type' => 'varchar',
+        'size' => 'normal',
+        'length' => '255',
+        'not null' => FALSE,
+      ),
     ),
    'indexes' => array(
       'timestamp' => array('timestamp'),
@@ -126,5 +147,34 @@ function esdportal_str_update_7102() {
     'length' => '255',
     'not null' => FALSE,
     'description' => 'ESD internal school ID',
+  ]);
+}
+
+/**
+ * Add new state ratings fields to ec_state_ratings.
+ */
+function esdportal_str_update_7105() {
+  db_add_field('ec_state_ratings', 'state_points', [
+    'description' => 'based on PublishedRating or most recent score if "In Progress"',
+    'type' => 'int',
+    'size' => 'normal',
+    'unsigned' => TRUE,
+    'not null' => FALSE,
+  ]);
+
+  db_add_field('ec_state_ratings', 'total_points', [
+    'description' => 'site_visit_points + staff_points + state_points',
+    'type' => 'int',
+    'size' => 'normal',
+    'unsigned' => TRUE,
+    'not null' => FALSE,
+  ]);
+
+  db_add_field('ec_state_ratings', 'overall_rating', [
+    'description' => 'Human-readable rating, based on total_points',
+    'type' => 'varchar',
+    'size' => 'normal',
+    'length' => '255',
+    'not null' => FALSE,
   ]);
 }
