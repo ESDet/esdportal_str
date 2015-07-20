@@ -1,6 +1,10 @@
+#!/bin/bash
+
 # Dependencies:
 #  * csvkit
-#  * csvsed
+#  * python
+
+SOURCE="gs-transformer"
 
 NOW=`date +%s`
 
@@ -15,6 +19,13 @@ IDS_FILE="ids-$NOW.csv"
 ESD_EL_2015_FILE="esd_el_2015-$NOW.csv"
 
 JOINED_WORKING_DATA="joined-$NOW.csv"
+
+# Find this script's directory & set location of python transform-gc-data.py script.
+pushd `dirname $0` > /dev/null
+SCRIPTPATH=`pwd`
+popd > /dev/null
+
+TRANSFORM_GC_DATA_SCRIPT=$SCRIPTPATH/transform-gc-data.py
 
 curl -o/dev/null -s 'http://stage.worklifesystems.com/Login/LoginGuest?AgencyID=4' -H 'Pragma: no-cache' -H 'DNT: 1' -H 'Accept-Encoding: gzip, deflate, sdch' -H 'Accept-Language: en-US,en;q=0.8,fr;q=0.6' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.6 Safari/537.36' -H 'HTTPS: 1' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' -H 'Cache-Control: no-cache' -H 'Referer: http://stage.worklifesystems.com/parent/4' -H 'Connection: keep-alive' --compressed --cookie-jar cookies.txt --location
 
@@ -35,12 +46,12 @@ paste -d, $IDS_FILE $CSV_EXPORT_FILE > $CSV_IMPORT_FILE
 
 # change to machine names
 sed -i 's/Published Rating/PublishedRating/' $CSV_IMPORT_FILE
-sed -i 's/Total Points (out of 50)/ptsTotal/' $CSV_IMPORT_FILE
-sed -i 's/Staff Qualifications and Professional Development Points (out of 16)/ptsStaff/' $CSV_IMPORT_FILE
-sed -i 's/Family and Community Partnership Points (out of 8)/ptsFamily/' $CSV_IMPORT_FILE
-sed -i 's/Administration and Management Points (out of 6)/ptsAdmin/' $CSV_IMPORT_FILE
-sed -i 's/Environment Points (out of 8)/ptsEnv/' $CSV_IMPORT_FILE
-sed -i 's/Curriculum and Instruction Points (out of 12)/ptsCurr/' $CSV_IMPORT_FILE
+sed -i 's/Total Points/ptsTotal/' $CSV_IMPORT_FILE
+sed -i 's/Staff Qualifications and Professional Development Points/ptsStaff/' $CSV_IMPORT_FILE
+sed -i 's/Family and Community Partnership Points/ptsFamily/' $CSV_IMPORT_FILE
+sed -i 's/Administration and Management Points/ptsAdmin/' $CSV_IMPORT_FILE
+sed -i 's/Environment Points/ptsEnv/' $CSV_IMPORT_FILE
+sed -i 's/Curriculum and Instruction Points/ptsCurr/' $CSV_IMPORT_FILE
 
 # download esd el 2015 data & convert to csv
 curl -s https://portal.excellentschoolsdetroit.org/api/1.0/views/esd_el_2015.json | in2csv -f json > $ESD_EL_2015_FILE
@@ -49,4 +60,22 @@ curl -s https://portal.excellentschoolsdetroit.org/api/1.0/views/esd_el_2015.jso
 csvjoin -c esd_ec_id,program_id $CSV_IMPORT_FILE $ESD_EL_2015_FILE > $JOINED_WORKING_DATA
 
 # add new cols to end of new file
-sed -i '1!b;s/$/state_points,total_points,overall_rating/' $JOINED_WORKING_DATA
+sed -i '1!b;s/$/,state_points,total_points,overall_rating,rating_id,source,timestamp/' $JOINED_WORKING_DATA
+sed -i "2,\${s/$/,,,,,$SOURCE,$NOW/;}" $JOINED_WORKING_DATA
+
+# Calculate scores.
+python $TRANSFORM_GC_DATA_SCRIPT $JOINED_WORKING_DATA
+
+# Select certain columns & reorder.
+csvcut -c rating_id,esd_ec_id,source,timestamp,PublishedRating,ptsTotal,ptsStaff,ptsFamily,ptsAdmin,ptsEnv,ptsCurr,state_points,total_points,overall_rating $JOINED_WORKING_DATA > $JOINED_WORKING_DATA.tmp
+mv $JOINED_WORKING_DATA.tmp $JOINED_WORKING_DATA
+
+# Change blanks to NULL.
+sed -i -r 's/^,|,$/NULL,/g
+:l
+s/,,/,NULL,/g
+t l' $JOINED_WORKING_DATA
+
+
+# Load into database.
+drush sqlq "LOAD DATA INFILE \"$JOINED_WORKING_DATA\" INTO TABLE ec_state_ratings COLUMNS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '\"' ESCAPED BY '\"' LINES TERMINATED BY '\n' IGNORE 1 LINES;"
