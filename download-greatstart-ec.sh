@@ -76,6 +76,8 @@ sed -i -r 's/^,|,$/NULL,/g
 s/,,/,NULL,/g
 t l' $JOINED_WORKING_DATA
 
+# Remove total points from pts* columns
+sed -i -r 's/\/[0-9]+//g' $JOINED_WORKING_DATA
 
 # Load into database.
 drush sqlq "LOAD DATA INFILE \"$JOINED_WORKING_DATA\" INTO TABLE ec_state_ratings COLUMNS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '\"' ESCAPED BY '\"' LINES TERMINATED BY '\n' IGNORE 1 LINES;"
