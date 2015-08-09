@@ -60,8 +60,8 @@ curl -s https://portal.excellentschoolsdetroit.org/api/1.0/views/esd_el_2015.jso
 csvjoin -c esd_ec_id,program_id $CSV_IMPORT_FILE $ESD_EL_2015_FILE > $JOINED_WORKING_DATA
 
 # add new cols to end of new file
-sed -i '1!b;s/$/,state_points,total_points,overall_rating,rating_id,source,timestamp/' $JOINED_WORKING_DATA
-sed -i "2,\${s/$/,,,,,$SOURCE,$NOW/;}" $JOINED_WORKING_DATA
+sed -i '1!b;s/$/,rating_id,source,timestamp/' $JOINED_WORKING_DATA
+sed -i "2,\${s/$/,,$SOURCE,$NOW/;}" $JOINED_WORKING_DATA
 
 # Calculate scores.
 python $TRANSFORM_GC_DATA_SCRIPT $JOINED_WORKING_DATA
