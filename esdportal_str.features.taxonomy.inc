@@ -137,6 +137,14 @@ function esdportal_str_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'ec_parent_org' => array(
+      'name' => 'Early Childhood parent organization',
+      'machine_name' => 'ec_parent_org',
+      'description' => 'The larger umbrella agency or parent organization that a program belongs to.',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'ec_physactivity' => array(
       'name' => 'Early Childhood physical activity space',
       'machine_name' => 'ec_physactivity',

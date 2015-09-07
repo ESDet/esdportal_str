@@ -42,6 +42,67 @@ function esdportal_str_views_api() {
 }
 
 /**
+ * Implements hook_eck_entity_type_info().
+ */
+function esdportal_str_eck_entity_type_info() {
+  $items = array(
+    'coaching_tracker' => array(
+      'name' => 'coaching_tracker',
+      'label' => 'Coaching Tracker',
+      'properties' => array(
+        'uid' => array(
+          'label' => 'Author',
+          'type' => 'integer',
+          'behavior' => 'author',
+        ),
+        'created' => array(
+          'label' => 'Created',
+          'type' => 'integer',
+          'behavior' => 'created',
+        ),
+        'uuid' => array(
+          'label' => 'UUID',
+          'type' => 'text',
+          'behavior' => 'uuid',
+        ),
+      ),
+    ),
+    'teacher' => array(
+      'name' => 'teacher',
+      'label' => 'Teacher',
+      'properties' => array(
+        'title' => array(
+          'label' => 'Title',
+          'type' => 'text',
+          'behavior' => 'title',
+        ),
+        'uid' => array(
+          'label' => 'Author',
+          'type' => 'integer',
+          'behavior' => 'author',
+        ),
+        'created' => array(
+          'label' => 'Created',
+          'type' => 'integer',
+          'behavior' => 'created',
+        ),
+        'changed' => array(
+          'label' => 'Changed',
+          'type' => 'integer',
+          'behavior' => 'changed',
+        ),
+        'uuid' => array(
+          'label' => 'UUID',
+          'type' => 'text',
+          'behavior' => 'uuid',
+        ),
+      ),
+    ),
+  );
+  return $items;
+}
+
+/**
  * Implements hook_image_default_styles().
  */
 function esdportal_str_image_default_styles() {

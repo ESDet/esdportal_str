@@ -335,5 +335,34 @@ function esdportal_str_field_group_info() {
   );
   $export['group_partnerships|node|ec_profile|form'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_scorecard|taxonomy_term|ec|form';
+  $field_group->group_name = 'group_scorecard';
+  $field_group->entity_type = 'taxonomy_term';
+  $field_group->bundle = 'ec';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Scorecard Tracker',
+    'weight' => '18',
+    'children' => array(
+      0 => 'field_scorecard_display',
+      1 => 'field_2014_ec_site_visit',
+      2 => 'field_2015_ec_site_visit',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-scorecard field-group-fieldset',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_scorecard|taxonomy_term|ec|form'] = $field_group;
+
   return $export;
 }

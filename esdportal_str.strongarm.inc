@@ -201,6 +201,14 @@ function esdportal_str_strongarm() {
       0 => 'meap_2014',
       1 => 'BuildingCode',
     ),
+    'coaching_tracker' => array(
+      0 => 'eck_coaching_tracker',
+      1 => 'id',
+    ),
+    'teacher' => array(
+      0 => 'eck_teacher',
+      1 => 'id',
+    ),
     'node' => array(
       0 => 'node',
       1 => 'nid',
@@ -789,7 +797,7 @@ batch';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_admin_theme';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['node_admin_theme'] = $strongarm;
 
   $strongarm = new stdClass();

@@ -3032,6 +3032,57 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['fields']['changed']['date_format'] = 'time ago';
   $handler->display->display_options['fields']['changed']['format_date_sql'] = 0;
   $handler->display->display_options['path'] = 'early-learning-programs';
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['quote'] = 1;
+  $handler->display->display_options['style_options']['trim'] = 0;
+  $handler->display->display_options['style_options']['replace_newlines'] = 0;
+  $handler->display->display_options['style_options']['header'] = 1;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: esd_ec_id */
+  $handler->display->display_options['fields']['field_esd_ec_id']['id'] = 'field_esd_ec_id';
+  $handler->display->display_options['fields']['field_esd_ec_id']['table'] = 'field_data_field_esd_ec_id';
+  $handler->display->display_options['fields']['field_esd_ec_id']['field'] = 'field_esd_ec_id';
+  $handler->display->display_options['fields']['field_esd_ec_id']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['fields']['field_esd_ec_id']['label'] = 'ID';
+  $handler->display->display_options['fields']['field_esd_ec_id']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Taxonomy term: Address with phone number */
+  $handler->display->display_options['fields']['field_address_data']['id'] = 'field_address_data';
+  $handler->display->display_options['fields']['field_address_data']['table'] = 'field_data_field_address';
+  $handler->display->display_options['fields']['field_address_data']['field'] = 'field_address_data';
+  $handler->display->display_options['fields']['field_address_data']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['fields']['field_address_data']['label'] = 'Phone';
+  $handler->display->display_options['fields']['field_address_data']['selected_phone_type'] = TRUE;
+  /* Field: Content: Contact person */
+  $handler->display->display_options['fields']['field_ec_contact_1']['id'] = 'field_ec_contact_1';
+  $handler->display->display_options['fields']['field_ec_contact_1']['table'] = 'field_data_field_ec_contact';
+  $handler->display->display_options['fields']['field_ec_contact_1']['field'] = 'field_ec_contact';
+  /* Field: Field: Email */
+  $handler->display->display_options['fields']['field_email_1']['id'] = 'field_email_1';
+  $handler->display->display_options['fields']['field_email_1']['table'] = 'field_data_field_email';
+  $handler->display->display_options['fields']['field_email_1']['field'] = 'field_email';
+  /* Field: Content: Updated date */
+  $handler->display->display_options['fields']['changed']['id'] = 'changed';
+  $handler->display->display_options['fields']['changed']['table'] = 'node';
+  $handler->display->display_options['fields']['changed']['field'] = 'changed';
+  $handler->display->display_options['fields']['changed']['date_format'] = 'time ago';
+  $handler->display->display_options['fields']['changed']['format_date_sql'] = 0;
+  $handler->display->display_options['path'] = 'el-programs-csv';
   $translatables['early_learning_programs'] = array(
     t('Master'),
     t('Early Learning Programs'),
@@ -3059,6 +3110,7 @@ function esdportal_str_views_default_views() {
     t('Updated date'),
     t('Program name'),
     t('Page'),
+    t('Data export'),
   );
   $export['early_learning_programs'] = $view;
 

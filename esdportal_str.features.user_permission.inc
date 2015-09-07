@@ -170,6 +170,7 @@ function esdportal_str_user_default_permissions() {
   $permissions['choose taxonomy term revisions'] = array(
     'name' => 'choose taxonomy term revisions',
     'roles' => array(
+      'Coach' => 'Coach',
       'Logistics Coordinator' => 'Logistics Coordinator',
       'administrator' => 'administrator',
     ),
@@ -678,6 +679,7 @@ function esdportal_str_user_default_permissions() {
   $permissions['use editablefields'] = array(
     'name' => 'use editablefields',
     'roles' => array(
+      'Coach' => 'Coach',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'editablefields',
@@ -791,6 +793,7 @@ function esdportal_str_user_default_permissions() {
   $permissions['view taxonomy term revisions'] = array(
     'name' => 'view taxonomy term revisions',
     'roles' => array(
+      'Coach' => 'Coach',
       'Logistics Coordinator' => 'Logistics Coordinator',
       'administrator' => 'administrator',
     ),
