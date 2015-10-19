@@ -201,13 +201,25 @@ function esdportal_str_strongarm() {
       0 => 'meap_2014',
       1 => 'BuildingCode',
     ),
-    'coaching_tracker' => array(
-      0 => 'eck_coaching_tracker',
+    'e3_contact' => array(
+      0 => 'e3_contact',
       1 => 'id',
     ),
-    'teacher' => array(
-      0 => 'eck_teacher',
+    'e3_contact_type' => array(
+      0 => 'e3_contact_type',
       1 => 'id',
+    ),
+    'e3_note' => array(
+      0 => 'e3_note',
+      1 => 'id',
+    ),
+    'e3_note_type' => array(
+      0 => 'e3_note_type',
+      1 => 'id',
+    ),
+    'i18n_translation' => array(
+      0 => 'i18n_translation_set',
+      1 => 'tsid',
     ),
     'node' => array(
       0 => 'node',
