@@ -45,7 +45,7 @@ function esdportal_str_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'results_viewer_context';
   $context->description = '';
-  $context->tag = 'role specific';
+  $context->tag = '';
   $context->conditions = array(
     'user' => array(
       'values' => array(
@@ -66,10 +66,6 @@ function esdportal_str_context_default_contexts() {
     ),
   );
   $context->condition_mode = 1;
-
-  // Translatables
-  // Included for use with string extractors like potx.
-  t('role specific');
   $export['results_viewer_context'] = $context;
 
   $context = new stdClass();
