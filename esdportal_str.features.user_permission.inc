@@ -14,7 +14,7 @@ function esdportal_str_user_default_permissions() {
   $permissions['access all webform results'] = array(
     'name' => 'access all webform results',
     'roles' => array(
-      'E3 Admin' => 'E3 Admin',
+      'Data Entry' => 'Data Entry',
       'Logistics Coordinator' => 'Logistics Coordinator',
       'administrator' => 'administrator',
       'results viewer' => 'results viewer',
@@ -45,7 +45,7 @@ function esdportal_str_user_default_permissions() {
   $permissions['access own webform results'] = array(
     'name' => 'access own webform results',
     'roles' => array(
-      'E3 Admin' => 'E3 Admin',
+      'Data Entry' => 'Data Entry',
       'Logistics Coordinator' => 'Logistics Coordinator',
       'School Representative' => 'School Representative',
       'administrator' => 'administrator',
@@ -58,7 +58,7 @@ function esdportal_str_user_default_permissions() {
   $permissions['access own webform submissions'] = array(
     'name' => 'access own webform submissions',
     'roles' => array(
-      'E3 Admin' => 'E3 Admin',
+      'Data Entry' => 'Data Entry',
       'Logistics Coordinator' => 'Logistics Coordinator',
       'School Representative' => 'School Representative',
       'administrator' => 'administrator',
@@ -83,7 +83,6 @@ function esdportal_str_user_default_permissions() {
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
-      'E3 Admin' => 'E3 Admin',
       'Logistics Coordinator' => 'Logistics Coordinator',
       'administrator' => 'administrator',
     ),
@@ -171,7 +170,6 @@ function esdportal_str_user_default_permissions() {
   $permissions['choose taxonomy term revisions'] = array(
     'name' => 'choose taxonomy term revisions',
     'roles' => array(
-      'E3 Admin' => 'E3 Admin',
       'Logistics Coordinator' => 'Logistics Coordinator',
       'administrator' => 'administrator',
     ),
@@ -392,7 +390,7 @@ function esdportal_str_user_default_permissions() {
   $permissions['edit all webform submissions'] = array(
     'name' => 'edit all webform submissions',
     'roles' => array(
-      'E3 Admin' => 'E3 Admin',
+      'Data Entry' => 'Data Entry',
       'administrator' => 'administrator',
     ),
     'module' => 'webform',
@@ -521,7 +519,7 @@ function esdportal_str_user_default_permissions() {
   $permissions['edit own webform submissions'] = array(
     'name' => 'edit own webform submissions',
     'roles' => array(
-      'E3 Admin' => 'E3 Admin',
+      'Data Entry' => 'Data Entry',
       'Logistics Coordinator' => 'Logistics Coordinator',
       'School Representative' => 'School Representative',
       'administrator' => 'administrator',
@@ -794,7 +792,6 @@ function esdportal_str_user_default_permissions() {
   $permissions['view taxonomy term revisions'] = array(
     'name' => 'view taxonomy term revisions',
     'roles' => array(
-      'E3 Admin' => 'E3 Admin',
       'Logistics Coordinator' => 'Logistics Coordinator',
       'administrator' => 'administrator',
     ),

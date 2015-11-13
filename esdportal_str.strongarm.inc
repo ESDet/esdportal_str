@@ -217,10 +217,6 @@ function esdportal_str_strongarm() {
       0 => 'e3_note_type',
       1 => 'id',
     ),
-    'i18n_translation' => array(
-      0 => 'i18n_translation_set',
-      1 => 'tsid',
-    ),
     'node' => array(
       0 => 'node',
       1 => 'nid',

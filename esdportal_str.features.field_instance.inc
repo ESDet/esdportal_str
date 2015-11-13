@@ -6761,82 +6761,6 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-ec-field_2014_ec_site_visit'
-  $field_instances['taxonomy_term-ec-field_2014_ec_site_visit'] = array(
-    'bundle' => 'ec',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 16,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_2014_ec_site_visit',
-    'label' => '2014 Site Visit',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 19,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-ec-field_2015_ec_site_visit'
-  $field_instances['taxonomy_term-ec-field_2015_ec_site_visit'] = array(
-    'bundle' => 'ec',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 17,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_2015_ec_site_visit',
-    'label' => '2015 Site Visit',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 20,
-    ),
-  );
-
   // Exported field_instance: 'taxonomy_term-ec-field_actual_enrollment'
   $field_instances['taxonomy_term-ec-field_actual_enrollment'] = array(
     'bundle' => 'ec',
@@ -7371,38 +7295,6 @@ function esdportal_str_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance: 'taxonomy_term-ec-field_parent_organization'
-  $field_instances['taxonomy_term-ec-field_parent_organization'] = array(
-    'bundle' => 'ec',
-    'default_value' => array(),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 15,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_parent_organization',
-    'label' => 'Parent Organization',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 16,
     ),
   );
 
@@ -10093,7 +9985,6 @@ function esdportal_str_field_default_field_instances() {
   t('2014 5Essentials Teacher Component Complete?');
   t('2014 Graded School');
   t('2014 School Profile Complete?');
-  t('2014 Site Visit');
   t('2014 Site Visit Complete?');
   t('2014 Site Visit Date');
   t('2015 5Essentials Parent Component Complete?');
@@ -10103,7 +9994,6 @@ function esdportal_str_field_default_field_instances() {
   t('2015 Graded Type');
   t('2015 In Universe');
   t('2015 School Profile Complete?');
-  t('2015 Site Visit');
   t('2015 Site Visit Category');
   t('2015 Site Visit Complete?');
   t('2015 Site Visit Date');
@@ -10240,7 +10130,6 @@ function esdportal_str_field_default_field_instances() {
   t('Other student clubs not listed above (up to three).');
   t('Outreach Status');
   t('Parent Involvement');
-  t('Parent Organization');
   t('Parent Supports');
   t('Partner name - 1');
   t('Partner name - 2');

@@ -11825,6 +11825,7 @@ function esdportal_str_views_default_views() {
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     4 => '4',
+    1 => '1',
     6 => '6',
   );
   $handler->display->display_options['cache']['type'] = 'none';
@@ -13170,6 +13171,117 @@ function esdportal_str_views_default_views() {
     19 => 0,
   );
   $handler->display->display_options['path'] = 'manage-schools/typology';
+
+  /* Display: Acumen Export */
+  $handler = $view->new_display('views_data_export', 'Acumen Export', 'views_data_export_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Acumen Export';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['filename'] = '%view_%timestamp-mmm_%timestamp-dd_%timestamp-yyyy.csv';
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['quote'] = 1;
+  $handler->display->display_options['style_options']['trim'] = 0;
+  $handler->display->display_options['style_options']['replace_newlines'] = 0;
+  $handler->display->display_options['style_options']['header'] = 1;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['label'] = 'School Name';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Content: Grades Served */
+  $handler->display->display_options['fields']['field_grades_served']['id'] = 'field_grades_served';
+  $handler->display->display_options['fields']['field_grades_served']['table'] = 'field_data_field_grades_served';
+  $handler->display->display_options['fields']['field_grades_served']['field'] = 'field_grades_served';
+  $handler->display->display_options['fields']['field_grades_served']['relationship'] = 'tid_representative';
+  /* Field: Field: Building code */
+  $handler->display->display_options['fields']['field_bcode']['id'] = 'field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['table'] = 'field_data_field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['field'] = 'field_bcode';
+  $handler->display->display_options['fields']['field_bcode']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Taxonomy term: Term ID */
+  $handler->display->display_options['fields']['tid']['id'] = 'tid';
+  $handler->display->display_options['fields']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['tid']['field'] = 'tid';
+  $handler->display->display_options['fields']['tid']['separator'] = '';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['relationship'] = 'tid_representative';
+  $handler->display->display_options['fields']['nid']['label'] = 'Profile NID';
+  /* Field: Taxonomy term: Governance */
+  $handler->display->display_options['fields']['field_governance']['id'] = 'field_governance';
+  $handler->display->display_options['fields']['field_governance']['table'] = 'field_data_field_governance';
+  $handler->display->display_options['fields']['field_governance']['field'] = 'field_governance';
+  /* Field: Taxonomy term: School type */
+  $handler->display->display_options['fields']['field_school_type']['id'] = 'field_school_type';
+  $handler->display->display_options['fields']['field_school_type']['table'] = 'field_data_field_school_type';
+  $handler->display->display_options['fields']['field_school_type']['field'] = 'field_school_type';
+  $handler->display->display_options['fields']['field_school_type']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Taxonomy term: School status */
+  $handler->display->display_options['fields']['field_school_status']['id'] = 'field_school_status';
+  $handler->display->display_options['fields']['field_school_status']['table'] = 'field_data_field_school_status';
+  $handler->display->display_options['fields']['field_school_status']['field'] = 'field_school_status';
+  $handler->display->display_options['fields']['field_school_status']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Taxonomy term: Authorizer */
+  $handler->display->display_options['fields']['field_authorizer']['id'] = 'field_authorizer';
+  $handler->display->display_options['fields']['field_authorizer']['table'] = 'field_data_field_authorizer';
+  $handler->display->display_options['fields']['field_authorizer']['field'] = 'field_authorizer';
+  $handler->display->display_options['fields']['field_authorizer']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Taxonomy term: Operator */
+  $handler->display->display_options['fields']['field_operator']['id'] = 'field_operator';
+  $handler->display->display_options['fields']['field_operator']['table'] = 'field_data_field_operator';
+  $handler->display->display_options['fields']['field_operator']['field'] = 'field_operator';
+  $handler->display->display_options['fields']['field_operator']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Taxonomy term: Address with phone number */
+  $handler->display->display_options['fields']['field_address_data']['id'] = 'field_address_data';
+  $handler->display->display_options['fields']['field_address_data']['table'] = 'field_data_field_address';
+  $handler->display->display_options['fields']['field_address_data']['field'] = 'field_address_data';
+  $handler->display->display_options['fields']['field_address_data']['label'] = 'Phone';
+  $handler->display->display_options['fields']['field_address_data']['selected_phone_type'] = TRUE;
+  /* Field: Content: School URL */
+  $handler->display->display_options['fields']['field_school_url']['id'] = 'field_school_url';
+  $handler->display->display_options['fields']['field_school_url']['table'] = 'field_data_field_school_url';
+  $handler->display->display_options['fields']['field_school_url']['field'] = 'field_school_url';
+  $handler->display->display_options['fields']['field_school_url']['relationship'] = 'tid_representative';
+  /* Field: Taxonomy term: Address - Thoroughfare (i.e. Street address) */
+  $handler->display->display_options['fields']['field_address_thoroughfare']['id'] = 'field_address_thoroughfare';
+  $handler->display->display_options['fields']['field_address_thoroughfare']['table'] = 'field_data_field_address';
+  $handler->display->display_options['fields']['field_address_thoroughfare']['field'] = 'field_address_thoroughfare';
+  $handler->display->display_options['fields']['field_address_thoroughfare']['label'] = 'Address';
+  /* Field: Taxonomy term: Address - Locality (i.e. City) */
+  $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
+  $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
+  $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
+  $handler->display->display_options['fields']['field_address_locality']['label'] = 'City';
+  /* Field: Taxonomy term: Address - Administrative area (i.e. State / Province) */
+  $handler->display->display_options['fields']['field_address_administrative_area']['id'] = 'field_address_administrative_area';
+  $handler->display->display_options['fields']['field_address_administrative_area']['table'] = 'field_data_field_address';
+  $handler->display->display_options['fields']['field_address_administrative_area']['field'] = 'field_address_administrative_area';
+  $handler->display->display_options['fields']['field_address_administrative_area']['label'] = 'State';
+  $handler->display->display_options['fields']['field_address_administrative_area']['display_name'] = 1;
+  /* Field: Taxonomy term: Address - Postal code */
+  $handler->display->display_options['fields']['field_address_postal_code']['id'] = 'field_address_postal_code';
+  $handler->display->display_options['fields']['field_address_postal_code']['table'] = 'field_data_field_address';
+  $handler->display->display_options['fields']['field_address_postal_code']['field'] = 'field_address_postal_code';
+  $handler->display->display_options['fields']['field_address_postal_code']['label'] = 'Zip';
+  /* Field: Taxonomy term: 2015 In Universe */
+  $handler->display->display_options['fields']['field_2015_universe']['id'] = 'field_2015_universe';
+  $handler->display->display_options['fields']['field_2015_universe']['table'] = 'field_data_field_2015_universe';
+  $handler->display->display_options['fields']['field_2015_universe']['field'] = 'field_2015_universe';
+  $handler->display->display_options['fields']['field_2015_universe']['label'] = 'In 2015 Universe';
+  $handler->display->display_options['path'] = 'acumen-export';
+  $handler->display->display_options['sitename_title'] = 0;
   $translatables['manage_schools'] = array(
     t('Master'),
     t('Manage School Taxonomy'),
@@ -13296,6 +13408,19 @@ function esdportal_str_views_default_views() {
     t('Opening time'),
     t('ESD Exclusive Typology'),
     t('2015 Graded Type (field_2015_graded)'),
+    t('Acumen Export'),
+    t('Building code'),
+    t('Term ID'),
+    t('Governance'),
+    t('School type'),
+    t('School status'),
+    t('Authorizer'),
+    t('Operator'),
+    t('Address'),
+    t('City'),
+    t('State'),
+    t('Zip'),
+    t('In 2015 Universe'),
   );
   $export['manage_schools'] = $view;
 
