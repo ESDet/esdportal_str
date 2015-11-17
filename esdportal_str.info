@@ -599,7 +599,6 @@ features[taxonomy][] = ec_licensetype
 features[taxonomy][] = ec_meals
 features[taxonomy][] = ec_medical
 features[taxonomy][] = ec_mental
-features[taxonomy][] = ec_parent_org
 features[taxonomy][] = ec_physactivity
 features[taxonomy][] = ec_special
 features[taxonomy][] = ec_specialty
