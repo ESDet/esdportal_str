@@ -6944,6 +6944,38 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-ec-field_delegate'
+  $field_instances['taxonomy_term-ec-field_delegate'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 16,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_delegate',
+    'label' => 'Delegate',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 17,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-ec-field_ec_license_type'
   $field_instances['taxonomy_term-ec-field_ec_license_type'] = array(
     'bundle' => 'ec',
@@ -7071,6 +7103,38 @@ function esdportal_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-ec-field_grantee'
+  $field_instances['taxonomy_term-ec-field_grantee'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 15,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_grantee',
+    'label' => 'Grantee',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 16,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-ec-field_gsc_provider_id'
   $field_instances['taxonomy_term-ec-field_gsc_provider_id'] = array(
     'bundle' => 'ec',
@@ -7109,6 +7173,88 @@ function esdportal_str_field_default_field_instances() {
       'settings' => array(),
       'type' => 'number',
       'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-ec-field_gsrp_enrollment'
+  $field_instances['taxonomy_term-ec-field_gsrp_enrollment'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 18,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_gsrp_enrollment',
+    'label' => 'GSRP enrollment',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 20,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-ec-field_head_start_enrollment'
+  $field_instances['taxonomy_term-ec-field_head_start_enrollment'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 17,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_head_start_enrollment',
+    'label' => 'Head Start enrollment',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 19,
     ),
   );
 
@@ -7295,6 +7441,79 @@ function esdportal_str_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-ec-field_other_enrollment'
+  $field_instances['taxonomy_term-ec-field_other_enrollment'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 19,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_other_enrollment',
+    'label' => 'Other enrollment',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 21,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-ec-field_related_k12_school'
+  $field_instances['taxonomy_term-ec-field_related_k12_school'] = array(
+    'bundle' => 'ec',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 20,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_related_k12_school',
+    'label' => 'Related K-12 School',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 18,
     ),
   );
 
@@ -10040,6 +10259,7 @@ function esdportal_str_field_default_field_instances() {
   t('College Prep');
   t('Contact person');
   t('Counselor/Student Ratio');
+  t('Delegate');
   t('Destination School');
   t('Details of partnership - 1');
   t('Details of partnership - 2');
@@ -10088,13 +10308,16 @@ function esdportal_str_field_default_field_instances() {
   t('Friday Close');
   t('Friday Open');
   t('GSC Provider ID');
+  t('GSRP enrollment');
   t('General Contact Phone');
   t('General Information Email');
   t('Girls Sports');
   t('Governance');
   t('Grades Served');
+  t('Grantee');
   t('Growth Data Doc');
   t('Has written contract?');
+  t('Head Start enrollment');
   t('Health/Dental/Vision Care');
   t('How do parents get involved at your school?');
   t('How many applications did you receive this year?');
@@ -10127,6 +10350,7 @@ function esdportal_str_field_default_field_instances() {
   t('Operator');
   t('Opted in?');
   t('Organized Sports');
+  t('Other enrollment');
   t('Other student clubs not listed above (up to three).');
   t('Outreach Status');
   t('Parent Involvement');
@@ -10154,6 +10378,7 @@ function esdportal_str_field_default_field_instances() {
   t('Provide file resources to display alongside school information.');
   t('Provide links to external resources to display alongside school information.');
   t('Provides transportation?');
+  t('Related K-12 School');
   t('Saturday Close');
   t('Saturday Open');
   t('Schedule');

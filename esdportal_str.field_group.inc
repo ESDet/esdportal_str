@@ -346,11 +346,9 @@ function esdportal_str_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Scorecard Tracker',
-    'weight' => '18',
+    'weight' => '22',
     'children' => array(
       0 => 'field_scorecard_display',
-      1 => 'field_2014_ec_site_visit',
-      2 => 'field_2015_ec_site_visit',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

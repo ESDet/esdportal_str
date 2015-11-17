@@ -1696,6 +1696,41 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_delegate'
+  $field_bases['field_delegate'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_delegate',
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'ec_delegate',
+          'parent' => 0,
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
   // Exported field_base: 'field_destination_school'
   $field_bases['field_destination_school'] = array(
     'active' => 1,
@@ -3860,6 +3895,41 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'list_text',
   );
 
+  // Exported field_base: 'field_grantee'
+  $field_bases['field_grantee'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_grantee',
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'ec_grantee',
+          'parent' => 0,
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
   // Exported field_base: 'field_grdataletter'
   $field_bases['field_grdataletter'] = array(
     'active' => 1,
@@ -3958,6 +4028,42 @@ function esdportal_str_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_gsc_provider_id',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
+  // Exported field_base: 'field_gsrp_enrollment'
+  $field_bases['field_gsrp_enrollment'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_gsrp_enrollment',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
+  // Exported field_base: 'field_head_start_enrollment'
+  $field_bases['field_head_start_enrollment'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_head_start_enrollment',
     'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
@@ -4427,6 +4533,24 @@ function esdportal_str_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_other_enrollment'
+  $field_bases['field_other_enrollment'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_other_enrollment',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
   // Exported field_base: 'field_outreach_status'
   $field_bases['field_outreach_status'] = array(
     'active' => 1,
@@ -4506,41 +4630,6 @@ function esdportal_str_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_text',
-  );
-
-  // Exported field_base: 'field_parent_organization'
-  $field_bases['field_parent_organization'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_parent_organization',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'ec_parent_org',
-          'parent' => 0,
-        ),
-      ),
-      'entity_translation_sync' => FALSE,
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_parent_supports'
@@ -4766,6 +4855,41 @@ function esdportal_str_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'number_decimal',
+  );
+
+  // Exported field_base: 'field_related_k12_school'
+  $field_bases['field_related_k12_school'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_related_k12_school',
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'schools',
+          'parent' => 0,
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_saturday_close'
