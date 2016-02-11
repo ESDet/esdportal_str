@@ -770,7 +770,7 @@ batch';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'mimemail_mail';
-  $strongarm->value = 'qedgar@excellentschoolsdetroit.org';
+  $strongarm->value = 'scorecard@excellentschoolsdetroit.org';
   $export['mimemail_mail'] = $strongarm;
 
   $strongarm = new stdClass();
