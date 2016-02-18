@@ -5,8 +5,11 @@ import sys
 
 
 def calc_state_points(obj):
-    published_rating = int(obj['published_rating'] or 0)
-    return {0: 0, 3: 2, 4: 4, 5: 6}.get(published_rating) or 0
+    if obj['PublishedRating'] == 'Empty Star':
+        PublishedRating = 0
+    else:
+        PublishedRating = int(obj['PublishedRating'] or 0)
+    return {0: 0, 3: 2, 4: 4, 5: 6}.get(PublishedRating) or 0
 
 
 def calc_total_points(obj):
