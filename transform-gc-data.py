@@ -15,14 +15,23 @@ def calc_state_points(obj):
 def calc_total_points(obj):
     return (int(obj['site_visit_points'] or 0) +
             int(obj['staff_points'] or 0) +
-            int(obj['sas_points'] or 0))
+            int(obj['state_points'] or 0))
 
 
-def calc_overall_rating(total):
-    for (threshold, rating) in ((13, 'Gold'), (10, 'Silver'), (5, 'Bronze')):
-        if total >= threshold:
-            return rating
-    return 'Below Bronze'
+def calc_overall_rating(site_visit_points, staff_points, state_points, old_rating):
+    if (site_visit_points == 0 or staff_points == 0 or state_points == 0):
+      return 'Below Bronze'
+
+    rating = site_visit_points + staff_points + state_points
+
+    if (rating >= 13):
+        return 'Gold'
+    elif (rating >= 10):
+        return 'Silver'
+    elif (rating >= 5):
+        return 'Bronze'
+    else:
+        return old_rating
 
 
 def generate_new_rows(filename):
@@ -33,9 +42,10 @@ def generate_new_rows(filename):
         yield cols
         for row in reader:
             obj = dict(zip(cols, row))
+            obj['state_points'] = calc_state_points(obj)
             total = calc_total_points(obj)
-            yield row + [calc_state_points(obj), total,
-                         calc_overall_rating(total)]
+            overall_rating = calc_overall_rating(int(obj['site_visit_points']), int(obj['staff_points']), int(obj['state_points']), obj['overall_rating'])
+            yield row + [obj['state_points'], total, overall_rating]
 
 
 if __name__ == '__main__':
