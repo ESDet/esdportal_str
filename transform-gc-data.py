@@ -38,14 +38,14 @@ def generate_new_rows(filename):
     with open(filename) as f:
         reader = csv.reader(f)
         cols = reader.next() + ['state_points', 'total_points',
-                                'overall_rating']
+                                'esd_overall_rating']
         yield cols
         for row in reader:
             obj = dict(zip(cols, row))
             obj['state_points'] = calc_state_points(obj)
             total = calc_total_points(obj)
-            overall_rating = calc_overall_rating(int(obj['site_visit_points']), int(obj['staff_points']), int(obj['state_points']), obj['overall_rating'])
-            yield row + [obj['state_points'], total, overall_rating]
+            esd_overall_rating = calc_overall_rating(int(obj['site_visit_points']), int(obj['staff_points']), int(obj['state_points']), obj['overall_rating'])
+            yield row + [obj['state_points'], total, esd_overall_rating]
 
 
 if __name__ == '__main__':

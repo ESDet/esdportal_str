@@ -67,7 +67,7 @@ sed -i "2,\${s/$/,,$SOURCE,$NOW/;}" $JOINED_WORKING_DATA
 python $TRANSFORM_GC_DATA_SCRIPT $JOINED_WORKING_DATA
 
 # Select certain columns & reorder.
-csvcut -c rating_id,esd_ec_id,source,timestamp,PublishedRating,ptsTotal,ptsStaff,ptsFamily,ptsAdmin,ptsEnv,ptsCurr,state_points,total_points,overall_rating $JOINED_WORKING_DATA > $JOINED_WORKING_DATA.tmp
+csvcut -c rating_id,esd_ec_id,source,timestamp,PublishedRating,ptsTotal,ptsStaff,ptsFamily,ptsAdmin,ptsEnv,ptsCurr,state_points,total_points,esd_overall_rating $JOINED_WORKING_DATA > $JOINED_WORKING_DATA.tmp
 mv $JOINED_WORKING_DATA.tmp $JOINED_WORKING_DATA
 
 # Change blanks to NULL.
