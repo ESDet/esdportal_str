@@ -37,7 +37,7 @@ def calc_overall_rating(site_visit_points, staff_points, state_points, old_ratin
 def generate_new_rows(filename):
     with open(filename) as f:
         reader = csv.reader(f)
-        cols = reader.next() + ['state_points', 'total_points',
+        cols = reader.next() + ['state_points', 'esd_total_points',
                                 'esd_overall_rating']
         yield cols
         for row in reader:
